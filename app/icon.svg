@@ -1,1 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#15354d"/><path d="m49 14-14 38-8-17-17-8Z" fill="none" stroke="#8cd3f5" stroke-width="3" stroke-linejoin="round"/><path d="M49 14 27 35" stroke="#8cd3f5" stroke-width="3"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="sky" cx="30%" cy="20%" r="100%">
+      <stop stop-color="#19435c"/>
+      <stop offset="1" stop-color="#081722"/>
+    </radialGradient>
+    <linearGradient id="airframe" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fff"/>
+      <stop offset="1" stop-color="#bce9ff"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h512v512H0z"/>
+  <circle cx="256" cy="256" r="174" fill="none" stroke="#36637d" stroke-width="9"/>
+  <path d="M102 337a174 174 0 0 0 290 28" fill="none" stroke="#81d3fa" stroke-width="10" stroke-linecap="round"/>
+  <g transform="translate(256 256) rotate(42) scale(6.5)" fill="url(#airframe)">
+    <rect x="-12" y="-2" width="3.5" height="11" rx="1.5"/>
+    <rect x="8.5" y="-2" width="3.5" height="11" rx="1.5"/>
+    <path d="M0-23c2 0 3 4 3 7v9L20 6v4L3 3v12l6 5v2l-9-3-9 3v-2l6-5V3L-20 10V6L-3-7v-9c0-3 1-7 3-7Z"/>
+  </g>
+</svg>
