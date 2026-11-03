@@ -13,5 +13,5 @@ export type Entry = {
   livery?: string; displayModel?: string;
 };
 export type Mode = 'aircraft' | 'airlines' | 'photos' | 'flights';
-export type Filters = { query: string; status: string; airport: string; manufacturer: string; airline: string; country: string; model: string; category: string; livery: string; sort: string };
+export type Filters = { query: string; status: string; airport: string; manufacturer: string; airline: string; country: string; model: string; category: string; livery: string; sort: string; flightYear:string; flightAirport:string; route:string };
 export type Flight = {id:string;date:string;airline:string;flight:string;origin:string;destination:string;model:string|null;modelLabel:string;registration:string|null};

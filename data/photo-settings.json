@@ -1,0 +1,3599 @@
+{
+  "DSC00003": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 99.0,
+    "aperture": 7.1,
+    "iso": 400,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC00008": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 149.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC00012": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC00020": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 100,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC00162": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00165": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 169.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00187": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 120.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00191": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 110.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00196": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 162.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00205": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00222": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 154.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00231": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 147.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00234": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 85.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00236": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 59.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00244": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00256": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 148.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00268": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 135.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00270": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 99.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00281": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 161.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00288": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 163.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00290": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 126.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00296": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 105.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00314": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 149.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00325": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00335": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00355": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 160.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00360": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 108.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00365": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 160.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00376": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00393": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 167.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00430": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 109.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00447": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00466": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00469": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00482": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00487": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 101.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00490": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 140.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00502": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00514": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 159.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00520": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 94.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00535": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 152.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00546": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 150.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00552": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 100.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00559": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00573": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 158.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00581": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 104.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00597": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 141.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00602": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 104.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00617": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 154.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00621": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 117.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00625": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 161.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00641": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00644": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00658": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00672": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00687": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 134.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00691": {
+    "date": "2026-10-31",
+    "shutter": "1/1600",
+    "focalLengthMm": 103.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00703": {
+    "date": "2026-11-01",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 8.0,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00714": {
+    "date": "2026-11-01",
+    "shutter": "1/1600",
+    "focalLengthMm": 156.0,
+    "aperture": 8.0,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00720": {
+    "date": "2026-11-01",
+    "shutter": "1/1600",
+    "focalLengthMm": 99.0,
+    "aperture": 8.0,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00733": {
+    "date": "2026-11-01",
+    "shutter": "1/1600",
+    "focalLengthMm": 166.0,
+    "aperture": 8.0,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00738": {
+    "date": "2026-11-01",
+    "shutter": "1/1600",
+    "focalLengthMm": 88.0,
+    "aperture": 8.0,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00752": {
+    "date": "2026-11-01",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 8.0,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00754": {
+    "date": "2026-11-01",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 8.0,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00768": {
+    "date": "2026-11-01",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 8.0,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00780": {
+    "date": "2026-11-01",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 8.0,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00788": {
+    "date": "2026-11-01",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 8.0,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00800": {
+    "date": "2026-11-01",
+    "shutter": "1/1600",
+    "focalLengthMm": 132.0,
+    "aperture": 8.0,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00808": {
+    "date": "2026-11-01",
+    "shutter": "1/1600",
+    "focalLengthMm": 94.0,
+    "aperture": 8.0,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00813": {
+    "date": "2026-11-01",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 8.0,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00823": {
+    "date": "2026-11-01",
+    "shutter": "1/1600",
+    "focalLengthMm": 178.0,
+    "aperture": 8.0,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00826": {
+    "date": "2026-11-01",
+    "shutter": "1/1600",
+    "focalLengthMm": 159.0,
+    "aperture": 8.0,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00848": {
+    "date": "2026-11-01",
+    "shutter": "1/1600",
+    "focalLengthMm": 177.0,
+    "aperture": 8.0,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00855": {
+    "date": "2026-11-01",
+    "shutter": "1/1600",
+    "focalLengthMm": 138.0,
+    "aperture": 8.0,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC00860": {
+    "date": "2026-11-01",
+    "shutter": "1/1600",
+    "focalLengthMm": 99.0,
+    "aperture": 8.0,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06137": {
+    "date": "2026-10-11",
+    "shutter": "1/1250",
+    "focalLengthMm": 137.0,
+    "aperture": 5.6,
+    "iso": 400,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06147": {
+    "date": "2026-10-11",
+    "shutter": "1/1250",
+    "focalLengthMm": 133.0,
+    "aperture": 5.6,
+    "iso": 400,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06165": {
+    "date": "2026-10-11",
+    "shutter": "1/1600",
+    "focalLengthMm": 161.0,
+    "aperture": 7.1,
+    "iso": 400,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06180": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 185.0,
+    "aperture": 5.6,
+    "iso": 400,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06220": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06248": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06253": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06296": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06305": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06330": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06340": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06345": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06352": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06370": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06380": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 183.0,
+    "aperture": 5.6,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06416": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06439": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06453": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06466": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06480": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06490": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06505": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06544": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 400,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06549": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 400,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06561": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 400,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06568": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 400,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06577": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 400,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06619": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 640,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06634": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 183.0,
+    "aperture": 5.6,
+    "iso": 640,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06637": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 183.0,
+    "aperture": 5.6,
+    "iso": 640,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06646": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 640,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06660": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 640,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06678": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 640,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06680": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 400,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06684": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 400,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06693": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 640,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06697": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 640,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06705": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 640,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06706": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 6.3,
+    "iso": 640,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06712": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 6.3,
+    "iso": 640,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06722": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 6.3,
+    "iso": 640,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06725": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 6.3,
+    "iso": 640,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06734": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 181.0,
+    "aperture": 6.3,
+    "iso": 640,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06736": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 6.3,
+    "iso": 640,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06740": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 6.3,
+    "iso": 640,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06747": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 6.3,
+    "iso": 640,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06754": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 6.3,
+    "iso": 640,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06758": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 6.3,
+    "iso": 640,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06763": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 6.3,
+    "iso": 640,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06774": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 6.3,
+    "iso": 640,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06778": {
+    "date": "2026-10-11",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 6.3,
+    "iso": 640,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC06816": {
+    "date": "2026-10-18",
+    "shutter": "1/1000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 100,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC06836": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 6.3,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC06860": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 6.3,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC06885": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 6.3,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC06923": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 6.3,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC06946": {
+    "date": "2026-10-18",
+    "shutter": "1/1250",
+    "focalLengthMm": 200.0,
+    "aperture": 6.3,
+    "iso": 100,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC06977": {
+    "date": "2026-10-18",
+    "shutter": "1/1250",
+    "focalLengthMm": 144.0,
+    "aperture": 6.3,
+    "iso": 100,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07019": {
+    "date": "2026-10-18",
+    "shutter": "1/1250",
+    "focalLengthMm": 148.0,
+    "aperture": 6.3,
+    "iso": 100,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07036": {
+    "date": "2026-10-18",
+    "shutter": "1/1250",
+    "focalLengthMm": 200.0,
+    "aperture": 6.3,
+    "iso": 100,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07052": {
+    "date": "2026-10-18",
+    "shutter": "1/250",
+    "focalLengthMm": 200.0,
+    "aperture": 10.0,
+    "iso": 100,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071"
+  },
+  "DSC07072": {
+    "date": "2026-10-18",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 8.0,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07078": {
+    "date": "2026-10-18",
+    "shutter": "1/125",
+    "focalLengthMm": 200.0,
+    "aperture": 16.0,
+    "iso": 100,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07125": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 100,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07130": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 6.3,
+    "iso": 100,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07141": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 139.0,
+    "aperture": 6.3,
+    "iso": 100,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07164": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 138.0,
+    "aperture": 6.3,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07190": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 165.0,
+    "aperture": 6.3,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07220": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 137.0,
+    "aperture": 6.3,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07223": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 137.0,
+    "aperture": 6.3,
+    "iso": 400,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07243": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 167.0,
+    "aperture": 6.3,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07266": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 6.3,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07272": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 6.3,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07292": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 186.0,
+    "aperture": 6.3,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07316": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 144.0,
+    "aperture": 6.3,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07322": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 83.0,
+    "aperture": 6.3,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07346": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 159.0,
+    "aperture": 6.3,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07361": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 6.3,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07393": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 147.0,
+    "aperture": 5.6,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07408": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 135.0,
+    "aperture": 5.6,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07432": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 154.0,
+    "aperture": 5.6,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07434": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 136.0,
+    "aperture": 5.6,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07437": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 127.0,
+    "aperture": 5.6,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07460": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07486": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 96.0,
+    "aperture": 5.6,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07508": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07546": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07562": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 148.0,
+    "aperture": 5.6,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07563": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 129.0,
+    "aperture": 5.6,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07574": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 139.0,
+    "aperture": 5.6,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07600": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 142.0,
+    "aperture": 5.6,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07613": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 181.0,
+    "aperture": 5.6,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07636": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 166.0,
+    "aperture": 5.6,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07651": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07662": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07697": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 161.0,
+    "aperture": 5.6,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07711": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 90.0,
+    "aperture": 5.6,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07714": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 58.0,
+    "aperture": 5.6,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07725": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 120.0,
+    "aperture": 5.6,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07735": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 129.0,
+    "aperture": 5.6,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07745": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 130.0,
+    "aperture": 5.6,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07753": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 123.0,
+    "aperture": 5.6,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07757": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 51.0,
+    "aperture": 5.6,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07776": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 57.0,
+    "aperture": 5.6,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07793": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 146.0,
+    "aperture": 5.6,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07805": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 78.0,
+    "aperture": 5.6,
+    "iso": 100,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07817": {
+    "date": "2026-10-18",
+    "shutter": "1/400",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 100,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07825": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 135.0,
+    "aperture": 5.6,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07839": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 72.0,
+    "aperture": 5.6,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07851": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 111.0,
+    "aperture": 5.6,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07853": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 99.0,
+    "aperture": 5.6,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07874": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 144.0,
+    "aperture": 5.6,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07884": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07905": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 200.0,
+    "aperture": 5.6,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07917": {
+    "date": "2026-10-18",
+    "shutter": "1/2000",
+    "focalLengthMm": 154.0,
+    "aperture": 5.6,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07935": {
+    "date": "2026-10-18",
+    "shutter": "1/1600",
+    "focalLengthMm": 158.0,
+    "aperture": 7.1,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07978": {
+    "date": "2026-10-18",
+    "shutter": "1/1600",
+    "focalLengthMm": 122.0,
+    "aperture": 7.1,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC07984": {
+    "date": "2026-10-18",
+    "shutter": "1/1600",
+    "focalLengthMm": 100.0,
+    "aperture": 7.1,
+    "iso": 400,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08002": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 92.0,
+    "aperture": 11.0,
+    "iso": 800,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08005": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 109.0,
+    "aperture": 11.0,
+    "iso": 400,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08024": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 151.0,
+    "aperture": 11.0,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08029": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 103.0,
+    "aperture": 11.0,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08060": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 101.0,
+    "aperture": 11.0,
+    "iso": 400,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08064": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 55.0,
+    "aperture": 11.0,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08080": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 69.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08088": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 100,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08110": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 103.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08113": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 62.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08120": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 149.0,
+    "aperture": 7.1,
+    "iso": 100,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08138": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 182.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08147": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 156.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08150": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 99.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08173": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 144.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08175": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 120.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08194": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 146.0,
+    "aperture": 7.1,
+    "iso": 100,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08202": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 100,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08220": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 132.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08246": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 122.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08277": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 97.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08300": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 143.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08319": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08337": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 75.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08340": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 60.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08347": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 144.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08365": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 105.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08383": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 107.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08388": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 51.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08394": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 149.0,
+    "aperture": 7.1,
+    "iso": 100,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08422": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 159.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08428": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08454": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08470": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08491": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08504": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 133.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08513": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 97.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08522": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 181.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08542": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 73.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08559": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 115.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08570": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08575": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 134.0,
+    "aperture": 7.1,
+    "iso": 100,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08582": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 65.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08584": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 45.0,
+    "aperture": 7.1,
+    "iso": 400,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08611": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 97.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08617": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 166.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08647": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08688": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 179.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08695": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 133.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08703": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08719": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 183.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08746": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 110.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08753": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08768": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08793": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 120.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08799": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08816": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 142.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08819": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 131.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08825": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 187.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08841": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 171.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08869": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08880": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08894": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 152.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08937": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 161.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08964": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 47.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08974": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 132.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08990": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 154.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC08995": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09024": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 126.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09050": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 167.0,
+    "aperture": 8.0,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09076": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 113.0,
+    "aperture": 8.0,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09083": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 179.0,
+    "aperture": 8.0,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09096": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 8.0,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09104": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 174.0,
+    "aperture": 8.0,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09125": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 8.0,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09141": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 8.0,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09159": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 160.0,
+    "aperture": 8.0,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09165": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 8.0,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09200": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 8.0,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09210": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 8.0,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09223": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 87.0,
+    "aperture": 8.0,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09237": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 177.0,
+    "aperture": 8.0,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09268": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 78.0,
+    "aperture": 8.0,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09272": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 49.0,
+    "aperture": 8.0,
+    "iso": 640,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09279": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 120.0,
+    "aperture": 8.0,
+    "iso": 400,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09288": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 8.0,
+    "iso": 400,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09300": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 88.0,
+    "aperture": 8.0,
+    "iso": 500,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09314": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 87.0,
+    "aperture": 8.0,
+    "iso": 640,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09352": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 55.0,
+    "aperture": 8.0,
+    "iso": 800,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09356": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 110.0,
+    "aperture": 8.0,
+    "iso": 500,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09363": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 8.0,
+    "iso": 400,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09373": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 82.0,
+    "aperture": 8.0,
+    "iso": 640,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09404": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 124.0,
+    "aperture": 8.0,
+    "iso": 500,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09420": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 50.0,
+    "aperture": 7.1,
+    "iso": 400,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09427": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 137.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09442": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 66.0,
+    "aperture": 7.1,
+    "iso": 400,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09451": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09459": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 85.0,
+    "aperture": 7.1,
+    "iso": 500,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09470": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 102.0,
+    "aperture": 7.1,
+    "iso": 400,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09480": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 95.0,
+    "aperture": 7.1,
+    "iso": 500,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09487": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 103.0,
+    "aperture": 7.1,
+    "iso": 500,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09502": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 137.0,
+    "aperture": 6.3,
+    "iso": 100,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09510": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 58.0,
+    "aperture": 6.3,
+    "iso": 640,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09517": {
+    "date": "2026-10-24",
+    "shutter": "1/1600",
+    "focalLengthMm": 134.0,
+    "aperture": 6.3,
+    "iso": 400,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09524": {
+    "date": "2026-10-24",
+    "shutter": "1/1000",
+    "focalLengthMm": 112.0,
+    "aperture": 5.6,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09533": {
+    "date": "2026-10-24",
+    "shutter": "1/1000",
+    "focalLengthMm": 110.0,
+    "aperture": 5.6,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09542": {
+    "date": "2026-10-24",
+    "shutter": "1/1000",
+    "focalLengthMm": 101.0,
+    "aperture": 5.6,
+    "iso": 500,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09553": {
+    "date": "2026-10-24",
+    "shutter": "1/1000",
+    "focalLengthMm": 140.0,
+    "aperture": 5.6,
+    "iso": 100,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09555": {
+    "date": "2026-10-24",
+    "shutter": "1/1000",
+    "focalLengthMm": 118.0,
+    "aperture": 5.6,
+    "iso": 100,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09561": {
+    "date": "2026-10-24",
+    "shutter": "1/1000",
+    "focalLengthMm": 53.0,
+    "aperture": 5.6,
+    "iso": 640,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09568": {
+    "date": "2026-10-24",
+    "shutter": "1/1000",
+    "focalLengthMm": 160.0,
+    "aperture": 5.6,
+    "iso": 400,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09614": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 9.0,
+    "iso": 100,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09622": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 154.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09629": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 105.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09632": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 141.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09643": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09646": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09659": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 101.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09667": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 148.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09669": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 110.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09679": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 111.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09681": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 77.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09694": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09696": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09707": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 107.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09709": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 77.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09719": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 167.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09722": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 86.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09738": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 86.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09745": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 164.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09750": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 97.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09752": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 65.0,
+    "aperture": 7.1,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09765": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 87.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09767": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 67.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09778": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 96.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09782": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 76.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09786": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09789": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 121.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09795": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 122.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09797": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 85.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09800": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 175.0,
+    "aperture": 7.1,
+    "iso": 100,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09802": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 91.0,
+    "aperture": 7.1,
+    "iso": 100,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09812": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09814": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09827": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09828": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 86.0,
+    "aperture": 7.1,
+    "iso": 125,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09831": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 149.0,
+    "aperture": 7.1,
+    "iso": 100,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09838": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 97.0,
+    "aperture": 7.1,
+    "iso": 100,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09842": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 81.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09855": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09865": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 154.0,
+    "aperture": 7.1,
+    "iso": 500,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09866": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 133.0,
+    "aperture": 7.1,
+    "iso": 400,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09870": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09877": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09880": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09885": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09892": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09904": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09909": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09911": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09919": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09920": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09928": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 400,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09932": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 134.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09935": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 140.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09946": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09953": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09955": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 200.0,
+    "aperture": 7.1,
+    "iso": 500,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09959": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 163.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09961": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 147.0,
+    "aperture": 7.1,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09964": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 122.0,
+    "aperture": 7.1,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09966": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 120.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09968": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 150.0,
+    "aperture": 7.1,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09970": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 158.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09976": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 103.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09980": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 100.0,
+    "aperture": 7.1,
+    "iso": 250,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09982": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 100.0,
+    "aperture": 7.1,
+    "iso": 200,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09989": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 169.0,
+    "aperture": 7.1,
+    "iso": 160,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  },
+  "DSC09998": {
+    "date": "2026-10-25",
+    "shutter": "1/1600",
+    "focalLengthMm": 79.0,
+    "aperture": 7.1,
+    "iso": 320,
+    "source": "原片 EXIF 核验记录",
+    "lens": "E 28-200mm F2.8-5.6 A071",
+    "camera": "ILCE-7C"
+  }
+}

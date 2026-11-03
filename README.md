@@ -1,6 +1,6 @@
 # SKYLOG — Yuan’s aviation atlas
 
-A personal aircraft, airline, and photography collection built with Next.js. All unlocked photographs were taken by Yuan at YYZ and YVR.
+A personal aircraft, airline, and photography collection built with Next.js. All unlocked photographs were taken by Yuan Wang at YYZ and YVR.
 
 **Website:** https://konantian.github.io/skylog/
 
@@ -11,7 +11,10 @@ A personal aircraft, airline, and photography collection built with Next.js. All
 - Desktop and mobile layouts, keyboard-operable photo viewer, dark/light themes with a remembered preference, and reduced-motion support.
 - Registration evidence, named liveries, and compact aircraft profiles with manufacturer references in the photo viewer. Unconfirmed registrations stay labeled as such.
 - A separate Flighty flight log: 86 past segments across 14 airlines, with 18 explicitly recorded aircraft variants. Flown badges do not unlock unphotographed aircraft. Confirmed registration matches connect flights with photos of the same airframe.
-- Restrained fly-by animations when switching collections.
+- A Pacific-centered route map with airport/route selection, annual flight counts, and most-flown airline/model/route rankings. Flight rows show the city below each airport code.
+- A photography timeline of first collected models and airlines, plus date-matched camera settings in all 372 photo details.
+- Ten selected photographs in the homepage carousel, with automatic rotation, pause/previous/next controls, and native horizontal swipe. Rotation pauses offscreen, in background tabs, while hovered, and after manual navigation; reduced-motion preference disables automatic rotation.
+- Scroll-triggered card entrances, route drawing, timeline accents, and a small aircraft showing page progress. Native scrolling is preserved, visited items stay readable, and reduced-motion users receive the static content.
 
 ## Run locally
 
@@ -41,6 +44,11 @@ The static website is generated in `out/`. GitHub Actions builds with `NEXT_PUBL
 - `data/photo-identities.json`: 78 date-matched registration records (77 confirmed, one inferred); imported from the existing identification audit or read directly from photographs. Inferred registrations never create exact-airframe flight matches.
 - `data/liveries.json` and `data/aircraft-profiles.json`: livery descriptions and aircraft family/variant reference information, with primary-source links where available. Basic profiles use catalog manufacturer, family, and category when detailed specifications have not been collected.
 - `data/flights.json`: allowlisted public flight-log fields, imported from the owner’s Flighty export.
+- `data/airports.json`: the 19 flight-log airports, sourced from the public-domain OurAirports dataset. Route lines are great-circle illustrations, not recorded flight tracks.
+- `data/world-land.json`: simplified SVG land outline derived from Natural Earth 1:110m public-domain land polygons (https://www.naturalearthdata.com/about/terms-of-use/).
+- `data/photo-settings.json`: date-and-filename matched RAW EXIF audit records. Publishes focal length, shutter, aperture, ISO, lens, and camera when explicitly recorded; does not publish GPS, serial numbers, file paths, or library identifiers.
+- `data/hero-selections.json`: the ten curated homepage photos, all from the existing edited collection.
+- `scripts/import-photo-settings.py`: reads the preserved EXIF audit archives and joins RAW records to catalog photos by capture date and filename. Missing camera bodies are not inferred.
 - `scripts/import-flights.py`: imports past, non-canceled flights; rejects duplicates and does not copy booking references, seats, notes, private Flighty IDs, or other CSV fields.
 - `scripts/build-catalog.py`: regenerate catalog from an existing album audit JSON; does not modify Photos.
 - `scripts/prepare-photos.mjs`: prepare web JPGs from an already-exported folder of edited images, then record file sizes in `data/photo-verification.json`.
@@ -53,7 +61,9 @@ npm run photos:prepare -- /path/to/edited-exports
 
 For manual additions, add a photo record and image files, and update the corresponding catalog entries’ `photoIds`, cover, dates, and unlocked status. Run tests before publishing. This is a static snapshot; it does not automatically sync with Apple Photos.
 
-The source RAWs and photo library remain separate and unchanged. Website JPGs are presentation copies, not archival replacements. EXIF and GPS are stripped from these public copies. Livery names describe visible paint schemes; uncertain views are labeled `待确认`. Flight numbers reproduce the existing collection notes and retain inference labels where present.
+The 372 presentation photos come from the edited “YYZ · RAW精修” (301) and “YVR · RAW精修” (71) album exports. The source RAWs and photo library remain separate and unchanged. Website JPGs are presentation copies, not archival replacements. EXIF and GPS are stripped from these public copies. Livery names describe visible paint schemes; uncertain views are labeled `待确认`. Flight numbers reproduce the existing collection notes and retain inference labels where present.
+
+Timeline first sightings refer only to photos in the current catalog. Its cumulative totals use the whole catalog even when the displayed photos are filtered.
 
 Flight dates, models, and registrations reproduce the Flighty export; they are not a fresh verification of historic operations. Family-only labels (for example, `Airbus A330`) remain broad and do not create a specific model badge. A photographed livery may differ from the livery at the time of a past flight. Aircraft/airline unlock counts refer to photography, while flight-log counts refer to personal travel. Raw Flighty CSV files are not published.
 
