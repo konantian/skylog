@@ -1,0 +1,12 @@
+{
+  "name": "skylog-visits",
+  "main": "index.mjs",
+  "compatibility_date": "2026-11-02",
+  "workers_dev": true,
+  "vars": {"ALLOWED_ORIGIN": "https://konantian.github.io"},
+  "durable_objects": {
+    "bindings": [{"name": "VISITS", "class_name": "VisitCounter"}]
+  },
+  "migrations": [{"tag": "v1", "new_sqlite_classes": ["VisitCounter"]}],
+  "observability": {"enabled": false}
+}

@@ -5,6 +5,7 @@ import data from '@/data/catalog.json';
 import flightData from '@/data/flights.json';
 import heroIds from '@/data/hero-selections.json';
 import { HeroGallery } from './hero-gallery';
+import { VisitCounter } from './visit-counter';
 import { AircraftProfile, PhotoIdentity, FlownDetails } from './collection-details';
 import { FlightLog } from './flight-log';
 import { CollectionTimeline } from './collection-timeline';
@@ -192,7 +193,7 @@ export default function Atlas() {
         {count>0&&(count<=limit||(mode==='photos'&&photoLayout==='timeline'))&&<div className="end-mark"><span/>END OF THIS FLIGHT · 更多相遇，留给下一次<span/></div>}
       </section>
     </main>
-    <footer className="site-footer wrap"><div className="footer-main"><span className="footer-brand">SKYLOG<span> KEEP LOOKING UP.</span></span><a href="https://github.com/konantian/skylog" target="_blank" rel="noreferrer">VIEW ON GITHUB <Icon name="diagonal" size={13}/></a></div><p>{data.scopeNote}</p><div className="footer-bottom"><span>摄影 © Yuan Wang · 已解锁照片均为本人拍摄</span><span>YYZ 43°40′N &nbsp; / &nbsp; YVR 49°12′N</span></div></footer>
+    <footer className="site-footer wrap"><div className="footer-main"><span className="footer-brand">SKYLOG<span> KEEP LOOKING UP.</span></span><a href="https://github.com/konantian/skylog" target="_blank" rel="noreferrer">VIEW ON GITHUB <Icon name="diagonal" size={13}/></a></div><p>{data.scopeNote}</p><div className="footer-bottom"><span>摄影 © Yuan Wang · 已解锁照片均为本人拍摄</span><VisitCounter/><span>YYZ 43°40′N &nbsp; / &nbsp; YVR 49°12′N</span></div></footer>
     {detail&&<dialog ref={dialog} className="photo-dialog" aria-labelledby="detail-title" onCancel={()=>setDetail(null)} onClick={e=>{if(e.target===e.currentTarget)setDetail(null);}} onKeyDown={e=>{if(galleryIds.length>1&&['ArrowRight','ArrowLeft'].includes(e.key)&&!(e.target instanceof HTMLInputElement)&&!(e.target instanceof HTMLSelectElement)){e.preventDefault();nextPhoto(e.key==='ArrowRight'?1:-1);}}}>
       <div className="dialog-shell"><div className="dialog-heading"><div><span className="eyebrow">{detail.entry?.unlocked===false?'ON THE WISHLIST':'FROM MY VIEWFINDER'}</span><h2 id="detail-title">{detail.entry?.name||activePhoto?.models.join(' / ')||'飞行记录'}</h2>{detail.entry?.kind==='variant'&&<p className="dialog-subtitle">{detail.entry.displayModel} · {detail.entry.livery}</p>}</div><button className="icon-button" onClick={()=>setDetail(null)} aria-label="关闭照片"><Icon name="close" size={24}/></button></div>
       {detail.entry?.unlocked&&detail.entry.kind!=='variant'&&<div className="variant-controls">

@@ -40,7 +40,24 @@ npm test
 npm run build
 ```
 
-The static website is generated in `out/`. GitHub Actions builds with `NEXT_PUBLIC_BASE_PATH=/skylog` and deploys it to GitHub Pages after pushes to `main`. Set Pages source to **GitHub Actions**. No server, account, or database is required.
+The static website is generated in `out/`. GitHub Actions builds with `NEXT_PUBLIC_BASE_PATH=/skylog` and deploys it to GitHub Pages after pushes to `main`. Set Pages source to **GitHub Actions**. The collection remains static; only the optional page-view counter uses a small Cloudflare Worker.
+
+## Page-view counter
+
+The footer displays cumulative page views (PV), not unique people. Each production document load or refresh counts once; filters, photo navigation, and React remounts do not increment again. Local previews read the total without incrementing. Counting begins when the feature is enabled; no historical visits are invented. If the service fails, the footer shows `—` rather than a made-up number.
+
+`workers/visits/index.mjs` stores a single total in a SQLite-backed Durable Object. It has no reset/decrement endpoint, cookies, visitor IDs, IP storage, or request logging enabled. `GET /visits` reads the total and `POST /visits` adds one. Writes require the production origin; reads are public. The total survives Worker deployments. Keep the Worker name, binding, migration, and object name when updating it.
+
+```sh
+npx --yes wrangler@4.156.2 login --scopes account:read user:read workers_scripts:write
+npx --yes wrangler@4.156.2 deploy --config workers/visits/wrangler.jsonc
+```
+
+Set the GitHub repository variable `NEXT_PUBLIC_VISITS_URL` to the deployed Worker URL plus `/visits`, then redeploy Pages. This is a public endpoint, not a secret; no Cloudflare credentials are shipped to browsers or committed. Without that variable, the counter is omitted. Both services can use Cloudflare's free tier; exceeding its limits makes the counter temporarily unavailable.
+
+For a local Worker check, start `npx --yes wrangler@4.156.2 dev --config workers/visits/wrangler.jsonc --local --port 8787`, then run `node workers/visits/smoke-test.mjs` in another terminal. The smoke test deliberately increments **only the local counter**, checking 50 concurrent writes and rejected methods/origins. `npm test` checks browser request deduplication, preview behavior, and failure handling.
+
+<!-- ponytail: This is a public PV counter, not audited analytics. Origin checks do not stop scripted inflation; add edge rate limiting or bot controls if abuse appears. -->
 
 ## Photos and data
 

@@ -25,6 +25,7 @@ jobs:
       - run: npm run build
         env:
           NEXT_PUBLIC_BASE_PATH: /skylog
+          NEXT_PUBLIC_VISITS_URL: ${{ vars.NEXT_PUBLIC_VISITS_URL }}
       - uses: actions/upload-pages-artifact@v4
         with:
           path: out
