@@ -5,6 +5,7 @@ import {collectRoutes,flightStats,projectAirport,routePath} from '@/lib/insights
 import type {Filters,Flight} from '@/lib/types';
 import {Icon} from './icons';
 import {JourneyReplay} from './journey-replay';
+import {FlightRecords} from './flight-records';
 
 type Airport={name:string;city:string;latitude:number;longitude:number;country:string};
 type Ranked={name:string;count:number};
@@ -39,6 +40,7 @@ export function FlightOverview({allFlights,mapFlights,filters,onFilter}:{allFlig
     <div className="flight-metrics" aria-label="全部乘机记录统计">
       {[[stats.total,'乘坐航段'],[stats.airlines.length,'坐过航司'],[stats.models.length,'明确机型'],[stats.airports,'到访机场']].map(([value,label])=><div key={label}><strong>{value}</strong><span>{label}</span></div>)}
     </div>
+    <FlightRecords flights={allFlights}/>
     <div className="flight-overview-grid">
       <section className="route-map" aria-labelledby="route-map-title">
         <div className="map-heading"><div><span className="eyebrow">ACROSS THE PACIFIC & BEYOND</span><h4 id="route-map-title">把旅途连成一张地图</h4></div><div className="map-regions" aria-label="地图区域">{regions.map(r=><button key={r.id} aria-pressed={region===r.id} onClick={()=>setRegion(r.id)}>{r.label}</button>)}</div></div>

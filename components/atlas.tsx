@@ -10,6 +10,7 @@ import { FlightLog } from './flight-log';
 import { CollectionTimeline } from './collection-timeline';
 import { PhotoSettings } from './photo-settings';
 import { ScrollExperience } from './scroll-experience';
+import { AircraftFamilies } from './aircraft-families';
 import { filterCatalog, filterPhotos, initialFilters, photoMatches, groupModelVariants, filterFlights, flightsForEntry, flightsForPhoto } from '@/lib/filter.mjs';
 import type { Entry, Filters, Flight, Mode, Photo } from '@/lib/types';
 import { Icon, PlaneSilhouette } from './icons';
@@ -161,6 +162,7 @@ export default function Atlas() {
       <section className="collection wrap" id="collection" ref={collection} aria-labelledby="collection-title">
         <div className="collection-heading"><div><div className="eyebrow">THE SPOTTING LOG</div><h2 id="collection-title">我的天空收藏<span> / {modes.find(m=>m.id===mode)?.english}</span></h2></div><span className="updated">更新于 {data.updatedAt.replaceAll('-','.')} <span className="live-dot"/></span></div>
         <div className="collection-toolbar"><div className="toolbar-flight" key={flight} aria-hidden="true"><span><FlyPlane/></span></div><div className="view-tabs" aria-label="图鉴分类">{modes.map(m => <button key={m.id} aria-pressed={mode===m.id} onClick={() => switchMode(m.id)}><Icon name={m.icon} size={17}/>{m.name}<span>{m.id==='aircraft'?aircraft.length:m.id==='airlines'?airlines.length:m.id==='flights'?flights.length:photos.length}</span></button>)}</div><label className="search-field"><Icon name="search" size={18}/><span className="sr-only">搜索机型、航司、航班、注册号或照片编号</span><input type="search" placeholder="搜索机型、航司、注册号…" value={filters.query} onChange={e=>update('query',e.target.value)}/></label></div>
+        {mode==='aircraft'&&<AircraftFamilies aircraft={aircraft} photos={photos} model={filters.model} onEntry={entry=>openDetail({entry,ids:entry.photoIds,index:Math.max(0,entry.photoIds.indexOf(entry.cover||''))})}/>}
         <div className="filter-heading"><div className="status-tabs" aria-label="解锁状态">{mode !== 'photos' && mode !== 'flights' ? [['all','全部'],['unlocked','已解锁'],['locked','待解锁']].map(([value,label])=><button key={value} aria-pressed={filters.status===value} onClick={()=>update('status',value)}>{label}</button>) : <span className="photo-subtitle">{mode==='flights'?'拍过，或坐过。每一种相遇都值得记录。':'每一张，都是亲眼见过的天空。'}</span>}</div><button className="filter-toggle" aria-expanded={expanded} aria-controls="filters" onClick={()=>setExpanded(!expanded)}><Icon name="filter" size={16}/>筛选{activeCount>0&&<b>{activeCount}</b>}</button><span className="result-count" aria-live="polite">{count} {mode==='flights'?'段旅程':mode==='photos'?'张照片':filters.model!=='all'&&mode==='aircraft'?'个航司 / 涂装组合':'个条目'}</span></div>
         <div className={`filters ${mode==='flights'?'flight-filters':''} ${expanded?'expanded':''}`} id="filters">
           {select('manufacturer','生产商',manufacturers.map(s=>({value:s,label:s})))}
