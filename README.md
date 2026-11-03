@@ -71,7 +71,7 @@ For a local Worker check, start `npx --yes wrangler@4.156.2 dev --config workers
 - `data/catalog.json`: the website’s curated collection snapshot.
 - `data/cover-selections.json`: visually selected aircraft covers and preferred photographs for each airline/livery combination.
 - `data/photo-annotations.json`: visually reviewed livery descriptions and identification corrections.
-- `data/photo-identities.json`: 78 date-matched registration records (77 confirmed, one inferred); imported from the existing identification audit or read directly from photographs. Inferred registrations never create exact-airframe flight matches.
+- `data/photo-identities.json`: date-matched identity evidence for all 372 photos, including registrations, flight confidence and neighboring RAW-frame readings. Fleet-number matches are distinguished from directly visible full registrations; uncertain flights retain inference labels. Inferred registrations never create exact-airframe flight matches.
 - `data/liveries.json` and `data/aircraft-profiles.json`: livery descriptions and aircraft family/variant reference information, with primary-source links where available. Basic profiles use catalog manufacturer, family, and category when detailed specifications have not been collected.
 - `data/flights.json`: allowlisted public flight-log fields, imported from the owner’s Flighty export.
 - `data/airports.json`: the 19 flight-log airports, sourced from the public-domain OurAirports dataset. Route lines are great-circle illustrations, not recorded flight tracks.

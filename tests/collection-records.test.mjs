@@ -32,9 +32,9 @@ test('all public flight records have measured distances and chronological year c
 });
 test('family collection preserves every model and only unlocks photographed entries',()=>{
   const families=aircraftFamilies(catalog.aircraft);
-  assert.equal(families.reduce((n,g)=>n+g.entries.length,0),74);
-  assert.equal(new Set(families.flatMap(g=>g.entries.map(e=>e.id))).size,74);
-  assert.equal(families.reduce((n,g)=>n+g.unlocked,0),46);
+  assert.equal(families.reduce((n,g)=>n+g.entries.length,0),76);
+  assert.equal(new Set(families.flatMap(g=>g.entries.map(e=>e.id))).size,76);
+  assert.equal(families.reduce((n,g)=>n+g.unlocked,0),48);
   const triple=families.find(g=>g.key==='Boeing:777');
   assert.equal(triple.unlocked,3);assert.equal(triple.entries.length,4);
   assert.equal(triple.entries.find(e=>e.name==='Boeing 777-200ER').unlocked,false);

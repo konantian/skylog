@@ -91,12 +91,12 @@ Juneyao Air|吉祥航空|HO|中国|亚洲'''
 airline_info = {r.split('|')[0]: r.split('|')[1:] for r in airline_rows.splitlines()}
 def slug(s): return re.sub(r'[^a-z0-9]+', '-', s.lower()).strip('-')
 def model_meta(name):
-    maker = next((x for x in ['Airbus','Boeing','Bombardier','Embraer','De Havilland Canada','Cessna','Gulfstream','Saab','Antonov'] if name.startswith(x)), 'Other')
-    family = re.search(r'(A\d{3}|7\d7|CRJ|Dash 8|DHC-8|E\d{3}|ERJ-145|Challenger|Global|Praetor|Citation|Conquest|An-124|340|G200)', name)
+    maker = next((x for x in ['Airbus','Boeing','Bombardier','Embraer','De Havilland Canada','Cessna','Gulfstream','Saab','Antonov','Beechcraft'] if name.startswith(x)), 'Other')
+    family = re.search(r'(A\d{3}|7\d7|CRJ|Dash 8|DHC-8|E\d{3}|ERJ-145|Challenger|Global|Praetor|Citation|Conquest|An-124|340|G200|1900)', name)
     family = family.group() if family else name
     if any(x in name for x in ['777F','ERF','BDSF','P2F','-200F','-600F','747-8F','An-124']): category='货机'
     elif any(x in name for x in ['Challenger','Global','Praetor','Citation','Gulfstream']): category='公务机'
-    elif any(x in name for x in ['Dash 8','DHC-8','Saab','Conquest','ATR']): category='涡桨飞机'
+    elif any(x in name for x in ['Dash 8','DHC-8','Saab','Conquest','ATR','Beechcraft 1900']): category='涡桨飞机'
     elif any(x in name for x in ['CRJ','E170','E175','E190','E195','ERJ']): category='支线客机'
     elif any(x in name for x in ['A300','A310','A330','A340','A350','A380','747','767','777','787','MD-11']): category='宽体客机'
     else: category='窄体客机'
@@ -105,7 +105,7 @@ def model_meta(name):
 photos=[]
 for row in source['photo_audit']:
     name=Path(row['filename']).stem
-    models=[aliases.get(k,k) for k in row['keywords'] if any(k.startswith(x) for x in ['Airbus','Boeing','Embraer','Bombardier','De Havilland','Cessna','Gulfstream','Saab','Antonov'])]
+    models=[aliases.get(k,k) for k in row['keywords'] if any(k.startswith(x) for x in ['Airbus','Boeing','Embraer','Bombardier','De Havilland','Cessna','Gulfstream','Saab','Antonov','Beechcraft'])]
     # Existing audit flags this photo's Dash 8 keyword as conflicting with Cargojet.
     # Do not turn an unresolved identification into an aircraft unlock.
     if name=='DSC09524': models=[]

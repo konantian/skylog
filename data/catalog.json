@@ -45,21 +45,21 @@
         "United Airlines"
       ],
       "flights": [
-        "推测航班 UA3648"
+        "UA3648"
       ],
       "image": "/photos/DSC06147.jpg",
       "thumbnail": "/photos/thumbs/DSC06147.jpg",
-      "note": "仰拍仅见机腹，具体涂装版本无法从这张照片确认。",
-      "livery": "待确认",
+      "note": "",
+      "livery": "标准涂装",
       "registration": {
         "value": "N765YX",
-        "status": "inferred",
-        "basis": "机身部分标识及拍摄时间推测",
-        "sourceUrl": "https://planefinder.net/data/aircraft/N765YX"
+        "status": "confirmed",
+        "basis": "照片机队编号与注册资料交叉核对",
+        "sourceUrl": "https://www.airhistory.net/location/1444/Montr%C3%A9al-Pierre-Elliott-Trudeau-International-CYUL-YUL"
       },
       "flightIdentification": {
-        "status": "inferred",
-        "basis": "机身部分标识及拍摄时间推测",
+        "status": "confirmed",
+        "basis": "拍摄时间、注册号与历史记录交叉核对",
         "sourceUrl": "https://planefinder.net/data/aircraft/N765YX"
       },
       "capturedAt": "2026-10-11T11:11:57-04:00"
@@ -2562,8 +2562,10 @@
         "basis": "同一架飞机的相邻连拍"
       },
       "flightIdentification": {
-        "status": "unknown",
-        "basis": "公开记录未提供当天航班号或呼号"
+        "status": "inferred",
+        "basis": "同日同机呼号记录，时间仍待核对",
+        "sourceUrl": "https://skymeter.io/tail/N47EK",
+        "callsign": "LJY47"
       },
       "capturedAt": "2026-10-18T15:04:07-04:00"
     },
@@ -2877,23 +2879,25 @@
       "filename": "DSC07662.ARW",
       "date": "2026-10-18",
       "airport": "YYZ",
-      "models": [],
+      "models": [
+        "Cessna Citation II"
+      ],
       "airlines": [],
       "flights": [],
       "image": "/photos/DSC07662.jpg",
       "thumbnail": "/photos/thumbs/DSC07662.jpg",
-      "note": "机型待确认",
+      "note": "",
       "livery": "白底条纹公务机涂装",
       "registration": {
         "value": "C-GJNE",
-        "status": "inferred",
-        "basis": "机身部分标识及拍摄时间推测",
-        "sourceUrl": "https://www.flightradar24.com/data/flights/fsy332"
+        "status": "confirmed",
+        "basis": "相邻 RAW 连拍中的完整注册号",
+        "sourceUrl": "https://www.regosearch.com/aircraft/ca/GJNE"
       },
       "flightIdentification": {
-        "status": "inferred",
-        "basis": "机身部分标识及拍摄时间推测",
-        "sourceUrl": "https://www.flightradar24.com/data/flights/fsy332",
+        "status": "confirmed",
+        "basis": "拍摄时间、注册号与历史记录交叉核对",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gjne",
         "callsign": "FSY332"
       },
       "capturedAt": "2026-10-18T15:26:28-04:00"
@@ -3208,7 +3212,7 @@
         "Cathay Pacific"
       ],
       "flights": [
-        "推测航班 CX805"
+        "CX805"
       ],
       "image": "/photos/DSC07805.jpg",
       "thumbnail": "/photos/thumbs/DSC07805.jpg",
@@ -3216,14 +3220,14 @@
       "livery": "标准涂装",
       "registration": {
         "value": "B-LXM",
-        "status": "inferred",
-        "basis": "机身部分标识及拍摄时间推测",
-        "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-lxm"
+        "status": "confirmed",
+        "basis": "相邻 RAW 连拍中的完整注册号",
+        "sourceUrl": "https://planefinder.net/data/aircraft/B-LXM"
       },
       "flightIdentification": {
-        "status": "inferred",
-        "basis": "机身部分标识及拍摄时间推测",
-        "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-lxm"
+        "status": "confirmed",
+        "basis": "拍摄时间、注册号与历史记录交叉核对",
+        "sourceUrl": "https://planefinder.net/data/aircraft/B-LXM"
       },
       "capturedAt": "2026-10-18T15:56:47-04:00"
     },
@@ -3591,7 +3595,7 @@
         "Air Canada"
       ],
       "flights": [
-        "推测航班 AC1018"
+        "AC1018"
       ],
       "image": "/photos/DSC08002.jpg",
       "thumbnail": "/photos/thumbs/DSC08002.jpg",
@@ -3599,14 +3603,15 @@
       "livery": "现代黑白涂装",
       "registration": {
         "value": "C-GUPK",
-        "status": "inferred",
-        "basis": "机身部分标识及拍摄时间推测",
-        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gupk"
+        "status": "confirmed",
+        "basis": "照片机队编号与注册资料交叉核对",
+        "sourceUrl": "https://www.planespotters.net/airframe/airbus-a220-300-c-gupk-air-canada/e2w6j4"
       },
       "flightIdentification": {
-        "status": "inferred",
-        "basis": "机身部分标识及拍摄时间推测",
-        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gupk"
+        "status": "confirmed",
+        "basis": "拍摄时间、注册号与历史记录交叉核对",
+        "sourceUrl": "https://www.flightradar24.com/data/flights/ac1018",
+        "callsign": "ACA1018"
       },
       "capturedAt": "2026-10-24T12:33:17-04:00"
     },
@@ -3622,7 +3627,7 @@
         "Air Canada"
       ],
       "flights": [
-        "推测航班 AC1018"
+        "AC1018"
       ],
       "image": "/photos/DSC08005.jpg",
       "thumbnail": "/photos/thumbs/DSC08005.jpg",
@@ -3630,14 +3635,15 @@
       "livery": "现代黑白涂装",
       "registration": {
         "value": "C-GUPK",
-        "status": "inferred",
-        "basis": "机身部分标识及拍摄时间推测",
-        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gupk"
+        "status": "confirmed",
+        "basis": "照片机队编号与注册资料交叉核对",
+        "sourceUrl": "https://www.planespotters.net/airframe/airbus-a220-300-c-gupk-air-canada/e2w6j4"
       },
       "flightIdentification": {
-        "status": "inferred",
-        "basis": "机身部分标识及拍摄时间推测",
-        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gupk"
+        "status": "confirmed",
+        "basis": "拍摄时间、注册号与历史记录交叉核对",
+        "sourceUrl": "https://www.flightradar24.com/data/flights/ac1018",
+        "callsign": "ACA1018"
       },
       "capturedAt": "2026-10-24T12:33:21-04:00"
     },
@@ -4270,7 +4276,7 @@
         "Egyptair"
       ],
       "flights": [
-        "推测航班 MS996"
+        "MS996"
       ],
       "image": "/photos/DSC08319.jpg",
       "thumbnail": "/photos/thumbs/DSC08319.jpg",
@@ -4278,14 +4284,15 @@
       "livery": "标准涂装",
       "registration": {
         "value": "SU-GEU",
-        "status": "inferred",
-        "basis": "机身部分标识及拍摄时间推测",
+        "status": "confirmed",
+        "basis": "相邻 RAW 连拍中的完整注册号",
         "sourceUrl": "https://www.flightradar24.com/data/aircraft/su-geu"
       },
       "flightIdentification": {
-        "status": "inferred",
-        "basis": "机身部分标识及拍摄时间推测",
-        "sourceUrl": "https://www.flightradar24.com/data/aircraft/su-geu"
+        "status": "confirmed",
+        "basis": "拍摄时间、注册号与历史记录交叉核对",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/su-geu",
+        "callsign": "MSR996"
       },
       "capturedAt": "2026-10-24T13:06:29-04:00"
     },
@@ -6093,7 +6100,7 @@
         "Cathay Pacific"
       ],
       "flights": [
-        "推测航班 CX805"
+        "CX805"
       ],
       "image": "/photos/DSC09237.jpg",
       "thumbnail": "/photos/thumbs/DSC09237.jpg",
@@ -6106,9 +6113,10 @@
         "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-lxq"
       },
       "flightIdentification": {
-        "status": "inferred",
-        "basis": "机身部分标识及拍摄时间推测",
-        "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-lxq"
+        "status": "confirmed",
+        "basis": "拍摄时间、注册号与历史记录交叉核对",
+        "sourceUrl": "https://data-live.flightradar24.com/data/aircraft/b-lxq",
+        "callsign": "CPA805"
       },
       "capturedAt": "2026-10-24T16:01:15-04:00"
     },
@@ -11089,7 +11097,9 @@
       "filename": "DSC00768.ARW",
       "date": "2026-11-01",
       "airport": "YVR",
-      "models": [],
+      "models": [
+        "Beechcraft 1900D"
+      ],
       "airlines": [
         "Pacific Coastal Airlines"
       ],
@@ -11098,13 +11108,13 @@
       ],
       "image": "/photos/DSC00768.jpg",
       "thumbnail": "/photos/thumbs/DSC00768.jpg",
-      "note": "机型待确认",
+      "note": "",
       "livery": "标准涂装",
       "registration": {
         "value": "C-GPCR",
         "status": "confirmed",
-        "basis": "既有航班核对记录",
-        "sourceUrl": "https://useast.flightera.net/en/flight_details/Pacific%2BCoastal%2BAirlines/8P353/CAJ4/2026-11-01"
+        "basis": "照片机身标识",
+        "sourceUrl": "https://data-live.flightradar24.com/data/aircraft/c-gpcr"
       },
       "flightIdentification": {
         "status": "confirmed",
@@ -11494,9 +11504,9 @@
         "DSC09272",
         "DSC07978",
         "DSC07984",
+        "DSC09268",
         "DSC09279",
-        "DSC09288",
-        "DSC09268"
+        "DSC09288"
       ],
       "cover": "DSC09272",
       "unlocked": true,
@@ -11640,11 +11650,11 @@
         "DSC08617",
         "DSC08974",
         "DSC09083",
+        "DSC09096",
         "DSC09104",
         "DSC09502",
         "DSC09510",
-        "DSC09517",
-        "DSC09096"
+        "DSC09517"
       ],
       "cover": "DSC08110",
       "unlocked": true,
@@ -11824,9 +11834,9 @@
         "DSC07562",
         "DSC07651",
         "DSC07563",
+        "DSC08173",
         "DSC08175",
-        "DSC08768",
-        "DSC08173"
+        "DSC08768"
       ],
       "cover": "DSC07562",
       "unlocked": true,
@@ -12086,9 +12096,9 @@
         "DSC09561",
         "DSC08688",
         "DSC08703",
+        "DSC09553",
         "DSC09555",
-        "DSC09568",
-        "DSC09553"
+        "DSC09568"
       ],
       "cover": "DSC08695",
       "unlocked": true,
@@ -12147,6 +12157,25 @@
       ],
       "firstSeen": "2026-10-11",
       "lastSeen": "2026-10-25"
+    },
+    {
+      "id": "beechcraft-1900d",
+      "name": "Beechcraft 1900D",
+      "manufacturer": "Beechcraft",
+      "family": "1900",
+      "category": "涡桨飞机",
+      "shortName": "1900D",
+      "kind": "aircraft",
+      "photoIds": [
+        "DSC00768"
+      ],
+      "cover": "DSC00768",
+      "unlocked": true,
+      "airports": [
+        "YVR"
+      ],
+      "firstSeen": "2026-11-01",
+      "lastSeen": "2026-11-01"
     },
     {
       "id": "boeing-737-max-8",
@@ -12354,8 +12383,8 @@
       "kind": "aircraft",
       "photoIds": [
         "DSC08584",
-        "DSC08582",
-        "DSC08575"
+        "DSC08575",
+        "DSC08582"
       ],
       "cover": "DSC08584",
       "unlocked": true,
@@ -12624,13 +12653,13 @@
         "DSC09050",
         "DSC09125",
         "DSC09404",
+        "DSC09470",
         "DSC09707",
         "DSC09719",
         "DSC09722",
         "DSC09789",
         "DSC09870",
-        "DSC09892",
-        "DSC09470"
+        "DSC09892"
       ],
       "cover": "DSC09709",
       "unlocked": true,
@@ -12757,6 +12786,25 @@
       ],
       "firstSeen": "2026-10-25",
       "lastSeen": "2026-10-25"
+    },
+    {
+      "id": "cessna-citation-ii",
+      "name": "Cessna Citation II",
+      "manufacturer": "Cessna",
+      "family": "Citation",
+      "category": "公务机",
+      "shortName": "Citation II",
+      "kind": "aircraft",
+      "photoIds": [
+        "DSC07662"
+      ],
+      "cover": "DSC07662",
+      "unlocked": true,
+      "airports": [
+        "YYZ"
+      ],
+      "firstSeen": "2026-10-18",
+      "lastSeen": "2026-10-18"
     },
     {
       "id": "cessna-citation-x",
@@ -12952,11 +13000,11 @@
         "DSC07905",
         "DSC08024",
         "DSC08029",
+        "DSC08570",
         "DSC09480",
         "DSC09533",
         "DSC09614",
-        "DSC09812",
-        "DSC08570"
+        "DSC09812"
       ],
       "cover": "DSC07223",
       "unlocked": true,

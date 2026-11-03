@@ -592,5 +592,8 @@
   "画面包含多架飞机，各自保留所属航司的涂装。": "This photograph contains several aircraft in their respective airline liveries.",
   "仰拍仅见机腹，具体涂装版本无法从这张照片确认。": "Only the underside is visible; this photograph does not establish the specific livery version.",
   "打开高清 JPG": "Open high-resolution JPG",
-  "下载原尺寸 JPG": "Download full-size JPG"
+  "下载原尺寸 JPG": "Download full-size JPG",
+  "相邻 RAW 连拍中的完整注册号": "Full registration read from adjacent RAW burst frames",
+  "照片机队编号与注册资料交叉核对": "Visible fleet number cross-checked against aircraft records",
+  "同日同机呼号记录，时间仍待核对": "Same-day callsign record for this airframe; timing still needs verification"
 }

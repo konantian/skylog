@@ -6,8 +6,8 @@
       "livery": "标准涂装"
     },
     "DSC06147": {
-      "livery": "待确认",
-      "note": "仰拍仅见机腹，具体涂装版本无法从这张照片确认。"
+      "livery": "标准涂装",
+      "note": ""
     },
     "DSC06165": {
       "livery": "标准涂装"
@@ -296,7 +296,11 @@
       "livery": "Rouge 红白涂装"
     },
     "DSC07662": {
-      "livery": "白底条纹公务机涂装"
+      "livery": "白底条纹公务机涂装",
+      "models": [
+        "Cessna Citation II"
+      ],
+      "note": ""
     },
     "DSC07697": {
       "livery": "白底条纹公务机涂装"
@@ -1133,7 +1137,11 @@
       "livery": "标准涂装"
     },
     "DSC00768": {
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "models": [
+        "Beechcraft 1900D"
+      ],
+      "note": ""
     },
     "DSC00780": {
       "livery": "标准涂装"

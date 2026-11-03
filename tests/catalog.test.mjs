@@ -17,7 +17,7 @@ test('all entries and photos have consistent links and unlock states',()=>{
     assert.ok(e.cover===null||e.photoIds.includes(e.cover));
     for(const id of e.photoIds){const p=data.photos.find(p=>p.id===id);assert.ok((e.kind==='aircraft'?p.models:p.airlines).includes(e.name));}
   }
-  assert.equal(data.aircraft.filter(e=>e.unlocked).length,46);
+  assert.equal(data.aircraft.filter(e=>e.unlocked).length,48);
   assert.equal(data.airlines.filter(e=>e.unlocked).length,45);
 });
 test('manufacturer, airline and model combine on actual photographs',()=>{
@@ -47,9 +47,21 @@ test('search understands punctuation and Chinese airline names',()=>{
   assert.ok(ps.length>0&&ps.every(p=>p.airlines.includes('Lufthansa')));
 });
 test('empty models stay visible until model-specific filters are selected',()=>{
-  const p=data.photos.find(p=>p.models.length===0);
+  const p={...data.photos[0],models:[]};
   assert.ok(photoMatches(p,f({}),data.aircraft));
   assert.equal(photoMatches(p,f({manufacturer:'Airbus'}),data.aircraft),false);
+});
+test('reviewed business and turboprop models unlock under their own manufacturers',()=>{
+  for(const [photoId,name,manufacturer,category] of [
+    ['DSC07662','Cessna Citation II','Cessna','公务机'],
+    ['DSC00768','Beechcraft 1900D','Beechcraft','涡桨飞机'],
+  ]){
+    const p=data.photos.find(p=>p.id===photoId), model=data.aircraft.find(m=>m.name===name);
+    assert.deepEqual(p.models,[name]);assert.equal(p.note,'');
+    assert.equal(model.manufacturer,manufacturer);assert.equal(model.category,category);
+    assert.equal(model.unlocked,true);assert.equal(model.cover,photoId);
+    assert.deepEqual(filterPhotos(data.photos,f({manufacturer,model:name}),data.aircraft).map(p=>p.id),[photoId]);
+  }
 });
 test('visual review fixes the Porter photo without making a Cargojet unlock',()=>{
   const p=data.photos.find(p=>p.id==='DSC09524');

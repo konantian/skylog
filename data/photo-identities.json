@@ -1571,8 +1571,8 @@
     "registration": {
       "value": "C-GPCR",
       "status": "confirmed",
-      "basis": "既有航班核对记录",
-      "sourceUrl": "https://useast.flightera.net/en/flight_details/Pacific%2BCoastal%2BAirlines/8P353/CAJ4/2026-11-01"
+      "basis": "照片机身标识",
+      "sourceUrl": "https://data-live.flightradar24.com/data/aircraft/c-gpcr"
     },
     "flights": [
       "8P353"
@@ -1587,7 +1587,13 @@
       "cameraTimestamp": "2026-11-01T17:10:29-04:00",
       "airportTimestamp": "2026-11-01T14:10:29-07:00",
       "route": "YAA–YVR",
-      "reportedArrival": "2026-11-01T14:18:00-07:00"
+      "reportedArrival": "2026-11-01T14:18:00-07:00",
+      "registrationNote": "C-GPCR is fully readable on both the rear fuselage and the underside of the wing in DSC00768.",
+      "modelNote": "The airframe is a Beechcraft 1900D. C-GPCR aircraft records and Pacific Coastal aircraft documentation agree with the photographed tall cabin, T-tail and twin turboprop configuration.",
+      "modelSources": [
+        "https://data-live.flightradar24.com/data/aircraft/c-gpcr",
+        "https://www.pacificcoastal.com/aircraft-page/"
+      ]
     }
   },
   "DSC00780": {
@@ -2045,22 +2051,34 @@
     "reviewedAt": "2026-11-03",
     "registration": {
       "value": "N765YX",
-      "status": "inferred",
-      "basis": "机身部分标识及拍摄时间推测",
-      "sourceUrl": "https://planefinder.net/data/aircraft/N765YX"
+      "status": "confirmed",
+      "basis": "照片机队编号与注册资料交叉核对",
+      "sourceUrl": "https://www.airhistory.net/location/1444/Montr%C3%A9al-Pierre-Elliott-Trudeau-International-CYUL-YUL"
     },
     "flights": [
-      "推测航班 UA3648"
+      "UA3648"
     ],
     "flightIdentification": {
-      "status": "inferred",
-      "basis": "机身部分标识及拍摄时间推测",
+      "status": "confirmed",
+      "basis": "拍摄时间、注册号与历史记录交叉核对",
       "sourceUrl": "https://planefinder.net/data/aircraft/N765YX"
     },
     "evidence": {
       "archive": "YYZ 2026-10-11 / 18 neighboring-frame review",
-      "registrationNote": "原片前起落架门765清晰；United涂装与E175结构。N765YX当天11:20EDT离港，照片11:11:57；注册号主体不可见，作为高可能推测。纠正旧Boeing737标签。",
-      "flightNote": "原片前起落架门765清晰；United涂装与E175结构。N765YX当天11:20EDT离港，照片11:11:57；注册号主体不可见，作为高可能推测。纠正旧Boeing737标签。"
+      "registrationNote": "Full-resolution RAW confirms nose-gear fleet number 765. AirHistory photo 969959, taken 2026-08-07, identifies United Express / Republic Airways E175LR fleet 765 as N765YX. The complete registration is not claimed to be visible.",
+      "flightNote": "Plane Finder lists N765YX operating UA3648, YYZ–EWR, on 2026-10-11 at 11:20 EDT. Fleet-number identification, departure direction and the independently established camera lag of about eight minutes agree.",
+      "rawReview": {
+        "reviewedAt": "2026-11-03",
+        "frames": [
+          {
+            "photo": "DSC06147",
+            "capturedAt": "2026-10-11T11:11:57-04:00",
+            "reading": "765 on both nose-gear doors; blue engine nacelles and winglets"
+          }
+        ],
+        "fleetNumber": "765"
+      },
+      "liveryNote": "Full RAW shows blue engine nacelles, blue winglets and the blue curved fuselage/gray-belly boundary of the standard United blue scheme. Adjacent DSC06138–DSC06146 show the same aircraft; no special livery is identified."
     }
   },
   "DSC06165": {
@@ -4002,16 +4020,26 @@
     },
     "flights": [],
     "flightIdentification": {
-      "status": "unknown",
-      "basis": "公开记录未提供当天航班号或呼号"
+      "status": "inferred",
+      "basis": "同日同机呼号记录，时间仍待核对",
+      "sourceUrl": "https://skymeter.io/tail/N47EK",
+      "callsign": "LJY47"
     },
     "evidence": {
       "archive": "YYZ 2026-10-11 / 18 neighboring-frame review",
       "registrationNote": "DSC07465: registration N47EK visible",
-      "flightNote": "相邻DSC07465确认N47EK；未找到当天公开飞行记录/呼号。",
+      "flightNote": "SkyMeter records N47EK using LJY47 on the KLBE–CYYZ leg on 2026-10-18. Its search-indexed page displays 8:29 PM–9:17 PM without an explicit time zone; raw UTC timestamps were unavailable. Keep LJY47 inferred, leave commercial flight numbers empty, and do not treat that displayed time as EDT.",
       "neighborPhotos": [
         "DSC07465"
-      ]
+      ],
+      "callsignCandidate": {
+        "registration": "N47EK",
+        "callsign": "LJY47",
+        "date": "2026-10-18",
+        "route": "KLBE–CYYZ",
+        "sourceUrl": "https://skymeter.io/tail/N47EK",
+        "limitation": "Displayed time zone and precise arrival time remain unverified."
+      }
     }
   },
   "DSC07486": {
@@ -4258,21 +4286,31 @@
     "reviewedAt": "2026-11-03",
     "registration": {
       "value": "C-GJNE",
-      "status": "inferred",
-      "basis": "机身部分标识及拍摄时间推测",
-      "sourceUrl": "https://www.flightradar24.com/data/flights/fsy332"
+      "status": "confirmed",
+      "basis": "相邻 RAW 连拍中的完整注册号",
+      "sourceUrl": "https://www.regosearch.com/aircraft/ca/GJNE"
     },
     "flights": [],
     "flightIdentification": {
-      "status": "inferred",
-      "basis": "机身部分标识及拍摄时间推测",
-      "sourceUrl": "https://www.flightradar24.com/data/flights/fsy332",
+      "status": "confirmed",
+      "basis": "拍摄时间、注册号与历史记录交叉核对",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gjne",
       "callsign": "FSY332"
     },
     "evidence": {
       "archive": "YYZ 2026-10-11 / 18 neighboring-frame review",
-      "registrationNote": "DSC07661可见C-G前缀，DSC07664可见NE尾缀，中间J被机翼遮住；C-GJNE实际落地19:35UTC=15:35EDT，照片15:26:28。机型与呼号为高可能推测。",
-      "flightNote": "DSC07661可见C-G前缀，DSC07664可见NE尾缀，中间J被机翼遮住；C-GJNE实际落地19:35UTC=15:35EDT，照片15:26:28。机型与呼号为高可能推测。"
+      "registrationNote": "The unobscured vertical tail in DSC07658 reveals all of C-GJNE, four seconds before DSC07662 in the same landing sequence. Registry identifies Cessna 550, serial 550-0332, marketed as Citation II.",
+      "flightNote": "FR24 lists C-GJNE as FSY332, TEB–YYZ, on 2026-10-18; departure 18:20 UTC and landing 19:35 UTC. The selected frame is 19:26:28 UTC on the slow camera clock. FSY332 is retained as an operating callsign, not a commercial flight number.",
+      "rawReview": {
+        "reviewedAt": "2026-11-03",
+        "frames": [
+          {
+            "photo": "DSC07658",
+            "capturedAt": "2026-10-18T15:26:24-04:00",
+            "reading": "C-GJNE fully readable on the vertical tail"
+          }
+        ]
+      }
     }
   },
   "DSC07697": {
@@ -4491,22 +4529,33 @@
     "reviewedAt": "2026-11-03",
     "registration": {
       "value": "B-LXM",
-      "status": "inferred",
-      "basis": "机身部分标识及拍摄时间推测",
-      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-lxm"
+      "status": "confirmed",
+      "basis": "相邻 RAW 连拍中的完整注册号",
+      "sourceUrl": "https://planefinder.net/data/aircraft/B-LXM"
     },
     "flights": [
-      "推测航班 CX805"
+      "CX805"
     ],
     "flightIdentification": {
-      "status": "inferred",
-      "basis": "机身部分标识及拍摄时间推测",
-      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-lxm"
+      "status": "confirmed",
+      "basis": "拍摄时间、注册号与历史记录交叉核对",
+      "sourceUrl": "https://planefinder.net/data/aircraft/B-LXM"
     },
     "evidence": {
       "archive": "YYZ 2026-10-11 / 18 neighboring-frame review",
-      "registrationNote": "六轮主起落架及加长机身",
-      "flightNote": "DSC07804可读B-LX，末字符M/N不够清楚。B-LXM当天20:05UTC=16:05EDT起飞，与照片15:56:47地面滑行匹配；B-LXN同期在LHR/HKG，被排除。高可能推测。"
+      "registrationNote": "Full-resolution DSC07804 resolves the final character as M; B-LXM is readable on the rear fuselage, three seconds before DSC07805 during the same runway-entry turn.",
+      "flightNote": "Plane Finder links B-LXM to CX805 YYZ–HKG on 2026-10-18 with departure listed at 15:41 EDT. The previously archived FR24 takeoff is 20:05 UTC. The photo at camera 15:56:47 EDT shows runway entry, consistent with that departure after allowing for the camera lag; it is not the earlier CX828 arrival.",
+      "rawReview": {
+        "reviewedAt": "2026-11-03",
+        "frames": [
+          {
+            "photo": "DSC07804",
+            "capturedAt": "2026-10-18T15:56:44-04:00",
+            "reading": "B-LXM fully readable beneath the rear cabin windows"
+          }
+        ]
+      },
+      "flightHistoryUrl": "https://planefinder.net/data/flight/CX805/history/5-85576568"
     }
   },
   "DSC07817": {
@@ -4796,21 +4845,48 @@
     "reviewedAt": "2026-11-03",
     "registration": {
       "value": "C-GUPK",
-      "status": "inferred",
-      "basis": "机身部分标识及拍摄时间推测",
-      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gupk"
+      "status": "confirmed",
+      "basis": "照片机队编号与注册资料交叉核对",
+      "sourceUrl": "https://www.planespotters.net/airframe/airbus-a220-300-c-gupk-air-canada/e2w6j4"
     },
     "flights": [
-      "推测航班 AC1018"
+      "AC1018"
     ],
     "flightIdentification": {
-      "status": "inferred",
-      "basis": "机身部分标识及拍摄时间推测",
-      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gupk"
+      "status": "confirmed",
+      "basis": "拍摄时间、注册号与历史记录交叉核对",
+      "sourceUrl": "https://www.flightradar24.com/data/flights/ac1018",
+      "callsign": "ACA1018"
     },
     "evidence": {
       "archive": "YYZ 2026-10-24 registration / ADS-B review",
-      "registrationNote": "Registration not legible in selected views and neighboring embedded frames; Air Canada A220 type, approach sequence and corrected time match AC1018 / C-GUPK."
+      "registrationNote": "RAW DSC08003 clearly shows fleet 124 on the nose-gear door; DSC08004 independently shows 124 on the tail. The continuous burst includes both selected frames. Aircraft records map Air Canada A220-300 fleet 124 to C-GUPK; the fuselage registration itself is not claimed to be visible.",
+      "flightNote": "Archived same-day ADS-B identifies C-GUPK transmitting ACA1018 on the 06R approach. First runway-ground observation is 2026-10-24T16:41:47.040Z, about 8.5 minutes after the camera timestamp. The callsign/registration track, approach direction and fleet marking agree.",
+      "rawReview": {
+        "reviewedAt": "2026-11-03",
+        "frames": [
+          {
+            "photo": "DSC08003",
+            "capturedAt": "2026-10-24T12:33:18-04:00",
+            "reading": "124 on the nose-gear door"
+          },
+          {
+            "photo": "DSC08004",
+            "capturedAt": "2026-10-24T12:33:20-04:00",
+            "reading": "124 at the top of the vertical tail"
+          }
+        ],
+        "fleetNumber": "124"
+      },
+      "track": [
+        {
+          "registration": "C-GUPK",
+          "operating_callsign": "ACA1018",
+          "timestamp_utc": "2026-10-24T16:41:47.040Z",
+          "event": "First ground observation on runway 06R; ADS-B-derived, not an official landing timestamp",
+          "source": "adsb.fi"
+        }
+      ]
     }
   },
   "DSC08005": {
@@ -4819,21 +4895,48 @@
     "reviewedAt": "2026-11-03",
     "registration": {
       "value": "C-GUPK",
-      "status": "inferred",
-      "basis": "机身部分标识及拍摄时间推测",
-      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gupk"
+      "status": "confirmed",
+      "basis": "照片机队编号与注册资料交叉核对",
+      "sourceUrl": "https://www.planespotters.net/airframe/airbus-a220-300-c-gupk-air-canada/e2w6j4"
     },
     "flights": [
-      "推测航班 AC1018"
+      "AC1018"
     ],
     "flightIdentification": {
-      "status": "inferred",
-      "basis": "机身部分标识及拍摄时间推测",
-      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gupk"
+      "status": "confirmed",
+      "basis": "拍摄时间、注册号与历史记录交叉核对",
+      "sourceUrl": "https://www.flightradar24.com/data/flights/ac1018",
+      "callsign": "ACA1018"
     },
     "evidence": {
       "archive": "YYZ 2026-10-24 registration / ADS-B review",
-      "registrationNote": "Registration not legible in selected views and neighboring embedded frames; Air Canada A220 type, approach sequence and corrected time match AC1018 / C-GUPK."
+      "registrationNote": "RAW DSC08003 clearly shows fleet 124 on the nose-gear door; DSC08004 independently shows 124 on the tail. The continuous burst includes both selected frames. Aircraft records map Air Canada A220-300 fleet 124 to C-GUPK; the fuselage registration itself is not claimed to be visible.",
+      "flightNote": "Archived same-day ADS-B identifies C-GUPK transmitting ACA1018 on the 06R approach. First runway-ground observation is 2026-10-24T16:41:47.040Z, about 8.5 minutes after the camera timestamp. The callsign/registration track, approach direction and fleet marking agree.",
+      "rawReview": {
+        "reviewedAt": "2026-11-03",
+        "frames": [
+          {
+            "photo": "DSC08003",
+            "capturedAt": "2026-10-24T12:33:18-04:00",
+            "reading": "124 on the nose-gear door"
+          },
+          {
+            "photo": "DSC08004",
+            "capturedAt": "2026-10-24T12:33:20-04:00",
+            "reading": "124 at the top of the vertical tail"
+          }
+        ],
+        "fleetNumber": "124"
+      },
+      "track": [
+        {
+          "registration": "C-GUPK",
+          "operating_callsign": "ACA1018",
+          "timestamp_utc": "2026-10-24T16:41:47.040Z",
+          "event": "First ground observation on runway 06R; ADS-B-derived, not an official landing timestamp",
+          "source": "adsb.fi"
+        }
+      ]
     }
   },
   "DSC08024": {
@@ -5255,21 +5358,52 @@
     "reviewedAt": "2026-11-03",
     "registration": {
       "value": "SU-GEU",
-      "status": "inferred",
-      "basis": "机身部分标识及拍摄时间推测",
+      "status": "confirmed",
+      "basis": "相邻 RAW 连拍中的完整注册号",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/su-geu"
     },
     "flights": [
-      "推测航班 MS996"
+      "MS996"
     ],
     "flightIdentification": {
-      "status": "inferred",
-      "basis": "机身部分标识及拍摄时间推测",
-      "sourceUrl": "https://www.flightradar24.com/data/aircraft/su-geu"
+      "status": "confirmed",
+      "basis": "拍摄时间、注册号与历史记录交叉核对",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/su-geu",
+      "callsign": "MSR996"
     },
     "evidence": {
       "archive": "YYZ 2026-10-24 registration / ADS-B review",
-      "registrationNote": "Distant departure; airline, aircraft type, time and recorded departure track agree, registration not readable."
+      "registrationNote": "Full-resolution RAWs DSC08318, DSC08322 and DSC08326 resolve SU-GEU consistently on the rear fuselage of the same Egyptair 787-9 departure sequence.",
+      "flightNote": "FR24 lists SU-GEU on MS996 YYZ–CAI, 2026-10-24, actual departure 17:14 UTC. Archived ADS-B separately links SU-GEU to MSR996 on that date. The camera 13:06:29 EDT frame shows the departure climb and agrees with the known clock lag.",
+      "rawReview": {
+        "reviewedAt": "2026-11-03",
+        "frames": [
+          {
+            "photo": "DSC08318",
+            "capturedAt": "2026-10-24T13:06:28-04:00",
+            "reading": "SU-GEU on rear fuselage"
+          },
+          {
+            "photo": "DSC08322",
+            "capturedAt": "2026-10-24T13:06:35-04:00",
+            "reading": "SU-GEU on rear fuselage"
+          },
+          {
+            "photo": "DSC08326",
+            "capturedAt": "2026-10-24T13:06:41-04:00",
+            "reading": "SU-GEU on rear fuselage"
+          }
+        ]
+      },
+      "track": [
+        {
+          "registration": "SU-GEU",
+          "operating_callsign": "MSR996",
+          "timestamp_utc": "2026-10-24T16:48:26.737Z",
+          "event": "Observed on ground at YYZ before the photographed departure",
+          "source": "adsb.fi"
+        }
+      ]
     }
   },
   "DSC08337": {
@@ -6500,16 +6634,42 @@
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-lxq"
     },
     "flights": [
-      "推测航班 CX805"
+      "CX805"
     ],
     "flightIdentification": {
-      "status": "inferred",
-      "basis": "机身部分标识及拍摄时间推测",
-      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-lxq"
+      "status": "confirmed",
+      "basis": "拍摄时间、注册号与历史记录交叉核对",
+      "sourceUrl": "https://data-live.flightradar24.com/data/aircraft/b-lxq",
+      "callsign": "CPA805"
     },
     "evidence": {
       "archive": "YYZ 2026-10-24 registration / ADS-B review",
-      "registrationNote": "B-LXQ fully readable on rear fuselage; nose gear marked XQ. Flight remains inferred because this is a taxiing view."
+      "registrationNote": "B-LXQ is fully readable on the rear fuselage and XQ on the nose-gear door. RAW DSC09232–DSC09247 shows this same aircraft taxiing and turning onto the runway.",
+      "flightNote": "Same-day ADS-B identifies B-LXQ transmitting CPA805 at YYZ from 19:49:12 UTC. FR24 records CX805 YYZ–HKG takeoff at 20:10 UTC on 2026-10-24. Camera 16:01:15 EDT plus its independently established lag places the runway-entry sequence just before this departure. The earlier CX828 arrival was at 17:54 UTC.",
+      "rawReview": {
+        "reviewedAt": "2026-11-03",
+        "frames": [
+          {
+            "photo": "DSC09237",
+            "capturedAt": "2026-10-24T16:01:15-04:00",
+            "reading": "B-LXQ on rear fuselage; XQ on nose-gear door"
+          },
+          {
+            "photo": "DSC09247",
+            "capturedAt": "2026-10-24T16:01:45-04:00",
+            "reading": "Same aircraft completing the runway-entry turn"
+          }
+        ]
+      },
+      "track": [
+        {
+          "registration": "B-LXQ",
+          "operating_callsign": "CPA805",
+          "timestamp_utc": "2026-10-24T19:49:12.438Z",
+          "event": "Observed on ground at YYZ before the photographed runway entry",
+          "source": "adsb.fi"
+        }
+      ]
     }
   },
   "DSC09272": {

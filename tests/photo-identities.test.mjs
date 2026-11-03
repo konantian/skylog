@@ -49,18 +49,43 @@ test('new direct readings match historical operating flights, not nearby aircraf
 });
 
 test('airframe certainty remains separate from uncertain flight attribution',()=>{
-  for(const id of ['DSC00376','DSC09237']){
+  for(const id of ['DSC00376','DSC07460']){
     const p=byId.get(id);assert.equal(p.registration.status,'confirmed');assert.equal(p.flightIdentification.status,'inferred');
   }
-  for(const id of ['DSC06147','DSC07662','DSC07805','DSC08002','DSC08005','DSC08319']){
-    const p=byId.get(id);assert.equal(p.registration.status,'inferred');assert.equal(flightsForPhoto(p,log.flights).length,0);
-  }
+  const inferred={...byId.get('DSC06147'),registration:{value:log.flights.find(f=>f.registration).registration,status:'inferred'}};
+  assert.equal(flightsForPhoto(inferred,log.flights).length,0);
+  assert.equal(byId.get('DSC07460').flightIdentification.callsign,'LJY47');
+  assert.deepEqual(byId.get('DSC07460').flights,[]);
   assert.deepEqual(byId.get('DSC00376').flights,['推测航班 AC8376']);
   assert.ok(!byId.get('DSC00376').flights.some(f=>f.includes('AC8377')));
   assert.equal(byId.get('DSC00376').capturedAt,'2026-10-31T12:17:25-07:00');
   // B.C. retains UTC-07:00 from 2026; the camera itself retained its -04:00 EXIF offset.
   // https://news.gov.bc.ca/releases/2026AG0013-000209
   assert.ok(catalog.photos.filter(p=>p.date==='2026-11-01').every(p=>p.capturedAt.endsWith('-07:00')));
+});
+
+test('full RAW readings resolve nearby frames only after date and fleet checks',()=>{
+  for(const [id,registration,flight,callsign] of [
+    ['DSC06147','N765YX','UA3648'],['DSC07662','C-GJNE',null,'FSY332'],
+    ['DSC07805','B-LXM','CX805'],['DSC08002','C-GUPK','AC1018','ACA1018'],
+    ['DSC08005','C-GUPK','AC1018','ACA1018'],['DSC08319','SU-GEU','MS996','MSR996'],
+    ['DSC09237','B-LXQ','CX805','CPA805'],
+  ]){
+    const p=byId.get(id), evidence=identities[id].evidence;
+    assert.equal(p.registration.value,registration);assert.equal(p.registration.status,'confirmed');
+    assert.deepEqual(p.flights,flight?[flight]:[]);assert.equal(p.flightIdentification.status,'confirmed');
+    assert.equal(p.flightIdentification.callsign,callsign);
+    assert.ok(evidence.rawReview.frames.length>0);
+    for(const frame of evidence.rawReview.frames){
+      assert.equal(frame.capturedAt.slice(0,10),p.date);
+      assert.ok(Math.abs(Date.parse(frame.capturedAt)-Date.parse(p.capturedAt))<=30000);
+      assert.ok(frame.reading.length>0);
+    }
+  }
+  assert.equal(identities.DSC06147.evidence.rawReview.fleetNumber,'765');
+  assert.equal(identities.DSC08002.evidence.rawReview.fleetNumber,'124');
+  assert.deepEqual(identities.DSC08002.evidence.rawReview,identities.DSC08005.evidence.rawReview);
+  assert.equal(byId.get('DSC06147').livery,'标准涂装');
 });
 
 test('callsigns stay distinct from commercial flight numbers and remain searchable',()=>{
@@ -79,5 +104,5 @@ test('stored and multi-aircraft photographs do not inherit active flight numbers
   const ramp=byId.get('DSC06736');assert.equal(ramp.registration,undefined);assert.deepEqual(ramp.flights,[]);
   assert.deepEqual(ramp.subjects.map(s=>[s.airline,s.registration.value]),[['Air Canada','C-FIUW'],['SWISS','HB-JHJ']]);
   assert.ok(filterPhotos(catalog.photos,{...initialFilters,query:'C-FIUW'},catalog.aircraft,catalog.airlines).some(p=>p.id===ramp.id));
-  for(const id of ['DSC06296','DSC07460','DSC07884','DSC07935'])assert.equal(byId.get(id).flightIdentification.status,'unknown');
+  for(const id of ['DSC06296','DSC07884','DSC07935'])assert.equal(byId.get(id).flightIdentification.status,'unknown');
 });
