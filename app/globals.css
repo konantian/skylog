@@ -62,3 +62,9 @@
 .hero-slide-buttons>button:disabled{opacity:.45;cursor:default}
 
 .flight-endpoint{display:flex;flex-direction:column;align-items:flex-start;min-width:0}.flight-endpoint small{color:var(--muted);font-family:var(--sans);font-size:11px;line-height:1.4;letter-spacing:0;margin-top:2px;overflow-wrap:anywhere}.flight-route>div{align-items:flex-start}.flight-route .route-line{margin-top:16px}.flight-route>span{display:block;margin-top:8px}
+
+/* Labels stay readable over both the image and its aspect-ratio letterboxing. */
+.hero-gallery .photo-corner{top:16px;left:18px;z-index:2;padding:6px 9px;border:1px solid #ffffff24;border-radius:3px;background:#081722cc;color:#f4f8fa;opacity:1;font-size:9px;line-height:1.4;letter-spacing:1.3px;text-shadow:none}
+.hero-gallery .hero-photo:after{background:linear-gradient(transparent 42%,#07131f35 62%,#07131fe8 100%)}
+.hero-gallery .hero-caption{color:#fff;text-shadow:0 1px 3px #0009}.hero-gallery .hero-caption small{color:#e4edf3}.hero-gallery .hero-caption span span{color:#f0f5f8}
+@media(max-width:560px){.hero-gallery .photo-corner{top:12px;left:12px;font-size:8px;padding:5px 7px;letter-spacing:1px}}
