@@ -1,0 +1,92 @@
+{
+  "families": {
+    "A220": {
+      "description": "原 C Series 家族，采用五座并排客舱。小型喷气客机的尺寸，却有明显的后掠翼和翼尖小翼。",
+      "configuration": "双发 · 单通道 · 2 + 3 座椅布局",
+      "source": "https://www.airbus.com/en/products-services/commercial-aircraft/passenger-aircraft/a220-family"
+    },
+    "A320 family": {
+      "description": "A318、A319、A320 和 A321 组成的单通道家族。侧面辨认时可比较机身长度、舱门布局及发动机；neo 与早期型号不能只靠翼尖区分。",
+      "configuration": "双发 · 单通道",
+      "source": "https://www.airbus.com/en/products-services/commercial-aircraft/passenger-aircraft/a320-family"
+    },
+    "A330": {
+      "description": "空客双发宽体家族，客运型号常见经济舱为 2–4–2 布局。A330neo 使用新一代发动机及翼尖设计；货机与客机的用途需分别看具体型号。",
+      "configuration": "双发 · 双通道",
+      "source": "https://www.airbus.com/en/products-services/commercial-aircraft/passenger-aircraft/a330-family"
+    },
+    "A350": {
+      "description": "新一代双发宽体家族，驾驶舱黑色窗框和流畅上扬的翼尖很醒目。-1000 比 -900 机身更长，主起落架轮组也不同。",
+      "configuration": "双发 · 双通道 · Trent XWB",
+      "source": "https://www.airbus.com/en/products-services/commercial-aircraft/passenger-aircraft/a350-family"
+    },
+    "A380": {
+      "description": "贯穿全机身的双层客舱、四台发动机和庞大的翼展，是最鲜明的识别点。实际座位数依航司客舱而异。",
+      "configuration": "四发 · 全长双层客舱",
+      "source": "https://www.airbus.com/en/products-services/commercial-aircraft/passenger-aircraft/a380"
+    },
+    "737 NG": {
+      "description": "737 Next Generation 家族。保持较低的机身与单通道布局，常见 CFM56-7B 发动机；各航司的翼尖改装可能不同。",
+      "configuration": "双发 · 单通道 · CFM56-7B",
+      "source": "https://www.boeing.com/commercial/737ng"
+    },
+    "737 MAX": {
+      "description": "737 的新一代系列，采用 LEAP-1B 发动机及上下分叉的先进技术翼梢。判断 MAX 时应结合发动机和翼尖，不能只凭机身长度。",
+      "configuration": "双发 · 单通道 · LEAP-1B",
+      "source": "https://www.boeing.com/commercial/737max/"
+    },
+    "777": {
+      "description": "大型双发宽体家族。硕大的发动机和每侧六轮主起落架很有辨识度；-300ER 的机身比 -200 系列明显更长。",
+      "configuration": "双发 · 双通道",
+      "source": "https://www.boeing.com/commercial/777"
+    },
+    "787": {
+      "description": "Dreamliner 家族。发动机后缘的锯齿形结构、后掠翼尖与飞行时的机翼曲线，都是很适合留意的细节。",
+      "configuration": "双发 · 双通道 · GEnx / Trent 1000",
+      "source": "https://www.boeing.com/commercial/787"
+    },
+    "CRJ": {
+      "description": "支线喷气机家族，机尾两侧安装发动机，采用 T 形尾翼。CRJ-200、700 和 900 的长度与载客量不同。",
+      "configuration": "尾置双发 · T 形尾翼",
+      "source": "https://mhirj.com/en/products-and-services/crj-series"
+    },
+    "Dash 8-400": {
+      "description": "Dash 8 家族中的较大型号。高翼布局、两台涡桨发动机及 T 形尾翼，是与喷气支线机区别最明显的地方。",
+      "configuration": "双发涡桨 · 高翼",
+      "source": "https://dehavilland.com/dash-8-400/"
+    },
+    "ATR 72": {
+      "description": "双发涡桨支线飞机，采用高翼与 T 形尾翼。低速进近时可留意螺旋桨的动态，而不只追求完全凝固的桨叶。",
+      "configuration": "双发涡桨 · 高翼",
+      "source": "https://www.atr-aircraft.com/wp-content/uploads/2022/06/ATR_Fiche72-600-3.pdf"
+    }
+  },
+  "specs": {
+    "Airbus A350-900": {
+      "length": "66.80 m",
+      "span": "64.75 m"
+    },
+    "Airbus A350-1000": {
+      "length": "73.78 m",
+      "span": "64.75 m"
+    },
+    "Boeing 777-200ER": {
+      "length": "63.7 m"
+    },
+    "Boeing 777-200LR": {
+      "length": "63.7 m"
+    },
+    "Boeing 777-300ER": {
+      "length": "73.9 m"
+    },
+    "Boeing 787-8": {
+      "length": "56.7 m"
+    },
+    "Boeing 787-9": {
+      "length": "62.8 m"
+    },
+    "Boeing 787-10": {
+      "length": "68.3 m"
+    }
+  }
+}

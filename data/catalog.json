@@ -1260,7 +1260,12 @@
       "image": "/photos/DSC07141.jpg",
       "thumbnail": "/photos/thumbs/DSC07141.jpg",
       "note": "",
-      "livery": "Congratulations 文字主题涂装"
+      "livery": "Congratulations 文字主题涂装",
+      "registration": {
+        "value": "C-FIVM",
+        "status": "confirmed",
+        "basis": "照片机身标识"
+      }
     },
     {
       "id": "DSC07164",
@@ -1972,7 +1977,12 @@
       "image": "/photos/DSC07776.jpg",
       "thumbnail": "/photos/thumbs/DSC07776.jpg",
       "note": "",
-      "livery": "现代黑白涂装"
+      "livery": "现代黑白涂装",
+      "registration": {
+        "value": "C-FNND",
+        "status": "confirmed",
+        "basis": "照片机身标识"
+      }
     },
     {
       "id": "DSC07793",
@@ -2401,7 +2411,12 @@
       "image": "/photos/DSC08110.jpg",
       "thumbnail": "/photos/thumbs/DSC08110.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "HB-JHB",
+        "status": "confirmed",
+        "basis": "照片机身标识"
+      }
     },
     {
       "id": "DSC08113",
@@ -2604,7 +2619,7 @@
       "image": "/photos/DSC08246.jpg",
       "thumbnail": "/photos/thumbs/DSC08246.jpg",
       "note": "",
-      "livery": "复古条纹涂装"
+      "livery": "American Eagle 标准涂装"
     },
     {
       "id": "DSC08277",
@@ -3071,7 +3086,12 @@
       "image": "/photos/DSC08611.jpg",
       "thumbnail": "/photos/thumbs/DSC08611.jpg",
       "note": "",
-      "livery": "加拿大队主题涂装"
+      "livery": "加拿大队主题涂装",
+      "registration": {
+        "value": "C-GEGC",
+        "status": "confirmed",
+        "basis": "照片机身标识"
+      }
     },
     {
       "id": "DSC08617",
@@ -3394,7 +3414,12 @@
       "image": "/photos/DSC08880.jpg",
       "thumbnail": "/photos/thumbs/DSC08880.jpg",
       "note": "",
-      "livery": "复古条纹涂装"
+      "livery": "American Eagle 标准涂装",
+      "registration": {
+        "value": "N651AE",
+        "status": "confirmed",
+        "basis": "照片机身标识"
+      }
     },
     {
       "id": "DSC08894",
@@ -3990,7 +4015,12 @@
       "image": "/photos/DSC09420.jpg",
       "thumbnail": "/photos/thumbs/DSC09420.jpg",
       "note": "",
-      "livery": "Congratulations 文字主题涂装"
+      "livery": "Congratulations 文字主题涂装",
+      "registration": {
+        "value": "C-FIVM",
+        "status": "confirmed",
+        "basis": "照片机身标识"
+      }
     },
     {
       "id": "DSC09427",
@@ -4193,7 +4223,12 @@
       "image": "/photos/DSC09524.jpg",
       "thumbnail": "/photos/thumbs/DSC09524.jpg",
       "note": "已按机身 Porter 字样与 Dash 8 外形修正旧关键词误标。",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "C-GLQD",
+        "status": "confirmed",
+        "basis": "照片机身标识"
+      }
     },
     {
       "id": "DSC09533",
@@ -5664,7 +5699,13 @@
       "image": "/photos/DSC00162.jpg",
       "thumbnail": "/photos/thumbs/DSC00162.jpg",
       "note": "",
-      "livery": "现代黑白涂装"
+      "livery": "现代黑白涂装",
+      "registration": {
+        "value": "C-FJQZ",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fjqz"
+      }
     },
     {
       "id": "DSC00165",
@@ -5683,7 +5724,13 @@
       "image": "/photos/DSC00165.jpg",
       "thumbnail": "/photos/thumbs/DSC00165.jpg",
       "note": "",
-      "livery": "现代黑白涂装"
+      "livery": "现代黑白涂装",
+      "registration": {
+        "value": "C-FJQZ",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fjqz"
+      }
     },
     {
       "id": "DSC00187",
@@ -5702,7 +5749,13 @@
       "image": "/photos/DSC00187.jpg",
       "thumbnail": "/photos/thumbs/DSC00187.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "JA837J",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightstats.com/v2/flight-details/JL/18?date=31&flightId=1417279963&month=10&year=2026"
+      }
     },
     {
       "id": "DSC00191",
@@ -5721,7 +5774,13 @@
       "image": "/photos/DSC00191.jpg",
       "thumbnail": "/photos/thumbs/DSC00191.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "JA837J",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightstats.com/v2/flight-details/JL/18?date=31&flightId=1417279963&month=10&year=2026"
+      }
     },
     {
       "id": "DSC00196",
@@ -5740,7 +5799,13 @@
       "image": "/photos/DSC00196.jpg",
       "thumbnail": "/photos/thumbs/DSC00196.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "JA837J",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightstats.com/v2/flight-details/JL/18?date=31&flightId=1417279963&month=10&year=2026"
+      }
     },
     {
       "id": "DSC00205",
@@ -5759,7 +5824,13 @@
       "image": "/photos/DSC00205.jpg",
       "thumbnail": "/photos/thumbs/DSC00205.jpg",
       "note": "",
-      "livery": "现代黑白涂装"
+      "livery": "现代黑白涂装",
+      "registration": {
+        "value": "C-GJYA",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gjya"
+      }
     },
     {
       "id": "DSC00222",
@@ -5778,7 +5849,13 @@
       "image": "/photos/DSC00222.jpg",
       "thumbnail": "/photos/thumbs/DSC00222.jpg",
       "note": "",
-      "livery": "现代黑白涂装"
+      "livery": "现代黑白涂装",
+      "registration": {
+        "value": "C-FHGE",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fhge"
+      }
     },
     {
       "id": "DSC00231",
@@ -5797,7 +5874,13 @@
       "image": "/photos/DSC00231.jpg",
       "thumbnail": "/photos/thumbs/DSC00231.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "B-KPR",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://data-live.flightradar24.com/data/aircraft/b-kpr"
+      }
     },
     {
       "id": "DSC00234",
@@ -5816,7 +5899,13 @@
       "image": "/photos/DSC00234.jpg",
       "thumbnail": "/photos/thumbs/DSC00234.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "B-KPR",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://data-live.flightradar24.com/data/aircraft/b-kpr"
+      }
     },
     {
       "id": "DSC00236",
@@ -5835,7 +5924,13 @@
       "image": "/photos/DSC00236.jpg",
       "thumbnail": "/photos/thumbs/DSC00236.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "B-KPR",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://data-live.flightradar24.com/data/aircraft/b-kpr"
+      }
     },
     {
       "id": "DSC00244",
@@ -5854,7 +5949,13 @@
       "image": "/photos/DSC00244.jpg",
       "thumbnail": "/photos/thumbs/DSC00244.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "B-KPR",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://data-live.flightradar24.com/data/aircraft/b-kpr"
+      }
     },
     {
       "id": "DSC00256",
@@ -5873,7 +5974,13 @@
       "image": "/photos/DSC00256.jpg",
       "thumbnail": "/photos/thumbs/DSC00256.jpg",
       "note": "",
-      "livery": "现代黑白涂装"
+      "livery": "现代黑白涂装",
+      "registration": {
+        "value": "C-GGMQ",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-ggmq"
+      }
     },
     {
       "id": "DSC00268",
@@ -5892,7 +5999,13 @@
       "image": "/photos/DSC00268.jpg",
       "thumbnail": "/photos/thumbs/DSC00268.jpg",
       "note": "",
-      "livery": "现代黑白涂装"
+      "livery": "现代黑白涂装",
+      "registration": {
+        "value": "C-GIUE",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-giue"
+      }
     },
     {
       "id": "DSC00270",
@@ -5911,7 +6024,13 @@
       "image": "/photos/DSC00270.jpg",
       "thumbnail": "/photos/thumbs/DSC00270.jpg",
       "note": "",
-      "livery": "现代黑白涂装"
+      "livery": "现代黑白涂装",
+      "registration": {
+        "value": "C-GIUE",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-giue"
+      }
     },
     {
       "id": "DSC00281",
@@ -5930,7 +6049,13 @@
       "image": "/photos/DSC00281.jpg",
       "thumbnail": "/photos/thumbs/DSC00281.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "C-GWSX",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gwsx"
+      }
     },
     {
       "id": "DSC00288",
@@ -5949,7 +6074,13 @@
       "image": "/photos/DSC00288.jpg",
       "thumbnail": "/photos/thumbs/DSC00288.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "N73256",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/n73256"
+      }
     },
     {
       "id": "DSC00290",
@@ -5968,7 +6099,13 @@
       "image": "/photos/DSC00290.jpg",
       "thumbnail": "/photos/thumbs/DSC00290.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "N73256",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/n73256"
+      }
     },
     {
       "id": "DSC00296",
@@ -5987,7 +6124,13 @@
       "image": "/photos/DSC00296.jpg",
       "thumbnail": "/photos/thumbs/DSC00296.jpg",
       "note": "",
-      "livery": "现代黑白涂装"
+      "livery": "现代黑白涂装",
+      "registration": {
+        "value": "C-FVND",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fvnd"
+      }
     },
     {
       "id": "DSC00314",
@@ -6006,7 +6149,13 @@
       "image": "/photos/DSC00314.jpg",
       "thumbnail": "/photos/thumbs/DSC00314.jpg",
       "note": "",
-      "livery": "现代黑白涂装"
+      "livery": "现代黑白涂装",
+      "registration": {
+        "value": "C-GJXW",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gjxw"
+      }
     },
     {
       "id": "DSC00325",
@@ -6025,7 +6174,13 @@
       "image": "/photos/DSC00325.jpg",
       "thumbnail": "/photos/thumbs/DSC00325.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "C-GWRE",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gwre"
+      }
     },
     {
       "id": "DSC00335",
@@ -6044,7 +6199,13 @@
       "image": "/photos/DSC00335.jpg",
       "thumbnail": "/photos/thumbs/DSC00335.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "N627QX",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/n627qx"
+      }
     },
     {
       "id": "DSC00355",
@@ -6063,7 +6224,13 @@
       "image": "/photos/DSC00355.jpg",
       "thumbnail": "/photos/thumbs/DSC00355.jpg",
       "note": "",
-      "livery": "蓝色百年主题涂装"
+      "livery": "蓝色百年主题涂装",
+      "registration": {
+        "value": "D-ABPU",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-abpu"
+      }
     },
     {
       "id": "DSC00360",
@@ -6082,7 +6249,13 @@
       "image": "/photos/DSC00360.jpg",
       "thumbnail": "/photos/thumbs/DSC00360.jpg",
       "note": "",
-      "livery": "蓝色百年主题涂装"
+      "livery": "蓝色百年主题涂装",
+      "registration": {
+        "value": "D-ABPU",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-abpu"
+      }
     },
     {
       "id": "DSC00365",
@@ -6101,7 +6274,13 @@
       "image": "/photos/DSC00365.jpg",
       "thumbnail": "/photos/thumbs/DSC00365.jpg",
       "note": "",
-      "livery": "蓝色百年主题涂装"
+      "livery": "蓝色百年主题涂装",
+      "registration": {
+        "value": "D-ABPU",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-abpu"
+      }
     },
     {
       "id": "DSC00376",
@@ -6120,7 +6299,13 @@
       "image": "/photos/DSC00376.jpg",
       "thumbnail": "/photos/thumbs/DSC00376.jpg",
       "note": "",
-      "livery": "现代黑白涂装"
+      "livery": "现代黑白涂装",
+      "registration": {
+        "value": "C-GGMI",
+        "status": "inferred",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/flights/AC8376"
+      }
     },
     {
       "id": "DSC00393",
@@ -6139,7 +6324,13 @@
       "image": "/photos/DSC00393.jpg",
       "thumbnail": "/photos/thumbs/DSC00393.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "C-FXMS",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fxms"
+      }
     },
     {
       "id": "DSC00430",
@@ -6158,7 +6349,13 @@
       "image": "/photos/DSC00430.jpg",
       "thumbnail": "/photos/thumbs/DSC00430.jpg",
       "note": "",
-      "livery": "现代黑白涂装"
+      "livery": "现代黑白涂装",
+      "registration": {
+        "value": "C-FRSA",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-frsa"
+      }
     },
     {
       "id": "DSC00447",
@@ -6177,7 +6374,13 @@
       "image": "/photos/DSC00447.jpg",
       "thumbnail": "/photos/thumbs/DSC00447.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "N505SY",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://free.flightradar24.com/data/flights/aa6303"
+      }
     },
     {
       "id": "DSC00466",
@@ -6196,7 +6399,13 @@
       "image": "/photos/DSC00466.jpg",
       "thumbnail": "/photos/thumbs/DSC00466.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "C-FNYU",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fnyu"
+      }
     },
     {
       "id": "DSC00469",
@@ -6215,7 +6424,13 @@
       "image": "/photos/DSC00469.jpg",
       "thumbnail": "/photos/thumbs/DSC00469.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "C-FNYU",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fnyu"
+      }
     },
     {
       "id": "DSC00482",
@@ -6234,7 +6449,13 @@
       "image": "/photos/DSC00482.jpg",
       "thumbnail": "/photos/thumbs/DSC00482.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "HL8043",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://data-live.flightradar24.com/data/aircraft/hl8043"
+      }
     },
     {
       "id": "DSC00487",
@@ -6253,7 +6474,13 @@
       "image": "/photos/DSC00487.jpg",
       "thumbnail": "/photos/thumbs/DSC00487.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "HL8043",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://data-live.flightradar24.com/data/aircraft/hl8043"
+      }
     },
     {
       "id": "DSC00490",
@@ -6272,7 +6499,13 @@
       "image": "/photos/DSC00490.jpg",
       "thumbnail": "/photos/thumbs/DSC00490.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "HL8043",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://data-live.flightradar24.com/data/aircraft/hl8043"
+      }
     },
     {
       "id": "DSC00502",
@@ -6291,7 +6524,13 @@
       "image": "/photos/DSC00502.jpg",
       "thumbnail": "/photos/thumbs/DSC00502.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "C-FLUT",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://data-live.flightradar24.com/data/aircraft/c-flut"
+      }
     },
     {
       "id": "DSC00514",
@@ -6310,7 +6549,13 @@
       "image": "/photos/DSC00514.jpg",
       "thumbnail": "/photos/thumbs/DSC00514.jpg",
       "note": "",
-      "livery": "经典冰蓝涂装"
+      "livery": "经典冰蓝涂装",
+      "registration": {
+        "value": "C-FIVR",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fivr"
+      }
     },
     {
       "id": "DSC00520",
@@ -6329,7 +6574,13 @@
       "image": "/photos/DSC00520.jpg",
       "thumbnail": "/photos/thumbs/DSC00520.jpg",
       "note": "",
-      "livery": "经典冰蓝涂装"
+      "livery": "经典冰蓝涂装",
+      "registration": {
+        "value": "C-FIVR",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fivr"
+      }
     },
     {
       "id": "DSC00535",
@@ -6348,7 +6599,13 @@
       "image": "/photos/DSC00535.jpg",
       "thumbnail": "/photos/thumbs/DSC00535.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "N66828",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/n66828"
+      }
     },
     {
       "id": "DSC00546",
@@ -6367,7 +6624,13 @@
       "image": "/photos/DSC00546.jpg",
       "thumbnail": "/photos/thumbs/DSC00546.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "ZK-NZJ",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://data.flightradar24.com/data/aircraft/zk-nzj"
+      }
     },
     {
       "id": "DSC00552",
@@ -6386,7 +6649,13 @@
       "image": "/photos/DSC00552.jpg",
       "thumbnail": "/photos/thumbs/DSC00552.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "ZK-NZJ",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://data.flightradar24.com/data/aircraft/zk-nzj"
+      }
     },
     {
       "id": "DSC00559",
@@ -6405,7 +6674,13 @@
       "image": "/photos/DSC00559.jpg",
       "thumbnail": "/photos/thumbs/DSC00559.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "C-GWJK",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gwjk"
+      }
     },
     {
       "id": "DSC00573",
@@ -6424,7 +6699,13 @@
       "image": "/photos/DSC00573.jpg",
       "thumbnail": "/photos/thumbs/DSC00573.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "HL8560",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/hl8560"
+      }
     },
     {
       "id": "DSC00581",
@@ -6443,7 +6724,13 @@
       "image": "/photos/DSC00581.jpg",
       "thumbnail": "/photos/thumbs/DSC00581.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "HL8560",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/hl8560"
+      }
     },
     {
       "id": "DSC00597",
@@ -6462,7 +6749,13 @@
       "image": "/photos/DSC00597.jpg",
       "thumbnail": "/photos/thumbs/DSC00597.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "JA927A",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/flights/nh116"
+      }
     },
     {
       "id": "DSC00602",
@@ -6481,7 +6774,13 @@
       "image": "/photos/DSC00602.jpg",
       "thumbnail": "/photos/thumbs/DSC00602.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "JA927A",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/flights/nh116"
+      }
     },
     {
       "id": "DSC00617",
@@ -6500,7 +6799,13 @@
       "image": "/photos/DSC00617.jpg",
       "thumbnail": "/photos/thumbs/DSC00617.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "DQ-FAM",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/dq-fam"
+      }
     },
     {
       "id": "DSC00621",
@@ -6519,7 +6824,13 @@
       "image": "/photos/DSC00621.jpg",
       "thumbnail": "/photos/thumbs/DSC00621.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "DQ-FAM",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/dq-fam"
+      }
     },
     {
       "id": "DSC00625",
@@ -6538,7 +6849,13 @@
       "image": "/photos/DSC00625.jpg",
       "thumbnail": "/photos/thumbs/DSC00625.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "DQ-FAM",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/dq-fam"
+      }
     },
     {
       "id": "DSC00641",
@@ -6557,7 +6874,13 @@
       "image": "/photos/DSC00641.jpg",
       "thumbnail": "/photos/thumbs/DSC00641.jpg",
       "note": "",
-      "livery": "GO COUGS 校队涂装"
+      "livery": "GO COUGS 校队涂装",
+      "registration": {
+        "value": "N661QX",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/n661qx"
+      }
     },
     {
       "id": "DSC00644",
@@ -6576,7 +6899,13 @@
       "image": "/photos/DSC00644.jpg",
       "thumbnail": "/photos/thumbs/DSC00644.jpg",
       "note": "",
-      "livery": "GO COUGS 校队涂装"
+      "livery": "GO COUGS 校队涂装",
+      "registration": {
+        "value": "N661QX",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/n661qx"
+      }
     },
     {
       "id": "DSC00658",
@@ -6595,7 +6924,13 @@
       "image": "/photos/DSC00658.jpg",
       "thumbnail": "/photos/thumbs/DSC00658.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "N302SY",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://data-live.flightradar24.com/data/flights/dl3742"
+      }
     },
     {
       "id": "DSC00672",
@@ -6614,7 +6949,13 @@
       "image": "/photos/DSC00672.jpg",
       "thumbnail": "/photos/thumbs/DSC00672.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "C-FRWA",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-frwa"
+      }
     },
     {
       "id": "DSC00687",
@@ -6633,7 +6974,13 @@
       "image": "/photos/DSC00687.jpg",
       "thumbnail": "/photos/thumbs/DSC00687.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "PH-AOE",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/ph-aoe"
+      }
     },
     {
       "id": "DSC00691",
@@ -6652,7 +6999,13 @@
       "image": "/photos/DSC00691.jpg",
       "thumbnail": "/photos/thumbs/DSC00691.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "PH-AOE",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/ph-aoe"
+      }
     },
     {
       "id": "DSC00703",
@@ -6671,7 +7024,13 @@
       "image": "/photos/DSC00703.jpg",
       "thumbnail": "/photos/thumbs/DSC00703.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "C-GENO",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-geno"
+      }
     },
     {
       "id": "DSC00714",
@@ -6690,7 +7049,13 @@
       "image": "/photos/DSC00714.jpg",
       "thumbnail": "/photos/thumbs/DSC00714.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "HL8501",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightera.net/en/flight/T%27Way%2BAir-Seoul-Vancouver/TW531"
+      }
     },
     {
       "id": "DSC00720",
@@ -6709,7 +7074,13 @@
       "image": "/photos/DSC00720.jpg",
       "thumbnail": "/photos/thumbs/DSC00720.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "HL8501",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightera.net/en/flight/T%27Way%2BAir-Seoul-Vancouver/TW531"
+      }
     },
     {
       "id": "DSC00733",
@@ -6728,7 +7099,13 @@
       "image": "/photos/DSC00733.jpg",
       "thumbnail": "/photos/thumbs/DSC00733.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "JA898A",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/flights/nh116"
+      }
     },
     {
       "id": "DSC00738",
@@ -6747,7 +7124,13 @@
       "image": "/photos/DSC00738.jpg",
       "thumbnail": "/photos/thumbs/DSC00738.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "JA898A",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/flights/nh116"
+      }
     },
     {
       "id": "DSC00752",
@@ -6766,7 +7149,13 @@
       "image": "/photos/DSC00752.jpg",
       "thumbnail": "/photos/thumbs/DSC00752.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "C-GANJ",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-ganj"
+      }
     },
     {
       "id": "DSC00754",
@@ -6785,7 +7174,13 @@
       "image": "/photos/DSC00754.jpg",
       "thumbnail": "/photos/thumbs/DSC00754.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "C-GANJ",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-ganj"
+      }
     },
     {
       "id": "DSC00768",
@@ -6802,7 +7197,13 @@
       "image": "/photos/DSC00768.jpg",
       "thumbnail": "/photos/thumbs/DSC00768.jpg",
       "note": "机型待确认",
-      "livery": "待确认"
+      "livery": "待确认",
+      "registration": {
+        "value": "C-GPCR",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://useast.flightera.net/en/flight_details/Pacific%2BCoastal%2BAirlines/8P353/CAJ4/2026-11-01"
+      }
     },
     {
       "id": "DSC00780",
@@ -6822,7 +7223,13 @@
       "image": "/photos/DSC00780.jpg",
       "thumbnail": "/photos/thumbs/DSC00780.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "C-GHJJ",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://proflightsearch.com/search-flights/PSP-YVR"
+      }
     },
     {
       "id": "DSC00788",
@@ -6841,7 +7248,13 @@
       "image": "/photos/DSC00788.jpg",
       "thumbnail": "/photos/thumbs/DSC00788.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "N27421",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/n27421"
+      }
     },
     {
       "id": "DSC00800",
@@ -6860,7 +7273,13 @@
       "image": "/photos/DSC00800.jpg",
       "thumbnail": "/photos/thumbs/DSC00800.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "D-AIVD",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-aivd"
+      }
     },
     {
       "id": "DSC00808",
@@ -6879,7 +7298,13 @@
       "image": "/photos/DSC00808.jpg",
       "thumbnail": "/photos/thumbs/DSC00808.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "D-AIVD",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-aivd"
+      }
     },
     {
       "id": "DSC00813",
@@ -6898,7 +7323,13 @@
       "image": "/photos/DSC00813.jpg",
       "thumbnail": "/photos/thumbs/DSC00813.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "C-FPCZ",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fpcz"
+      }
     },
     {
       "id": "DSC00823",
@@ -6917,7 +7348,13 @@
       "image": "/photos/DSC00823.jpg",
       "thumbnail": "/photos/thumbs/DSC00823.jpg",
       "note": "",
-      "livery": "Sunwing 橙色涂装"
+      "livery": "Sunwing 橙色涂装",
+      "registration": {
+        "value": "C-FZXI",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fzxi"
+      }
     },
     {
       "id": "DSC00826",
@@ -6936,7 +7373,13 @@
       "image": "/photos/DSC00826.jpg",
       "thumbnail": "/photos/thumbs/DSC00826.jpg",
       "note": "",
-      "livery": "Sunwing 橙色涂装"
+      "livery": "Sunwing 橙色涂装",
+      "registration": {
+        "value": "C-FZXI",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fzxi"
+      }
     },
     {
       "id": "DSC00848",
@@ -6955,7 +7398,13 @@
       "image": "/photos/DSC00848.jpg",
       "thumbnail": "/photos/thumbs/DSC00848.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "F-HUVN",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/f-huvn"
+      }
     },
     {
       "id": "DSC00855",
@@ -6974,7 +7423,13 @@
       "image": "/photos/DSC00855.jpg",
       "thumbnail": "/photos/thumbs/DSC00855.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "F-HUVN",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/f-huvn"
+      }
     },
     {
       "id": "DSC00860",
@@ -6993,7 +7448,13 @@
       "image": "/photos/DSC00860.jpg",
       "thumbnail": "/photos/thumbs/DSC00860.jpg",
       "note": "",
-      "livery": "标准涂装"
+      "livery": "标准涂装",
+      "registration": {
+        "value": "F-HUVN",
+        "status": "confirmed",
+        "basis": "既有航班核对记录",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/f-huvn"
+      }
     }
   ],
   "aircraft": [
@@ -7788,6 +8249,21 @@
       "lastSeen": "2026-10-24"
     },
     {
+      "id": "boeing-737-400",
+      "name": "Boeing 737-400",
+      "manufacturer": "Boeing",
+      "family": "737",
+      "category": "窄体客机",
+      "shortName": "737-400",
+      "kind": "aircraft",
+      "photoIds": [],
+      "cover": null,
+      "unlocked": false,
+      "airports": [],
+      "firstSeen": null,
+      "lastSeen": null
+    },
+    {
       "id": "boeing-737-500",
       "name": "Boeing 737-500",
       "manufacturer": "Boeing",
@@ -8345,6 +8821,21 @@
       ],
       "firstSeen": "2026-10-18",
       "lastSeen": "2026-10-18"
+    },
+    {
+      "id": "de-havilland-canada-dash-8-300",
+      "name": "De Havilland Canada Dash 8-300",
+      "manufacturer": "De Havilland Canada",
+      "family": "Dash 8",
+      "category": "涡桨飞机",
+      "shortName": "Dash 8-300",
+      "kind": "aircraft",
+      "photoIds": [],
+      "cover": null,
+      "unlocked": false,
+      "airports": [],
+      "firstSeen": null,
+      "lastSeen": null
     },
     {
       "id": "de-havilland-canada-dash-8-400",
@@ -9838,6 +10329,21 @@
       "lastSeen": null
     },
     {
+      "id": "asiana-airlines",
+      "name": "Asiana Airlines",
+      "chineseName": "韩亚航空",
+      "code": "OZ",
+      "country": "韩国",
+      "region": "亚洲",
+      "kind": "airline",
+      "photoIds": [],
+      "cover": null,
+      "unlocked": false,
+      "airports": [],
+      "firstSeen": null,
+      "lastSeen": null
+    },
+    {
       "id": "azores-airlines",
       "name": "Azores Airlines",
       "chineseName": "亚速尔航空",
@@ -10099,6 +10605,21 @@
       "code": "B6",
       "country": "美国",
       "region": "美洲",
+      "kind": "airline",
+      "photoIds": [],
+      "cover": null,
+      "unlocked": false,
+      "airports": [],
+      "firstSeen": null,
+      "lastSeen": null
+    },
+    {
+      "id": "juneyao-air",
+      "name": "Juneyao Air",
+      "chineseName": "吉祥航空",
+      "code": "HO",
+      "country": "中国",
+      "region": "亚洲",
       "kind": "airline",
       "photoIds": [],
       "cover": null,

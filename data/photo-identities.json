@@ -1,0 +1,697 @@
+{
+  "DSC00162": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "C-FJQZ",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fjqz"
+    }
+  },
+  "DSC00165": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "C-FJQZ",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fjqz"
+    }
+  },
+  "DSC00187": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "JA837J",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightstats.com/v2/flight-details/JL/18?date=31&flightId=1417279963&month=10&year=2026"
+    }
+  },
+  "DSC00191": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "JA837J",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightstats.com/v2/flight-details/JL/18?date=31&flightId=1417279963&month=10&year=2026"
+    }
+  },
+  "DSC00196": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "JA837J",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightstats.com/v2/flight-details/JL/18?date=31&flightId=1417279963&month=10&year=2026"
+    }
+  },
+  "DSC00205": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "C-GJYA",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gjya"
+    }
+  },
+  "DSC00222": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "C-FHGE",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fhge"
+    }
+  },
+  "DSC00231": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "B-KPR",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://data-live.flightradar24.com/data/aircraft/b-kpr"
+    }
+  },
+  "DSC00234": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "B-KPR",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://data-live.flightradar24.com/data/aircraft/b-kpr"
+    }
+  },
+  "DSC00236": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "B-KPR",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://data-live.flightradar24.com/data/aircraft/b-kpr"
+    }
+  },
+  "DSC00244": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "B-KPR",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://data-live.flightradar24.com/data/aircraft/b-kpr"
+    }
+  },
+  "DSC00256": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "C-GGMQ",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-ggmq"
+    }
+  },
+  "DSC00268": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "C-GIUE",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-giue"
+    }
+  },
+  "DSC00270": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "C-GIUE",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-giue"
+    }
+  },
+  "DSC00281": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "C-GWSX",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gwsx"
+    }
+  },
+  "DSC00288": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "N73256",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n73256"
+    }
+  },
+  "DSC00290": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "N73256",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n73256"
+    }
+  },
+  "DSC00296": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "C-FVND",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fvnd"
+    }
+  },
+  "DSC00314": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "C-GJXW",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gjxw"
+    }
+  },
+  "DSC00325": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "C-GWRE",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gwre"
+    }
+  },
+  "DSC00335": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "N627QX",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n627qx"
+    }
+  },
+  "DSC00355": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "D-ABPU",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-abpu"
+    }
+  },
+  "DSC00360": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "D-ABPU",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-abpu"
+    }
+  },
+  "DSC00365": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "D-ABPU",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-abpu"
+    }
+  },
+  "DSC00376": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "C-GGMI",
+      "status": "inferred",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/flights/AC8376"
+    }
+  },
+  "DSC00393": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "C-FXMS",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fxms"
+    }
+  },
+  "DSC00430": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "C-FRSA",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-frsa"
+    }
+  },
+  "DSC00447": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "N505SY",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://free.flightradar24.com/data/flights/aa6303"
+    }
+  },
+  "DSC00466": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "C-FNYU",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fnyu"
+    }
+  },
+  "DSC00469": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "C-FNYU",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fnyu"
+    }
+  },
+  "DSC00482": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "HL8043",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://data-live.flightradar24.com/data/aircraft/hl8043"
+    }
+  },
+  "DSC00487": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "HL8043",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://data-live.flightradar24.com/data/aircraft/hl8043"
+    }
+  },
+  "DSC00490": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "HL8043",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://data-live.flightradar24.com/data/aircraft/hl8043"
+    }
+  },
+  "DSC00502": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "C-FLUT",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://data-live.flightradar24.com/data/aircraft/c-flut"
+    }
+  },
+  "DSC00514": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "C-FIVR",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fivr"
+    }
+  },
+  "DSC00520": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "C-FIVR",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fivr"
+    }
+  },
+  "DSC00535": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "N66828",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n66828"
+    }
+  },
+  "DSC00546": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "ZK-NZJ",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://data.flightradar24.com/data/aircraft/zk-nzj"
+    }
+  },
+  "DSC00552": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "ZK-NZJ",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://data.flightradar24.com/data/aircraft/zk-nzj"
+    }
+  },
+  "DSC00559": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "C-GWJK",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gwjk"
+    }
+  },
+  "DSC00573": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "HL8560",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/hl8560"
+    }
+  },
+  "DSC00581": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "HL8560",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/hl8560"
+    }
+  },
+  "DSC00597": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "JA927A",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/flights/nh116"
+    }
+  },
+  "DSC00602": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "JA927A",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/flights/nh116"
+    }
+  },
+  "DSC00617": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "DQ-FAM",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/dq-fam"
+    }
+  },
+  "DSC00621": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "DQ-FAM",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/dq-fam"
+    }
+  },
+  "DSC00625": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "DQ-FAM",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/dq-fam"
+    }
+  },
+  "DSC00641": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "N661QX",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n661qx"
+    }
+  },
+  "DSC00644": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "N661QX",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n661qx"
+    }
+  },
+  "DSC00658": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "N302SY",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://data-live.flightradar24.com/data/flights/dl3742"
+    }
+  },
+  "DSC00672": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "C-FRWA",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-frwa"
+    }
+  },
+  "DSC00687": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "PH-AOE",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/ph-aoe"
+    }
+  },
+  "DSC00691": {
+    "date": "2026-10-31",
+    "registration": {
+      "value": "PH-AOE",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/ph-aoe"
+    }
+  },
+  "DSC00703": {
+    "date": "2026-11-01",
+    "registration": {
+      "value": "C-GENO",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-geno"
+    }
+  },
+  "DSC00714": {
+    "date": "2026-11-01",
+    "registration": {
+      "value": "HL8501",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightera.net/en/flight/T%27Way%2BAir-Seoul-Vancouver/TW531"
+    }
+  },
+  "DSC00720": {
+    "date": "2026-11-01",
+    "registration": {
+      "value": "HL8501",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightera.net/en/flight/T%27Way%2BAir-Seoul-Vancouver/TW531"
+    }
+  },
+  "DSC00733": {
+    "date": "2026-11-01",
+    "registration": {
+      "value": "JA898A",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/flights/nh116"
+    }
+  },
+  "DSC00738": {
+    "date": "2026-11-01",
+    "registration": {
+      "value": "JA898A",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/flights/nh116"
+    }
+  },
+  "DSC00752": {
+    "date": "2026-11-01",
+    "registration": {
+      "value": "C-GANJ",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-ganj"
+    }
+  },
+  "DSC00754": {
+    "date": "2026-11-01",
+    "registration": {
+      "value": "C-GANJ",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-ganj"
+    }
+  },
+  "DSC00768": {
+    "date": "2026-11-01",
+    "registration": {
+      "value": "C-GPCR",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://useast.flightera.net/en/flight_details/Pacific%2BCoastal%2BAirlines/8P353/CAJ4/2026-11-01"
+    }
+  },
+  "DSC00780": {
+    "date": "2026-11-01",
+    "registration": {
+      "value": "C-GHJJ",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://proflightsearch.com/search-flights/PSP-YVR"
+    }
+  },
+  "DSC00788": {
+    "date": "2026-11-01",
+    "registration": {
+      "value": "N27421",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n27421"
+    }
+  },
+  "DSC00800": {
+    "date": "2026-11-01",
+    "registration": {
+      "value": "D-AIVD",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-aivd"
+    }
+  },
+  "DSC00808": {
+    "date": "2026-11-01",
+    "registration": {
+      "value": "D-AIVD",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-aivd"
+    }
+  },
+  "DSC00813": {
+    "date": "2026-11-01",
+    "registration": {
+      "value": "C-FPCZ",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fpcz"
+    }
+  },
+  "DSC00823": {
+    "date": "2026-11-01",
+    "registration": {
+      "value": "C-FZXI",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fzxi"
+    }
+  },
+  "DSC00826": {
+    "date": "2026-11-01",
+    "registration": {
+      "value": "C-FZXI",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fzxi"
+    }
+  },
+  "DSC00848": {
+    "date": "2026-11-01",
+    "registration": {
+      "value": "F-HUVN",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/f-huvn"
+    }
+  },
+  "DSC00855": {
+    "date": "2026-11-01",
+    "registration": {
+      "value": "F-HUVN",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/f-huvn"
+    }
+  },
+  "DSC00860": {
+    "date": "2026-11-01",
+    "registration": {
+      "value": "F-HUVN",
+      "status": "confirmed",
+      "basis": "既有航班核对记录",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/f-huvn"
+    }
+  },
+  "DSC08611": {
+    "date": "2026-10-24",
+    "registration": {
+      "value": "C-GEGC",
+      "status": "confirmed",
+      "basis": "照片机身标识"
+    }
+  },
+  "DSC08880": {
+    "date": "2026-10-24",
+    "registration": {
+      "value": "N651AE",
+      "status": "confirmed",
+      "basis": "照片机身标识"
+    }
+  },
+  "DSC07141": {
+    "date": "2026-10-18",
+    "registration": {
+      "value": "C-FIVM",
+      "status": "confirmed",
+      "basis": "照片机身标识"
+    }
+  },
+  "DSC09420": {
+    "date": "2026-10-24",
+    "registration": {
+      "value": "C-FIVM",
+      "status": "confirmed",
+      "basis": "照片机身标识"
+    }
+  },
+  "DSC07776": {
+    "date": "2026-10-18",
+    "registration": {
+      "value": "C-FNND",
+      "status": "confirmed",
+      "basis": "照片机身标识"
+    }
+  },
+  "DSC08110": {
+    "date": "2026-10-24",
+    "registration": {
+      "value": "HB-JHB",
+      "status": "confirmed",
+      "basis": "照片机身标识"
+    }
+  },
+  "DSC09524": {
+    "date": "2026-10-24",
+    "registration": {
+      "value": "C-GLQD",
+      "status": "confirmed",
+      "basis": "照片机身标识"
+    }
+  }
+}

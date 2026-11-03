@@ -1,0 +1,34 @@
+{
+  "Congratulations 文字主题涂装": {
+    "name": "Excellence 2026 · 员工表彰涂装",
+    "description": "机身写有 Congratulations，配合 Excellence 2026 标记；C-FIVM 的机尾保留员工姓名主题。名称按照片上可见文字整理。"
+  },
+  "加拿大队主题涂装": {
+    "name": "Team Canada · Milano Cortina 2026",
+    "description": "加拿大航空为米兰科尔蒂纳冬奥会与冬残奥会推出的加拿大队主题涂装，机身展示加拿大运动员。",
+    "source": "https://www.aircanada.com/media/fly-the-flag-air-canada-unveils-celebratory-canadian-olympic-and-paralympic-team-livery-featuring-canadian-athletes-headed-to-the-milano-cortina-2026-winter-games/"
+  },
+  "GO COUGS 校队涂装": {
+    "name": "Go Cougs · Washington State University",
+    "description": "华盛顿州立大学主题，采用校队的绯红与灰色，Horizon Air 的 E175 以阿拉斯加航空品牌运营。",
+    "source": "https://news.alaskaair.com/community/alaska-airlines-unveils-washington-state-university-and-university-of-washington-aircraft/"
+  },
+  "蓝色百年主题涂装": {
+    "name": "100 Years of Lufthansa · 百年纪念",
+    "description": "蓝色机身搭配巨大的白色仙鹤图案；汉莎百年主题机队的一员。",
+    "source": "https://newsroom.lufthansagroup.com/en/lufthansas-first-anniversary-aircraft-lands-in-frankfurt/"
+  },
+  "蓝白条纹涂装": {
+    "name": "Condor · Sea 蓝白条纹",
+    "description": "Condor 新品牌涂装中的蓝色条纹，属于常规品牌设计。",
+    "source": "https://condor-newsroom.condor.com/en/us/downloads/"
+  },
+  "American Eagle 标准涂装": {
+    "name": "American Eagle · 标准涂装",
+    "description": "银灰机身与红、白、蓝条纹尾翼，属于 American Eagle 的常规品牌涂装。"
+  },
+  "Star Alliance 星空联盟涂装": {
+    "name": "Star Alliance · 星空联盟",
+    "description": "以联盟名称与星形标志为主要元素，航司标识保留在机身上。不同航司和机型的布局可能不同。"
+  }
+}

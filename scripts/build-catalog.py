@@ -85,7 +85,9 @@ UPS Airlines|联合包裹航空|5X|美国|美洲
 MNG Airlines|MNG 货运航空|MB|土耳其|亚洲
 Central Mountain Air|中央山地航空|9M|加拿大|美洲
 Iskwew Air|Iskwew 航空|SG|加拿大|美洲
-Harbour Air|港湾航空|YB|加拿大|美洲'''
+Harbour Air|港湾航空|YB|加拿大|美洲
+Asiana Airlines|韩亚航空|OZ|韩国|亚洲
+Juneyao Air|吉祥航空|HO|中国|亚洲'''
 airline_info = {r.split('|')[0]: r.split('|')[1:] for r in airline_rows.splitlines()}
 def slug(s): return re.sub(r'[^a-z0-9]+', '-', s.lower()).strip('-')
 def model_meta(name):
@@ -120,9 +122,15 @@ locked_models = ['Airbus A220-100','Airbus A318-100','Airbus A319neo','Airbus A3
     'Boeing 767-300ER','Boeing 767-400ER','Boeing 777-200ER','McDonnell Douglas MD-11F',
     'Embraer E190','Embraer E190-E2','Bombardier CRJ-200','ATR 72-600']
 annotations=json.loads((ROOT/'data/photo-annotations.json').read_text())['photos']
+identities=json.loads((ROOT/'data/photo-identities.json').read_text())
 for photo in photos:
     photo.update(annotations.get(photo['id'], {'livery':'待确认'}))
-model_names=list(dict.fromkeys([m for p in photos for m in p['models']]+locked_models))
+    identity=identities.get(photo['id'])
+    if identity:
+        assert identity['date']==photo['date'], 'Registration evidence must match the capture date'
+        photo['registration']=identity['registration']
+flights=json.loads((ROOT/'data/flights.json').read_text())['flights']
+model_names=list(dict.fromkeys([m for p in photos for m in p['models']]+locked_models+[f['model'] for f in flights if f['model']]))
 cover_selections=json.loads((ROOT/'data/cover-selections.json').read_text())
 featured=cover_selections['preferredPhotos']
 def ranked(ids):
