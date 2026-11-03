@@ -77,14 +77,17 @@ function Discovery({photos,onPhotos}:{photos:Photo[];onPhotos:OpenPhotos}) {
 
 function Achievements({awards,photos,onPhotos}:{awards:Award[];photos:Photo[];onPhotos:OpenPhotos}) {
   const [selected,setSelected]=useState(awards[0].key);
+  const [status,setStatus]=useState('all');
   const detail=useRef<HTMLElement>(null);
-  const award=awards.find(a=>a.key===selected)!;
+  const visible=awards.filter(a=>status==='all'||a.unlocked===(status==='unlocked'));
+  const award=visible.find(a=>a.key===selected)||visible[0];
   const byId=new Map(photos.map(p=>[p.id,p]));
   return <div className="awards-body"><div className="awards-intro"><Icon name="award" size={34}/><div><strong>{awards.filter(a=>a.unlocked).length} / {awards.length} 枚成就已解锁</strong><p>每一枚，都有你自己的照片作证。</p></div></div>
-    <div className="award-grid" aria-label="航空收藏成就">{awards.map(a=><button key={a.key} className={`award-card ${a.unlocked?'is-unlocked':''}`} aria-pressed={selected===a.key} aria-controls="achievement-detail" onClick={()=>{setSelected(a.key);detail.current?.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});}}><span className="award-symbol"><Icon name={a.unlocked?'award':'lock'} size={25}/></span><strong>{a.title}</strong><span>{a.unlocked?'已解锁':`${a.current} / ${a.target} · 进行中`}</span><progress value={Math.min(a.current,a.target)} max={a.target} aria-label={`${a.title} ${Math.min(a.current,a.target)} / ${a.target}`}/></button>)}</div>
-    <section ref={detail} id="achievement-detail" className="award-detail" aria-live="polite"><div className="award-detail-heading"><div><span className="eyebrow">{award.unlocked?'COLLECTED':'NEXT ON YOUR RADAR'}</span><h3>{award.title}</h3></div><span>{Math.min(award.current,award.target)} / {award.target}</span></div><p>{award.description}</p>{award.missing.length>0&&<p className="award-missing">还差：{award.missing.join('、')}</p>}
+    <div className="award-filters status-tabs" role="group" aria-label="成就状态筛选">{[['all','全部'],['unlocked','已解锁'],['locked','待解锁']].map(([value,label])=><button key={value} aria-pressed={status===value} onClick={()=>setStatus(value)}>{label}<span>{awards.filter(a=>value==='all'||a.unlocked===(value==='unlocked')).length}</span></button>)}</div>
+    <div className="award-grid" aria-label="航空收藏成就">{visible.map(a=><button key={a.key} className={`award-card ${a.unlocked?'is-unlocked':''}`} aria-pressed={award?.key===a.key} aria-controls="achievement-detail" onClick={()=>{setSelected(a.key);detail.current?.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});}}><span className="award-symbol"><Icon name={a.unlocked?'award':'lock'} size={25}/></span><strong>{a.title}</strong><span>{a.unlocked?'已解锁':`${a.current} / ${a.target} · 进行中`}</span><progress value={Math.min(a.current,a.target)} max={a.target} aria-label={`${a.title} ${Math.min(a.current,a.target)} / ${a.target}`}/></button>)}</div>
+    {award?<section ref={detail} id="achievement-detail" className="award-detail" aria-live="polite"><div className="award-detail-heading"><div><span className="eyebrow">{award.unlocked?'COLLECTED':'NEXT ON YOUR RADAR'}</span><h3>{award.title}</h3></div><span>{Math.min(award.current,award.target)} / {award.target}</span></div><p>{award.description}</p>{award.missing.length>0&&<p className="award-missing">还差：{award.missing.join('、')}</p>}
       {award.photoIds.length>0?<><div className="award-photos">{award.photoIds.slice(0,4).map((id,i)=>{const p=byId.get(id)!;return <button key={id} onClick={()=>onPhotos(award.photoIds,i)} aria-label={`查看成就照片 ${p.id}，${p.models.join(' / ')}`}><img src={asset(p.thumbnail)} alt={p.models.join(' / ')} loading="lazy"/></button>;})}</div><button className="play-secondary" onClick={()=>onPhotos(award.photoIds,0)}>查看关联照片 · {award.photoIds.length} 张<Icon name="arrow" size={15}/></button></>:<p className="play-note">还没有符合条件的照片，留给下一次相遇。</p>}
-    </section><p className="play-note">成就根据当前图鉴自动计算；“拍过，也坐过”只采用已确认的注册号匹配。</p>
+    </section>:<p className="play-empty" role="status">{status==='locked'?'全部成就都已解锁，收藏继续。':'还没有已解锁成就，下一次相遇就是开始。'}</p>}<p className="play-note">成就根据当前图鉴自动计算；涉及同一架飞机的成就只采用已确认注册号。补拍目标不代表当前 YYZ／YVR 有定期航班。</p>
   </div>;
 }
 

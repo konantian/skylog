@@ -41,7 +41,7 @@ test('discovery has no repeats within a deck or at the boundary between decks',(
 });
 test('achievements use photographic unlocks and confirmed exact-airframe matches',()=>{
   const awards=collectionAchievements(aircraft,airlines,photos,log.flights);
-  assert.equal(awards.length,8);
+  assert.equal(awards.length,15);
   assert.equal(awards.find(a=>a.key==='787').current,3);
   assert.deepEqual(awards.find(a=>a.key==='777').missing,['Boeing 777-200ER']);
   assert.equal(awards.find(a=>a.key==='fifty-airlines').current,45);
@@ -51,4 +51,26 @@ test('achievements use photographic unlocks and confirmed exact-airframe matches
   sample[0].registration.status='confirmed';
   assert.equal(collectionAchievements([],[],sample,[{registration:'TEST'}]).find(a=>a.key==='same-airframe').unlocked,true);
   assert.ok(collectionAchievements([],[],[],[]).every(a=>!a.unlocked&&a.current===0));
+});
+test('new family goals count distinct families and keep passenger and cargo aircraft separate',()=>{
+  const awards=collectionAchievements(aircraft,airlines,photos,log.flights);
+  const expected={a220:[1,2,['Airbus A220-100']],'747-generations':[2,4,['Boeing 747-8','Boeing 747-8F']],'four-engines':[2,3,['A340']],'boeing-widebodies':[3,4,['767']],'cargo-six':[3,6,['A300','A330','MD-11']],'turboprop-trio':[2,3,['ATR 72']]};
+  for(const [key,[current,target,missing]] of Object.entries(expected)){
+    const award=awards.find(a=>a.key===key);
+    assert.equal(award.current,current);assert.equal(award.target,target);assert.deepEqual(award.missing,missing);assert.equal(award.unlocked,false);
+  }
+  const boeing=awards.find(a=>a.key==='boeing-widebodies');
+  assert.ok(!boeing.photoIds.some(id=>photos.find(p=>p.id===id).models.includes('Boeing 767-300BDSF')));
+  const with767=aircraft.map(a=>a.name==='Boeing 767-300ER'?{...a,unlocked:true}:a);
+  assert.equal(collectionAchievements(with767,airlines,photos,[]).find(a=>a.key==='boeing-widebodies').unlocked,true);
+  assert.equal(collectionAchievements(with767,airlines,photos,[]).find(a=>a.key==='cargo-six').current,3);
+});
+test('two-airport reunion requires confirmed matching registrations at both named airports',()=>{
+  const photo=(id,airport,registration,status='confirmed')=>({id,airport,models:[],airlines:[],registration:{value:registration,status}});
+  const sample=[photo('A','YYZ','TEST'),photo('B','YYZ','TEST'),photo('C','YVR','TEST','inferred'),photo('D','YVR','OTHER'),photo('E','JFK','TEST')];
+  const reunion=ps=>collectionAchievements([],[],ps,[]).find(a=>a.key==='two-airport-reunion');
+  assert.equal(reunion(sample).current,0);assert.deepEqual(reunion(sample).photoIds,[]);
+  sample.push(photo('F','YVR','TEST'));
+  assert.equal(reunion(sample).current,1);assert.equal(reunion(sample).unlocked,true);
+  assert.deepEqual(reunion(sample).photoIds,['A','B','F']);
 });
