@@ -34,6 +34,7 @@ export default function Atlas() {
   const [expanded,setExpanded] = useState(false);
   const [limit,setLimit] = useState(24);
   const [flight,setFlight] = useState(0);
+  const [theme,setTheme] = useState('dark');
   const [variant,setVariant] = useState({airline:'all',model:'all',livery:'all'});
   const [detail,setDetail] = useState<{entry?:Entry; ids:string[]; index:number}|null>(null);
   const dialog = useRef<HTMLDialogElement>(null);
@@ -41,6 +42,10 @@ export default function Atlas() {
   const hero = byId.get(data.heroPhoto)!;
 
   useEffect(() => {
+    try {
+      const saved = localStorage.getItem('skylog-theme');
+      if(saved==='light') {setTheme('light');document.documentElement.dataset.theme='light';}
+    } catch { /* Private browsing may disable storage; the toggle still works. */ }
     const params = new URLSearchParams(window.location.search);
     const view = params.get('view');
     if (modes.some(m => m.id === view)) setMode(view as Mode);
@@ -97,6 +102,11 @@ export default function Atlas() {
   };
   const update = (key:keyof Filters,value:string) => {setFilters(f => ({...f,[key]:value}));setLimit(24);};
   const reset = () => {setFilters({...initialFilters});setLimit(24);};
+  const toggleTheme = () => {
+    const next=theme==='dark'?'light':'dark';
+    setTheme(next);document.documentElement.dataset.theme=next;
+    try {localStorage.setItem('skylog-theme',next);} catch { /* Keep the in-memory choice. */ }
+  };
   const openEntry = (entry:Entry) => {
     const selected = entry.photoIds.filter(id => photoMatches(byId.get(id)!,filters,aircraft));
     openDetail({entry,ids:selected.length ? selected : entry.photoIds,index:0});
@@ -111,7 +121,7 @@ export default function Atlas() {
     <header className="site-header wrap">
       <button className="brand" onClick={() => {reset();switchMode('aircraft');window.scrollTo({top:0,behavior:'instant'});}} aria-label="SKYLOG 返回首页"><span className="brand-mark"><FlyPlane/></span><span>SKYLOG<span className="brand-sub">A PERSONAL AVIATION ATLAS</span></span></button>
       <nav aria-label="主导航">{modes.map(m => <button key={m.id} className={mode===m.id?'active':''} aria-current={mode===m.id?'page':undefined} onClick={() => switchMode(m.id,true)}>{m.name}</button>)}</nav>
-      <span className="header-credit"><span className="live-dot"/> YUAN’S COLLECTION <span className="avatar">Y</span></span>
+      <div className="header-actions"><span className="header-credit"><span className="live-dot"/> YUAN’S COLLECTION <span className="avatar">Y</span></span><button className="theme-toggle" onClick={toggleTheme} aria-label={theme==='dark'?'切换到浅色模式':'切换到深色模式'} title={theme==='dark'?'浅色模式':'深色模式'}><Icon name={theme==='dark'?'sun':'moon'} size={19}/></button></div>
     </header>
     <main>
       <section className="hero wrap" aria-labelledby="hero-title">
@@ -141,7 +151,7 @@ export default function Atlas() {
         {count===0 ? <div className="empty-state"><Icon name="search" size={40}/><h3>这片天空还没有记录</h3><p>换一个筛选条件，继续探索已收藏的相遇。</p><button className="explore-button" onClick={reset}>查看全部收藏 <Icon name="arrow"/></button></div> : <div className="card-grid">
           {mode==='photos' ? matchedPhotos.slice(0,limit).map((photo,index)=><button className="catalog-card photo-card" key={photo.id} onClick={()=>openDetail({ids:matchedPhotos.map(p=>p.id),index})}><div className="card-image"><img src={asset(photo.thumbnail)} alt={`${photo.airlines.join(' / ')} ${photo.models.join(' / ')} · ${photo.id}`} loading="lazy"/><span className="airport-badge">{photo.airport}</span><span className="image-open"><Icon name="diagonal"/></span></div><div className="card-content"><span className="card-overline">{photo.airlines.join(' / ')||'PRIVATE / BUSINESS'}</span><h3>{photo.models.join(' / ')||'机型待确认'}</h3><span className="photo-livery">{photo.livery}</span><div className="card-meta"><span>{photo.id}</span><span>{photo.date.replaceAll('-','.')}</span></div></div></button>) : entries.slice(0,limit).map(entry=>{
             const matchingIds = entry.photoIds.filter(id=>photoMatches(byId.get(id)!,filters,aircraft));
-            const cover = byId.get(matchingIds[0]||entry.cover||'');
+            const cover = byId.get(entry.cover&&matchingIds.includes(entry.cover)?entry.cover:matchingIds[0]||entry.cover||'');
             return <button className={`catalog-card ${entry.unlocked?'':'locked'}`} key={entry.id} onClick={()=>openEntry(entry)} aria-label={`${entry.name}${entry.livery?`，${entry.livery}`:''}，${entry.unlocked?`已解锁，${entry.photoIds.length} 张照片`:'待解锁'}`}><div className="card-image">{cover?<img src={asset(cover.thumbnail)} alt={`${cover.airlines.join(' / ')} ${cover.models.join(' / ')}`} loading="lazy"/>:<div className="locked-image"><span className="blueprint-code">{mode==='aircraft'?entry.family:entry.code}</span><PlaneSilhouette category={entry.category} family={entry.family}/><span className="locked-grid-label">NEXT ON THE RADAR</span></div>}<span className={`state-badge ${entry.unlocked?'is-unlocked':''}`}><Icon name={entry.unlocked?'check':'lock'} size={12}/>{entry.unlocked?'已解锁':'待解锁'}</span>{entry.unlocked&&<span className="image-open"><Icon name="diagonal"/></span>}</div><div className="card-content"><span className="card-overline">{entry.kind==='variant'?entry.displayModel:mode==='aircraft'?`${entry.manufacturer} · ${entry.category}`:`${entry.code} · ${entry.country}`} </span><h3>{entry.name}</h3>{entry.kind==='variant'?<p className="airline-cn variant-livery">{entry.livery}</p>:mode==='airlines'?<p className="airline-cn">{entry.chineseName}</p>:entry.unlocked&&<p className="airline-cn">{unique(entry.photoIds.flatMap(id=>byId.get(id)!.airlines)).length} 家航司 · 多角度记录</p>}<div className="card-meta"><span>{entry.unlocked?<><Icon name="camera" size={13}/>{matchingIds.length||entry.photoIds.length} 张记录</>:'等待下一次相遇'}</span><span>{entry.unlocked?entry.airports.join(' · '):<Icon name="lock" size={13}/>}</span></div></div></button>;
           })}
         </div>}

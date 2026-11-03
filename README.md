@@ -8,7 +8,7 @@ A personal aircraft, airline, and photography collection built with Next.js. All
 - Aircraft and airline catalogs, plus a photo gallery preserving multiple angles and liveries.
 - Combine manufacturer, airline, model, livery, and photographed airport filters. Search filenames, aircraft, airlines (English/Chinese), or recorded flight numbers.
 - Selecting a model displays separate cards for each photographed airline and livery, with other angles available inside each card. Airline details also support model and livery filtering.
-- Desktop and mobile layouts, keyboard-operable photo viewer, and reduced-motion support.
+- Desktop and mobile layouts, keyboard-operable photo viewer, dark/light themes with a remembered preference, and reduced-motion support.
 - Restrained fly-by animations when switching collections.
 
 ## Run locally
