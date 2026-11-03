@@ -93,7 +93,7 @@ Timeline first sightings refer only to photos in the current catalog. Its cumula
 
 Flight dates, models, and registrations reproduce the Flighty export; they are not a fresh verification of historic operations. Family-only labels (for example, `Airbus A330`) remain broad and do not create a specific model badge. A photographed livery may differ from the livery at the time of a past flight. Aircraft/airline unlock counts refer to photography, while flight-log counts refer to personal travel. Raw Flighty CSV files are not published.
 
-The wishlist is a curated selection, not a worldwide aircraft registry or live YYZ/YVR schedule. Aircraft silhouettes are symbolic, not model-accurate technical drawings. Counts refer only to photographs included in this project. The prior Cargojet label on DSC09524 was corrected visually to Porter Dash 8-400.
+The wishlist is a curated selection, not a worldwide aircraft registry or live YYZ/YVR schedule. Uncollected aircraft use neutral family silhouettes with swept wings, cockpit and cabin details, and characteristic engine/tail arrangements (including the 747 upper deck, A380 double deck, MD-11 tail engine, and turboprop/CRJ T-tails). These are representative illustrations, not model-accurate technical drawings; engines on the far side are hidden in the side view. Cargo illustrations omit passenger windows. The same component is used in catalog cards, family progress, and locked details. Counts refer only to photographs included in this project. The prior Cargojet label on DSC09524 was corrected visually to Porter Dash 8-400.
 
 ## Rights
 

@@ -105,3 +105,9 @@ body:has(dialog[open]){overflow:hidden}
 .visit-counter{display:inline-flex;align-items:baseline;gap:6px;white-space:nowrap;color:var(--muted);font-size:11px}
 .visit-counter strong{min-width:3ch;text-align:right;color:var(--accent);font-family:var(--display);font-size:14px;font-weight:500;font-variant-numeric:tabular-nums}
 @media(max-width:560px){.footer-bottom{align-items:flex-start}.visit-counter{margin-block:5px}}
+
+/* Uncollected aircraft use neutral, layered family silhouettes. */
+.plane-silhouette{color:#8d99a3;--aircraft-shade:#566570;--aircraft-window:#23323d;--aircraft-highlight:#c5ccd1}
+[data-theme=light] .plane-silhouette{color:#8998a3;--aircraft-shade:#607481;--aircraft-window:#354b59;--aircraft-highlight:#dae1e6}
+.family-model-image>.plane-silhouette{color:#8d99a3;opacity:1}
+[data-theme=light] .family-model-image>.plane-silhouette{color:#8998a3}
