@@ -11,7 +11,7 @@ A personal aircraft, airline, and photography collection built with Next.js. All
 - Desktop and mobile layouts, keyboard-operable photo viewer, dark/light themes with a remembered preference, and reduced-motion support.
 - Registration evidence, named liveries, and compact aircraft profiles with manufacturer references in the photo viewer. Unconfirmed registrations stay labeled as such.
 - A separate Flighty flight log: 86 past segments across 14 airlines, with 18 explicitly recorded aircraft variants. Flown badges do not unlock unphotographed aircraft. Confirmed registration matches connect flights with photos of the same airframe.
-- A Pacific-centered route map with airport/route selection, annual flight counts, and most-flown airline/model/route rankings. Flight rows show the city below each airport code.
+- A route map with global, North America, East Asia, and Europe views, airport/route selection, annual flight counts, and most-flown airline/model/route rankings. Flight rows show the city below each airport code.
 - An optional journey replay by year, with chronological great-circle routes, an animated aircraft, pause/resume, flight skipping, scrubbing, and 1×/2×/4× cruise speed. Departure and arrival transitions retain their timing at higher speeds. Desktop uses gentle camera following; mobile holds the camera steady within each leg. Background tabs pause playback and reduced-motion users get a static, navigable preview. Paths and durations are illustrative, not recorded tracks or real flight times.
 - Ice-blue accents on deep navy, with a darker accessible blue in the light theme.
 - A photography timeline of first collected models and airlines, plus date-matched camera settings in all 372 photo details.

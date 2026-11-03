@@ -3,6 +3,7 @@ export function Icon({name,size=20,className='',style}:{name:string;size?:number
   const paths:Record<string,React.ReactNode>={
     play:<path d="m8 4 12 8-12 8Z"/>,
     pause:<><path d="M8 4v16M16 4v16"/></>,
+    aircraft:<g transform="translate(12 12) scale(.55)" fill="currentColor" stroke="none"><path d="M0-16c2 0 3 4 3 7v4L18 5v3L3 3v9l5 4v2l-8-3-8 3v-2l5-4V3L-18 8V5L-3-5v-4c0-3 1-7 3-7Z"/></g>,
     sun:<><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></>,
     moon:<path d="M20.5 13A8.5 8.5 0 0 1 11 3.5 8.5 8.5 0 1 0 20.5 13Z"/>,
     plane:<><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></>,

@@ -34,5 +34,5 @@ export function ScrollExperience({revision,enabled}:{revision:string;enabled:boo
     return()=>{cancelAnimationFrame(frame);resize.disconnect();window.removeEventListener('scroll',schedule);window.removeEventListener('resize',schedule);};
   },[]);
 
-  return <div className="journey-progress" ref={progress} aria-hidden="true"><span className="journey-trail"/><span className="journey-plane"><Icon name="plane" size={19}/></span></div>;
+  return <div className="journey-progress" ref={progress} aria-hidden="true"><span className="journey-trail"/><span className="journey-plane"><Icon name="aircraft" size={22}/></span></div>;
 }

@@ -46,6 +46,17 @@ test('timeline first sightings remain global when photography is filtered',()=>{
   assert.deepEqual(filtered[0].newModels,moments[0].newModels);
   assert.equal(filtered[0].cumulativeAirlines,45);
 });
+
+test('Europe view joins Greenwich while keeping Pacific routes off the continent',()=>{
+  const west={latitude:50,longitude:-5},east={latitude:50,longitude:5};
+  assert.ok(Math.abs(projectAirport(east,450)[0]-projectAirport(west,450)[0])<30);
+  assert.equal((routePath(west,east,450).match(/M/g)||[]).length,1);
+  assert.equal((routePath(airports.ICN,airports.YVR,450).match(/M/g)||[]).length,2);
+  for(const code of ['KEF','PDL']){
+    const [x,y]=projectAirport(airports[code],450);
+    assert.ok(x>780&&x<1050&&y>30&&y<150);
+  }
+});
 test('all published photos have date-matched camera settings without private EXIF',()=>{
   assert.equal(Object.keys(settings).length,photos.length);
   const allowed=new Set(['date','shutter','focalLengthMm','aperture','iso','lens','camera','source']);

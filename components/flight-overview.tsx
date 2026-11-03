@@ -10,7 +10,7 @@ type Airport={name:string;city:string;latitude:number;longitude:number;country:s
 type Ranked={name:string;count:number};
 type Route={key:string;airports:string[];count:number};
 const airports:Record<string,Airport>=airportData;
-const regions=[{id:'world',label:'全球',box:'0 0 900 400'},{id:'america',label:'北美',box:'400 40 400 230'},{id:'asia',label:'东亚',box:'200 80 190 150'}];
+const regions=[{id:'world',label:'全球',box:'0 0 900 400'},{id:'america',label:'北美',box:'400 40 400 230'},{id:'asia',label:'东亚',box:'200 80 190 150'},{id:'europe',label:'欧洲',box:'780 30 270 120'}];
 const showLabels=new Set(['YVR','YYZ','ICN','HKG','PEK','CTU','KEF','PDL','SFO']);
 
 function Ranking({title,items}:{title:string;items:Ranked[]}) {
@@ -26,6 +26,7 @@ export function FlightOverview({allFlights,mapFlights,filters,onFilter}:{allFlig
   const [rankType,setRankType]=useState('airlines');
   const [focused,setFocused]=useState<string|null>(null);
   const view=regions.find(r=>r.id===region)!;
+  const mapOffset=region==='europe'?450:0;
   const selectedName=filters.flightAirport!=='all'?`${filters.flightAirport} · ${airports[filters.flightAirport]?.city||''}`:filters.route!=='all'?filters.route.replace('~',' ↔ '):'全部航线';
   const years:Ranked[]=stats.years;
   const maxYear=Math.max(...years.map(y=>y.count),1);
@@ -45,20 +46,20 @@ export function FlightOverview({allFlights,mapFlights,filters,onFilter}:{allFlig
         {replayOpen&&<JourneyReplay flights={allFlights} initialYear={filters.flightYear} onClose={()=>setReplayOpen(false)}/>}
         <svg className="flight-map-svg" viewBox={view.box} aria-labelledby="map-title map-description">
           <title id="map-title">已乘坐航线地图</title><desc id="map-description">{visited.length} 个机场，{routes.length} 条往返合并航线。航线与机场均可点击或用键盘选择，也可使用下方下拉菜单。</desc>
-          <defs><clipPath id="world-clip"><rect width="900" height="400"/></clipPath></defs>
+          <defs><clipPath id="world-clip"><rect x={mapOffset} width="900" height="400"/></clipPath></defs>
           <g clipPath="url(#world-clip)">
-            <g className="map-grid" aria-hidden="true">{[75,150,225,300,375].map(y=><path key={`y${y}`} d={`M0 ${y}H900`}/>)}{[150,300,450,600,750].map(x=><path key={`x${x}`} d={`M${x} 0V400`}/>)}</g>
+            <g className="map-grid" aria-hidden="true">{[75,150,225,300,375].map(y=><path key={`y${y}`} d={`M${mapOffset} ${y}h900`}/>)}{[150,300,450,600,750].map(x=><path key={`x${x}`} d={`M${x+mapOffset} 0V400`}/>)}</g>
             <g className="map-land" aria-hidden="true"><path d={land.path} transform="translate(-450 0)"/><path d={land.path} transform="translate(450 0)"/></g>
             {routes.map(route=>{
               const [a,b]=route.airports;const active=filters.route===route.key||route.airports.includes(filters.flightAirport);
               if(!airports[a]||!airports[b])return null;
               const choose=()=>onFilter('route',filters.route===route.key?'all':route.key);
               return <g className={`map-route ${active?'selected':''}`} key={route.key} role="button" tabIndex={0} aria-label={`${a} 与 ${b}，含往返 ${route.count} 段乘机记录`} aria-pressed={filters.route===route.key} onClick={choose} onFocus={()=>setFocused(`${a} ↔ ${b} · ${route.count} 段`)} onBlur={()=>setFocused(null)} onMouseEnter={()=>setFocused(`${a} ↔ ${b} · ${route.count} 段`)} onMouseLeave={()=>setFocused(null)} onKeyDown={e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();choose();}}}>
-                <path className="route-hit" d={routePath(airports[a],airports[b])}/><path className="route-line-visible" pathLength={1} d={routePath(airports[a],airports[b])}/>
+                <path className="route-hit" d={routePath(airports[a],airports[b],mapOffset)}/><path className="route-line-visible" pathLength={1} d={routePath(airports[a],airports[b],mapOffset)}/>
               </g>;
             })}
             {visited.map(code=>{
-              const airport=airports[code];if(!airport)return null;const [x,y]=projectAirport(airport);const active=filters.flightAirport===code;
+              const airport=airports[code];if(!airport)return null;const [x,y]=projectAirport(airport,mapOffset);const active=filters.flightAirport===code;
               const choose=()=>onFilter('flightAirport',active?'all':code);
               return <g className={`map-airport ${active?'selected':''}`} key={code} role="button" tabIndex={0} aria-label={`${code} ${airport.city}，查看相关航班`} aria-pressed={active} onClick={choose} onFocus={()=>setFocused(`${code} · ${airport.city}`)} onBlur={()=>setFocused(null)} onMouseEnter={()=>setFocused(`${code} · ${airport.city}`)} onMouseLeave={()=>setFocused(null)} onKeyDown={e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();choose();}}}>
                 <circle className="airport-hit" cx={x} cy={y} r={10}/><circle className="airport-dot" cx={x} cy={y} r={active?4:2.8}/>{(region!=='world'||showLabels.has(code)||active)&&<text x={x+6} y={y-7}>{code}</text>}
