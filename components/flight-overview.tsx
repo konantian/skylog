@@ -4,6 +4,7 @@ import land from '@/data/world-land.json';
 import {collectRoutes,flightStats,projectAirport,routePath} from '@/lib/insights.mjs';
 import type {Filters,Flight} from '@/lib/types';
 import {Icon} from './icons';
+import {JourneyReplay} from './journey-replay';
 
 type Airport={name:string;city:string;latitude:number;longitude:number;country:string};
 type Ranked={name:string;count:number};
@@ -21,6 +22,7 @@ export function FlightOverview({allFlights,mapFlights,filters,onFilter}:{allFlig
   const routes=useMemo(()=>collectRoutes(mapFlights) as Route[],[mapFlights]);
   const visited=[...new Set(mapFlights.flatMap(f=>[f.origin,f.destination]))];
   const [region,setRegion]=useState('world');
+  const [replayOpen,setReplayOpen]=useState(false);
   const [rankType,setRankType]=useState('airlines');
   const [focused,setFocused]=useState<string|null>(null);
   const view=regions.find(r=>r.id===region)!;
@@ -39,6 +41,8 @@ export function FlightOverview({allFlights,mapFlights,filters,onFilter}:{allFlig
     <div className="flight-overview-grid">
       <section className="route-map" aria-labelledby="route-map-title">
         <div className="map-heading"><div><span className="eyebrow">ACROSS THE PACIFIC & BEYOND</span><h4 id="route-map-title">把旅途连成一张地图</h4></div><div className="map-regions" aria-label="地图区域">{regions.map(r=><button key={r.id} aria-pressed={region===r.id} onClick={()=>setRegion(r.id)}>{r.label}</button>)}</div></div>
+        <div className="replay-entry"><span>把坐过的航班，重新飞一遍。</span><button onClick={()=>setReplayOpen(true)}><Icon name="play" size={15}/>回放我的旅程</button></div>
+        {replayOpen&&<JourneyReplay flights={allFlights} initialYear={filters.flightYear} onClose={()=>setReplayOpen(false)}/>}
         <svg className="flight-map-svg" viewBox={view.box} aria-labelledby="map-title map-description">
           <title id="map-title">已乘坐航线地图</title><desc id="map-description">{visited.length} 个机场，{routes.length} 条往返合并航线。航线与机场均可点击或用键盘选择，也可使用下方下拉菜单。</desc>
           <defs><clipPath id="world-clip"><rect width="900" height="400"/></clipPath></defs>

@@ -1,6 +1,8 @@
 import type { CSSProperties } from 'react';
 export function Icon({name,size=20,className='',style}:{name:string;size?:number;className?:string;style?:CSSProperties}) {
   const paths:Record<string,React.ReactNode>={
+    play:<path d="m8 4 12 8-12 8Z"/>,
+    pause:<><path d="M8 4v16M16 4v16"/></>,
     sun:<><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></>,
     moon:<path d="M20.5 13A8.5 8.5 0 0 1 11 3.5 8.5 8.5 0 1 0 20.5 13Z"/>,
     plane:<><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></>,
