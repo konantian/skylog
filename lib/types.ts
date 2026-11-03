@@ -2,9 +2,12 @@ export type Photo = {
   id: string; filename: string; date: string; airport: string;
   models: string[]; airlines: string[]; flights: string[];
   image: string; thumbnail: string; note: string; livery: string;
-  subjects?: {airline:string;model:string}[];
-  registration?: {value:string;status:string;basis:string;sourceUrl?:string};
+  subjects?: {airline:string;model:string;registration?:Registration}[];
+  registration?: Registration;
+  capturedAt?: string;
+  flightIdentification?: {status:string;basis:string;sourceUrl?:string;callsign?:string};
 };
+export type Registration = {value:string;status:string;basis:string;sourceUrl?:string};
 export type Entry = {
   id: string; name: string; kind: string; photoIds: string[]; cover: string | null;
   unlocked: boolean; airports: string[]; firstSeen: string | null; lastSeen: string | null;

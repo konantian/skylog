@@ -1,7 +1,7 @@
 import {useLocale} from './locale-provider';
 import profiles from '@/data/aircraft-profiles.json';
 import liveries from '@/data/liveries.json';
-import type { Entry, Flight, Photo } from '@/lib/types';
+import type { Entry, Flight, Photo, Registration } from '@/lib/types';
 import { Icon } from './icons';
 
 type Profile = {description:string;configuration:string;source:string};
@@ -23,9 +23,19 @@ export function AircraftProfile({entry}:{entry:Entry}) {
 export function PhotoIdentity({photo}:{photo:Photo}) {
   const {t}=useLocale();
   const livery = (liveries as Record<string,Livery>)[photo.livery];
+  const identification=photo.flightIdentification;
+  const registrations=photo.registration
+    ? [{label:'',registration:photo.registration}]
+    : (photo.subjects||[]).filter((s):s is typeof s & {registration:Registration}=>!!s.registration).map(s=>({label:s.airline,registration:s.registration}));
   return <div className="photo-identity">
-    <div><span className="identity-label">{t("REGISTRATION / 注册号")}</span><strong>{photo.registration?.value || t("待确认")}</strong>{photo.registration&&<span className="identity-basis">{photo.registration.status==='confirmed'?t("已确认"):t("推测 · 待确认")} · {t(photo.registration.basis)}{photo.registration.sourceUrl&&<> · <a href={photo.registration.sourceUrl} target="_blank" rel="noreferrer">{t("核对来源 ↗")}</a></>}</span>}</div>
+    <div><span className="identity-label">{t("REGISTRATION / 注册号")}</span>{registrations.length?registrations.map(({label,registration})=><div key={registration.value}><strong>{label&&`${label} · `}{registration.value}</strong><span className="identity-basis">{registration.status==='confirmed'?t("已确认"):t("推测 · 待确认")} · {t(registration.basis)}{registration.sourceUrl&&<> · <a href={registration.sourceUrl} target="_blank" rel="noreferrer">{t("核对来源 ↗")}</a></>}</span></div>):<strong>{t("待确认")}</strong>}</div>
     <div><span className="identity-label">{t("LIVERY / 涂装")}</span><strong>{livery?t(livery.name):(photo.livery==='标准涂装'?t("{0} · 标准涂装",[photo.airlines.join(' / ')]):t(photo.livery))}</strong>{livery&&<p>{t(livery.description)}{livery.source&&<> <a href={livery.source} target="_blank" rel="noreferrer">{t("了解涂装 ↗")}</a></>}</p>}</div>
+    {identification&&<div className="identity-flight"><span className="identity-label">{t("FLIGHT / 航班记录")}</span>
+      <strong>{photo.flights.length?photo.flights.map(f=>t(f)).join(' / '):identification.callsign?t("呼号 {0}",[identification.callsign]):identification.status==='not-applicable'?t("停场 / 停机坪"):t("航班号待确认")}</strong>
+      {photo.flights.length>0&&identification.callsign&&<span className="identity-basis">{t("呼号 {0}",[identification.callsign])}</span>}
+      <span className="identity-basis">{identification.status==='confirmed'?t("已确认"):identification.status==='inferred'?t("推测 · 待确认"):t("未匹配航班")} · {t(identification.basis)}{identification.sourceUrl&&<> · <a href={identification.sourceUrl} target="_blank" rel="noreferrer">{t("核对来源 ↗")}</a></>}</span>
+      {photo.capturedAt&&<span className="identity-basis">{t("拍摄时间（机场当地）")} · <time dateTime={photo.capturedAt}>{photo.capturedAt.slice(0,19).replace('T',' ')}</time> · {t("保留相机时间，未校正时钟偏差")}</span>}
+    </div>}
   </div>;
 }
 

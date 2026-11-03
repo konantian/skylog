@@ -53,7 +53,8 @@ test('visual review fixes the Porter photo without making a Cargojet unlock',()=
   const p=data.photos.find(p=>p.id==='DSC09524');
   assert.deepEqual(p.airlines,['Porter Airlines']);
   assert.deepEqual(p.models,['De Havilland Canada Dash 8-400']);
-  assert.deepEqual(p.flights,[]);
+  assert.deepEqual(p.flights,['P39002']);
+  assert.equal(p.flightIdentification.callsign,'PTR9002');
   assert.equal(data.airlines.find(e=>e.name==='Cargojet').unlocked,false);
 });
 test('every public JPG and thumbnail exists, decodes and has no EXIF/GPS',async()=>{

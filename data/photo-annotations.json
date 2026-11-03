@@ -409,7 +409,11 @@
       "livery": "标准涂装"
     },
     "DSC08173": {
-      "livery": "Rouge 红白涂装"
+      "livery": "Rouge 红白涂装",
+      "models": [
+        "Airbus A319-100"
+      ],
+      "note": ""
     },
     "DSC08175": {
       "livery": "Rouge 红白涂装"
@@ -487,10 +491,18 @@
       "livery": "经典冰蓝涂装"
     },
     "DSC08570": {
-      "livery": "待确认"
+      "livery": "待确认",
+      "models": [
+        "Embraer E195-E2"
+      ],
+      "note": ""
     },
     "DSC08575": {
-      "livery": "待确认"
+      "livery": "待确认",
+      "models": [
+        "Boeing 747-400ERF"
+      ],
+      "note": ""
     },
     "DSC08582": {
       "livery": "标准涂装"
@@ -583,7 +595,11 @@
       "livery": "标准涂装"
     },
     "DSC09096": {
-      "livery": "待确认"
+      "livery": "待确认",
+      "models": [
+        "Airbus A330-300"
+      ],
+      "note": ""
     },
     "DSC09104": {
       "livery": "现代黑白涂装"
@@ -613,7 +629,11 @@
       "livery": "标准涂装"
     },
     "DSC09268": {
-      "livery": "待确认"
+      "livery": "待确认",
+      "models": [
+        "Boeing 747-400"
+      ],
+      "note": ""
     },
     "DSC09272": {
       "livery": "标准涂装"
@@ -661,7 +681,11 @@
       "livery": "标准涂装"
     },
     "DSC09470": {
-      "livery": "待确认"
+      "livery": "待确认",
+      "models": [
+        "Bombardier CRJ-900"
+      ],
+      "note": ""
     },
     "DSC09480": {
       "livery": "标准涂装"
@@ -696,7 +720,11 @@
       "livery": "现代黑白涂装"
     },
     "DSC09553": {
-      "livery": "待确认"
+      "livery": "待确认",
+      "models": [
+        "Airbus A330-900"
+      ],
+      "note": ""
     },
     "DSC09555": {
       "livery": "标准涂装"

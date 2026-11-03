@@ -565,5 +565,21 @@
   "推测航班 FSY332": "Inferred flight FSY332",
   "推测航班 CX805": "Inferred flight CX805",
   "推测航班 AC1018": "Inferred flight AC1018",
-  "推测航班 MS996": "Inferred flight MS996"
+  "推测航班 MS996": "Inferred flight MS996",
+  "拍摄时间、注册号与历史记录交叉核对": "Capture time and registration cross-checked against flight history",
+  "同一架飞机的相邻连拍": "Matched to the same aircraft in adjacent frames",
+  "机身部分标识及拍摄时间推测": "Inferred from partial markings and capture time",
+  "长期停场记录及照片外观": "Stored-aircraft records and photographic appearance",
+  "公开记录未提供当天航班号或呼号": "No flight number or callsign found in public records for this date",
+  "停场照片，不对应拍摄当天航班": "Stored aircraft; no flight assigned for the capture date",
+  "多架飞机同框，不强配单一航班": "Multiple parked aircraft; no single flight assigned",
+  "返航记录吻合，实际落地时间待确认": "Return flight matches; actual landing time unverified",
+  "FLIGHT / 航班记录": "FLIGHT / IDENTIFICATION",
+  "呼号 {0}": "Callsign {0}",
+  "停场 / 停机坪": "Stored aircraft / apron",
+  "航班号待确认": "Flight number unconfirmed",
+  "未匹配航班": "No flight assigned",
+  "拍摄时间（机场当地）": "Capture time (airport local)",
+  "保留相机时间，未校正时钟偏差": "Camera time retained; clock offset not applied",
+  "推测航班 AC8376": "Inferred flight AC8376"
 }

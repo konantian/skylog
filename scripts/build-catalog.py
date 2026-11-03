@@ -127,8 +127,10 @@ for photo in photos:
     photo.update(annotations.get(photo['id'], {'livery':'待确认'}))
     identity=identities.get(photo['id'])
     if identity:
-        assert identity['date']==photo['date'], 'Registration evidence must match the capture date'
-        photo['registration']=identity['registration']
+        assert identity['date']==photo['date'], 'Identity evidence must match the capture date'
+        for field in ('registration','flights','flightIdentification','capturedAt','subjects'):
+            if field in identity:
+                photo[field]=identity[field]
 flights=json.loads((ROOT/'data/flights.json').read_text())['flights']
 model_names=list(dict.fromkeys([m for p in photos for m in p['models']]+locked_models+[f['model'] for f in flights if f['model']]))
 cover_selections=json.loads((ROOT/'data/cover-selections.json').read_text())
@@ -164,7 +166,7 @@ for name,(zh,code,country,region) in airline_info.items():
     airlines.append({'id':slug(name),'name':name,'chineseName':zh,'code':code,'country':country,'region':region,'kind':'airline',**common,'cover':cover})
 airline_priority=['Air Canada','Lufthansa','Emirates','SWISS','Qantas','Japan Airlines','Cathay Pacific','ANA','Fiji Airways']
 airlines.sort(key=lambda a:(airline_priority.index(a['name']) if a['name'] in airline_priority else 99,not a['unlocked'],a['name']))
-data={'updatedAt':source['audit_date'],'scope':'YYZ / YVR 已整理收藏','photos':photos,'aircraft':models,'airlines':airlines,
+data={'updatedAt':max([source['audit_date']]+[i['reviewedAt'] for i in identities.values() if 'reviewedAt' in i]),'scope':'YYZ / YVR 已整理收藏','photos':photos,'aircraft':models,'airlines':airlines,
     'heroPhoto':'DSC07776','featuredPhotos':featured,'scopeNote':'机型涵盖已确认拍摄型号及常见民航补拍目标；航司以 YYZ / YVR 收藏及补拍清单为主，并非全球完整名录。未解锁不代表当前有定期航班。'}
 (ROOT/'data/catalog.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
 assert len(photos)==372 and len({p['id'] for p in photos})==372

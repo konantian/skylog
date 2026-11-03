@@ -145,3 +145,5 @@ html[lang=en] .collection-heading h2{line-height:1.3}
   .dialog-actions{margin-left:auto}
   .dialog-heading h2,.play-dialog-head h2,.replay-heading h2{overflow-wrap:anywhere}
 }
+
+.identity-flight{grid-column:1/-1}.photo-identity>div>div+div{margin-top:10px}
