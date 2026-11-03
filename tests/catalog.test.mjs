@@ -30,7 +30,7 @@ test('one model and airline retain different liveries and angles',()=>{
   const ps=filterPhotos(data.photos,f({airline:'Air Canada',model:'Airbus A330-300'}),data.aircraft);
   assert.ok(new Set(ps.map(p=>p.livery)).size>=4);
   const star=filterPhotos(data.photos,f({airline:'Air Canada',model:'Airbus A330-300',livery:'Star Alliance 星空联盟涂装'}),data.aircraft);
-  assert.equal(star.length,5);
+  assert.equal(star.length,7);
   assert.ok(star.every(p=>p.livery.startsWith('Star Alliance')));
 });
 test('locked targets do not claim airport sightings or airline relationships',()=>{
@@ -103,4 +103,14 @@ test('every unlocked aircraft uses its visually selected cover',async()=>{
 
 test('model aliases never leak into the flight-number field',()=>{
   for(const p of data.photos) for(const flight of p.flights) assert.match(flight,/^(?:推测航班\s+)?[A-Z0-9]{2,3}\s?\d{1,4}(?:\s+\(inferred\))?$/);
+});
+
+test('confirmed same-aircraft bursts keep consistent livery classifications',()=>{
+  const photos=data.photos.filter(p=>p.registration?.status==='confirmed');
+  for(let i=0;i<photos.length;i++)for(let j=i+1;j<photos.length;j++){
+    const a=photos[i],b=photos[j];
+    if(a.registration.value===b.registration.value&&a.date===b.date&&a.airport===b.airport&&Math.abs(Date.parse(a.capturedAt)-Date.parse(b.capturedAt))<=120000){
+      assert.equal(a.livery,b.livery,`${a.id} / ${b.id}: same aircraft photographed within two minutes`);
+    }
+  }
 });

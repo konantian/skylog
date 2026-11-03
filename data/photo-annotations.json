@@ -1,12 +1,13 @@
 {
-  "reviewedAt": "2026-11-02",
-  "method": "Visual review of edited photograph exports. Descriptive livery labels; uncertain views remain unconfirmed.",
+  "reviewedAt": "2026-11-03",
+  "method": "Visual review of edited photographs, with same-airframe adjacent captures cross-checked. Business-aircraft labels describe visible colours/patterns, not official named liveries. Unobservable livery details remain unconfirmed.",
   "photos": {
     "DSC06137": {
       "livery": "标准涂装"
     },
     "DSC06147": {
-      "livery": "待确认"
+      "livery": "待确认",
+      "note": "仰拍仅见机腹，具体涂装版本无法从这张照片确认。"
     },
     "DSC06165": {
       "livery": "标准涂装"
@@ -24,7 +25,7 @@
       "livery": "标准涂装"
     },
     "DSC06296": {
-      "livery": "待确认"
+      "livery": "白蓝公务机涂装"
     },
     "DSC06305": {
       "livery": "现代黑白涂装"
@@ -132,7 +133,7 @@
       "livery": "标准涂装"
     },
     "DSC06736": {
-      "livery": "待确认",
+      "livery": "多机同框 · 多种涂装",
       "subjects": [
         {
           "airline": "Air Canada",
@@ -202,10 +203,10 @@
       "livery": "标准涂装"
     },
     "DSC07125": {
-      "livery": "待确认"
+      "livery": "Congratulations 文字主题涂装"
     },
     "DSC07130": {
-      "livery": "待确认"
+      "livery": "Congratulations 文字主题涂装"
     },
     "DSC07141": {
       "livery": "Congratulations 文字主题涂装"
@@ -262,7 +263,7 @@
       "livery": "标准涂装"
     },
     "DSC07460": {
-      "livery": "待确认"
+      "livery": "白底条纹公务机涂装"
     },
     "DSC07486": {
       "livery": "现代黑白涂装"
@@ -295,10 +296,10 @@
       "livery": "Rouge 红白涂装"
     },
     "DSC07662": {
-      "livery": "待确认"
+      "livery": "白底条纹公务机涂装"
     },
     "DSC07697": {
-      "livery": "待确认"
+      "livery": "白底条纹公务机涂装"
     },
     "DSC07711": {
       "livery": "Star Alliance 星空联盟涂装"
@@ -325,7 +326,7 @@
       "livery": "现代黑白涂装"
     },
     "DSC07793": {
-      "livery": "待确认"
+      "livery": "现代黑白涂装"
     },
     "DSC07805": {
       "livery": "标准涂装"
@@ -349,7 +350,7 @@
       "livery": "现代黑白涂装"
     },
     "DSC07884": {
-      "livery": "待确认"
+      "livery": "白底条纹公务机涂装"
     },
     "DSC07905": {
       "livery": "标准涂装"
@@ -358,7 +359,7 @@
       "livery": "标准涂装"
     },
     "DSC07935": {
-      "livery": "待确认"
+      "livery": "白身深色尾翼公务机涂装"
     },
     "DSC07978": {
       "livery": "经典黄尾标涂装"
@@ -400,7 +401,7 @@
       "livery": "标准涂装"
     },
     "DSC08138": {
-      "livery": "待确认"
+      "livery": "白蓝公务机涂装"
     },
     "DSC08147": {
       "livery": "标准涂装"
@@ -491,14 +492,14 @@
       "livery": "经典冰蓝涂装"
     },
     "DSC08570": {
-      "livery": "待确认",
+      "livery": "标准涂装",
       "models": [
         "Embraer E195-E2"
       ],
       "note": ""
     },
     "DSC08575": {
-      "livery": "待确认",
+      "livery": "标准涂装",
       "models": [
         "Boeing 747-400ERF"
       ],
@@ -595,7 +596,7 @@
       "livery": "标准涂装"
     },
     "DSC09096": {
-      "livery": "待确认",
+      "livery": "现代黑白涂装",
       "models": [
         "Airbus A330-300"
       ],
@@ -608,7 +609,7 @@
       "livery": "标准涂装"
     },
     "DSC09141": {
-      "livery": "待确认"
+      "livery": "白蓝公务机涂装"
     },
     "DSC09159": {
       "livery": "标准涂装"
@@ -620,7 +621,7 @@
       "livery": "标准涂装"
     },
     "DSC09210": {
-      "livery": "待确认"
+      "livery": "白蓝公务机涂装"
     },
     "DSC09223": {
       "livery": "现代黑白涂装"
@@ -629,7 +630,7 @@
       "livery": "标准涂装"
     },
     "DSC09268": {
-      "livery": "待确认",
+      "livery": "标准涂装",
       "models": [
         "Boeing 747-400"
       ],
@@ -669,7 +670,7 @@
       "livery": "Congratulations 文字主题涂装"
     },
     "DSC09427": {
-      "livery": "现代黑白涂装"
+      "livery": "Congratulations 文字主题涂装"
     },
     "DSC09442": {
       "livery": "标准涂装"
@@ -681,7 +682,7 @@
       "livery": "标准涂装"
     },
     "DSC09470": {
-      "livery": "待确认",
+      "livery": "现代黑白涂装",
       "models": [
         "Bombardier CRJ-900"
       ],
@@ -694,13 +695,13 @@
       "livery": "现代黑白涂装"
     },
     "DSC09502": {
-      "livery": "待确认"
+      "livery": "Star Alliance 星空联盟涂装"
     },
     "DSC09510": {
       "livery": "Star Alliance 星空联盟涂装"
     },
     "DSC09517": {
-      "livery": "经典冰蓝涂装"
+      "livery": "Star Alliance 星空联盟涂装"
     },
     "DSC09524": {
       "livery": "标准涂装",
@@ -720,14 +721,14 @@
       "livery": "现代黑白涂装"
     },
     "DSC09553": {
-      "livery": "待确认",
+      "livery": "蓝白条纹涂装",
       "models": [
         "Airbus A330-900"
       ],
       "note": ""
     },
     "DSC09555": {
-      "livery": "标准涂装"
+      "livery": "蓝白条纹涂装"
     },
     "DSC09561": {
       "livery": "蓝白条纹涂装"
@@ -748,19 +749,19 @@
       "livery": "现代黑白涂装"
     },
     "DSC09643": {
-      "livery": "待确认"
+      "livery": "白蓝公务机涂装"
     },
     "DSC09646": {
-      "livery": "待确认"
+      "livery": "白蓝公务机涂装"
     },
     "DSC09659": {
       "livery": "现代黑白涂装"
     },
     "DSC09667": {
-      "livery": "待确认"
+      "livery": "白蓝公务机涂装"
     },
     "DSC09669": {
-      "livery": "待确认"
+      "livery": "白蓝公务机涂装"
     },
     "DSC09679": {
       "livery": "现代黑白涂装"
@@ -769,10 +770,10 @@
       "livery": "现代黑白涂装"
     },
     "DSC09694": {
-      "livery": "待确认"
+      "livery": "白蓝公务机涂装"
     },
     "DSC09696": {
-      "livery": "待确认"
+      "livery": "白蓝公务机涂装"
     },
     "DSC09707": {
       "livery": "现代黑白涂装"
@@ -850,7 +851,7 @@
       "livery": "现代黑白涂装"
     },
     "DSC09855": {
-      "livery": "待确认"
+      "livery": "现代黑白涂装"
     },
     "DSC09865": {
       "livery": "现代黑白涂装"
@@ -865,7 +866,7 @@
       "livery": "标准涂装"
     },
     "DSC09880": {
-      "livery": "待确认"
+      "livery": "现代黑白涂装"
     },
     "DSC09885": {
       "livery": "现代黑白涂装"
@@ -883,7 +884,7 @@
       "livery": "标准涂装"
     },
     "DSC09919": {
-      "livery": "待确认"
+      "livery": "标准涂装"
     },
     "DSC09920": {
       "livery": "现代黑白涂装"
@@ -898,7 +899,7 @@
       "livery": "标准涂装"
     },
     "DSC09946": {
-      "livery": "待确认"
+      "livery": "标准涂装"
     },
     "DSC09953": {
       "livery": "现代黑白涂装"
@@ -1132,7 +1133,7 @@
       "livery": "标准涂装"
     },
     "DSC00768": {
-      "livery": "待确认"
+      "livery": "标准涂装"
     },
     "DSC00780": {
       "livery": "标准涂装"
