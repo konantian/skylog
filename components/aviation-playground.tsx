@@ -39,10 +39,16 @@ function Quiz({aircraft,photos,onPhotos}:{aircraft:Entry[];photos:Photo[];onPhot
   const [answers,setAnswers]=useState<(string|null)[]>(()=>questions.map(()=>null));
   const [index,setIndex]=useState(0),[finished,setFinished]=useState(false),[imageReady,setImageReady]=useState(false);
   const questionHeading=useRef<HTMLHeadingElement>(null);
+  const answer=answers[index];
   useEffect(()=>{questionHeading.current?.focus({preventScroll:false});},[index,finished]);
+  useEffect(()=>{
+    if(!answer)return;
+    const dialog=questionHeading.current?.closest('dialog');
+    dialog?.scrollTo({top:dialog.scrollHeight,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+  },[answer,index]);
   const restart=()=>{const round=makeQuiz(pool) as Question[];setQuestions(round);setAnswers(round.map(()=>null));setIndex(0);setFinished(false);setImageReady(false);};
   if(!questions.length)return <p className="play-empty">暂时没有足够的已确认照片来出题。</p>;
-  const question=questions[index],answer=answers[index],score=quizScore(questions,answers);
+  const question=questions[index],score=quizScore(questions,answers);
   if(finished)return <div className="quiz-results">
     <div className="quiz-score"><span className="eyebrow">ROUND COMPLETE</span><strong>{score}<small> / {questions.length}</small></strong><h3 ref={questionHeading} tabIndex={-1}>{score===questions.length?'识机达人，全对！':'又多认识了几位天空朋友。'}</h3><p>点击照片，可以继续查看具体型号与拍摄细节。</p></div>
     <div className="quiz-review">{questions.map((q,i)=><button key={q.photo.id} onClick={()=>onPhotos(questions.map(item=>item.photo.id),i)}><img src={asset(q.photo.thumbnail)} alt=""/><span><strong><Icon name={answers[i]===q.answer?'check':'close'} size={15}/>{q.answer}</strong><small>{q.model} · {answers[i]===q.answer?'答对了':`你选了 ${answers[i]}`}</small></span><Icon name="diagonal" size={16}/></button>)}</div>
