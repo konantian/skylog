@@ -16,6 +16,7 @@ export function HeroGallery({photos,onPhoto}:{photos:Photo[];onPhoto:(index:numb
   const move=(next:number,manual=true)=>{
     if(manual)setPaused(true);
     const node=reel.current;if(!node)return;
+    if(manual&&node.contains(document.activeElement))node.focus({preventScroll:true});
     const target=(next+photos.length)%photos.length;
     node.scrollTo({left:target*node.clientWidth,behavior:reduced||Math.abs(target-index)>1?'instant':'smooth'});
   };
@@ -41,7 +42,7 @@ export function HeroGallery({photos,onPhoto}:{photos:Photo[];onPhoto:(index:numb
   },[]);
 
   return <section className="hero-gallery" ref={gallery} aria-label="十张精选摄影轮播" aria-roledescription="轮播" onFocusCapture={e=>{if(e.target instanceof HTMLElement&&e.target.matches(':focus-visible'))setPaused(true);}} onPointerEnter={e=>{if(e.pointerType==='mouse')setHovered(true);}} onPointerLeave={()=>setHovered(false)}>
-    <div className="hero-reel" ref={reel} onScroll={e=>{const node=e.currentTarget;const next=Math.max(0,Math.min(photos.length-1,Math.round(node.scrollLeft/node.clientWidth)));currentIndex.current=next;setIndex(next);}} onPointerDown={()=>setPaused(true)} onKeyDown={e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();move(index+(e.key==='ArrowRight'?1:-1));}}}>
+    <div className="hero-reel" ref={reel} tabIndex={0} role="group" aria-label="精选照片，左右方向键切换" onScroll={e=>{const node=e.currentTarget;const next=Math.max(0,Math.min(photos.length-1,Math.round(node.scrollLeft/node.clientWidth)));currentIndex.current=next;setIndex(next);}} onPointerDown={()=>setPaused(true)} onKeyDown={e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();move(index+(e.key==='ArrowRight'?1:-1));}}}>
       {photos.map((photo,i)=><button className="hero-photo" key={photo.id} tabIndex={i===index?0:-1} aria-hidden={i!==index} onFocus={()=>setPaused(true)} onClick={()=>onPhoto(i)} aria-label={`查看精选照片 ${i+1}，${photo.airlines.join(' / ')} ${photo.models.join(' / ')}`}>
         <img src={asset(photo.image)} alt={`${photo.airlines.join(' / ')} ${photo.models.join(' / ')}`} loading={i===0?'eager':'lazy'} fetchPriority={i===0?'high':'auto'}/><span className="photo-corner">{String(i+1).padStart(2,'0')} / FROM MY VIEWFINDER</span><span className="hero-caption"><span><small>SELECTED CAPTURES</small><strong>{photo.models.join(' / ')}</strong><span>{photo.airlines.join(' / ')} <i/> {photo.airport}</span></span><span className="round-arrow"><Icon name="diagonal"/></span></span>
       </button>)}
