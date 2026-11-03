@@ -6,10 +6,10 @@ export default function manifest():MetadataRoute.Manifest{
   const base=process.env.NEXT_PUBLIC_BASE_PATH||'';
   return {
     id:`${base}/`,
-    name:'SKYLOG · Yuan 的飞机图鉴',
+    name:'SKYLOG · Aviation Atlas',
     short_name:'SKYLOG',
-    description:'追逐天空，收藏相遇。Yuan Wang 的飞机摄影与乘机记录。',
-    lang:'zh-CN',
+    description:'Aircraft photography and flight journeys by Yuan Wang.',
+    lang:'en',
     start_url:`${base}/`,
     scope:`${base}/`,
     display:'standalone',
