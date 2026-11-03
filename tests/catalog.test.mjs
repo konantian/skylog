@@ -3,6 +3,8 @@ import assert from 'node:assert/strict';
 import { readFile, stat } from 'node:fs/promises';
 import sharp from 'sharp';
 import data from '../data/catalog.json' with {type:'json'};
+import verification from '../data/photo-verification.json' with {type:'json'};
+import {photoImageSources,originalPhoto} from '../lib/photo-images.mjs';
 import { initialFilters, filterCatalog, filterPhotos, photoMatches } from '../lib/filter.mjs';
 const f = extra => ({...initialFilters,...extra});
 
@@ -57,15 +59,41 @@ test('visual review fixes the Porter photo without making a Cargojet unlock',()=
   assert.equal(p.flightIdentification.callsign,'PTR9002');
   assert.equal(data.airlines.find(e=>e.name==='Cargojet').unlocked,false);
 });
-test('every public JPG and thumbnail exists, decodes and has no EXIF/GPS',async()=>{
+test('every responsive JPG has its advertised dimensions, preserves the crop and strips private metadata',async()=>{
+  assert.equal(verification.count,data.photos.length);
+  assert.equal(new Set(verification.files.map(f=>f.photo)).size,data.photos.length);
   for(const p of data.photos){
-    for(const key of ['image','thumbnail']){
-      assert.match(p[key],/^\/photos\/(thumbs\/)?DSC\d+\.jpg$/);
-      const file=`public${p[key]}`;
-      assert.ok((await stat(file)).size>1000);
+    const record=verification.files.find(f=>f.photo===p.id);
+    const original=originalPhoto(p.id);
+    assert.match(original.url,new RegExp(`^https://github.com/konantian/skylog/releases/download/[\\w.-]+/${p.id}\\.jpg$`));
+    assert.ok(original.width>0&&original.height>0&&original.bytes>1000);
+    for(const [url,limit,width,bytes] of [
+      [p.image,3200,record.width,record.imageBytes],
+      [`/photos/medium/${p.id}.jpg`,1600,record.mediumWidth,record.mediumBytes],
+      [p.thumbnail,800,record.thumbnailWidth,record.thumbnailBytes],
+    ]){
+      assert.match(url,/^\/photos\/((thumbs|medium)\/)?DSC\d+\.jpg$/);
+      const file=`public${url}`;
+      assert.equal((await stat(file)).size,bytes);
       const m=await sharp(file).metadata();
-      assert.equal(m.format,'jpeg');assert.ok(m.width<=2000&&m.height<=2000);assert.equal(m.exif,undefined);
+      assert.equal(m.format,'jpeg');assert.ok(m.width<=limit&&m.height<=limit);
+      assert.equal(m.width,width);assert.equal(m.exif,undefined);assert.equal(m.xmp,undefined);assert.equal(m.iptc,undefined);
+      assert.ok(m.width<=original.width&&m.height<=original.height,'Never upscale a cropped source');
+      assert.ok(Math.abs(m.height-m.width*original.height/original.width)<=1,'Keep original composition');
     }
+  }
+});
+
+test('responsive images honor the base path and keep full-size downloads out of the display sources',()=>{
+  for(const photo of data.photos){
+    const sources=photoImageSources(photo,'/skylog');
+    assert.equal(sources.src,`/skylog${photo.image}`);
+    const candidates=sources.srcSet.split(', ').map(s=>s.split(' '));
+    const widths=candidates.map(([,w])=>parseInt(w));
+    assert.deepEqual(widths,[...new Set(widths)].sort((a,b)=>a-b));
+    assert.ok(candidates.every(([url])=>url.startsWith('/skylog/photos/')));
+    assert.equal(sources.srcSet.includes('releases/download'),false);
+    assert.ok(sources.width>0&&sources.height>0);
   }
 });
 test('published data contains no library IDs, workstation paths or credentials',async()=>{

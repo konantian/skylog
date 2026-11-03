@@ -3,1863 +3,5955 @@
   "files": [
     {
       "photo": "DSC06137",
-      "imageBytes": 120406,
-      "thumbnailBytes": 22162
+      "imageBytes": 375053,
+      "width": 3200,
+      "height": 2667,
+      "mediumBytes": 80847,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 21523,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06137.jpg",
+        "width": 4800,
+        "height": 4000,
+        "bytes": 884514
+      }
     },
     {
       "photo": "DSC06147",
-      "imageBytes": 119375,
-      "thumbnailBytes": 15544
+      "imageBytes": 606858,
+      "width": 3014,
+      "height": 3011,
+      "mediumBytes": 69695,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15146,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06147.jpg",
+        "width": 3014,
+        "height": 3011,
+        "bytes": 621007
+      }
     },
     {
       "photo": "DSC06165",
-      "imageBytes": 113154,
-      "thumbnailBytes": 20720
+      "imageBytes": 377810,
+      "width": 3200,
+      "height": 1553,
+      "mediumBytes": 76373,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 20428,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06165.jpg",
+        "width": 4978,
+        "height": 2416,
+        "bytes": 952108
+      }
     },
     {
       "photo": "DSC06180",
-      "imageBytes": 104608,
-      "thumbnailBytes": 15477
+      "imageBytes": 553497,
+      "width": 3200,
+      "height": 1522,
+      "mediumBytes": 64430,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15301,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06180.jpg",
+        "width": 4425,
+        "height": 2105,
+        "bytes": 1234753
+      }
     },
     {
       "photo": "DSC06220",
-      "imageBytes": 127969,
-      "thumbnailBytes": 16070
+      "imageBytes": 649786,
+      "width": 3200,
+      "height": 1714,
+      "mediumBytes": 72310,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15882,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06220.jpg",
+        "width": 3602,
+        "height": 1929,
+        "bytes": 906822
+      }
     },
     {
       "photo": "DSC06248",
-      "imageBytes": 218517,
-      "thumbnailBytes": 31224
+      "imageBytes": 939757,
+      "width": 3200,
+      "height": 2266,
+      "mediumBytes": 133709,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 31176,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06248.jpg",
+        "width": 3890,
+        "height": 2754,
+        "bytes": 1484563
+      }
     },
     {
       "photo": "DSC06253",
-      "imageBytes": 129139,
-      "thumbnailBytes": 20237
+      "imageBytes": 675856,
+      "width": 3200,
+      "height": 2188,
+      "mediumBytes": 79552,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 20152,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06253.jpg",
+        "width": 4237,
+        "height": 2897,
+        "bytes": 1392514
+      }
     },
     {
       "photo": "DSC06296",
-      "imageBytes": 161958,
-      "thumbnailBytes": 11782
+      "imageBytes": 403483,
+      "width": 2410,
+      "height": 1378,
+      "mediumBytes": 82048,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 11592,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06296.jpg",
+        "width": 2410,
+        "height": 1378,
+        "bytes": 423332
+      }
     },
     {
       "photo": "DSC06305",
-      "imageBytes": 174297,
-      "thumbnailBytes": 16150
+      "imageBytes": 465774,
+      "width": 2569,
+      "height": 1543,
+      "mediumBytes": 93896,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15945,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06305.jpg",
+        "width": 2569,
+        "height": 1543,
+        "bytes": 518110
+      }
     },
     {
       "photo": "DSC06330",
-      "imageBytes": 190037,
-      "thumbnailBytes": 16781
+      "imageBytes": 544736,
+      "width": 2643,
+      "height": 1641,
+      "mediumBytes": 101225,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16590,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06330.jpg",
+        "width": 2643,
+        "height": 1641,
+        "bytes": 600714
+      }
     },
     {
       "photo": "DSC06340",
-      "imageBytes": 149011,
-      "thumbnailBytes": 24126
+      "imageBytes": 613282,
+      "width": 3200,
+      "height": 1715,
+      "mediumBytes": 97889,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 23913,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06340.jpg",
+        "width": 5541,
+        "height": 2969,
+        "bytes": 2087180
+      }
     },
     {
       "photo": "DSC06345",
-      "imageBytes": 137874,
-      "thumbnailBytes": 22619
+      "imageBytes": 654545,
+      "width": 3200,
+      "height": 1787,
+      "mediumBytes": 88558,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 22112,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06345.jpg",
+        "width": 5078,
+        "height": 2836,
+        "bytes": 1934342
+      }
     },
     {
       "photo": "DSC06352",
-      "imageBytes": 120675,
-      "thumbnailBytes": 14581
+      "imageBytes": 715771,
+      "width": 3200,
+      "height": 2120,
+      "mediumBytes": 65906,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 14340,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06352.jpg",
+        "width": 3907,
+        "height": 2588,
+        "bytes": 1209811
+      }
     },
     {
       "photo": "DSC06370",
-      "imageBytes": 100488,
-      "thumbnailBytes": 15025
+      "imageBytes": 523681,
+      "width": 3200,
+      "height": 1719,
+      "mediumBytes": 60844,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 14768,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06370.jpg",
+        "width": 4024,
+        "height": 2162,
+        "bytes": 969090
+      }
     },
     {
       "photo": "DSC06380",
-      "imageBytes": 110879,
-      "thumbnailBytes": 15657
+      "imageBytes": 577745,
+      "width": 3200,
+      "height": 1846,
+      "mediumBytes": 64431,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15510,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06380.jpg",
+        "width": 3820,
+        "height": 2204,
+        "bytes": 947266
+      }
     },
     {
       "photo": "DSC06416",
-      "imageBytes": 98325,
-      "thumbnailBytes": 11181
+      "imageBytes": 570652,
+      "width": 3200,
+      "height": 1770,
+      "mediumBytes": 52024,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 10992,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06416.jpg",
+        "width": 3585,
+        "height": 1983,
+        "bytes": 799450
+      }
     },
     {
       "photo": "DSC06439",
-      "imageBytes": 146528,
-      "thumbnailBytes": 14829
+      "imageBytes": 716995,
+      "width": 3200,
+      "height": 1738,
+      "mediumBytes": 78033,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 14656,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06439.jpg",
+        "width": 3366,
+        "height": 1828,
+        "bytes": 863404
+      }
     },
     {
       "photo": "DSC06453",
-      "imageBytes": 119470,
-      "thumbnailBytes": 11505
+      "imageBytes": 561914,
+      "width": 3036,
+      "height": 1623,
+      "mediumBytes": 61925,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 11361,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06453.jpg",
+        "width": 3036,
+        "height": 1623,
+        "bytes": 597953
+      }
     },
     {
       "photo": "DSC06466",
-      "imageBytes": 125315,
-      "thumbnailBytes": 14476
+      "imageBytes": 676931,
+      "width": 3200,
+      "height": 1506,
+      "mediumBytes": 70081,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 14376,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06466.jpg",
+        "width": 4046,
+        "height": 1904,
+        "bytes": 1170051
+      }
     },
     {
       "photo": "DSC06480",
-      "imageBytes": 127999,
-      "thumbnailBytes": 17446
+      "imageBytes": 689652,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 75445,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17355,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06480.jpg",
+        "width": 5463,
+        "height": 3073,
+        "bytes": 2610186
+      }
     },
     {
       "photo": "DSC06490",
-      "imageBytes": 116814,
-      "thumbnailBytes": 11712
+      "imageBytes": 686156,
+      "width": 3200,
+      "height": 1767,
+      "mediumBytes": 60094,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 11521,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06490.jpg",
+        "width": 3992,
+        "height": 2204,
+        "bytes": 1213853
+      }
     },
     {
       "photo": "DSC06505",
-      "imageBytes": 112585,
-      "thumbnailBytes": 11794
+      "imageBytes": 604748,
+      "width": 3200,
+      "height": 1631,
+      "mediumBytes": 59721,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 11601,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06505.jpg",
+        "width": 3921,
+        "height": 1999,
+        "bytes": 1036712
+      }
     },
     {
       "photo": "DSC06544",
-      "imageBytes": 127601,
-      "thumbnailBytes": 15762
+      "imageBytes": 696675,
+      "width": 3200,
+      "height": 1596,
+      "mediumBytes": 72074,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15591,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06544.jpg",
+        "width": 5355,
+        "height": 2670,
+        "bytes": 2340385
+      }
     },
     {
       "photo": "DSC06549",
-      "imageBytes": 94372,
-      "thumbnailBytes": 11746
+      "imageBytes": 528020,
+      "width": 3200,
+      "height": 1259,
+      "mediumBytes": 52792,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 11482,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06549.jpg",
+        "width": 4885,
+        "height": 1922,
+        "bytes": 1495165
+      }
     },
     {
       "photo": "DSC06561",
-      "imageBytes": 131631,
-      "thumbnailBytes": 14007
+      "imageBytes": 683488,
+      "width": 3200,
+      "height": 1546,
+      "mediumBytes": 70762,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 13666,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06561.jpg",
+        "width": 4153,
+        "height": 2006,
+        "bytes": 1318906
+      }
     },
     {
       "photo": "DSC06568",
-      "imageBytes": 198617,
-      "thumbnailBytes": 13953
+      "imageBytes": 762582,
+      "width": 2956,
+      "height": 1620,
+      "mediumBytes": 100539,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 13816,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06568.jpg",
+        "width": 2956,
+        "height": 1620,
+        "bytes": 798089
+      }
     },
     {
       "photo": "DSC06577",
-      "imageBytes": 191798,
-      "thumbnailBytes": 14162
+      "imageBytes": 801305,
+      "width": 3063,
+      "height": 1612,
+      "mediumBytes": 96936,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 14059,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06577.jpg",
+        "width": 3063,
+        "height": 1612,
+        "bytes": 839057
+      }
     },
     {
       "photo": "DSC06619",
-      "imageBytes": 153628,
-      "thumbnailBytes": 9967
+      "imageBytes": 826331,
+      "width": 3200,
+      "height": 1661,
+      "mediumBytes": 75099,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 9848,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06619.jpg",
+        "width": 3679,
+        "height": 1910,
+        "bytes": 1176220
+      }
     },
     {
       "photo": "DSC06634",
-      "imageBytes": 137480,
-      "thumbnailBytes": 16778
+      "imageBytes": 710469,
+      "width": 3200,
+      "height": 1685,
+      "mediumBytes": 78099,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16484,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06634.jpg",
+        "width": 4828,
+        "height": 2542,
+        "bytes": 1828343
+      }
     },
     {
       "photo": "DSC06637",
-      "imageBytes": 136484,
-      "thumbnailBytes": 14849
+      "imageBytes": 760886,
+      "width": 3200,
+      "height": 1645,
+      "mediumBytes": 74993,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 14656,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06637.jpg",
+        "width": 4689,
+        "height": 2410,
+        "bytes": 1918109
+      }
     },
     {
       "photo": "DSC06646",
-      "imageBytes": 342076,
-      "thumbnailBytes": 27921
+      "imageBytes": 1386817,
+      "width": 3051,
+      "height": 3061,
+      "mediumBytes": 177685,
+      "mediumWidth": 1595,
+      "thumbnailBytes": 27555,
+      "thumbnailWidth": 797,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06646.jpg",
+        "width": 3051,
+        "height": 3061,
+        "bytes": 1516456
+      }
     },
     {
       "photo": "DSC06660",
-      "imageBytes": 92228,
-      "thumbnailBytes": 10248
+      "imageBytes": 549904,
+      "width": 3200,
+      "height": 1401,
+      "mediumBytes": 49574,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 9992,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06660.jpg",
+        "width": 4292,
+        "height": 1879,
+        "bytes": 1140733
+      }
     },
     {
       "photo": "DSC06678",
-      "imageBytes": 179807,
-      "thumbnailBytes": 9749
+      "imageBytes": 229323,
+      "width": 1857,
+      "height": 843,
+      "mediumBytes": 98247,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 9707,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06678.jpg",
+        "width": 1857,
+        "height": 843,
+        "bytes": 239920
+      }
     },
     {
       "photo": "DSC06680",
-      "imageBytes": 259290,
-      "thumbnailBytes": 43576
+      "imageBytes": 1033610,
+      "width": 3200,
+      "height": 2196,
+      "mediumBytes": 164364,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 43470,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06680.jpg",
+        "width": 3947,
+        "height": 2709,
+        "bytes": 1744799
+      }
     },
     {
       "photo": "DSC06684",
-      "imageBytes": 113684,
-      "thumbnailBytes": 13906
+      "imageBytes": 617677,
+      "width": 3200,
+      "height": 1476,
+      "mediumBytes": 63392,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 13572,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06684.jpg",
+        "width": 4615,
+        "height": 2128,
+        "bytes": 1538081
+      }
     },
     {
       "photo": "DSC06693",
-      "imageBytes": 174204,
-      "thumbnailBytes": 27959
+      "imageBytes": 656952,
+      "width": 3200,
+      "height": 1798,
+      "mediumBytes": 114005,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 27591,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06693.jpg",
+        "width": 6000,
+        "height": 3372,
+        "bytes": 2701305
+      }
     },
     {
       "photo": "DSC06697",
-      "imageBytes": 105257,
-      "thumbnailBytes": 16002
+      "imageBytes": 497983,
+      "width": 3200,
+      "height": 1328,
+      "mediumBytes": 65544,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15786,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06697.jpg",
+        "width": 5986,
+        "height": 2484,
+        "bytes": 2278763
+      }
     },
     {
       "photo": "DSC06705",
-      "imageBytes": 99448,
-      "thumbnailBytes": 11314
+      "imageBytes": 587645,
+      "width": 3200,
+      "height": 1839,
+      "mediumBytes": 53721,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 11047,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06705.jpg",
+        "width": 3982,
+        "height": 2289,
+        "bytes": 1067016
+      }
     },
     {
       "photo": "DSC06706",
-      "imageBytes": 133380,
-      "thumbnailBytes": 14846
+      "imageBytes": 791491,
+      "width": 3200,
+      "height": 2117,
+      "mediumBytes": 73520,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 14744,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06706.jpg",
+        "width": 3858,
+        "height": 2552,
+        "bytes": 1272277
+      }
     },
     {
       "photo": "DSC06712",
-      "imageBytes": 135324,
-      "thumbnailBytes": 15686
+      "imageBytes": 754652,
+      "width": 3200,
+      "height": 1769,
+      "mediumBytes": 75986,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15453,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06712.jpg",
+        "width": 4571,
+        "height": 2527,
+        "bytes": 1803571
+      }
     },
     {
       "photo": "DSC06722",
-      "imageBytes": 151923,
-      "thumbnailBytes": 18098
+      "imageBytes": 832351,
+      "width": 3200,
+      "height": 2125,
+      "mediumBytes": 86216,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17719,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06722.jpg",
+        "width": 4020,
+        "height": 2669,
+        "bytes": 1502021
+      }
     },
     {
       "photo": "DSC06725",
-      "imageBytes": 117533,
-      "thumbnailBytes": 15489
+      "imageBytes": 656290,
+      "width": 3200,
+      "height": 1852,
+      "mediumBytes": 69104,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15173,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06725.jpg",
+        "width": 4719,
+        "height": 2731,
+        "bytes": 1756187
+      }
     },
     {
       "photo": "DSC06734",
-      "imageBytes": 298888,
-      "thumbnailBytes": 43088
+      "imageBytes": 1049087,
+      "width": 3200,
+      "height": 1382,
+      "mediumBytes": 187842,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 42271,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06734.jpg",
+        "width": 5124,
+        "height": 2213,
+        "bytes": 2896360
+      }
     },
     {
       "photo": "DSC06736",
-      "imageBytes": 236803,
-      "thumbnailBytes": 31404
+      "imageBytes": 819184,
+      "width": 3200,
+      "height": 955,
+      "mediumBytes": 145848,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 30789,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06736.jpg",
+        "width": 4254,
+        "height": 1270,
+        "bytes": 1519758
+      }
     },
     {
       "photo": "DSC06740",
-      "imageBytes": 328918,
-      "thumbnailBytes": 15713
+      "imageBytes": 685353,
+      "width": 2359,
+      "height": 1572,
+      "mediumBytes": 173129,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15529,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06740.jpg",
+        "width": 2359,
+        "height": 1572,
+        "bytes": 709083
+      }
     },
     {
       "photo": "DSC06747",
-      "imageBytes": 149164,
-      "thumbnailBytes": 20381
+      "imageBytes": 756551,
+      "width": 3200,
+      "height": 1859,
+      "mediumBytes": 88874,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 20154,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06747.jpg",
+        "width": 5414,
+        "height": 3146,
+        "bytes": 2612743
+      }
     },
     {
       "photo": "DSC06754",
-      "imageBytes": 214502,
-      "thumbnailBytes": 15874
+      "imageBytes": 1027166,
+      "width": 3200,
+      "height": 1851,
+      "mediumBytes": 109233,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15682,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06754.jpg",
+        "width": 3593,
+        "height": 2078,
+        "bytes": 1377791
+      }
     },
     {
       "photo": "DSC06758",
-      "imageBytes": 154321,
-      "thumbnailBytes": 20105
+      "imageBytes": 798965,
+      "width": 3200,
+      "height": 1790,
+      "mediumBytes": 89350,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19714,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06758.jpg",
+        "width": 4939,
+        "height": 2762,
+        "bytes": 2209464
+      }
     },
     {
       "photo": "DSC06763",
-      "imageBytes": 117435,
-      "thumbnailBytes": 16826
+      "imageBytes": 588856,
+      "width": 3200,
+      "height": 1643,
+      "mediumBytes": 72134,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16709,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06763.jpg",
+        "width": 5776,
+        "height": 2965,
+        "bytes": 2530269
+      }
     },
     {
       "photo": "DSC06774",
-      "imageBytes": 100701,
-      "thumbnailBytes": 16055
+      "imageBytes": 486467,
+      "width": 3200,
+      "height": 1766,
+      "mediumBytes": 63838,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15780,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06774.jpg",
+        "width": 5329,
+        "height": 2941,
+        "bytes": 1723708
+      }
     },
     {
       "photo": "DSC06778",
-      "imageBytes": 116947,
-      "thumbnailBytes": 15798
+      "imageBytes": 654364,
+      "width": 3200,
+      "height": 2123,
+      "mediumBytes": 69134,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15459,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06778.jpg",
+        "width": 4191,
+        "height": 2781,
+        "bytes": 1312662
+      }
     },
     {
       "photo": "DSC06816",
-      "imageBytes": 93516,
-      "thumbnailBytes": 18651
+      "imageBytes": 310711,
+      "width": 3200,
+      "height": 1290,
+      "mediumBytes": 65617,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 18128,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06816.jpg",
+        "width": 4536,
+        "height": 1828,
+        "bytes": 670551
+      }
     },
     {
       "photo": "DSC06836",
-      "imageBytes": 379482,
-      "thumbnailBytes": 51450
+      "imageBytes": 1153286,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 240096,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 50598,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06836.jpg",
+        "width": 5696,
+        "height": 3204,
+        "bytes": 3471434
+      }
     },
     {
       "photo": "DSC06860",
-      "imageBytes": 305261,
-      "thumbnailBytes": 44209
+      "imageBytes": 973478,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 196819,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 43615,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06860.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3331231
+      }
     },
     {
       "photo": "DSC06885",
-      "imageBytes": 356577,
-      "thumbnailBytes": 48818
+      "imageBytes": 1128843,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 229256,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 48087,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06885.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3897540
+      }
     },
     {
       "photo": "DSC06923",
-      "imageBytes": 371896,
-      "thumbnailBytes": 50796
+      "imageBytes": 1158519,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 239214,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 50016,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06923.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3553673
+      }
     },
     {
       "photo": "DSC06946",
-      "imageBytes": 361278,
-      "thumbnailBytes": 49111
+      "imageBytes": 1091694,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 229021,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 48062,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06946.jpg",
+        "width": 5154,
+        "height": 2899,
+        "bytes": 2658195
+      }
     },
     {
       "photo": "DSC06977",
-      "imageBytes": 340175,
-      "thumbnailBytes": 47687
+      "imageBytes": 1055974,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 219448,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 47092,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06977.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3491898
+      }
     },
     {
       "photo": "DSC07019",
-      "imageBytes": 304745,
-      "thumbnailBytes": 44479
+      "imageBytes": 936151,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 198641,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 44127,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07019.jpg",
+        "width": 3936,
+        "height": 2214,
+        "bytes": 1433222
+      }
     },
     {
       "photo": "DSC07036",
-      "imageBytes": 307508,
-      "thumbnailBytes": 41677
+      "imageBytes": 969369,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 196914,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 40989,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07036.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3241515
+      }
     },
     {
       "photo": "DSC07052",
-      "imageBytes": 300198,
-      "thumbnailBytes": 44130
+      "imageBytes": 891978,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 196974,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 43567,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07052.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2775710
+      }
     },
     {
       "photo": "DSC07072",
-      "imageBytes": 347606,
-      "thumbnailBytes": 45957
+      "imageBytes": 1162526,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 215272,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 44888,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07072.jpg",
+        "width": 4822,
+        "height": 2712,
+        "bytes": 2681585
+      }
     },
     {
       "photo": "DSC07078",
-      "imageBytes": 269643,
-      "thumbnailBytes": 45335
+      "imageBytes": 774088,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 183651,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 44863,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07078.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2360861
+      }
     },
     {
       "photo": "DSC07125",
-      "imageBytes": 228337,
-      "thumbnailBytes": 41533
+      "imageBytes": 764032,
+      "width": 3200,
+      "height": 1887,
+      "mediumBytes": 152075,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 41029,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07125.jpg",
+        "width": 4919,
+        "height": 2900,
+        "bytes": 1973267
+      }
     },
     {
       "photo": "DSC07130",
-      "imageBytes": 132347,
-      "thumbnailBytes": 23389
+      "imageBytes": 573384,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 86904,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 22991,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07130.jpg",
+        "width": 4911,
+        "height": 2762,
+        "bytes": 1643323
+      }
     },
     {
       "photo": "DSC07141",
-      "imageBytes": 117218,
-      "thumbnailBytes": 21125
+      "imageBytes": 427467,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 79037,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 20748,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07141.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 1720729
+      }
     },
     {
       "photo": "DSC07164",
-      "imageBytes": 119932,
-      "thumbnailBytes": 21541
+      "imageBytes": 513586,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 79907,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 21232,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07164.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2446672
+      }
     },
     {
       "photo": "DSC07190",
-      "imageBytes": 78184,
-      "thumbnailBytes": 13045
+      "imageBytes": 457828,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 49471,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 12569,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07190.jpg",
+        "width": 5092,
+        "height": 2864,
+        "bytes": 1637891
+      }
     },
     {
       "photo": "DSC07220",
-      "imageBytes": 103938,
-      "thumbnailBytes": 15750
+      "imageBytes": 557743,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 63995,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15398,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07220.jpg",
+        "width": 5573,
+        "height": 3135,
+        "bytes": 2331075
+      }
     },
     {
       "photo": "DSC07223",
-      "imageBytes": 99937,
-      "thumbnailBytes": 15723
+      "imageBytes": 502637,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 63352,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15427,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07223.jpg",
+        "width": 5488,
+        "height": 3087,
+        "bytes": 1927484
+      }
     },
     {
       "photo": "DSC07243",
-      "imageBytes": 89805,
-      "thumbnailBytes": 15290
+      "imageBytes": 459534,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 57689,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 14993,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07243.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2479875
+      }
     },
     {
       "photo": "DSC07266",
-      "imageBytes": 109056,
-      "thumbnailBytes": 16107
+      "imageBytes": 585174,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 64505,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15752,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07266.jpg",
+        "width": 4070,
+        "height": 2289,
+        "bytes": 1103812
+      }
     },
     {
       "photo": "DSC07272",
-      "imageBytes": 118904,
-      "thumbnailBytes": 21626
+      "imageBytes": 530699,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 78465,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 21304,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07272.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2609764
+      }
     },
     {
       "photo": "DSC07292",
-      "imageBytes": 110313,
-      "thumbnailBytes": 18754
+      "imageBytes": 527139,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 71236,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 18394,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07292.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2754585
+      }
     },
     {
       "photo": "DSC07316",
-      "imageBytes": 103693,
-      "thumbnailBytes": 17514
+      "imageBytes": 491295,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 67507,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17084,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07316.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2509392
+      }
     },
     {
       "photo": "DSC07322",
-      "imageBytes": 109493,
-      "thumbnailBytes": 18330
+      "imageBytes": 571322,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 69289,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17920,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07322.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2948922
+      }
     },
     {
       "photo": "DSC07346",
-      "imageBytes": 112861,
-      "thumbnailBytes": 20107
+      "imageBytes": 541254,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 73832,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19742,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07346.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2659960
+      }
     },
     {
       "photo": "DSC07361",
-      "imageBytes": 121299,
-      "thumbnailBytes": 20333
+      "imageBytes": 559275,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 78032,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 20075,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07361.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2864237
+      }
     },
     {
       "photo": "DSC07393",
-      "imageBytes": 107559,
-      "thumbnailBytes": 19255
+      "imageBytes": 489380,
+      "width": 3200,
+      "height": 1600,
+      "mediumBytes": 69666,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19026,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07393.jpg",
+        "width": 6000,
+        "height": 3000,
+        "bytes": 2463358
+      }
     },
     {
       "photo": "DSC07408",
-      "imageBytes": 110720,
-      "thumbnailBytes": 18648
+      "imageBytes": 538717,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 70622,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 18358,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07408.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2780941
+      }
     },
     {
       "photo": "DSC07432",
-      "imageBytes": 112013,
-      "thumbnailBytes": 19543
+      "imageBytes": 529255,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 72951,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19069,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07432.jpg",
+        "width": 5242,
+        "height": 2949,
+        "bytes": 1876972
+      }
     },
     {
       "photo": "DSC07434",
-      "imageBytes": 106369,
-      "thumbnailBytes": 18700
+      "imageBytes": 516730,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 68679,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 18377,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07434.jpg",
+        "width": 5573,
+        "height": 3135,
+        "bytes": 2176450
+      }
     },
     {
       "photo": "DSC07437",
-      "imageBytes": 112052,
-      "thumbnailBytes": 17905
+      "imageBytes": 583908,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 69793,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17577,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07437.jpg",
+        "width": 4798,
+        "height": 2699,
+        "bytes": 1621898
+      }
     },
     {
       "photo": "DSC07460",
-      "imageBytes": 97545,
-      "thumbnailBytes": 12116
+      "imageBytes": 608746,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 54825,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 11729,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07460.jpg",
+        "width": 4430,
+        "height": 2492,
+        "bytes": 1444222
+      }
     },
     {
       "photo": "DSC07486",
-      "imageBytes": 108175,
-      "thumbnailBytes": 19474
+      "imageBytes": 490613,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 71387,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19084,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07486.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2562374
+      }
     },
     {
       "photo": "DSC07508",
-      "imageBytes": 105475,
-      "thumbnailBytes": 16213
+      "imageBytes": 579795,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 64490,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15908,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07508.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3014862
+      }
     },
     {
       "photo": "DSC07546",
-      "imageBytes": 107515,
-      "thumbnailBytes": 18888
+      "imageBytes": 489751,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 70152,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 18471,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07546.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2463503
+      }
     },
     {
       "photo": "DSC07562",
-      "imageBytes": 145177,
-      "thumbnailBytes": 20448
+      "imageBytes": 659193,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 86597,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 20219,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07562.jpg",
+        "width": 3818,
+        "height": 2148,
+        "bytes": 1048630
+      }
     },
     {
       "photo": "DSC07563",
-      "imageBytes": 107590,
-      "thumbnailBytes": 16686
+      "imageBytes": 585358,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 66323,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16339,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07563.jpg",
+        "width": 5098,
+        "height": 2868,
+        "bytes": 1952685
+      }
     },
     {
       "photo": "DSC07574",
-      "imageBytes": 112330,
-      "thumbnailBytes": 18671
+      "imageBytes": 566251,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 70777,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 18417,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07574.jpg",
+        "width": 5488,
+        "height": 3087,
+        "bytes": 2304895
+      }
     },
     {
       "photo": "DSC07600",
-      "imageBytes": 94689,
-      "thumbnailBytes": 17244
+      "imageBytes": 407177,
+      "width": 3200,
+      "height": 1317,
+      "mediumBytes": 63723,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17080,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07600.jpg",
+        "width": 6000,
+        "height": 2470,
+        "bytes": 2033887
+      }
     },
     {
       "photo": "DSC07613",
-      "imageBytes": 92859,
-      "thumbnailBytes": 15709
+      "imageBytes": 446503,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 60583,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15292,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07613.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2364850
+      }
     },
     {
       "photo": "DSC07636",
-      "imageBytes": 98717,
-      "thumbnailBytes": 16988
+      "imageBytes": 448177,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 63653,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16598,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07636.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2218168
+      }
     },
     {
       "photo": "DSC07651",
-      "imageBytes": 127032,
-      "thumbnailBytes": 22303
+      "imageBytes": 579690,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 82974,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 21917,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07651.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2892663
+      }
     },
     {
       "photo": "DSC07662",
-      "imageBytes": 138847,
-      "thumbnailBytes": 14889
+      "imageBytes": 649847,
+      "width": 3153,
+      "height": 1774,
+      "mediumBytes": 74105,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 14614,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07662.jpg",
+        "width": 3153,
+        "height": 1774,
+        "bytes": 722544
+      }
     },
     {
       "photo": "DSC07697",
-      "imageBytes": 94911,
-      "thumbnailBytes": 11078
+      "imageBytes": 584492,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 50511,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 10905,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07697.jpg",
+        "width": 3936,
+        "height": 2214,
+        "bytes": 1051172
+      }
     },
     {
       "photo": "DSC07711",
-      "imageBytes": 147918,
-      "thumbnailBytes": 20391
+      "imageBytes": 720509,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 86340,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 20190,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07711.jpg",
+        "width": 3936,
+        "height": 2214,
+        "bytes": 1201200
+      }
     },
     {
       "photo": "DSC07714",
-      "imageBytes": 104661,
-      "thumbnailBytes": 15777
+      "imageBytes": 483772,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 64099,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15514,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07714.jpg",
+        "width": 3936,
+        "height": 2214,
+        "bytes": 815565
+      }
     },
     {
       "photo": "DSC07725",
-      "imageBytes": 145629,
-      "thumbnailBytes": 22164
+      "imageBytes": 672872,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 88316,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 21969,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07725.jpg",
+        "width": 3936,
+        "height": 2214,
+        "bytes": 1144300
+      }
     },
     {
       "photo": "DSC07735",
-      "imageBytes": 146850,
-      "thumbnailBytes": 20962
+      "imageBytes": 701927,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 86985,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 20725,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07735.jpg",
+        "width": 3936,
+        "height": 2214,
+        "bytes": 1196412
+      }
     },
     {
       "photo": "DSC07745",
-      "imageBytes": 155289,
-      "thumbnailBytes": 22813
+      "imageBytes": 718209,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 92890,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 22458,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07745.jpg",
+        "width": 3936,
+        "height": 2214,
+        "bytes": 1223917
+      }
     },
     {
       "photo": "DSC07753",
-      "imageBytes": 157838,
-      "thumbnailBytes": 23367
+      "imageBytes": 723438,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 94650,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 23173,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07753.jpg",
+        "width": 3936,
+        "height": 2214,
+        "bytes": 1232687
+      }
     },
     {
       "photo": "DSC07757",
-      "imageBytes": 128419,
-      "thumbnailBytes": 16910
+      "imageBytes": 677988,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 72753,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16464,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07757.jpg",
+        "width": 3936,
+        "height": 2214,
+        "bytes": 1175461
+      }
     },
     {
       "photo": "DSC07776",
-      "imageBytes": 131130,
-      "thumbnailBytes": 20447
+      "imageBytes": 628585,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 79532,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19946,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07776.jpg",
+        "width": 3936,
+        "height": 2214,
+        "bytes": 1079678
+      }
     },
     {
       "photo": "DSC07793",
-      "imageBytes": 93578,
-      "thumbnailBytes": 13679
+      "imageBytes": 481554,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 56223,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 13365,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07793.jpg",
+        "width": 3936,
+        "height": 2214,
+        "bytes": 840101
+      }
     },
     {
       "photo": "DSC07805",
-      "imageBytes": 318658,
-      "thumbnailBytes": 43913
+      "imageBytes": 1062861,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 204043,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 43649,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07805.jpg",
+        "width": 3936,
+        "height": 2214,
+        "bytes": 1675541
+      }
     },
     {
       "photo": "DSC07817",
-      "imageBytes": 257561,
-      "thumbnailBytes": 40297
+      "imageBytes": 744767,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 171063,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 40049,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07817.jpg",
+        "width": 3936,
+        "height": 2214,
+        "bytes": 1098549
+      }
     },
     {
       "photo": "DSC07825",
-      "imageBytes": 98899,
-      "thumbnailBytes": 14433
+      "imageBytes": 514170,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 58773,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 13984,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07825.jpg",
+        "width": 3936,
+        "height": 2214,
+        "bytes": 898799
+      }
     },
     {
       "photo": "DSC07839",
-      "imageBytes": 153737,
-      "thumbnailBytes": 22171
+      "imageBytes": 674863,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 91587,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 21769,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07839.jpg",
+        "width": 3340,
+        "height": 1879,
+        "bytes": 807665
+      }
     },
     {
       "photo": "DSC07851",
-      "imageBytes": 112032,
-      "thumbnailBytes": 18712
+      "imageBytes": 448421,
+      "width": 3200,
+      "height": 1163,
+      "mediumBytes": 71773,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 18794,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07851.jpg",
+        "width": 3538,
+        "height": 1286,
+        "bytes": 601723
+      }
     },
     {
       "photo": "DSC07853",
-      "imageBytes": 130795,
-      "thumbnailBytes": 17583
+      "imageBytes": 718043,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 75597,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17487,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07853.jpg",
+        "width": 3936,
+        "height": 2214,
+        "bytes": 1218332
+      }
     },
     {
       "photo": "DSC07874",
-      "imageBytes": 143228,
-      "thumbnailBytes": 20593
+      "imageBytes": 696824,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 84562,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 20381,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07874.jpg",
+        "width": 3936,
+        "height": 2214,
+        "bytes": 1192117
+      }
     },
     {
       "photo": "DSC07884",
-      "imageBytes": 104353,
-      "thumbnailBytes": 14257
+      "imageBytes": 638969,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 58888,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 13756,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07884.jpg",
+        "width": 4281,
+        "height": 2408,
+        "bytes": 1353892
+      }
     },
     {
       "photo": "DSC07905",
-      "imageBytes": 120516,
-      "thumbnailBytes": 16819
+      "imageBytes": 662852,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 71738,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16519,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07905.jpg",
+        "width": 5038,
+        "height": 2834,
+        "bytes": 2097924
+      }
     },
     {
       "photo": "DSC07917",
-      "imageBytes": 98643,
-      "thumbnailBytes": 14250
+      "imageBytes": 605620,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 58150,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 13922,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07917.jpg",
+        "width": 5398,
+        "height": 3036,
+        "bytes": 2351695
+      }
     },
     {
       "photo": "DSC07935",
-      "imageBytes": 101550,
-      "thumbnailBytes": 13842
+      "imageBytes": 632859,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 58702,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 13651,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07935.jpg",
+        "width": 5398,
+        "height": 3036,
+        "bytes": 2340002
+      }
     },
     {
       "photo": "DSC07978",
-      "imageBytes": 125976,
-      "thumbnailBytes": 16063
+      "imageBytes": 739704,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 71640,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15796,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07978.jpg",
+        "width": 4557,
+        "height": 2563,
+        "bytes": 1781759
+      }
     },
     {
       "photo": "DSC07984",
-      "imageBytes": 92132,
-      "thumbnailBytes": 15775
+      "imageBytes": 448514,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 59285,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15106,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC07984.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2520919
+      }
     },
     {
       "photo": "DSC08002",
-      "imageBytes": 167550,
-      "thumbnailBytes": 20130
+      "imageBytes": 857951,
+      "width": 3200,
+      "height": 1816,
+      "mediumBytes": 94908,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19872,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08002.jpg",
+        "width": 5640,
+        "height": 3200,
+        "bytes": 3540852
+      }
     },
     {
       "photo": "DSC08005",
-      "imageBytes": 158641,
-      "thumbnailBytes": 14870
+      "imageBytes": 885838,
+      "width": 3200,
+      "height": 1829,
+      "mediumBytes": 84223,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 14639,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08005.jpg",
+        "width": 5040,
+        "height": 2880,
+        "bytes": 2786294
+      }
     },
     {
       "photo": "DSC08024",
-      "imageBytes": 107668,
-      "thumbnailBytes": 11689
+      "imageBytes": 660851,
+      "width": 3200,
+      "height": 1701,
+      "mediumBytes": 58955,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 11401,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08024.jpg",
+        "width": 4740,
+        "height": 2520,
+        "bytes": 1910584
+      }
     },
     {
       "photo": "DSC08029",
-      "imageBytes": 128129,
-      "thumbnailBytes": 17875
+      "imageBytes": 618737,
+      "width": 3200,
+      "height": 1451,
+      "mediumBytes": 76334,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17662,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08029.jpg",
+        "width": 6000,
+        "height": 2720,
+        "bytes": 2859605
+      }
     },
     {
       "photo": "DSC08060",
-      "imageBytes": 128400,
-      "thumbnailBytes": 18146
+      "imageBytes": 606436,
+      "width": 3200,
+      "height": 1515,
+      "mediumBytes": 76385,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17844,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08060.jpg",
+        "width": 6000,
+        "height": 2840,
+        "bytes": 2771421
+      }
     },
     {
       "photo": "DSC08064",
-      "imageBytes": 171287,
-      "thumbnailBytes": 23977
+      "imageBytes": 824814,
+      "width": 3200,
+      "height": 1942,
+      "mediumBytes": 102205,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 23615,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08064.jpg",
+        "width": 5340,
+        "height": 3240,
+        "bytes": 2944172
+      }
     },
     {
       "photo": "DSC08080",
-      "imageBytes": 121363,
-      "thumbnailBytes": 20543
+      "imageBytes": 529413,
+      "width": 3200,
+      "height": 1583,
+      "mediumBytes": 77167,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 20609,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08080.jpg",
+        "width": 5580,
+        "height": 2760,
+        "bytes": 1989105
+      }
     },
     {
       "photo": "DSC08088",
-      "imageBytes": 220922,
-      "thumbnailBytes": 33662
+      "imageBytes": 755799,
+      "width": 3200,
+      "height": 1643,
+      "mediumBytes": 142676,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 33069,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08088.jpg",
+        "width": 6000,
+        "height": 3080,
+        "bytes": 2628441
+      }
     },
     {
       "photo": "DSC08110",
-      "imageBytes": 122512,
-      "thumbnailBytes": 19625
+      "imageBytes": 591120,
+      "width": 3200,
+      "height": 1621,
+      "mediumBytes": 75736,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19203,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08110.jpg",
+        "width": 6000,
+        "height": 3040,
+        "bytes": 2856904
+      }
     },
     {
       "photo": "DSC08113",
-      "imageBytes": 113233,
-      "thumbnailBytes": 20082
+      "imageBytes": 498394,
+      "width": 3200,
+      "height": 1644,
+      "mediumBytes": 73444,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19672,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08113.jpg",
+        "width": 5760,
+        "height": 2960,
+        "bytes": 2054921
+      }
     },
     {
       "photo": "DSC08120",
-      "imageBytes": 206167,
-      "thumbnailBytes": 32179
+      "imageBytes": 760906,
+      "width": 3200,
+      "height": 1901,
+      "mediumBytes": 131832,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 31455,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08120.jpg",
+        "width": 5520,
+        "height": 3280,
+        "bytes": 2393581
+      }
     },
     {
       "photo": "DSC08138",
-      "imageBytes": 91530,
-      "thumbnailBytes": 16593
+      "imageBytes": 398750,
+      "width": 3200,
+      "height": 1537,
+      "mediumBytes": 59003,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16028,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08138.jpg",
+        "width": 5580,
+        "height": 2680,
+        "bytes": 1540563
+      }
     },
     {
       "photo": "DSC08147",
-      "imageBytes": 112579,
-      "thumbnailBytes": 19608
+      "imageBytes": 502109,
+      "width": 3200,
+      "height": 1594,
+      "mediumBytes": 71928,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19156,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08147.jpg",
+        "width": 5700,
+        "height": 2840,
+        "bytes": 2065348
+      }
     },
     {
       "photo": "DSC08150",
-      "imageBytes": 102083,
-      "thumbnailBytes": 18925
+      "imageBytes": 441337,
+      "width": 3200,
+      "height": 1515,
+      "mediumBytes": 66802,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 18524,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08150.jpg",
+        "width": 6000,
+        "height": 2840,
+        "bytes": 2037992
+      }
     },
     {
       "photo": "DSC08173",
-      "imageBytes": 97593,
-      "thumbnailBytes": 18811
+      "imageBytes": 421768,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 66174,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 18085,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08173.jpg",
+        "width": 5089,
+        "height": 2863,
+        "bytes": 1339676
+      }
     },
     {
       "photo": "DSC08175",
-      "imageBytes": 131868,
-      "thumbnailBytes": 22377
+      "imageBytes": 553293,
+      "width": 3200,
+      "height": 1707,
+      "mediumBytes": 83480,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 22055,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08175.jpg",
+        "width": 6000,
+        "height": 3200,
+        "bytes": 2413486
+      }
     },
     {
       "photo": "DSC08194",
-      "imageBytes": 114705,
-      "thumbnailBytes": 19969
+      "imageBytes": 477234,
+      "width": 3200,
+      "height": 1518,
+      "mediumBytes": 74562,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19668,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08194.jpg",
+        "width": 5820,
+        "height": 2760,
+        "bytes": 1983949
+      }
     },
     {
       "photo": "DSC08202",
-      "imageBytes": 235153,
-      "thumbnailBytes": 36495
+      "imageBytes": 832808,
+      "width": 3200,
+      "height": 1988,
+      "mediumBytes": 151025,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 35680,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08202.jpg",
+        "width": 5280,
+        "height": 3280,
+        "bytes": 2369780
+      }
     },
     {
       "photo": "DSC08220",
-      "imageBytes": 88362,
-      "thumbnailBytes": 15211
+      "imageBytes": 412454,
+      "width": 3200,
+      "height": 1429,
+      "mediumBytes": 56072,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 14909,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08220.jpg",
+        "width": 6000,
+        "height": 2680,
+        "bytes": 1860246
+      }
     },
     {
       "photo": "DSC08246",
-      "imageBytes": 99194,
-      "thumbnailBytes": 15274
+      "imageBytes": 499777,
+      "width": 3200,
+      "height": 1583,
+      "mediumBytes": 60666,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 14946,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08246.jpg",
+        "width": 5580,
+        "height": 2760,
+        "bytes": 2005419
+      }
     },
     {
       "photo": "DSC08277",
-      "imageBytes": 119440,
-      "thumbnailBytes": 19968
+      "imageBytes": 537379,
+      "width": 3200,
+      "height": 1670,
+      "mediumBytes": 75251,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19422,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08277.jpg",
+        "width": 5520,
+        "height": 2880,
+        "bytes": 1935440
+      }
     },
     {
       "photo": "DSC08300",
-      "imageBytes": 128920,
-      "thumbnailBytes": 20986
+      "imageBytes": 535182,
+      "width": 3200,
+      "height": 1600,
+      "mediumBytes": 81715,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 20737,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08300.jpg",
+        "width": 6000,
+        "height": 3000,
+        "bytes": 2339277
+      }
     },
     {
       "photo": "DSC08319",
-      "imageBytes": 109691,
-      "thumbnailBytes": 7185
+      "imageBytes": 757628,
+      "width": 3200,
+      "height": 1750,
+      "mediumBytes": 52938,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 6920,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08319.jpg",
+        "width": 4680,
+        "height": 2560,
+        "bytes": 2069213
+      }
     },
     {
       "photo": "DSC08337",
-      "imageBytes": 96509,
-      "thumbnailBytes": 14577
+      "imageBytes": 467024,
+      "width": 3200,
+      "height": 1641,
+      "mediumBytes": 59018,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 14130,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08337.jpg",
+        "width": 5460,
+        "height": 2800,
+        "bytes": 1787761
+      }
     },
     {
       "photo": "DSC08340",
-      "imageBytes": 129043,
-      "thumbnailBytes": 18699
+      "imageBytes": 590058,
+      "width": 3200,
+      "height": 1675,
+      "mediumBytes": 76954,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 18342,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08340.jpg",
+        "width": 5580,
+        "height": 2920,
+        "bytes": 2188103
+      }
     },
     {
       "photo": "DSC08347",
-      "imageBytes": 253861,
-      "thumbnailBytes": 35846
+      "imageBytes": 875259,
+      "width": 3200,
+      "height": 1786,
+      "mediumBytes": 158851,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 34933,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08347.jpg",
+        "width": 5520,
+        "height": 3080,
+        "bytes": 2561753
+      }
     },
     {
       "photo": "DSC08365",
-      "imageBytes": 119787,
-      "thumbnailBytes": 19785
+      "imageBytes": 551245,
+      "width": 3200,
+      "height": 1638,
+      "mediumBytes": 75500,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19467,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08365.jpg",
+        "width": 5940,
+        "height": 3040,
+        "bytes": 2438468
+      }
     },
     {
       "photo": "DSC08383",
-      "imageBytes": 83897,
-      "thumbnailBytes": 14592
+      "imageBytes": 395521,
+      "width": 3200,
+      "height": 1515,
+      "mediumBytes": 53473,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 13991,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08383.jpg",
+        "width": 6000,
+        "height": 2840,
+        "bytes": 2040861
+      }
     },
     {
       "photo": "DSC08388",
-      "imageBytes": 167307,
-      "thumbnailBytes": 23142
+      "imageBytes": 730973,
+      "width": 3200,
+      "height": 1878,
+      "mediumBytes": 100196,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 22705,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08388.jpg",
+        "width": 5520,
+        "height": 3240,
+        "bytes": 2607543
+      }
     },
     {
       "photo": "DSC08394",
-      "imageBytes": 234323,
-      "thumbnailBytes": 33650
+      "imageBytes": 832532,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 147331,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 32761,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08394.jpg",
+        "width": 5760,
+        "height": 3240,
+        "bytes": 2722021
+      }
     },
     {
       "photo": "DSC08422",
-      "imageBytes": 104541,
-      "thumbnailBytes": 15640
+      "imageBytes": 489244,
+      "width": 3200,
+      "height": 1646,
+      "mediumBytes": 64138,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15204,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08422.jpg",
+        "width": 5520,
+        "height": 2840,
+        "bytes": 1687755
+      }
     },
     {
       "photo": "DSC08428",
-      "imageBytes": 275667,
-      "thumbnailBytes": 41325
+      "imageBytes": 923461,
+      "width": 3200,
+      "height": 1948,
+      "mediumBytes": 175703,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 40407,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08428.jpg",
+        "width": 5520,
+        "height": 3360,
+        "bytes": 2634245
+      }
     },
     {
       "photo": "DSC08454",
-      "imageBytes": 268012,
-      "thumbnailBytes": 38558
+      "imageBytes": 930186,
+      "width": 3200,
+      "height": 2079,
+      "mediumBytes": 170698,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 37574,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08454.jpg",
+        "width": 4680,
+        "height": 3040,
+        "bytes": 1920949
+      }
     },
     {
       "photo": "DSC08470",
-      "imageBytes": 186174,
-      "thumbnailBytes": 29700
+      "imageBytes": 717121,
+      "width": 3200,
+      "height": 1977,
+      "mediumBytes": 118200,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 28948,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08470.jpg",
+        "width": 4920,
+        "height": 3040,
+        "bytes": 1830909
+      }
     },
     {
       "photo": "DSC08491",
-      "imageBytes": 118381,
-      "thumbnailBytes": 15123
+      "imageBytes": 652743,
+      "width": 3200,
+      "height": 2133,
+      "mediumBytes": 68324,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 14624,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08491.jpg",
+        "width": 4680,
+        "height": 3120,
+        "bytes": 1635093
+      }
     },
     {
       "photo": "DSC08504",
-      "imageBytes": 142465,
-      "thumbnailBytes": 22081
+      "imageBytes": 627692,
+      "width": 3200,
+      "height": 1758,
+      "mediumBytes": 88446,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 21593,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08504.jpg",
+        "width": 5460,
+        "height": 3000,
+        "bytes": 2242956
+      }
     },
     {
       "photo": "DSC08513",
-      "imageBytes": 177845,
-      "thumbnailBytes": 29316
+      "imageBytes": 630771,
+      "width": 3200,
+      "height": 1646,
+      "mediumBytes": 116398,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 28508,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08513.jpg",
+        "width": 5520,
+        "height": 2840,
+        "bytes": 2143510
+      }
     },
     {
       "photo": "DSC08522",
-      "imageBytes": 220879,
-      "thumbnailBytes": 34799
+      "imageBytes": 767232,
+      "width": 3200,
+      "height": 1962,
+      "mediumBytes": 143985,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 33884,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08522.jpg",
+        "width": 5220,
+        "height": 3200,
+        "bytes": 2098647
+      }
     },
     {
       "photo": "DSC08542",
-      "imageBytes": 94936,
-      "thumbnailBytes": 13893
+      "imageBytes": 525731,
+      "width": 3200,
+      "height": 1769,
+      "mediumBytes": 57785,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 13379,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08542.jpg",
+        "width": 4920,
+        "height": 2720,
+        "bytes": 1586244
+      }
     },
     {
       "photo": "DSC08559",
-      "imageBytes": 102921,
-      "thumbnailBytes": 16851
+      "imageBytes": 422441,
+      "width": 3200,
+      "height": 1754,
+      "mediumBytes": 65988,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16234,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08559.jpg",
+        "width": 5400,
+        "height": 2960,
+        "bytes": 1518928
+      }
     },
     {
       "photo": "DSC08570",
-      "imageBytes": 80955,
-      "thumbnailBytes": 14671
+      "imageBytes": 367331,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 54643,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 14045,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08570.jpg",
+        "width": 5113,
+        "height": 2876,
+        "bytes": 1266033
+      }
     },
     {
       "photo": "DSC08575",
-      "imageBytes": 55267,
-      "thumbnailBytes": 10629
+      "imageBytes": 291108,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 37677,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 9926,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08575.jpg",
+        "width": 4514,
+        "height": 2539,
+        "bytes": 724596
+      }
     },
     {
       "photo": "DSC08582",
-      "imageBytes": 110650,
-      "thumbnailBytes": 17151
+      "imageBytes": 476131,
+      "width": 3200,
+      "height": 1595,
+      "mediumBytes": 69127,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16848,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08582.jpg",
+        "width": 5940,
+        "height": 2960,
+        "bytes": 2259684
+      }
     },
     {
       "photo": "DSC08584",
-      "imageBytes": 171952,
-      "thumbnailBytes": 26252
+      "imageBytes": 775959,
+      "width": 3200,
+      "height": 1899,
+      "mediumBytes": 105246,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 25975,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08584.jpg",
+        "width": 6000,
+        "height": 3560,
+        "bytes": 3430057
+      }
     },
     {
       "photo": "DSC08611",
-      "imageBytes": 109512,
-      "thumbnailBytes": 18519
+      "imageBytes": 451300,
+      "width": 3200,
+      "height": 1414,
+      "mediumBytes": 70199,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 18016,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08611.jpg",
+        "width": 5520,
+        "height": 2440,
+        "bytes": 1650815
+      }
     },
     {
       "photo": "DSC08617",
-      "imageBytes": 245288,
-      "thumbnailBytes": 36220
+      "imageBytes": 872703,
+      "width": 3200,
+      "height": 1962,
+      "mediumBytes": 155088,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 35257,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08617.jpg",
+        "width": 5220,
+        "height": 3200,
+        "bytes": 2393371
+      }
     },
     {
       "photo": "DSC08647",
-      "imageBytes": 105584,
-      "thumbnailBytes": 16463
+      "imageBytes": 489894,
+      "width": 3200,
+      "height": 1622,
+      "mediumBytes": 65626,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16197,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08647.jpg",
+        "width": 5760,
+        "height": 2920,
+        "bytes": 2098387
+      }
     },
     {
       "photo": "DSC08688",
-      "imageBytes": 107677,
-      "thumbnailBytes": 19462
+      "imageBytes": 413633,
+      "width": 3200,
+      "height": 1556,
+      "mediumBytes": 72115,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19069,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08688.jpg",
+        "width": 5760,
+        "height": 2800,
+        "bytes": 1728233
+      }
     },
     {
       "photo": "DSC08695",
-      "imageBytes": 106415,
-      "thumbnailBytes": 17427
+      "imageBytes": 453986,
+      "width": 3200,
+      "height": 1472,
+      "mediumBytes": 67976,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17128,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08695.jpg",
+        "width": 6000,
+        "height": 2760,
+        "bytes": 2132098
+      }
     },
     {
       "photo": "DSC08703",
-      "imageBytes": 285902,
-      "thumbnailBytes": 43348
+      "imageBytes": 906106,
+      "width": 3200,
+      "height": 1888,
+      "mediumBytes": 183533,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 42386,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08703.jpg",
+        "width": 5220,
+        "height": 3080,
+        "bytes": 2317589
+      }
     },
     {
       "photo": "DSC08719",
-      "imageBytes": 111886,
-      "thumbnailBytes": 19526
+      "imageBytes": 497376,
+      "width": 3200,
+      "height": 1530,
+      "mediumBytes": 71562,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19173,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08719.jpg",
+        "width": 5940,
+        "height": 2840,
+        "bytes": 2135414
+      }
     },
     {
       "photo": "DSC08746",
-      "imageBytes": 206378,
-      "thumbnailBytes": 31719
+      "imageBytes": 705555,
+      "width": 3200,
+      "height": 1693,
+      "mediumBytes": 132002,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 31226,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08746.jpg",
+        "width": 5820,
+        "height": 3080,
+        "bytes": 2517670
+      }
     },
     {
       "photo": "DSC08753",
-      "imageBytes": 216468,
-      "thumbnailBytes": 35864
+      "imageBytes": 768892,
+      "width": 3200,
+      "height": 1805,
+      "mediumBytes": 141465,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 35017,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08753.jpg",
+        "width": 5460,
+        "height": 3080,
+        "bytes": 2411345
+      }
     },
     {
       "photo": "DSC08768",
-      "imageBytes": 221316,
-      "thumbnailBytes": 37156
+      "imageBytes": 863555,
+      "width": 3200,
+      "height": 1983,
+      "mediumBytes": 140514,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 36610,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08768.jpg",
+        "width": 5100,
+        "height": 3160,
+        "bytes": 2556879
+      }
     },
     {
       "photo": "DSC08793",
-      "imageBytes": 152118,
-      "thumbnailBytes": 24947
+      "imageBytes": 594106,
+      "width": 3200,
+      "height": 1567,
+      "mediumBytes": 96505,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 24474,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08793.jpg",
+        "width": 5880,
+        "height": 2880,
+        "bytes": 2510258
+      }
     },
     {
       "photo": "DSC08799",
-      "imageBytes": 206835,
-      "thumbnailBytes": 32691
+      "imageBytes": 751452,
+      "width": 3200,
+      "height": 1966,
+      "mediumBytes": 133654,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 31767,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08799.jpg",
+        "width": 5340,
+        "height": 3280,
+        "bytes": 2224321
+      }
     },
     {
       "photo": "DSC08816",
-      "imageBytes": 215585,
-      "thumbnailBytes": 38339
+      "imageBytes": 718709,
+      "width": 3200,
+      "height": 1702,
+      "mediumBytes": 145653,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 37815,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08816.jpg",
+        "width": 5640,
+        "height": 3000,
+        "bytes": 2420984
+      }
     },
     {
       "photo": "DSC08819",
-      "imageBytes": 107562,
-      "thumbnailBytes": 18583
+      "imageBytes": 462560,
+      "width": 3200,
+      "height": 1616,
+      "mediumBytes": 68561,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17952,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08819.jpg",
+        "width": 5940,
+        "height": 3000,
+        "bytes": 2191921
+      }
     },
     {
       "photo": "DSC08825",
-      "imageBytes": 166791,
-      "thumbnailBytes": 27899
+      "imageBytes": 662322,
+      "width": 3200,
+      "height": 1878,
+      "mediumBytes": 108122,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 27219,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08825.jpg",
+        "width": 5520,
+        "height": 3240,
+        "bytes": 2293554
+      }
     },
     {
       "photo": "DSC08841",
-      "imageBytes": 104816,
-      "thumbnailBytes": 16478
+      "imageBytes": 508948,
+      "width": 3200,
+      "height": 1667,
+      "mediumBytes": 64850,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16097,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08841.jpg",
+        "width": 5760,
+        "height": 3000,
+        "bytes": 2198199
+      }
     },
     {
       "photo": "DSC08869",
-      "imageBytes": 116418,
-      "thumbnailBytes": 18872
+      "imageBytes": 541546,
+      "width": 3200,
+      "height": 1702,
+      "mediumBytes": 73172,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 18587,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08869.jpg",
+        "width": 5340,
+        "height": 2840,
+        "bytes": 1770478
+      }
     },
     {
       "photo": "DSC08880",
-      "imageBytes": 115120,
-      "thumbnailBytes": 13116
+      "imageBytes": 685435,
+      "width": 3200,
+      "height": 1645,
+      "mediumBytes": 62711,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 12820,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08880.jpg",
+        "width": 4980,
+        "height": 2560,
+        "bytes": 2106522
+      }
     },
     {
       "photo": "DSC08894",
-      "imageBytes": 105835,
-      "thumbnailBytes": 14754
+      "imageBytes": 531045,
+      "width": 3200,
+      "height": 1644,
+      "mediumBytes": 62531,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 14437,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08894.jpg",
+        "width": 5760,
+        "height": 2960,
+        "bytes": 2085709
+      }
     },
     {
       "photo": "DSC08937",
-      "imageBytes": 125317,
-      "thumbnailBytes": 16197
+      "imageBytes": 679281,
+      "width": 3200,
+      "height": 1697,
+      "mediumBytes": 70957,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15894,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08937.jpg",
+        "width": 5280,
+        "height": 2800,
+        "bytes": 2337771
+      }
     },
     {
       "photo": "DSC08964",
-      "imageBytes": 132289,
-      "thumbnailBytes": 18733
+      "imageBytes": 624313,
+      "width": 3200,
+      "height": 1870,
+      "mediumBytes": 79884,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 18339,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08964.jpg",
+        "width": 5340,
+        "height": 3120,
+        "bytes": 2181342
+      }
     },
     {
       "photo": "DSC08974",
-      "imageBytes": 129663,
-      "thumbnailBytes": 21019
+      "imageBytes": 546973,
+      "width": 3200,
+      "height": 1676,
+      "mediumBytes": 82747,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 20485,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08974.jpg",
+        "width": 5880,
+        "height": 3080,
+        "bytes": 2337059
+      }
     },
     {
       "photo": "DSC08990",
-      "imageBytes": 132714,
-      "thumbnailBytes": 16818
+      "imageBytes": 710060,
+      "width": 3200,
+      "height": 1641,
+      "mediumBytes": 75508,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16578,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08990.jpg",
+        "width": 5460,
+        "height": 2800,
+        "bytes": 2747096
+      }
     },
     {
       "photo": "DSC08995",
-      "imageBytes": 222696,
-      "thumbnailBytes": 33301
+      "imageBytes": 775727,
+      "width": 3200,
+      "height": 2133,
+      "mediumBytes": 142788,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 32189,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC08995.jpg",
+        "width": 4800,
+        "height": 3200,
+        "bytes": 1605310
+      }
     },
     {
       "photo": "DSC09024",
-      "imageBytes": 135629,
-      "thumbnailBytes": 19450
+      "imageBytes": 646704,
+      "width": 3200,
+      "height": 1600,
+      "mediumBytes": 81004,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19094,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09024.jpg",
+        "width": 5760,
+        "height": 2880,
+        "bytes": 2661294
+      }
     },
     {
       "photo": "DSC09050",
-      "imageBytes": 165526,
-      "thumbnailBytes": 27360
+      "imageBytes": 683472,
+      "width": 3200,
+      "height": 1664,
+      "mediumBytes": 104943,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 27112,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09050.jpg",
+        "width": 5460,
+        "height": 2840,
+        "bytes": 2429113
+      }
     },
     {
       "photo": "DSC09076",
-      "imageBytes": 124414,
-      "thumbnailBytes": 18574
+      "imageBytes": 552759,
+      "width": 3200,
+      "height": 1657,
+      "mediumBytes": 76999,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 18262,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09076.jpg",
+        "width": 5640,
+        "height": 2920,
+        "bytes": 2251089
+      }
     },
     {
       "photo": "DSC09083",
-      "imageBytes": 286681,
-      "thumbnailBytes": 42110
+      "imageBytes": 978335,
+      "width": 3200,
+      "height": 1927,
+      "mediumBytes": 181351,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 41107,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09083.jpg",
+        "width": 5580,
+        "height": 3360,
+        "bytes": 3162637
+      }
     },
     {
       "photo": "DSC09096",
-      "imageBytes": 97002,
-      "thumbnailBytes": 17408
+      "imageBytes": 449695,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 63805,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16980,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09096.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2345476
+      }
     },
     {
       "photo": "DSC09104",
-      "imageBytes": 196252,
-      "thumbnailBytes": 30527
+      "imageBytes": 761637,
+      "width": 3200,
+      "height": 1906,
+      "mediumBytes": 125732,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 29958,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09104.jpg",
+        "width": 5640,
+        "height": 3360,
+        "bytes": 2697832
+      }
     },
     {
       "photo": "DSC09125",
-      "imageBytes": 147374,
-      "thumbnailBytes": 20644
+      "imageBytes": 702725,
+      "width": 3200,
+      "height": 2006,
+      "mediumBytes": 88890,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 20048,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09125.jpg",
+        "width": 5040,
+        "height": 3160,
+        "bytes": 2066342
+      }
     },
     {
       "photo": "DSC09141",
-      "imageBytes": 191233,
-      "thumbnailBytes": 27255
+      "imageBytes": 797643,
+      "width": 3200,
+      "height": 2000,
+      "mediumBytes": 115609,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 26578,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09141.jpg",
+        "width": 4800,
+        "height": 3000,
+        "bytes": 2024447
+      }
     },
     {
       "photo": "DSC09159",
-      "imageBytes": 115572,
-      "thumbnailBytes": 17890
+      "imageBytes": 527290,
+      "width": 3200,
+      "height": 1589,
+      "mediumBytes": 71030,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17553,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09159.jpg",
+        "width": 5880,
+        "height": 2920,
+        "bytes": 2092427
+      }
     },
     {
       "photo": "DSC09165",
-      "imageBytes": 217579,
-      "thumbnailBytes": 33882
+      "imageBytes": 776662,
+      "width": 3200,
+      "height": 1889,
+      "mediumBytes": 139274,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 33285,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09165.jpg",
+        "width": 5760,
+        "height": 3400,
+        "bytes": 2634079
+      }
     },
     {
       "photo": "DSC09200",
-      "imageBytes": 133568,
-      "thumbnailBytes": 20230
+      "imageBytes": 632700,
+      "width": 3200,
+      "height": 2032,
+      "mediumBytes": 81232,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19713,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09200.jpg",
+        "width": 5040,
+        "height": 3200,
+        "bytes": 1874971
+      }
     },
     {
       "photo": "DSC09210",
-      "imageBytes": 100295,
-      "thumbnailBytes": 9545
+      "imageBytes": 657515,
+      "width": 3200,
+      "height": 1647,
+      "mediumBytes": 51504,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 9332,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09210.jpg",
+        "width": 4740,
+        "height": 2440,
+        "bytes": 1812557
+      }
     },
     {
       "photo": "DSC09223",
-      "imageBytes": 91136,
-      "thumbnailBytes": 15003
+      "imageBytes": 438803,
+      "width": 3200,
+      "height": 1612,
+      "mediumBytes": 57609,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 14463,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09223.jpg",
+        "width": 5400,
+        "height": 2720,
+        "bytes": 1737192
+      }
     },
     {
       "photo": "DSC09237",
-      "imageBytes": 404077,
-      "thumbnailBytes": 50138
+      "imageBytes": 1245349,
+      "width": 3200,
+      "height": 1378,
+      "mediumBytes": 251681,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 49344,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09237.jpg",
+        "width": 5760,
+        "height": 2480,
+        "bytes": 3739771
+      }
     },
     {
       "photo": "DSC09268",
-      "imageBytes": 102053,
-      "thumbnailBytes": 17611
+      "imageBytes": 499283,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 66052,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17107,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09268.jpg",
+        "width": 5041,
+        "height": 2836,
+        "bytes": 1663288
+      }
     },
     {
       "photo": "DSC09272",
-      "imageBytes": 175987,
-      "thumbnailBytes": 26263
+      "imageBytes": 784644,
+      "width": 3200,
+      "height": 1942,
+      "mediumBytes": 108204,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 25928,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09272.jpg",
+        "width": 5340,
+        "height": 3240,
+        "bytes": 2674193
+      }
     },
     {
       "photo": "DSC09279",
-      "imageBytes": 306444,
-      "thumbnailBytes": 41656
+      "imageBytes": 1062150,
+      "width": 3200,
+      "height": 1852,
+      "mediumBytes": 188829,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 40715,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09279.jpg",
+        "width": 5460,
+        "height": 3160,
+        "bytes": 3202596
+      }
     },
     {
       "photo": "DSC09288",
-      "imageBytes": 272444,
-      "thumbnailBytes": 36345
+      "imageBytes": 904343,
+      "width": 3200,
+      "height": 1520,
+      "mediumBytes": 167590,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 35327,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09288.jpg",
+        "width": 4800,
+        "height": 2280,
+        "bytes": 1976011
+      }
     },
     {
       "photo": "DSC09300",
-      "imageBytes": 124231,
-      "thumbnailBytes": 18722
+      "imageBytes": 614172,
+      "width": 3200,
+      "height": 1671,
+      "mediumBytes": 74489,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 18314,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09300.jpg",
+        "width": 5820,
+        "height": 3040,
+        "bytes": 2798487
+      }
     },
     {
       "photo": "DSC09314",
-      "imageBytes": 120268,
-      "thumbnailBytes": 18193
+      "imageBytes": 568983,
+      "width": 3200,
+      "height": 1606,
+      "mediumBytes": 73391,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17811,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09314.jpg",
+        "width": 5580,
+        "height": 2800,
+        "bytes": 2222684
+      }
     },
     {
       "photo": "DSC09352",
-      "imageBytes": 232196,
-      "thumbnailBytes": 34878
+      "imageBytes": 852259,
+      "width": 3200,
+      "height": 1807,
+      "mediumBytes": 145042,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 34260,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09352.jpg",
+        "width": 5880,
+        "height": 3320,
+        "bytes": 3331481
+      }
     },
     {
       "photo": "DSC09356",
-      "imageBytes": 284521,
-      "thumbnailBytes": 39293
+      "imageBytes": 1021667,
+      "width": 3200,
+      "height": 1849,
+      "mediumBytes": 175340,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 38473,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09356.jpg",
+        "width": 5400,
+        "height": 3120,
+        "bytes": 3128051
+      }
     },
     {
       "photo": "DSC09363",
-      "imageBytes": 217388,
-      "thumbnailBytes": 29520
+      "imageBytes": 775876,
+      "width": 3200,
+      "height": 1575,
+      "mediumBytes": 136203,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 28765,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09363.jpg",
+        "width": 5040,
+        "height": 2480,
+        "bytes": 1960317
+      }
     },
     {
       "photo": "DSC09373",
-      "imageBytes": 114707,
-      "thumbnailBytes": 17557
+      "imageBytes": 564222,
+      "width": 3200,
+      "height": 1667,
+      "mediumBytes": 70071,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17075,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09373.jpg",
+        "width": 5760,
+        "height": 3000,
+        "bytes": 2314257
+      }
     },
     {
       "photo": "DSC09404",
-      "imageBytes": 84093,
-      "thumbnailBytes": 13766
+      "imageBytes": 399300,
+      "width": 3200,
+      "height": 1518,
+      "mediumBytes": 52701,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 13320,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09404.jpg",
+        "width": 5820,
+        "height": 2760,
+        "bytes": 1681736
+      }
     },
     {
       "photo": "DSC09420",
-      "imageBytes": 239224,
-      "thumbnailBytes": 34220
+      "imageBytes": 931022,
+      "width": 3200,
+      "height": 1889,
+      "mediumBytes": 146621,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 33646,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09420.jpg",
+        "width": 5760,
+        "height": 3400,
+        "bytes": 3583745
+      }
     },
     {
       "photo": "DSC09427",
-      "imageBytes": 309670,
-      "thumbnailBytes": 43583
+      "imageBytes": 1017682,
+      "width": 3200,
+      "height": 1702,
+      "mediumBytes": 197156,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 42730,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09427.jpg",
+        "width": 5640,
+        "height": 3000,
+        "bytes": 3133354
+      }
     },
     {
       "photo": "DSC09442",
-      "imageBytes": 111857,
-      "thumbnailBytes": 19233
+      "imageBytes": 498985,
+      "width": 3200,
+      "height": 1781,
+      "mediumBytes": 71471,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 18458,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09442.jpg",
+        "width": 5820,
+        "height": 3240,
+        "bytes": 2270532
+      }
     },
     {
       "photo": "DSC09451",
-      "imageBytes": 245132,
-      "thumbnailBytes": 34768
+      "imageBytes": 871601,
+      "width": 3200,
+      "height": 1886,
+      "mediumBytes": 153037,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 34059,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09451.jpg",
+        "width": 5700,
+        "height": 3360,
+        "bytes": 2865890
+      }
     },
     {
       "photo": "DSC09459",
-      "imageBytes": 112010,
-      "thumbnailBytes": 17795
+      "imageBytes": 556764,
+      "width": 3200,
+      "height": 1752,
+      "mediumBytes": 69291,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17544,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09459.jpg",
+        "width": 5700,
+        "height": 3120,
+        "bytes": 2393612
+      }
     },
     {
       "photo": "DSC09470",
-      "imageBytes": 90560,
-      "thumbnailBytes": 15360
+      "imageBytes": 449565,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 58419,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15071,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09470.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2437583
+      }
     },
     {
       "photo": "DSC09480",
-      "imageBytes": 129315,
-      "thumbnailBytes": 15676
+      "imageBytes": 701824,
+      "width": 3200,
+      "height": 1913,
+      "mediumBytes": 72909,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15348,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09480.jpg",
+        "width": 5220,
+        "height": 3120,
+        "bytes": 2242483
+      }
     },
     {
       "photo": "DSC09487",
-      "imageBytes": 102038,
-      "thumbnailBytes": 15748
+      "imageBytes": 533061,
+      "width": 3200,
+      "height": 1644,
+      "mediumBytes": 61902,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15411,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09487.jpg",
+        "width": 5760,
+        "height": 2960,
+        "bytes": 2362648
+      }
     },
     {
       "photo": "DSC09502",
-      "imageBytes": 75865,
-      "thumbnailBytes": 14655
+      "imageBytes": 278397,
+      "width": 3200,
+      "height": 2019,
+      "mediumBytes": 53634,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 14490,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09502.jpg",
+        "width": 5580,
+        "height": 3520,
+        "bytes": 916540
+      }
     },
     {
       "photo": "DSC09510",
-      "imageBytes": 142270,
-      "thumbnailBytes": 20756
+      "imageBytes": 684408,
+      "width": 3200,
+      "height": 1894,
+      "mediumBytes": 85727,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 20517,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09510.jpg",
+        "width": 5880,
+        "height": 3480,
+        "bytes": 2878182
+      }
     },
     {
       "photo": "DSC09517",
-      "imageBytes": 229160,
-      "thumbnailBytes": 34192
+      "imageBytes": 844737,
+      "width": 3200,
+      "height": 1737,
+      "mediumBytes": 145422,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 33651,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09517.jpg",
+        "width": 5820,
+        "height": 3160,
+        "bytes": 3155139
+      }
     },
     {
       "photo": "DSC09524",
-      "imageBytes": 107238,
-      "thumbnailBytes": 16757
+      "imageBytes": 481652,
+      "width": 3200,
+      "height": 1633,
+      "mediumBytes": 66398,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16281,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09524.jpg",
+        "width": 5880,
+        "height": 3000,
+        "bytes": 1887543
+      }
     },
     {
       "photo": "DSC09533",
-      "imageBytes": 109792,
-      "thumbnailBytes": 17780
+      "imageBytes": 444466,
+      "width": 3200,
+      "height": 1829,
+      "mediumBytes": 70627,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17432,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09533.jpg",
+        "width": 5460,
+        "height": 3120,
+        "bytes": 1340444
+      }
     },
     {
       "photo": "DSC09542",
-      "imageBytes": 116258,
-      "thumbnailBytes": 20276
+      "imageBytes": 497384,
+      "width": 3200,
+      "height": 1621,
+      "mediumBytes": 75521,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19743,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09542.jpg",
+        "width": 6000,
+        "height": 3040,
+        "bytes": 2151967
+      }
     },
     {
       "photo": "DSC09553",
-      "imageBytes": 82280,
-      "thumbnailBytes": 16580
+      "imageBytes": 279571,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 58157,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16309,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09553.jpg",
+        "width": 5424,
+        "height": 3051,
+        "bytes": 959294
+      }
     },
     {
       "photo": "DSC09555",
-      "imageBytes": 90733,
-      "thumbnailBytes": 17172
+      "imageBytes": 328499,
+      "width": 3200,
+      "height": 1933,
+      "mediumBytes": 62510,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16796,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09555.jpg",
+        "width": 5760,
+        "height": 3480,
+        "bytes": 1116148
+      }
     },
     {
       "photo": "DSC09561",
-      "imageBytes": 139267,
-      "thumbnailBytes": 21593
+      "imageBytes": 643974,
+      "width": 3200,
+      "height": 1937,
+      "mediumBytes": 85885,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 20966,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09561.jpg",
+        "width": 5880,
+        "height": 3560,
+        "bytes": 2721220
+      }
     },
     {
       "photo": "DSC09568",
-      "imageBytes": 208436,
-      "thumbnailBytes": 32042
+      "imageBytes": 786749,
+      "width": 3200,
+      "height": 1654,
+      "mediumBytes": 132522,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 31763,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09568.jpg",
+        "width": 5340,
+        "height": 2760,
+        "bytes": 2494897
+      }
     },
     {
       "photo": "DSC09614",
-      "imageBytes": 109531,
-      "thumbnailBytes": 17980
+      "imageBytes": 538849,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 69876,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17716,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09614.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2715985
+      }
     },
     {
       "photo": "DSC09622",
-      "imageBytes": 94923,
-      "thumbnailBytes": 15635
+      "imageBytes": 498919,
+      "width": 3200,
+      "height": 1790,
+      "mediumBytes": 61362,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15473,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09622.jpg",
+        "width": 4748,
+        "height": 2656,
+        "bytes": 1386438
+      }
     },
     {
       "photo": "DSC09629",
-      "imageBytes": 125328,
-      "thumbnailBytes": 22096
+      "imageBytes": 479632,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 84895,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 21991,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09629.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2335374
+      }
     },
     {
       "photo": "DSC09632",
-      "imageBytes": 105775,
-      "thumbnailBytes": 19974
+      "imageBytes": 401215,
+      "width": 3200,
+      "height": 1304,
+      "mediumBytes": 72837,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19902,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09632.jpg",
+        "width": 6000,
+        "height": 2445,
+        "bytes": 1934202
+      }
     },
     {
       "photo": "DSC09643",
-      "imageBytes": 102476,
-      "thumbnailBytes": 15552
+      "imageBytes": 551427,
+      "width": 3200,
+      "height": 1745,
+      "mediumBytes": 62716,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15553,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09643.jpg",
+        "width": 4475,
+        "height": 2440,
+        "bytes": 1268628
+      }
     },
     {
       "photo": "DSC09646",
-      "imageBytes": 132905,
-      "thumbnailBytes": 22812
+      "imageBytes": 592977,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 86442,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 22531,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09646.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2900097
+      }
     },
     {
       "photo": "DSC09659",
-      "imageBytes": 115206,
-      "thumbnailBytes": 20342
+      "imageBytes": 493372,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 77886,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 20249,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09659.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2485418
+      }
     },
     {
       "photo": "DSC09667",
-      "imageBytes": 95022,
-      "thumbnailBytes": 16103
+      "imageBytes": 450093,
+      "width": 3200,
+      "height": 1433,
+      "mediumBytes": 61677,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15956,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09667.jpg",
+        "width": 5180,
+        "height": 2320,
+        "bytes": 1507601
+      }
     },
     {
       "photo": "DSC09669",
-      "imageBytes": 111886,
-      "thumbnailBytes": 19419
+      "imageBytes": 512140,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 73931,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19310,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09669.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2582001
+      }
     },
     {
       "photo": "DSC09679",
-      "imageBytes": 129274,
-      "thumbnailBytes": 22352
+      "imageBytes": 551240,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 85930,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 22220,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09679.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2762374
+      }
     },
     {
       "photo": "DSC09681",
-      "imageBytes": 136865,
-      "thumbnailBytes": 23580
+      "imageBytes": 629391,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 89043,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 23325,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09681.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3053023
+      }
     },
     {
       "photo": "DSC09694",
-      "imageBytes": 96006,
-      "thumbnailBytes": 17005
+      "imageBytes": 439744,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 64705,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16879,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09694.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2272643
+      }
     },
     {
       "photo": "DSC09696",
-      "imageBytes": 121187,
-      "thumbnailBytes": 20189
+      "imageBytes": 597389,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 77870,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19970,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09696.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2972239
+      }
     },
     {
       "photo": "DSC09707",
-      "imageBytes": 119744,
-      "thumbnailBytes": 21567
+      "imageBytes": 497121,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 81044,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 21402,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09707.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2479749
+      }
     },
     {
       "photo": "DSC09709",
-      "imageBytes": 114046,
-      "thumbnailBytes": 19982
+      "imageBytes": 538791,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 74095,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19798,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09709.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2766816
+      }
     },
     {
       "photo": "DSC09719",
-      "imageBytes": 96976,
-      "thumbnailBytes": 17340
+      "imageBytes": 426120,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 65054,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17131,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09719.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2211716
+      }
     },
     {
       "photo": "DSC09722",
-      "imageBytes": 115778,
-      "thumbnailBytes": 19696
+      "imageBytes": 590899,
+      "width": 3200,
+      "height": 2133,
+      "mediumBytes": 74483,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19505,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09722.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 3175319
+      }
     },
     {
       "photo": "DSC09738",
-      "imageBytes": 150148,
-      "thumbnailBytes": 26857
+      "imageBytes": 612496,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 100346,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 26700,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09738.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2886903
+      }
     },
     {
       "photo": "DSC09745",
-      "imageBytes": 94950,
-      "thumbnailBytes": 14423
+      "imageBytes": 522991,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 58588,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 14076,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09745.jpg",
+        "width": 4319,
+        "height": 2429,
+        "bytes": 1146500
+      }
     },
     {
       "photo": "DSC09750",
-      "imageBytes": 122585,
-      "thumbnailBytes": 21334
+      "imageBytes": 503523,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 81888,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 21033,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09750.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2499906
+      }
     },
     {
       "photo": "DSC09752",
-      "imageBytes": 167442,
-      "thumbnailBytes": 28312
+      "imageBytes": 754798,
+      "width": 3200,
+      "height": 2133,
+      "mediumBytes": 108921,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 27979,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09752.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 3659925
+      }
     },
     {
       "photo": "DSC09765",
-      "imageBytes": 132757,
-      "thumbnailBytes": 23230
+      "imageBytes": 527639,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 89213,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 22972,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09765.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2563196
+      }
     },
     {
       "photo": "DSC09767",
-      "imageBytes": 135736,
-      "thumbnailBytes": 23171
+      "imageBytes": 627863,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 88096,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 22973,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09767.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3059324
+      }
     },
     {
       "photo": "DSC09778",
-      "imageBytes": 160700,
-      "thumbnailBytes": 28409
+      "imageBytes": 690943,
+      "width": 3200,
+      "height": 2133,
+      "mediumBytes": 106791,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 28120,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09778.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 3399729
+      }
     },
     {
       "photo": "DSC09782",
-      "imageBytes": 107357,
-      "thumbnailBytes": 18356
+      "imageBytes": 489400,
+      "width": 3200,
+      "height": 1618,
+      "mediumBytes": 70846,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 18106,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09782.jpg",
+        "width": 4931,
+        "height": 2493,
+        "bytes": 1445018
+      }
     },
     {
       "photo": "DSC09786",
-      "imageBytes": 313386,
-      "thumbnailBytes": 47245
+      "imageBytes": 945924,
+      "width": 3200,
+      "height": 1434,
+      "mediumBytes": 204812,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 45880,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09786.jpg",
+        "width": 4748,
+        "height": 2128,
+        "bytes": 2044213
+      }
     },
     {
       "photo": "DSC09789",
-      "imageBytes": 100011,
-      "thumbnailBytes": 18428
+      "imageBytes": 454486,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 66921,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 18222,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09789.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2293687
+      }
     },
     {
       "photo": "DSC09795",
-      "imageBytes": 114371,
-      "thumbnailBytes": 21058
+      "imageBytes": 442552,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 78548,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 20911,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09795.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2219858
+      }
     },
     {
       "photo": "DSC09797",
-      "imageBytes": 153898,
-      "thumbnailBytes": 27404
+      "imageBytes": 705959,
+      "width": 3200,
+      "height": 2133,
+      "mediumBytes": 101457,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 27059,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09797.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 3501944
+      }
     },
     {
       "photo": "DSC09800",
-      "imageBytes": 262718,
-      "thumbnailBytes": 40488
+      "imageBytes": 808422,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 173017,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 40014,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09800.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2856916
+      }
     },
     {
       "photo": "DSC09802",
-      "imageBytes": 351366,
-      "thumbnailBytes": 50601
+      "imageBytes": 1098066,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 228030,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 49999,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09802.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3814615
+      }
     },
     {
       "photo": "DSC09812",
-      "imageBytes": 288218,
-      "thumbnailBytes": 42677
+      "imageBytes": 954287,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 186331,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 42120,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09812.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3573906
+      }
     },
     {
       "photo": "DSC09814",
-      "imageBytes": 314396,
-      "thumbnailBytes": 46654
+      "imageBytes": 1018212,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 206092,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 46118,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09814.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3780955
+      }
     },
     {
       "photo": "DSC09827",
-      "imageBytes": 93284,
-      "thumbnailBytes": 16490
+      "imageBytes": 354136,
+      "width": 3200,
+      "height": 1330,
+      "mediumBytes": 63386,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16399,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09827.jpg",
+        "width": 6000,
+        "height": 2493,
+        "bytes": 1689314
+      }
     },
     {
       "photo": "DSC09828",
-      "imageBytes": 296037,
-      "thumbnailBytes": 55887
+      "imageBytes": 884363,
+      "width": 3200,
+      "height": 2133,
+      "mediumBytes": 205677,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 55659,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09828.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 3435324
+      }
     },
     {
       "photo": "DSC09831",
-      "imageBytes": 281802,
-      "thumbnailBytes": 42875
+      "imageBytes": 895570,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 184368,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 42383,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09831.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3296645
+      }
     },
     {
       "photo": "DSC09838",
-      "imageBytes": 385169,
-      "thumbnailBytes": 55354
+      "imageBytes": 1231051,
+      "width": 3200,
+      "height": 2133,
+      "mediumBytes": 251819,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 54850,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09838.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 4383378
+      }
     },
     {
       "photo": "DSC09842",
-      "imageBytes": 331514,
-      "thumbnailBytes": 45913
+      "imageBytes": 1070236,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 213648,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 45356,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09842.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3901073
+      }
     },
     {
       "photo": "DSC09855",
-      "imageBytes": 88772,
-      "thumbnailBytes": 11390
+      "imageBytes": 647247,
+      "width": 3200,
+      "height": 2133,
+      "mediumBytes": 50829,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 11169,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09855.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 3493809
+      }
     },
     {
       "photo": "DSC09865",
-      "imageBytes": 113918,
-      "thumbnailBytes": 18361
+      "imageBytes": 593366,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 71495,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 18234,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09865.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3068006
+      }
     },
     {
       "photo": "DSC09866",
-      "imageBytes": 127804,
-      "thumbnailBytes": 20183
+      "imageBytes": 645988,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 79760,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19959,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09866.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3198638
+      }
     },
     {
       "photo": "DSC09870",
-      "imageBytes": 84908,
-      "thumbnailBytes": 12355
+      "imageBytes": 586925,
+      "width": 3200,
+      "height": 2133,
+      "mediumBytes": 51207,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 12210,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09870.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 3269770
+      }
     },
     {
       "photo": "DSC09877",
-      "imageBytes": 97475,
-      "thumbnailBytes": 15236
+      "imageBytes": 602244,
+      "width": 3200,
+      "height": 2133,
+      "mediumBytes": 61109,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15015,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09877.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 3298782
+      }
     },
     {
       "photo": "DSC09880",
-      "imageBytes": 64371,
-      "thumbnailBytes": 8318
+      "imageBytes": 443398,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 37965,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 8193,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09880.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2589853
+      }
     },
     {
       "photo": "DSC09885",
-      "imageBytes": 79052,
-      "thumbnailBytes": 13120
+      "imageBytes": 417758,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 50425,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 12820,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09885.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2312934
+      }
     },
     {
       "photo": "DSC09892",
-      "imageBytes": 81228,
-      "thumbnailBytes": 13805
+      "imageBytes": 445877,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 52232,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 13686,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09892.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2499754
+      }
     },
     {
       "photo": "DSC09904",
-      "imageBytes": 65903,
-      "thumbnailBytes": 11130
+      "imageBytes": 378650,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 42133,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 10803,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09904.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2209080
+      }
     },
     {
       "photo": "DSC09909",
-      "imageBytes": 105531,
-      "thumbnailBytes": 17313
+      "imageBytes": 479641,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 70450,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17192,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09909.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2527841
+      }
     },
     {
       "photo": "DSC09911",
-      "imageBytes": 124259,
-      "thumbnailBytes": 21852
+      "imageBytes": 456343,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 84801,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 21784,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09911.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2192005
+      }
     },
     {
       "photo": "DSC09919",
-      "imageBytes": 84456,
-      "thumbnailBytes": 13833
+      "imageBytes": 439065,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 55245,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 13871,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09919.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2461874
+      }
     },
     {
       "photo": "DSC09920",
-      "imageBytes": 116243,
-      "thumbnailBytes": 19980
+      "imageBytes": 491892,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 78425,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19796,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09920.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2545751
+      }
     },
     {
       "photo": "DSC09928",
-      "imageBytes": 166572,
-      "thumbnailBytes": 28278
+      "imageBytes": 643079,
+      "width": 3200,
+      "height": 2133,
+      "mediumBytes": 110916,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 28195,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09928.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 3097066
+      }
     },
     {
       "photo": "DSC09932",
-      "imageBytes": 104647,
-      "thumbnailBytes": 18595
+      "imageBytes": 468202,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 70478,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 18395,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09932.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2443312
+      }
     },
     {
       "photo": "DSC09935",
-      "imageBytes": 129850,
-      "thumbnailBytes": 22866
+      "imageBytes": 495611,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 86983,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 22706,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09935.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2454440
+      }
     },
     {
       "photo": "DSC09946",
-      "imageBytes": 123158,
-      "thumbnailBytes": 21087
+      "imageBytes": 577733,
+      "width": 3200,
+      "height": 2133,
+      "mediumBytes": 80927,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 20966,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09946.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 3044471
+      }
     },
     {
       "photo": "DSC09953",
-      "imageBytes": 127997,
-      "thumbnailBytes": 23044
+      "imageBytes": 525898,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 86438,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 22908,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09953.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2624391
+      }
     },
     {
       "photo": "DSC09955",
-      "imageBytes": 193726,
-      "thumbnailBytes": 33531
+      "imageBytes": 811563,
+      "width": 3200,
+      "height": 2133,
+      "mediumBytes": 129232,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 33451,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09955.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 3737404
+      }
     },
     {
       "photo": "DSC09959",
-      "imageBytes": 128241,
-      "thumbnailBytes": 20982
+      "imageBytes": 572327,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 84053,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 20817,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09959.jpg",
+        "width": 5300,
+        "height": 2981,
+        "bytes": 2051295
+      }
     },
     {
       "photo": "DSC09961",
-      "imageBytes": 133710,
-      "thumbnailBytes": 22947
+      "imageBytes": 542835,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 89276,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 22922,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09961.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2687828
+      }
     },
     {
       "photo": "DSC09964",
-      "imageBytes": 198890,
-      "thumbnailBytes": 34539
+      "imageBytes": 716418,
+      "width": 3200,
+      "height": 2133,
+      "mediumBytes": 134235,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 34474,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09964.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 3298065
+      }
     },
     {
       "photo": "DSC09966",
-      "imageBytes": 157837,
-      "thumbnailBytes": 27841
+      "imageBytes": 559954,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 107348,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 27724,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09966.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2577701
+      }
     },
     {
       "photo": "DSC09968",
-      "imageBytes": 120397,
-      "thumbnailBytes": 20688
+      "imageBytes": 510579,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 79915,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 20537,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09968.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2610045
+      }
     },
     {
       "photo": "DSC09970",
-      "imageBytes": 121736,
-      "thumbnailBytes": 21516
+      "imageBytes": 473376,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 82705,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 21460,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09970.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2356586
+      }
     },
     {
       "photo": "DSC09976",
-      "imageBytes": 309077,
-      "thumbnailBytes": 57045
+      "imageBytes": 965541,
+      "width": 3200,
+      "height": 2133,
+      "mediumBytes": 212277,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 56764,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09976.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 3881064
+      }
     },
     {
       "photo": "DSC09980",
-      "imageBytes": 128340,
-      "thumbnailBytes": 23037
+      "imageBytes": 453713,
+      "width": 3200,
+      "height": 1355,
+      "mediumBytes": 87032,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 22869,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09980.jpg",
+        "width": 6000,
+        "height": 2540,
+        "bytes": 2084186
+      }
     },
     {
       "photo": "DSC09982",
-      "imageBytes": 141519,
-      "thumbnailBytes": 25311
+      "imageBytes": 473081,
+      "width": 3200,
+      "height": 1467,
+      "mediumBytes": 96207,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 25253,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09982.jpg",
+        "width": 6000,
+        "height": 2751,
+        "bytes": 2092302
+      }
     },
     {
       "photo": "DSC09989",
-      "imageBytes": 184979,
-      "thumbnailBytes": 33190
+      "imageBytes": 583519,
+      "width": 3200,
+      "height": 2133,
+      "mediumBytes": 126430,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 33086,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09989.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 2436893
+      }
     },
     {
       "photo": "DSC09998",
-      "imageBytes": 126904,
-      "thumbnailBytes": 22235
+      "imageBytes": 459401,
+      "width": 3200,
+      "height": 1342,
+      "mediumBytes": 85717,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 22188,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC09998.jpg",
+        "width": 6000,
+        "height": 2516,
+        "bytes": 2104486
+      }
     },
     {
       "photo": "DSC00003",
-      "imageBytes": 200098,
-      "thumbnailBytes": 35373
+      "imageBytes": 691386,
+      "width": 3200,
+      "height": 2133,
+      "mediumBytes": 135512,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 35213,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00003.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 3097581
+      }
     },
     {
       "photo": "DSC00008",
-      "imageBytes": 179857,
-      "thumbnailBytes": 32739
+      "imageBytes": 575745,
+      "width": 3200,
+      "height": 2133,
+      "mediumBytes": 123217,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 32576,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00008.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 2467318
+      }
     },
     {
       "photo": "DSC00012",
-      "imageBytes": 151349,
-      "thumbnailBytes": 27761
+      "imageBytes": 486439,
+      "width": 3200,
+      "height": 2133,
+      "mediumBytes": 103375,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 27643,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00012.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 2133900
+      }
     },
     {
       "photo": "DSC00020",
-      "imageBytes": 114046,
-      "thumbnailBytes": 20182
+      "imageBytes": 385435,
+      "width": 3200,
+      "height": 2133,
+      "mediumBytes": 77119,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 20041,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00020.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 1823809
+      }
     },
     {
       "photo": "DSC00162",
-      "imageBytes": 193891,
-      "thumbnailBytes": 17491
+      "imageBytes": 961620,
+      "width": 3200,
+      "height": 2134,
+      "mediumBytes": 104407,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17172,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00162.jpg",
+        "width": 4855,
+        "height": 3237,
+        "bytes": 2377890
+      }
     },
     {
       "photo": "DSC00165",
-      "imageBytes": 144228,
-      "thumbnailBytes": 19253
+      "imageBytes": 680505,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 85505,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19193,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00165.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2850610
+      }
     },
     {
       "photo": "DSC00187",
-      "imageBytes": 183156,
-      "thumbnailBytes": 23146
+      "imageBytes": 791335,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 107987,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 22962,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00187.jpg",
+        "width": 5040,
+        "height": 2835,
+        "bytes": 2168979
+      }
     },
     {
       "photo": "DSC00191",
-      "imageBytes": 170118,
-      "thumbnailBytes": 24513
+      "imageBytes": 728371,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 104848,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 24479,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00191.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2962665
+      }
     },
     {
       "photo": "DSC00196",
-      "imageBytes": 144843,
-      "thumbnailBytes": 19204
+      "imageBytes": 690069,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 84434,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19018,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00196.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2854240
+      }
     },
     {
       "photo": "DSC00205",
-      "imageBytes": 208043,
-      "thumbnailBytes": 17523
+      "imageBytes": 994485,
+      "width": 3200,
+      "height": 2133,
+      "mediumBytes": 113964,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17333,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00205.jpg",
+        "width": 4293,
+        "height": 2862,
+        "bytes": 1893927
+      }
     },
     {
       "photo": "DSC00222",
-      "imageBytes": 161313,
-      "thumbnailBytes": 21549
+      "imageBytes": 726055,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 96851,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 21385,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00222.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2986301
+      }
     },
     {
       "photo": "DSC00231",
-      "imageBytes": 146608,
-      "thumbnailBytes": 24011
+      "imageBytes": 634259,
+      "width": 3200,
+      "height": 2067,
+      "mediumBytes": 96034,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 23931,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00231.jpg",
+        "width": 5444,
+        "height": 3516,
+        "bytes": 2356080
+      }
     },
     {
       "photo": "DSC00234",
-      "imageBytes": 203597,
-      "thumbnailBytes": 28145
+      "imageBytes": 831546,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 124581,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 28147,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00234.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3204498
+      }
     },
     {
       "photo": "DSC00236",
-      "imageBytes": 179749,
-      "thumbnailBytes": 22865
+      "imageBytes": 784260,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 107307,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 22693,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00236.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3129570
+      }
     },
     {
       "photo": "DSC00244",
-      "imageBytes": 122413,
-      "thumbnailBytes": 14023
+      "imageBytes": 702135,
+      "width": 3200,
+      "height": 2134,
+      "mediumBytes": 66787,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 13579,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00244.jpg",
+        "width": 5617,
+        "height": 3745,
+        "bytes": 2674769
+      }
     },
     {
       "photo": "DSC00256",
-      "imageBytes": 213701,
-      "thumbnailBytes": 22192
+      "imageBytes": 984663,
+      "width": 3200,
+      "height": 2133,
+      "mediumBytes": 118270,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 21966,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00256.jpg",
+        "width": 4941,
+        "height": 3294,
+        "bytes": 2544028
+      }
     },
     {
       "photo": "DSC00268",
-      "imageBytes": 187150,
-      "thumbnailBytes": 22746
+      "imageBytes": 848021,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 108694,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 22637,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00268.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3271914
+      }
     },
     {
       "photo": "DSC00270",
-      "imageBytes": 174988,
-      "thumbnailBytes": 21445
+      "imageBytes": 780712,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 102748,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 21294,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00270.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3072264
+      }
     },
     {
       "photo": "DSC00281",
-      "imageBytes": 184263,
-      "thumbnailBytes": 21721
+      "imageBytes": 851777,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 104903,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 21656,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00281.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3354970
+      }
     },
     {
       "photo": "DSC00288",
-      "imageBytes": 192319,
-      "thumbnailBytes": 25538
+      "imageBytes": 824456,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 115875,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 25521,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00288.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3243695
+      }
     },
     {
       "photo": "DSC00290",
-      "imageBytes": 162576,
-      "thumbnailBytes": 17038
+      "imageBytes": 783158,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 88236,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16826,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00290.jpg",
+        "width": 5472,
+        "height": 3078,
+        "bytes": 2570009
+      }
     },
     {
       "photo": "DSC00296",
-      "imageBytes": 169183,
-      "thumbnailBytes": 22850
+      "imageBytes": 730847,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 102802,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 22766,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00296.jpg",
+        "width": 5497,
+        "height": 3092,
+        "bytes": 2539370
+      }
     },
     {
       "photo": "DSC00314",
-      "imageBytes": 158780,
-      "thumbnailBytes": 20077
+      "imageBytes": 732478,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 92617,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19854,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00314.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3018838
+      }
     },
     {
       "photo": "DSC00325",
-      "imageBytes": 129891,
-      "thumbnailBytes": 13937
+      "imageBytes": 690613,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 70284,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 13783,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00325.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2881022
+      }
     },
     {
       "photo": "DSC00335",
-      "imageBytes": 147545,
-      "thumbnailBytes": 16692
+      "imageBytes": 740854,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 82419,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16529,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00335.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3032388
+      }
     },
     {
       "photo": "DSC00355",
-      "imageBytes": 160642,
-      "thumbnailBytes": 17635
+      "imageBytes": 762467,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 89718,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17355,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00355.jpg",
+        "width": 5085,
+        "height": 2860,
+        "bytes": 2173596
+      }
     },
     {
       "photo": "DSC00360",
-      "imageBytes": 160860,
-      "thumbnailBytes": 18786
+      "imageBytes": 770472,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 90589,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 18491,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00360.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3150561
+      }
     },
     {
       "photo": "DSC00365",
-      "imageBytes": 136414,
-      "thumbnailBytes": 16806
+      "imageBytes": 695816,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 77617,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16581,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00365.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2889867
+      }
     },
     {
       "photo": "DSC00376",
-      "imageBytes": 134725,
-      "thumbnailBytes": 15350
+      "imageBytes": 692646,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 74626,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15092,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00376.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2924431
+      }
     },
     {
       "photo": "DSC00393",
-      "imageBytes": 147259,
-      "thumbnailBytes": 16951
+      "imageBytes": 729781,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 82836,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16769,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00393.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3000914
+      }
     },
     {
       "photo": "DSC00430",
-      "imageBytes": 150788,
-      "thumbnailBytes": 18168
+      "imageBytes": 732078,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 85036,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17933,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00430.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2977457
+      }
     },
     {
       "photo": "DSC00447",
-      "imageBytes": 141736,
-      "thumbnailBytes": 15332
+      "imageBytes": 736891,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 77710,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15183,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00447.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2958768
+      }
     },
     {
       "photo": "DSC00466",
-      "imageBytes": 154526,
-      "thumbnailBytes": 19259
+      "imageBytes": 733539,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 89103,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19066,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00466.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2976367
+      }
     },
     {
       "photo": "DSC00469",
-      "imageBytes": 184045,
-      "thumbnailBytes": 22929
+      "imageBytes": 825555,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 107015,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 22792,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00469.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3229967
+      }
     },
     {
       "photo": "DSC00482",
-      "imageBytes": 169944,
-      "thumbnailBytes": 23069
+      "imageBytes": 757407,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 102362,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 22963,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00482.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2998652
+      }
     },
     {
       "photo": "DSC00487",
-      "imageBytes": 145742,
-      "thumbnailBytes": 16571
+      "imageBytes": 733752,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 81486,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16354,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00487.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2960334
+      }
     },
     {
       "photo": "DSC00490",
-      "imageBytes": 89733,
-      "thumbnailBytes": 15875
+      "imageBytes": 414731,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 59157,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15337,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00490.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2146115
+      }
     },
     {
       "photo": "DSC00502",
-      "imageBytes": 145149,
-      "thumbnailBytes": 16837
+      "imageBytes": 734143,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 81150,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16689,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00502.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2980025
+      }
     },
     {
       "photo": "DSC00514",
-      "imageBytes": 160375,
-      "thumbnailBytes": 17944
+      "imageBytes": 757720,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 89550,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17707,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00514.jpg",
+        "width": 5184,
+        "height": 2916,
+        "bytes": 2199763
+      }
     },
     {
       "photo": "DSC00520",
-      "imageBytes": 157837,
-      "thumbnailBytes": 17808
+      "imageBytes": 757767,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 88306,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17583,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00520.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3100760
+      }
     },
     {
       "photo": "DSC00535",
-      "imageBytes": 153960,
-      "thumbnailBytes": 19176
+      "imageBytes": 736586,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 87934,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 18902,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00535.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2963674
+      }
     },
     {
       "photo": "DSC00546",
-      "imageBytes": 158900,
-      "thumbnailBytes": 20019
+      "imageBytes": 738859,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 91798,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19744,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00546.jpg",
+        "width": 5448,
+        "height": 3064,
+        "bytes": 2413029
+      }
     },
     {
       "photo": "DSC00552",
-      "imageBytes": 153412,
-      "thumbnailBytes": 19693
+      "imageBytes": 723630,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 89391,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19490,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00552.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2905153
+      }
     },
     {
       "photo": "DSC00559",
-      "imageBytes": 170198,
-      "thumbnailBytes": 24876
+      "imageBytes": 735931,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 105277,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 24773,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00559.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2939136
+      }
     },
     {
       "photo": "DSC00573",
-      "imageBytes": 174484,
-      "thumbnailBytes": 24801
+      "imageBytes": 742556,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 105985,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 24612,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00573.jpg",
+        "width": 5377,
+        "height": 3025,
+        "bytes": 2358655
+      }
     },
     {
       "photo": "DSC00581",
-      "imageBytes": 164816,
-      "thumbnailBytes": 22294
+      "imageBytes": 732961,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 98447,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 22205,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00581.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2975953
+      }
     },
     {
       "photo": "DSC00597",
-      "imageBytes": 170976,
-      "thumbnailBytes": 23979
+      "imageBytes": 747359,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 103503,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 23827,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00597.jpg",
+        "width": 5420,
+        "height": 3049,
+        "bytes": 2369305
+      }
     },
     {
       "photo": "DSC00602",
-      "imageBytes": 174203,
-      "thumbnailBytes": 24452
+      "imageBytes": 750551,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 105710,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 24378,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00602.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2948599
+      }
     },
     {
       "photo": "DSC00617",
-      "imageBytes": 188405,
-      "thumbnailBytes": 27875
+      "imageBytes": 769721,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 116793,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 27768,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00617.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3025330
+      }
     },
     {
       "photo": "DSC00621",
-      "imageBytes": 182901,
-      "thumbnailBytes": 26769
+      "imageBytes": 760578,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 112498,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 26599,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00621.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2971190
+      }
     },
     {
       "photo": "DSC00625",
-      "imageBytes": 155764,
-      "thumbnailBytes": 20019
+      "imageBytes": 733757,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 90530,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 19768,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00625.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2967437
+      }
     },
     {
       "photo": "DSC00641",
-      "imageBytes": 144411,
-      "thumbnailBytes": 17152
+      "imageBytes": 703564,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 81750,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16941,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00641.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2870291
+      }
     },
     {
       "photo": "DSC00644",
-      "imageBytes": 159833,
-      "thumbnailBytes": 22217
+      "imageBytes": 710433,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 95376,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 22052,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00644.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2853607
+      }
     },
     {
       "photo": "DSC00658",
-      "imageBytes": 142430,
-      "thumbnailBytes": 15904
+      "imageBytes": 716211,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 78536,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15766,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00658.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2956882
+      }
     },
     {
       "photo": "DSC00672",
-      "imageBytes": 151538,
-      "thumbnailBytes": 18657
+      "imageBytes": 736672,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 85514,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 18412,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00672.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3017413
+      }
     },
     {
       "photo": "DSC00687",
-      "imageBytes": 144217,
-      "thumbnailBytes": 17414
+      "imageBytes": 722565,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 81414,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17142,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00687.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2947354
+      }
     },
     {
       "photo": "DSC00691",
-      "imageBytes": 152558,
-      "thumbnailBytes": 17628
+      "imageBytes": 754251,
+      "width": 3200,
+      "height": 1800,
+      "mediumBytes": 85236,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17452,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00691.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 3072956
+      }
     },
     {
       "photo": "DSC00703",
-      "imageBytes": 192842,
-      "thumbnailBytes": 16171
+      "imageBytes": 940798,
+      "width": 3200,
+      "height": 2018,
+      "mediumBytes": 102853,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16225,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00703.jpg",
+        "width": 5131,
+        "height": 3236,
+        "bytes": 2446118
+      }
     },
     {
       "photo": "DSC00714",
-      "imageBytes": 173691,
-      "thumbnailBytes": 16984
+      "imageBytes": 902257,
+      "width": 3200,
+      "height": 2140,
+      "mediumBytes": 91237,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16725,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00714.jpg",
+        "width": 5688,
+        "height": 3803,
+        "bytes": 3269670
+      }
     },
     {
       "photo": "DSC00720",
-      "imageBytes": 197454,
-      "thumbnailBytes": 24106
+      "imageBytes": 902520,
+      "width": 3200,
+      "height": 2051,
+      "mediumBytes": 113207,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 23698,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00720.jpg",
+        "width": 5784,
+        "height": 3707,
+        "bytes": 3296657
+      }
     },
     {
       "photo": "DSC00733",
-      "imageBytes": 176624,
-      "thumbnailBytes": 18860
+      "imageBytes": 880320,
+      "width": 3200,
+      "height": 2079,
+      "mediumBytes": 95753,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 18602,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00733.jpg",
+        "width": 5928,
+        "height": 3851,
+        "bytes": 3561119
+      }
     },
     {
       "photo": "DSC00738",
-      "imageBytes": 209548,
-      "thumbnailBytes": 26687
+      "imageBytes": 930146,
+      "width": 3200,
+      "height": 2075,
+      "mediumBytes": 122101,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 26523,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00738.jpg",
+        "width": 5568,
+        "height": 3611,
+        "bytes": 3131008
+      }
     },
     {
       "photo": "DSC00752",
-      "imageBytes": 195096,
-      "thumbnailBytes": 18574
+      "imageBytes": 952386,
+      "width": 3200,
+      "height": 2112,
+      "mediumBytes": 104584,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 18327,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00752.jpg",
+        "width": 5544,
+        "height": 3659,
+        "bytes": 3286540
+      }
     },
     {
       "photo": "DSC00754",
-      "imageBytes": 210272,
-      "thumbnailBytes": 25885
+      "imageBytes": 945730,
+      "width": 3200,
+      "height": 2089,
+      "mediumBytes": 121547,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 25804,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00754.jpg",
+        "width": 5568,
+        "height": 3635,
+        "bytes": 3207183
+      }
     },
     {
       "photo": "DSC00768",
-      "imageBytes": 182352,
-      "thumbnailBytes": 15438
+      "imageBytes": 932182,
+      "width": 3200,
+      "height": 2047,
+      "mediumBytes": 95465,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15089,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00768.jpg",
+        "width": 4897,
+        "height": 3132,
+        "bytes": 2379092
+      }
     },
     {
       "photo": "DSC00780",
-      "imageBytes": 233084,
-      "thumbnailBytes": 14502
+      "imageBytes": 1200664,
+      "width": 3200,
+      "height": 2411,
+      "mediumBytes": 117230,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 14293,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00780.jpg",
+        "width": 4825,
+        "height": 3636,
+        "bytes": 2915018
+      }
     },
     {
       "photo": "DSC00788",
-      "imageBytes": 197745,
-      "thumbnailBytes": 23008
+      "imageBytes": 952234,
+      "width": 3200,
+      "height": 2133,
+      "mediumBytes": 111625,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 22804,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00788.jpg",
+        "width": 6000,
+        "height": 4000,
+        "bytes": 3867771
+      }
     },
     {
       "photo": "DSC00800",
-      "imageBytes": 170427,
-      "thumbnailBytes": 14350
+      "imageBytes": 915637,
+      "width": 3200,
+      "height": 2130,
+      "mediumBytes": 88355,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 14059,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00800.jpg",
+        "width": 5137,
+        "height": 3420,
+        "bytes": 2639026
+      }
     },
     {
       "photo": "DSC00808",
-      "imageBytes": 167784,
-      "thumbnailBytes": 16976
+      "imageBytes": 866562,
+      "width": 3200,
+      "height": 2060,
+      "mediumBytes": 90103,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16744,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00808.jpg",
+        "width": 5832,
+        "height": 3755,
+        "bytes": 3379070
+      }
     },
     {
       "photo": "DSC00813",
-      "imageBytes": 158326,
-      "thumbnailBytes": 10718
+      "imageBytes": 890973,
+      "width": 3200,
+      "height": 1943,
+      "mediumBytes": 78204,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 10577,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00813.jpg",
+        "width": 5472,
+        "height": 3323,
+        "bytes": 2913179
+      }
     },
     {
       "photo": "DSC00823",
-      "imageBytes": 169335,
-      "thumbnailBytes": 15510
+      "imageBytes": 902361,
+      "width": 3200,
+      "height": 2093,
+      "mediumBytes": 88191,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 15275,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00823.jpg",
+        "width": 5520,
+        "height": 3611,
+        "bytes": 3087822
+      }
     },
     {
       "photo": "DSC00826",
-      "imageBytes": 169739,
-      "thumbnailBytes": 16757
+      "imageBytes": 867307,
+      "width": 3200,
+      "height": 2049,
+      "mediumBytes": 89164,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 16586,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00826.jpg",
+        "width": 5976,
+        "height": 3827,
+        "bytes": 3564020
+      }
     },
     {
       "photo": "DSC00848",
-      "imageBytes": 88575,
-      "thumbnailBytes": 11540
+      "imageBytes": 546498,
+      "width": 3200,
+      "height": 1983,
+      "mediumBytes": 50642,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 11183,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00848.jpg",
+        "width": 4572,
+        "height": 2833,
+        "bytes": 1341864
+      }
     },
     {
       "photo": "DSC00855",
-      "imageBytes": 190534,
-      "thumbnailBytes": 18197
+      "imageBytes": 951498,
+      "width": 3200,
+      "height": 2130,
+      "mediumBytes": 101119,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 17810,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00855.jpg",
+        "width": 5496,
+        "height": 3659,
+        "bytes": 3145705
+      }
     },
     {
       "photo": "DSC00860",
-      "imageBytes": 190937,
-      "thumbnailBytes": 19093
+      "imageBytes": 959606,
+      "width": 3200,
+      "height": 2144,
+      "mediumBytes": 101686,
+      "mediumWidth": 1600,
+      "thumbnailBytes": 18835,
+      "thumbnailWidth": 800,
+      "original": {
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC00860.jpg",
+        "width": 5784,
+        "height": 3875,
+        "bytes": 3585363
+      }
     }
   ]
 }

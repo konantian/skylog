@@ -147,3 +147,5 @@ html[lang=en] .collection-heading h2{line-height:1.3}
 }
 
 .identity-flight{grid-column:1/-1}.photo-identity>div>div+div{margin-top:10px}
+
+.original-download{display:flex;flex-direction:column;align-items:inherit;gap:0}.original-download>span{font-size:11px;color:var(--muted);line-height:1.5}

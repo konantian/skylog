@@ -63,8 +63,11 @@ For a local Worker check, start `npx --yes wrangler@4.156.2 dev --config workers
 
 ## Photos and data
 
-- `public/photos/DSCxxxxx.jpg`: edited, sRGB display copies, maximum 2000-pixel long edge.
+- `public/photos/DSCxxxxx.jpg`: edited, sRGB display copies, maximum 3200-pixel long edge (JPEG quality 94), never upscaled.
 - `public/photos/thumbs/`: 800-pixel card previews.
+- `public/photos/medium/`: 1600-pixel responsive display copies. Homepage and detail images use actual-width `srcset` candidates so small screens do not have to download the largest copy.
+- Full-resolution, edited sRGB JPEGs (quality 95) are downloadable individually from the photo viewer. These are GitHub Release assets, loaded only on request, outside the Pages build and Git history. RAWs remain private and unchanged.
+- `data/photo-verification.json`: dimensions, byte sizes and full-resolution download URLs for all public photo variants.
 - `data/catalog.json`: the website’s curated collection snapshot.
 - `data/cover-selections.json`: visually selected aircraft covers and preferred photographs for each airline/livery combination.
 - `data/photo-annotations.json`: visually reviewed livery descriptions and identification corrections.
@@ -78,13 +81,15 @@ For a local Worker check, start `npx --yes wrangler@4.156.2 dev --config workers
 - `scripts/import-photo-settings.py`: reads the preserved EXIF audit archives and joins RAW records to catalog photos by capture date and filename. Missing camera bodies are not inferred.
 - `scripts/import-flights.py`: imports past, non-canceled flights; rejects duplicates and does not copy booking references, seats, notes, private Flighty IDs, or other CSV fields.
 - `scripts/build-catalog.py`: regenerate catalog from an existing album audit JSON; does not modify Photos.
-- `scripts/prepare-photos.mjs`: prepare web JPGs from an already-exported folder of edited images, then record file sizes in `data/photo-verification.json`.
+- `scripts/prepare-photos.mjs`: prepare every size directly from an already-exported folder of final edited images; strip EXIF/GPS, preserve composition and color, and record dimensions and file sizes in `data/photo-verification.json`.
 
 ```sh
 python3 scripts/import-flights.py /path/to/FlightyExport.csv YYYY-MM-DD
 python3 scripts/build-catalog.py /path/to/album-audit.json
-npm run photos:prepare -- /path/to/edited-exports
+npm run photos:prepare -- /path/to/edited-exports /path/to/full-size-jpgs https://github.com/konantian/skylog/releases/download/TAG
 ```
+
+Upload the generated full-size JPGs to that GitHub Release, verify the asset names and sizes, and publish the release before deploying the website. The build does not upload download files. Use a new release tag when replacing the edited masters.
 
 For manual additions, add a photo record and image files, and update the corresponding catalog entries’ `photoIds`, cover, dates, and unlocked status. Run tests before publishing. This is a static snapshot; it does not automatically sync with Apple Photos.
 
