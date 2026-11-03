@@ -1,0 +1,23 @@
+{
+  "name": "skylog-aviation-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1",
+    "build": "next build",
+    "test": "node --test tests/*.test.mjs",
+    "photos:prepare": "node scripts/prepare-photos.mjs"
+  },
+  "dependencies": {
+    "next": "16.4.4",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "sharp": "0.35.5",
+    "typescript": "^5.9.0"
+  }
+}
