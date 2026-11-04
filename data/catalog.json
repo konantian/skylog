@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03",
+  "updatedAt": "2026-11-04",
   "scope": "YYZ / YVR 已整理收藏",
   "photos": [
     {
@@ -1347,6 +1347,10 @@
             "status": "confirmed",
             "basis": "照片机身标识"
           }
+        },
+        {
+          "airline": "Air Canada",
+          "model": "Airbus A330-300"
         }
       ],
       "flightIdentification": {

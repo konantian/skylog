@@ -5,7 +5,7 @@ import sharp from 'sharp';
 import data from '../data/catalog.json' with {type:'json'};
 import verification from '../data/photo-verification.json' with {type:'json'};
 import {photoImageSources,originalPhoto} from '../lib/photo-images.mjs';
-import { initialFilters, filterCatalog, filterPhotos, photoMatches } from '../lib/filter.mjs';
+import { initialFilters, filterCatalog, filterPhotos, photoMatches, airlinesForModel, modelsForAirline } from '../lib/filter.mjs';
 const f = extra => ({...initialFilters,...extra});
 
 test('all entries and photos have consistent links and unlock states',()=>{
@@ -122,15 +122,27 @@ test('model selection lists each airline and livery as parallel cards',async()=>
   assert.equal(groups.length,2);
   assert.equal(groups.flatMap(g=>g.photoIds).length,9);
   const a330=data.aircraft.find(a=>a.name==='Airbus A330-300');
-  const ac=groupModelVariants(a330,filterPhotos(data.photos,f({model:a330.name,airline:'Air Canada'}),data.aircraft),data.airlines);
+  const ac=groupModelVariants(a330,filterPhotos(data.photos,f({model:a330.name,airline:'Air Canada'}),data.aircraft),data.airlines).filter(g=>g.name==='Air Canada');
   assert.ok(ac.length>=4);
   assert.ok(ac.every(g=>g.name==='Air Canada'));
   assert.equal(ac.length,new Set(ac.map(g=>g.livery)).size);
 });
-test('multi-aircraft ramp images do not invent airline/model pairs',()=>{
+test('multi-aircraft ramp images retain each visible airline/model pair without inventing others',()=>{
   const p=data.photos.find(p=>p.id==='DSC06736');
   assert.equal(photoMatches(p,f({airline:'SWISS',model:'Boeing 777-300ER'}),data.aircraft),false);
   assert.equal(photoMatches(p,f({airline:'SWISS',model:'Airbus A330-300'}),data.aircraft),true);
+  assert.equal(photoMatches(p,f({airline:'Air Canada',model:'Airbus A330-300'}),data.aircraft),true);
+  assert.equal(photoMatches(p,f({airline:'Air Canada',model:'Boeing 777-300ER'}),data.aircraft),true);
+  assert.equal(photoMatches(p,f({airline:'Etihad Airways',model:'Boeing 777-300ER'}),data.aircraft),false);
+  assert.deepEqual(airlinesForModel(p,'Boeing 777-300ER'),['Air Canada']);
+  assert.deepEqual(airlinesForModel(p,'Airbus A330-300'),['SWISS','Air Canada']);
+  assert.deepEqual(modelsForAirline(p,'SWISS'),['Airbus A330-300']);
+  assert.deepEqual(modelsForAirline(p,'Air Canada'),['Boeing 777-300ER','Airbus A330-300']);
+  assert.deepEqual(modelsForAirline(p,'Etihad Airways'),[]);
+  const single=data.photos.find(p=>p.id==='DSC08110');
+  assert.deepEqual(airlinesForModel(single,'Airbus A330-300'),['SWISS']);
+  assert.deepEqual(modelsForAirline(single,'SWISS'),['Airbus A330-300']);
+  assert.deepEqual(modelsForAirline(single,'Air Canada'),[]);
 });
 
 test('every unlocked aircraft uses its visually selected cover',async()=>{

@@ -1,7 +1,7 @@
 import {useEffect,useRef,type CSSProperties} from 'react';
 import {comparisonDrawings,comparisonCues} from '@/lib/aircraft-comparison.mjs';
 import {photoImageSources} from '@/lib/photo-images.mjs';
-import {flightsForEntry} from '@/lib/filter.mjs';
+import {flightsForEntry,airlinesForModel} from '@/lib/filter.mjs';
 import type {Entry,Flight,Photo} from '@/lib/types';
 import {aircraftProfileFor} from './collection-details';
 import {Icon} from './icons';
@@ -68,7 +68,7 @@ export function AircraftComparison({models,aircraft,photos,flights,onSelect,onCl
             const cues=comparisonCues(entry);
             const cover=photos.find(p=>p.id===entry.cover);
             const modelPhotos=photos.filter(p=>entry.photoIds.includes(p.id));
-            const airlines=[...new Set(modelPhotos.flatMap(p=>p.subjects?p.subjects.filter(s=>s.model===model).map(s=>s.airline):p.airlines))].sort();
+            const airlines=[...new Set(modelPhotos.flatMap(p=>airlinesForModel(p,model)))].sort();
             const flown=flightsForEntry(entry,flights).length;
             return <article className="comparison-record" key={model}>
               <h3>{model}</h3>

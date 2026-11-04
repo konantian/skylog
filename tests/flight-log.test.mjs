@@ -15,7 +15,8 @@ test('country filters scope airline and aircraft to the same photographed subjec
   const locked=filterCatalog(airlines,photos,filters({country:'日本',status:'locked'}),'airlines',aircraft,airlines);
   assert.deepEqual(locked.map(a=>a.name),['ZIPAIR']);
   const ramp=photos.find(p=>p.id==='DSC06736');
-  assert.equal(photoMatches(ramp,filters({country:'加拿大',model:'Airbus A330-300'}),aircraft,airlines),false);
+  assert.equal(photoMatches(ramp,filters({country:'加拿大',model:'Airbus A330-300'}),aircraft,airlines),true);
+  assert.equal(photoMatches(ramp,filters({country:'阿联酋',model:'Airbus A330-300'}),aircraft,airlines),false);
   assert.equal(photoMatches(ramp,filters({country:'瑞士',model:'Airbus A330-300'}),aircraft,airlines),true);
   const models=filterCatalog(aircraft,[ramp],filters({country:'瑞士'}),'aircraft',aircraft,airlines);
   assert.deepEqual(models.map(a=>a.name),['Airbus A330-300']);
