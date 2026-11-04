@@ -1,3 +1,4 @@
+import {useMobileLayer} from './use-mobile-layer';
 import {LanguageSwitch,useLocale} from './locale-provider';
 import {useEffect,useMemo,useRef,useState} from 'react';
 import airportData from '@/data/airports.json';
@@ -11,6 +12,7 @@ type Leg={flight:Flight;points:number[][];path:string;box:number[]};
 const airports:Record<string,Airport>=airportData;
 
 export function JourneyReplay({flights,initialYear,onClose}:{flights:Flight[];initialYear:string;onClose:()=>void}) {
+  useMobileLayer(true,onClose);
   const {t}=useLocale();
   const years=[...new Set(flights.map(f=>f.date.slice(0,4)))].sort().reverse();
   const [year,setYear]=useState(years.includes(initialYear)?initialYear:years[0]);

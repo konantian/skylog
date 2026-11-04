@@ -9630,5 +9630,2331 @@
       ],
       "clockNote": "Runway arrival follows camera time by approximately 8–9 minutes. Camera timestamp retained unchanged."
     }
+  },
+  "DSC00888": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T12:31:34-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "N985NN",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "AA826"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "AAL826"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 480,
+      "lookupTime": "2026-11-04T12:39:34-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "AAL826",
+          "registration": "N985NN",
+          "timestamp_utc": "2026-11-04T17:39:38.000Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC00891": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T12:31:38-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "N985NN",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "AA826"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "AAL826"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 480,
+      "lookupTime": "2026-11-04T12:39:38-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "AAL826",
+          "registration": "N985NN",
+          "timestamp_utc": "2026-11-04T17:39:38.000Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC00896": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T12:34:44-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "N461EE",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n461ee"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "N461EE"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 480,
+      "lookupTime": "2026-11-04T12:42:44-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "N461EE",
+          "registration": "N461EE",
+          "timestamp_utc": "2026-11-04T17:42:53.785Z"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/n461ee",
+        "https://www.faa.gov/sites/faa.gov/files/2026-02/NAARMO_US_IGA_RVSM_Approvals_Part_135_91_Section_3.pdf"
+      ]
+    }
+  },
+  "DSC00903": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T12:36:26-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "N846JS",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.airnavradar.com/data/registration/N846JS"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "N846JS"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 480,
+      "lookupTime": "2026-11-04T12:44:26-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "N846JS",
+          "registration": "N846JS",
+          "timestamp_utc": "2026-11-04T17:44:21.655Z"
+        }
+      ],
+      "sources": [
+        "https://www.airnavradar.com/data/registration/N846JS",
+        "https://www.flightaware.com/resources/registration/N846JS"
+      ]
+    }
+  },
+  "DSC00908": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T12:37:34-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-GZQK",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "PD350"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "POE350"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 480,
+      "lookupTime": "2026-11-04T12:45:34-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "POE350",
+          "registration": "C-GZQK",
+          "timestamp_utc": "2026-11-04T17:45:35.115Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC00910": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T12:37:37-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-GZQK",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "PD350"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "POE350"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 480,
+      "lookupTime": "2026-11-04T12:45:37-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "POE350",
+          "registration": "C-GZQK",
+          "timestamp_utc": "2026-11-04T17:45:35.115Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC00916": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T12:39:07-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-GHPY",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.regosearch.com/aircraft/ca/GHPY"
+    },
+    "flights": [
+      "AC887"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "ACA887"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 480,
+      "lookupTime": "2026-11-04T12:47:07-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA887",
+          "registration": "C-GHPY",
+          "timestamp_utc": "2026-11-04T17:47:13.789Z"
+        }
+      ],
+      "sources": [
+        "https://www.regosearch.com/aircraft/ca/GHPY"
+      ]
+    }
+  },
+  "DSC00917": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T12:39:09-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-GHPY",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.regosearch.com/aircraft/ca/GHPY"
+    },
+    "flights": [
+      "AC887"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "ACA887"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 480,
+      "lookupTime": "2026-11-04T12:47:09-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA887",
+          "registration": "C-GHPY",
+          "timestamp_utc": "2026-11-04T17:47:13.789Z"
+        }
+      ],
+      "sources": [
+        "https://www.regosearch.com/aircraft/ca/GHPY"
+      ]
+    }
+  },
+  "DSC00925": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T12:41:21-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-GHQI",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "AC1673"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "ROU1673"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 480,
+      "lookupTime": "2026-11-04T12:49:21-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "ROU1673",
+          "registration": "C-GHQI",
+          "timestamp_utc": "2026-11-04T17:49:25.935Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC00927": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T12:41:24-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-GHQI",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "AC1673"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "ROU1673"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 480,
+      "lookupTime": "2026-11-04T12:49:24-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "ROU1673",
+          "registration": "C-GHQI",
+          "timestamp_utc": "2026-11-04T17:49:25.935Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC00932": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T12:42:38-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-GYGU",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "AC100"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "ACA100"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 480,
+      "lookupTime": "2026-11-04T12:50:38-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA100",
+          "registration": "C-GYGU",
+          "timestamp_utc": "2026-11-04T17:50:45.653Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC00935": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T12:42:41-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-GYGU",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "AC100"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "ACA100"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 480,
+      "lookupTime": "2026-11-04T12:50:41-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA100",
+          "registration": "C-GYGU",
+          "timestamp_utc": "2026-11-04T17:50:45.653Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC00939": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T12:44:01-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-FEKH",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.airnavradar.com/data/flights/AC8693/2861026273"
+    },
+    "flights": [
+      "AC8693"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "JZA693"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 480,
+      "lookupTime": "2026-11-04T12:52:01-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "JZA693",
+          "registration": "C-FEKH",
+          "timestamp_utc": "2026-11-04T17:51:59.670Z"
+        }
+      ],
+      "sources": [
+        "https://www.airnavradar.com/data/flights/AC8693/2861026273"
+      ]
+    }
+  },
+  "DSC00941": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T12:44:04-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-FEKH",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.airnavradar.com/data/flights/AC8693/2861026273"
+    },
+    "flights": [
+      "AC8693"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "JZA693"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 480,
+      "lookupTime": "2026-11-04T12:52:04-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "JZA693",
+          "registration": "C-FEKH",
+          "timestamp_utc": "2026-11-04T17:51:59.670Z"
+        }
+      ],
+      "sources": [
+        "https://www.airnavradar.com/data/flights/AC8693/2861026273"
+      ]
+    }
+  },
+  "DSC00947": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T12:54:29-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-GZQU",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "PD402"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "POE402"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T12:54:29-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "POE402",
+          "registration": "C-GZQU",
+          "timestamp_utc": "2026-11-04T17:54:18.000Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC00951": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T12:57:23-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-GMYU",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "AC709"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "ACA709"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T12:57:23-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA709",
+          "registration": "C-GMYU",
+          "timestamp_utc": "2026-11-04T17:57:12.000Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC00954": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T12:57:26-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-GMYU",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "AC709"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "ACA709"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T12:57:26-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA709",
+          "registration": "C-GMYU",
+          "timestamp_utc": "2026-11-04T17:57:35.635Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC00958": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T13:01:59-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-FNWD",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://planefinder.net/data/aircraft/C-FNWD"
+    },
+    "flights": [
+      "WS384"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "WJA384"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T13:01:59-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "WJA384",
+          "registration": "C-FNWD",
+          "timestamp_utc": "2026-11-04T18:02:05.948Z"
+        }
+      ],
+      "sources": [
+        "https://planefinder.net/data/aircraft/C-FNWD"
+      ]
+    }
+  },
+  "DSC00960": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T13:02:03-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-FNWD",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://planefinder.net/data/aircraft/C-FNWD"
+    },
+    "flights": [
+      "WS384"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "WJA384"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T13:02:03-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "WJA384",
+          "registration": "C-FNWD",
+          "timestamp_utc": "2026-11-04T18:02:05.948Z"
+        }
+      ],
+      "sources": [
+        "https://planefinder.net/data/aircraft/C-FNWD"
+      ]
+    }
+  },
+  "DSC00963": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T13:05:20-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "N906XJ",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.yaft.live/regnr/N906XJ"
+    },
+    "flights": [
+      "DL5094"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "EDV5094"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T13:05:20-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "EDV5094",
+          "registration": "N906XJ",
+          "timestamp_utc": "2026-11-04T18:05:13.696Z"
+        }
+      ],
+      "sources": [
+        "https://www.yaft.live/regnr/N906XJ"
+      ]
+    }
+  },
+  "DSC00969": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T13:08:49-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-GPJZ",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.planespotters.net/airframe/bombardier-crj-900-c-gpjz-air-canada-express/e01ll2"
+    },
+    "flights": [
+      "AC8225"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "JZA225"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T13:08:49-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "JZA225",
+          "registration": "C-GPJZ",
+          "timestamp_utc": "2026-11-04T18:08:57.621Z"
+        }
+      ],
+      "sources": [
+        "https://www.planespotters.net/airframe/bombardier-crj-900-c-gpjz-air-canada-express/e01ll2",
+        "https://en.airnavradar.com/data/registration/C-FJZL/2964300402"
+      ]
+    }
+  },
+  "DSC00977": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T13:10:55-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "B-2002",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "MU207"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "CES207"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T13:10:55-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "CES207",
+          "registration": "B-2002",
+          "timestamp_utc": "2026-11-04T18:11:01.939Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC00980": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T13:10:57-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "B-2002",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "MU207"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "CES207"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T13:10:57-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "CES207",
+          "registration": "B-2002",
+          "timestamp_utc": "2026-11-04T18:11:01.939Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC00983": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T13:11:00-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "B-2002",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "MU207"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "CES207"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T13:11:00-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "CES207",
+          "registration": "B-2002",
+          "timestamp_utc": "2026-11-04T18:11:01.939Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC00990": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T13:12:48-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-GJXW",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "AC411"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "ACA411"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T13:12:48-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA411",
+          "registration": "C-GJXW",
+          "timestamp_utc": "2026-11-04T18:12:51.684Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC00996": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T13:15:32-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-GCWJ",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "WS636"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "WJA636"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T13:15:32-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "WJA636",
+          "registration": "C-GCWJ",
+          "timestamp_utc": "2026-11-04T18:15:41.652Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC00998": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T13:15:35-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-GCWJ",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "WS636"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "WJA636"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T13:15:35-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "WJA636",
+          "registration": "C-GCWJ",
+          "timestamp_utc": "2026-11-04T18:15:41.652Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC01003": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T13:16:46-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-FJOU",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "AC2067"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "ROU2067"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T13:16:46-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "ROU2067",
+          "registration": "C-FJOU",
+          "timestamp_utc": "2026-11-04T18:16:39.887Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC01006": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T13:16:49-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-FJOU",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "AC2067"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "ROU2067"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T13:16:49-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "ROU2067",
+          "registration": "C-FJOU",
+          "timestamp_utc": "2026-11-04T18:16:58.000Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC01009": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T13:18:53-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-FLUT",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/C-FLUT"
+    },
+    "flights": [
+      "F8640"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "FLE640"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T13:18:53-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "FLE640",
+          "registration": "C-FLUT",
+          "timestamp_utc": "2026-11-04T18:18:59.962Z"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/C-FLUT"
+      ]
+    }
+  },
+  "DSC01011": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T13:18:56-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-FLUT",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/C-FLUT"
+    },
+    "flights": [
+      "F8640"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "FLE640"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T13:18:56-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "FLE640",
+          "registration": "C-FLUT",
+          "timestamp_utc": "2026-11-04T18:18:59.962Z"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/C-FLUT"
+      ]
+    }
+  },
+  "DSC01017": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T13:24:50-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-GJPI",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/C-GJPI"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "NRL43"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T13:24:50-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "NRL43",
+          "registration": "C-GJPI",
+          "timestamp_utc": "2026-11-04T18:24:57.672Z"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/C-GJPI",
+        "https://amalfijets.com/aircraft/light-jets/learjet-45/c-gjpi"
+      ]
+    }
+  },
+  "DSC01022": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T13:26:31-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "N748YX",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.airnavradar.com/data/registration/N725YX"
+    },
+    "flights": [
+      "UA3400"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "RPA3400"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T13:26:31-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "RPA3400",
+          "registration": "N748YX",
+          "timestamp_utc": "2026-11-04T18:26:41.656Z"
+        }
+      ],
+      "sources": [
+        "https://www.airnavradar.com/data/registration/N725YX"
+      ]
+    }
+  },
+  "DSC01024": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T13:26:34-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "N748YX",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.airnavradar.com/data/registration/N725YX"
+    },
+    "flights": [
+      "UA3400"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "RPA3400"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T13:26:34-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "RPA3400",
+          "registration": "N748YX",
+          "timestamp_utc": "2026-11-04T18:26:41.656Z"
+        }
+      ],
+      "sources": [
+        "https://www.airnavradar.com/data/registration/N725YX"
+      ]
+    }
+  },
+  "DSC01031": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T13:28:38-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-GKQN",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "PD302"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "POE302"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T13:28:38-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "POE302",
+          "registration": "C-GKQN",
+          "timestamp_utc": "2026-11-04T18:28:39.822Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC01034": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T13:49:41-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-FITL",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fitl"
+    },
+    "flights": [
+      "AC837"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "ACA837"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T13:49:41-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA837",
+          "registration": "C-FITL",
+          "timestamp_utc": "2026-11-04T18:49:37.768Z"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-fitl"
+      ]
+    }
+  },
+  "DSC01039": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T13:49:46-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-FITL",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fitl"
+    },
+    "flights": [
+      "AC837"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "ACA837"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T13:49:46-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA837",
+          "registration": "C-FITL",
+          "timestamp_utc": "2026-11-04T18:49:37.768Z"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-fitl"
+      ]
+    }
+  },
+  "DSC01040": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T13:54:33-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-GLQG",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://wwnbg.flightera.net/en/flight_details/Porter%2BAirlines-Ottawa-Toronto/PD2158/CYOW/2026-11-05"
+    },
+    "flights": [
+      "PD2158"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "POE2158"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T13:54:33-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "POE2158",
+          "registration": "C-GLQG",
+          "timestamp_utc": "2026-11-04T18:54:27.818Z"
+        }
+      ],
+      "sources": [
+        "https://wwnbg.flightera.net/en/flight_details/Porter%2BAirlines-Ottawa-Toronto/PD2158/CYOW/2026-11-05"
+      ]
+    }
+  },
+  "DSC01043": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T13:56:06-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "N66897",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.flightaware.com/resources/registration/N66897"
+    },
+    "flights": [
+      "UA2606"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "UAL2606"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T13:56:06-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "UAL2606",
+          "registration": "N66897",
+          "timestamp_utc": "2026-11-04T18:56:11.831Z"
+        }
+      ],
+      "sources": [
+        "https://www.flightaware.com/resources/registration/N66897"
+      ]
+    }
+  },
+  "DSC01044": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T13:56:09-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "N66897",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.flightaware.com/resources/registration/N66897"
+    },
+    "flights": [
+      "UA2606"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "UAL2606"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T13:56:09-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "UAL2606",
+          "registration": "N66897",
+          "timestamp_utc": "2026-11-04T18:56:11.831Z"
+        }
+      ],
+      "sources": [
+        "https://www.flightaware.com/resources/registration/N66897"
+      ]
+    }
+  },
+  "DSC01050": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T13:58:04-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "A7-AOE",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.airnavradar.com/data/flights/QR767"
+    },
+    "flights": [
+      "QR767"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "QTR65U"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T13:58:04-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "QTR65U",
+          "registration": "A7-AOE",
+          "timestamp_utc": "2026-11-04T18:58:13.998Z"
+        }
+      ],
+      "sources": [
+        "https://www.airnavradar.com/data/flights/QR767"
+      ]
+    }
+  },
+  "DSC01054": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T13:58:07-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "A7-AOE",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.airnavradar.com/data/flights/QR767"
+    },
+    "flights": [
+      "QR767"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "QTR65U"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T13:58:07-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "QTR65U",
+          "registration": "A7-AOE",
+          "timestamp_utc": "2026-11-04T18:58:13.998Z"
+        }
+      ],
+      "sources": [
+        "https://www.airnavradar.com/data/flights/QR767"
+      ]
+    }
+  },
+  "DSC01061": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T14:00:39-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-FRSO",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.aeroport-dakar.com/en/int/booking/aircraft.php?lg=en&reg=CFRSO"
+    },
+    "flights": [
+      "AC7142"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "ACA7142"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T14:00:39-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA7142",
+          "registration": "C-FRSO",
+          "timestamp_utc": "2026-11-04T19:00:31.568Z"
+        }
+      ],
+      "sources": [
+        "https://www.aeroport-dakar.com/en/int/booking/aircraft.php?lg=en&reg=CFRSO",
+        "https://planetrack.ai/aircraft/c02ec7"
+      ]
+    }
+  },
+  "DSC01063": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T14:00:42-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-FRSO",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.aeroport-dakar.com/en/int/booking/aircraft.php?lg=en&reg=CFRSO"
+    },
+    "flights": [
+      "AC7142"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "ACA7142"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T14:00:42-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA7142",
+          "registration": "C-FRSO",
+          "timestamp_utc": "2026-11-04T19:00:51.724Z"
+        }
+      ],
+      "sources": [
+        "https://www.aeroport-dakar.com/en/int/booking/aircraft.php?lg=en&reg=CFRSO",
+        "https://planetrack.ai/aircraft/c02ec7"
+      ]
+    }
+  },
+  "DSC01070": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T14:05:17-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "N409RP",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://eflight.com/aircraft/N409RP"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "JTL40"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T14:05:17-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "JTL40",
+          "registration": "N409RP",
+          "timestamp_utc": "2026-11-04T19:05:09.823Z"
+        }
+      ],
+      "sources": [
+        "https://eflight.com/aircraft/N409RP",
+        "https://www.tampaairport.com/sites/default/files/2026-03/February%202026%20Deviations.pdf"
+      ]
+    }
+  },
+  "DSC01072": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T14:24:41-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-GHKX",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "AC1456"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "ACA1456"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T14:24:41-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA1456",
+          "registration": "C-GHKX",
+          "timestamp_utc": "2026-11-04T19:24:33.940Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC01074": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T14:24:45-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-GHKX",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "AC1456"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "ACA1456"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T14:24:45-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA1456",
+          "registration": "C-GHKX",
+          "timestamp_utc": "2026-11-04T19:24:33.940Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC01077": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T14:27:38-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "N845JS",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.flightaware.com/resources/registration/N845JS"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "JRE845"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T14:27:38-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "JRE845",
+          "registration": "N845JS",
+          "timestamp_utc": "2026-11-04T19:27:35.883Z"
+        }
+      ],
+      "sources": [
+        "https://www.flightaware.com/resources/registration/N845JS"
+      ]
+    }
+  },
+  "DSC01082": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T14:28:48-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "9Y-BAR",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "BW612"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "BWA612"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T14:28:48-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "BWA612",
+          "registration": "9Y-BAR",
+          "timestamp_utc": "2026-11-04T19:28:47.624Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC01085": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T14:28:52-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "9Y-BAR",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "BW612"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "BWA612"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T14:28:52-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "BWA612",
+          "registration": "9Y-BAR",
+          "timestamp_utc": "2026-11-04T19:28:47.624Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC01086": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T14:31:38-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-GOJC",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gojc"
+    },
+    "flights": [
+      "TS123"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "TSC123"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T14:31:38-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "TSC123",
+          "registration": "C-GOJC",
+          "timestamp_utc": "2026-11-04T19:31:33.713Z"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-gojc"
+      ]
+    }
+  },
+  "DSC01094": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T15:02:17-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "SE-DMO",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/se-dmo"
+    },
+    "flights": [
+      "SK949"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "SAS949"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T15:02:17-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "SAS949",
+          "registration": "SE-DMO",
+          "timestamp_utc": "2026-11-04T20:02:13.626Z"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/se-dmo"
+      ]
+    }
+  },
+  "DSC01095": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T15:02:21-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "SE-DMO",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/se-dmo"
+    },
+    "flights": [
+      "SK949"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "SAS949"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T15:02:21-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "SAS949",
+          "registration": "SE-DMO",
+          "timestamp_utc": "2026-11-04T20:02:13.626Z"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/se-dmo"
+      ]
+    }
+  },
+  "DSC01101": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T15:05:15-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "G-ZBKH",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://free.flightradar24.com/data/flights/ba93"
+    },
+    "flights": [
+      "BA93"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "BAW9ZY"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T15:05:15-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "BAW9ZY",
+          "registration": "G-ZBKH",
+          "timestamp_utc": "2026-11-04T20:05:21.684Z"
+        }
+      ],
+      "sources": [
+        "https://free.flightradar24.com/data/flights/ba93",
+        "https://www.torontopearson.com/en/arrivals/flights/baw93"
+      ]
+    }
+  },
+  "DSC01106": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T15:05:20-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "G-ZBKH",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://free.flightradar24.com/data/flights/ba93"
+    },
+    "flights": [
+      "BA93"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "BAW9ZY"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T15:05:20-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "BAW9ZY",
+          "registration": "G-ZBKH",
+          "timestamp_utc": "2026-11-04T20:05:21.684Z"
+        }
+      ],
+      "sources": [
+        "https://free.flightradar24.com/data/flights/ba93",
+        "https://www.torontopearson.com/en/arrivals/flights/baw93"
+      ]
+    }
+  },
+  "DSC01109": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T15:05:21-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "G-ZBKH",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://free.flightradar24.com/data/flights/ba93"
+    },
+    "flights": [
+      "BA93"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "BAW9ZY"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T15:05:21-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "BAW9ZY",
+          "registration": "G-ZBKH",
+          "timestamp_utc": "2026-11-04T20:05:21.684Z"
+        }
+      ],
+      "sources": [
+        "https://free.flightradar24.com/data/flights/ba93",
+        "https://www.torontopearson.com/en/arrivals/flights/baw93"
+      ]
+    }
+  },
+  "DSC01111": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T15:30:04-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "N936XJ",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/N936XJ"
+    },
+    "flights": [
+      "DL5233"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "EDV5233"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T15:30:04-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "EDV5233",
+          "registration": "N936XJ",
+          "timestamp_utc": "2026-11-04T20:30:05.588Z"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/N936XJ"
+      ]
+    }
+  },
+  "DSC01117": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T15:33:16-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "D-AIGO",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "LH470"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "DLH470"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T15:33:16-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "DLH470",
+          "registration": "D-AIGO",
+          "timestamp_utc": "2026-11-04T20:33:23.698Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC01120": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T15:33:18-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "D-AIGO",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "LH470"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "DLH470"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T15:33:18-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "DLH470",
+          "registration": "D-AIGO",
+          "timestamp_utc": "2026-11-04T20:33:23.698Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC01126": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T15:38:52-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-FHGE",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fhge"
+    },
+    "flights": [
+      "AC592"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "ACA592"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T15:38:52-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA592",
+          "registration": null,
+          "timestamp_utc": "2026-11-04T20:38:45.680Z"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-fhge",
+        "https://www.flightradar24.com/data/flights/ac592"
+      ]
+    }
+  },
+  "DSC01129": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T15:38:54-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-FHGE",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fhge"
+    },
+    "flights": [
+      "AC592"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "ACA592"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T15:38:54-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA592",
+          "registration": null,
+          "timestamp_utc": "2026-11-04T20:38:45.680Z"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-fhge",
+        "https://www.flightradar24.com/data/flights/ac592"
+      ]
+    }
+  },
+  "DSC01139": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T15:41:05-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "N559AS",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "AS385"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "ASA385"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T15:41:05-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "ASA385",
+          "registration": "N559AS",
+          "timestamp_utc": "2026-11-04T20:41:03.932Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC01141": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T15:41:05-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "N559AS",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "AS385"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "ASA385"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T15:41:05-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "ASA385",
+          "registration": "N559AS",
+          "timestamp_utc": "2026-11-04T20:41:03.932Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC01146": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T15:43:20-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-GKFB",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "AC1663"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "ROU1663"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T15:43:20-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "ROU1663",
+          "registration": "C-GKFB",
+          "timestamp_utc": "2026-11-04T20:43:23.652Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC01147": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T15:43:21-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-GKFB",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对"
+    },
+    "flights": [
+      "AC1663"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "ROU1663"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T15:43:21-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "ROU1663",
+          "registration": "C-GKFB",
+          "timestamp_utc": "2026-11-04T20:43:23.652Z"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "DSC01152": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T15:55:50-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "C-FXGF",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fxgf"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "CFXGF"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T15:55:50-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "CFXGF",
+          "registration": "C-FXGF",
+          "timestamp_utc": "2026-11-04T20:55:45.658Z"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-fxgf",
+        "https://www.regosearch.com/aircraft/ca/FXGF"
+      ]
+    }
+  },
+  "DSC01155": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T15:58:14-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "JY-RBC",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/JY-RBC"
+    },
+    "flights": [
+      "RJ271"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "RJA271"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T15:58:14-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "RJA271",
+          "registration": "JY-RBC",
+          "timestamp_utc": "2026-11-04T20:58:21.694Z"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/JY-RBC"
+      ]
+    }
+  },
+  "DSC01158": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T15:58:16-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "JY-RBC",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/JY-RBC"
+    },
+    "flights": [
+      "RJ271"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "RJA271"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T15:58:16-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "RJA271",
+          "registration": "JY-RBC",
+          "timestamp_utc": "2026-11-04T20:58:21.694Z"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/JY-RBC"
+      ]
+    }
+  },
+  "DSC01160": {
+    "date": "2026-11-04",
+    "capturedAt": "2026-11-04T15:58:17-05:00",
+    "reviewedAt": "2026-11-04",
+    "registration": {
+      "value": "JY-RBC",
+      "status": "confirmed",
+      "basis": "照片特征、拍摄时间与当日 ADS-B 记录交叉核对",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/JY-RBC"
+    },
+    "flights": [
+      "RJ271"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "结合校时分界、注册号与当日实际航迹核对",
+      "callsign": "RJA271"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-04 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-04T15:58:17-05:00",
+      "clockResetLocal": "2026-11-04T12:53:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "RJA271",
+          "registration": "JY-RBC",
+          "timestamp_utc": "2026-11-04T20:58:21.694Z"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/JY-RBC"
+      ]
+    }
   }
 }

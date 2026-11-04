@@ -5,6 +5,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 source = json.loads(Path(sys.argv[1]).read_text())
 aliases = {
+    'Airbus A321LR': 'Airbus A321neo LR',
     'Bombardier CRJ900': 'Bombardier CRJ-900',
     'De Havilland Canada DHC-8-400': 'De Havilland Canada Dash 8-400',
 }
@@ -89,13 +90,16 @@ Harbour Air|港湾航空|YB|加拿大|美洲
 Asiana Airlines|韩亚航空|OZ|韩国|亚洲
 Juneyao Air|吉祥航空|HO|中国|亚洲'''
 airline_info = {r.split('|')[0]: r.split('|')[1:] for r in airline_rows.splitlines()}
-def slug(s): return re.sub(r'[^a-z0-9]+', '-', s.lower()).strip('-')
+def slug(s):
+    # Preserve the existing CJ3+ ID while distinguishing the original 525B.
+    if s=='Cessna Citation CJ3': return 'cessna-citation-cj3-525b'
+    return re.sub(r'[^a-z0-9]+', '-', s.lower()).strip('-')
 def model_meta(name):
     maker = next((x for x in ['Airbus','Boeing','Bombardier','Embraer','De Havilland Canada','Cessna','Gulfstream','Saab','Antonov','Beechcraft'] if name.startswith(x)), 'Other')
-    family = re.search(r'(A\d{3}|7\d7|CRJ|Dash 8|DHC-8|E\d{3}|ERJ-145|Challenger|Global|Praetor|Citation|Conquest|An-124|340|G200|1900)', name)
+    family = re.search(r'(A\d{3}|7\d7|CRJ|Dash 8|DHC-8|E\d{3}|ERJ-145|Challenger|Learjet|Global|Praetor|Citation|Conquest|An-124|340|G200|1900)', name)
     family = family.group() if family else name
     if any(x in name for x in ['777F','ERF','BDSF','P2F','-200F','-600F','747-8F','An-124']): category='货机'
-    elif any(x in name for x in ['Challenger','Global','Praetor','Citation','Gulfstream']): category='公务机'
+    elif any(x in name for x in ['Challenger','Learjet','Global','Praetor','Citation','Gulfstream']): category='公务机'
     elif any(x in name for x in ['Dash 8','DHC-8','Saab','Conquest','ATR','Beechcraft 1900']): category='涡桨飞机'
     elif any(x in name for x in ['CRJ','E170','E175','E190','E195','ERJ']): category='支线客机'
     elif any(x in name for x in ['A300','A310','A330','A340','A350','A380','747','767','777','787','MD-11']): category='宽体客机'
@@ -169,7 +173,7 @@ airlines.sort(key=lambda a:(airline_priority.index(a['name']) if a['name'] in ai
 data={'updatedAt':max([source['audit_date']]+[i['reviewedAt'] for i in identities.values() if 'reviewedAt' in i]),'scope':'YYZ / YVR 已整理收藏','photos':photos,'aircraft':models,'airlines':airlines,
     'heroPhoto':'DSC07776','featuredPhotos':featured,'scopeNote':'机型涵盖已确认拍摄型号及常见民航补拍目标；航司以 YYZ / YVR 收藏及补拍清单为主，并非全球完整名录。未解锁不代表当前有定期航班。'}
 (ROOT/'data/catalog.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
-assert len(photos)==372 and len({p['id'] for p in photos})==372
+assert len(photos)==len(source['photo_audit'])==len({p['id'] for p in photos})
 assert len({m['id'] for m in models})==len(models)
 assert all(a in airline_info for p in photos for a in p['airlines'])
 print(json.dumps({'photos':len(photos),'aircraft':len(models),'aircraftUnlocked':sum(m['unlocked'] for m in models),'airlines':len(airlines),'airlinesUnlocked':sum(a['unlocked'] for a in airlines)}))

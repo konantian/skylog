@@ -1,3 +1,4 @@
+import {useMobileLayer} from './use-mobile-layer';
 import {LanguageSwitch,useLocale} from './locale-provider';
 import {useEffect,useRef,useState} from 'react';
 import airports from '@/data/airports.json';
@@ -9,6 +10,7 @@ export type ShareCardSource={kind:'photo';photo:Photo}|{kind:'flight';flight:Fli
 type Orientation='landscape'|'portrait';
 
 export function ShareCard({source,onClose}:{source:ShareCardSource;onClose:()=>void}) {
+  useMobileLayer(true,onClose);
   const {t,locale}=useLocale();
   const dialog=useRef<HTMLDialogElement>(null),heading=useRef<HTMLHeadingElement>(null);
   const [card,setCard]=useState<{url:string;file:File}|null>(null);

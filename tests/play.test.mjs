@@ -44,7 +44,7 @@ test('achievements use photographic unlocks and confirmed exact-airframe matches
   assert.equal(awards.length,15);
   assert.equal(awards.find(a=>a.key==='787').current,3);
   assert.deepEqual(awards.find(a=>a.key==='777').missing,['Boeing 777-200ER']);
-  assert.equal(awards.find(a=>a.key==='fifty-airlines').current,45);
+  assert.equal(awards.find(a=>a.key==='fifty-airlines').current,47);
   assert.ok(awards.every(a=>a.photoIds.every(id=>photos.some(p=>p.id===id))));
   const sample=[{id:'A',models:[],airlines:[],airport:'YYZ',registration:{status:'inferred',value:'TEST'}}];
   assert.equal(collectionAchievements([],[],sample,[{registration:'TEST'}]).find(a=>a.key==='same-airframe').unlocked,false);
@@ -54,10 +54,10 @@ test('achievements use photographic unlocks and confirmed exact-airframe matches
 });
 test('new family goals count distinct families and keep passenger and cargo aircraft separate',()=>{
   const awards=collectionAchievements(aircraft,airlines,photos,log.flights);
-  const expected={a220:[1,2,['Airbus A220-100']],'747-generations':[2,4,['Boeing 747-8','Boeing 747-8F']],'four-engines':[2,3,['A340']],'boeing-widebodies':[3,4,['767']],'cargo-six':[3,6,['A300','A330','MD-11']],'turboprop-trio':[2,3,['ATR 72']]};
+  const expected={a220:[1,2,['Airbus A220-100']],'747-generations':[2,4,['Boeing 747-8','Boeing 747-8F']],'four-engines':[3,3,[]],'boeing-widebodies':[3,4,['767']],'cargo-six':[3,6,['A300','A330','MD-11']],'turboprop-trio':[2,3,['ATR 72']]};
   for(const [key,[current,target,missing]] of Object.entries(expected)){
     const award=awards.find(a=>a.key===key);
-    assert.equal(award.current,current);assert.equal(award.target,target);assert.deepEqual(award.missing,missing);assert.equal(award.unlocked,false);
+    assert.equal(award.current,current);assert.equal(award.target,target);assert.deepEqual(award.missing,missing);assert.equal(award.unlocked,current===target);
   }
   const boeing=awards.find(a=>a.key==='boeing-widebodies');
   assert.ok(!boeing.photoIds.some(id=>photos.find(p=>p.id===id).models.includes('Boeing 767-300BDSF')));

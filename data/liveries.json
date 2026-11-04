@@ -46,5 +46,13 @@
   "多机同框 · 多种涂装": {
     "name": "多机同框 · 多种涂装",
     "description": "画面包含多架飞机，各自保留所属航司的涂装。"
+  },
+  "CIIE 进博会主题涂装": {
+    "name": "CIIE · 中国国际进口博览会",
+    "description": "蓝色机身、熊猫图案和 CIIE 标记；东航 B-2002 的进博会主题涂装。"
+  },
+  "Salmon People 鲑鱼主题涂装": {
+    "name": "Xáat Kwáani · Salmon People",
+    "description": "阿拉斯加航空 N559AS 的鲑鱼主题涂装，蓝色机身上绘有醒目的鲑鱼图案。"
   }
 }

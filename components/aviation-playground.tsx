@@ -1,3 +1,4 @@
+import {useMobileLayer} from './use-mobile-layer';
 import {LanguageSwitch,useLocale} from './locale-provider';
 import {useEffect,useMemo,useRef,useState,type ReactNode} from 'react';
 import profiles from '@/data/aircraft-profiles.json';
@@ -12,6 +13,7 @@ type OpenPhotos=(ids:string[],index:number,onNavigate?:()=>void)=>void;
 const asset=(path:string)=>`${process.env.NEXT_PUBLIC_BASE_PATH||''}${path}`;
 
 function PlayDialog({title,eyebrow,children,onClose}:{title:string;eyebrow:string;children:ReactNode;onClose:()=>void}) {
+  useMobileLayer(true,onClose);
   const {t}=useLocale();
   const dialog=useRef<HTMLDialogElement>(null),heading=useRef<HTMLHeadingElement>(null);
   useEffect(()=>{

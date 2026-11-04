@@ -1072,5 +1072,20 @@
         "url": "https://www.saab.com/products/saab-340"
       }
     ]
+  },
+  "Bombardier Learjet 45": {
+    "status": "pending",
+    "group": "Learjet",
+    "reason": "该型号的官方侧视图尚未核验。"
+  },
+  "Cessna Citation CJ3": {
+    "status": "pending",
+    "group": "Citation",
+    "reason": "该型号的官方侧视图尚未核验。"
+  },
+  "Bombardier Challenger 3500": {
+    "status": "pending",
+    "group": "Challenger",
+    "reason": "该型号的官方侧视图尚未核验。"
   }
 }

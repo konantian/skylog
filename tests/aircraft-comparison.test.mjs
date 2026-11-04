@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import catalog from '../data/catalog.json' with {type:'json'};
+import drawings from '../data/aircraft-drawings.json' with {type:'json'};
 import {comparisonCues,comparisonDrawings,updateComparison} from '../lib/aircraft-comparison.mjs';
 
 test('comparison keeps models unique, permits replacement/removal, and stops at three',()=>{
@@ -30,9 +31,15 @@ test('unrelated families share one scale with noses and ground aligned',()=>{
 test('every catalog model fits the shared canvas alongside the largest model',()=>{
   for(const entry of catalog.aircraft){
     const [{drawing:d}]=comparisonDrawings([entry.name,'Airbus A380-800']);
+    if(drawings[entry.name].status==='pending'){assert.equal(d,null);continue;}
     assert.ok(d.x>=49&&d.x+d.width<=551,entry.name);
     assert.ok(d.y>=30&&d.y+d.drawnHeight<=205.001,entry.name);
   }
+});
+
+test('pending business-jet diagrams keep comparison cards visible without invented dimensions',()=>{
+  const models=['Bombardier Learjet 45','Bombardier Challenger 3500','Cessna Citation CJ3'];
+  assert.deepEqual(comparisonDrawings(models),models.map(model=>({model,drawing:null})));
 });
 
 test('spotting cues retain engine count, double decks and propeller power',()=>{

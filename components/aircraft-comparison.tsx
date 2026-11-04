@@ -1,3 +1,4 @@
+import {useMobileLayer} from './use-mobile-layer';
 import {useEffect,useRef,type CSSProperties} from 'react';
 import {comparisonDrawings,comparisonCues} from '@/lib/aircraft-comparison.mjs';
 import {photoImageSources} from '@/lib/photo-images.mjs';
@@ -24,6 +25,7 @@ export function ComparisonTray({models,onRemove,onClear,onOpen}:{models:string[]
 }
 
 export function AircraftComparison({models,aircraft,photos,flights,onSelect,onClose}:{models:string[];aircraft:Entry[];photos:Photo[];flights:Flight[];onSelect:(index:number,model:string)=>void;onClose:()=>void}){
+  useMobileLayer(true,onClose);
   const {t}=useLocale();
   const dialog=useRef<HTMLDialogElement>(null);
   useEffect(()=>{

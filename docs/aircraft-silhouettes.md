@@ -1,7 +1,7 @@
 # Aircraft silhouettes
 
-The gray placeholders are original, stylized side-profile SVGs for the 35 catalog
-families and 76 named models. They are not copies of manufacturer CAD artwork.
+The gray placeholders are original, stylized side-profile SVGs for the 36 catalog
+families and 79 named models. They are not copies of manufacturer CAD artwork.
 They distinguish nose proportions, fuselage depth, swept/high wings, tail layouts,
 engine arrangements, upper decks, cargo windows and representative wing tips.
 
@@ -52,7 +52,9 @@ above. `AircraftTechnicalDrawing` is a separate detail-only component; it does
 not change the cards or replace the photographer's images.
 
 `data/aircraft-drawings.json` records the source and configuration of each
-technical elevation. All 76 entries now have a dimensioned reference view.
+technical elevation. The original 76 entries have a dimensioned reference view. The newly photographed
+Learjet 45, Challenger 3500 and Citation CJ3 remain explicitly pending until
+their specific official side elevations are reviewed.
 Sources include Airbus and Boeing public three-view CAD, manufacturer airport
 planning and recovery manuals, specification brochures, and regulator archives.
 Old manufacturer publications sometimes require a public mirror; the original
@@ -93,3 +95,9 @@ unverified entries must not receive invented technical dimensions.
 `tests/aircraft-drawings.test.mjs` checks catalog coverage, pending-state honesty,
 family scale, SVG rendering and bounds, source links, and the separation from
 card previews.
+
+The November 4 additions use illustrative proportions only: Learjet 45 length
+17.77 m follows [EASA IM.A.020](https://www.easa.europa.eu/en/downloads/7485/en);
+Citation CJ3 length 15.59 m follows the [Cessna brochure](https://www.midcont.net/pdf/citationcj3.pdf).
+Challenger 3500 retains the 20.9 m Challenger 350-family silhouette length
+([Bombardier](https://bombardier.com/en/aircraft/challenger-3500)).

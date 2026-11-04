@@ -7,7 +7,7 @@ import log from '../data/flights.json' with {type:'json'};
 const byId=new Map(catalog.photos.map(p=>[p.id,p]));
 
 test('every photograph uses date-matched identity evidence and explicit flight confidence',()=>{
-  assert.equal(Object.keys(identities).length,372);
+  assert.equal(Object.keys(identities).length,441);
   for(const p of catalog.photos){
     const e=identities[p.id];
     assert.equal(e.date,p.date,p.id);
@@ -109,4 +109,27 @@ test('stored and multi-aircraft photographs do not inherit active flight numbers
   ]);
   assert.ok(filterPhotos(catalog.photos,{...initialFilters,query:'C-FIUW'},catalog.aircraft,catalog.airlines).some(p=>p.id===ramp.id));
   for(const id of ['DSC06296','DSC07884','DSC07935'])assert.equal(byId.get(id).flightIdentification.status,'unknown');
+});
+
+test('November 4 preserves camera timestamps and matches all 69 edited photos to actual tracks',()=>{
+  const batch=catalog.photos.filter(p=>p.date==='2026-11-04');
+  assert.equal(batch.length,69);
+  assert.equal(batch.filter(p=>p.flights.length===1).length,63);
+  assert.equal(batch.filter(p=>!p.flights.length&&p.flightIdentification.callsign).length,6);
+  for(const p of batch){
+    const e=identities[p.id];
+    assert.equal(p.registration.status,'confirmed');assert.equal(p.flightIdentification.status,'confirmed');
+    assert.equal(p.capturedAt.slice(-6),'-05:00');
+    assert.equal(e.evidence.cameraClockCorrectionSeconds,Number(p.id.slice(3))<947?480:0);
+    const corrected=Date.parse(p.capturedAt)+e.evidence.cameraClockCorrectionSeconds*1000;
+    assert.equal(corrected,Date.parse(e.evidence.lookupTime));
+    assert.ok(Math.abs(Date.parse(e.evidence.track[0].timestamp_utc)-corrected)<=12000,p.id);
+  }
+  assert.deepEqual(byId.get('DSC01095').models,['Airbus A321neo LR']);
+  assert.deepEqual(byId.get('DSC01106').flights,['BA93']);
+  assert.equal(byId.get('DSC01106').flightIdentification.callsign,'BAW9ZY');
+  assert.deepEqual(byId.get('DSC01054').flights,['QR767']);
+  assert.equal(byId.get('DSC01054').flightIdentification.callsign,'QTR65U');
+  assert.deepEqual(byId.get('DSC01070').models,['Cessna Citation CJ3']);
+  assert.notEqual(catalog.aircraft.find(a=>a.name==='Cessna Citation CJ3').id,catalog.aircraft.find(a=>a.name==='Cessna Citation CJ3+').id);
 });

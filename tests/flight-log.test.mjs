@@ -28,7 +28,7 @@ test('flown registrations link only confirmed photographs of the same airframe',
   assert.deepEqual(flightsForPhoto(cfivm[0],log.flights).map(f=>f.id),['2024-08-23-AC64-ICN-YVR']);
   assert.equal(flightsForPhoto({...cfivm[0],registration:{...cfivm[0].registration,status:'inferred'}},log.flights).length,0);
   assert.equal(flightsForPhoto(photos.find(p=>p.id==='DSC00502'),log.flights).length,2);
-  assert.equal(photos.filter(p=>p.registration).length,371);
+  assert.equal(photos.filter(p=>p.registration).length,440);
 });
 
 test('flown-only aircraft remain unphotographed and broad model labels do not become variants',()=>{
