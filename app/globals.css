@@ -339,5 +339,5 @@ html:has(.comparison-tray){scroll-padding-bottom:200px}
 @media(max-width:760px),(max-height:500px) and (pointer:coarse){
   .wrap{width:calc(100% - max(18px,env(safe-area-inset-left)) - max(18px,env(safe-area-inset-right)))}
   .search-clear{width:44px;height:44px}
-  .photo-dialog,.play-dialog,.replay-dialog{padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}
+  .photo-dialog,.play-dialog,.replay-dialog,.mobile-filter-sheet{padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}
 }
