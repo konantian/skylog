@@ -1,5 +1,5 @@
 import {useLocale} from './locale-provider';
-import {useEffect,useMemo,useState} from 'react';
+import {useEffect,useMemo,useRef,useState} from 'react';
 import {aircraftFamilies} from '@/lib/insights.mjs';
 import type {Entry,Photo} from '@/lib/types';
 import {Icon,PlaneSilhouette} from './icons';
@@ -11,6 +11,8 @@ export function AircraftFamilies({aircraft,photos,model,onEntry}:{aircraft:Entry
   const {t}=useLocale();
   const families=useMemo(()=>aircraftFamilies(aircraft) as Family[],[aircraft]);
   const [selected,setSelected]=useState('Boeing:777');
+  const disclosure=useRef<HTMLDetailsElement>(null);
+  useEffect(()=>{if(disclosure.current)disclosure.current.open=!window.matchMedia('(max-width: 760px), (max-height: 500px) and (pointer: coarse)').matches;},[]);
   const byId=useMemo(()=>new Map(photos.map(p=>[p.id,p])),[photos]);
   useEffect(()=>{
     const match=families.find(g=>g.entries.some(e=>e.name===model));
@@ -18,7 +20,7 @@ export function AircraftFamilies({aircraft,photos,model,onEntry}:{aircraft:Entry
   },[model,families]);
   const group=families.find(g=>g.key===selected)||families[0];
   if(!group)return null;
-  return <details className="family-collection" open>
+  return <details className="family-collection" ref={disclosure}>
     <summary><span><Icon name="aircraft" size={18}/>{t("机型家族收集进度")}</span><span>{families.length} {t("个家族")}<Icon name="chevron" size={13}/></span></summary>
     <div className="family-body">
       <div className="family-heading"><div><span className="eyebrow">THE FAMILY COLLECTION</span><h3>{group.name}</h3><p>{t("按全部拍摄收藏统计，仅含本图鉴收录的型号。")}</p></div><label className="select-field"><span>{t("切换机型家族")}</span><select aria-label={t("机型家族")} value={group.key} onChange={e=>{setSelected(e.target.value);e.currentTarget.blur();}}>{families.map(g=><option key={g.key} value={g.key}>{g.name} · {g.unlocked} / {g.entries.length}</option>)}</select></label></div>
