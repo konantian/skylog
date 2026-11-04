@@ -52,13 +52,15 @@ above. `AircraftTechnicalDrawing` is a separate detail-only component; it does
 not change the cards or replace the photographer's images.
 
 `data/aircraft-drawings.json` records the source and configuration of each
-technical elevation. The 59 referenced entries use side elevations from Airbus
-and Boeing public three-view CAD, manufacturer airport-planning manuals, or
-three-view attachments published by the New Zealand CAA. The SVGs are cropped,
-cleaned and normalized derivatives of those drawings, not manufacturer-endorsed
+technical elevation. All 76 entries now have a dimensioned reference view.
+Sources include Airbus and Boeing public three-view CAD, manufacturer airport
+planning and recovery manuals, specification brochures, and regulator archives.
+Old manufacturer publications sometimes require a public mirror; the original
+author and figure remain identified. SVGs are cleaned vector extractions or
+simplified hand traces of the cited profiles, not manufacturer-endorsed
 engineering deliverables. Source copyright remains with its owner. Links and
-PDF page numbers are displayed with each drawing. Original manuals and CAD
-archives are not distributed in the app.
+available PDF page numbers are displayed with each drawing. Original manuals
+and CAD archives are not distributed in the app.
 
 The length dimension and ruler use a fixed metres-to-pixels scale within each
 family. The A320 family and E-Jets share scales across their related model
@@ -68,12 +70,25 @@ modifications change them. Original manual lines may show alternative engine
 installations or ground references. A310's source is gear-up; preliminary
 A330neo drawings and family-level references are explicitly annotated.
 
-Seventeen entries remain `pending`. No unverified dimensions or technical
-assets are displayed for them; their existing card illustrations remain.
-They are: A330-300P2F, 767-300BDSF, ATR 72-600, An-124-100-150, E170, E175,
-ERJ-145LR, Challenger 350, Global 6500, Citation CJ3+/XLS+/Excel/II/X,
-Praetor 500, G200 and Saab 340B. This release does not claim that every model
-has an exact official drawing.
+The remaining 17 references were added on 2026-11-04. Important distinctions:
+
+- A330-300P2F and 767-300BDSF retain the manufacturer base-airframe geometry,
+  with schematic cargo doors and plugged windows guided by EFW and IAI/BEDEK.
+  Both sources are linked; these are explicitly labeled conversion references,
+  not exact conversion-company CAD.
+- E175 uses the enhanced-wingtip figure (28.65 m), ERJ-145LR uses standard tips,
+  and Citation X uses the original X rather than the larger X+.
+- Challenger 350 and Global 6500 use their specifically labeled Bombardier
+  figures. AN-124 uses Antonov's shared -100/-100M-150 family illustration.
+- Citation Excel combines EASA 560XL dimensions with a FlightSafety training
+  profile. G200 uses FlightSafety's manufacturer-data-based dimension figure.
+  These two are labeled technical references, not direct manufacturer drawings.
+- ATR, CJ3+, XLS+ and Praetor profiles are simplified from factory brochure
+  three-views; Praetor is shown gear-up. Saab 340B uses the CAA three-view and
+  Saab's standard-wingtip dimensions.
+
+The data format still supports an explicit `pending` state for future models;
+unverified entries must not receive invented technical dimensions.
 
 `tests/aircraft-drawings.test.mjs` checks catalog coverage, pending-state honesty,
 family scale, SVG rendering and bounds, source links, and the separation from

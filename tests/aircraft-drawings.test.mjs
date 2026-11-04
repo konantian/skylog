@@ -17,7 +17,11 @@ test('every catalog model has a reference or an explicit pending state',()=>{
     }
     assert.equal(spec.status,'reference',name);
     for(const key of ['length','span','height','artHeight'])assert.ok(Number.isFinite(spec[key])&&spec[key]>0,`${name}: ${key}`);
-    assert.ok(new URL(spec.source.url).protocol==='https:',name);
+    for(const source of [spec.source,...(spec.additionalSources||[])]){
+      assert.ok(new URL(source.url).protocol==='https:',name);
+      assert.ok(source.title,name);
+      if(source.page!==undefined)assert.ok(Number.isInteger(source.page)&&source.page>0,name);
+    }
     assert.match(spec.asset,/^\/aircraft\/[a-z0-9-]+\.svg$/);
     assert.ok(fs.existsSync(path.join('public',spec.asset)),name);
   }

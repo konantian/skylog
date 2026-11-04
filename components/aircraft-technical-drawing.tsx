@@ -12,7 +12,7 @@ export function AircraftTechnicalDrawing({model}:{model:string}){
   const basePath=process.env.NEXT_PUBLIC_BASE_PATH||'';
   const margin=width*.003;
   return <figure className="aircraft-technical" data-reference={reference}>
-    <div className="technical-heading"><span>{t('外形与尺寸')}</span><span>{t(reference?'官方资料参考图':'比例示意图')}</span></div>
+    <div className="technical-heading"><span>{t('外形与尺寸')}</span><span>{t('referenceLabel' in drawing?drawing.referenceLabel:'官方资料参考图')}</span></div>
     <svg className="technical-canvas" viewBox="0 0 600 295" role="img" aria-label={t('{0}，机长 {1} 米，翼展 {2} 米，机高 {3} 米',[model,length,span,height])}>
       <path className="technical-baseline" d="M35 205H565"/>
       {'asset' in drawing&&<image className="technical-aircraft" href={`${basePath}${drawing.asset}`} x={x-margin} y={drawing.y-margin} width={width+margin*2} height={drawing.drawnHeight+margin*2}/>}
@@ -35,6 +35,7 @@ export function AircraftTechnicalDrawing({model}:{model:string}){
       <p>{t('代表构型的图鉴示意；尺寸会随翼尖、起落架姿态及改装变化。')}</p>
       {'note' in drawing&&<p>{t(drawing.note)}</p>}
       <a href={`${drawing.source.url}${'page' in drawing.source?`#page=${drawing.source.page}`:''}`} target="_blank" rel="noreferrer">{t('图纸与尺寸来源')} · {drawing.source.title} ↗</a>
+      {'additionalSources' in drawing&&drawing.additionalSources.map((source:{title:string;url:string;page?:number})=><p key={source.url}><a href={`${source.url}${source.page?`#page=${source.page}`:''}`} target="_blank" rel="noreferrer">{t('补充资料')} · {source.title} ↗</a></p>)}
     </figcaption>
   </figure>;
 }

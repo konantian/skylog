@@ -324,7 +324,26 @@
     }
   },
   "Airbus A330-300P2F": {
-    "status": "pending"
+    "length": 63.66,
+    "span": 60.3,
+    "height": 16.79,
+    "group": "A330",
+    "status": "reference",
+    "artHeight": 264.126,
+    "asset": "/aircraft/airbus-a330-300p2f.svg",
+    "source": {
+      "title": "Airbus · 3-view CAD",
+      "url": "https://www.aircraft.airbus.com/sites/default/files/2023-02/Airbus_A330_300-May-2012.zip"
+    },
+    "note": "以 Airbus 基础外形图结合 EFW 改装资料绘制；主货舱门和封窗位置为示意，并非 P2F 专用工程图。",
+    "additionalSources": [
+      {
+        "title": "EFW · Airbus Freighter Conversion",
+        "url": "https://www.elbeflugzeugwerke.com/fileadmin/user_upload/pdf/solutions/freighter-conversion/EFW-Broch-AirbusFreighterConvert-EN.pdf",
+        "page": 2
+      }
+    ],
+    "referenceLabel": "改装参考示意图"
   },
   "Boeing 737-400": {
     "length": 36.45,
@@ -628,7 +647,25 @@
     }
   },
   "Boeing 767-300BDSF": {
-    "status": "pending"
+    "length": 54.94,
+    "span": 47.57,
+    "height": 15.85,
+    "group": "767",
+    "status": "reference",
+    "artHeight": 292.5463,
+    "asset": "/aircraft/boeing-767-300bdsf.svg",
+    "source": {
+      "title": "Boeing · 3-view CAD",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/dwgs/7673.zip"
+    },
+    "note": "以 Boeing 基础外形图结合 IAI/BEDEK 改装资料绘制；货舱门及封窗为示意，采用无翼梢小翼构型。",
+    "additionalSources": [
+      {
+        "title": "IAI/BEDEK · B767-200/300BDSF",
+        "url": "https://www.iai.co.il/product/b767-200-300bdsf-p2f-conversion/"
+      }
+    ],
+    "referenceLabel": "改装参考示意图"
   },
   "McDonnell Douglas MD-11F": {
     "length": 61.21,
@@ -800,48 +837,240 @@
     }
   },
   "ATR 72-600": {
-    "status": "pending"
+    "length": 27.166,
+    "span": 27.05,
+    "height": 7.65,
+    "group": "ATR72",
+    "status": "reference",
+    "artHeight": 270.7904,
+    "asset": "/aircraft/atr-72-600.svg",
+    "source": {
+      "title": "ATR · 72-600 Factsheet, three-view",
+      "url": "https://www.atr-aircraft.com/wp-content/uploads/2020/07/Factsheets_-_ATR_72-600.pdf",
+      "page": 1
+    },
+    "note": "根据原厂三视图简化描绘，省略涂装、阴影与远侧重叠细节。"
   },
   "Antonov An-124-100-150": {
-    "status": "pending"
+    "length": 69.1,
+    "span": 73.3,
+    "height": 21.8,
+    "group": "An124",
+    "status": "reference",
+    "artHeight": 302.0619,
+    "asset": "/aircraft/antonov-an-124-100-150.svg",
+    "source": {
+      "title": "Antonov · AN-124 brochure",
+      "url": "https://antonov.com/en/file/V5hQc2hGrJGRs?inline=1",
+      "page": 3
+    },
+    "note": "使用原厂 AN-124-100 / -100M-150 共用外形图；不表示每架 -100-150 的改装细节。"
   },
   "Embraer E170": {
-    "status": "pending"
+    "length": 29.9,
+    "span": 26,
+    "height": 9.85,
+    "group": "E-Jets",
+    "status": "reference",
+    "artHeight": 335.971,
+    "asset": "/aircraft/embraer-e170.svg",
+    "source": {
+      "title": "Embraer · APM 1346, Fig. 2.1 (public mirror)",
+      "url": "https://manuals.plus/m/73e2ca704565c0144f49d3e969038b577e658def993378e8434885c70ffdd746.pdf",
+      "page": 30
+    }
   },
   "Embraer E175": {
-    "status": "pending"
+    "length": 31.68,
+    "span": 28.65,
+    "height": 9.86,
+    "group": "E-Jets",
+    "status": "reference",
+    "artHeight": 331.7519,
+    "asset": "/aircraft/embraer-e175.svg",
+    "source": {
+      "title": "Embraer · APM 2259, Fig. 2.2 (NTSB archive)",
+      "url": "https://data.ntsb.gov/Docket/Document/docBLOB?FileExtension=pdf&FileName=DCA20IA014+Attachment+2+-+Embraer+175+Airport+Planning+Manual-Rel.pdf&ID=13691419",
+      "page": 32
+    },
+    "note": "采用增强型翼尖构型（POST-MOD SB 170-57-0058/02），翼展 28.65 米。"
   },
   "Embraer ERJ-145LR": {
-    "status": "pending"
+    "length": 29.87,
+    "span": 20.04,
+    "height": 6.75,
+    "group": "ERJ145",
+    "status": "reference",
+    "artHeight": 217.7094,
+    "asset": "/aircraft/embraer-erj-145lr.svg",
+    "source": {
+      "title": "Embraer · APM-145/1100, Fig. 2.2.1 (public mirror)",
+      "url": "https://studylib.net/doc/25731844/apm-erj145"
+    },
+    "note": "采用 EP/ER/EU/MP/MK/LR/LU 共用外形，保留 LR 的普通翼尖；机长包含水平尾翼后缘。"
   },
   "Bombardier Challenger 350": {
-    "status": "pending"
+    "length": 20.96,
+    "span": 21.03,
+    "height": 6.1,
+    "group": "Challenger",
+    "status": "reference",
+    "artHeight": 287.234,
+    "asset": "/aircraft/bombardier-challenger-350.svg",
+    "source": {
+      "title": "Bombardier · BD-100 ARM, §03 Fig. 2 (public mirror)",
+      "url": "https://www.scribd.com/document/544560518/arm-300",
+      "page": 48
+    },
+    "note": "Challenger 350 专用尺寸图；高度按原厂空机重量状态。"
   },
   "Bombardier Global 6500": {
-    "status": "pending"
+    "length": 30.3,
+    "span": 28.65,
+    "height": 7.77,
+    "group": "Global",
+    "status": "reference",
+    "artHeight": 244.8,
+    "asset": "/aircraft/bombardier-global-6500.svg",
+    "source": {
+      "title": "Bombardier · Global 6500/5500 Training Guide, Fig. 4 (public mirror)",
+      "url": "https://www.scribd.com/document/933352449/Global-6500-5500-Differense-Cours",
+      "page": 19
+    },
+    "note": "根据原厂 2020 年差异培训手册中的 Global 6500 尺寸图简化描绘。"
   },
   "Cessna Citation CJ3+": {
-    "status": "pending"
+    "length": 15.59,
+    "span": 16.26,
+    "height": 4.62,
+    "group": "CitationCJ",
+    "status": "reference",
+    "artHeight": 290.7563,
+    "asset": "/aircraft/cessna-citation-cj3-plus.svg",
+    "source": {
+      "title": "Cessna · CJ3+ Specification & Description, Oct 2015",
+      "url": "https://tadistributors.com/wp-content/uploads/2016/03/SD-CJ3-Unit-0451-to-TBD-2015-Oct.pdf",
+      "page": 8
+    },
+    "note": "根据原厂规格书三视图简化描绘，省略涂装与渲染阴影。"
   },
   "Cessna Citation XLS+": {
-    "status": "pending"
+    "length": 16,
+    "span": 17.17,
+    "height": 5.23,
+    "group": "Citation560XL",
+    "status": "reference",
+    "artHeight": 328.7905,
+    "asset": "/aircraft/cessna-citation-xls-plus.svg",
+    "source": {
+      "title": "Cessna · XLS+ Specification & Description, Oct 2015",
+      "url": "https://tadistributors.com/wp-content/uploads/2016/03/SD-XLS-Unit-6172-to-TBD-2015-Oct.pdf",
+      "page": 8
+    },
+    "note": "外形及尺寸采用 2015 年 XLS+ 规格书所示构型，不与早期 Excel 的尺寸混用。"
   },
   "Cessna Citation Excel": {
-    "status": "pending"
+    "length": 15.8,
+    "span": 16.97,
+    "height": 5.23,
+    "group": "Citation560XL",
+    "status": "reference",
+    "artHeight": 311.828,
+    "asset": "/aircraft/cessna-citation-excel.svg",
+    "source": {
+      "title": "EASA · TCDS IM.A.207, Model 560XL",
+      "url": "https://www.easa.europa.eu/en/downloads/7244/en",
+      "page": 50
+    },
+    "note": "尺寸采用 EASA 的早期 560XL 数据；外形参考 FlightSafety 的 Excel 培训图，作图鉴示意使用。",
+    "additionalSources": [
+      {
+        "title": "FlightSafety · Citation Excel, Fig. 1-1 (public mirror)",
+        "url": "https://www.scribd.com/document/730058988/Citation-ExcelV2",
+        "page": 9
+      }
+    ],
+    "referenceLabel": "技术资料参考图"
   },
   "Cessna Citation II": {
-    "status": "pending"
+    "length": 14.4,
+    "span": 15.76,
+    "height": 4.51,
+    "group": "CitationII",
+    "status": "reference",
+    "artHeight": 323.2628,
+    "asset": "/aircraft/cessna-citation-ii.svg",
+    "source": {
+      "title": "Cessna · Model 550 Operating Manual, Fig. 1-1 (NTSB archive)",
+      "url": "https://data.ntsb.gov/Docket/Document/docBLOB?FileExtension=.PDF&FileName=Aircraft+Three+View+Drawing-Master.PDF&ID=40409362",
+      "page": 1
+    },
+    "note": "采用 Cessna 550/551 操作手册所示构型，英制尺寸换算为米。"
   },
   "Cessna Citation X": {
-    "status": "pending"
+    "length": 22.04,
+    "span": 19.48,
+    "height": 5.86,
+    "group": "CitationX",
+    "status": "reference",
+    "artHeight": 268.4989,
+    "asset": "/aircraft/cessna-citation-x.svg",
+    "source": {
+      "title": "Cessna · Citation X S&D, Aug 2011 Rev F, Fig. I (p. 4)",
+      "url": "https://www.yumpu.com/en/document/view/29561948/citation-x-s-d"
+    },
+    "note": "早期 Citation X 构型，无加装翼梢小翼；不是尺寸较大的 Citation X+。"
   },
   "Embraer Praetor 500": {
-    "status": "pending"
+    "length": 19.68,
+    "span": 21.5,
+    "height": 6.43,
+    "group": "Praetor",
+    "status": "reference",
+    "artHeight": 273.6486,
+    "asset": "/aircraft/embraer-praetor-500.svg",
+    "source": {
+      "title": "Embraer · Praetor 500 brochure, three-view",
+      "url": "https://www.embraer.com/media/asbhvchi/praetor-500-eletronic.pdf",
+      "page": 19
+    },
+    "note": "根据原厂画册三视图简化描绘，起落架收起；机高为规格值，不由画面量取。"
   },
   "Gulfstream G200": {
-    "status": "pending"
+    "length": 18.97,
+    "span": 17.71,
+    "height": 6.53,
+    "group": "G200",
+    "status": "reference",
+    "artHeight": 323.221,
+    "asset": "/aircraft/gulfstream-g200.svg",
+    "source": {
+      "title": "FlightSafety · G200 Pilot Training Manual Rev 2.4, Fig. 1-2",
+      "url": "https://www.scribd.com/document/858846716/G200-Pilot-Training-Manual",
+      "page": 11
+    },
+    "note": "依据 FlightSafety 的机型培训尺寸图简化描绘；该图依据制造商资料编制，并非 Gulfstream 直接发布的工程图。",
+    "referenceLabel": "技术资料参考图"
   },
   "Saab 340B": {
-    "status": "pending"
+    "length": 19.73,
+    "span": 21.44,
+    "height": 6.97,
+    "group": "Saab340",
+    "status": "reference",
+    "artHeight": 360.0,
+    "asset": "/aircraft/saab-340b.svg",
+    "source": {
+      "title": "NZ CAA · Saab 340 Type Acceptance Report, Appendix 2",
+      "url": "https://www.aviation.govt.nz/assets/aircraft/type-acceptance-reports/SAAB-340-Series.pdf",
+      "page": 14
+    },
+    "note": "普通翼尖 340B；尺寸按 Saab 产品资料，不包含加长翼尖选装构型。",
+    "additionalSources": [
+      {
+        "title": "Saab · Saab 340 dimensions",
+        "url": "https://www.saab.com/products/saab-340"
+      }
+    ]
   }
 }

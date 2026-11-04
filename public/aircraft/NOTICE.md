@@ -1,14 +1,17 @@
 # Reference elevations
 
 These detail-view SVGs are adapted from public manufacturer CAD drawings,
-airport-planning manuals, and aircraft three-view attachments published by the
-New Zealand Civil Aviation Authority. They are cropped, normalized and cleaned
-reference figures, not certified engineering drawings.
+airport-planning and recovery manuals, specification brochures, regulator
+archives, and the specifically identified FlightSafety training figures. They
+are cropped vector extractions or simplified hand-traced reference figures,
+not certified engineering drawings. Conversion profiles combine base-airframe
+geometry with EFW/IAI information and clearly label their schematic details.
 
 The per-model attribution, source URL, PDF page and configuration notes are
 recorded in `data/aircraft-drawings.json` in the SKYLOG repository and displayed
 with the figure. Source artwork rights remain with Airbus, Boeing, Embraer,
-Bombardier, De Havilland, Beechcraft/Cessna and the applicable source owners.
+Bombardier, De Havilland, Beechcraft/Cessna, ATR, Antonov, Saab, FlightSafety
+and the applicable source owners.
 The repository's software licence does not grant rights to the original
 third-party artwork. No manufacturer endorsement is implied.
 
