@@ -27,7 +27,7 @@ export function AircraftFamilies({aircraft,photos,model,onEntry}:{aircraft:Entry
       <div className="family-model-grid">{group.entries.map(entry=>{
         const cover=entry.unlocked&&entry.cover?byId.get(entry.cover):undefined;
         return <button className={`family-model ${entry.unlocked?'is-unlocked':'is-locked'}`} key={entry.id} onClick={()=>onEntry(entry)} aria-label={`${entry.name}，${entry.unlocked?t("查看已拍照片"):t("待解锁，查看机型档案")}`}>
-          <span className="family-model-image">{cover?<img src={asset(cover.thumbnail)} alt={`${entry.name} · ${cover.airlines.join(' / ')}`} loading="lazy"/>:<PlaneSilhouette category={entry.category} family={entry.family}/>}<span className="family-model-state"><Icon name={entry.unlocked?'check':'lock'} size={12}/>{entry.unlocked?t("已拍到"):t("待解锁")}</span></span>
+          <span className="family-model-image">{cover?<img src={asset(cover.thumbnail)} alt={`${entry.name} · ${cover.airlines.join(' / ')}`} loading="lazy"/>:<PlaneSilhouette model={entry.name} category={entry.category} family={entry.family}/>}<span className="family-model-state"><Icon name={entry.unlocked?'check':'lock'} size={12}/>{entry.unlocked?t("已拍到"):t("待解锁")}</span></span>
           <span className="family-model-info"><strong>{entry.shortName||entry.name}</strong><span>{entry.unlocked?t("{0} 张照片",[entry.photoIds.length]):t("等待下一次相遇")}<Icon name="diagonal" size={13}/></span></span>
         </button>;
       })}</div>
