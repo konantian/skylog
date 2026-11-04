@@ -32,7 +32,7 @@ export function PhotoIdentity({photo}:{photo:Photo}) {
   const identification=photo.flightIdentification;
   const registrations=photo.registration
     ? [{label:'',registration:photo.registration}]
-    : (photo.subjects||[]).filter((s):s is typeof s & {registration:Registration}=>!!s.registration).map(s=>({label:s.airline,registration:s.registration}));
+    : (photo.subjects||[]).filter((s):s is typeof s & {registration:Registration}=>!!s.registration).map(s=>({label:`${s.airline} · ${s.model}`,registration:s.registration}));
   return <div className="photo-identity">
     <div><span className="identity-label">{t("REGISTRATION / 注册号")}</span>{registrations.length?registrations.map(({label,registration})=><div key={registration.value}><strong>{label&&`${label} · `}{registration.value}</strong><span className="identity-basis">{registration.status==='confirmed'?t("已确认"):t("推测 · 待确认")} · {t(registration.basis)}{registration.sourceUrl&&<> · <a href={registration.sourceUrl} target="_blank" rel="noreferrer">{t("核对来源 ↗")}</a></>}</span></div>):<strong>{t("待确认")}</strong>}</div>
     <div><span className="identity-label">{t("LIVERY / 涂装")}</span><strong>{livery?t(livery.name):(photo.livery==='标准涂装'?t("{0} · 标准涂装",[photo.airlines.join(' / ')]):t(photo.livery))}</strong>{livery&&<p>{t(livery.description)}{livery.source&&<> <a href={livery.source} target="_blank" rel="noreferrer">{t("了解涂装 ↗")}</a></>}</p>}</div>
