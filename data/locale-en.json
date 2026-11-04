@@ -595,5 +595,19 @@
   "下载原尺寸 JPG": "Download full-size JPG",
   "相邻 RAW 连拍中的完整注册号": "Full registration read from adjacent RAW burst frames",
   "照片机队编号与注册资料交叉核对": "Visible fleet number cross-checked against aircraft records",
-  "同日同机呼号记录，时间仍待核对": "Same-day callsign record for this airframe; timing still needs verification"
+  "同日同机呼号记录，时间仍待核对": "Same-day callsign record for this airframe; timing still needs verification",
+  "外形与尺寸": "Airframe & dimensions",
+  "官方资料参考图": "Primary-source elevation",
+  "比例示意图": "Illustrative profile",
+  "{0}，机长 {1} 米，翼展 {2} 米，机高 {3} 米": "{0}, length {1} m, span {2} m, height {3} m",
+  "家族内同比例": "Common family scale",
+  "机高": "Height",
+  "代表构型的图鉴示意；尺寸会随翼尖、起落架姿态及改装变化。": "Atlas reference configuration; dimensions vary with wingtips, ground attitude and modifications.",
+  "图纸与尺寸来源": "Drawing & dimension reference",
+  "外形为比例示意，尚未取得并核验此型号的官方三视图。": "Illustrative proportions. An exact primary-source three-view has not yet been obtained and verified.",
+  "该 CAD 为起落架收起的外形；机高数据为地面构型。": "This CAD elevation has the landing gear retracted; the height specification refers to the ground configuration.",
+  "机高为手册列出的最大值；机体姿态与温度会影响地面高度。": "Height is the manual maximum; attitude and temperature affect ground height.",
+  "此型号的官方技术图尚待核验，预览保留比例示意。": "An official technical drawing for this model has not yet been verified. The preview remains illustrative.",
+  "采用同家族的基本外形图；舱门、天线及改装细节因构型而异。": "Based on the family’s basic exterior drawing; doors, antennas and conversion details vary by configuration.",
+  "参考 Airbus 2016 年初步 CAD 图；量产构型的细节可能不同。": "Based on the preliminary Airbus CAD drawing from 2016; production details may differ."
 }

@@ -1,0 +1,847 @@
+{
+  "Airbus A220-100": {
+    "length": 34.9,
+    "span": 35.1,
+    "height": 11.8,
+    "group": "A220",
+    "status": "reference",
+    "artHeight": 327.642,
+    "asset": "/aircraft/airbus-a220-100.svg",
+    "source": {
+      "title": "Airbus · Aircraft Characteristics",
+      "url": "https://www.aircraft.airbus.com/sites/default/files/2025-12/A220-ACP-Issue013-00-27Nov2025.pdf",
+      "page": 76
+    }
+  },
+  "Airbus A220-300": {
+    "length": 38.7,
+    "span": 35.1,
+    "height": 11.8,
+    "group": "A220",
+    "status": "reference",
+    "artHeight": 327.606,
+    "asset": "/aircraft/airbus-a220-300.svg",
+    "source": {
+      "title": "Airbus · Aircraft Characteristics",
+      "url": "https://www.aircraft.airbus.com/sites/default/files/2025-12/A220-ACP-Issue013-00-27Nov2025.pdf",
+      "page": 113
+    }
+  },
+  "Airbus A300-600F": {
+    "length": 54.08,
+    "span": 44.84,
+    "height": 16.62,
+    "group": "A300",
+    "status": "reference",
+    "artHeight": 310.159,
+    "asset": "/aircraft/airbus-a300-600f.svg",
+    "source": {
+      "title": "Airbus · 3-view CAD",
+      "url": "https://www.aircraft.airbus.com/sites/default/files/2023-02/Airbus_A300-600-May-2012.zip"
+    }
+  },
+  "Airbus A310-300": {
+    "length": 46.66,
+    "span": 43.9,
+    "height": 15.8,
+    "group": "A310",
+    "status": "reference",
+    "artHeight": 349.371,
+    "asset": "/aircraft/airbus-a310-300.svg",
+    "source": {
+      "title": "Airbus · 3-view CAD",
+      "url": "https://www.aircraft.airbus.com/sites/default/files/2023-02/Airbus_A310-300-May-2012.zip"
+    },
+    "note": "该 CAD 为起落架收起的外形；机高数据为地面构型。"
+  },
+  "Airbus A318-100": {
+    "length": 31.44,
+    "span": 34.1,
+    "height": 12.56,
+    "group": "A320 family",
+    "status": "reference",
+    "artHeight": 400.966,
+    "asset": "/aircraft/airbus-a318-100.svg",
+    "source": {
+      "title": "Airbus · 3-view CAD",
+      "url": "https://www.aircraft.airbus.com/sites/default/files/2023-02/Airbus_A318_WTF-May-2012.zip"
+    }
+  },
+  "Airbus A319-100": {
+    "length": 33.84,
+    "span": 34.1,
+    "height": 11.76,
+    "group": "A320 family",
+    "status": "reference",
+    "artHeight": 352.067,
+    "asset": "/aircraft/airbus-a319-100.svg",
+    "source": {
+      "title": "Airbus · 3-view CAD",
+      "url": "https://www.aircraft.airbus.com/sites/default/files/2023-02/Airbus_A319_WTF-May-2012.zip"
+    }
+  },
+  "Airbus A319neo": {
+    "length": 33.84,
+    "span": 35.8,
+    "height": 11.76,
+    "group": "A320 family",
+    "status": "reference",
+    "artHeight": 355.674,
+    "asset": "/aircraft/airbus-a319neo.svg",
+    "source": {
+      "title": "Airbus · Aircraft Characteristics",
+      "url": "https://mediaassets.airbus.com/pm_38_916_916263-0hxcf0237y.pdf?fileName=aca31901-jul-2026-2.pdf",
+      "page": 46
+    }
+  },
+  "Airbus A320-200": {
+    "length": 37.57,
+    "span": 34.1,
+    "height": 11.76,
+    "group": "A320 family",
+    "status": "reference",
+    "artHeight": 317.082,
+    "asset": "/aircraft/airbus-a320-200.svg",
+    "source": {
+      "title": "Airbus · 3-view CAD",
+      "url": "https://www.aircraft.airbus.com/sites/default/files/2023-02/Airbus_A320_WTF-May-2012.zip"
+    }
+  },
+  "Airbus A320neo": {
+    "length": 37.57,
+    "span": 35.8,
+    "height": 11.76,
+    "group": "A320 family",
+    "status": "reference",
+    "artHeight": 313.414,
+    "asset": "/aircraft/airbus-a320neo.svg",
+    "source": {
+      "title": "Airbus · Aircraft Characteristics",
+      "url": "https://mediaassets.airbus.com/pm_38_916_916266-iujedqawwy.pdf?fileName=aca32001-jul-2026-2.pdf",
+      "page": 48
+    }
+  },
+  "Airbus A321-200": {
+    "length": 44.51,
+    "span": 34.1,
+    "height": 11.76,
+    "group": "A320 family",
+    "status": "reference",
+    "artHeight": 268.473,
+    "asset": "/aircraft/airbus-a321-200.svg",
+    "source": {
+      "title": "Airbus · 3-view CAD",
+      "url": "https://www.aircraft.airbus.com/sites/default/files/2023-02/Airbus_A321_WTF-May-2012.zip"
+    }
+  },
+  "Airbus A321neo": {
+    "length": 44.51,
+    "span": 35.8,
+    "height": 11.76,
+    "group": "A320 family",
+    "status": "reference",
+    "artHeight": 265.948,
+    "asset": "/aircraft/airbus-a321neo.svg",
+    "source": {
+      "title": "Airbus · Aircraft Characteristics",
+      "url": "https://mediaassets.airbus.com/pm_38_916_916230-7u6neg4lfg.pdf?fileName=aca32101-jul-2026.pdf",
+      "page": 71
+    }
+  },
+  "Airbus A321neo LR": {
+    "length": 44.51,
+    "span": 35.8,
+    "height": 11.76,
+    "group": "A320 family",
+    "status": "reference",
+    "artHeight": 266.073,
+    "asset": "/aircraft/airbus-a321neo-lr.svg",
+    "source": {
+      "title": "Airbus · Aircraft Characteristics",
+      "url": "https://mediaassets.airbus.com/pm_38_916_916230-7u6neg4lfg.pdf?fileName=aca32101-jul-2026.pdf",
+      "page": 73
+    },
+    "note": "采用同家族的基本外形图；舱门、天线及改装细节因构型而异。"
+  },
+  "Airbus A321XLR": {
+    "length": 44.51,
+    "span": 35.8,
+    "height": 11.76,
+    "group": "A320 family",
+    "status": "reference",
+    "artHeight": 266.073,
+    "asset": "/aircraft/airbus-a321xlr.svg",
+    "source": {
+      "title": "Airbus · Aircraft Characteristics",
+      "url": "https://mediaassets.airbus.com/pm_38_916_916230-7u6neg4lfg.pdf?fileName=aca32101-jul-2026.pdf",
+      "page": 73
+    },
+    "note": "采用同家族的基本外形图；舱门、天线及改装细节因构型而异。"
+  },
+  "Airbus A330-200": {
+    "length": 58.82,
+    "span": 60.3,
+    "height": 17.39,
+    "group": "A330",
+    "status": "reference",
+    "artHeight": 301.234,
+    "asset": "/aircraft/airbus-a330-200.svg",
+    "source": {
+      "title": "Airbus · 3-view CAD",
+      "url": "https://www.aircraft.airbus.com/sites/default/files/2023-02/Airbus_A330_200_VTP93-May-2012.zip"
+    }
+  },
+  "Airbus A330-200F": {
+    "length": 58.82,
+    "span": 60.3,
+    "height": 16.9,
+    "group": "A330",
+    "status": "reference",
+    "artHeight": 284.907,
+    "asset": "/aircraft/airbus-a330-200f.svg",
+    "source": {
+      "title": "Airbus · 3-view CAD",
+      "url": "https://www.aircraft.airbus.com/sites/default/files/2023-02/Airbus_A330_200F-May-2012.zip"
+    }
+  },
+  "Airbus A330-300": {
+    "length": 63.66,
+    "span": 60.3,
+    "height": 16.79,
+    "group": "A330",
+    "status": "reference",
+    "artHeight": 264.126,
+    "asset": "/aircraft/airbus-a330-300.svg",
+    "source": {
+      "title": "Airbus · 3-view CAD",
+      "url": "https://www.aircraft.airbus.com/sites/default/files/2023-02/Airbus_A330_300-May-2012.zip"
+    }
+  },
+  "Airbus A330-800": {
+    "length": 58.82,
+    "span": 64,
+    "height": 17.39,
+    "group": "A330",
+    "status": "reference",
+    "artHeight": 287.804,
+    "asset": "/aircraft/airbus-a330-800.svg",
+    "source": {
+      "title": "Airbus · 3-view CAD",
+      "url": "https://www.aircraft.airbus.com/sites/default/files/2023-08/Airbus_A330-800-Aug-2016.zip"
+    },
+    "note": "参考 Airbus 2016 年初步 CAD 图；量产构型的细节可能不同。"
+  },
+  "Airbus A330-900": {
+    "length": 63.66,
+    "span": 64,
+    "height": 16.79,
+    "group": "A330",
+    "status": "reference",
+    "artHeight": 257.994,
+    "asset": "/aircraft/airbus-a330-900.svg",
+    "source": {
+      "title": "Airbus · 3-view CAD",
+      "url": "https://www.aircraft.airbus.com/sites/default/files/2023-08/Airbus_A330-900-Aug-2016.zip"
+    },
+    "note": "参考 Airbus 2016 年初步 CAD 图；量产构型的细节可能不同。"
+  },
+  "Airbus A340-300": {
+    "length": 63.69,
+    "span": 60.3,
+    "height": 16.91,
+    "group": "A340",
+    "status": "reference",
+    "artHeight": 264.183,
+    "asset": "/aircraft/airbus-a340-300.svg",
+    "source": {
+      "title": "Airbus · 3-view CAD",
+      "url": "https://www.aircraft.airbus.com/sites/default/files/2023-08/Airbus_A340-300-May-2012.zip"
+    }
+  },
+  "Airbus A340-500": {
+    "length": 67.93,
+    "span": 63.45,
+    "height": 17.22,
+    "group": "A340",
+    "status": "reference",
+    "artHeight": 248.843,
+    "asset": "/aircraft/airbus-a340-500.svg",
+    "source": {
+      "title": "Airbus · 3-view CAD",
+      "url": "https://www.aircraft.airbus.com/sites/default/files/2023-08/Airbus_A340-500-May-2012.zip"
+    }
+  },
+  "Airbus A340-600": {
+    "length": 75.36,
+    "span": 63.45,
+    "height": 17.93,
+    "group": "A340",
+    "status": "reference",
+    "artHeight": 223.932,
+    "asset": "/aircraft/airbus-a340-600.svg",
+    "source": {
+      "title": "Airbus · 3-view CAD",
+      "url": "https://www.aircraft.airbus.com/sites/default/files/2023-08/Airbus_A340-600-May-2012.zip"
+    }
+  },
+  "Airbus A350-900": {
+    "length": 66.8,
+    "span": 64.75,
+    "height": 17.05,
+    "group": "A350",
+    "status": "reference",
+    "artHeight": 269.482,
+    "asset": "/aircraft/airbus-a350-900.svg",
+    "source": {
+      "title": "Airbus · 3-view CAD",
+      "url": "https://www.aircraft.airbus.com/sites/default/files/2023-08/Airbus_A350-900-May-2012.zip"
+    }
+  },
+  "Airbus A350-1000": {
+    "length": 73.79,
+    "span": 64.75,
+    "height": 17.08,
+    "group": "A350",
+    "status": "reference",
+    "artHeight": 235.605,
+    "asset": "/aircraft/airbus-a350-1000.svg",
+    "source": {
+      "title": "Airbus · 3-view CAD",
+      "url": "https://www.aircraft.airbus.com/sites/default/files/2023-08/Airbus-A350-1000-Apr-2016.zip"
+    }
+  },
+  "Airbus A380-800": {
+    "length": 72.72,
+    "span": 79.75,
+    "height": 24.09,
+    "group": "A380",
+    "status": "reference",
+    "artHeight": 331.372,
+    "asset": "/aircraft/airbus-a380-800.svg",
+    "source": {
+      "title": "Airbus · 3-view CAD",
+      "url": "https://www.aircraft.airbus.com/sites/default/files/2023-08/Airbus_A380-800-May-2012.zip"
+    }
+  },
+  "Airbus A330-300P2F": {
+    "status": "pending"
+  },
+  "Boeing 737-400": {
+    "length": 36.45,
+    "span": 28.88,
+    "height": 11.13,
+    "group": "737",
+    "status": "reference",
+    "artHeight": 305.498,
+    "asset": "/aircraft/boeing-737-400.svg",
+    "source": {
+      "title": "Boeing · 3-view CAD",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/dwgs/7374.zip"
+    }
+  },
+  "Boeing 737-500": {
+    "length": 31.01,
+    "span": 28.88,
+    "height": 11.13,
+    "group": "737",
+    "status": "reference",
+    "artHeight": 359.771,
+    "asset": "/aircraft/boeing-737-500.svg",
+    "source": {
+      "title": "Boeing · 3-view CAD",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/dwgs/7375.zip"
+    }
+  },
+  "Boeing 737-700": {
+    "length": 33.63,
+    "span": 35.79,
+    "height": 12.55,
+    "group": "737",
+    "status": "reference",
+    "artHeight": 373.112,
+    "asset": "/aircraft/boeing-737-700.svg",
+    "source": {
+      "title": "Boeing · 3-view CAD",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/dwgs/7377w.zip"
+    }
+  },
+  "Boeing 737-800": {
+    "length": 39.47,
+    "span": 35.79,
+    "height": 12.55,
+    "group": "737",
+    "status": "reference",
+    "artHeight": 317.889,
+    "asset": "/aircraft/boeing-737-800.svg",
+    "source": {
+      "title": "Boeing · 3-view CAD",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/dwgs/7378w.zip"
+    }
+  },
+  "Boeing 737-900": {
+    "length": 42.11,
+    "span": 35.79,
+    "height": 12.55,
+    "group": "737",
+    "status": "reference",
+    "artHeight": 297.949,
+    "asset": "/aircraft/boeing-737-900.svg",
+    "source": {
+      "title": "Boeing · 3-view CAD",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/dwgs/7379w.zip"
+    }
+  },
+  "Boeing 737-900ER": {
+    "length": 42.11,
+    "span": 35.79,
+    "height": 12.55,
+    "group": "737",
+    "status": "reference",
+    "artHeight": 297.949,
+    "asset": "/aircraft/boeing-737-900er.svg",
+    "source": {
+      "title": "Boeing · 3-view CAD",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/dwgs/7379w.zip"
+    },
+    "note": "采用同家族的基本外形图；舱门、天线及改装细节因构型而异。"
+  },
+  "Boeing 737 MAX 8": {
+    "length": 39.52,
+    "span": 35.92,
+    "height": 12.3,
+    "group": "737",
+    "status": "reference",
+    "artHeight": 311.617,
+    "asset": "/aircraft/boeing-737-max-8.svg",
+    "source": {
+      "title": "Boeing · 3-view CAD",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/dwgs/737_max8.zip"
+    }
+  },
+  "Boeing 737 MAX 9": {
+    "length": 42.16,
+    "span": 35.92,
+    "height": 12.3,
+    "group": "737",
+    "status": "reference",
+    "artHeight": 320.698,
+    "asset": "/aircraft/boeing-737-max-9.svg",
+    "source": {
+      "title": "Boeing · 3-view CAD",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/dwgs/737_max9.zip"
+    }
+  },
+  "Boeing 747-400": {
+    "length": 70.67,
+    "span": 64.92,
+    "height": 19.41,
+    "group": "747",
+    "status": "reference",
+    "artHeight": 281.351,
+    "asset": "/aircraft/boeing-747-400.svg",
+    "source": {
+      "title": "Boeing · 3-view CAD",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/dwgs/7474.zip"
+    }
+  },
+  "Boeing 747-400ERF": {
+    "length": 70.67,
+    "span": 64.44,
+    "height": 19.41,
+    "group": "747",
+    "status": "reference",
+    "artHeight": 283.784,
+    "asset": "/aircraft/boeing-747-400erf.svg",
+    "source": {
+      "title": "Boeing · Airplane Characteristics",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/acaps/747-400_Rev_F.pdf",
+      "page": 32
+    }
+  },
+  "Boeing 747-8": {
+    "length": 76.25,
+    "span": 68.45,
+    "height": 19.35,
+    "group": "747",
+    "status": "reference",
+    "artHeight": 250.583,
+    "asset": "/aircraft/boeing-747-8.svg",
+    "source": {
+      "title": "Boeing · 3-view CAD",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/dwgs/7478p.zip"
+    }
+  },
+  "Boeing 747-8F": {
+    "length": 76.25,
+    "span": 68.45,
+    "height": 19.35,
+    "group": "747",
+    "status": "reference",
+    "artHeight": 250.583,
+    "asset": "/aircraft/boeing-747-8f.svg",
+    "source": {
+      "title": "Boeing · 3-view CAD",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/dwgs/7478f.zip"
+    }
+  },
+  "Boeing 757-200": {
+    "length": 47.32,
+    "span": 38.05,
+    "height": 13.56,
+    "group": "757",
+    "status": "reference",
+    "artHeight": 292.002,
+    "asset": "/aircraft/boeing-757-200.svg",
+    "source": {
+      "title": "Boeing · 3-view CAD",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/dwgs/7572.zip"
+    }
+  },
+  "Boeing 757-300": {
+    "length": 54.47,
+    "span": 38.05,
+    "height": 13.51,
+    "group": "757",
+    "status": "reference",
+    "artHeight": 253.383,
+    "asset": "/aircraft/boeing-757-300.svg",
+    "source": {
+      "title": "Boeing · 3-view CAD",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/dwgs/7573.zip"
+    }
+  },
+  "Boeing 767-300ER": {
+    "length": 54.94,
+    "span": 47.57,
+    "height": 15.85,
+    "group": "767",
+    "status": "reference",
+    "artHeight": 292.546,
+    "asset": "/aircraft/boeing-767-300er.svg",
+    "source": {
+      "title": "Boeing · 3-view CAD",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/dwgs/7673.zip"
+    }
+  },
+  "Boeing 767-400ER": {
+    "length": 61.37,
+    "span": 51.92,
+    "height": 16.87,
+    "group": "767",
+    "status": "reference",
+    "artHeight": 266.915,
+    "asset": "/aircraft/boeing-767-400er.svg",
+    "source": {
+      "title": "Boeing · 3-view CAD",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/dwgs/7674.zip"
+    }
+  },
+  "Boeing 777-200ER": {
+    "length": 63.73,
+    "span": 60.93,
+    "height": 18.51,
+    "group": "777",
+    "status": "reference",
+    "artHeight": 308.426,
+    "asset": "/aircraft/boeing-777-200er.svg",
+    "source": {
+      "title": "Boeing · 3-view CAD",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/dwgs/7772.zip"
+    }
+  },
+  "Boeing 777-200LR": {
+    "length": 63.73,
+    "span": 64.8,
+    "height": 18.61,
+    "group": "777",
+    "status": "reference",
+    "artHeight": 290.849,
+    "asset": "/aircraft/boeing-777-200lr.svg",
+    "source": {
+      "title": "Boeing · 3-view CAD",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/dwgs/7772lr.zip"
+    }
+  },
+  "Boeing 777-300ER": {
+    "length": 73.86,
+    "span": 64.8,
+    "height": 18.51,
+    "group": "777",
+    "status": "reference",
+    "artHeight": 250.129,
+    "asset": "/aircraft/boeing-777-300er.svg",
+    "source": {
+      "title": "Boeing · 3-view CAD",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/dwgs/7773er.zip"
+    }
+  },
+  "Boeing 777F": {
+    "length": 63.73,
+    "span": 64.8,
+    "height": 18.61,
+    "group": "777",
+    "status": "reference",
+    "artHeight": 294.123,
+    "asset": "/aircraft/boeing-777f.svg",
+    "source": {
+      "title": "Boeing · 3-view CAD",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/dwgs/777f.zip"
+    }
+  },
+  "Boeing 787-8": {
+    "length": 56.72,
+    "span": 60.12,
+    "height": 16.92,
+    "group": "787",
+    "status": "reference",
+    "artHeight": 299.539,
+    "asset": "/aircraft/boeing-787-8.svg",
+    "source": {
+      "title": "Boeing · 3-view CAD",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/dwgs/7878.zip"
+    }
+  },
+  "Boeing 787-9": {
+    "length": 62.81,
+    "span": 60.12,
+    "height": 17.02,
+    "group": "787",
+    "status": "reference",
+    "artHeight": 271.285,
+    "asset": "/aircraft/boeing-787-9.svg",
+    "source": {
+      "title": "Boeing · 3-view CAD",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/dwgs/7879.zip"
+    }
+  },
+  "Boeing 787-10": {
+    "length": 68.28,
+    "span": 60.12,
+    "height": 17.02,
+    "group": "787",
+    "status": "reference",
+    "artHeight": 249.214,
+    "asset": "/aircraft/boeing-787-10.svg",
+    "source": {
+      "title": "Boeing · 3-view CAD",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/dwgs/78710.zip"
+    }
+  },
+  "Boeing 767-300BDSF": {
+    "status": "pending"
+  },
+  "McDonnell Douglas MD-11F": {
+    "length": 61.21,
+    "span": 51.66,
+    "height": 17.6,
+    "group": "MD-11",
+    "status": "reference",
+    "artHeight": 286.281,
+    "asset": "/aircraft/mcdonnell-douglas-md-11f.svg",
+    "source": {
+      "title": "Boeing · 3-view CAD",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/dwgs/md11.zip"
+    },
+    "note": "采用同家族的基本外形图；舱门、天线及改装细节因构型而异。"
+  },
+  "Bombardier CRJ-200": {
+    "length": 26.77,
+    "span": 21.23,
+    "height": 6.22,
+    "group": "CRJ",
+    "status": "reference",
+    "artHeight": 237.006,
+    "asset": "/aircraft/bombardier-crj-200.svg",
+    "source": {
+      "title": "Bombardier · Airport Planning Manual",
+      "url": "https://customer.aero.bombardier.com/webd/BAG/CustSite/BRAD/RACSDocument.nsf/51aae8b2b3bfdf6685256c300045ff31/ec63f8639ff3ab9d85257c1500635bd8/%24FILE/ATT1ES4H.pdf/CRJ200APMR8.pdf",
+      "page": 25
+    }
+  },
+  "Bombardier CRJ-700": {
+    "length": 32.48,
+    "span": 23.25,
+    "height": 7.46,
+    "group": "CRJ",
+    "status": "reference",
+    "artHeight": 232.143,
+    "asset": "/aircraft/bombardier-crj-700.svg",
+    "source": {
+      "title": "Bombardier · Airport Planning Manual",
+      "url": "https://customer.aero.bombardier.com/webd/BAG/CustSite/BRAD/RACSDocument.nsf/51aae8b2b3bfdf6685256c300045ff31/ec63f8639ff3ab9d85257c1500635bd8/%24FILE/ATTE8Q23.pdf/CRJ700APMR15.pdf",
+      "page": 31
+    }
+  },
+  "Bombardier CRJ-900": {
+    "length": 36.34,
+    "span": 23.25,
+    "height": 7.35,
+    "group": "CRJ",
+    "status": "reference",
+    "artHeight": 222.857,
+    "asset": "/aircraft/bombardier-crj-900.svg",
+    "source": {
+      "title": "Bombardier · Airport Planning Manual",
+      "url": "https://customer.aero.bombardier.com/webd/BAG/CustSite/BRAD/RACSDocument.nsf/51aae8b2b3bfdf6685256c300045ff31/ec63f8639ff3ab9d85257c1500635bd8/%24FILE/ATTQF1EY.pdf/CRJ900APMR11.pdf",
+      "page": 31
+    }
+  },
+  "De Havilland Canada Dash 8-300": {
+    "length": 25.7,
+    "span": 27.4,
+    "height": 7.5,
+    "group": "Dash 8",
+    "status": "reference",
+    "artHeight": 298.748,
+    "asset": "/aircraft/de-havilland-canada-dash-8-300.svg",
+    "source": {
+      "title": "De Havilland · Airport Planning Manual",
+      "url": "https://dehavillandportal.com/assets/public-documents/D8300-APM.pdf",
+      "page": 25
+    }
+  },
+  "De Havilland Canada Dash 8-400": {
+    "length": 32.83,
+    "span": 28.42,
+    "height": 8.36,
+    "group": "Dash 8",
+    "status": "reference",
+    "artHeight": 282.23,
+    "asset": "/aircraft/de-havilland-canada-dash-8-400.svg",
+    "source": {
+      "title": "De Havilland · Airport Planning Manual",
+      "url": "https://dehavillandportal.com/assets/public-documents/D8400-APM.pdf",
+      "page": 31
+    }
+  },
+  "Embraer E190": {
+    "length": 36.24,
+    "span": 28.72,
+    "height": 10.57,
+    "group": "E-Jets",
+    "status": "reference",
+    "artHeight": 256.075,
+    "asset": "/aircraft/embraer-e190.svg",
+    "source": {
+      "title": "Embraer · Airport Planning Manual",
+      "url": "https://embraer.com/media/jwsj1u1u/e190apm_apm_190-1.pdf",
+      "page": 18
+    }
+  },
+  "Embraer E190-E2": {
+    "length": 36.33,
+    "span": 33.72,
+    "height": 10.72,
+    "group": "E-Jets",
+    "status": "reference",
+    "artHeight": 286.312,
+    "asset": "/aircraft/embraer-e190-e2.svg",
+    "source": {
+      "title": "Embraer · Airport Planning Manual",
+      "url": "https://www.embraer.com/media/vmsjxvk5/e-jets-e2_apm_e-jetse2.pdf",
+      "page": 20
+    }
+  },
+  "Embraer E195-E2": {
+    "length": 41.6,
+    "span": 35.12,
+    "height": 10.78,
+    "group": "E-Jets",
+    "status": "reference",
+    "artHeight": 247.707,
+    "asset": "/aircraft/embraer-e195-e2.svg",
+    "source": {
+      "title": "Embraer · Airport Planning Manual",
+      "url": "https://www.embraer.com/media/vmsjxvk5/e-jets-e2_apm_e-jetse2.pdf",
+      "page": 21
+    },
+    "note": "机高为手册列出的最大值；机体姿态与温度会影响地面高度。"
+  },
+  "Beechcraft 1900D": {
+    "length": 17.628,
+    "span": 17.657,
+    "height": 4.542,
+    "group": "1900",
+    "status": "reference",
+    "artHeight": 286.184,
+    "asset": "/aircraft/beechcraft-1900d.svg",
+    "source": {
+      "title": "NZ CAA · Type Acceptance Report",
+      "url": "https://www.aviation.govt.nz/assets/aircraft/type-acceptance-reports/Beech_1900C_and_D.pdf",
+      "page": 15
+    }
+  },
+  "Bombardier Challenger 604": {
+    "length": 20.86,
+    "span": 19.61,
+    "height": 6.3,
+    "group": "Challenger",
+    "status": "reference",
+    "artHeight": 322.245,
+    "asset": "/aircraft/bombardier-challenger-604.svg",
+    "source": {
+      "title": "NZ CAA · Type Acceptance Report",
+      "url": "https://www.aviation.govt.nz/assets/aircraft/type-acceptance-reports/bombardier-cl600-challenger-series-tar.pdf",
+      "page": 15
+    }
+  },
+  "Cessna 441 Conquest II": {
+    "length": 11.893,
+    "span": 15.036,
+    "height": 4.005,
+    "group": "Conquest",
+    "status": "reference",
+    "artHeight": 359.036,
+    "asset": "/aircraft/cessna-441-conquest-ii.svg",
+    "source": {
+      "title": "Cessna · Pilot Operating Handbook",
+      "url": "https://executiveflighttraining.com/wp-content/uploads/2025/01/Cessna-441-POH.pdf",
+      "page": 16
+    }
+  },
+  "ATR 72-600": {
+    "status": "pending"
+  },
+  "Antonov An-124-100-150": {
+    "status": "pending"
+  },
+  "Embraer E170": {
+    "status": "pending"
+  },
+  "Embraer E175": {
+    "status": "pending"
+  },
+  "Embraer ERJ-145LR": {
+    "status": "pending"
+  },
+  "Bombardier Challenger 350": {
+    "status": "pending"
+  },
+  "Bombardier Global 6500": {
+    "status": "pending"
+  },
+  "Cessna Citation CJ3+": {
+    "status": "pending"
+  },
+  "Cessna Citation XLS+": {
+    "status": "pending"
+  },
+  "Cessna Citation Excel": {
+    "status": "pending"
+  },
+  "Cessna Citation II": {
+    "status": "pending"
+  },
+  "Cessna Citation X": {
+    "status": "pending"
+  },
+  "Embraer Praetor 500": {
+    "status": "pending"
+  },
+  "Gulfstream G200": {
+    "status": "pending"
+  },
+  "Saab 340B": {
+    "status": "pending"
+  }
+}

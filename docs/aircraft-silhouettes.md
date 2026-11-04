@@ -26,7 +26,7 @@ families are fitted independently to keep small aircraft legible.
 - [Antonov An-124](https://www.antonov.com/en/history/an-124-ruslan).
 
 These links are technical references, not licences to redistribute manufacturer
-artwork. No third-party drawings or SVG libraries are bundled. Existing project
+artwork. The card illustrations do not bundle third-party SVG libraries. Existing project
 specifications and rounded reference lengths guide the illustrations; this is not
 a dimensioned technical drawing, and no centimetre-level accuracy is claimed.
 
@@ -44,3 +44,37 @@ generic and do not imply an airline operates a particular model.
 
 Tests check catalog coverage, family scale consistency, key configuration
 features and rasterized bounds for every model.
+
+## Detail-only technical references
+
+Cards and family-progress previews continue to use the original illustrations
+above. `AircraftTechnicalDrawing` is a separate detail-only component; it does
+not change the cards or replace the photographer's images.
+
+`data/aircraft-drawings.json` records the source and configuration of each
+technical elevation. The 59 referenced entries use side elevations from Airbus
+and Boeing public three-view CAD, manufacturer airport-planning manuals, or
+three-view attachments published by the New Zealand CAA. The SVGs are cropped,
+cleaned and normalized derivatives of those drawings, not manufacturer-endorsed
+engineering deliverables. Source copyright remains with its owner. Links and
+PDF page numbers are displayed with each drawing. Original manuals and CAD
+archives are not distributed in the app.
+
+The length dimension and ruler use a fixed metres-to-pixels scale within each
+family. The A320 family and E-Jets share scales across their related model
+names. Different families are fitted independently. Dimensions describe
+representative configurations: wing options, loading, gear compression and
+modifications change them. Original manual lines may show alternative engine
+installations or ground references. A310's source is gear-up; preliminary
+A330neo drawings and family-level references are explicitly annotated.
+
+Seventeen entries remain `pending`. No unverified dimensions or technical
+assets are displayed for them; their existing card illustrations remain.
+They are: A330-300P2F, 767-300BDSF, ATR 72-600, An-124-100-150, E170, E175,
+ERJ-145LR, Challenger 350, Global 6500, Citation CJ3+/XLS+/Excel/II/X,
+Praetor 500, G200 and Saab 340B. This release does not claim that every model
+has an exact official drawing.
+
+`tests/aircraft-drawings.test.mjs` checks catalog coverage, pending-state honesty,
+family scale, SVG rendering and bounds, source links, and the separation from
+card previews.

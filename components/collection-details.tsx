@@ -3,6 +3,7 @@ import profiles from '@/data/aircraft-profiles.json';
 import liveries from '@/data/liveries.json';
 import type { Entry, Flight, Photo, Registration } from '@/lib/types';
 import { Icon } from './icons';
+import {AircraftTechnicalDrawing} from './aircraft-technical-drawing';
 
 type Profile = {description:string;configuration:string;source:string};
 type Livery = {name:string;description:string;source?:string};
@@ -12,10 +13,10 @@ export function AircraftProfile({entry}:{entry:Entry}) {
   const name = entry.displayModel || entry.name;
   const key = /A31[89]|A32[01]/.test(name) ? 'A320 family' : name.includes('737 MAX') ? '737 MAX' : /737-(700|800|900)/.test(name) ? '737 NG' : name.includes('Dash 8-400') ? 'Dash 8-400' : entry.family || '';
   const profile = (profiles.families as Record<string,Profile>)[key];
-  const spec = (profiles.specs as Record<string,{length?:string;span?:string}>)[name];
   return <details className="aircraft-profile" open>
     <summary><span><Icon name="info" size={16}/>{t("机型小档案")}</span><span>{name}</span></summary>
-    <dl className="profile-facts"><div><dt>{t("生产商")}</dt><dd>{entry.manufacturer}</dd></div><div><dt>{t("家族")}</dt><dd>{entry.family}</dd></div><div><dt>{t("类别")}</dt><dd>{t(entry.category)}</dd></div>{spec?.length&&<div><dt>{t("机长")}</dt><dd>{spec.length}</dd></div>}{spec?.span&&<div><dt>{t("翼展")}</dt><dd>{spec.span}</dd></div>}</dl>
+    <dl className="profile-facts"><div><dt>{t("生产商")}</dt><dd>{entry.manufacturer}</dd></div><div><dt>{t("家族")}</dt><dd>{entry.family}</dd></div><div><dt>{t("类别")}</dt><dd>{t(entry.category)}</dd></div></dl>
+    <AircraftTechnicalDrawing model={name}/>
     {profile&&<><p className="profile-configuration">{t(entry.category==='货机'?profile.configuration.replace('双通道','货运布局'):profile.configuration)}</p><p>{t(profile.description)}</p><a href={profile.source} target="_blank" rel="noreferrer">{t("制造商资料")}<Icon name="diagonal" size={12}/></a></>}
   </details>;
 }

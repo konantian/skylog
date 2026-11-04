@@ -149,3 +149,17 @@ html[lang=en] .collection-heading h2{line-height:1.3}
 .identity-flight{grid-column:1/-1}.photo-identity>div>div+div{margin-top:10px}
 
 .original-download{display:flex;flex-direction:column;align-items:inherit;gap:0}.original-download>span{font-size:11px;color:var(--muted);line-height:1.5}
+
+/* Aircraft reference elevations retain one scale per family. */
+.aircraft-technical{margin:20px 0 8px;padding:18px;border:1px solid var(--line);border-radius:7px;background:var(--surface)}
+.technical-heading{display:flex;justify-content:space-between;gap:16px;font-size:11px;letter-spacing:.5px}.technical-heading>span:last-child{color:var(--muted);font-size:10px}
+.technical-canvas{display:block;width:100%;height:auto;margin:6px 0 4px;background-image:linear-gradient(color-mix(in srgb,var(--line) 45%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--line) 45%,transparent) 1px,transparent 1px);background-size:32px 32px;border-radius:4px}
+.technical-baseline{stroke:var(--muted);stroke-width:.65;stroke-dasharray:4 5;opacity:.45;fill:none}.technical-dimensions{color:var(--accent);stroke-width:1}
+.technical-label-bg{fill:var(--surface)}.technical-length{fill:var(--text);font:16px var(--display);letter-spacing:.5px}.technical-scale{fill:var(--muted);font:11px var(--sans)}.technical-ruler{stroke:var(--muted);fill:var(--muted);stroke-width:.8}
+.technical-specs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:8px 0 12px;border-top:1px solid var(--line);padding-top:14px;gap:12px}.technical-specs dt{color:var(--muted);font-size:11px}.technical-specs dd{font-family:var(--display);font-size:27px;line-height:1.5;margin:0;letter-spacing:.4px}.technical-specs small{font-size:12px;color:var(--muted);margin-left:5px}
+.aircraft-technical figcaption p{margin:4px 0;font-size:11px;line-height:1.7}.aircraft-technical figcaption a{overflow-wrap:anywhere;font-size:11px;min-height:36px}
+@media(max-width:560px){.aircraft-technical{padding:12px;margin-top:16px}.technical-heading{gap:8px;flex-wrap:wrap}.technical-canvas{margin-top:10px}.technical-specs{gap:6px}.technical-specs dd{font-size:23px}.technical-specs dt{font-size:11px}.technical-length{font-size:22px}.technical-scale{font-size:16px}}
+
+.technical-pending{color:var(--muted);font-size:12px;line-height:1.7}
+
+.technical-aircraft{filter:brightness(1.2)}[data-theme=light] .technical-aircraft{filter:brightness(.65)}
