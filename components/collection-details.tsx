@@ -8,11 +8,16 @@ import {AircraftTechnicalDrawing} from './aircraft-technical-drawing';
 type Profile = {description:string;configuration:string;source:string};
 type Livery = {name:string;description:string;source?:string};
 
+export function aircraftProfileFor(entry:Entry) {
+  const name = entry.displayModel || entry.name;
+  const key = /A31[89]|A32[01]/.test(name) ? 'A320 family' : name.includes('737 MAX') ? '737 MAX' : /737-(700|800|900)/.test(name) ? '737 NG' : name.includes('Dash 8-400') ? 'Dash 8-400' : entry.family || '';
+  return (profiles.families as Record<string,Profile>)[key];
+}
+
 export function AircraftProfile({entry}:{entry:Entry}) {
   const {t}=useLocale();
   const name = entry.displayModel || entry.name;
-  const key = /A31[89]|A32[01]/.test(name) ? 'A320 family' : name.includes('737 MAX') ? '737 MAX' : /737-(700|800|900)/.test(name) ? '737 NG' : name.includes('Dash 8-400') ? 'Dash 8-400' : entry.family || '';
-  const profile = (profiles.families as Record<string,Profile>)[key];
+  const profile = aircraftProfileFor(entry);
   return <details className="aircraft-profile" open>
     <summary><span><Icon name="info" size={16}/>{t("机型小档案")}</span><span>{name}</span></summary>
     <dl className="profile-facts"><div><dt>{t("生产商")}</dt><dd>{entry.manufacturer}</dd></div><div><dt>{t("家族")}</dt><dd>{entry.family}</dd></div><div><dt>{t("类别")}</dt><dd>{t(entry.category)}</dd></div></dl>
