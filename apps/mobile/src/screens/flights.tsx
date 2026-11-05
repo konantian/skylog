@@ -1,5 +1,12 @@
 import { useMemo, useDeferredValue } from "react";
-import { View, FlatList, TextInput, Pressable, Keyboard } from "react-native";
+import {
+  View,
+  FlatList,
+  TextInput,
+  Pressable,
+  Keyboard,
+  Platform,
+} from "react-native";
 import { KeyboardControls } from "../components/keyboard-controls";
 import { router, useLocalSearchParams } from "expo-router";
 import { useApp } from "../lib/store";
@@ -91,6 +98,9 @@ export function FlightsScreen() {
   const setStatus = (status: string) => router.setParams({ status });
   const f = filters.flights;
   const query = useDeferredValue(f.query);
+  const hasFilters = Object.entries(f).some(
+    ([key, value]) => value !== initialFilters[key as keyof typeof initialFilters],
+  );
   const items = useMemo(() => {
     const scoped = filterFlights(
       flights.filter((f) => f.status === status),
@@ -122,100 +132,105 @@ export function FlightsScreen() {
   }, [flights, status, f, query]);
   return (
     <View style={{ flex: 1, backgroundColor: colors.bg }}>
-      <View style={{ padding: 20, gap: 16 }}>
-        <Button
-          secondary
-          title={words("Passport & yearly stats", "Passport 与年度统计")}
-          icon="globe-outline"
-          onPress={() => router.push("/passport")}
-        />
-        <View style={styles.row}>
-          <View style={{ flex: 1 }}>
-            <Txt accent style={styles.eyebrow}>
-              MY FLIGHT LOG
-            </Txt>
-            <Txt muted>
-              {words(
-                "On this device · available offline",
-                "保存在本机 · 离线可用",
-              )}
-            </Txt>
-          </View>
-          <IconButton
-            name="add-circle-outline"
-            label={words("Add flight", "添加航班")}
-            onPress={() => router.push("/flight/edit")}
-          />
-        </View>
-        <View
-          style={[
-            styles.row,
-            {
-              borderWidth: 1,
-              borderColor: colors.line,
-              borderRadius: 14,
-              paddingLeft: 14,
-            },
-          ]}
-        >
-          <Icon name="search-outline" size={20} />
-          <TextInput
-            accessibilityLabel={words("Search flights", "搜索航班")}
-            value={f.query}
-            onChangeText={(query) => setFilters("flights", { ...f, query })}
-            placeholder={words(
-              "Airline, route or flight number",
-              "航司、航线、航班号或旅程",
-            )}
-            placeholderTextColor={colors.muted}
-            style={{ fontSize: 16, color: colors.text, flex: 1, minHeight: 50 }}
-            autoCorrect={false}
-            returnKeyType="search"
-            onSubmitEditing={Keyboard.dismiss}
-          />
-          <IconButton
-            name="options-outline"
-            label={words("Flight filters", "航班筛选")}
-            onPress={() =>
-              router.push({ pathname: "/filters", params: { mode: "flights" } })
-            }
-          />
-        </View>
-        <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
-          {[
-            ["completed", words("Flown", "已乘坐")],
-            ["planned", words("Upcoming", "待出发")],
-            ["cancelled", words("Cancelled", "已取消")],
-          ].map(([value, title]) => (
-            <Button
-              key={value}
-              title={`${title} ${flights.filter((f) => f.status === value).length}`}
-              secondary={status !== value}
-              onPress={() => setStatus(value)}
-              style={{ paddingHorizontal: 12 }}
-            />
-          ))}
-        </View>
-        <Button
-          secondary
-          title={words("Clear filters", "清除筛选")}
-          onPress={() => setFilters("flights", { ...initialFilters })}
-        />
-        <Txt muted style={{ fontSize: 12 }}>
-          {items.length} {words("matching flights", "段符合筛选的旅程")}
-        </Txt>
-      </View>
       <FlatList
+        style={{ flex: 1 }}
         data={items}
         keyExtractor={(f) => f.id}
         contentContainerStyle={{
           padding: 20,
-          paddingTop: 0,
           gap: 16,
           paddingBottom: 32,
         }}
-        keyboardDismissMode="on-drag"
+        automaticallyAdjustKeyboardInsets
+        keyboardDismissMode={Platform.OS === "ios" ? "interactive" : "on-drag"}
         keyboardShouldPersistTaps="handled"
+        ListHeaderComponent={
+          <View style={{ gap: 16 }}>
+            <Button
+              secondary
+              title={words("Passport & yearly stats", "Passport 与年度统计")}
+              icon="globe-outline"
+              onPress={() => router.push("/passport")}
+            />
+            <View style={styles.row}>
+              <View style={{ flex: 1 }}>
+                <Txt accent style={styles.eyebrow}>
+                  MY FLIGHT LOG
+                </Txt>
+                <Txt muted>
+                  {words(
+                    "On this device · available offline",
+                    "保存在本机 · 离线可用",
+                  )}
+                </Txt>
+              </View>
+              <IconButton
+                name="add-circle-outline"
+                label={words("Add flight", "添加航班")}
+                onPress={() => router.push("/flight/edit")}
+              />
+            </View>
+            <View
+              style={[
+                styles.row,
+                {
+                  borderWidth: 1,
+                  borderColor: colors.line,
+                  borderRadius: 14,
+                  paddingLeft: 14,
+                },
+              ]}
+            >
+              <Icon name="search-outline" size={20} />
+              <TextInput
+                accessibilityLabel={words("Search flights", "搜索航班")}
+                value={f.query}
+                onChangeText={(query) => setFilters("flights", { ...f, query })}
+                placeholder={words(
+                  "Airline, route or flight number",
+                  "航司、航线、航班号或旅程",
+                )}
+                placeholderTextColor={colors.muted}
+                style={{ fontSize: 16, color: colors.text, flex: 1, minHeight: 50 }}
+                autoCorrect={false}
+                returnKeyType="search"
+                onSubmitEditing={Keyboard.dismiss}
+              />
+              <IconButton
+                name="options-outline"
+                label={words("Flight filters", "航班筛选")}
+                onPress={() =>
+                  router.push({ pathname: "/filters", params: { mode: "flights" } })
+                }
+              />
+            </View>
+            <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
+              {[
+                ["completed", words("Flown", "已乘坐")],
+                ["planned", words("Upcoming", "待出发")],
+                ["cancelled", words("Cancelled", "已取消")],
+              ].map(([value, title]) => (
+                <Button
+                  key={value}
+                  title={`${title} ${flights.filter((f) => f.status === value).length}`}
+                  secondary={status !== value}
+                  onPress={() => setStatus(value)}
+                  style={{ paddingHorizontal: 12 }}
+                />
+              ))}
+            </View>
+            {hasFilters && (
+              <Button
+                secondary
+                title={words("Clear filters", "清除筛选")}
+                onPress={() => setFilters("flights", { ...initialFilters })}
+              />
+            )}
+            <Txt muted style={{ fontSize: 12 }}>
+              {items.length} {words("matching flights", "段符合筛选的旅程")}
+            </Txt>
+          </View>
+        }
         renderItem={({ item }) => <FlightCard flight={item} />}
         ListEmptyComponent={
           <Empty
