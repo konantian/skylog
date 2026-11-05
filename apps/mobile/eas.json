@@ -6,6 +6,11 @@
       "ios": { "simulator": true },
       "android": { "buildType": "apk" }
     },
+    "iphone": {
+      "extends": "preview",
+      "environment": "preview",
+      "ios": { "simulator": false }
+    },
     "production": { "autoIncrement": true }
   }
 }

@@ -21,9 +21,9 @@ cd apps/mobile
 npx expo run:ios --configuration Release --no-bundler
 ```
 
-For a connected iPhone use `npx expo run:ios --device`; a valid development certificate/provisioning profile is required. The app config uses Yuan's existing Apple team. SDK 57 enables `expo-build-properties`' `ios.enableSceneSupport` because Xcode 27 / iOS 27 require UIScene. Re-run `npx expo prebuild --platform ios --clean` after changing native config; do not hand-edit generated `ios` or `android` folders.
+For a connected iPhone use `npx expo run:ios --device`; a valid development certificate/provisioning profile is required. The app config uses the existing paid MotionCorrect Inc. Apple team for device distribution. SDK 57 enables `expo-build-properties`' `ios.enableSceneSupport` because Xcode 27 / iOS 27 require UIScene. Re-run `npx expo prebuild --platform ios --clean` after changing native config; do not hand-edit generated `ios` or `android` folders.
 
-`eas.json` provides development, simulator/APK preview and production profiles. Cloud builds, paid plans and store submission are not automatically triggered. A simulator build cannot be installed on a physical iPhone.
+`eas.json` provides development, simulator/APK preview, `iphone` ad hoc device distribution and production profiles. The `iphone` profile uses the same preview environment and a standalone release build; it does not require a Metro server. Register the intended device with `npx eas-cli@latest device:create`, then run `npx eas-cli@latest build --platform ios --profile iphone`. The first device build requires Apple authentication and separate provisioning profiles for the main app and widget extension. Cloud builds, paid plans and store submission are not automatically triggered. A simulator build cannot be installed on a physical iPhone.
 
 ## Implemented offline
 

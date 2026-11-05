@@ -14,7 +14,7 @@
         "ITSAppUsesNonExemptEncryption": false,
         "NSCalendarsWriteOnlyAccessUsageDescription": "Add the selected flight to your calendar."
       },
-      "appleTeamId": "TSNU34BPFG"
+      "appleTeamId": "9YYDX5K5KX"
     },
     "android": {
       "package": "com.konantian.skylog",
