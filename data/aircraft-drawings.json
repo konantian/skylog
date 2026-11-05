@@ -11,7 +11,15 @@
       "title": "Airbus · Aircraft Characteristics",
       "url": "https://www.aircraft.airbus.com/sites/default/files/2025-12/A220-ACP-Issue013-00-27Nov2025.pdf",
       "page": 76
-    }
+    },
+    "referenceLabel": "细节补绘参考图",
+    "note": "依公开照片与技术资料补绘识别细节；舷窗、舱门和面板分界为示意，具体构型因飞机而异。",
+    "additionalSources": [
+      {
+        "title": "SWISS A220-300 HB-JCO · exterior detail reference (A220 family)",
+        "url": "https://commons.wikimedia.org/wiki/File:Swiss,_HB-JCO,_Airbus_A220-300_(43687775954).jpg"
+      }
+    ]
   },
   "Airbus A220-300": {
     "length": 38.7,
@@ -25,7 +33,15 @@
       "title": "Airbus · Aircraft Characteristics",
       "url": "https://www.aircraft.airbus.com/sites/default/files/2025-12/A220-ACP-Issue013-00-27Nov2025.pdf",
       "page": 113
-    }
+    },
+    "referenceLabel": "细节补绘参考图",
+    "note": "依公开照片与技术资料补绘识别细节；舷窗、舱门和面板分界为示意，具体构型因飞机而异。",
+    "additionalSources": [
+      {
+        "title": "SWISS A220-300 HB-JCO · exterior detail reference (A220 family)",
+        "url": "https://commons.wikimedia.org/wiki/File:Swiss,_HB-JCO,_Airbus_A220-300_(43687775954).jpg"
+      }
+    ]
   },
   "Airbus A300-600F": {
     "length": 54.08,
@@ -38,7 +54,16 @@
     "source": {
       "title": "Airbus · 3-view CAD",
       "url": "https://www.aircraft.airbus.com/sites/default/files/2023-02/Airbus_A300-600-May-2012.zip"
-    }
+    },
+    "referenceLabel": "细节补绘参考图",
+    "note": "依所列技术资料补绘识别细节；舷窗、舱门和面板分界为示意，具体构型因飞机而异。",
+    "additionalSources": [
+      {
+        "title": "Airbus · A300F4-600 Aircraft Characteristics, port-side cargo door",
+        "url": "https://www.aircraft.airbus.com/sites/default/files/2023-02/Airbus-Commercial-Aircraft-AC-A300F4-600-Dec-2009.pdf",
+        "page": 18
+      }
+    ]
   },
   "Airbus A310-300": {
     "length": 46.66,
@@ -52,7 +77,14 @@
       "title": "Airbus · 3-view CAD",
       "url": "https://www.aircraft.airbus.com/sites/default/files/2023-02/Airbus_A310-300-May-2012.zip"
     },
-    "note": "该 CAD 为起落架收起的外形；机高数据为地面构型。"
+    "note": "该 CAD 为起落架收起的外形；机高数据为地面构型。 依公开照片与技术资料补绘识别细节；舷窗、舱门和面板分界为示意，具体构型因飞机而异。",
+    "referenceLabel": "细节补绘参考图",
+    "additionalSources": [
+      {
+        "title": "Air Transat C-GTSW · Frank Pahl, exterior photograph",
+        "url": "https://www.flugzeug-bild.de/bild/passagierflugzeuge~airbus~a-310/84462/air-transat-c-gtsw-airbus-a310-304-20092015.html"
+      }
+    ]
   },
   "Airbus A318-100": {
     "length": 31.44,
@@ -382,7 +414,15 @@
     "source": {
       "title": "Boeing · 3-view CAD",
       "url": "https://www.boeing.com/content/dam/boeing/v2/airports/dwgs/7377w.zip"
-    }
+    },
+    "referenceLabel": "细节补绘参考图",
+    "note": "依公开照片与技术资料补绘识别细节；舷窗、舱门和面板分界为示意，具体构型因飞机而异。",
+    "additionalSources": [
+      {
+        "title": "Delta · 737-800 exterior photograph (737NG detail reference)",
+        "url": "https://news.delta.com/media/image/48351"
+      }
+    ]
   },
   "Boeing 737-800": {
     "length": 39.47,
@@ -395,7 +435,15 @@
     "source": {
       "title": "Boeing · 3-view CAD",
       "url": "https://www.boeing.com/content/dam/boeing/v2/airports/dwgs/7378w.zip"
-    }
+    },
+    "referenceLabel": "细节补绘参考图",
+    "note": "依公开照片与技术资料补绘识别细节；舷窗、舱门和面板分界为示意，具体构型因飞机而异。",
+    "additionalSources": [
+      {
+        "title": "Delta · 737-800 exterior photograph (737NG detail reference)",
+        "url": "https://news.delta.com/media/image/48351"
+      }
+    ]
   },
   "Boeing 737-900": {
     "length": 42.11,
@@ -408,7 +456,15 @@
     "source": {
       "title": "Boeing · 3-view CAD",
       "url": "https://www.boeing.com/content/dam/boeing/v2/airports/dwgs/7379w.zip"
-    }
+    },
+    "referenceLabel": "细节补绘参考图",
+    "note": "依公开照片与技术资料补绘识别细节；舷窗、舱门和面板分界为示意，具体构型因飞机而异。",
+    "additionalSources": [
+      {
+        "title": "Delta · 737-800 exterior photograph (737NG detail reference)",
+        "url": "https://news.delta.com/media/image/48351"
+      }
+    ]
   },
   "Boeing 737-900ER": {
     "length": 42.11,
@@ -422,7 +478,23 @@
       "title": "Boeing · 3-view CAD",
       "url": "https://www.boeing.com/content/dam/boeing/v2/airports/dwgs/7379w.zip"
     },
-    "note": "采用同家族的基本外形图；舱门、天线及改装细节因构型而异。"
+    "note": "采用同家族的基本外形图；舱门、天线及改装细节因构型而异。 依公开照片与技术资料补绘识别细节；舷窗、舱门和面板分界为示意，具体构型因飞机而异。 后部附加出口采用所列实机的封堵构型，部分轮廓被近侧翼梢遮挡。",
+    "referenceLabel": "细节补绘参考图",
+    "additionalSources": [
+      {
+        "title": "Delta · 737-800 exterior photograph (737NG detail reference)",
+        "url": "https://news.delta.com/media/image/48351"
+      },
+      {
+        "title": "Boeing · 737NG Airport Planning, 737-900ER door arrangement",
+        "url": "https://www.boeing.com/content/dam/boeing/boeingdotcom/commercial/airports/acaps/737NG_REV_C.pdf",
+        "page": 49
+      },
+      {
+        "title": "Delta N931DQ · 737-900ER exterior photograph",
+        "url": "https://aeroxplorer.com/viewphoto.php?id=47717"
+      }
+    ]
   },
   "Boeing 737 MAX 8": {
     "length": 39.52,
@@ -849,7 +921,14 @@
       "url": "https://www.atr-aircraft.com/wp-content/uploads/2020/07/Factsheets_-_ATR_72-600.pdf",
       "page": 1
     },
-    "note": "根据原厂三视图简化描绘，省略涂装、阴影与远侧重叠细节。"
+    "note": "根据原厂三视图简化描绘，省略涂装、阴影与远侧重叠细节。 依公开照片与技术资料补绘识别细节；舷窗、舱门和面板分界为示意，具体构型因飞机而异。",
+    "referenceLabel": "细节补绘参考图",
+    "additionalSources": [
+      {
+        "title": "ATR · 72-600 exterior photographs",
+        "url": "https://www.atr-aircraft.com/regional-mobility/regional-aircraft/atr-72-600/"
+      }
+    ]
   },
   "Antonov An-124-100-150": {
     "length": 69.1,
@@ -864,7 +943,15 @@
       "url": "https://antonov.com/en/file/V5hQc2hGrJGRs?inline=1",
       "page": 3
     },
-    "note": "使用原厂 AN-124-100 / -100M-150 共用外形图；不表示每架 -100-150 的改装细节。"
+    "note": "使用原厂 AN-124-100 / -100M-150 共用外形图；不表示每架 -100-150 的改装细节。 依公开照片与技术资料补绘识别细节；舷窗、舱门和面板分界为示意，具体构型因飞机而异。",
+    "referenceLabel": "细节补绘参考图",
+    "additionalSources": [
+      {
+        "title": "Antonov Airlines · An-124 cargo ramps and airframe detail",
+        "url": "https://antonov.com/en/file/V5hQc2hGrJGRs?inline=1",
+        "page": 4
+      }
+    ]
   },
   "Embraer E170": {
     "length": 29.9,
@@ -922,7 +1009,15 @@
       "url": "https://www.scribd.com/document/544560518/arm-300",
       "page": 48
     },
-    "note": "Challenger 350 专用尺寸图；高度按原厂空机重量状态。"
+    "note": "Challenger 350 专用尺寸图；高度按原厂空机重量状态。 依公开照片与技术资料补绘识别细节；舷窗、舱门和面板分界为示意，具体构型因飞机而异。",
+    "referenceLabel": "细节补绘参考图",
+    "additionalSources": [
+      {
+        "title": "Bombardier · Challenger 350 exterior photograph",
+        "url": "https://businessaircraft.co.in/products/bombardier/documents/Factsheets2017_Challenger350.pdf",
+        "page": 1
+      }
+    ]
   },
   "Bombardier Global 6500": {
     "length": 30.3,
@@ -937,7 +1032,15 @@
       "url": "https://www.scribd.com/document/933352449/Global-6500-5500-Differense-Cours",
       "page": 19
     },
-    "note": "根据原厂 2020 年差异培训手册中的 Global 6500 尺寸图简化描绘。"
+    "note": "根据原厂 2020 年差异培训手册中的 Global 6500 尺寸图简化描绘。 依公开照片与技术资料补绘识别细节；舷窗、舱门和面板分界为示意，具体构型因飞机而异。",
+    "referenceLabel": "细节补绘参考图",
+    "additionalSources": [
+      {
+        "title": "Bombardier · Global 6500 brochure, exterior detail reference",
+        "url": "https://resources.globalair.com/specs/aircraftbrochures/4335_Global6500_brochure_May2023.pdf",
+        "page": 23
+      }
+    ]
   },
   "Cessna Citation CJ3+": {
     "length": 15.59,
@@ -952,7 +1055,14 @@
       "url": "https://tadistributors.com/wp-content/uploads/2016/03/SD-CJ3-Unit-0451-to-TBD-2015-Oct.pdf",
       "page": 8
     },
-    "note": "根据原厂规格书三视图简化描绘，省略涂装与渲染阴影。"
+    "note": "根据原厂规格书三视图简化描绘，省略涂装与渲染阴影。 依公开照片与技术资料补绘识别细节；舷窗、舱门和面板分界为示意，具体构型因飞机而异。",
+    "referenceLabel": "细节补绘参考图",
+    "additionalSources": [
+      {
+        "title": "Cessna · CJ3 brochure, exterior photographs (shared airframe)",
+        "url": "https://www.midcont.net/pdf/citationcj3.pdf"
+      }
+    ]
   },
   "Cessna Citation XLS+": {
     "length": 16,
@@ -967,7 +1077,14 @@
       "url": "https://tadistributors.com/wp-content/uploads/2016/03/SD-XLS-Unit-6172-to-TBD-2015-Oct.pdf",
       "page": 8
     },
-    "note": "外形及尺寸采用 2015 年 XLS+ 规格书所示构型，不与早期 Excel 的尺寸混用。"
+    "note": "外形及尺寸采用 2015 年 XLS+ 规格书所示构型，不与早期 Excel 的尺寸混用。 依公开照片与技术资料补绘识别细节；舷窗、舱门和面板分界为示意，具体构型因飞机而异。",
+    "referenceLabel": "细节补绘参考图",
+    "additionalSources": [
+      {
+        "title": "Textron Aviation · 2017 Citation XLS+ exterior photographs",
+        "url": "https://txtav.com/en/preowned/used-2017-citation-xls-5606239"
+      }
+    ]
   },
   "Cessna Citation Excel": {
     "length": 15.8,
@@ -982,7 +1099,7 @@
       "url": "https://www.easa.europa.eu/en/downloads/7244/en",
       "page": 50
     },
-    "note": "尺寸采用 EASA 的早期 560XL 数据；外形参考 FlightSafety 的 Excel 培训图，作图鉴示意使用。",
+    "note": "尺寸采用 EASA 的早期 560XL 数据；外形参考 FlightSafety 的 Excel 培训图，作图鉴示意使用。 依所列技术资料补绘识别细节；舷窗、舱门和面板分界为示意，具体构型因飞机而异。",
     "additionalSources": [
       {
         "title": "FlightSafety · Citation Excel, Fig. 1-1 (public mirror)",
@@ -990,7 +1107,7 @@
         "page": 9
       }
     ],
-    "referenceLabel": "技术资料参考图"
+    "referenceLabel": "细节补绘参考图"
   },
   "Cessna Citation II": {
     "length": 14.4,
@@ -1005,7 +1122,8 @@
       "url": "https://data.ntsb.gov/Docket/Document/docBLOB?FileExtension=.PDF&FileName=Aircraft+Three+View+Drawing-Master.PDF&ID=40409362",
       "page": 1
     },
-    "note": "采用 Cessna 550/551 操作手册所示构型，英制尺寸换算为米。"
+    "note": "采用 Cessna 550/551 操作手册所示构型，英制尺寸换算为米。 依所列技术资料补绘识别细节；舷窗、舱门和面板分界为示意，具体构型因飞机而异。",
+    "referenceLabel": "细节补绘参考图"
   },
   "Cessna Citation X": {
     "length": 22.04,
@@ -1019,7 +1137,8 @@
       "title": "Cessna · Citation X S&D, Aug 2011 Rev F, Fig. I (p. 4)",
       "url": "https://www.yumpu.com/en/document/view/29561948/citation-x-s-d"
     },
-    "note": "早期 Citation X 构型，无加装翼梢小翼；不是尺寸较大的 Citation X+。"
+    "note": "早期 Citation X 构型，无加装翼梢小翼；不是尺寸较大的 Citation X+。 依所列技术资料补绘识别细节；舷窗、舱门和面板分界为示意，具体构型因飞机而异。",
+    "referenceLabel": "细节补绘参考图"
   },
   "Embraer Praetor 500": {
     "length": 19.68,
@@ -1034,7 +1153,14 @@
       "url": "https://www.embraer.com/media/asbhvchi/praetor-500-eletronic.pdf",
       "page": 19
     },
-    "note": "根据原厂画册三视图简化描绘，起落架收起；机高为规格值，不由画面量取。"
+    "note": "根据原厂画册三视图简化描绘，起落架收起；机高为规格值，不由画面量取。 依公开照片与技术资料补绘识别细节；舷窗、舱门和面板分界为示意，具体构型因飞机而异。",
+    "referenceLabel": "细节补绘参考图",
+    "additionalSources": [
+      {
+        "title": "AirSprint · Praetor 500 exterior photographs",
+        "url": "https://www.airsprint.com/your-fleet/embraer-praetor-500"
+      }
+    ]
   },
   "Gulfstream G200": {
     "length": 18.97,
@@ -1049,8 +1175,15 @@
       "url": "https://www.scribd.com/document/858846716/G200-Pilot-Training-Manual",
       "page": 11
     },
-    "note": "依据 FlightSafety 的机型培训尺寸图简化描绘；该图依据制造商资料编制，并非 Gulfstream 直接发布的工程图。",
-    "referenceLabel": "技术资料参考图"
+    "note": "依据 FlightSafety 的机型培训尺寸图简化描绘；该图依据制造商资料编制，并非 Gulfstream 直接发布的工程图。 依公开照片与技术资料补绘识别细节；舷窗、舱门和面板分界为示意，具体构型因飞机而异。",
+    "referenceLabel": "细节补绘参考图",
+    "additionalSources": [
+      {
+        "title": "AVPRO · Gulfstream G200 N70HQ, exterior photographs and three-view",
+        "url": "https://www.guardianjet.com/hal/userfiles/files/Hal_specs/Gulfstream_G200/SN_66.pdf",
+        "page": 6
+      }
+    ]
   },
   "Saab 340B": {
     "length": 19.73,

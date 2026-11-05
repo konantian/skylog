@@ -7,6 +7,14 @@ are cropped vector extractions or simplified hand-traced reference figures,
 not certified engineering drawings. Conversion profiles combine base-airframe
 geometry with EFW/IAI information and clearly label their schematic details.
 
+The figures labeled “Reference with illustrated details” retain the cited
+dimensioned outlines and add original SVG linework informed by public exterior
+photographs and technical references. The photographs are identification
+references only; they are not embedded, redistributed or used as textures.
+Window spacing, door surrounds, engine seams and visible undercarriage detail
+are illustrative, not measurements extracted from perspective photographs.
+The additional sources and configuration notes are listed alongside each figure.
+
 The per-model attribution, source URL, PDF page and configuration notes are
 recorded in `data/aircraft-drawings.json` in the SKYLOG repository and displayed
 with the figure. Source artwork rights remain with Airbus, Boeing, Embraer,

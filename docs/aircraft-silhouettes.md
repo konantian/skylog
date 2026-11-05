@@ -92,6 +92,28 @@ The remaining 17 references were added on 2026-11-04. Important distinctions:
 The data format still supports an explicit `pending` state for future models;
 unverified entries must not receive invented technical dimensions.
 
+### Exterior-detail pass
+
+Nineteen previously sparse elevations now include independently drawn SVG
+details: A220-100/300, A300-600F, A310-300, 737-700/800/900/900ER, ATR 72-600,
+An-124-100-150, Challenger 350, Global 6500, Citation CJ3+/XLS+/Excel/II/X,
+Praetor 500 and G200. Public exterior photographs guide recognizable details;
+the cited technical references remain the source of dimensions. The Excel,
+Citation II/X and A300 freighter additions use the cited technical figures.
+
+The added `photo-details` SVG groups remain editable vector linework. Engine
+seams are clipped to their nacelle outlines where necessary. A310 and Praetor
+retain the source's gear-up configuration. The A300 port-side main-deck door
+follows the freighter reference and does not gain passenger windows or opposite-
+side hold doors. The 737-900ER uses a plugged aft-exit configuration, partly
+hidden by the near winglet. Window spacing and small panel boundaries are
+representative; no photographic measurement or certified engineering accuracy
+is claimed. References are linked in both Chinese and English detail views.
+
+Seven already detailed PDF-derived figures (A319neo, A320neo, A321neo/LR/XLR,
+E190-E2 and E195-E2) only receive stronger stroke contrast. The preview-card
+silhouettes, dimensional data and family scale calculation remain unchanged.
+
 `tests/aircraft-drawings.test.mjs` checks catalog coverage, pending-state honesty,
 family scale, SVG rendering and bounds, source links, and the separation from
 card previews.
