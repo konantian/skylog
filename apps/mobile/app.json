@@ -9,7 +9,7 @@
     "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.konantian.skylog",
+      "bundleIdentifier": "com.motioncorrect.skylog",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false,
         "NSCalendarsWriteOnlyAccessUsageDescription": "Add the selected flight to your calendar."
@@ -48,8 +48,8 @@
       [
         "expo-widgets",
         {
-          "groupIdentifier": "group.com.konantian.skylog",
-          "bundleIdentifier": "com.konantian.skylog.widgets",
+          "groupIdentifier": "group.com.motioncorrect.skylog",
+          "bundleIdentifier": "com.motioncorrect.skylog.widgets",
           "enablePushNotifications": false,
           "widgets": [
             {
