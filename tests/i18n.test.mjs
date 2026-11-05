@@ -5,6 +5,7 @@ import ts from 'typescript';
 import english from '../data/locale-en.json' with {type:'json'};
 import catalog from '../data/catalog.json' with {type:'json'};
 import profiles from '../data/aircraft-profiles.json' with {type:'json'};
+import airlineProfiles from '../data/airline-profiles.json' with {type:'json'};
 import liveries from '../data/liveries.json' with {type:'json'};
 import flightData from '../data/flights.json' with {type:'json'};
 import airports from '../data/airports.json' with {type:'json'};
@@ -43,7 +44,7 @@ test('every current public Chinese data field and UI translation key has an Engl
       assert.equal(han(translate('en',value)),false,value);
     }else if(value&&typeof value==='object')Object.values(value).forEach(check);
   };
-  [catalog,profiles,liveries,flightData].forEach(check);
+  [catalog,profiles,airlineProfiles,liveries,flightData].forEach(check);
   for(const file of readdirSync(new URL('../components/',import.meta.url)).filter(f=>f.endsWith('.tsx'))){
     const source=readFileSync(new URL('../components/'+file,import.meta.url),'utf8');
     const root=ts.createSourceFile(file,source,ts.ScriptTarget.Latest,true,ts.ScriptKind.TSX);

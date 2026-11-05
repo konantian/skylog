@@ -1,0 +1,1218 @@
+{
+  "checkedAt": "2026-11-04",
+  "sources": {
+    "codes": {
+      "title": "FAA · ICAO designators & telephony",
+      "url": "https://www.faa.gov/air_traffic/publications/atpubs/cnt_html/chap3_section_1.html"
+    },
+    "star": {
+      "title": "Air Canada · Star Alliance members",
+      "url": "https://www.aircanada.com/ca/en/aco/home/book/routes-and-partners/star-alliance-and-other-airline-partners/star-alliance.html"
+    },
+    "oneworld": {
+      "title": "oneworld · Member airlines",
+      "url": "https://www.oneworld.com/members"
+    },
+    "skyteam": {
+      "title": "SAS · SkyTeam members",
+      "url": "https://www.flysas.com/gb-en/about-us/skyteam"
+    },
+    "philippine": {
+      "title": "oneworld · Philippine Airlines (future member)",
+      "url": "https://www.oneworld.com/members/philippine-airlines"
+    },
+    "juneyao": {
+      "title": "Juneyao · Star Alliance Connecting Partner",
+      "url": "https://global.juneyaoair.com/memberIntro/starAlliances"
+    }
+  },
+  "airlines": {
+    "Air Canada": {
+      "designators": [
+        {
+          "icao": "ACA",
+          "callsign": "AIR CANADA",
+          "operator": "AIR CANADA"
+        }
+      ],
+      "alliance": "Star Alliance",
+      "sources": [
+        "codes",
+        "star"
+      ]
+    },
+    "Lufthansa": {
+      "designators": [
+        {
+          "icao": "DLH",
+          "callsign": "LUFTHANSA",
+          "operator": "DEUTSCHE LUFTHANSA, AG, KOELN"
+        }
+      ],
+      "alliance": "Star Alliance",
+      "sources": [
+        "codes",
+        "star"
+      ]
+    },
+    "Emirates": {
+      "designators": [
+        {
+          "icao": "UAE",
+          "callsign": "EMIRATES",
+          "operator": "EMIRATES"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "SWISS": {
+      "designators": [
+        {
+          "icao": "SWR",
+          "callsign": "SWISS",
+          "operator": "SWISS INTERNATIONAL AIR LINES LTD"
+        }
+      ],
+      "alliance": "Star Alliance",
+      "sources": [
+        "codes",
+        "star"
+      ]
+    },
+    "Qantas": {
+      "designators": [
+        {
+          "icao": "QFA",
+          "callsign": "QANTAS",
+          "operator": "QANTAS AIRWAYS LIMITED"
+        }
+      ],
+      "alliance": "oneworld",
+      "sources": [
+        "codes",
+        "oneworld"
+      ]
+    },
+    "Japan Airlines": {
+      "designators": [
+        {
+          "icao": "JAL",
+          "callsign": "JAPANAIR",
+          "operator": "JAPAN AIRLINES CO., LTD"
+        }
+      ],
+      "alliance": "oneworld",
+      "sources": [
+        "codes",
+        "oneworld"
+      ]
+    },
+    "Cathay Pacific": {
+      "designators": [
+        {
+          "icao": "CPA",
+          "callsign": "CATHAY",
+          "operator": "CATHAY PACIFIC AIRWAYS LTD."
+        }
+      ],
+      "alliance": "oneworld",
+      "sources": [
+        "codes",
+        "oneworld"
+      ]
+    },
+    "ANA": {
+      "designators": [
+        {
+          "icao": "ANA",
+          "callsign": "ALL NIPPON",
+          "operator": "ALL NIPPON AIRWAYS CO., LTD."
+        }
+      ],
+      "alliance": "Star Alliance",
+      "sources": [
+        "codes",
+        "star"
+      ]
+    },
+    "Fiji Airways": {
+      "designators": [
+        {
+          "icao": "FJI",
+          "callsign": "FIJI",
+          "operator": "AIR PACIFIC LIMITED"
+        }
+      ],
+      "alliance": "oneworld",
+      "sources": [
+        "codes",
+        "oneworld"
+      ]
+    },
+    "Aer Lingus": {
+      "designators": [
+        {
+          "icao": "EIN",
+          "callsign": "SHAMROCK",
+          "operator": "AER LINGUS TEORANTA"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "Aeromexico": {
+      "designators": [
+        {
+          "icao": "AMX",
+          "callsign": "AEROMEXICO",
+          "operator": "AEROVIAS DE MEXICO, S.A. DE C.V."
+        }
+      ],
+      "alliance": "SkyTeam",
+      "sources": [
+        "codes",
+        "skyteam"
+      ]
+    },
+    "Air France": {
+      "designators": [
+        {
+          "icao": "AFR",
+          "callsign": "AIRFRANS",
+          "operator": "AIR FRANCE"
+        }
+      ],
+      "alliance": "SkyTeam",
+      "sources": [
+        "codes",
+        "skyteam"
+      ]
+    },
+    "Air India": {
+      "designators": [
+        {
+          "icao": "AIC",
+          "callsign": "AIRINDIA",
+          "operator": "AIR INDIA LIMITED"
+        }
+      ],
+      "alliance": "Star Alliance",
+      "sources": [
+        "codes",
+        "star"
+      ]
+    },
+    "Air New Zealand": {
+      "designators": [
+        {
+          "icao": "ANZ",
+          "callsign": "NEW ZEALAND",
+          "operator": "AIR NEW ZEALAND LTD"
+        }
+      ],
+      "alliance": "Star Alliance",
+      "sources": [
+        "codes",
+        "star"
+      ]
+    },
+    "Air North": {
+      "designators": [
+        {
+          "icao": "ANT",
+          "callsign": "AIR NORTH",
+          "operator": "AIR NORTH CHARTER"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "Air Transat": {
+      "designators": [
+        {
+          "icao": "TSC",
+          "callsign": "AIR TRANSAT",
+          "operator": "AIR TRANSAT A.T. INC."
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "Alaska Airlines": {
+      "designators": [
+        {
+          "icao": "ASA",
+          "callsign": "ALASKA",
+          "operator": "ALASKA AIRLINES INC."
+        }
+      ],
+      "alliance": "oneworld",
+      "sources": [
+        "codes",
+        "oneworld"
+      ]
+    },
+    "American Airlines": {
+      "designators": [
+        {
+          "icao": "AAL",
+          "callsign": "AMERICAN",
+          "operator": "AMERICAN AIRLINES INC."
+        }
+      ],
+      "alliance": "oneworld",
+      "sources": [
+        "codes",
+        "oneworld"
+      ]
+    },
+    "Avianca": {
+      "designators": [
+        {
+          "icao": "AVA",
+          "callsign": "AVIANCA",
+          "operator": "AEROVIAS DEL CONTINENTE AMERICANO S.A."
+        }
+      ],
+      "alliance": "Star Alliance",
+      "sources": [
+        "codes",
+        "star"
+      ]
+    },
+    "Biman Bangladesh Airlines": {
+      "designators": [
+        {
+          "icao": "BBC",
+          "callsign": "BANGLADESH",
+          "operator": "BANGLADESH BIMAN"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "Caribbean Airlines": {
+      "designators": [
+        {
+          "icao": "BWA",
+          "callsign": "CARIBBEAN AIRLINES",
+          "operator": "CARIBBEAN AIRLINES LIMITED"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "China Airlines": {
+      "designators": [
+        {
+          "icao": "CAL",
+          "callsign": "DYNASTY",
+          "operator": "CHINA AIRLINES"
+        }
+      ],
+      "alliance": "SkyTeam",
+      "sources": [
+        "codes",
+        "skyteam"
+      ]
+    },
+    "China Eastern Airlines": {
+      "designators": [
+        {
+          "icao": "CES",
+          "callsign": "CHINA EASTERN",
+          "operator": "CHINA EASTERN AIRLINES"
+        }
+      ],
+      "alliance": "SkyTeam",
+      "sources": [
+        "codes",
+        "skyteam"
+      ]
+    },
+    "Condor": {
+      "designators": [
+        {
+          "icao": "CFG",
+          "callsign": "CONDOR",
+          "operator": "CONDOR FLUGDIENST GMBH, FRANKFURT (MAIN)"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "Delta Air Lines": {
+      "designators": [
+        {
+          "icao": "DAL",
+          "callsign": "DELTA",
+          "operator": "DELTA AIR LINES, INC."
+        }
+      ],
+      "alliance": "SkyTeam",
+      "sources": [
+        "codes",
+        "skyteam"
+      ]
+    },
+    "Egyptair": {
+      "designators": [
+        {
+          "icao": "MSR",
+          "callsign": "EGYPTAIR",
+          "operator": "EGYPT AIR"
+        }
+      ],
+      "alliance": "Star Alliance",
+      "sources": [
+        "codes",
+        "star"
+      ]
+    },
+    "Ethiopian Airlines": {
+      "designators": [
+        {
+          "icao": "ETH",
+          "callsign": "ETHIOPIAN",
+          "operator": "ETHIOPIAN AIRLINES CORPORATION"
+        }
+      ],
+      "alliance": "Star Alliance",
+      "sources": [
+        "codes",
+        "star"
+      ]
+    },
+    "Etihad Airways": {
+      "designators": [
+        {
+          "icao": "ETD",
+          "callsign": "ETIHAD",
+          "operator": "ETIHAD AIRWAYS"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "Flair Airlines": {
+      "designators": [
+        {
+          "icao": "FLE",
+          "callsign": "FLAIR",
+          "operator": "FLAIR AIRLINES LTD"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "Helijet International": {
+      "designators": [
+        {
+          "icao": "JBA",
+          "callsign": "HELIJET",
+          "operator": "HELIJET INTERNATIONAL INC."
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "ITA Airways": {
+      "designators": [
+        {
+          "icao": "ITY",
+          "callsign": "ITARROW",
+          "operator": "ITALIA TRASPORTO AEREO S.P.A."
+        }
+      ],
+      "alliance": "Star Alliance",
+      "sources": [
+        "codes",
+        "star"
+      ]
+    },
+    "Iberia": {
+      "designators": [
+        {
+          "icao": "IBE",
+          "callsign": "IBERIA",
+          "operator": "IBERIA - LINEAS AEREAS DE ESPANA, SOCIEDAD ANONIMA OPERADORA"
+        }
+      ],
+      "alliance": "oneworld",
+      "sources": [
+        "codes",
+        "oneworld"
+      ]
+    },
+    "KLM": {
+      "designators": [
+        {
+          "icao": "KLM",
+          "callsign": "KLM",
+          "operator": "KLM ROYAL DUTCH AIRLINES"
+        }
+      ],
+      "alliance": "SkyTeam",
+      "sources": [
+        "codes",
+        "skyteam"
+      ]
+    },
+    "Kalitta Air": {
+      "designators": [
+        {
+          "icao": "CKS",
+          "callsign": "CONNIE",
+          "operator": "KALITTA AIR, LLC (YPSILANTI, MI)"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "Korean Air": {
+      "designators": [
+        {
+          "icao": "KAL",
+          "callsign": "KOREANAIR",
+          "operator": "KOREAN AIR LINES CO., LTD."
+        }
+      ],
+      "alliance": "SkyTeam",
+      "sources": [
+        "codes",
+        "skyteam"
+      ]
+    },
+    "Pacific Coastal Airlines": {
+      "designators": [
+        {
+          "icao": "PCO",
+          "callsign": "PASCO",
+          "operator": "PACIFIC COASTAL AIRLINE"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "Pakistan International Airlines": {
+      "designators": [
+        {
+          "icao": "PIA",
+          "callsign": "PAKISTAN",
+          "operator": "PAKISTAN INTERNATIONAL AIRLINES CORPORATION (PIA)"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "Porter Airlines": {
+      "designators": [
+        {
+          "icao": "POE",
+          "callsign": "PORTER AIR",
+          "operator": "PORTER AIRLINES (CANADA) LIMITED"
+        },
+        {
+          "icao": "PTR",
+          "callsign": "DASH PORT",
+          "operator": "PORTER AIRLINES INC."
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "Qatar Airways": {
+      "designators": [
+        {
+          "icao": "QTR",
+          "callsign": "QATARI",
+          "operator": "QATAR AIRWAYS GROUP Q.C.S.C."
+        }
+      ],
+      "alliance": "oneworld",
+      "sources": [
+        "codes",
+        "oneworld"
+      ]
+    },
+    "SAS": {
+      "designators": [
+        {
+          "icao": "SAS",
+          "callsign": "SCANDINAVIAN",
+          "operator": "SCANDINAVIAN AIRLINES SYSTEM"
+        }
+      ],
+      "alliance": "SkyTeam",
+      "sources": [
+        "codes",
+        "skyteam"
+      ]
+    },
+    "Saudia": {
+      "designators": [
+        {
+          "icao": "SVA",
+          "callsign": "SAUDIA",
+          "operator": "SAUDI ARABIAN AIRLINES"
+        }
+      ],
+      "alliance": "SkyTeam",
+      "sources": [
+        "codes",
+        "skyteam"
+      ]
+    },
+    "T'way Air / Trinity Airways": {
+      "designators": [
+        {
+          "icao": "TWB",
+          "callsign": "TEEWAY",
+          "operator": "T'WAY AIR CO., LTD"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "TAP Air Portugal": {
+      "designators": [
+        {
+          "icao": "TAP",
+          "callsign": "AIR PORTUGAL",
+          "operator": "TRANSPORTES AEREOS PORTUGUESES, E.P."
+        }
+      ],
+      "alliance": "Star Alliance",
+      "sources": [
+        "codes",
+        "star"
+      ]
+    },
+    "United Airlines": {
+      "designators": [
+        {
+          "icao": "UAL",
+          "callsign": "UNITED",
+          "operator": "UNITED AIRLINES, INC. (CHICAGO, IL)"
+        }
+      ],
+      "alliance": "Star Alliance",
+      "sources": [
+        "codes",
+        "star"
+      ]
+    },
+    "Volga-Dnepr Airlines": {
+      "designators": [
+        {
+          "icao": "VDA",
+          "callsign": "VOLGA",
+          "operator": "VOLGA-DNEPR"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "WestJet": {
+      "designators": [
+        {
+          "icao": "WJA",
+          "callsign": "WESTJET",
+          "operator": "WESTJET AIRLINES LTD"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "Air China": {
+      "designators": [
+        {
+          "icao": "CCA",
+          "callsign": "AIR CHINA",
+          "operator": "AIR CHINA"
+        }
+      ],
+      "alliance": "Star Alliance",
+      "sources": [
+        "codes",
+        "star"
+      ]
+    },
+    "Air Serbia": {
+      "designators": [
+        {
+          "icao": "ASL",
+          "callsign": "AIR SERBIA",
+          "operator": "AIR SERBIA"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "Arajet": {
+      "designators": [
+        {
+          "icao": "DWI",
+          "callsign": "DOMINICAN",
+          "operator": "ARAJET S.A."
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "Asiana Airlines": {
+      "designators": [
+        {
+          "icao": "AAR",
+          "callsign": "ASIANA",
+          "operator": "ASIANA AIRLINES"
+        }
+      ],
+      "alliance": "Star Alliance",
+      "sources": [
+        "codes",
+        "star"
+      ]
+    },
+    "Azores Airlines": {
+      "designators": [
+        {
+          "icao": "RZO",
+          "callsign": "AIR AZORES",
+          "operator": "SATA INTERNACIONAL - AZORES AIRLINES S.A"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "Beijing Capital Airlines": {
+      "designators": [
+        {
+          "icao": "CBJ",
+          "callsign": "CAPITAL JET",
+          "operator": "BEIJING CAPITAL AIRLINES CO., LTD"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "BermudAir": {
+      "designators": [
+        {
+          "icao": "BMA",
+          "callsign": "GOSLING",
+          "operator": "BERMUDAIR"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "British Airways": {
+      "designators": [
+        {
+          "icao": "BAW",
+          "callsign": "SPEEDBIRD",
+          "operator": "BRITISH AIRWAYS"
+        }
+      ],
+      "alliance": "oneworld",
+      "sources": [
+        "codes",
+        "oneworld"
+      ]
+    },
+    "Cargojet": {
+      "designators": [
+        {
+          "icao": "CJT",
+          "callsign": "CARGOJET",
+          "operator": "CARGOJET AIRWAYS LTD"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "Central Mountain Air": {
+      "designators": [
+        {
+          "icao": "GLR",
+          "callsign": "GLACIER",
+          "operator": "CENTRAL MOUNTAIN AIR LTD"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "China Southern": {
+      "designators": [
+        {
+          "icao": "CSN",
+          "callsign": "CHINA SOUTHERN",
+          "operator": "CHINA SOUTHERN AIRLINES"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "Copa Airlines": {
+      "designators": [
+        {
+          "icao": "CMP",
+          "callsign": "COPA",
+          "operator": "COMPANIA PANAMENA DE AVIACION, S.A."
+        }
+      ],
+      "alliance": "Star Alliance",
+      "sources": [
+        "codes",
+        "star"
+      ]
+    },
+    "EVA Air": {
+      "designators": [
+        {
+          "icao": "EVA",
+          "callsign": "EVA",
+          "operator": "EVA AIRWAYS CORPORATION"
+        }
+      ],
+      "alliance": "Star Alliance",
+      "sources": [
+        "codes",
+        "star"
+      ]
+    },
+    "Edelweiss": {
+      "designators": [
+        {
+          "icao": "EDW",
+          "callsign": "EDELWEISS",
+          "operator": "EDELWEISS AIR AG"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "FedEx Express": {
+      "designators": [
+        {
+          "icao": "FDX",
+          "callsign": "FEDEX",
+          "operator": "FEDERAL EXPRESS CORPORATION"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "Finnair": {
+      "designators": [
+        {
+          "icao": "FIN",
+          "callsign": "FINNAIR",
+          "operator": "FINNAIR OYJ"
+        }
+      ],
+      "alliance": "oneworld",
+      "sources": [
+        "codes",
+        "oneworld"
+      ]
+    },
+    "Hainan Airlines": {
+      "designators": [
+        {
+          "icao": "CHH",
+          "callsign": "HAINAN",
+          "operator": "HAINAN AIRLINES HOLDING CO., LTD."
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "Harbour Air": {
+      "designators": [],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "star",
+        "oneworld",
+        "skyteam"
+      ],
+      "note": "尚未核实 ICAO 代码与无线电呼号。"
+    },
+    "Hong Kong Airlines": {
+      "designators": [
+        {
+          "icao": "CRK",
+          "callsign": "BAUHINIA",
+          "operator": "HONG KONG AIRLINES LTD"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "Icelandair": {
+      "designators": [
+        {
+          "icao": "ICE",
+          "callsign": "ICEAIR",
+          "operator": "ICELANDAIR"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "Iskwew Air": {
+      "designators": [],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "star",
+        "oneworld",
+        "skyteam"
+      ],
+      "note": "尚未核实 ICAO 代码与无线电呼号。"
+    },
+    "JetBlue": {
+      "designators": [
+        {
+          "icao": "JBU",
+          "callsign": "JETBLUE",
+          "operator": "JETBLUE AIRWAYS CORPORATION (NEW YORK, NY)"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "Juneyao Air": {
+      "designators": [
+        {
+          "icao": "DKH",
+          "callsign": "AIR JUNEYAO",
+          "operator": "JUNEYAO AIRLINES CO., LTD"
+        }
+      ],
+      "alliance": "星空联盟优连伙伴",
+      "sources": [
+        "codes",
+        "juneyao"
+      ]
+    },
+    "LOT": {
+      "designators": [
+        {
+          "icao": "LOT",
+          "callsign": "LOT",
+          "operator": "LOT - POLSKIE LINIE LOTNICZE"
+        }
+      ],
+      "alliance": "Star Alliance",
+      "sources": [
+        "codes",
+        "star"
+      ]
+    },
+    "MNG Airlines": {
+      "designators": [
+        {
+          "icao": "MNB",
+          "callsign": "BLACK SEA",
+          "operator": "MNG HAVAYOLLARI VE TASIMACILIK A.S."
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "Philippine Airlines": {
+      "designators": [
+        {
+          "icao": "PAL",
+          "callsign": "PHILIPPINE",
+          "operator": "PHILIPPINE AIR LINES INC. (PAL)"
+        }
+      ],
+      "alliance": "oneworld · 未来成员",
+      "sources": [
+        "codes",
+        "philippine"
+      ]
+    },
+    "Royal Air Maroc": {
+      "designators": [
+        {
+          "icao": "RAM",
+          "callsign": "ROYALAIR MAROC",
+          "operator": "ROYAL AIR MAROC - COMPAGNIE NATIONALE DE TRANSPORTS AERIENS"
+        }
+      ],
+      "alliance": "oneworld",
+      "sources": [
+        "codes",
+        "oneworld"
+      ]
+    },
+    "Royal Jordanian": {
+      "designators": [
+        {
+          "icao": "RJA",
+          "callsign": "JORDANIAN",
+          "operator": "ROYAL JORDANIAN"
+        }
+      ],
+      "alliance": "oneworld",
+      "sources": [
+        "codes",
+        "oneworld"
+      ]
+    },
+    "Sichuan Airlines": {
+      "designators": [
+        {
+          "icao": "CSC",
+          "callsign": "SI CHUAN",
+          "operator": "SI CHUAN AIRLINES"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "Turkish Airlines": {
+      "designators": [
+        {
+          "icao": "THY",
+          "callsign": "TURKISH",
+          "operator": "TURK HAVA YOLLARI (TURKISH AIRLINES CO.)"
+        }
+      ],
+      "alliance": "Star Alliance",
+      "sources": [
+        "codes",
+        "star"
+      ]
+    },
+    "UPS Airlines": {
+      "designators": [
+        {
+          "icao": "UPS",
+          "callsign": "UPS",
+          "operator": "UNITED PARCEL SERVICE COMPANY, (LOUISVILLE, KY)"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    },
+    "Virgin Atlantic": {
+      "designators": [
+        {
+          "icao": "VIR",
+          "callsign": "VIRGIN",
+          "operator": "VIRGIN ATLANTIC"
+        }
+      ],
+      "alliance": "SkyTeam",
+      "sources": [
+        "codes",
+        "skyteam"
+      ]
+    },
+    "XiamenAir": {
+      "designators": [
+        {
+          "icao": "CXA",
+          "callsign": "XIAMEN AIR",
+          "operator": "XIAMEN AIRLINES"
+        }
+      ],
+      "alliance": "SkyTeam",
+      "sources": [
+        "codes",
+        "skyteam"
+      ]
+    },
+    "ZIPAIR": {
+      "designators": [
+        {
+          "icao": "TZP",
+          "callsign": "ZIPPY",
+          "operator": "ZIPAIR TOKYO INC."
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes",
+        "star",
+        "oneworld",
+        "skyteam"
+      ]
+    }
+  }
+}

@@ -85,7 +85,7 @@ FedEx Express|联邦快递航空|FX|美国|美洲
 UPS Airlines|联合包裹航空|5X|美国|美洲
 MNG Airlines|MNG 货运航空|MB|土耳其|亚洲
 Central Mountain Air|中央山地航空|9M|加拿大|美洲
-Iskwew Air|Iskwew 航空|SG|加拿大|美洲
+Iskwew Air|Iskwew 航空||加拿大|美洲
 Harbour Air|港湾航空|YB|加拿大|美洲
 Asiana Airlines|韩亚航空|OZ|韩国|亚洲
 Juneyao Air|吉祥航空|HO|中国|亚洲'''
