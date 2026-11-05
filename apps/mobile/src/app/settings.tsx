@@ -149,11 +149,6 @@ export default function Settings() {
         </View>
       </Card>
       <Button
-        title="Passport"
-        icon="globe-outline"
-        onPress={() => router.push("/passport")}
-      />
-      <Button
         secondary
         title={words("Flight data & API budget", "航班数据与 API 用量")}
         icon="cloud-outline"

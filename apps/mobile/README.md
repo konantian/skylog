@@ -27,12 +27,17 @@ For a connected iPhone use `npx expo run:ios --device`; a valid development cert
 
 ## Implemented offline
 
-- Past, planned and cancelled flights; add/edit/delete; calendar date, airline, flight number, airports, aircraft/registration, private notes and trip name.
+- Flight records with automatic past/upcoming classification from departure date/time; add/edit/delete; calendar date, airline, flight number, airports, aircraft/registration, private notes and trip name.
 - Seat, cabin, booking reference, airport-local times, terminals, gates, baggage belt, actual duration, arrival delay and build year are optional manual fields. Local times do not infer duration across time zones. Unknown duration/delay remains unknown.
-- Search, year/airline/model filters, separate upcoming and completed lists. Only completed flights count toward Passport.
+- Search, year/airline/model filters, one flight list with the nearest upcoming departures first, followed by history. No manual flight-status controls. Airport-local departure time determines whether a flight has been flown; date-only records enter history the next day. Imported cancellations remain in backups but are excluded from the list, statistics and reminders.
 - Passport: yearly/all-time map and stamps, distance, duration, aircraft, airport, airline and route rankings; year/month/weekday charts, delay report, seat/cabin breakdown, personal longest/shortest/oldest/newest records; PNG sharing.
+- Passport stamps use offline country flags and localized names. Missing duration/delay data shows an explanation and import entry point, not empty numeric tiles. The initial public log has no event times; a full Flighty CSV can enrich it without duplicating flights. Share cards show SKYLOG without a website URL.
+- A native flight-path splash matches the first frame of the animated intro, once per cold launch. The tagline appears early and remains fully visible for at least 1.5 seconds before fading; entering the app skips the remaining animation/hold once ready. Reduce Motion uses a static frame. iOS Home Screen icons include light, dark and tinted variants; Android has adaptive and monochrome assets.
 - Aircraft, airline and photo catalogs, detail pages, technical drawings, saved photos and native JPEG sharing.
-- SQLite stores user flights, optional details, notes, favorites and language/theme. Public catalog/reference data, world geometry and airport coordinates ship with the app. Viewed photographs use an image disk cache; uncached photos require internet and the OS can evict cached images.
+- Airline display names follow the selected language across Home, collections, photo/airline details, flight cards, Passport and filters. Passport airport rankings and visited-airport lists use localized names plus IATA codes. Chinese airport labels cover the current 19 visited airports; unlisted airports fall back to the offline city name. Canonical stored names, identifiers and filter values stay unchanged.
+- Aircraft labels translate manufacturer names in Chinese mode while retaining model numbers and suffixes (MAX, neo, ER, E2). Collection, photo and flight search accepts either language, including aircraft suggestions and filters. Aircraft source links and photo verification badges are hidden; underlying provenance remains in the catalog.
+- Collection search/filter controls scroll with the list. Fullscreen photographs open in a landscape native screen with fit-to-screen sizing and zoom; closing returns to the portrait photo detail. Passport map region buttons follow the selected year's visited airports; the global view is always available.
+- SQLite stores user flights, optional details, notes, favorites and language/theme. Public catalog/reference data, country/region flag SVGs, world geometry and airport coordinates ship with the app. Viewed photographs use an image disk cache; uncached photos require internet and the OS can evict cached images.
 - JSON backup/restore and CSV flight export/import, including the Flighty export format used for the original flight log. Imports validate before committing and roll back on error. Flighty imports match date, flight number and route, fill missing fields and keep existing edits. SKYLOG backups update matching records; unrelated records remain. Back up before uninstalling or changing phones.
 
 The initial public 86-flight log is copied into SQLite once. Deleting/editing a seed record stays effective after restarting; upgrades do not reseed it. Local changes and private booking details are never uploaded to the public website. SQLite is in the app's OS sandbox, not separately encrypted by this app. Exported backup files contain private fields: share them only where intended.
@@ -63,6 +68,8 @@ Airport IANA time zones and ICAO codes are matched by IATA and coordinates from 
 ## Data and checks
 
 `src/generated/drawings.json` comes from the repository's technical drawings. Regenerate via `npm run assets:prepare` after editing those drawings (also runs before start/export).
+
+Regenerate app icon and launch-screen SVG/PNG assets with `node scripts/prepare-branding.mjs` from this directory (uses the root workspace's Sharp dependency). Icon/splash config changes need a native prebuild/rebuild; they cannot be delivered with a JavaScript-only update.
 
 `src/generated/airports.json` includes IATA airports from the [public-domain OurAirports dataset](https://ourairports.com/data/). Refresh explicitly with `python3 scripts/prepare-airports.py /path/to/airports.csv`. No network is needed during app build.
 

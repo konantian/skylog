@@ -8,17 +8,17 @@ import {Icon} from './icons';
 import {JourneyReplay} from './journey-replay';
 import {FlightPassport} from './flight-passport';
 import {FlightRecords} from './flight-records';
+import {visitedMapRegions} from '@/lib/map-regions.mjs';
 
 type Airport={name:string;city:string;latitude:number;longitude:number;country:string};
 type Ranked={name:string;count:number};
 type Route={key:string;airports:string[];count:number};
 const airports:Record<string,Airport>=airportData;
-const regions=[{id:'world',label:'全球',box:'0 0 900 400'},{id:'america',label:'北美',box:'400 40 400 230'},{id:'asia',label:'东亚',box:'200 80 190 150'},{id:'europe',label:'欧洲',box:'780 30 270 120'}];
 const showLabels=new Set(['YVR','YYZ','ICN','HKG','PEK','CTU','KEF','PDL','SFO']);
 
 function Ranking({title,items}:{title:string;items:Ranked[]}) {
   const {t}=useLocale();
-  return <div className="flight-ranking"><h4>{title}</h4>{items.slice(0,3).map((item,i)=><div className="ranking-row" key={item.name}><span>{String(i+1).padStart(2,'0')}</span><strong>{item.name}</strong><b>{item.count}<small> {t("段")}</small></b></div>)}</div>;
+  return <div className="flight-ranking"><h4>{title}</h4>{items.slice(0,3).map((item,i)=><div className="ranking-row" key={item.name}><span>{String(i+1).padStart(2,'0')}</span><strong>{t(item.name)}</strong><b>{item.count}<small> {t("段")}</small></b></div>)}</div>;
 }
 
 export function FlightOverview({allFlights,mapFlights,filteredFlights,filters,onFilter}:{allFlights:Flight[];mapFlights:Flight[];filteredFlights:Flight[];filters:Filters;onFilter:(key:keyof Filters,value:string)=>void}) {
@@ -26,13 +26,15 @@ export function FlightOverview({allFlights,mapFlights,filteredFlights,filters,on
   const stats=useMemo(()=>flightStats(allFlights),[allFlights]);
   const routes=useMemo(()=>collectRoutes(mapFlights) as Route[],[mapFlights]);
   const visited=[...new Set(mapFlights.flatMap(f=>[f.origin,f.destination]))];
-  const [region,setRegion]=useState('world');
+  const [selectedRegion,setRegion]=useState('world');
+  const regions=visitedMapRegions(mapFlights,airports);
+  const region=regions.some(r=>r.id===selectedRegion)?selectedRegion:'world';
   const [replayOpen,setReplayOpen]=useState(false);
   const [rankType,setRankType]=useState('airlines');
   const [focused,setFocused]=useState<string|null>(null);
   const view=regions.find(r=>r.id===region)!;
   const mapOffset=region==='europe'?450:0;
-  const selectedName=filters.flightAirport!=='all'?`${filters.flightAirport} · ${airports[filters.flightAirport]?.city||''}`:filters.route!=='all'?filters.route.replace('~',' ↔ '):t("全部航线");
+  const selectedName=filters.flightAirport!=='all'?`${filters.flightAirport} · ${t(airports[filters.flightAirport]?.city||'')}`:filters.route!=='all'?filters.route.replace('~',' ↔ '):t("全部航线");
   const years:Ranked[]=stats.years;
   const maxYear=Math.max(...years.map(y=>y.count),1);
   const startYear=Number(years[0]?.name||new Date().getFullYear());
@@ -48,7 +50,7 @@ export function FlightOverview({allFlights,mapFlights,filteredFlights,filters,on
     <FlightPassport flights={filteredFlights} year={filters.flightYear} onFilter={onFilter}/>
     <div className="flight-overview-grid">
       <section className="route-map" aria-labelledby="route-map-title">
-        <div className="map-heading"><div><span className="eyebrow">ACROSS THE PACIFIC & BEYOND</span><h4 id="route-map-title">{t("把旅途连成一张地图")}</h4></div><div className="map-regions" aria-label={t("地图区域")}>{regions.map(r=><button key={r.id} aria-pressed={region===r.id} onClick={()=>setRegion(r.id)}>{t(r.label)}</button>)}</div></div>
+        <div className="map-heading"><div><span className="eyebrow">ACROSS THE PACIFIC & BEYOND</span><h4 id="route-map-title">{t("把旅途连成一张地图")}</h4></div><div className="map-regions" aria-label={t("地图区域")}>{regions.map(r=><button key={r.id} aria-pressed={region===r.id} onClick={()=>setRegion(r.id)}>{t(r.zh)}</button>)}</div></div>
         <div className="replay-entry"><span>{t("把坐过的航班，重新飞一遍。")}</span><button onClick={()=>setReplayOpen(true)}><Icon name="play" size={15}/>{t("回放我的旅程")}</button></div>
         {replayOpen&&<JourneyReplay flights={allFlights} initialYear={filters.flightYear} onClose={()=>setReplayOpen(false)}/>}
         <svg className="flight-map-svg" viewBox={view.box} aria-labelledby="map-title map-description">
@@ -68,7 +70,7 @@ export function FlightOverview({allFlights,mapFlights,filteredFlights,filters,on
             {visited.map(code=>{
               const airport=airports[code];if(!airport)return null;const [x,y]=projectAirport(airport,mapOffset);const active=filters.flightAirport===code;
               const choose=()=>onFilter('flightAirport',active?'all':code);
-              return <g className={`map-airport ${active?'selected':''}`} key={code} role="button" tabIndex={0} aria-label={t("{0} {1}，查看相关航班",[code,airport.city])} aria-pressed={active} onClick={choose} onFocus={()=>setFocused(`${code} · ${airport.city}`)} onBlur={()=>setFocused(null)} onMouseEnter={()=>setFocused(`${code} · ${airport.city}`)} onMouseLeave={()=>setFocused(null)} onKeyDown={e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();choose();}}}>
+              return <g className={`map-airport ${active?'selected':''}`} key={code} role="button" tabIndex={0} aria-label={t("{0} {1}，查看相关航班",[code,t(airport.city)])} aria-pressed={active} onClick={choose} onFocus={()=>setFocused(`${code} · ${t(airport.city)}`)} onBlur={()=>setFocused(null)} onMouseEnter={()=>setFocused(`${code} · ${t(airport.city)}`)} onMouseLeave={()=>setFocused(null)} onKeyDown={e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();choose();}}}>
                 <circle className="airport-hit" cx={x} cy={y} r={10}/><circle className="airport-dot" cx={x} cy={y} r={active?4:2.8}/>{(region!=='world'||showLabels.has(code)||active)&&<text x={x+6} y={y-7}>{code}</text>}
               </g>;
             })}
@@ -76,7 +78,7 @@ export function FlightOverview({allFlights,mapFlights,filteredFlights,filters,on
         </svg>
         <div className="map-status"><span><i/> {focused||selectedName}</span><span>{routes.length} {t("条航线 ·")}{visited.length} {t("个机场")}</span></div>
         <div className="map-selectors">
-          <label className="select-field"><span>{t("按到访机场查看")}</span><select aria-label={t("到访机场")} value={filters.flightAirport} onChange={e=>{onFilter('flightAirport',e.target.value);e.currentTarget.blur();}}><option value="all">{t("全部机场")}</option>{Object.entries(airports).map(([code,a])=><option key={code} value={code}>{code} · {a.city}</option>)}</select></label>
+          <label className="select-field"><span>{t("按到访机场查看")}</span><select aria-label={t("到访机场")} value={filters.flightAirport} onChange={e=>{onFilter('flightAirport',e.target.value);e.currentTarget.blur();}}><option value="all">{t("全部机场")}</option>{Object.entries(airports).map(([code,a])=><option key={code} value={code}>{code} · {t(a.city)}</option>)}</select></label>
           <label className="select-field"><span>{t("按航线查看（含往返）")}</span><select aria-label={t("乘坐航线")} value={filters.route} onChange={e=>{onFilter('route',e.target.value);e.currentTarget.blur();}}><option value="all">{t("全部航线")}</option>{stats.routes.map((r:Route)=><option key={r.key} value={r.key}>{r.airports.join(' ↔ ')} · {r.count} {t("段")}</option>)}</select></label>
         </div>
         <p className="map-credit">{t("连线为机场间的大圆弧示意。地图随航司、机型和年份筛选。")}<a href="https://ourairports.com/data/" target="_blank" rel="noreferrer">OurAirports</a> / <a href="https://www.naturalearthdata.com/about/terms-of-use/" target="_blank" rel="noreferrer">Natural Earth</a></p>

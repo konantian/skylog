@@ -15,8 +15,8 @@ export function FlightLog({flights,mapFlights,allFlights,filters,onFilter,limit,
       const photo = f.registration ? photos.find(p=>p.registration?.status==='confirmed'&&p.registration.value===f.registration) : undefined;
       return <article className="flight-row" key={f.id}>
         <div className="flight-date"><time dateTime={f.date}>{f.date.slice(0,4)}<strong>{f.date.slice(5).replace('-',' / ')}</strong></time><span>{f.flight}</span></div>
-        <div className="flight-route"><div><span className="flight-endpoint"><strong>{f.origin}</strong><small>{airportCities[f.origin]?.city}</small></span><span className="route-line"><Icon name="plane" size={17}/></span><span className="flight-endpoint"><strong>{f.destination}</strong><small>{airportCities[f.destination]?.city}</small></span></div><span>{f.airline}</span></div>
-        <div className="flight-aircraft"><strong>{t(f.modelLabel)}</strong><span>{f.registration || t("注册号待确认")}{!f.model&&f.modelLabel!=='机型待确认'?t(" · 子型号未记录"):''}</span></div>
+        <div className="flight-route"><div><span className="flight-endpoint"><strong>{f.origin}</strong><small>{t(airportCities[f.origin]?.city)}</small></span><span className="route-line"><Icon name="plane" size={17}/></span><span className="flight-endpoint"><strong>{f.destination}</strong><small>{t(airportCities[f.destination]?.city)}</small></span></div><span>{t(f.airline)}</span></div>
+        <div className="flight-aircraft"><strong>{t(f.modelLabel)}</strong><span>{f.registration || '—'}{!f.model&&f.modelLabel!=='机型待确认'?t(" · 子型号未记录"):''}</span></div>
         <div className="flight-photo-link">{photo&&<button onClick={()=>onPhoto(photo)}><Icon name="camera" size={15}/><span>{t("也拍过这架")}</span><Icon name="diagonal" size={13}/></button>}<button onClick={()=>onShare(f)} aria-label={t("为 {0} {1} 生成登机牌",[f.date,f.flight])}><Icon name="ticket" size={15}/>{t("生成登机牌")}</button></div>
       </article>;
     })}</div>

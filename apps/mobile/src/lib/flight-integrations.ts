@@ -7,8 +7,13 @@ import {
   type FlightWidgetProps,
 } from "../components/flight-widgets";
 import { airportTimezones, type LocalFlight } from "./catalog";
-import { flightTimes, reminderPlan, itineraryText } from "./flight-time.mjs";
-import { todayLocal } from "./database.mjs";
+import {
+  flightTimes,
+  flightStatus,
+  compareFlightDates,
+  reminderPlan,
+  itineraryText,
+} from "./flight-time.mjs";
 
 Notifications.setNotificationHandler({
   handleNotification: async () => ({
@@ -116,7 +121,7 @@ export async function startFlightActivity(f: LocalFlight, locale: string) {
   if (Platform.OS !== "ios") throw new Error("Live Activities require iOS");
   const p = widgetProps(f, locale);
   if (
-    f.status !== "planned" ||
+    flightStatus(f, airportTimezones) !== "planned" ||
     p.departure == null ||
     p.departure <= Date.now() ||
     p.departure - Date.now() > 3 * 3600000
@@ -145,19 +150,8 @@ export async function syncFlightWidgets(
 ) {
   if (Platform.OS !== "ios") return;
   const upcoming = flights
-    .filter((f) => {
-      const departure = flightTimes(f, airportTimezones).departure;
-      return (
-        f.status === "planned" &&
-        (departure == null ? f.date >= todayLocal() : departure > Date.now())
-      );
-    })
-    .sort(
-      (a, b) =>
-        (flightTimes(a, airportTimezones).departure ?? Infinity) -
-          (flightTimes(b, airportTimezones).departure ?? Infinity) ||
-        a.date.localeCompare(b.date),
-    );
+    .filter((f) => flightStatus(f, airportTimezones) === "planned")
+    .sort((a, b) => compareFlightDates(a, b, airportTimezones));
   NextFlightWidget.updateTimeline([
     { date: new Date(), props: widgetProps(upcoming[0], locale) },
     ...upcoming
@@ -179,7 +173,7 @@ export async function syncFlightWidgets(
     const p = f ? widgetProps(f, locale) : null;
     if (
       !f ||
-      f.status !== "planned" ||
+      flightStatus(f, airportTimezones) !== "planned" ||
       !p?.departure ||
       p.departure <= Date.now()
     )

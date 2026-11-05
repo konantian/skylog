@@ -70,12 +70,12 @@ async function observation(
 export async function queryFlight(db: SQLiteDatabase, flight: LocalFlight) {
   const departure = flightTimes(flight, airportTimezones).departure;
   if (
-    flight.status !== "planned" ||
+    flight.status === "cancelled" ||
     departure == null ||
     Math.abs(departure - Date.now()) > 86400000
   )
     throw new Error(
-      "Available around upcoming flights only / 仅在计划出发前后 24 小时内查询待出发行程",
+      "Available around upcoming flights only / 仅在计划出发前后 24 小时内查询该行程",
     );
   return observation(db, {
     date: flight.date,

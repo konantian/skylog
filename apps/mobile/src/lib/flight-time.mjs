@@ -55,6 +55,30 @@ export function flightTimes(flight, zones) {
   return { departure, arrival, departureZone, arrivalZone };
 }
 
+// Keep imported cancellations, but derive every other record from its departure.
+export function flightStatus(flight, zones = {}, now = Date.now()) {
+  if (flight.status === "cancelled") return "cancelled";
+  const { departure, departureZone } = flightTimes(flight, zones);
+  if (departure != null) return departure > now ? "planned" : "completed";
+  let today;
+  try {
+    today = localParts(now, departureZone).slice(0, 10);
+  } catch {
+    today = localParts(now, undefined).slice(0, 10);
+  }
+  // A date without a usable time is not assumed flown at the start of that day.
+  return flight.date < today ? "completed" : "planned";
+}
+
+export function compareFlightDates(a, b, zones = {}) {
+  const key = (f) => {
+    const { departure, departureZone } = flightTimes(f, zones);
+    return departure ?? airportInstant(`${f.date}T23:59`, departureZone) ??
+      Date.parse(`${f.date}T23:59Z`);
+  };
+  return key(a) - key(b);
+}
+
 export function connectionFor(flight, flights, zones) {
   const arrival = flightTimes(flight, zones).arrival;
   if (arrival == null || flight.status === "cancelled") return null;
@@ -84,7 +108,7 @@ export function connectionFor(flight, flights, zones) {
 
 export function reminderPlan(flights, zones, now = Date.now()) {
   return flights
-    .filter((f) => f.status === "planned" && f.reminders)
+    .filter((f) => flightStatus(f, zones, now) === "planned" && f.reminders)
     .flatMap((f) => {
       const departure = flightTimes(f, zones).departure;
       if (departure == null) return [];

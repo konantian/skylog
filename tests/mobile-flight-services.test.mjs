@@ -4,6 +4,8 @@ import { DatabaseSync } from "node:sqlite";
 import {
   airportInstant,
   flightTimes,
+  flightStatus,
+  compareFlightDates,
   reminderPlan,
   connectionFor,
   itineraryText,
@@ -46,6 +48,19 @@ const f = {
   reminders: true,
 };
 const now = Date.parse("2025-11-04T20:00:00Z");
+test("flight status follows airport-local time, ignoring stale manual classifications", () => {
+  const departure = Date.parse("2025-11-05T01:20:00Z");
+  assert.equal(flightStatus({ ...f, status: "completed" }, zones, departure - 1), "planned");
+  assert.equal(flightStatus(f, zones, departure), "completed");
+  assert.equal(flightStatus({ ...f, status: "cancelled" }, zones, departure), "cancelled");
+  const dateOnly = { ...f, departureTime: "", status: "completed" };
+  assert.equal(flightStatus(dateOnly, zones, Date.parse("2025-11-05T04:59:59Z")), "planned");
+  assert.equal(flightStatus(dateOnly, zones, Date.parse("2025-11-05T05:00:00Z")), "completed");
+  assert.equal(flightStatus({ ...f, date: "2026-11-01", departureTime: "01:30" }, zones, Date.parse("2026-11-01T12:00Z")), "planned");
+  // The later local clock can still be the earlier absolute departure.
+  assert(compareFlightDates({ ...f, origin: "NRT", departureTime: "22:00" }, f, zones) < 0);
+  assert(compareFlightDates(f, { ...f, departureTime: "" }, zones) < 0);
+});
 function database() {
   const sql = new DatabaseSync(":memory:");
   return {
@@ -105,6 +120,7 @@ test("reminders exclude past/cancelled/disabled flights and reschedule from exac
   );
   assert.equal(plan.length, 1);
   assert.equal(plan[0].at, Date.parse("2025-11-04T22:20Z"));
+  assert.equal(reminderPlan([{ ...f, status: "completed" }], zones, now).length, 1);
   assert.equal(
     reminderPlan([f], zones, Date.parse("2025-11-05T02:00Z")).length,
     0,

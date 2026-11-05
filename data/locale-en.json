@@ -735,5 +735,13 @@
   "未加入三大联盟": "No major alliance",
   "星空联盟优连伙伴": "Star Alliance Connecting Partner",
   "oneworld · 未来成员": "oneworld · Future member",
-  "查看 {0} 的照片": "View photographs of {0}"
+  "查看 {0} 的照片": "View photographs of {0}",
+  "全屏查看照片": "View photo fullscreen",
+  "关闭全屏": "Close fullscreen",
+  "飞机注册号": "Airframes",
+  "暂无乘坐记录": "No recorded flights",
+  "暂时没有足够的照片来出题。": "There are not enough photographs for a quiz yet.",
+  "· 尚无拍摄记录": "· No photographs yet",
+  "机型比例示意图": "Aircraft profile illustration",
+  "照片加载失败，请关闭后重试。": "Unable to load photo. Close and try again."
 }

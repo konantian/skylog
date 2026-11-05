@@ -9,17 +9,24 @@
     "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": true,
+      "icon": {
+        "light": "./assets/icon-light.png",
+        "dark": "./assets/icon-dark.png",
+        "tinted": "./assets/icon-tinted.png"
+      },
       "bundleIdentifier": "com.motioncorrect.skylog",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false,
         "NSCalendarsWriteOnlyAccessUsageDescription": "Add the selected flight to your calendar."
       },
-      "appleTeamId": "9YYDX5K5KX"
+      "appleTeamId": "9YYDX5K5KX",
+      "buildNumber": "2"
     },
     "android": {
       "package": "com.konantian.skylog",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icon.png",
+        "foregroundImage": "./assets/adaptive-foreground.png",
+        "monochromeImage": "./assets/adaptive-monochrome.png",
         "backgroundColor": "#0b151e"
       },
       "predictiveBackGestureEnabled": true
@@ -32,9 +39,13 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/icon.png",
-          "imageWidth": 120,
-          "backgroundColor": "#0b151e"
+          "backgroundColor": "#0b151e",
+          "image": "./assets/splash-flight.png",
+          "imageWidth": 200,
+          "ios": {
+            "imageWidth": 374
+          },
+          "resizeMode": "contain"
         }
       ],
       [

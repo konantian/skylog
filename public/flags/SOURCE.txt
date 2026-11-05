@@ -1,0 +1,4 @@
+flag-icons, MIT license
+https://github.com/lipis/flag-icons
+Revision: ac7e0eb3259eb62aa6100c435607e2fe03896a97
+Subset of flags/4x3 for SKYLOG airline countries and regions.

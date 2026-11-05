@@ -4,6 +4,11 @@ import { KeyboardControls } from "../components/keyboard-controls";
 import { router, Stack, useLocalSearchParams } from "expo-router";
 import { useApp } from "../lib/store";
 import {
+  airlineName,
+  aircraftName,
+  aircraftSearchQuery,
+} from "../lib/flight-labels";
+import {
   aircraft,
   airlines,
   photos,
@@ -19,7 +24,7 @@ export default function FiltersScreen() {
       ? params.mode
       : "photos"
   ) as Mode;
-  const { colors, t, words, filters, setFilters, flights } = useApp();
+  const { colors, t, words, locale, filters, setFilters, flights } = useApp();
   const [draft, setDraft] = useState<Filters>({ ...filters[mode] });
   const [field, setField] = useState<keyof Filters | null>(null);
   const [query, setQuery] = useState("");
@@ -69,20 +74,26 @@ export default function FiltersScreen() {
           "sort",
         ]
   ) as (keyof Filters)[];
-  const label = (value: string) =>
+  const label = (value: string, key = field) =>
     value === "all"
       ? words("All", "全部")
       : value === "curated"
-        ? words("Curated", "精选顺序")
+        ? mode === "flights"
+          ? words("Next departures, then history", "近期出发优先")
+          : words("Curated", "精选顺序")
         : value === "latest"
           ? mode === "flights"
-            ? words("Most recent flights", "最近乘坐")
+            ? words("Flight date", "航班日期")
             : t("最近拍摄")
           : value === "name"
             ? t("名称排序")
             : value === "count"
               ? t("照片最多")
-              : t(value);
+              : key === "airline"
+                ? airlineName(value, locale)
+                : key === "model" || key === "manufacturer"
+                  ? aircraftName(value, locale)
+                  : t(value);
   return (
     <>
       <Stack.Screen
@@ -122,7 +133,11 @@ export default function FiltersScreen() {
               ...(field === "sort" ? [] : ["all"]),
               ...(options[field] || []),
             ].filter((v) =>
-              label(v).toLowerCase().includes(query.toLowerCase()),
+              field === "model" || field === "manufacturer"
+                ? aircraftSearchQuery(v).includes(aircraftSearchQuery(query))
+                : [v, label(v)].some((value) =>
+                    value.toLowerCase().includes(query.toLowerCase()),
+                  ),
             )}
             keyExtractor={(v) => v}
             keyboardShouldPersistTaps="handled"
@@ -183,7 +198,7 @@ export default function FiltersScreen() {
                   gap: 16,
                 }}
               >
-                <Txt style={{ flex: 1 }}>{label(draft[key])}</Txt>
+                <Txt style={{ flex: 1 }}>{label(draft[key], key)}</Txt>
                 <Icon name="chevron-forward" size={18} />
               </View>
             </Pressable>

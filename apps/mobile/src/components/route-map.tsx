@@ -9,6 +9,7 @@ import {
 } from "../../../../lib/insights.mjs";
 import { airports, type LocalFlight } from "../lib/catalog";
 import { useApp } from "../lib/store";
+import { visitedMapRegions } from "../lib/map-regions.mjs";
 import { Button, Txt, styles } from "./ui";
 export function RouteMap({
   flights,
@@ -27,26 +28,17 @@ export function RouteMap({
   const visited = [
     ...new Set(flights.flatMap((f) => [f.origin, f.destination])),
   ];
-  const views: Record<string, string> = {
-    world: "0 0 900 400",
-    america: "400 40 400 230",
-    asia: "200 80 190 150",
-    europe: "780 30 270 120",
-  };
-  const offset = region === "europe" ? 450 : 0;
+  const regions = visitedMapRegions(flights, data);
+  const activeRegion = regions.find((view) => view.id === region) || regions[0];
+  const offset = activeRegion.id === "europe" ? 450 : 0;
   return (
     <View style={{ gap: 14 }}>
       <View style={[styles.row, { flexWrap: "wrap", gap: 8 }]}>
-        {[
-          ["world", words("World", "全球")],
-          ["america", words("America", "北美")],
-          ["asia", words("East Asia", "东亚")],
-          ["europe", words("Europe", "欧洲")],
-        ].map(([id, label]) => (
+        {regions.map(({ id, en, zh }) => (
           <Button
             key={id}
-            title={label}
-            secondary={id !== region}
+            title={words(en, zh)}
+            secondary={id !== activeRegion.id}
             onPress={() => setRegion(id)}
             style={{ paddingHorizontal: 12 }}
           />
@@ -55,7 +47,7 @@ export function RouteMap({
       <Svg
         width="100%"
         height={230}
-        viewBox={views[region]}
+        viewBox={activeRegion.box}
         accessibilityLabel={words(
           `Flight map: ${routes.length} routes`,
           `航线地图：${routes.length} 条航线`,

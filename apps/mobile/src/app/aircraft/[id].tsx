@@ -1,9 +1,10 @@
-import { View, Linking } from "react-native";
+import { View } from "react-native";
 import { Stack, useLocalSearchParams, router } from "expo-router";
 import { SvgXml } from "react-native-svg";
 import { aircraftDrawing } from "../../../../../lib/aircraft-drawings.mjs";
 import drawings from "../../generated/drawings.json";
 import { useApp } from "../../lib/store";
+import { aircraftName } from "../../lib/flight-labels";
 import {
   aircraft,
   photos,
@@ -25,7 +26,7 @@ import {
 import { EntryCard } from "../../screens/collection";
 export default function AircraftDetail() {
   const { id } = useLocalSearchParams<{ id: string }>();
-  const { t, words, completed, setFilters } = useApp();
+  const { t, words, locale, completed, setFilters } = useApp();
   const entry = aircraft.find((a) => a.id === id);
   if (!entry)
     return (
@@ -45,10 +46,12 @@ export default function AircraftDetail() {
   )[entry.family || ""];
   return (
     <Page>
-      <Stack.Screen options={{ title: entry.shortName || entry.name }} />
+      <Stack.Screen
+        options={{ title: entry.shortName || aircraftName(entry.name, locale) }}
+      />
       <Section
-        title={entry.name}
-        caption={`${entry.manufacturer} · ${entry.family}`}
+        title={aircraftName(entry.name, locale)}
+        caption={`${aircraftName(entry.manufacturer || "", locale)} · ${entry.family}`}
       />
       <Txt muted>{t(entry.category)}</Txt>
       {xml && drawing?.status === "reference" ? (
@@ -59,20 +62,13 @@ export default function AircraftDetail() {
             <Stat value={`${drawing.span} m`} label={t("翼展")} />
             <Stat value={`${drawing.height} m`} label={t("机高")} />
           </View>
-          <Txt muted style={{ fontSize: 12 }}>
-            {t(drawing.note)}
-          </Txt>
-          <Button
-            secondary
-            title={t("图纸与尺寸来源")}
-            icon="open-outline"
-            onPress={() => void Linking.openURL(drawing.source.url)}
-          />
         </Card>
       ) : (
         <Card>
           <Silhouette entry={entry} />
-          <Txt muted>{t("此型号的官方技术图尚待核验，预览保留比例示意。")}</Txt>
+          <Txt muted>
+            {words("Aircraft profile illustration", "机型比例示意图")}
+          </Txt>
         </Card>
       )}
       {family?.description && <Txt>{t(family.description)}</Txt>}

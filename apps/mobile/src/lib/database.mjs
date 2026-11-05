@@ -16,7 +16,7 @@ export function validateFlight(input, today = todayLocal()) {
     model: text("model") || null,
     modelLabel: text("modelLabel") || text("model") || "—",
     registration: text("registration").toUpperCase() || null,
-    status: text("status"),
+    status: text("status") || "planned",
     notes: text("notes"),
   };
   if (!flight.id || flight.id.length > 100)
@@ -43,8 +43,8 @@ export function validateFlight(input, today = todayLocal()) {
     );
   if (!["completed", "planned", "cancelled"].includes(flight.status))
     throw new Error("Invalid flight status");
-  if (date > today && flight.status === "completed")
-    throw new Error("Future flights must be planned / 未来航班请选待出发");
+  if (flight.status !== "cancelled")
+    flight.status = date < today ? "completed" : "planned";
   if (
     (flight.registration?.length || 0) > 30 ||
     (flight.model?.length || 0) > 100 ||

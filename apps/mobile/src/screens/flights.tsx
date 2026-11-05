@@ -8,12 +8,19 @@ import {
   Platform,
 } from "react-native";
 import { KeyboardControls } from "../components/keyboard-controls";
-import { router, useLocalSearchParams } from "expo-router";
+import { router } from "expo-router";
 import { useApp } from "../lib/store";
+import { compareFlightDates } from "../lib/flight-time.mjs";
+import {
+  airlineName,
+  airportName,
+  aircraftName,
+  aircraftSearchQuery,
+} from "../lib/flight-labels";
 import {
   aircraft,
   airlines,
-  airports,
+  airportTimezones,
   filterFlights,
   initialFilters,
   type LocalFlight,
@@ -28,13 +35,12 @@ import {
   styles,
 } from "../components/ui";
 export function FlightCard({ flight: f }: { flight: LocalFlight }) {
-  const { words, t } = useApp();
-  const city = (code: string) =>
-    (airports as Record<string, { city: string }>)[code]?.city || "";
+  const { locale, words } = useApp();
+  const city = (code: string) => airportName(code, locale);
   return (
     <Pressable
       accessibilityRole="button"
-      accessibilityLabel={`${f.date} ${f.flight} ${f.origin} to ${f.destination}`}
+      accessibilityLabel={`${f.date} ${f.flight} ${city(f.origin)} ${words("to", "至")} ${city(f.destination)}`}
       onPress={() =>
         router.push({ pathname: "/flight/[id]", params: { id: f.id } })
       }
@@ -53,6 +59,7 @@ export function FlightCard({ flight: f }: { flight: LocalFlight }) {
           </Txt>
           <Txt muted style={{ fontSize: 12 }}>
             {f.date}
+            {f.departureTime ? ` · ${f.departureTime}` : ""}
           </Txt>
         </View>
         <View style={{ flexDirection: "row", alignItems: "center", gap: 16 }}>
@@ -70,40 +77,26 @@ export function FlightCard({ flight: f }: { flight: LocalFlight }) {
             </Txt>
           </View>
         </View>
-        <Txt>{f.airline}</Txt>
+        <Txt>{airlineName(f.airline, locale)}</Txt>
         <Txt muted style={{ fontSize: 12 }}>
-          {f.model || f.modelLabel}{" "}
+          {aircraftName(f.model || f.modelLabel, locale)}{" "}
           {f.registration ? `· ${f.registration}` : ""}
-        </Txt>
-        <Txt accent style={{ fontSize: 12 }}>
-          {f.status === "completed"
-            ? words("Flown", "已乘坐")
-            : f.status === "planned"
-              ? words("Planned", "待出发")
-              : words("Cancelled", "已取消")}
-          {f.model ? ` · ${t("机型")}` : ""}
         </Txt>
       </Card>
     </Pressable>
   );
 }
 export function FlightsScreen() {
-  const { colors, words, flights, filters, setFilters } = useApp();
-  const params = useLocalSearchParams<{ status?: string }>();
-  const status = ["completed", "planned", "cancelled"].includes(
-    params.status || "",
-  )
-    ? params.status!
-    : "completed";
-  const setStatus = (status: string) => router.setParams({ status });
+  const { colors, words, locale, flights, filters, setFilters } = useApp();
   const f = filters.flights;
   const query = useDeferredValue(f.query);
   const hasFilters = Object.entries(f).some(
-    ([key, value]) => value !== initialFilters[key as keyof typeof initialFilters],
+    ([key, value]) =>
+      value !== initialFilters[key as keyof typeof initialFilters],
   );
   const items = useMemo(() => {
     const scoped = filterFlights(
-      flights.filter((f) => f.status === status),
+      flights.filter((f) => f.status !== "cancelled"),
       { ...f, query: "" },
       aircraft,
       airlines,
@@ -112,7 +105,7 @@ export function FlightsScreen() {
       (
         filterFlights(
           scoped,
-          { ...f, query },
+          { ...f, query: aircraftSearchQuery(query) },
           aircraft,
           airlines,
         ) as LocalFlight[]
@@ -122,14 +115,24 @@ export function FlightsScreen() {
     const selected = scoped.filter(
       (f) =>
         matches.has(f.id) ||
-        [f.seatPosition, f.cabin, f.trip, f.notes].some((v) =>
-          v?.toLowerCase().includes(normalized),
-        ),
+        [
+          f.seatPosition,
+          f.cabin,
+          f.trip,
+          f.notes,
+          airportName(f.origin, locale),
+          airportName(f.destination, locale),
+        ].some((v) => v?.toLowerCase().includes(normalized)),
     );
-    return status === "planned"
-      ? [...selected].sort((a, b) => a.date.localeCompare(b.date))
-      : selected;
-  }, [flights, status, f, query]);
+    if (f.sort === "name") return selected;
+    return selected.sort((a, b) => {
+      const nextA = a.status === "planned",
+        nextB = b.status === "planned";
+      if (nextA !== nextB) return nextA ? -1 : 1;
+      const order = compareFlightDates(a, b, airportTimezones);
+      return nextA ? order : -order;
+    });
+  }, [flights, f, query, locale]);
   return (
     <View style={{ flex: 1, backgroundColor: colors.bg }}>
       <FlatList
@@ -148,7 +151,7 @@ export function FlightsScreen() {
           <View style={{ gap: 16 }}>
             <Button
               secondary
-              title={words("Passport & yearly stats", "Passport 与年度统计")}
+              title={words("Passport & yearly stats", "飞行护照与年度统计")}
               icon="globe-outline"
               onPress={() => router.push("/passport")}
             />
@@ -191,7 +194,12 @@ export function FlightsScreen() {
                   "航司、航线、航班号或旅程",
                 )}
                 placeholderTextColor={colors.muted}
-                style={{ fontSize: 16, color: colors.text, flex: 1, minHeight: 50 }}
+                style={{
+                  fontSize: 16,
+                  color: colors.text,
+                  flex: 1,
+                  minHeight: 50,
+                }}
                 autoCorrect={false}
                 returnKeyType="search"
                 onSubmitEditing={Keyboard.dismiss}
@@ -200,24 +208,12 @@ export function FlightsScreen() {
                 name="options-outline"
                 label={words("Flight filters", "航班筛选")}
                 onPress={() =>
-                  router.push({ pathname: "/filters", params: { mode: "flights" } })
+                  router.push({
+                    pathname: "/filters",
+                    params: { mode: "flights" },
+                  })
                 }
               />
-            </View>
-            <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
-              {[
-                ["completed", words("Flown", "已乘坐")],
-                ["planned", words("Upcoming", "待出发")],
-                ["cancelled", words("Cancelled", "已取消")],
-              ].map(([value, title]) => (
-                <Button
-                  key={value}
-                  title={`${title} ${flights.filter((f) => f.status === value).length}`}
-                  secondary={status !== value}
-                  onPress={() => setStatus(value)}
-                  style={{ paddingHorizontal: 12 }}
-                />
-              ))}
             </View>
             {hasFilters && (
               <Button

@@ -168,10 +168,12 @@ test("flight validation handles future records, leap days, unknown values and lo
     "AC123",
   );
   assert.throws(() => validateFlight(flight({ date: "2025-02-29" })));
-  assert.throws(
-    () => validateFlight(flight({ date: "2099-01-01" }), "2026-11-04"),
-    /Future/,
+  assert.equal(
+    validateFlight(flight({ date: "2099-01-01" }), "2026-11-04").status,
+    "planned",
   );
+  assert.equal(validateFlight(flight({ status: undefined }), "2026-11-04").status, "completed");
+  assert.equal(validateFlight(flight({ date: "2026-11-04", status: undefined }), "2026-11-04").status, "planned");
   assert.equal(
     validateFlight(flight({ date: "2099-01-01", status: "planned" })).status,
     "planned",

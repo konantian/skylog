@@ -15,7 +15,7 @@ export function FlightRecords({flights}:{flights:Flight[]}) {
   const routeCard=(label:string,record:RouteRecord|null)=> <div className="flight-record">
     <span className="record-label">{label}</span>
     <strong className="record-route">{record?<>{record.flight.origin}<Icon name="arrow" size={18}/>{record.flight.destination}</>:t("暂无记录")}</strong>
-    {record&&<><span className="record-distance">{t("约")}{distance(record.km)} km</span><span className="record-detail">{city(record.flight.origin)} → {city(record.flight.destination)}</span></>}
+    {record&&<><span className="record-distance">{t("约")}{distance(record.km)} km</span><span className="record-detail">{t(city(record.flight.origin))} → {t(city(record.flight.destination))}</span></>}
   </div>;
   return <section className="flight-records" aria-labelledby="flight-records-title">
     <div className="records-heading"><h4 id="flight-records-title">{t("飞行里程与个人纪录")}</h4><span>{t("全部")}{flights.length} {t("段乘机记录")}</span></div>

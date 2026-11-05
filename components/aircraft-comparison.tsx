@@ -19,7 +19,7 @@ export function ComparisonTray({models,onRemove,onClear,onOpen}:{models:string[]
   const {t}=useLocale();
   return <aside className="comparison-tray" aria-label={t('已选对比机型')}>
     <div className="comparison-tray-title"><Icon name="compare" size={20}/><strong>{t('机型对比')}</strong><span role="status">{models.length} / 3</span><button onClick={onClear}>{t('清空')}</button></div>
-    <div className="comparison-chips">{models.map(model=><button key={model} onClick={()=>onRemove(model)} aria-label={t('移除 {0}',[model])}>{model}<Icon name="close" size={15}/></button>)}</div>
+    <div className="comparison-chips">{models.map(model=><button key={model} onClick={()=>onRemove(model)} aria-label={t('移除 {0}',[model])}>{t(model)}<Icon name="close" size={15}/></button>)}</div>
     <button className="explore-button" onClick={onOpen}>{models.length<2?t('再选一款'):t('开始对比')}<Icon name="arrow" size={18}/></button>
   </aside>;
 }
@@ -40,7 +40,7 @@ export function AircraftComparison({models,aircraft,photos,flights,onSelect,onCl
     <div className="dialog-heading"><div><span className="eyebrow">AIRCRAFT / SIDE BY SIDE</span><h2 id="compare-title">{t('机型对比')}</h2></div><div className="dialog-actions"><LanguageSwitch/><button autoFocus className="icon-button" onClick={onClose} aria-label={t('关闭对比')}><Icon name="close" size={24}/></button></div></div>
     <div className="comparison-body">
       <p className="comparison-intro">{t('选 2–3 款，看看它们真正的大小差别。')}</p>
-      <div className="comparison-selectors">{[0,1,2].map(index=><label key={index} className="select-field"><span>{t('机型 {0}',[String(index+1).padStart(2,'0')])}{index===2&&` · ${t('可选')}`}</span><select aria-label={t('对比机型 {0}',[index+1])} value={models[index]||''} disabled={index>models.length} onChange={e=>{onSelect(index,e.target.value);e.currentTarget.blur();}}><option value="">{t('选择机型')}</option>{sorted.map(entry=><option value={entry.name} key={entry.id} disabled={models.some((model,i)=>model===entry.name&&i!==index)}>{entry.name}</option>)}</select></label>)}</div>
+      <div className="comparison-selectors">{[0,1,2].map(index=><label key={index} className="select-field"><span>{t('机型 {0}',[String(index+1).padStart(2,'0')])}{index===2&&` · ${t('可选')}`}</span><select aria-label={t('对比机型 {0}',[index+1])} value={models[index]||''} disabled={index>models.length} onChange={e=>{onSelect(index,e.target.value);e.currentTarget.blur();}}><option value="">{t('选择机型')}</option>{sorted.map(entry=><option value={entry.name} key={entry.id} disabled={models.some((model,i)=>model===entry.name&&i!==index)}>{t(entry.name)}</option>)}</select></label>)}</div>
       {models.length<2?<div className="comparison-empty"><Icon name="compare" size={36}/><p>{t('至少选择两款，开始对比。')}</p></div>:<>
         <div className="comparison-scale-note"><Icon name="compare" size={16}/><span>{t('统一比例 · 机头与地面对齐')}</span><small>{t('侧视图比较机长与轮廓，翼展见下方尺寸。')}</small></div>
         <div className="comparison-columns" style={{'--compare-count':models.length} as CSSProperties}>
@@ -48,7 +48,7 @@ export function AircraftComparison({models,aircraft,photos,flights,onSelect,onCl
             const entry=aircraft.find(a=>a.name===model)!;
             const margin=drawing?drawing.width*.003:0;
             return <article className="comparison-model" key={model}>
-              <header><span className="eyebrow">{entry.manufacturer} · {t(entry.category)}</span><h3>{model}</h3><span className="comparison-state"><Icon name={entry.unlocked?'check':'lock'} size={13}/>{entry.unlocked?t('已解锁'):t('待解锁')}</span></header>
+              <header><span className="eyebrow">{entry.manufacturer} · {t(entry.category)}</span><h3>{t(model)}</h3><span className="comparison-state"><Icon name={entry.unlocked?'check':'lock'} size={13}/>{entry.unlocked?t('已解锁'):t('待解锁')}</span></header>
               {drawing?<>
                 <svg className="technical-canvas comparison-canvas" viewBox="0 0 600 275" role="img" aria-label={t('{0}，机长 {1} 米，翼展 {2} 米，机高 {3} 米',[model,drawing.length,drawing.span,drawing.height])}>
                   <path className="technical-baseline" d="M35 205H565M550 25V215"/>
@@ -59,7 +59,7 @@ export function AircraftComparison({models,aircraft,photos,flights,onSelect,onCl
                   <text className="technical-scale" x="40" y="242">10 m</text>
                 </svg>
                 <dl className="technical-specs comparison-specs">{(['length','span','height'] as const).map((key,i)=><div key={key}><dt>{[t('机长'),t('翼展'),t('机高')][i]}</dt><dd>{drawing[key]}<small>m</small></dd></div>)}</dl>
-              </>:<p>{t('此型号的官方技术图尚待核验，预览保留比例示意。')}</p>}
+              </>:<p>{t('机型比例示意图')}</p>}
             </article>;
           })}
         </div>
@@ -73,13 +73,13 @@ export function AircraftComparison({models,aircraft,photos,flights,onSelect,onCl
             const airlines=[...new Set(modelPhotos.flatMap(p=>airlinesForModel(p,model)))].sort();
             const flown=flightsForEntry(entry,flights).length;
             return <article className="comparison-record" key={model}>
-              <h3>{model}</h3>
+              <h3>{t(model)}</h3>
               <div className="comparison-features"><h4>{t('辨认要点')}</h4><strong>{[t('{0} 台发动机',[cues.engines]),...cues.features.map((feature:string)=>t(feature))].join(' · ')}</strong>{profile&&<p>{t(profile.description)}</p>}</div>
-              <section className="comparison-collection"><h4>{t('我的收藏')}</h4>{cover?<><img {...photoImageSources(cover,basePath)} sizes="(max-width: 760px) 100vw, (max-width: 1200px) 45vw, 600px" alt={`${cover.airlines.join(' / ')} · ${model} · ${cover.id}`} loading="lazy"/><span className="comparison-photo-caption">{cover.airlines.join(' / ')} · {cover.id}</span></>:<div className="comparison-unseen"><Icon name="camera" size={24}/>{t('等待下一次相遇')}</div>}
-                <p>{t('{0} 张照片 · {1} 家航司',[entry.photoIds.length,airlines.length])}</p>{airlines.length>0&&<p className="comparison-airlines">{airlines.join(' · ')}</p>}
-                <span className="comparison-flown"><Icon name="aircraft" size={16}/>{flown?t('坐过此机型 · {0} 段',[flown]):t('暂无已确认的乘坐记录')}</span>
+              <section className="comparison-collection"><h4>{t('我的收藏')}</h4>{cover?<><img {...photoImageSources(cover,basePath)} sizes="(max-width: 760px) 100vw, (max-width: 1200px) 45vw, 600px" alt={`${cover.airlines.map(name=>t(name)).join(' / ')} · ${model} · ${cover.id}`} loading="lazy"/><span className="comparison-photo-caption">{cover.airlines.map(name=>t(name)).join(' / ')} · {cover.id}</span></>:<div className="comparison-unseen"><Icon name="camera" size={24}/>{t('等待下一次相遇')}</div>}
+                <p>{t('{0} 张照片 · {1} 家航司',[entry.photoIds.length,airlines.length])}</p>{airlines.length>0&&<p className="comparison-airlines">{airlines.map(name=>t(name)).join(' · ')}</p>}
+                <span className="comparison-flown"><Icon name="aircraft" size={16}/>{flown?t('坐过此机型 · {0} 段',[flown]):t('暂无乘坐记录')}</span>
               </section>
-              {drawing&&<details className="comparison-sources"><summary>{t('图纸与尺寸来源')}</summary><p>{t('referenceLabel' in drawing?drawing.referenceLabel:'官方资料参考图')}</p>{'note' in drawing&&<p>{t(drawing.note)}</p>}<a href={`${drawing.source.url}${'page' in drawing.source?`#page=${drawing.source.page}`:''}`} target="_blank" rel="noreferrer">{drawing.source.title} ↗</a>{'additionalSources' in drawing&&drawing.additionalSources.map((source:{url:string;title:string;page?:number})=><a key={source.url} href={`${source.url}${source.page?`#page=${source.page}`:''}`} target="_blank" rel="noreferrer">{source.title} ↗</a>)}</details>}
+
             </article>;
           })}
         </div>

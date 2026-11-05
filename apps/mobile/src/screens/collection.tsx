@@ -8,6 +8,12 @@ import {
   useWindowDimensions,
 } from "react-native";
 import { KeyboardControls } from "../components/keyboard-controls";
+import { CountryFlags } from "../components/country-flags";
+import {
+  airlineName,
+  aircraftName,
+  aircraftSearchQuery,
+} from "../lib/flight-labels";
 import { router } from "expo-router";
 import { useApp } from "../lib/store";
 import {
@@ -34,12 +40,16 @@ import {
   styles,
 } from "../components/ui";
 export function EntryCard({ entry }: { entry: Entry }) {
-  const { t, words, colors } = useApp();
+  const { t, words, colors, locale } = useApp();
+  const name =
+    entry.kind === "airline" || entry.kind === "variant"
+      ? airlineName(entry.name, locale)
+      : aircraftName(entry.name, locale);
   const photo = photoById.get(entry.cover || "");
   return (
     <Pressable
       accessibilityRole="button"
-      accessibilityLabel={`${entry.name}, ${entry.unlocked ? t("已解锁") : t("待解锁")}`}
+      accessibilityLabel={`${name}, ${entry.unlocked ? t("已解锁") : t("待解锁")}`}
       onPress={() =>
         entry.kind === "variant"
           ? router.push({
@@ -65,7 +75,8 @@ export function EntryCard({ entry }: { entry: Entry }) {
         ) : entry.kind === "airline" ? (
           <View
             style={{
-              height: 190,
+              minHeight: 190,
+              padding: 20,
               alignItems: "center",
               justifyContent: "center",
               gap: 12,
@@ -73,26 +84,40 @@ export function EntryCard({ entry }: { entry: Entry }) {
               borderRadius: 14,
             }}
           >
-            <Icon name="globe-outline" size={42} />
-            <Txt style={{ fontSize: 28, fontWeight: "700" }}>
-              {entry.code || "—"}
+            <CountryFlags country={entry.country} size={64} />
+            <Txt
+              style={{
+                fontSize: 22,
+                lineHeight: 30,
+                fontWeight: "700",
+                textAlign: "center",
+              }}
+            >
+              {name}
             </Txt>
-            <Txt muted>{t("待解锁")}</Txt>
+            <Txt muted>{entry.code || "—"}</Txt>
           </View>
         ) : (
           <Silhouette entry={entry} height={190} />
         )}
         <View style={{ paddingHorizontal: 6, paddingBottom: 8, gap: 5 }}>
-          <Txt accent style={styles.eyebrow}>
-            {entry.kind === "airline"
-              ? t(entry.country)
-              : entry.kind === "variant"
-                ? entry.displayModel
-                : entry.manufacturer}
-          </Txt>
-          <Txt style={{ fontSize: 23, lineHeight: 29, fontWeight: "700" }}>
-            {entry.name}
-          </Txt>
+          <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
+            {entry.kind === "airline" && entry.unlocked && (
+              <CountryFlags country={entry.country} />
+            )}
+            <Txt accent style={[styles.eyebrow, { flexShrink: 1 }]}>
+              {entry.kind === "airline"
+                ? t(entry.country)
+                : entry.kind === "variant"
+                  ? aircraftName(entry.displayModel || "", locale)
+                  : aircraftName(entry.manufacturer || "", locale)}
+            </Txt>
+          </View>
+          {(entry.kind !== "airline" || entry.unlocked) && (
+            <Txt style={{ fontSize: 23, lineHeight: 29, fontWeight: "700" }}>
+              {name}
+            </Txt>
+          )}
           {entry.kind === "variant" && <Txt muted>{t(entry.livery)}</Txt>}
           <View
             style={{
@@ -114,11 +139,13 @@ export function EntryCard({ entry }: { entry: Entry }) {
   );
 }
 export function PhotoCard({ photo }: { photo: Photo }) {
-  const { saved, words } = useApp();
+  const { saved, words, locale } = useApp();
+  const names = photo.airlines.map((name) => airlineName(name, locale));
+  const models = photo.models.map((name) => aircraftName(name, locale));
   return (
     <Pressable
       accessibilityRole="button"
-      accessibilityLabel={`${photo.airlines.join(", ")} ${photo.models.join(", ")} ${photo.id}`}
+      accessibilityLabel={`${names.join(", ")} ${models.join(", ")} ${photo.id}`}
       onPress={() =>
         router.push({ pathname: "/photo/[id]", params: { id: photo.id } })
       }
@@ -128,9 +155,9 @@ export function PhotoCard({ photo }: { photo: Photo }) {
         <PhotoImage photo={photo} size="thumb" height={190} />
         <View style={{ paddingHorizontal: 6, gap: 3, paddingBottom: 6 }}>
           <Txt style={{ fontSize: 18, fontWeight: "600" }}>
-            {photo.airlines.join(" / ") || words("Private aircraft", "公务机")}
+            {names.join(" / ") || words("Private aircraft", "公务机")}
           </Txt>
-          <Txt muted>{photo.models.join(" / ")}</Txt>
+          <Txt muted>{models.join(" / ")}</Txt>
           <View
             style={{
               flexDirection: "row",
@@ -162,7 +189,7 @@ export function CollectionScreen({
   const { width } = useWindowDimensions();
   const columns = width >= 700 ? 2 : 1;
   const items = useMemo(() => {
-    const next = { ...f, query };
+    const next = { ...f, query: aircraftSearchQuery(query) };
     if (mode === "photos")
       return filterPhotos(
         onlySaved ? photos.filter((p) => saved.includes(p.id)) : photos,
@@ -197,104 +224,114 @@ export function CollectionScreen({
   ).length;
   return (
     <View style={{ flex: 1, backgroundColor: colors.bg }}>
-      <View style={{ padding: 20, gap: 14 }}>
-        <View
-          style={[
-            styles.row,
-            {
-              backgroundColor: colors.card,
-              borderWidth: 1,
-              borderColor: colors.line,
-              borderRadius: 16,
-              paddingLeft: 14,
-            },
-          ]}
-        >
-          <Icon name="search-outline" size={20} />
-          <TextInput
-            accessibilityLabel={t("搜索机型、航司、航班、注册号或照片编号")}
-            placeholder={words("Search your sky", "搜索你的天空")}
-            placeholderTextColor={colors.muted}
-            value={f.query}
-            onChangeText={(value) => setFilters(mode, { ...f, query: value })}
-            autoCorrect={false}
-            autoCapitalize="none"
-            returnKeyType="search"
-            onSubmitEditing={Keyboard.dismiss}
-            style={{ flex: 1, minHeight: 50, color: colors.text, fontSize: 16 }}
-          />
-          {f.query.length > 0 && (
-            <IconButton
-              name="close-circle-outline"
-              label={words("Clear search", "清空搜索")}
-              onPress={() => setFilters(mode, { ...f, query: "" })}
-            />
-          )}
-          <IconButton
-            name="options-outline"
-            label={words("Filters", "筛选")}
-            active={active > 0}
-            onPress={() =>
-              router.push({ pathname: "/filters", params: { mode } })
-            }
-          />
-        </View>
-        {mode !== "photos" && (
-          <View style={styles.row}>
-            {[
-              ["all", "全部"],
-              ["unlocked", "已解锁"],
-              ["locked", "待解锁"],
-            ].map(([value, label]) => (
-              <Pressable
-                key={value}
-                accessibilityRole="button"
-                accessibilityState={{ selected: f.status === value }}
-                onPress={() => setFilters(mode, { ...f, status: value })}
-                style={({ pressed }) => ({
-                  minHeight: 44,
-                  padding: 12,
-                  paddingHorizontal: 18,
-                  borderRadius: 24,
-                  backgroundColor:
-                    f.status === value ? colors.raised : "transparent",
-                  opacity: pressed ? 0.65 : 1,
-                })}
-              >
-                <Txt accent={f.status === value} muted={f.status !== value}>
-                  {t(label)}
-                </Txt>
-              </Pressable>
-            ))}
-          </View>
-        )}
-        <View
-          style={{
-            flexDirection: "row",
-            justifyContent: "space-between",
-            gap: 12,
-          }}
-        >
-          <Txt muted style={{ fontSize: 12 }}>
-            {items.length}{" "}
-            {words(
-              mode === "photos" ? "photographs" : "entries",
-              mode === "photos" ? "张照片" : "个条目",
-            )}
-            {active > 0 ? ` · ${active} ${words("filters", "项筛选")}` : ""}
-          </Txt>
-          {(active > 0 || f.query || f.status !== "all") && (
-            <Pressable
-              accessibilityRole="button"
-              onPress={() => setFilters(mode, { ...initialFilters })}
-              hitSlop={10}
-            >
-              <Txt accent>{words("Reset", "重置")}</Txt>
-            </Pressable>
-          )}
-        </View>
-      </View>
       <FlatList
+        style={{ flex: 1 }}
+        ListHeaderComponent={
+          <View style={{ paddingTop: 20, gap: 14 }}>
+            <View
+              style={[
+                styles.row,
+                {
+                  backgroundColor: colors.card,
+                  borderWidth: 1,
+                  borderColor: colors.line,
+                  borderRadius: 16,
+                  paddingLeft: 14,
+                },
+              ]}
+            >
+              <Icon name="search-outline" size={20} />
+              <TextInput
+                accessibilityLabel={t("搜索机型、航司、航班、注册号或照片编号")}
+                placeholder={words("Search your sky", "搜索你的天空")}
+                placeholderTextColor={colors.muted}
+                value={f.query}
+                onChangeText={(value) =>
+                  setFilters(mode, { ...f, query: value })
+                }
+                autoCorrect={false}
+                autoCapitalize="none"
+                returnKeyType="search"
+                onSubmitEditing={Keyboard.dismiss}
+                style={{
+                  flex: 1,
+                  minHeight: 50,
+                  color: colors.text,
+                  fontSize: 16,
+                }}
+              />
+              {f.query.length > 0 && (
+                <IconButton
+                  name="close-circle-outline"
+                  label={words("Clear search", "清空搜索")}
+                  onPress={() => setFilters(mode, { ...f, query: "" })}
+                />
+              )}
+              <IconButton
+                name="options-outline"
+                label={words("Filters", "筛选")}
+                active={active > 0}
+                onPress={() =>
+                  router.push({ pathname: "/filters", params: { mode } })
+                }
+              />
+            </View>
+            {mode !== "photos" && (
+              <View style={styles.row}>
+                {[
+                  ["all", "全部"],
+                  ["unlocked", "已解锁"],
+                  ["locked", "待解锁"],
+                ].map(([value, label]) => (
+                  <Pressable
+                    key={value}
+                    accessibilityRole="button"
+                    accessibilityState={{ selected: f.status === value }}
+                    onPress={() => setFilters(mode, { ...f, status: value })}
+                    style={({ pressed }) => ({
+                      minHeight: 44,
+                      padding: 12,
+                      paddingHorizontal: 18,
+                      borderRadius: 24,
+                      backgroundColor:
+                        f.status === value ? colors.raised : "transparent",
+                      opacity: pressed ? 0.65 : 1,
+                    })}
+                  >
+                    <Txt accent={f.status === value} muted={f.status !== value}>
+                      {t(label)}
+                    </Txt>
+                  </Pressable>
+                ))}
+              </View>
+            )}
+            <View
+              style={{
+                flexDirection: "row",
+                justifyContent: "space-between",
+                gap: 12,
+              }}
+            >
+              <Txt muted style={{ fontSize: 12 }}>
+                {items.length}{" "}
+                {words(
+                  mode === "photos" ? "photographs" : "entries",
+                  mode === "photos" ? "张照片" : "个条目",
+                )}
+                {active > 0 ? ` · ${active} ${words("filters", "项筛选")}` : ""}
+              </Txt>
+              {(active > 0 || f.query || f.status !== "all") && (
+                <Pressable
+                  accessibilityRole="button"
+                  onPress={() => setFilters(mode, { ...initialFilters })}
+                  hitSlop={10}
+                >
+                  <Txt accent>{words("Reset", "重置")}</Txt>
+                </Pressable>
+              )}
+            </View>
+          </View>
+        }
         key={`${mode}:${columns}`}
         data={items as (Entry | Photo)[]}
         numColumns={columns}

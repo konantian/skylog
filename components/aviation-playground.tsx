@@ -53,7 +53,7 @@ function Quiz({aircraft,photos,onPhotos}:{aircraft:Entry[];photos:Photo[];onPhot
     dialog?.scrollTo({top:dialog.scrollHeight,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
   },[answer,index]);
   const restart=()=>{const round=makeQuiz(pool) as Question[];setQuestions(round);setAnswers(round.map(()=>null));setIndex(0);setFinished(false);setImageReady(false);};
-  if(!questions.length)return <p className="play-empty">{t("暂时没有足够的已确认照片来出题。")}</p>;
+  if(!questions.length)return <p className="play-empty">{t("暂时没有足够的照片来出题。")}</p>;
   const question=questions[index],score=quizScore(questions,answers);
   if(finished)return <div className="quiz-results">
     <div className="quiz-score"><span className="eyebrow">ROUND COMPLETE</span><strong>{score}<small> / {questions.length}</small></strong><h3 ref={questionHeading} tabIndex={-1}>{score===questions.length?t("识机达人，全对！"):t("又多认识了几位天空朋友。")}</h3><p>{t("点击照片，可以继续查看具体型号与拍摄细节。")}</p></div>
@@ -63,11 +63,11 @@ function Quiz({aircraft,photos,onPhotos}:{aircraft:Entry[];photos:Photo[];onPhot
   return <div className="quiz-body">
     <div className="quiz-progress"><span>{t("第")}{index+1} / {questions.length} {t("题")}</span><span>{t("已答对")}{score} {t("题")}</span></div>
     <h3 className="quiz-question" ref={questionHeading} tabIndex={-1}>{t("这是哪个机型家族或系列？")}</h3>
-    <GamePhoto key={question.photo.id} photo={question.photo} alt={answer?`${question.model}，${question.photo.airlines.join(' / ')}`:t("第 {0} 题：请观察照片中的飞机",[index+1])} onReady={setImageReady}/>
+    <GamePhoto key={question.photo.id} photo={question.photo} alt={answer?`${question.model}，${question.photo.airlines.map(name=>t(name)).join(' / ')}`:t("第 {0} 题：请观察照片中的飞机",[index+1])} onReady={setImageReady}/>
     <div className="quiz-choices" role="group" aria-label={t("选择机型答案")}>{question.options.map((option,i)=><button key={t(option)} disabled={!imageReady} aria-disabled={answer!==null} aria-pressed={answer===option} className={`${answer&&option===question.answer?'is-correct':''} ${answer===option&&option!==question.answer?'is-wrong':''}`} onClick={()=>setAnswers(previous=>recordGuess(questions,previous,index,option))}>
       <span className="choice-letter">{'ABCD'[i]}</span><span>{t(option)}</span>{answer&&option===question.answer?<span className="choice-result"><Icon name="check" size={15}/>{t("正确答案")}</span>:answer===option?<span className="choice-result"><Icon name="close" size={15}/>{t("你的选择")}</span>:null}
     </button>)}</div>
-    {answer?<div className="quiz-answer" role="status"><h4>{answer===question.answer?t("答对了！"):t("正确答案是 {0}",[t(question.answer)])}</h4><p className="quiz-photo-label">{t("照片中的飞机：")}{question.model} · {question.photo.airlines.join(' / ')||'Private / Business'}</p><p>{t(question.profile.description)}</p><a href={question.profile.source} target="_blank" rel="noreferrer">{t("制造商资料")}<Icon name="diagonal" size={12}/></a></div>:<p className="play-note">{t("每轮 5 题，按家族／系列作答；揭晓后显示具体子型号。无需计时，慢慢看。")}</p>}
+    {answer?<div className="quiz-answer" role="status"><h4>{answer===question.answer?t("答对了！"):t("正确答案是 {0}",[t(question.answer)])}</h4><p className="quiz-photo-label">{t("照片中的飞机：")}{question.model} · {question.photo.airlines.map(name=>t(name)).join(' / ')||'Private / Business'}</p><p>{t(question.profile.description)}</p><a href={question.profile.source} target="_blank" rel="noreferrer">{t("制造商资料")}<Icon name="diagonal" size={12}/></a></div>:<p className="play-note">{t("每轮 5 题，按家族／系列作答；揭晓后显示具体子型号。无需计时，慢慢看。")}</p>}
     <div className="quiz-next"><span>{answer?t("记住这个轮廓，下次机场见。"):t("选择一个答案后揭晓")}</span><button className="play-primary" disabled={!answer} onClick={()=>{if(index===questions.length-1)setFinished(true);else{setImageReady(false);setIndex(i=>i===index?i+1:i);}}}>{index===questions.length-1?t("查看成绩"):t("下一题")}<Icon name="arrow" size={17}/></button></div>
   </div>;
 }
@@ -81,8 +81,8 @@ function Discovery({photos,onPhotos}:{photos:Photo[];onPhotos:OpenPhotos}) {
   const next=()=>setDraw(current=>current.index+1>=current.deck.length?{deck:discoveryDeck(photos,current.deck[current.index].id),index:0}:{...current,index:current.index+1});
   return <div className="discovery-body">
     <div className="discovery-top"><span><i/> TODAY’S ENCOUNTER</span><span>{t("本轮第")}{index+1} {t("张 /")}{deck.length}</span></div>
-    <GamePhoto key={photo.id} photo={photo} alt={`${photo.models.join(' / ')} · ${photo.airlines.join(' / ')}`} scan/>
-    <div className="discovery-info" aria-live="polite"><span className="eyebrow">{photo.airlines.join(' / ')||'PRIVATE / BUSINESS'}</span><h3>{photo.models.join(' / ')}</h3><div className="discovery-facts"><span><Icon name="pin" size={14}/>{photo.airport}</span><span><Icon name="calendar" size={14}/>{photo.date}</span><span>{t("注册号")}{photo.registration?`${photo.registration.value}${photo.registration.status==='confirmed'?'':t(" · 推测")}`:t("待确认")}</span></div><p>{t(photo.livery)} {t("· 摄影 Yuan Wang")}</p></div>
+    <GamePhoto key={photo.id} photo={photo} alt={`${photo.models.map(name=>t(name)).join(' / ')} · ${photo.airlines.map(name=>t(name)).join(' / ')}`} scan/>
+    <div className="discovery-info" aria-live="polite"><span className="eyebrow">{photo.airlines.map(name=>t(name)).join(' / ')||'PRIVATE / BUSINESS'}</span><h3>{photo.models.map(name=>t(name)).join(' / ')}</h3><div className="discovery-facts"><span><Icon name="pin" size={14}/>{photo.airport}</span><span><Icon name="calendar" size={14}/>{photo.date}</span><span>{t("注册号")}{photo.registration?.value||'—'}</span></div><p>{t(photo.livery)} {t("· 摄影 Yuan Wang")}</p></div>
     <div className="discovery-actions"><button className="play-secondary" onClick={()=>onPhotos([photo.id],0)}>{t("查看照片与机型档案")}<Icon name="diagonal" size={15}/></button><button className="play-primary" onClick={next}><Icon name="radar" size={17}/>{t("再遇见一架")}</button></div>
     <p className="play-note">{t("来自自己的拍摄收藏，同一轮里每张照片只出现一次。")}</p>
   </div>;

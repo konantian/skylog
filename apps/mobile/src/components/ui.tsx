@@ -18,6 +18,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import Svg, { G, Path } from "react-native-svg";
 import { aircraftShape } from "../../../../lib/aircraft-silhouettes.mjs";
 import { useApp } from "../lib/store";
+import { airlineName, aircraftName } from "../lib/flight-labels";
 import { imageUrl, type Photo, type Entry } from "../lib/catalog";
 export function Txt({
   muted = false,
@@ -226,7 +227,7 @@ export function PhotoImage({
   size?: "thumb" | "medium" | "full";
   height?: number;
 }) {
-  const { colors, words } = useApp();
+  const { colors, words, locale } = useApp();
   const [failed, setFailed] = useState(false);
   const [loaded, setLoaded] = useState(false);
   const [retry, setRetry] = useState(0);
@@ -248,7 +249,7 @@ export function PhotoImage({
           cachePolicy="memory-disk"
           recyclingKey={photo.id}
           transition={0}
-          accessibilityLabel={`${photo.airlines.join(", ")} ${photo.models.join(", ")}`}
+          accessibilityLabel={`${photo.airlines.map((name) => airlineName(name, locale)).join(", ")} ${photo.models.map((name) => aircraftName(name, locale)).join(", ")}`}
           onLoad={() => setLoaded(true)}
           onError={() => setFailed(true)}
         />
@@ -291,7 +292,7 @@ export function Silhouette({
   entry: Entry;
   height?: number;
 }) {
-  const { colors } = useApp();
+  const { colors, locale } = useApp();
   const shape = aircraftShape({
     model: entry.name,
     family: entry.family,
@@ -309,7 +310,7 @@ export function Silhouette({
       height={height}
       width="100%"
       viewBox="0 0 600 240"
-      accessibilityLabel={entry.name}
+      accessibilityLabel={aircraftName(entry.name, locale)}
     >
       <G transform={`translate(${shape.offset} 145) scale(${shape.scale})`}>
         {shape.paths.map((p, i) => (

@@ -38,7 +38,7 @@ export function FlightLiveData({ flight: f }: { flight: LocalFlight }) {
     [weather, setWeather] = useState<Weather[]>([]);
   const departure = flightTimes(f, airportTimezones).departure;
   const eligible =
-    f.status === "planned" &&
+    f.status !== "cancelled" &&
     departure != null &&
     Math.abs(departure - now) <= 24 * 3600000;
   if (!eligible) return null;
@@ -232,8 +232,8 @@ export function FlightLiveData({ flight: f }: { flight: LocalFlight }) {
       {!f.registration && (
         <Txt muted>
           {words(
-            "Add a confirmed aircraft registration to see its position.",
-            "填写已确认的飞机注册号后可查询位置。",
+            "Add an aircraft registration to see its position.",
+            "填写飞机注册号后可查询位置。",
           )}
         </Txt>
       )}

@@ -6,6 +6,7 @@ import * as Sharing from "expo-sharing";
 import { useApp } from "../lib/store";
 import { airports, initialFilters, type Filters } from "../lib/catalog";
 import { passportStats } from "../lib/passport.mjs";
+import { airlineName, airportName, aircraftName } from "../lib/flight-labels";
 import {
   Page,
   Txt,
@@ -18,8 +19,10 @@ import {
 } from "../components/ui";
 import { PassportBreakdown } from "../components/passport-breakdown";
 import { RouteMap } from "../components/route-map";
+import { CountryFlags } from "../components/country-flags";
+import countries from "../../../../data/country-flags.json";
 export default function Passport() {
-  const { colors, words, t, flights, setFilters } = useApp();
+  const { colors, words, t, locale, flights, setFilters } = useApp();
   const [year, setYear] = useState("all");
   const [rank, setRank] = useState("airlines");
   const shot = useRef<ViewShotRef>(null);
@@ -55,10 +58,7 @@ export default function Passport() {
       flightYear: year,
       ...(key ? { [key]: value } : {}),
     });
-    router.push({
-      pathname: "/(tabs)/flights",
-      params: { status: "completed" },
-    });
+    router.push("/(tabs)/flights");
   };
   const share = async () => {
     try {
@@ -76,7 +76,7 @@ export default function Passport() {
     <Page>
       <Stack.Screen
         options={{
-          title: "Passport",
+          title: words("Passport", "飞行护照"),
           headerRight: () => (
             <IconButton
               name="share-outline"
@@ -108,7 +108,10 @@ export default function Passport() {
         <Card style={{ gap: 24 }}>
           <View>
             <Txt accent style={styles.eyebrow}>
-              SKYLOG · PERSONAL FLIGHT PASSPORT
+              {words(
+                "SKYLOG · PERSONAL FLIGHT PASSPORT",
+                "SKYLOG · 个人飞行护照",
+              )}
             </Txt>
             <Txt style={[styles.title, { marginTop: 8 }]}>
               {words("Yuan Wang", "王源")}
@@ -137,34 +140,40 @@ export default function Passport() {
               label={words("Airports", "到访机场")}
             />
           </View>
-          <RouteMap flights={stats.flights} />
+          <RouteMap key={year} flights={stats.flights} />
           <Txt muted style={{ fontSize: 12 }}>
-            SKYLOG · konantian.github.io/skylog
+            SKYLOG
           </Txt>
         </Card>
       </ViewShot>
       <Section
         title={words("Your year in the sky", "你的云端足迹")}
-        caption={year === "all" ? "LIFETIME STATS" : year}
+        caption={year === "all" ? words("LIFETIME STATS", "生涯统计") : year}
       />
       <Card>
         <View style={styles.wrap}>
-          <Stat
-            value={
-              stats.durationKnown
-                ? `${Math.floor(stats.durationMinutes / 60)}h ${stats.durationMinutes % 60}m`
-                : "—"
-            }
-            label={words("Recorded flight time", "记录的飞行时长")}
-          />
-          <Stat
-            value={stats.delayKnown ? `${stats.delayMinutes} min` : "—"}
-            label={words("Total arrival delay", "累计到达延误")}
-          />
-          <Stat
-            value={stats.onTime === null ? "—" : `${stats.onTime}%`}
-            label={words("Arrived within 15 min", "到达延误少于15分钟")}
-          />
+          {stats.durationKnown > 0 && (
+            <Stat
+              value={
+                stats.durationKnown
+                  ? `${Math.floor(stats.durationMinutes / 60)}h ${stats.durationMinutes % 60}m`
+                  : "—"
+              }
+              label={words("Recorded flight time", "记录的飞行时长")}
+            />
+          )}
+          {stats.delayKnown > 0 && (
+            <>
+              <Stat
+                value={stats.delayKnown ? `${stats.delayMinutes} min` : "—"}
+                label={words("Total arrival delay", "累计到达延误")}
+              />
+              <Stat
+                value={stats.onTime === null ? "—" : `${stats.onTime}%`}
+                label={words("Arrived within 15 min", "到达延误少于15分钟")}
+              />
+            </>
+          )}
           <Stat
             value={stats.flightDays}
             label={words("Days you flew", "飞行天数")}
@@ -172,12 +181,22 @@ export default function Passport() {
           <Stat value={stats.airlines.length} label={t("坐过航司")} />
           <Stat value={stats.models.length} label={t("明确机型")} />
         </View>
-        <Txt muted style={{ fontSize: 12 }}>
-          {words(
-            `${stats.durationKnown}/${stats.total} flights have duration; ${stats.delayKnown}/${stats.total} have delay data. Unknown values are not counted as zero.`,
-            `${stats.durationKnown}/${stats.total} 段有时长，${stats.delayKnown}/${stats.total} 段有延误数据。缺失值不按零计算。`,
-          )}
-        </Txt>
+        {(stats.durationKnown > 0 || stats.delayKnown > 0) && (
+          <Txt muted style={{ fontSize: 12 }}>
+            {words(
+              `${stats.durationKnown}/${stats.total} flights have duration; ${stats.delayKnown}/${stats.total} have delay data. Unknown values are not counted as zero.`,
+              `${stats.durationKnown}/${stats.total} 段有时长，${stats.delayKnown}/${stats.total} 段有延误数据。缺失值不按零计算。`,
+            )}
+          </Txt>
+        )}
+        {!stats.durationKnown && (
+          <Txt muted>
+            {words(
+              "Flight time is not available yet. Actual departure and arrival times are needed to calculate it.",
+              "暂无飞行时长数据，补充实际起飞和降落时间后即可统计。",
+            )}
+          </Txt>
+        )}
         <Txt muted style={{ fontSize: 12 }}>
           {words(
             `Distances cover ${stats.measured}/${stats.total} flights and use airport great-circle estimates.`,
@@ -188,24 +207,56 @@ export default function Passport() {
       <PassportBreakdown flights={stats.flights} />
       <Card>
         <Section title={words("Delay report", "延误报告")} />
-        <View style={styles.wrap}>
-          <Stat
-            value={stats.delayPercent === null ? "—" : `${stats.delayPercent}%`}
-            label={words("Arrived later than scheduled", "晚于计划到达")}
-          />
-          <Stat
-            value={
-              stats.averageDelay === null ? "—" : `${stats.averageDelay} min`
-            }
-            label={words("Average of delayed flights", "延误航班平均晚到")}
-          />
-        </View>
-        <Txt muted>
-          {words(
-            `${stats.delayCount} late arrivals among ${stats.delayKnown} known records. A delay means more than 0 minutes.`,
-            `${stats.delayKnown} 段有数据，其中 ${stats.delayCount} 段晚到。这里以晚于计划 0 分钟为界。`,
-          )}
-        </Txt>
+        {stats.delayKnown > 0 ? (
+          <>
+            <View style={styles.wrap}>
+              <Stat
+                value={
+                  stats.delayPercent === null ? "—" : `${stats.delayPercent}%`
+                }
+                label={words("Arrived later than scheduled", "晚于计划到达")}
+              />
+              <Stat
+                value={
+                  stats.averageDelay === null
+                    ? "—"
+                    : `${stats.averageDelay} min`
+                }
+                label={words("Average of delayed flights", "延误航班平均晚到")}
+              />
+            </View>
+            <Txt muted>
+              {words(
+                `${stats.delayCount} late arrivals among ${stats.delayKnown} known records. A delay means more than 0 minutes.`,
+                `${stats.delayKnown} 段有数据，其中 ${stats.delayCount} 段晚到。这里以晚于计划 0 分钟为界。`,
+              )}
+            </Txt>
+          </>
+        ) : (
+          <>
+            <Txt muted>
+              {words(
+                "These records do not include scheduled and actual arrival times, so delay and on-time statistics are not available yet.",
+                "这些记录尚未包含计划与实际到达时间，暂时无法计算延误和准点率。",
+              )}
+            </Txt>
+            <Button
+              secondary
+              icon="download-outline"
+              title={words(
+                "Import complete flight records",
+                "导入完整乘机记录",
+              )}
+              onPress={() => router.push("/settings")}
+            />
+            <Txt muted style={{ fontSize: 12 }}>
+              {words(
+                "Import a Flighty CSV with these times from Settings to fill missing details without duplicating flights.",
+                "可在设置中导入包含这些时间的 Flighty CSV，补全已有航班，不会重复添加。",
+              )}
+            </Txt>
+          </>
+        )}
         {stats.delayAirlines.map((item) => (
           <View
             key={item.name}
@@ -215,7 +266,7 @@ export default function Passport() {
               justifyContent: "space-between",
             }}
           >
-            <Txt style={{ flex: 1 }}>{item.name}</Txt>
+            <Txt style={{ flex: 1 }}>{airlineName(item.name, locale)}</Txt>
             <Txt accent>{item.count} min</Txt>
           </View>
         ))}
@@ -261,7 +312,9 @@ export default function Passport() {
                         : rank === "routes"
                           ? "route"
                           : "query",
-                  rank === "routes" ? item.name.replace(" ↔ ", "~") : item.name,
+                  rank === "routes"
+                    ? item.name.replace(" ↔ ", "~")
+                    : item.name,
                 )
               }
               style={({ pressed }) => ({
@@ -275,8 +328,23 @@ export default function Passport() {
               <Txt muted style={{ width: 25 }}>
                 {String(i + 1).padStart(2, "0")}
               </Txt>
-              <Txt style={{ flex: 1 }}>{item.name}</Txt>
-              <Txt accent>
+              <View style={{ flex: 1, gap: 2 }}>
+                <Txt>
+                  {rank === "airlines" || rank === "distance"
+                    ? airlineName(item.name, locale)
+                    : rank === "airports"
+                      ? airportName(item.name, locale)
+                      : rank === "models"
+                        ? aircraftName(item.name, locale)
+                        : item.name}
+                </Txt>
+                {rank === "airports" && (
+                  <Txt muted style={{ fontSize: 12 }}>
+                    {item.name}
+                  </Txt>
+                )}
+              </View>
+              <Txt accent style={{ flexShrink: 0, textAlign: "right" }}>
                 {item.count.toLocaleString()}
                 {rank === "distance" ? " km" : ""}
               </Txt>
@@ -350,21 +418,33 @@ export default function Passport() {
           )}
         </Txt>
         <View style={styles.wrap}>
-          {stats.countries.map((country) => (
-            <View
-              key={country}
-              style={{
-                borderWidth: 1,
-                borderColor: colors.accent,
-                borderRadius: 12,
-                padding: 16,
-              }}
-            >
-              <Txt accent style={{ fontWeight: "700", fontSize: 20 }}>
-                {country}
-              </Txt>
-            </View>
-          ))}
+          {stats.countries.map((country) => {
+            const name = Object.entries(countries).find(
+              ([, codes]) =>
+                codes.length === 1 && codes.includes(country.toLowerCase()),
+            )?.[0];
+            return (
+              <View
+                key={country}
+                accessible
+                accessibilityLabel={name ? t(name) : country}
+                style={{
+                  borderWidth: 1,
+                  borderColor: colors.line,
+                  borderRadius: 12,
+                  padding: 12,
+                  gap: 8,
+                  alignItems: "center",
+                  width: 94,
+                }}
+              >
+                <CountryFlags country={country} size={48} />
+                <Txt muted style={{ fontSize: 12, textAlign: "center" }}>
+                  {name ? t(name) : country}
+                </Txt>
+              </View>
+            );
+          })}
         </View>
       </Card>
       <Card>
@@ -376,12 +456,7 @@ export default function Passport() {
             style={{ minHeight: 48, justifyContent: "center" }}
           >
             <Txt>
-              {code} ·{" "}
-              {(airports as Record<string, { city: string }>)[code]?.city ||
-                words(
-                  "Airport not in offline database",
-                  "离线资料中暂无此机场",
-                )}
+              {code} · {airportName(code, locale)}
             </Txt>
           </Pressable>
         ))}

@@ -2,13 +2,15 @@ import { useState, useRef } from "react";
 import { View, FlatList, Pressable, useWindowDimensions } from "react-native";
 import { router } from "expo-router";
 import { FlightCard } from "../../screens/flights";
-import { todayLocal } from "../../lib/database.mjs";
+import { compareFlightDates } from "../../lib/flight-time.mjs";
+import { airlineName, aircraftName } from "../../lib/flight-labels";
 import { useApp } from "../../lib/store";
 import {
   heroes,
   photos,
   aircraft,
   airlines,
+  airportTimezones,
   type Photo,
 } from "../../lib/catalog";
 import {
@@ -23,14 +25,14 @@ import {
   styles,
 } from "../../components/ui";
 export default function Home() {
-  const { words, t, completed, saved, flights } = useApp();
+  const { words, t, locale, completed, saved, flights } = useApp();
   const { width } = useWindowDimensions();
   const cardWidth = Math.min(width - 40, 860);
   const [index, setIndex] = useState(0);
   const list = useRef<FlatList<Photo>>(null);
   const upcoming = [...flights]
-    .filter((f) => f.status === "planned" && f.date >= todayLocal())
-    .sort((a, b) => a.date.localeCompare(b.date))
+    .filter((f) => f.status === "planned")
+    .sort((a, b) => compareFlightDates(a, b, airportTimezones))
     .slice(0, 2);
   const select = (i: number) => {
     setIndex(i);
@@ -71,7 +73,7 @@ export default function Home() {
           renderItem={({ item }) => (
             <Pressable
               accessibilityRole="button"
-              accessibilityLabel={`${item.airlines.join(", ")} ${item.models.join(", ")}`}
+              accessibilityLabel={`${item.airlines.map((name) => airlineName(name, locale)).join(", ")} ${item.models.map((name) => aircraftName(name, locale)).join(", ")}`}
               onPress={() =>
                 router.push({
                   pathname: "/photo/[id]",
@@ -83,15 +85,20 @@ export default function Home() {
               <PhotoImage photo={item} height={cardWidth * 0.64} />
               <View style={{ padding: 16, gap: 4 }}>
                 <Txt accent style={styles.eyebrow}>
-                  FROM MY VIEWFINDER
+                  {words("FROM MY VIEWFINDER", "镜头里的天空")}
                 </Txt>
                 <Txt
                   style={{ fontSize: 24, lineHeight: 30, fontWeight: "700" }}
                 >
-                  {item.models.join(" / ")}
+                  {item.models
+                    .map((name) => aircraftName(name, locale))
+                    .join(" / ")}
                 </Txt>
                 <Txt muted>
-                  {item.airlines.join(" / ")} · {item.airport}
+                  {item.airlines
+                    .map((name) => airlineName(name, locale))
+                    .join(" / ")}{" "}
+                  · {item.airport}
                 </Txt>
               </View>
             </Pressable>
@@ -141,7 +148,7 @@ export default function Home() {
       />
       <Section
         title={words("Your next departure", "下一段旅程")}
-        caption="BOARDING SOON"
+        caption={words("BOARDING SOON", "即将出发")}
       />
       {upcoming.map((f) => (
         <FlightCard key={f.id} flight={f} />

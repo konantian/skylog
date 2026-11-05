@@ -1,4 +1,7 @@
-import { useEffect } from "react";
+import { useCallback, useEffect, useState } from "react";
+import { View } from "react-native";
+import * as SplashScreen from "expo-splash-screen";
+import { getLocales } from "expo-localization";
 import * as Notifications from "expo-notifications";
 import {
   Stack,
@@ -13,6 +16,9 @@ import { AppProvider, useApp } from "../lib/store";
 import { useFonts } from "expo-font";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { KeyboardProvider } from "react-native-keyboard-controller";
+import { LaunchScreen } from "../components/launch-screen";
+void SplashScreen.preventAutoHideAsync().catch(() => {});
+SplashScreen.setOptions({ fade: false });
 export { ErrorBoundary } from "expo-router";
 export const unstable_settings = { initialRouteName: "(tabs)" };
 function Navigation() {
@@ -66,7 +72,21 @@ function Navigation() {
         />
         <Stack.Screen
           name="photo/[id]"
-          options={{ title: words("Photograph", "摄影作品") }}
+          options={{
+            title: words("Photograph", "摄影作品"),
+            orientation: "portrait",
+          }}
+        />
+        <Stack.Screen
+          name="photo/fullscreen"
+          options={{
+            headerShown: false,
+            presentation: "fullScreenModal",
+            orientation: "landscape",
+            animation: "fade",
+            statusBarHidden: true,
+            autoHideHomeIndicator: true,
+          }}
         />
         <Stack.Screen
           name="flight/[id]"
@@ -101,7 +121,10 @@ function Navigation() {
             presentation: "modal",
           }}
         />
-        <Stack.Screen name="passport" options={{ title: "Passport" }} />
+        <Stack.Screen
+          name="passport"
+          options={{ title: words("Passport", "飞行护照") }}
+        />
         <Stack.Screen
           name="saved"
           options={{ title: words("Saved photographs", "收藏的照片") }}
@@ -112,14 +135,36 @@ function Navigation() {
 }
 export default function Layout() {
   const [loaded, error] = useFonts(Ionicons.font);
-  if (!loaded && !error) return null;
+  const [showLaunch, setShowLaunch] = useState(true);
+  const [ready, setReady] = useState(false);
+  const [locale, setLocale] = useState(() =>
+    getLocales()[0]?.languageCode === "zh" ? "zh" : "en",
+  );
+  const markReady = useCallback((language: string) => {
+    setLocale(language);
+    setReady(true);
+  }, []);
+  const finishLaunch = useCallback(() => setShowLaunch(false), []);
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <KeyboardProvider preload={false}>
-        <AppProvider>
-          <Navigation />
-        </AppProvider>
+        <View
+          style={{ flex: 1 }}
+          accessibilityElementsHidden={showLaunch}
+          importantForAccessibility={
+            showLaunch ? "no-hide-descendants" : "auto"
+          }
+        >
+          {(loaded || error) && (
+            <AppProvider onReady={markReady}>
+              <Navigation />
+            </AppProvider>
+          )}
+        </View>
       </KeyboardProvider>
+      {showLaunch && (
+        <LaunchScreen ready={ready} locale={locale} onFinish={finishLaunch} />
+      )}
     </GestureHandlerRootView>
   );
 }

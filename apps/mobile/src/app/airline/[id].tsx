@@ -20,9 +20,11 @@ import {
   styles,
 } from "../../components/ui";
 import { PhotoCard } from "../../screens/collection";
+import { CountryFlags } from "../../components/country-flags";
+import { airlineName, aircraftName } from "../../lib/flight-labels";
 export default function AirlineDetail() {
   const { id } = useLocalSearchParams<{ id: string }>();
-  const { t, words, completed, setFilters } = useApp();
+  const { t, words, locale, completed, setFilters } = useApp();
   const entry = airlines.find((a) => a.id === id);
   if (!entry)
     return (
@@ -49,17 +51,26 @@ export default function AirlineDetail() {
   );
   return (
     <Page>
-      <Stack.Screen options={{ title: entry.name }} />
+      <Stack.Screen options={{ title: airlineName(entry.name, locale) }} />
       {collection.cover && <PhotoImage photo={collection.cover} height={230} />}
       <Section
-        title={entry.name}
-        caption={`${entry.code || "—"} · ${t(entry.country)}`}
+        title={airlineName(entry.name, locale)}
+        caption={entry.code || "—"}
       />
+      <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}>
+        <CountryFlags country={entry.country} size={32} />
+        <Txt muted style={{ flexShrink: 1 }}>
+          {t(entry.country)}
+        </Txt>
+      </View>
       <Card>
         <View style={styles.wrap}>
           <Stat value={collection.photoCount} label={t("拍摄照片")} />
           <Stat value={collection.modelCount} label={t("拍过机型")} />
-          <Stat value={collection.registrationCount} label={t("已确认飞机")} />
+          <Stat
+            value={collection.registrationCount}
+            label={words("Airframes", "飞机注册号")}
+          />
           <Stat value={collection.flights.length} label={t("乘坐航段")} />
         </View>
       </Card>
@@ -67,11 +78,10 @@ export default function AirlineDetail() {
         <Txt accent>{t(facts.alliance)}</Txt>
         <Txt>
           {entry.code || "—"} ·{" "}
-          {facts.designators.map((d) => d.icao).join(" / ") || t("尚未核实")}
+          {facts.designators.map((d) => d.icao).join(" / ") || "—"}
         </Txt>
         <Txt muted>
-          {facts.designators.map((d) => d.callsign).join(" / ") ||
-            t("尚未核实")}
+          {facts.designators.map((d) => d.callsign).join(" / ") || "—"}
         </Txt>
         {facts.note && <Txt muted>{t(facts.note)}</Txt>}
         {collection.firstSeen && (
@@ -116,13 +126,13 @@ export default function AirlineDetail() {
       {collection.groups.map((group) => (
         <View key={`${group.model}:${group.livery}`} style={{ gap: 8 }}>
           <Txt style={{ fontWeight: "600" }}>
-            {group.model} · {t(group.livery)}
+            {aircraftName(group.model, locale)} · {t(group.livery)}
           </Txt>
           <PhotoCard photo={group.cover} />
           <Button
             secondary
             title={t("查看 {0} · {1}，{2} 张照片", [
-              group.model,
+              aircraftName(group.model, locale),
               t(group.livery),
               group.photoIds.length,
             ])}

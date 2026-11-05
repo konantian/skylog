@@ -4,6 +4,7 @@ import React, {
   useEffect,
   useState,
   useCallback,
+  useMemo,
 } from "react";
 import {
   ActivityIndicator,
@@ -16,6 +17,7 @@ import {
 import { SQLiteProvider, useSQLiteContext } from "expo-sqlite";
 import { getLocales } from "expo-localization";
 import { syncReminders, syncFlightWidgets } from "./flight-integrations";
+import { flightStatus } from "./flight-time.mjs";
 import { translate } from "../../../../lib/i18n.mjs";
 import {
   initializeDatabase,
@@ -27,6 +29,7 @@ import {
 } from "./database.mjs";
 import {
   seedFlights,
+  airportTimezones,
   initialFilters,
   photoById,
   type LocalFlight,
@@ -88,7 +91,11 @@ export const useApp = () => {
 };
 const migrate = (db: Parameters<typeof initializeDatabase>[0]) =>
   initializeDatabase(db, seedFlights);
-function LocalStore({ children }: { children: React.ReactNode }) {
+type ProviderProps = {
+  children: React.ReactNode;
+  onReady?: (locale: string) => void;
+};
+function LocalStore({ children, onReady }: ProviderProps) {
   const db = useSQLiteContext();
   const scheme = useColorScheme();
   const [data, setData] = useState<{
@@ -97,6 +104,7 @@ function LocalStore({ children }: { children: React.ReactNode }) {
     saved: string[];
   } | null>(null);
   const [error, setError] = useState("");
+  const [now, setNow] = useState(() => Date.now());
   const [integrationError, setIntegrationError] = useState("");
   const [filters, updateFilters] = useState<Record<Mode, Filters>>({
     aircraft: { ...initialFilters },
@@ -107,8 +115,13 @@ function LocalStore({ children }: { children: React.ReactNode }) {
   const refresh = useCallback(async () => {
     const next = await readLocalData(db);
     setData(next);
+    setNow(Date.now());
     setError("");
   }, [db]);
+  useEffect(() => {
+    const timer = setInterval(() => setNow(Date.now()), 60000);
+    return () => clearInterval(timer);
+  }, []);
   useEffect(() => {
     let mounted = true;
     void readLocalData(db)
@@ -133,8 +146,19 @@ function LocalStore({ children }: { children: React.ReactNode }) {
     data?.preferences.locale ||
     (getLocales()[0]?.languageCode === "zh" ? "zh" : "en");
   const theme = data?.preferences.theme || "dark";
+  useEffect(() => {
+    if (data || error) onReady?.(locale);
+  }, [data, error, locale, onReady]);
   const isDark = theme === "system" ? scheme !== "light" : theme === "dark";
   const colors = isDark ? dark : light;
+  const flights = useMemo(
+    () =>
+      (data?.flights || []).map((f) => ({
+        ...f,
+        status: flightStatus(f, airportTimezones, now) as LocalFlight["status"],
+      })),
+    [data?.flights, now],
+  );
   useEffect(() => {
     if (!data) return;
     let current = true;
@@ -198,8 +222,8 @@ function LocalStore({ children }: { children: React.ReactNode }) {
         integrationError,
         t: (key, values = []) => translate(locale, key, values),
         words: (en, zh) => (locale === "zh" ? zh : en),
-        flights: data.flights,
-        completed: data.flights.filter((f) => f.status === "completed"),
+        flights,
+        completed: flights.filter((f) => f.status === "completed"),
         saved: data.saved,
         filters,
         setFilters: (mode, next) =>
@@ -218,10 +242,10 @@ function LocalStore({ children }: { children: React.ReactNode }) {
     </Context.Provider>
   );
 }
-export function AppProvider({ children }: { children: React.ReactNode }) {
+export function AppProvider({ children, onReady }: ProviderProps) {
   return (
     <SQLiteProvider databaseName="skylog.db" onInit={migrate}>
-      <LocalStore>{children}</LocalStore>
+      <LocalStore onReady={onReady}>{children}</LocalStore>
     </SQLiteProvider>
   );
 }

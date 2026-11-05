@@ -1,18 +1,10 @@
 import { useState } from "react";
-import {
-  View,
-  Alert,
-  Modal,
-  ScrollView,
-  useWindowDimensions,
-  Linking,
-} from "react-native";
+import { View, Alert, useWindowDimensions, Linking } from "react-native";
 import { Stack, router, useLocalSearchParams } from "expo-router";
 import { File, Paths } from "expo-file-system";
 import * as Sharing from "expo-sharing";
-import { Image } from "expo-image";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useApp } from "../../lib/store";
+import { airlineName, aircraftName } from "../../lib/flight-labels";
 import {
   photoById,
   photos,
@@ -41,12 +33,9 @@ export default function PhotoDetail() {
     airline?: string;
     livery?: string;
   }>();
-  const { words, t, colors, saved, toggleSaved } = useApp();
-  const [zoom, setZoom] = useState(false);
-  const [zoomed, setZoomed] = useState(false);
+  const { words, t, locale, saved, toggleSaved } = useApp();
   const [sharing, setSharing] = useState(false);
-  const { width, height } = useWindowDimensions();
-  const insets = useSafeAreaInsets();
+  const { width } = useWindowDimensions();
   const photo = photoById.get(params.id);
   if (!photo)
     return (
@@ -77,8 +66,6 @@ export default function PhotoDetail() {
     >
   )[photo.id];
   const dimensions = fileById.get(photo.id);
-  const photoHeight =
-    width * ((dimensions?.height || 2) / (dimensions?.width || 3));
   const share = async () => {
     setSharing(true);
     try {
@@ -141,10 +128,12 @@ export default function PhotoDetail() {
         <IconButton
           name="expand-outline"
           label={words("Zoom photo", "放大照片")}
-          onPress={() => {
-            setZoomed(false);
-            setZoom(true);
-          }}
+          onPress={() =>
+            router.push({
+              pathname: "/photo/fullscreen",
+              params: { id: photo.id },
+            })
+          }
         />
         <IconButton
           name="chevron-forward"
@@ -153,12 +142,12 @@ export default function PhotoDetail() {
         />
       </View>
       <Txt style={{ fontSize: 25, lineHeight: 32, fontWeight: "700" }}>
-        {photo.airlines.join(" / ")}
+        {photo.airlines.map((name) => airlineName(name, locale)).join(" / ")}
       </Txt>
       {photo.models.map((model) => (
         <Button
           key={model}
-          title={model}
+          title={aircraftName(model, locale)}
           secondary
           icon="airplane-outline"
           onPress={() => {
@@ -178,21 +167,9 @@ export default function PhotoDetail() {
         <Txt muted>{t("涂装")}</Txt>
         <Txt>{t(photo.livery)}</Txt>
         <Txt muted>{words("Registration", "注册号")}</Txt>
-        <Txt>
-          {photo.registration?.value || t("尚未核实")} ·{" "}
-          {photo.registration?.status === "confirmed"
-            ? t("已确认")
-            : words("Unconfirmed", "待确认")}
-        </Txt>
+        <Txt>{photo.registration?.value || "—"}</Txt>
         <Txt muted>{words("Flight identification", "航班识别")}</Txt>
-        <Txt>{photo.flights.join(" / ") || t("尚未核实")}</Txt>
-        {photo.flightIdentification?.status && (
-          <Txt muted>
-            {photo.flightIdentification.status === "confirmed"
-              ? t("已确认")
-              : words("Inferred / unconfirmed", "推测／待确认")}
-          </Txt>
-        )}
+        <Txt>{photo.flights.join(" / ") || "—"}</Txt>
       </Card>
       {exif && (
         <Card>
@@ -228,65 +205,6 @@ export default function PhotoDetail() {
         />
       )}
       <Txt muted>{words("Photography © Yuan Wang", "摄影 © 王源")}</Txt>
-      <Modal
-        visible={zoom}
-        onRequestClose={() => setZoom(false)}
-        animationType="fade"
-      >
-        <View
-          style={{
-            flex: 1,
-            backgroundColor: colors.bg,
-            paddingTop: insets.top,
-          }}
-        >
-          <View
-            style={{
-              flexDirection: "row",
-              justifyContent: "space-between",
-              paddingHorizontal: 12,
-            }}
-          >
-            <IconButton
-              name="close"
-              label={words("Close zoom", "关闭放大")}
-              onPress={() => setZoom(false)}
-            />
-            <IconButton
-              name={zoomed ? "remove" : "add"}
-              label={words("Toggle zoom", "切换缩放")}
-              onPress={() => setZoomed((v) => !v)}
-            />
-          </View>
-          <ScrollView
-            key={`${photo.id}:${zoomed}`}
-            style={{ flex: 1 }}
-            contentContainerStyle={{
-              minHeight: height - insets.top - 70,
-              justifyContent: "center",
-            }}
-            maximumZoomScale={4}
-            minimumZoomScale={1}
-            centerContent
-          >
-            <ScrollView
-              horizontal
-              contentContainerStyle={{ alignItems: "center" }}
-            >
-              <Image
-                source={imageUrl(photo, "full")}
-                cachePolicy="memory-disk"
-                contentFit="contain"
-                accessibilityLabel={photo.id}
-                style={{
-                  width: zoomed ? width * 2 : width,
-                  height: zoomed ? photoHeight * 2 : photoHeight,
-                }}
-              />
-            </ScrollView>
-          </ScrollView>
-        </View>
-      </Modal>
     </Page>
   );
 }

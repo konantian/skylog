@@ -278,7 +278,7 @@ html:has(.comparison-tray){scroll-padding-bottom:200px}
   .collection-heading h2>.desktop-title,.collection-heading h2>span:not(.mobile-title){display:none}
   .collection-heading h2>.mobile-title{display:block;font:inherit;color:inherit;margin:0;letter-spacing:inherit}
   .updated{font-size:10px}
-  .collection-toolbar{position:sticky;top:calc(64px + env(safe-area-inset-top));z-index:10;background:var(--bg);padding:10px 0;margin:0;display:block;border:0}
+  .collection-toolbar{position:relative;top:auto;z-index:10;background:var(--bg);padding:10px 0;margin:0;display:block;border:0}
   .view-tabs,.toolbar-flight{display:none}
   .mobile-search-row{width:100%}.search-field{flex:1;min-width:0;width:auto;margin:0;border-radius:14px;padding:0 12px;gap:8px}
   .search-field input{height:48px;font-size:16px;outline-offset:0}
@@ -456,3 +456,25 @@ html:has(.comparison-tray){scroll-padding-bottom:200px}
 .passport-ranking strong small { display:block; margin-top:3px; }
 @media(max-width:700px) { .flight-passport { padding:20px 16px; } .flight-passport header { align-items:flex-start; flex-direction:column; gap:10px; } .passport-facts { grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px 16px; } .passport-explore { grid-template-columns:1fr; gap:28px; } .passport-explore .ranking-tabs { display:flex; overflow-x:auto; } .passport-explore .ranking-tabs button { min-height:44px; white-space:nowrap; } }
 @media(prefers-reduced-motion:reduce) { .passport-bar i { transition:none; } }
+
+/* Flags retain their own geometry alongside airline codes and country labels. */
+.country-flags{display:inline-flex;align-items:center;gap:5px;flex-shrink:0;vertical-align:middle}
+.country-flags img{display:block;max-width:none;flex-shrink:0;object-fit:contain;border-radius:2px;outline:1px solid #7b93a42b}
+.airline-overline,.airline-country{display:flex;align-items:center;gap:8px}
+.locked-airline-mark{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px}
+.airline-placeholder-code{font-family:var(--display);font-size:32px;line-height:1.2;font-weight:600;color:var(--muted)}
+.airline-overline{white-space:normal}.airline-overline>span:last-child{min-width:0}
+@media(max-width:560px){.locked-airline-mark .country-flags img{width:36px!important;height:27px!important}}
+
+/* Photo-only viewing uses the entire viewport; controls float over the image. */
+.immersive-photo{position:fixed;inset:0;margin:0;width:100vw;height:100dvh;max-width:none;max-height:none;padding:0;border:0;background:#000;color:#fff;overflow:hidden;overscroll-behavior:contain}
+.immersive-photo::backdrop{background:#000}
+.immersive-photo>img{display:block;width:100%;height:100%;object-fit:contain}
+.immersive-photo>button,.photo-fullscreen-toggle{position:absolute;display:grid;place-items:center;width:48px;height:48px;border:1px solid #ffffff40;border-radius:50%;background:#0008;color:#fff;backdrop-filter:blur(8px)}
+.immersive-photo>button:hover,.photo-fullscreen-toggle:hover{background:#000c}
+.immersive-close{top:max(12px,env(safe-area-inset-top));right:max(12px,env(safe-area-inset-right))}
+.immersive-previous,.immersive-next{top:50%;transform:translateY(-50%)}
+.immersive-previous{left:max(12px,env(safe-area-inset-left))}.immersive-previous svg{transform:rotate(180deg)}
+.immersive-next{right:max(12px,env(safe-area-inset-right))}.immersive-next svg{transform:none}
+.photo-fullscreen-toggle{right:12px;top:12px}
+.immersive-status{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);padding:12px 18px;border-radius:8px;background:#000b;color:#fff;font-size:14px;text-align:center}

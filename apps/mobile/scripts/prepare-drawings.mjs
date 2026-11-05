@@ -17,3 +17,17 @@ await writeFile(
 console.log(
   `Bundled ${Object.keys(drawings).length} offline reference drawings.`,
 );
+const countries = JSON.parse(
+  await readFile(new URL("data/country-flags.json", root), "utf8"),
+);
+const flags = {};
+for (const code of new Set(Object.values(countries).flat()))
+  flags[code] = await readFile(
+    new URL(`public/flags/${code}.svg`, root),
+    "utf8",
+  );
+await writeFile(
+  new URL("../src/generated/flags.json", import.meta.url),
+  JSON.stringify(flags) + "\n",
+);
+console.log(`Bundled ${Object.keys(flags).length} offline flags.`);

@@ -19,6 +19,7 @@ import {
 import { usePreventRemove } from "expo-router/react-navigation";
 import { randomUUID } from "expo-crypto";
 import { useApp } from "../../lib/store";
+import { aircraftName, aircraftSearchQuery } from "../../lib/flight-labels";
 import {
   aircraft,
   airlines,
@@ -69,7 +70,7 @@ export default function EditFlight() {
       return {};
     }
   });
-  const { colors, words, flights, save, isDark } = useApp();
+  const { colors, words, locale, flights, save, isDark } = useApp();
   const navigation = useNavigation();
   const db = useSQLiteContext();
   const [looking, setLooking] = useState(false);
@@ -77,23 +78,25 @@ export default function EditFlight() {
   const source = flights.find((f) => f.id === template);
   const scroll = useRef<KeyboardAwareScrollViewRef>(null);
   const [arrivalCalendar, setArrivalCalendar] = useState(false);
-  const [form, setForm] = useState<Draft>(
-    () =>
-      existing || {
-        id: randomUUID(),
-        date: todayLocal(),
-        airline: source?.airline || "",
-        flight: returnTrip ? "" : source?.flight || "",
-        origin: (returnTrip ? source?.destination : source?.origin) || "",
-        destination: (returnTrip ? source?.origin : source?.destination) || "",
-        model: null,
-        modelLabel: "",
-        registration: null,
-        status: source ? "planned" : "completed",
-        trip: source?.trip || "",
-        notes: "",
-        ...imported,
-      },
+  const [form, setForm] = useState<Draft>(() =>
+    existing
+      ? { ...existing, modelLabel: aircraftName(existing.modelLabel, locale) }
+      : {
+          id: randomUUID(),
+          date: todayLocal(),
+          airline: source?.airline || "",
+          flight: returnTrip ? "" : source?.flight || "",
+          origin: (returnTrip ? source?.destination : source?.origin) || "",
+          destination:
+            (returnTrip ? source?.origin : source?.destination) || "",
+          model: null,
+          modelLabel: "",
+          registration: null,
+          status: "planned",
+          trip: source?.trip || "",
+          notes: "",
+          ...imported,
+        },
   );
   const [original] = useState(() => JSON.stringify(form));
   const saved = useRef(false),
@@ -210,10 +213,14 @@ export default function EditFlight() {
             .filter(
               (item) =>
                 String(form[key] || "").length > 0 &&
-                item.name
-                  .toLowerCase()
-                  .includes(String(form[key]).toLowerCase()) &&
-                item.name !== form[key],
+                (key === "modelLabel"
+                  ? aircraftSearchQuery(item.name).includes(
+                      aircraftSearchQuery(String(form[key])),
+                    ) && aircraftName(item.name, locale) !== form[key]
+                  : item.name
+                      .toLowerCase()
+                      .includes(String(form[key]).toLowerCase()) &&
+                    item.name !== form[key]),
             )
             .slice(0, 4)
             .map((item) => (
@@ -224,7 +231,11 @@ export default function EditFlight() {
                   setForm((old) =>
                     key === "airline"
                       ? { ...old, airline: item.name }
-                      : { ...old, model: item.name, modelLabel: item.name },
+                      : {
+                          ...old,
+                          model: item.name,
+                          modelLabel: aircraftName(item.name, locale),
+                        },
                   );
                   setSuggest(null);
                   KeyboardController.setFocusTo("next");
@@ -236,7 +247,11 @@ export default function EditFlight() {
                   opacity: pressed ? 0.6 : 1,
                 })}
               >
-                <Txt>{item.name}</Txt>
+                <Txt>
+                  {key === "modelLabel"
+                    ? aircraftName(item.name, locale)
+                    : item.name}
+                </Txt>
               </Pressable>
             ))}
         </View>
@@ -265,7 +280,8 @@ export default function EditFlight() {
     setSaving(true);
     try {
       const match = aircraft.find(
-        (a) => a.name.toLowerCase() === form.modelLabel.toLowerCase(),
+        (a) =>
+          aircraftSearchQuery(a.name) === aircraftSearchQuery(form.modelLabel),
       );
       const numbers = Object.fromEntries(
         (["durationMinutes", "delayMinutes", "aircraftYear"] as const).map(
@@ -281,7 +297,12 @@ export default function EditFlight() {
         ...form,
         ...numbers,
         model: match?.name || null,
-        modelLabel: form.modelLabel || "—",
+        modelLabel:
+          match?.name ||
+          (existing &&
+          form.modelLabel === aircraftName(existing.modelLabel, locale)
+            ? existing.modelLabel
+            : form.modelLabel || "—"),
       } as LocalFlight);
       saved.current = true;
       router.back();
@@ -371,31 +392,11 @@ export default function EditFlight() {
                     setForm((old) => ({
                       ...old,
                       date: value,
-                      status:
-                        old.status === "cancelled"
-                          ? "cancelled"
-                          : value > todayLocal()
-                            ? "planned"
-                            : "completed",
                     }));
                   }
                 }}
               />
             )}
-          </View>
-          <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
-            {[
-              ["completed", words("Flown", "已乘坐")],
-              ["planned", words("Planned", "待出发")],
-              ["cancelled", words("Cancelled", "已取消")],
-            ].map(([value, title]) => (
-              <Button
-                key={value}
-                title={title}
-                secondary={form.status !== value}
-                onPress={() => change("status", value)}
-              />
-            ))}
           </View>
           {field(
             "airline",
@@ -434,6 +435,13 @@ export default function EditFlight() {
                           "没有返回唯一匹配的当前航班。请手动填写航线，或在设置中查看服务状态。",
                         ),
                       );
+                    if (data.status === "cancelled")
+                      throw new Error(
+                        words(
+                          "The provider reports this flight as cancelled.",
+                          "数据源显示该航班已取消，请核对航班号和日期。",
+                        ),
+                      );
                     setForm((old) => ({
                       ...old,
                       airline: data.airline,
@@ -449,12 +457,6 @@ export default function EditFlight() {
                       arrivalTerminal: data.arrivalTerminal,
                       registration: data.registration || null,
                       baggage: data.baggage,
-                      status:
-                        data.status === "landed"
-                          ? "completed"
-                          : data.status === "cancelled"
-                            ? "cancelled"
-                            : "planned",
                     }));
                   } catch (e) {
                     Alert.alert(words("Flight lookup", "航班查询"), String(e));
@@ -502,8 +504,8 @@ export default function EditFlight() {
               <Section title={words("Travel details", "旅途详情")} />
               <Txt muted>
                 {words(
-                  "Optional. Times are local to each airport; duration is entered separately. Only completed flights contribute to Passport.",
-                  "以下均选填。时间为机场当地时间，时长单独填写。仅已乘坐的航班计入 Passport。",
+                  "Optional. Times are local to each airport; duration is entered separately. Passport follows the flight date and departure time automatically.",
+                  "以下均选填。时间为机场当地时间，时长单独填写。Passport 根据航班日期和出发时间自动统计。",
                 )}
               </Txt>
               {field(

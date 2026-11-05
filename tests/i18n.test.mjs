@@ -71,6 +71,22 @@ test('translation preserves aircraft identifiers, interpolation and the original
   assert.equal(translate('en','查看 {0}',['$& <test>']),'View $& <test>');
 });
 
+test('Chinese aircraft, airline and airport labels keep canonical identifiers and search matches',()=>{
+  assert.equal(translate('zh','Air Canada'),'加拿大航空');
+  assert.equal(translate('zh','Airbus A321neo LR'),'空客 A321neo LR');
+  assert.equal(translate('zh','Boeing 737 MAX 8'),'波音 737 MAX 8');
+  assert.equal(translate('zh','Vancouver'),'温哥华');
+  assert.equal(translate('en','Air Canada'),'Air Canada');
+  assert.equal(translate('zh','C-FNND'),'C-FNND');
+  for(const [zh,en] of [['空客 A350','Airbus A350'],['波音787','Boeing 787'],['巴航工业 E195-E2','Embraer E195-E2']]){
+    for(const filter of [filterPhotos,(photos,filters,aircraft,airlines)=>filterCatalog(aircraft,photos,filters,'aircraft',aircraft,airlines)]){
+      const matches=q=>filter(catalog.photos,{...initialFilters,query:q},catalog.aircraft,catalog.airlines).map(x=>x.id);
+      assert.ok(matches(en).length>0);
+      assert.deepEqual(matches(zh),matches(en));
+    }
+  }
+});
+
 test('English livery and category searches use the same photographs and source filter values',()=>{
   const original={...initialFilters,livery:'标准涂装'};
   const matches=filterPhotos(catalog.photos,original,catalog.aircraft,catalog.airlines);
@@ -88,7 +104,7 @@ test('achievement language never changes progress, photo associations or unlock 
   for(const award of en){assert.equal(han(translate('en',award.title)),false);assert.equal(han(translate('en',award.description)),false);}
 });
 
-test('English share cards translate uncertainty, liveries and every drawn label in both orientations',async()=>{
+test('English share cards translate liveries and display labels in both orientations',async()=>{
   const originals={document:globalThis.document,Image:globalThis.Image,Path2D:globalThis.Path2D};
   let labels=[];
   const context=new Proxy({measureText:value=>({width:String(value).length*10}),fillText:value=>labels.push(String(value))},{get:(obj,key)=>key in obj?obj[key]:()=>{}});
@@ -104,7 +120,7 @@ test('English share cards translate uncertainty, liveries and every drawn label 
       await renderShareCard(card);
       assert.ok(labels.length>10);assert.equal(labels.some(han),false,labels.join('\n'));
       assert.ok(labels.some(label=>label.includes('REGISTRATION')));
-      if(entry.kind==='photo'){assert.equal(card.registration,'C-TEST · inferred');assert.equal(card.livery,'Standard livery');}
+      if(entry.kind==='photo'){assert.equal(card.registration,'C-TEST');assert.equal(card.livery,'Standard livery');}
     }
   }finally{
     for(const [key,value] of Object.entries(originals)){if(value===undefined)delete globalThis[key];else globalThis[key]=value;}

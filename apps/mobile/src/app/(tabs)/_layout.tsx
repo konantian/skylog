@@ -18,7 +18,7 @@ export default function TabLayout() {
         tabBarLabelStyle: { fontSize: 11 },
         headerRight: () => (
           <IconButton
-            name="options-outline"
+            name="settings-outline"
             label={words("Settings", "设置")}
             onPress={() => router.push("/settings")}
           />

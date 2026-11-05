@@ -14,7 +14,7 @@ export function FlightPassport({
   year: string;
   onFilter: (key: keyof Filters, value: string) => void;
 }) {
-  const { locale } = useLocale();
+  const { locale, t } = useLocale();
   const w = (en: string, zh: string) => (locale === "en" ? en : zh);
   const [period, setPeriod] = useState<"years" | "months" | "weekdays">(
     "months",
@@ -148,7 +148,7 @@ export function FlightPassport({
             {ranks.length ? (
               ranks.slice(0, 8).map((item, i) => (
                 <button
-                  key={item.name}
+                  key={t(item.name)}
                   onClick={() =>
                     onFilter(
                       ranking === "airports"
@@ -162,13 +162,13 @@ export function FlightPassport({
                 >
                   <span>{String(i + 1).padStart(2, "0")}</span>
                   <strong>
-                    {item.name}
+                    {t(item.name)}
                     {ranking === "airports" && (
                       <small>
                         {
-                          (airports as Record<string, { city: string }>)[
+                          t((airports as Record<string, { city: string }>)[
                             item.name
-                          ]?.city
+                          ]?.city)
                         }
                       </small>
                     )}
