@@ -58,5 +58,9 @@
   "75 周年纪念涂装": {
     "name": "Saudia · 75 周年纪念",
     "description": "沙特航空 HZ-ARE 的纪念涂装，机身带有金色“75 YEARS”字样，尾翼绘有金色人物肖像。"
+  },
+  "Flexport 货运涂装": {
+    "name": "Flexport 货运涂装",
+    "description": "白色前机身搭配深蓝色后机身及尾翼，带有 Flexport 标记；由 Atlas Air 运营。"
   }
 }

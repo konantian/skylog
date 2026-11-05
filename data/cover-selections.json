@@ -1,5 +1,5 @@
 {
-  "reviewedAt": "2026-11-04",
+  "reviewedAt": "2026-11-05",
   "criteria": "Visual selection: clarity, light, complete airframe, unobstructed composition and a distinctive angle. Prefer blue skies when comparable. One available photo remains the cover when no alternative exists.",
   "aircraft": {
     "Airbus A350-900": "DSC00617",
@@ -54,7 +54,8 @@
     "Boeing 737-700": "DSC00998",
     "Bombardier Learjet 45": "DSC01017",
     "Cessna Citation CJ3": "DSC01070",
-    "Bombardier Challenger 3500": "DSC01152"
+    "Bombardier Challenger 3500": "DSC01152",
+    "Boeing 747-400F": "DSC01217"
   },
   "preferredPhotos": [
     "DSC00617",
@@ -168,6 +169,14 @@
     "DSC01044",
     "DSC01017",
     "DSC01070",
-    "DSC01152"
+    "DSC01152",
+    "DSC01182",
+    "DSC01202",
+    "DSC01217",
+    "DSC01239",
+    "DSC01244",
+    "DSC01279",
+    "DSC01292",
+    "DSC01309"
   ]
 }

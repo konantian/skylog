@@ -7,7 +7,7 @@ import log from '../data/flights.json' with {type:'json'};
 const byId=new Map(catalog.photos.map(p=>[p.id,p]));
 
 test('every photograph uses date-matched identity evidence and explicit flight confidence',()=>{
-  assert.equal(Object.keys(identities).length,441);
+  assert.equal(Object.keys(identities).length,470);
   for(const p of catalog.photos){
     const e=identities[p.id];
     assert.equal(e.date,p.date,p.id);
@@ -132,4 +132,30 @@ test('November 4 preserves camera timestamps and matches all 69 edited photos to
   assert.equal(byId.get('DSC01054').flightIdentification.callsign,'QTR65U');
   assert.deepEqual(byId.get('DSC01070').models,['Cessna Citation CJ3']);
   assert.notEqual(catalog.aircraft.find(a=>a.name==='Cessna Citation CJ3').id,catalog.aircraft.find(a=>a.name==='Cessna Citation CJ3+').id);
+});
+
+test('November 5 imports use observed airframes and actual callsigns, including cargo operators',()=>{
+  const groups=[
+    [['DSC01172','DSC01175','DSC01182','DSC01185'],'Air Canada','Airbus A330-300','C-GOFV','AC855','ACA855'],
+    [['DSC01198','DSC01202','DSC01205'],'Qatar Airways','Airbus A350-1000','A7-AOJ','QR767','QTR65U'],
+    [['DSC01210','DSC01215','DSC01217','DSC01220'],'Atlas Air','Boeing 747-400F','N485MC','5Y841','GTI841'],
+    [['DSC01230','DSC01234','DSC01237','DSC01239'],'Aer Lingus','Airbus A321XLR','EI-XLR','EI127','EIN1EN'],
+    [['DSC01244','DSC01246','DSC01248'],'China Airlines','Boeing 777F','B-18776','CI5301','CAL5301'],
+    [['DSC01264','DSC01273','DSC01276','DSC01279'],'KLM','Airbus A350-900','PH-ZNA','KL691','KLM147'],
+    [['DSC01287','DSC01289','DSC01292'],'Air Canada','Airbus A320-200','C-GKOE','AC266','ACA266'],
+    [['DSC01297','DSC01305','DSC01309','DSC01310'],'China Southern','Boeing 777F','B-20EM','CZ485','CSN485'],
+  ];
+  assert.equal(catalog.photos.filter(p=>p.date==='2026-11-05').length,29);
+  for(const [ids,airline,model,registration,flight,callsign] of groups)for(const id of ids){
+    const p=byId.get(id),i=identities[id];
+    assert.deepEqual(p.airlines,[airline]);assert.deepEqual(p.models,[model]);
+    assert.equal(p.registration.value,registration);assert.equal(p.registration.status,'confirmed');
+    assert.deepEqual(p.flights,[flight]);assert.equal(p.flightIdentification.callsign,callsign);
+    assert.equal(i.evidence.cameraClockCorrectionSeconds,0);
+    assert.match(p.capturedAt,/^2026-11-05T\d{2}:\d{2}:\d{2}-05:00$/);
+    assert.ok(Math.abs(Date.parse(p.capturedAt)-Date.parse(i.evidence.track[0].timestamp_utc))<9000);
+    assert.equal(i.evidence.track[0].on_ground,airline==='China Airlines'?1:0);
+  }
+  assert.equal(byId.get('DSC01217').livery,'Flexport 货运涂装');
+  assert.equal(catalog.aircraft.find(a=>a.name==='Boeing 747-400F').cover,'DSC01217');
 });

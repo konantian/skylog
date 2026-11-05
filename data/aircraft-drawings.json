@@ -1220,5 +1220,19 @@
     "status": "pending",
     "group": "Challenger",
     "reason": "该型号的官方侧视图尚未核验。"
+  },
+  "Boeing 747-400F": {
+    "length": 70.67,
+    "span": 64.44,
+    "height": 19.41,
+    "group": "747",
+    "status": "reference",
+    "artHeight": 283.784,
+    "asset": "/aircraft/boeing-747-400erf.svg",
+    "source": {
+      "title": "Boeing · Airplane Characteristics",
+      "url": "https://www.boeing.com/content/dam/boeing/v2/airports/acaps/747-400_Rev_F.pdf",
+      "page": 32
+    }
   }
 }

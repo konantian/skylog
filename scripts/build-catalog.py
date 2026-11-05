@@ -41,6 +41,7 @@ Iberia|西班牙国家航空|IB|西班牙|欧洲
 Japan Airlines|日本航空|JL|日本|亚洲
 KLM|荷兰皇家航空|KL|荷兰|欧洲
 Kalitta Air|卡利塔航空|K4|美国|美洲
+Atlas Air|阿特拉斯航空|5Y|美国|美洲
 Korean Air|大韩航空|KE|韩国|亚洲
 Lufthansa|汉莎航空|LH|德国|欧洲
 Pacific Coastal Airlines|太平洋海岸航空|8P|加拿大|美洲
@@ -98,7 +99,7 @@ def model_meta(name):
     maker = next((x for x in ['Airbus','Boeing','Bombardier','Embraer','De Havilland Canada','Cessna','Gulfstream','Saab','Antonov','Beechcraft'] if name.startswith(x)), 'Other')
     family = re.search(r'(A\d{3}|7\d7|CRJ|Dash 8|DHC-8|E\d{3}|ERJ-145|Challenger|Learjet|Global|Praetor|Citation|Conquest|An-124|340|G200|1900)', name)
     family = family.group() if family else name
-    if any(x in name for x in ['777F','ERF','BDSF','P2F','-200F','-600F','747-8F','An-124']): category='货机'
+    if any(x in name for x in ['777F','ERF','BDSF','P2F','-200F','-600F','747-8F','747-400F','An-124']): category='货机'
     elif any(x in name for x in ['Challenger','Learjet','Global','Praetor','Citation','Gulfstream']): category='公务机'
     elif any(x in name for x in ['Dash 8','DHC-8','Saab','Conquest','ATR','Beechcraft 1900']): category='涡桨飞机'
     elif any(x in name for x in ['CRJ','E170','E175','E190','E195','ERJ']): category='支线客机'

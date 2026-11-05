@@ -1213,6 +1213,19 @@
         "oneworld",
         "skyteam"
       ]
+    },
+    "Atlas Air": {
+      "designators": [
+        {
+          "icao": "GTI",
+          "callsign": "GIANT",
+          "operator": "ATLAS AIR, INC. (JAMAICA, NY)"
+        }
+      ],
+      "alliance": "未加入三大联盟",
+      "sources": [
+        "codes"
+      ]
     }
   }
 }

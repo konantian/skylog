@@ -10,7 +10,7 @@ const f = extra => ({...initialFilters,...extra});
 
 test('all entries and photos have consistent links and unlock states',()=>{
   const ids=new Set(data.photos.map(p=>p.id));
-  assert.equal(ids.size,441);
+  assert.equal(ids.size,470);
   assert.equal(new Set(data.aircraft.map(a=>a.id)).size,data.aircraft.length);
   for(const e of [...data.aircraft,...data.airlines]){
     assert.equal(e.unlocked,e.photoIds.length>0);
@@ -18,8 +18,8 @@ test('all entries and photos have consistent links and unlock states',()=>{
     assert.ok(e.cover===null||e.photoIds.includes(e.cover));
     for(const id of e.photoIds){const p=data.photos.find(p=>p.id===id);assert.ok((e.kind==='aircraft'?p.models:p.airlines).includes(e.name));}
   }
-  assert.equal(data.aircraft.filter(e=>e.unlocked).length,53);
-  assert.equal(data.airlines.filter(e=>e.unlocked).length,47);
+  assert.equal(data.aircraft.filter(e=>e.unlocked).length,54);
+  assert.equal(data.airlines.filter(e=>e.unlocked).length,49);
 });
 test('manufacturer, airline and model combine on actual photographs',()=>{
   const filters=f({manufacturer:'Airbus',airline:'Air Canada',model:'Airbus A330-300'});
@@ -33,7 +33,7 @@ test('one model and airline retain different liveries and angles',()=>{
   const ps=filterPhotos(data.photos,f({airline:'Air Canada',model:'Airbus A330-300'}),data.aircraft);
   assert.ok(new Set(ps.map(p=>p.livery)).size>=4);
   const star=filterPhotos(data.photos,f({airline:'Air Canada',model:'Airbus A330-300',livery:'Star Alliance 星空联盟涂装'}),data.aircraft);
-  assert.equal(star.length,7);
+  assert.equal(star.length,11);
   assert.ok(star.every(p=>p.livery.startsWith('Star Alliance')));
 });
 test('locked targets do not claim airport sightings or airline relationships',()=>{

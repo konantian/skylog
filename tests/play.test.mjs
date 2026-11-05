@@ -44,7 +44,7 @@ test('achievements use photographic unlocks and confirmed exact-airframe matches
   assert.equal(awards.length,15);
   assert.equal(awards.find(a=>a.key==='787').current,3);
   assert.deepEqual(awards.find(a=>a.key==='777').missing,['Boeing 777-200ER']);
-  assert.equal(awards.find(a=>a.key==='fifty-airlines').current,47);
+  assert.equal(awards.find(a=>a.key==='fifty-airlines').current,49);
   assert.ok(awards.every(a=>a.photoIds.every(id=>photos.some(p=>p.id===id))));
   const sample=[{id:'A',models:[],airlines:[],airport:'YYZ',registration:{status:'inferred',value:'TEST'}}];
   assert.equal(collectionAchievements([],[],sample,[{registration:'TEST'}]).find(a=>a.key==='same-airframe').unlocked,false);

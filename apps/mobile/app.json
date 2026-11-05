@@ -2,7 +2,7 @@
   "expo": {
     "name": "SKYLOG",
     "slug": "skylog",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "scheme": "skylog",
     "orientation": "default",
     "icon": "./assets/icon.png",
@@ -20,7 +20,7 @@
         "NSCalendarsWriteOnlyAccessUsageDescription": "Add the selected flight to your calendar."
       },
       "appleTeamId": "9YYDX5K5KX",
-      "buildNumber": "2"
+      "buildNumber": "3"
     },
     "android": {
       "package": "com.konantian.skylog",

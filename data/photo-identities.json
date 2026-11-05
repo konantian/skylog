@@ -11956,5 +11956,1165 @@
         "https://www.flightradar24.com/data/aircraft/JY-RBC"
       ]
     }
+  },
+  "DSC01172": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T14:14:47-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "C-GOFV",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gofv"
+    },
+    "flights": [
+      "AC855"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gofv",
+      "callsign": "ACA855"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T14:14:47-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA855",
+          "registration": "C-GOFV",
+          "timestamp_utc": "2026-11-05T19:14:39.729Z",
+          "lat": 43.710456,
+          "lon": -79.61138,
+          "altitude_ft": 1225.0,
+          "ground_track_true_deg": 226.62,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-gofv"
+      ]
+    }
+  },
+  "DSC01175": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T14:14:49-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "C-GOFV",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gofv"
+    },
+    "flights": [
+      "AC855"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gofv",
+      "callsign": "ACA855"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T14:14:49-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA855",
+          "registration": "C-GOFV",
+          "timestamp_utc": "2026-11-05T19:14:55.866Z",
+          "lat": 43.704117,
+          "lon": -79.620667,
+          "altitude_ft": 1075.0,
+          "ground_track_true_deg": 227.94,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-gofv"
+      ]
+    }
+  },
+  "DSC01182": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T14:14:54-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "C-GOFV",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gofv"
+    },
+    "flights": [
+      "AC855"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gofv",
+      "callsign": "ACA855"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T14:14:54-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA855",
+          "registration": "C-GOFV",
+          "timestamp_utc": "2026-11-05T19:14:55.866Z",
+          "lat": 43.704117,
+          "lon": -79.620667,
+          "altitude_ft": 1075.0,
+          "ground_track_true_deg": 227.94,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-gofv"
+      ]
+    }
+  },
+  "DSC01185": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T14:14:55-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "C-GOFV",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gofv"
+    },
+    "flights": [
+      "AC855"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gofv",
+      "callsign": "ACA855"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T14:14:55-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA855",
+          "registration": "C-GOFV",
+          "timestamp_utc": "2026-11-05T19:14:55.866Z",
+          "lat": 43.704117,
+          "lon": -79.620667,
+          "altitude_ft": 1075.0,
+          "ground_track_true_deg": 227.94,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-gofv"
+      ]
+    }
+  },
+  "DSC01198": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T14:23:25-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "A7-AOJ",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/a7-aoj"
+    },
+    "flights": [
+      "QR767"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/a7-aoj",
+      "callsign": "QTR65U"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T14:23:25-05:00",
+      "track": [
+        {
+          "operating_callsign": "QTR65U",
+          "registration": "A7-AOJ",
+          "timestamp_utc": "2026-11-05T19:23:25.949Z",
+          "lat": 43.689423,
+          "lon": -79.576593,
+          "altitude_ft": 1200.0,
+          "ground_track_true_deg": 226.27,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/a7-aoj"
+      ]
+    }
+  },
+  "DSC01202": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T14:23:27-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "A7-AOJ",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/a7-aoj"
+    },
+    "flights": [
+      "QR767"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/a7-aoj",
+      "callsign": "QTR65U"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T14:23:27-05:00",
+      "track": [
+        {
+          "operating_callsign": "QTR65U",
+          "registration": "A7-AOJ",
+          "timestamp_utc": "2026-11-05T19:23:25.949Z",
+          "lat": 43.689423,
+          "lon": -79.576593,
+          "altitude_ft": 1200.0,
+          "ground_track_true_deg": 226.27,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/a7-aoj"
+      ]
+    }
+  },
+  "DSC01205": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T14:23:30-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "A7-AOJ",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/a7-aoj"
+    },
+    "flights": [
+      "QR767"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/a7-aoj",
+      "callsign": "QTR65U"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T14:23:30-05:00",
+      "track": [
+        {
+          "operating_callsign": "QTR65U",
+          "registration": "A7-AOJ",
+          "timestamp_utc": "2026-11-05T19:23:25.949Z",
+          "lat": 43.689423,
+          "lon": -79.576593,
+          "altitude_ft": 1200.0,
+          "ground_track_true_deg": 226.27,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/a7-aoj"
+      ]
+    }
+  },
+  "DSC01210": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T14:40:59-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "N485MC",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n485mc"
+    },
+    "flights": [
+      "5Y841"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n485mc",
+      "callsign": "GTI841"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T14:40:59-05:00",
+      "track": [
+        {
+          "operating_callsign": "GTI841",
+          "registration": "N485MC",
+          "timestamp_utc": "2026-11-05T19:40:51.837Z",
+          "lat": 43.714507,
+          "lon": -79.605495,
+          "altitude_ft": 1375.0,
+          "ground_track_true_deg": 226.72,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/n485mc"
+      ]
+    }
+  },
+  "DSC01215": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T14:41:03-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "N485MC",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n485mc"
+    },
+    "flights": [
+      "5Y841"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n485mc",
+      "callsign": "GTI841"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T14:41:03-05:00",
+      "track": [
+        {
+          "operating_callsign": "GTI841",
+          "registration": "N485MC",
+          "timestamp_utc": "2026-11-05T19:41:10.001Z",
+          "lat": 43.704824,
+          "lon": -79.619489,
+          "altitude_ft": 1100.0,
+          "ground_track_true_deg": 226.23,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/n485mc"
+      ]
+    }
+  },
+  "DSC01217": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T14:41:06-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "N485MC",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n485mc"
+    },
+    "flights": [
+      "5Y841"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n485mc",
+      "callsign": "GTI841"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T14:41:06-05:00",
+      "track": [
+        {
+          "operating_callsign": "GTI841",
+          "registration": "N485MC",
+          "timestamp_utc": "2026-11-05T19:41:10.001Z",
+          "lat": 43.704824,
+          "lon": -79.619489,
+          "altitude_ft": 1100.0,
+          "ground_track_true_deg": 226.23,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/n485mc"
+      ]
+    }
+  },
+  "DSC01220": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T14:41:07-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "N485MC",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n485mc"
+    },
+    "flights": [
+      "5Y841"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n485mc",
+      "callsign": "GTI841"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T14:41:07-05:00",
+      "track": [
+        {
+          "operating_callsign": "GTI841",
+          "registration": "N485MC",
+          "timestamp_utc": "2026-11-05T19:41:10.001Z",
+          "lat": 43.704824,
+          "lon": -79.619489,
+          "altitude_ft": 1100.0,
+          "ground_track_true_deg": 226.23,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/n485mc"
+      ]
+    }
+  },
+  "DSC01230": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T15:02:15-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "EI-XLR",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/ei-xlr"
+    },
+    "flights": [
+      "EI127"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/ei-xlr",
+      "callsign": "EIN1EN"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T15:02:15-05:00",
+      "track": [
+        {
+          "operating_callsign": "EIN1EN",
+          "registration": "EI-XLR",
+          "timestamp_utc": "2026-11-05T20:02:16.001Z",
+          "lat": 43.706965,
+          "lon": -79.61635,
+          "altitude_ft": 1150.0,
+          "ground_track_true_deg": 226.52,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/ei-xlr"
+      ]
+    }
+  },
+  "DSC01234": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T15:02:18-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "EI-XLR",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/ei-xlr"
+    },
+    "flights": [
+      "EI127"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/ei-xlr",
+      "callsign": "EIN1EN"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T15:02:18-05:00",
+      "track": [
+        {
+          "operating_callsign": "EIN1EN",
+          "registration": "EI-XLR",
+          "timestamp_utc": "2026-11-05T20:02:16.001Z",
+          "lat": 43.706965,
+          "lon": -79.61635,
+          "altitude_ft": 1150.0,
+          "ground_track_true_deg": 226.52,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/ei-xlr"
+      ]
+    }
+  },
+  "DSC01237": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T15:02:19-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "EI-XLR",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/ei-xlr"
+    },
+    "flights": [
+      "EI127"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/ei-xlr",
+      "callsign": "EIN1EN"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T15:02:19-05:00",
+      "track": [
+        {
+          "operating_callsign": "EIN1EN",
+          "registration": "EI-XLR",
+          "timestamp_utc": "2026-11-05T20:02:16.001Z",
+          "lat": 43.706965,
+          "lon": -79.61635,
+          "altitude_ft": 1150.0,
+          "ground_track_true_deg": 226.52,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/ei-xlr"
+      ]
+    }
+  },
+  "DSC01239": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T15:02:20-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "EI-XLR",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/ei-xlr"
+    },
+    "flights": [
+      "EI127"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/ei-xlr",
+      "callsign": "EIN1EN"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T15:02:20-05:00",
+      "track": [
+        {
+          "operating_callsign": "EIN1EN",
+          "registration": "EI-XLR",
+          "timestamp_utc": "2026-11-05T20:02:16.001Z",
+          "lat": 43.706965,
+          "lon": -79.61635,
+          "altitude_ft": 1150.0,
+          "ground_track_true_deg": 226.52,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/ei-xlr"
+      ]
+    }
+  },
+  "DSC01244": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T15:18:33-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "B-18776",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-18776"
+    },
+    "flights": [
+      "CI5301"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-18776",
+      "callsign": "CAL5301"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T15:18:33-05:00",
+      "track": [
+        {
+          "operating_callsign": "CAL5301",
+          "registration": "B-18776",
+          "timestamp_utc": "2026-11-05T20:18:41.382Z",
+          "lat": 43.693611,
+          "lon": -79.634336,
+          "altitude_ft": null,
+          "ground_track_true_deg": null,
+          "on_ground": 1
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/b-18776"
+      ]
+    }
+  },
+  "DSC01246": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T15:18:36-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "B-18776",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-18776"
+    },
+    "flights": [
+      "CI5301"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-18776",
+      "callsign": "CAL5301"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T15:18:36-05:00",
+      "track": [
+        {
+          "operating_callsign": "CAL5301",
+          "registration": "B-18776",
+          "timestamp_utc": "2026-11-05T20:18:41.382Z",
+          "lat": 43.693611,
+          "lon": -79.634336,
+          "altitude_ft": null,
+          "ground_track_true_deg": null,
+          "on_ground": 1
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/b-18776"
+      ]
+    }
+  },
+  "DSC01248": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T15:18:50-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "B-18776",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-18776"
+    },
+    "flights": [
+      "CI5301"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-18776",
+      "callsign": "CAL5301"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T15:18:50-05:00",
+      "track": [
+        {
+          "operating_callsign": "CAL5301",
+          "registration": "B-18776",
+          "timestamp_utc": "2026-11-05T20:18:57.699Z",
+          "lat": 43.69407,
+          "lon": -79.635004,
+          "altitude_ft": null,
+          "ground_track_true_deg": null,
+          "on_ground": 1
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/b-18776"
+      ]
+    }
+  },
+  "DSC01264": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T15:35:44-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "PH-ZNA",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/ph-zna"
+    },
+    "flights": [
+      "KL691"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/ph-zna",
+      "callsign": "KLM147"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T15:35:44-05:00",
+      "track": [
+        {
+          "operating_callsign": "KLM147",
+          "registration": "PH-ZNA",
+          "timestamp_utc": "2026-11-05T20:35:47.758Z",
+          "lat": 43.70755,
+          "lon": -79.615557,
+          "altitude_ft": 1175.0,
+          "ground_track_true_deg": 226.62,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/ph-zna"
+      ]
+    }
+  },
+  "DSC01273": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T15:35:50-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "PH-ZNA",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/ph-zna"
+    },
+    "flights": [
+      "KL691"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/ph-zna",
+      "callsign": "KLM147"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T15:35:50-05:00",
+      "track": [
+        {
+          "operating_callsign": "KLM147",
+          "registration": "PH-ZNA",
+          "timestamp_utc": "2026-11-05T20:35:47.758Z",
+          "lat": 43.70755,
+          "lon": -79.615557,
+          "altitude_ft": 1175.0,
+          "ground_track_true_deg": 226.62,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/ph-zna"
+      ]
+    }
+  },
+  "DSC01276": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T15:35:53-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "PH-ZNA",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/ph-zna"
+    },
+    "flights": [
+      "KL691"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/ph-zna",
+      "callsign": "KLM147"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T15:35:53-05:00",
+      "track": [
+        {
+          "operating_callsign": "KLM147",
+          "registration": "PH-ZNA",
+          "timestamp_utc": "2026-11-05T20:35:47.758Z",
+          "lat": 43.70755,
+          "lon": -79.615557,
+          "altitude_ft": 1175.0,
+          "ground_track_true_deg": 226.62,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/ph-zna"
+      ]
+    }
+  },
+  "DSC01279": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T15:35:54-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "PH-ZNA",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/ph-zna"
+    },
+    "flights": [
+      "KL691"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/ph-zna",
+      "callsign": "KLM147"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T15:35:54-05:00",
+      "track": [
+        {
+          "operating_callsign": "KLM147",
+          "registration": "PH-ZNA",
+          "timestamp_utc": "2026-11-05T20:35:47.758Z",
+          "lat": 43.70755,
+          "lon": -79.615557,
+          "altitude_ft": 1175.0,
+          "ground_track_true_deg": 226.62,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/ph-zna"
+      ]
+    }
+  },
+  "DSC01287": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T16:04:45-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "C-GKOE",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gkoe"
+    },
+    "flights": [
+      "AC266"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gkoe",
+      "callsign": "ACA266"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T16:04:45-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA266",
+          "registration": "C-GKOE",
+          "timestamp_utc": "2026-11-05T21:04:43.613Z",
+          "lat": 43.707001,
+          "lon": -79.616387,
+          "altitude_ft": 1150.0,
+          "ground_track_true_deg": 226.27,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-gkoe"
+      ]
+    }
+  },
+  "DSC01289": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T16:04:47-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "C-GKOE",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gkoe"
+    },
+    "flights": [
+      "AC266"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gkoe",
+      "callsign": "ACA266"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T16:04:47-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA266",
+          "registration": "C-GKOE",
+          "timestamp_utc": "2026-11-05T21:04:43.613Z",
+          "lat": 43.707001,
+          "lon": -79.616387,
+          "altitude_ft": 1150.0,
+          "ground_track_true_deg": 226.27,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-gkoe"
+      ]
+    }
+  },
+  "DSC01292": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T16:04:49-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "C-GKOE",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gkoe"
+    },
+    "flights": [
+      "AC266"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gkoe",
+      "callsign": "ACA266"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T16:04:49-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA266",
+          "registration": "C-GKOE",
+          "timestamp_utc": "2026-11-05T21:04:43.613Z",
+          "lat": 43.707001,
+          "lon": -79.616387,
+          "altitude_ft": 1150.0,
+          "ground_track_true_deg": 226.27,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-gkoe"
+      ]
+    }
+  },
+  "DSC01297": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T16:06:13-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "B-20EM",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-20em"
+    },
+    "flights": [
+      "CZ485"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-20em",
+      "callsign": "CSN485"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T16:06:13-05:00",
+      "track": [
+        {
+          "operating_callsign": "CSN485",
+          "registration": "B-20EM",
+          "timestamp_utc": "2026-11-05T21:06:14.002Z",
+          "lat": 43.708832,
+          "lon": -79.613704,
+          "altitude_ft": 1175.0,
+          "ground_track_true_deg": 226.11,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/b-20em"
+      ]
+    }
+  },
+  "DSC01305": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T16:06:18-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "B-20EM",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-20em"
+    },
+    "flights": [
+      "CZ485"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-20em",
+      "callsign": "CSN485"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T16:06:18-05:00",
+      "track": [
+        {
+          "operating_callsign": "CSN485",
+          "registration": "B-20EM",
+          "timestamp_utc": "2026-11-05T21:06:14.002Z",
+          "lat": 43.708832,
+          "lon": -79.613704,
+          "altitude_ft": 1175.0,
+          "ground_track_true_deg": 226.11,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/b-20em"
+      ]
+    }
+  },
+  "DSC01309": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T16:06:20-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "B-20EM",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-20em"
+    },
+    "flights": [
+      "CZ485"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-20em",
+      "callsign": "CSN485"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T16:06:20-05:00",
+      "track": [
+        {
+          "operating_callsign": "CSN485",
+          "registration": "B-20EM",
+          "timestamp_utc": "2026-11-05T21:06:14.002Z",
+          "lat": 43.708832,
+          "lon": -79.613704,
+          "altitude_ft": 1175.0,
+          "ground_track_true_deg": 226.11,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/b-20em"
+      ]
+    }
+  },
+  "DSC01310": {
+    "date": "2026-11-05",
+    "capturedAt": "2026-11-05T16:06:21-05:00",
+    "reviewedAt": "2026-11-05",
+    "registration": {
+      "value": "B-20EM",
+      "status": "confirmed",
+      "basis": "Visible registration or adjacent frames, cross-checked with the capture time and ADS-B history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-20em"
+    },
+    "flights": [
+      "CZ485"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Capture time matched to the same aircraft in the local ADS-B archive and flight history.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-20em",
+      "callsign": "CSN485"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-05 photo / registration / ADS-B review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-05T16:06:21-05:00",
+      "track": [
+        {
+          "operating_callsign": "CSN485",
+          "registration": "B-20EM",
+          "timestamp_utc": "2026-11-05T21:06:14.002Z",
+          "lat": 43.708832,
+          "lon": -79.613704,
+          "altitude_ft": 1175.0,
+          "ground_track_true_deg": 226.11,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/b-20em"
+      ]
+    }
   }
 }
