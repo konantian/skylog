@@ -6,6 +6,7 @@ import {collectRoutes,flightStats,projectAirport,routePath} from '@/lib/insights
 import type {Filters,Flight} from '@/lib/types';
 import {Icon} from './icons';
 import {JourneyReplay} from './journey-replay';
+import {FlightPassport} from './flight-passport';
 import {FlightRecords} from './flight-records';
 
 type Airport={name:string;city:string;latitude:number;longitude:number;country:string};
@@ -20,7 +21,7 @@ function Ranking({title,items}:{title:string;items:Ranked[]}) {
   return <div className="flight-ranking"><h4>{title}</h4>{items.slice(0,3).map((item,i)=><div className="ranking-row" key={item.name}><span>{String(i+1).padStart(2,'0')}</span><strong>{item.name}</strong><b>{item.count}<small> {t("段")}</small></b></div>)}</div>;
 }
 
-export function FlightOverview({allFlights,mapFlights,filters,onFilter}:{allFlights:Flight[];mapFlights:Flight[];filters:Filters;onFilter:(key:keyof Filters,value:string)=>void}) {
+export function FlightOverview({allFlights,mapFlights,filteredFlights,filters,onFilter}:{allFlights:Flight[];mapFlights:Flight[];filteredFlights:Flight[];filters:Filters;onFilter:(key:keyof Filters,value:string)=>void}) {
   const {t}=useLocale();
   const stats=useMemo(()=>flightStats(allFlights),[allFlights]);
   const routes=useMemo(()=>collectRoutes(mapFlights) as Route[],[mapFlights]);
@@ -44,6 +45,7 @@ export function FlightOverview({allFlights,mapFlights,filters,onFilter}:{allFlig
       {[[stats.total,t("乘坐航段")],[stats.airlines.length,t("坐过航司")],[stats.models.length,t("明确机型")],[stats.airports,t("到访机场")]].map(([value,label])=><div key={label}><strong>{value}</strong><span>{label}</span></div>)}
     </div>
     <FlightRecords flights={allFlights}/>
+    <FlightPassport flights={filteredFlights} year={filters.flightYear} onFilter={onFilter}/>
     <div className="flight-overview-grid">
       <section className="route-map" aria-labelledby="route-map-title">
         <div className="map-heading"><div><span className="eyebrow">ACROSS THE PACIFIC & BEYOND</span><h4 id="route-map-title">{t("把旅途连成一张地图")}</h4></div><div className="map-regions" aria-label={t("地图区域")}>{regions.map(r=><button key={r.id} aria-pressed={region===r.id} onClick={()=>setRegion(r.id)}>{t(r.label)}</button>)}</div></div>

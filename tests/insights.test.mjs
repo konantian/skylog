@@ -77,3 +77,21 @@ _,s=m.normalize({'name':'DSC12345.ARW','date':'2026:10:31 12:00:00','focal':200,
 assert s['shutter']=='1/1000' and 'camera' not in s
 `]);
 });
+
+test('flight breakdown retains unknown coverage, calendar buckets and connection events', async()=>{
+ const {flightBreakdown}=await import('../lib/insights.mjs');
+ const flights=[
+ {date:'2026-10-31',origin:'YYZ',destination:'YVR',airline:'Air Canada',model:'Boeing 787-9',registration:'C-FABC'},
+ {date:'2026-11-01',origin:'YVR',destination:'ICN',airline:'Air Canada',model:'Boeing 787-9',registration:'C-FABC'},
+ {date:'2025-11-02',origin:'XXX',destination:'YYZ',airline:'Unknown',model:null,registration:null},
+ ];
+ const stats=flightBreakdown(flights,airports);
+ assert.equal(stats.domestic,1);assert.equal(stats.international,1);assert.equal(stats.unclassified,1);
+ assert.equal(stats.months[9].count,1);assert.equal(stats.months[10].count,2);
+ assert.equal(stats.weekdays[6].count,1);assert.equal(stats.weekdays[0].count,2);
+ assert.deepEqual(stats.years,[{name:'2025',count:1},{name:'2026',count:2}]);
+ assert.equal(stats.airportRanking.find(a=>a.name==='YVR').count,2);
+ assert.deepEqual(stats.airframes,[{name:'C-FABC',count:2}]);
+ assert.equal(stats.airlineDistance.length,1);assert(stats.airlineDistance[0].count>10000);
+ assert.equal(stats.longDistance,1);assert.equal(flightBreakdown([],airports).averageKm,null);
+});

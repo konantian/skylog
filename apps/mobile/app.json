@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "SKYLOG",
+    "slug": "skylog",
+    "version": "1.0.0",
+    "scheme": "skylog",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.konantian.skylog",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "appleTeamId": "TSNU34BPFG"
+    },
+    "android": {
+      "package": "com.konantian.skylog",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#0b151e"
+      },
+      "predictiveBackGestureEnabled": true
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-localization",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/icon.png",
+          "imageWidth": 120,
+          "backgroundColor": "#0b151e"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "enableSceneSupport": true
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "platforms": ["ios", "android"],
+    "owner": "yuan-space",
+    "extra": {
+      "eas": {
+        "projectId": "8309a845-efea-4e8c-b893-fd8aa030b6a6"
+      }
+    }
+  }
+}

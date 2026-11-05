@@ -1,0 +1,91 @@
+import Svg, { Path, Circle, G } from "react-native-svg";
+import { useState } from "react";
+import { View } from "react-native";
+import land from "../../../../data/world-land.json";
+import {
+  collectRoutes,
+  routePath,
+  projectAirport,
+} from "../../../../lib/insights.mjs";
+import { airports, type LocalFlight } from "../lib/catalog";
+import { useApp } from "../lib/store";
+import { Button, Txt, styles } from "./ui";
+export function RouteMap({ flights }: { flights: LocalFlight[] }) {
+  const { colors, words } = useApp();
+  const [region, setRegion] = useState("world");
+  const data = airports as Record<
+    string,
+    { latitude: number; longitude: number; city: string; country: string }
+  >;
+  const routes = collectRoutes(flights);
+  const visited = [
+    ...new Set(flights.flatMap((f) => [f.origin, f.destination])),
+  ];
+  const views: Record<string, string> = {
+    world: "0 0 900 400",
+    america: "400 40 400 230",
+    asia: "200 80 190 150",
+    europe: "780 30 270 120",
+  };
+  const offset = region === "europe" ? 450 : 0;
+  return (
+    <View style={{ gap: 14 }}>
+      <View style={[styles.row, { flexWrap: "wrap", gap: 8 }]}>
+        {[
+          ["world", words("World", "全球")],
+          ["america", words("America", "北美")],
+          ["asia", words("East Asia", "东亚")],
+          ["europe", words("Europe", "欧洲")],
+        ].map(([id, label]) => (
+          <Button
+            key={id}
+            title={label}
+            secondary={id !== region}
+            onPress={() => setRegion(id)}
+            style={{ paddingHorizontal: 12 }}
+          />
+        ))}
+      </View>
+      <Svg
+        width="100%"
+        height={230}
+        viewBox={views[region]}
+        accessibilityLabel={words(
+          `Flight map: ${routes.length} routes`,
+          `航线地图：${routes.length} 条航线`,
+        )}
+      >
+        <G fill={colors.line}>
+          <Path d={land.path} transform="translate(-450 0)" />
+          <Path d={land.path} transform="translate(450 0)" />
+        </G>
+        {routes.map((r) => {
+          const a = data[r.airports[0]],
+            b = data[r.airports[1]];
+          return a && b ? (
+            <Path
+              key={r.key}
+              d={routePath(a, b, offset)}
+              stroke={colors.accent}
+              strokeWidth={1.5}
+              opacity={0.7}
+              fill="none"
+            />
+          ) : null;
+        })}
+        {visited.map((code) => {
+          const a = data[code];
+          if (!a) return null;
+          const [x, y] = projectAirport(a, offset);
+          return <Circle key={code} cx={x} cy={y} r={3} fill={colors.accent} />;
+        })}
+      </Svg>
+      <Txt muted style={{ fontSize: 11, lineHeight: 17 }}>
+        {words(
+          "Illustrative great-circle routes · OurAirports / Natural Earth",
+          "大圆航线示意 · OurAirports / Natural Earth",
+        )}
+      </Txt>
+    </View>
+  );
+}

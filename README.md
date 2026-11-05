@@ -4,6 +4,8 @@ A personal aircraft, airline, and photography collection built with Next.js. All
 
 **Website:** https://konantian.github.io/skylog/
 
+**Native iOS / Android app:** [Expo app, offline flight log and Passport](apps/mobile/README.md). The website stays public and read-only; personal native records remain in on-device SQLite.
+
 - 441 edited photographs, with full-color unlocked entries and grayscale wishlist silhouettes.
 - Aircraft and airline catalogs, plus a photo gallery preserving multiple angles and liveries.
 - Combine manufacturer, airline country/region, airline, model, livery, and photographed airport filters. Search filenames, aircraft, airlines (English/Chinese), registration numbers, or recorded flight numbers.

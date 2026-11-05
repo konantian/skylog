@@ -9,7 +9,7 @@ export function FlightLog({flights,mapFlights,allFlights,filters,onFilter,limit,
   const {t}=useLocale();
   return <div className="flight-log">
     <div className="flight-log-intro"><div className="eyebrow">MY BOARDING HISTORY</div><h3>{t("从地面仰望，也从云端经过。")}</h3><p>{t("Flighty 记录 · 共")}{total} {t("段旅程。具体机型按原记录保留，未细分的家族名称不计入子型号解锁。")}</p></div>
-    <FlightOverview allFlights={allFlights} mapFlights={mapFlights} filters={filters} onFilter={onFilter}/>
+    <FlightOverview filteredFlights={flights} allFlights={allFlights} mapFlights={mapFlights} filters={filters} onFilter={onFilter}/>
     <div className="flight-list-title"><h3>{t("航班记录")}</h3><span>{flights.length} {t("段符合当前筛选")}</span></div>
     <div className="flight-list">{flights.slice(0,limit).map(f=>{
       const photo = f.registration ? photos.find(p=>p.registration?.status==='confirmed'&&p.registration.value===f.registration) : undefined;

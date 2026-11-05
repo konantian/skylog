@@ -6,7 +6,11 @@
     "dev": "next dev --hostname 127.0.0.1",
     "build": "next build",
     "test": "node --test tests/*.test.mjs",
-    "photos:prepare": "node scripts/prepare-photos.mjs"
+    "photos:prepare": "node scripts/prepare-photos.mjs",
+    "mobile:install": "npm --prefix apps/mobile ci",
+    "mobile": "npm --prefix apps/mobile start",
+    "mobile:ios": "npm --prefix apps/mobile run ios",
+    "mobile:check": "npm --prefix apps/mobile run typecheck && npm --prefix apps/mobile run lint"
   },
   "dependencies": {
     "next": "16.4.4",
