@@ -64,3 +64,22 @@ test('all generated silhouettes rasterize within the shared card viewport withou
     assert.ok(maxX-minX>180,`${entry.name} too small to recognize`);
   }
 });
+
+test('freighter profiles distinguish loading layouts without inventing passenger windows',()=>{
+  for(const entry of catalog.aircraft.filter(a=>a.category==='货机')){
+    const s=shape(entry.name);
+    assert.ok(!has(s,'cabin-windows'),entry.name);
+    assert.ok(has(s,'engine-cowling-seams'),entry.name);
+    if(entry.family==='An-124'){
+      assert.ok(!has(s,'cargo-door'),'An-124 loads through its end ramps, not the generic side door');
+      continue;
+    }
+    assert.ok(has(s,'crew-door'),entry.name);
+    const x=Number(s.paths.find(p=>p.feature==='cargo-door').d.match(/^M([\d.]+)/)[1]);
+    assert.equal(x<s.length/2,['747','777'].includes(entry.family),entry.name);
+  }
+  assert.ok(has(shape('Airbus A330-200F'),'nose-gear-fairing'));
+  assert.ok(!has(shape('Airbus A330-300P2F'),'nose-gear-fairing'));
+  assert.ok(has(shape('Boeing 747-8F'),'nose-cargo-seam'));
+  assert.ok(!has(shape('Boeing 777F'),'nose-cargo-seam'));
+});

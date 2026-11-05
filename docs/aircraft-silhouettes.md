@@ -45,6 +45,22 @@ generic and do not imply an airline operates a particular model.
 Tests check catalog coverage, family scale consistency, key configuration
 features and rasterized bounds for every model.
 
+### Freighter card details
+
+Freighter previews also include original linework for rounded loading doors,
+crew entrances, hinges, nacelle seams, exhausts and wing-root fairings. Port-side
+main-deck doors sit forward on A300/A330/767/MD-11 and aft on 747/777; the 747
+also has a nose-door seam and three representative upper-deck windows. The
+A330-200F retains its distinctive nose-gear fairing; the A330-300P2F does not.
+An-124 does not receive a generic side-loading door. Opposite-side lower-hold
+doors and passenger window rows are not added to fill empty fuselage space.
+
+These details follow the manufacturer references already listed per model in
+`data/aircraft-drawings.json`, including Airbus's A300F4-600 manual and A330-200F
+CAD, Boeing's 747-8F/777F/MD-11 references and EFW's conversion brochure. Door
+placement, latches and panel lines remain illustrative, not engineering geometry.
+The technical SVG assets are still used only in detail views.
+
 ## Detail-only technical references
 
 Cards and family-progress previews continue to use the original illustrations
