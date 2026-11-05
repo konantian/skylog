@@ -2,10 +2,12 @@ import { useMemo, useDeferredValue } from "react";
 import {
   View,
   TextInput,
+  Keyboard,
   FlatList,
   Pressable,
   useWindowDimensions,
 } from "react-native";
+import { KeyboardControls } from "../components/keyboard-controls";
 import { router } from "expo-router";
 import { useApp } from "../lib/store";
 import {
@@ -218,6 +220,7 @@ export function CollectionScreen({
             autoCorrect={false}
             autoCapitalize="none"
             returnKeyType="search"
+            onSubmitEditing={Keyboard.dismiss}
             style={{ flex: 1, minHeight: 50, color: colors.text, fontSize: 16 }}
           />
           {f.query.length > 0 && (
@@ -325,6 +328,7 @@ export function CollectionScreen({
           />
         }
       />
+      <KeyboardControls />
     </View>
   );
 }

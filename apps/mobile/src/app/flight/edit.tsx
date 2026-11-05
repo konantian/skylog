@@ -1,11 +1,12 @@
+import { useSQLiteContext } from "expo-sqlite";
+import { lookupCurrentFlight } from "../../lib/aviationstack";
 import { useState, useRef } from "react";
 import {
   View,
   TextInput,
   Platform,
   Alert,
-  KeyboardAvoidingView,
-  ScrollView,
+  Keyboard,
   Pressable,
 } from "react-native";
 import DateTimePicker from "@react-native-community/datetimepicker";
@@ -23,32 +24,75 @@ import {
   airlines,
   airports,
   type LocalFlight,
+  airportTimezones,
 } from "../../lib/catalog";
 import { todayLocal } from "../../lib/database.mjs";
 import { Txt, Button, Section, styles } from "../../components/ui";
+import {
+  KeyboardAwareScrollView,
+  KeyboardController,
+  type KeyboardAwareScrollViewRef,
+} from "react-native-keyboard-controller";
+import { KeyboardControls } from "../../components/keyboard-controls";
 
 type NumericKey = "durationMinutes" | "delayMinutes" | "aircraftYear";
 type Draft = Omit<LocalFlight, NumericKey> &
   Partial<Record<NumericKey, string | number | null>>;
 export default function EditFlight() {
-  const { id } = useLocalSearchParams<{ id?: string }>();
+  const { id, template, returnTrip, calendarDraft } = useLocalSearchParams<{
+    id?: string;
+    template?: string;
+    returnTrip?: string;
+    calendarDraft?: string;
+  }>();
+  const [imported] = useState(() => {
+    try {
+      const value = JSON.parse(calendarDraft || "null");
+      if (!value || typeof value !== "object") return {};
+      return Object.fromEntries(
+        [
+          "flight",
+          "origin",
+          "destination",
+          "date",
+          "departureTime",
+          "arrivalDate",
+          "arrivalTime",
+          "status",
+        ]
+          .filter(
+            (key) => typeof value[key] === "string" && value[key].length < 30,
+          )
+          .map((key) => [key, value[key]]),
+      );
+    } catch {
+      return {};
+    }
+  });
   const { colors, words, flights, save, isDark } = useApp();
   const navigation = useNavigation();
+  const db = useSQLiteContext();
+  const [looking, setLooking] = useState(false);
   const existing = flights.find((f) => f.id === id);
+  const source = flights.find((f) => f.id === template);
+  const scroll = useRef<KeyboardAwareScrollViewRef>(null);
+  const [arrivalCalendar, setArrivalCalendar] = useState(false);
   const [form, setForm] = useState<Draft>(
     () =>
       existing || {
         id: randomUUID(),
         date: todayLocal(),
-        airline: "",
-        flight: "",
-        origin: "",
-        destination: "",
+        airline: source?.airline || "",
+        flight: returnTrip ? "" : source?.flight || "",
+        origin: (returnTrip ? source?.destination : source?.origin) || "",
+        destination: (returnTrip ? source?.origin : source?.destination) || "",
         model: null,
         modelLabel: "",
         registration: null,
-        status: "completed",
+        status: source ? "planned" : "completed",
+        trip: source?.trip || "",
         notes: "",
+        ...imported,
       },
   );
   const [original] = useState(() => JSON.stringify(form));
@@ -99,15 +143,19 @@ export default function EditFlight() {
           change(key, value);
           if (key === "modelLabel") setForm((old) => ({ ...old, model: null }));
         }}
-        onFocus={() =>
+        onFocus={() => {
           setSuggest(
             key === "airline"
               ? "airline"
               : key === "modelLabel"
                 ? "model"
                 : null,
-          )
-        }
+          );
+          if (key === "notes")
+            requestAnimationFrame(() =>
+              scroll.current?.assureFocusedInputVisible(),
+            );
+        }}
         autoCapitalize={
           ["flight", "origin", "destination", "registration"].includes(key)
             ? "characters"
@@ -121,6 +169,14 @@ export default function EditFlight() {
             : "default"
         }
         autoCorrect={false}
+        keyboardAppearance={isDark ? "dark" : "light"}
+        returnKeyType={key === "notes" ? "default" : "next"}
+        submitBehavior={key === "notes" ? "newline" : "submit"}
+        onSubmitEditing={
+          key === "notes"
+            ? undefined
+            : () => KeyboardController.setFocusTo("next")
+        }
         maxLength={
           key === "notes"
             ? 4000
@@ -171,6 +227,7 @@ export default function EditFlight() {
                       : { ...old, model: item.name, modelLabel: item.name },
                   );
                   setSuggest(null);
+                  KeyboardController.setFocusTo("next");
                 }}
                 style={({ pressed }) => ({
                   padding: 12,
@@ -203,6 +260,7 @@ export default function EditFlight() {
   );
   const submit = async () => {
     if (savingRef.current) return;
+    Keyboard.dismiss();
     savingRef.current = true;
     setSaving(true);
     try {
@@ -252,31 +310,35 @@ export default function EditFlight() {
             ? words("Edit flight", "编辑航班")
             : words("Add flight", "添加航班"),
           gestureEnabled: !saving,
-          headerLeft: () => (
-            <Button
-              secondary
-              title={words("Cancel", "取消")}
-              disabled={saving}
-              onPress={() => router.back()}
-            />
-          ),
-          headerRight: () => (
-            <Button
-              title={words("Save", "保存")}
-              disabled={saving}
-              onPress={() => void submit()}
-            />
-          ),
         }}
       />
-      <KeyboardAvoidingView
-        style={{ flex: 1, backgroundColor: colors.bg }}
-        behavior={Platform.OS === "ios" ? "padding" : undefined}
-        keyboardVerticalOffset={110}
-      >
-        <ScrollView
+      <Stack.Toolbar placement="left">
+        <Stack.Toolbar.Button
+          disabled={saving}
+          tintColor={colors.accent}
+          onPress={() => router.back()}
+        >
+          {words("Cancel", "取消")}
+        </Stack.Toolbar.Button>
+      </Stack.Toolbar>
+      <Stack.Toolbar placement="right">
+        <Stack.Toolbar.Button
+          variant="prominent"
+          disabled={saving}
+          tintColor={colors.accent}
+          onPress={() => void submit()}
+        >
+          {words("Save", "保存")}
+        </Stack.Toolbar.Button>
+      </Stack.Toolbar>
+      <View style={{ flex: 1, backgroundColor: colors.bg }}>
+        <KeyboardAwareScrollView
+          ref={scroll}
+          bottomOffset={72}
+          extraKeyboardSpace={64}
+          disableScrollOnKeyboardHide
           keyboardShouldPersistTaps="handled"
-          keyboardDismissMode="on-drag"
+          keyboardDismissMode="interactive"
           contentContainerStyle={{ padding: 20, paddingBottom: 60, gap: 20 }}
         >
           <Txt muted>
@@ -291,7 +353,10 @@ export default function EditFlight() {
               secondary
               title={form.date}
               icon="calendar-outline"
-              onPress={() => setCalendar((v) => !v)}
+              onPress={() => {
+                Keyboard.dismiss();
+                setCalendar((v) => !v);
+              }}
             />
             {calendar && (
               <DateTimePicker
@@ -342,6 +407,65 @@ export default function EditFlight() {
             words("Flight number · optional", "航班号 · 选填"),
             "AC123",
           )}
+          {!existing && (
+            <Button
+              secondary
+              disabled={looking || !form.flight}
+              title={
+                looking
+                  ? words("Looking up…", "查询中……")
+                  : words("Look up today's flight", "查询今天的航班")
+              }
+              onPress={() =>
+                void (async () => {
+                  Keyboard.dismiss();
+                  setLooking(true);
+                  try {
+                    const result = await lookupCurrentFlight(
+                      db,
+                      form.date,
+                      form.flight.toUpperCase().replace(/\s/g, ""),
+                    );
+                    const data = result.data;
+                    if (!data || result.error)
+                      throw new Error(
+                        words(
+                          "No unique current flight returned. Enter the route manually or check Flight data in Settings.",
+                          "没有返回唯一匹配的当前航班。请手动填写航线，或在设置中查看服务状态。",
+                        ),
+                      );
+                    setForm((old) => ({
+                      ...old,
+                      airline: data.airline,
+                      flight: data.flight,
+                      origin: data.origin,
+                      destination: data.destination,
+                      departureTime: data.scheduledDeparture.slice(11, 16),
+                      arrivalTime: data.scheduledArrival.slice(11, 16),
+                      arrivalDate: data.scheduledArrival.slice(0, 10),
+                      departureGate: data.departureGate,
+                      departureTerminal: data.departureTerminal,
+                      arrivalGate: data.arrivalGate,
+                      arrivalTerminal: data.arrivalTerminal,
+                      registration: data.registration || null,
+                      baggage: data.baggage,
+                      status:
+                        data.status === "landed"
+                          ? "completed"
+                          : data.status === "cancelled"
+                            ? "cancelled"
+                            : "planned",
+                    }));
+                  } catch (e) {
+                    Alert.alert(words("Flight lookup", "航班查询"), String(e));
+                  } finally {
+                    setLooking(false);
+                  }
+                })()
+              }
+            />
+          )}
+
           <View style={{ flexDirection: "row", gap: 16 }}>
             <View style={{ flex: 1 }}>
               {field("origin", words("From · IATA", "出发 · IATA"), "YYZ")}
@@ -422,6 +546,46 @@ export default function EditFlight() {
                   )}
                 </View>
               </View>
+              <Txt muted style={{ fontSize: 12 }}>
+                {words("Airport time zones", "机场时区")}:{" "}
+                {(airportTimezones as Record<string, string>)[form.origin] ||
+                  "—"}{" "}
+                →{" "}
+                {(airportTimezones as Record<string, string>)[
+                  form.destination
+                ] || "—"}
+              </Txt>
+              <Txt muted>
+                {words(
+                  "Arrival date · at destination",
+                  "到达日期 · 目的地当地",
+                )}
+              </Txt>
+              <Button
+                secondary
+                title={
+                  form.arrivalDate ||
+                  words("Choose arrival date", "选择到达日期")
+                }
+                icon="calendar-outline"
+                onPress={() => {
+                  Keyboard.dismiss();
+                  setArrivalCalendar((v) => !v);
+                }}
+              />
+              {arrivalCalendar && (
+                <DateTimePicker
+                  value={new Date(`${form.arrivalDate || form.date}T12:00:00`)}
+                  mode="date"
+                  display={Platform.OS === "ios" ? "inline" : "default"}
+                  themeVariant={isDark ? "dark" : "light"}
+                  onChange={(event, date) => {
+                    if (Platform.OS === "android") setArrivalCalendar(false);
+                    if (event.type === "set" && date)
+                      change("arrivalDate", todayLocal(date));
+                  }}
+                />
+              )}
               {field(
                 "durationMinutes",
                 words("Actual duration · minutes", "实际飞行时长 · 分钟"),
@@ -498,8 +662,9 @@ export default function EditFlight() {
             icon="checkmark"
             onPress={() => void submit()}
           />
-        </ScrollView>
-      </KeyboardAvoidingView>
+        </KeyboardAwareScrollView>
+        <KeyboardControls form />
+      </View>
     </>
   );
 }

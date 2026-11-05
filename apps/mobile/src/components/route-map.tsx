@@ -10,7 +10,13 @@ import {
 import { airports, type LocalFlight } from "../lib/catalog";
 import { useApp } from "../lib/store";
 import { Button, Txt, styles } from "./ui";
-export function RouteMap({ flights }: { flights: LocalFlight[] }) {
+export function RouteMap({
+  flights,
+  position,
+}: {
+  flights: LocalFlight[];
+  position?: { latitude: number; longitude: number; track: number | null };
+}) {
   const { colors, words } = useApp();
   const [region, setRegion] = useState("world");
   const data = airports as Record<
@@ -73,6 +79,21 @@ export function RouteMap({ flights }: { flights: LocalFlight[] }) {
             />
           ) : null;
         })}
+        {position &&
+          (() => {
+            const [x, y] = projectAirport(position, offset);
+            return (
+              <G
+                transform={`translate(${x} ${y}) rotate(${position.track || 0})`}
+              >
+                <Circle r={7} fill={colors.bg} />
+                <Path
+                  d="M0 -8 L2 -1 L8 3 L8 5 L2 3 L2 7 L0 6 L-2 7 L-2 3 L-8 5 L-8 3 L-2 -1 Z"
+                  fill={colors.accent}
+                />
+              </G>
+            );
+          })()}
         {visited.map((code) => {
           const a = data[code];
           if (!a) return null;

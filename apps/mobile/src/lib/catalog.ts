@@ -6,6 +6,7 @@ import verification from "../../../../data/photo-verification.json";
 export { default as airlineProfiles } from "../../../../data/airline-profiles.json";
 export { default as aircraftProfiles } from "../../../../data/aircraft-profiles.json";
 export { default as airports } from "../generated/airports.json";
+export { default as airportTimezones } from "../generated/airport-timezones.json";
 export { default as photoSettings } from "../../../../data/photo-settings.json";
 export { default as covers } from "../../../../data/cover-selections.json";
 export {
@@ -58,4 +59,14 @@ export type LocalFlight = Flight & {
   baggage?: string;
   trip?: string;
   bookingReference?: string;
+  arrivalDate?: string;
+  departureTimeZone?: string;
+  arrivalTimeZone?: string;
+  gateDepartureScheduled?: string;
+  gateDepartureActual?: string;
+  takeoffActual?: string;
+  landingActual?: string;
+  gateArrivalScheduled?: string;
+  gateArrivalActual?: string;
+  reminders?: boolean;
 };

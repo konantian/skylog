@@ -1,3 +1,4 @@
+import { airportInstant } from "./flight-time.mjs";
 import { todayLocal, validateFlight } from "./database.mjs";
 export function parseCsv(text) {
   if (text.length > 10_000_000) throw new Error("CSV is too large");
@@ -51,6 +52,7 @@ export function importFlightCsv(
   profiles,
   aircraft,
   today = todayLocal(),
+  zones = {},
 ) {
   const rows = parseCsv(text),
     flights = [],
@@ -112,8 +114,14 @@ export function importFlightCsv(
         status,
         notes: row.Notes || row.notes || "",
         seat: row.Seat || row.seat || "",
-        seatPosition: row.seatPosition || "",
-        cabin: row.Cabin || row.cabin || "",
+        seatPosition: (
+          row["Seat Type"] ||
+          row.seatPosition ||
+          ""
+        ).toLowerCase(),
+        cabin: (row["Cabin Class"] || row.Cabin || row.cabin || "")
+          .toLowerCase()
+          .replace("premium_economy", "premium"),
         durationMinutes: row.durationMinutes || null,
         delayMinutes: row.delayMinutes || null,
         aircraftYear: row.aircraftYear || null,
@@ -130,12 +138,74 @@ export function importFlightCsv(
         "bookingReference",
       ])
         f[key] = row[key] || "";
+      const fields = {
+        departureTerminal: "Dep Terminal",
+        departureGate: "Dep Gate",
+        arrivalTerminal: "Arr Terminal",
+        arrivalGate: "Arr Gate",
+        baggage: "Baggage Claim",
+        bookingReference: "PNR",
+        gateDepartureScheduled: "Gate Departure (Scheduled)",
+        gateDepartureActual: "Gate Departure (Actual)",
+        takeoffActual: "Take off (Actual)",
+        landingActual: "Landing (Actual)",
+        gateArrivalScheduled: "Gate Arrival (Scheduled)",
+        gateArrivalActual: "Gate Arrival (Actual)",
+      };
+      for (const [key, column] of Object.entries(fields)) {
+        const value = (row[key] || row[column] || "").trim();
+        f[key] =
+          /Scheduled$|Actual$/.test(key) &&
+          /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(?::\d{2}(?:\.\d+)?)?(?:Z|[+-]\d{2}:\d{2})?$/.test(
+            value,
+          )
+            ? value.slice(0, 16)
+            : value;
+      }
+      f.departureTimeZone = row.departureTimeZone || "";
+      f.arrivalTimeZone = row.arrivalTimeZone || "";
+      const dep = f.gateDepartureActual || f.gateDepartureScheduled;
+      const arr = f.gateArrivalActual || f.gateArrivalScheduled;
+      f.departureTime ||= dep.slice(11, 16);
+      f.arrivalTime ||= arr.slice(11, 16);
+      f.arrivalDate = row.arrivalDate || arr.slice(0, 10);
+      f.reminders = row.reminders === "true";
+      const takeoff = airportInstant(
+        f.takeoffActual,
+        f.departureTimeZone || zones[origin],
+      );
+      const landing = airportInstant(
+        f.landingActual,
+        f.arrivalTimeZone || zones[destination],
+      );
+      const actualArrival = airportInstant(
+        f.gateArrivalActual,
+        f.arrivalTimeZone || zones[destination],
+      );
+      const scheduledArrival = airportInstant(
+        f.gateArrivalScheduled,
+        f.arrivalTimeZone || zones[destination],
+      );
+      if (
+        f.durationMinutes == null &&
+        takeoff != null &&
+        landing != null &&
+        landing >= takeoff
+      )
+        f.durationMinutes = Math.round((landing - takeoff) / 60000);
+      if (
+        f.delayMinutes == null &&
+        actualArrival != null &&
+        scheduledArrival != null
+      )
+        f.delayMinutes = Math.round((actualArrival - scheduledArrival) / 60000);
       flights.push(validateFlight(f, today));
     } catch (error) {
       throw new Error(`Row ${index + 2}: ${error.message}`);
     }
   }
   return {
+    source: rows[0].Date ? "flighty-csv" : "skylog-csv",
     format: "skylog-local",
     version: 1,
     flights,
@@ -171,6 +241,16 @@ export function flightsCsv(flights) {
     "trip",
     "bookingReference",
     "notes",
+    "arrivalDate",
+    "departureTimeZone",
+    "arrivalTimeZone",
+    "reminders",
+    "gateDepartureScheduled",
+    "gateDepartureActual",
+    "takeoffActual",
+    "landingActual",
+    "gateArrivalScheduled",
+    "gateArrivalActual",
   ];
   const cell = (value) => '"' + String(value ?? "").replaceAll('"', '""') + '"';
   return [

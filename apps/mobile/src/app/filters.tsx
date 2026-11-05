@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { View, TextInput, FlatList, Pressable } from "react-native";
+import { View, TextInput, FlatList, Pressable, Keyboard } from "react-native";
+import { KeyboardControls } from "../components/keyboard-controls";
 import { router, Stack, useLocalSearchParams } from "expo-router";
 import { useApp } from "../lib/store";
 import {
@@ -87,15 +88,16 @@ export default function FiltersScreen() {
       <Stack.Screen
         options={{
           title: field ? t(labels[field]) : words("Filters", "筛选"),
-          headerLeft: () => (
-            <Button
-              secondary
-              title={field ? words("Back", "返回") : words("Cancel", "取消")}
-              onPress={() => (field ? setField(null) : router.back())}
-            />
-          ),
         }}
       />
+      <Stack.Toolbar placement="left">
+        <Stack.Toolbar.Button
+          tintColor={colors.accent}
+          onPress={() => (field ? setField(null) : router.back())}
+        >
+          {field ? words("Back", "返回") : words("Cancel", "取消")}
+        </Stack.Toolbar.Button>
+      </Stack.Toolbar>
       {field ? (
         <View
           style={{ flex: 1, backgroundColor: colors.bg, padding: 20, gap: 16 }}
@@ -112,6 +114,8 @@ export default function FiltersScreen() {
             ]}
             autoCapitalize="none"
             autoCorrect={false}
+            returnKeyType="search"
+            onSubmitEditing={Keyboard.dismiss}
           />
           <FlatList
             data={[
@@ -122,11 +126,13 @@ export default function FiltersScreen() {
             )}
             keyExtractor={(v) => v}
             keyboardShouldPersistTaps="handled"
+            keyboardDismissMode="on-drag"
             renderItem={({ item }) => (
               <Pressable
                 accessibilityRole="button"
                 accessibilityState={{ selected: draft[field] === item }}
                 onPress={() => {
+                  Keyboard.dismiss();
                   setDraft({ ...draft, [field]: item });
                   setField(null);
                 }}
@@ -146,6 +152,7 @@ export default function FiltersScreen() {
               </Pressable>
             )}
           />
+          <KeyboardControls />
         </View>
       ) : (
         <Page>

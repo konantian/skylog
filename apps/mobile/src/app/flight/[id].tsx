@@ -3,6 +3,9 @@ import { router, Stack, useLocalSearchParams } from "expo-router";
 import { useApp } from "../../lib/store";
 import { photos } from "../../lib/catalog";
 import { Page, Txt, Card, Button, Empty, Section } from "../../components/ui";
+import { FlightLiveData } from "../../components/flight-live-data";
+import { FlightTools } from "../../components/flight-tools";
+import { RouteMap } from "../../components/route-map";
 import { FlightCard } from "../../screens/flights";
 import { PhotoCard } from "../../screens/collection";
 export default function FlightDetail() {
@@ -30,6 +33,7 @@ export default function FlightDetail() {
       <View pointerEvents="none">
         <FlightCard flight={flight} />
       </View>
+      <RouteMap flights={[flight]} />
       <Card>
         <Section title={words("Travel details", "旅途详情")} />
         {[
@@ -42,7 +46,10 @@ export default function FlightDetail() {
               .join(" · "),
           ],
           [words("Departure · local", "出发 · 当地时间"), flight.departureTime],
-          [words("Arrival · local", "到达 · 当地时间"), flight.arrivalTime],
+          [
+            words("Arrival · local", "到达 · 当地时间"),
+            [flight.arrivalDate, flight.arrivalTime].filter(Boolean).join(" "),
+          ],
           [
             words("Actual duration", "实际时长"),
             flight.durationMinutes != null
@@ -79,8 +86,8 @@ export default function FlightDetail() {
           ))}
         <Txt muted style={{ fontSize: 12 }}>
           {words(
-            "Manually recorded details. No live gate or schedule updates.",
-            "手动记录的旅途信息，尚未接入实时登机口或时刻更新。",
+            "Saved or imported details. Check dated provider observations separately.",
+            "已保存或导入的旅途信息，数据源观测及其更新时间单独显示。",
           )}
         </Txt>
       </Card>
@@ -97,6 +104,11 @@ export default function FlightDetail() {
           router.push({ pathname: "/flight/edit", params: { id: flight.id } })
         }
       />
+      <FlightLiveData
+        key={`${flight.id}:${flight.registration}:${flight.date}:${flight.flight}`}
+        flight={flight}
+      />
+      <FlightTools flight={flight} />
       {matches.length > 0 && (
         <>
           <Section title={words("Flown & photographed", "坐过，也拍过")} />

@@ -1,4 +1,4 @@
-export const SCHEMA_VERSION = 2;
+export const SCHEMA_VERSION = 4;
 export function todayLocal(date = new Date()) {
   return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
 }
@@ -80,6 +80,15 @@ export function validateFlight(input, today = todayLocal()) {
     "baggage",
     "trip",
     "bookingReference",
+    "arrivalDate",
+    "departureTimeZone",
+    "arrivalTimeZone",
+    "gateDepartureScheduled",
+    "gateDepartureActual",
+    "takeoffActual",
+    "landingActual",
+    "gateArrivalScheduled",
+    "gateArrivalActual",
   ]) {
     const value = text(key);
     if (value.length > 100) throw new Error("A field is too long");
@@ -91,6 +100,40 @@ export function validateFlight(input, today = todayLocal()) {
       throw new Error("Use HH:MM for local times / 时间格式请用 HH:MM");
     details[key] = value;
   }
+  if (
+    details.arrivalDate &&
+    (!/^\d{4}-\d{2}-\d{2}$/.test(details.arrivalDate) ||
+      todayLocal(new Date(`${details.arrivalDate}T12:00:00`)) !==
+        details.arrivalDate)
+  )
+    throw new Error("Invalid arrival date / 到达日期无效");
+  for (const key of ["departureTimeZone", "arrivalTimeZone"]) {
+    if (details[key]) {
+      try {
+        new Intl.DateTimeFormat("en", { timeZone: details[key] }).format();
+      } catch {
+        throw new Error("Invalid time zone / 时区无效");
+      }
+    }
+  }
+  for (const key of [
+    "gateDepartureScheduled",
+    "gateDepartureActual",
+    "takeoffActual",
+    "landingActual",
+    "gateArrivalScheduled",
+    "gateArrivalActual",
+  ]) {
+    if (
+      details[key] &&
+      (!/^\d{4}-\d{2}-\d{2}T([01]\d|2[0-3]):[0-5]\d$/.test(details[key]) ||
+        !Number.isFinite(Date.parse(details[key] + ":00Z")) ||
+        new Date(details[key] + ":00Z").toISOString().slice(0, 16) !==
+          details[key])
+    )
+      throw new Error("Invalid flight event time");
+  }
+  details.reminders = input.reminders === true;
   return { ...flight, ...details };
 }
 export async function initializeDatabase(db, seed) {
@@ -118,6 +161,18 @@ export async function initializeDatabase(db, seed) {
       );
     });
   }
+  if (row.user_version < 3)
+    await db.withTransactionAsync(async () => {
+      await db.execAsync(
+        "CREATE TABLE IF NOT EXISTS provider_cache (key TEXT PRIMARY KEY, value TEXT NOT NULL, fetchedAt INTEGER NOT NULL); PRAGMA user_version=3",
+      );
+    });
+  if (row.user_version < 4)
+    await db.withTransactionAsync(async () => {
+      await db.execAsync(
+        "DROP TABLE IF EXISTS provider_requests; PRAGMA user_version=4",
+      );
+    });
 }
 async function writeFlight(db, f) {
   const details = Object.fromEntries(
@@ -197,10 +252,15 @@ export async function readLocalData(db) {
   };
 }
 export async function setPreference(db, key, value) {
-  if (!(
-    (key === "locale" && ["en", "zh"].includes(value)) ||
-    (key === "theme" && ["dark", "light", "system"].includes(value))
-  ))
+  if (
+    !(
+      (key === "locale" && ["en", "zh"].includes(value)) ||
+      (key === "theme" && ["dark", "light", "system"].includes(value)) ||
+      (key === "activeFlight" &&
+        typeof value === "string" &&
+        value.length <= 100)
+    )
+  )
     throw new Error("Invalid preference");
   await db.runAsync(
     "INSERT INTO preferences (key,value) VALUES (?,?) ON CONFLICT(key) DO UPDATE SET value=excluded.value",
@@ -251,7 +311,30 @@ export function validateBackup(value, today) {
 export async function mergeBackup(db, value, today) {
   const backup = validateBackup(value, today);
   await db.withTransactionAsync(async () => {
-    for (const f of backup.flights) await writeFlight(db, f);
+    for (const f of backup.flights) {
+      const existing = f.flight
+        ? await db.getFirstAsync(
+            "SELECT * FROM flights WHERE date=? AND flight=? AND origin=? AND destination=?",
+            f.date,
+            f.flight,
+            f.origin,
+            f.destination,
+          )
+        : null;
+      if (value.source === "flighty-csv" && existing) {
+        const { details, ...base } = existing;
+        const current = { ...base, ...JSON.parse(details) };
+        const filled = {
+          ...f,
+          ...Object.fromEntries(
+            Object.entries(current).filter(
+              ([, v]) => v != null && v !== "" && v !== "—",
+            ),
+          ),
+        };
+        await writeFlight(db, validateFlight(filled, today));
+      } else await writeFlight(db, { ...f, id: existing?.id || f.id });
+    }
     for (const id of backup.saved) await setPhotoSaved(db, id, true);
     for (const [key, value] of Object.entries(backup.preferences))
       await setPreference(db, key, value);

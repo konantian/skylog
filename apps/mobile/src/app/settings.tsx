@@ -1,17 +1,23 @@
 import { useState } from "react";
 import { Alert, View, Linking } from "react-native";
-import { router } from "expo-router";
+import { Stack, router } from "expo-router";
 import { useSQLiteContext } from "expo-sqlite";
 import { File, Paths } from "expo-file-system";
 import * as Sharing from "expo-sharing";
 import { exportBackup, mergeBackup, validateBackup } from "../lib/database.mjs";
 import { flightsCsv, importFlightCsv } from "../lib/flight-import.mjs";
-import { airlines, airlineProfiles, aircraft, website } from "../lib/catalog";
+import {
+  airlines,
+  airlineProfiles,
+  aircraft,
+  website,
+  airportTimezones,
+} from "../lib/catalog";
 import { useApp } from "../lib/store";
 import { Page, Txt, Section, Card, Button, styles } from "../components/ui";
 export default function Settings() {
   const app = useApp();
-  const { words, locale, theme, prefs, flights } = app;
+  const { words, locale, theme, prefs, flights, colors } = app;
   const db = useSQLiteContext();
   const [busy, setBusy] = useState(false);
   const exportData = async (format: "json" | "csv") => {
@@ -55,13 +61,24 @@ export default function Settings() {
       const text = await file.text();
       const parsed = text.trimStart().startsWith("{")
         ? JSON.parse(text)
-        : importFlightCsv(text, airlines, airlineProfiles.airlines, aircraft);
+        : importFlightCsv(
+            text,
+            airlines,
+            airlineProfiles.airlines,
+            aircraft,
+            undefined,
+            airportTimezones,
+          );
       const data = validateBackup(parsed);
       Alert.alert(
         words("Import local records?", "导入本地记录？"),
         words(
-          `${data.flights.length} flights. Existing records with the same ID will be updated. Other flights stay unchanged.`,
-          `${data.flights.length} 段航班。同 ID 的现有记录会更新，其他航班保留。`,
+          parsed.source === "flighty-csv"
+            ? `${data.flights.length} flights. Missing details will be filled; your existing notes and edits will be kept.`
+            : `${data.flights.length} flights. Matching records will be updated. Other flights stay unchanged.`,
+          parsed.source === "flighty-csv"
+            ? `${data.flights.length} 段航班。补全缺失信息，保留已有备注和修改，不重复添加同一航段。`
+            : `${data.flights.length} 段航班。匹配的记录会更新，其他航班保留。`,
         ),
         [
           { text: words("Cancel", "取消"), style: "cancel" },
@@ -88,6 +105,15 @@ export default function Settings() {
   };
   return (
     <Page>
+      <Stack.Toolbar placement="right">
+        <Stack.Toolbar.Button
+          variant="done"
+          tintColor={colors.accent}
+          onPress={() => router.back()}
+        >
+          {words("Done", "完成")}
+        </Stack.Toolbar.Button>
+      </Stack.Toolbar>
       <Section
         title={words("Make it yours.", "你的天空，你来记录。")}
         caption="SKYLOG · ON DEVICE"
@@ -127,6 +153,12 @@ export default function Settings() {
         icon="globe-outline"
         onPress={() => router.push("/passport")}
       />
+      <Button
+        secondary
+        title={words("Flight data & API budget", "航班数据与 API 用量")}
+        icon="cloud-outline"
+        onPress={() => router.push("/services")}
+      />
       <Section title={words("Your data stays with you", "数据留在你手中")} />
       <Txt muted>
         {words(
@@ -156,10 +188,16 @@ export default function Settings() {
         icon="document-outline"
         onPress={() => void importData()}
       />
+      <Button
+        secondary
+        title={words("Import from Calendar", "从系统日历导入")}
+        icon="calendar-outline"
+        onPress={() => router.push("/flight/calendar")}
+      />
       <Txt muted style={{ fontSize: 12 }}>
         {words(
-          "Import is local and transactional. Original Flighty flight/date/route/model fields are supported; unknown columns are ignored. No live updates are connected.",
-          "导入仅在本机进行，失败会整体撤销。支持原始 Flighty 的航班、日期、航线与机型字段，未知列会忽略。目前未接入实时数据。",
+          "Flighty imports include aircraft, registration, airport-local event times, seats and gates. Known time zones allow actual airborne duration and arrival delay to be calculated. Missing data stays unknown.",
+          "Flighty 导入支持机型、注册号、起降时间、座位和登机口。时区明确时计算实际飞行时长与到达延误，缺失数据保留为空。",
         )}
       </Txt>
       <Button

@@ -11,7 +11,8 @@
       "supportsTablet": true,
       "bundleIdentifier": "com.konantian.skylog",
       "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSCalendarsWriteOnlyAccessUsageDescription": "Add the selected flight to your calendar."
       },
       "appleTeamId": "TSNU34BPFG"
     },
@@ -43,12 +44,50 @@
             "enableSceneSupport": true
           }
         }
+      ],
+      [
+        "expo-widgets",
+        {
+          "groupIdentifier": "group.com.konantian.skylog",
+          "bundleIdentifier": "com.konantian.skylog.widgets",
+          "enablePushNotifications": false,
+          "widgets": [
+            {
+              "name": "SkylogNextFlight",
+              "displayName": "SKYLOG · Next flight",
+              "description": "Your next saved flight, available offline.",
+              "ios": {
+                "supportedFamilies": [
+                  "systemSmall",
+                  "systemMedium"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#12618d"
+        }
+      ],
+      [
+        "expo-calendar",
+        {
+          "calendarPermission": "SKYLOG uses calendars only when you choose to import or add flights.",
+          "writeOnlyCalendarPermission": "Add the selected flight to your calendar.",
+          "writeOnlyAccess": false
+        }
       ]
     ],
     "experiments": {
       "typedRoutes": true
     },
-    "platforms": ["ios", "android"],
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "owner": "yuan-space",
     "extra": {
       "eas": {

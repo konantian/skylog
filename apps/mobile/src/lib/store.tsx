@@ -15,6 +15,7 @@ import {
 } from "react-native";
 import { SQLiteProvider, useSQLiteContext } from "expo-sqlite";
 import { getLocales } from "expo-localization";
+import { syncReminders, syncFlightWidgets } from "./flight-integrations";
 import { translate } from "../../../../lib/i18n.mjs";
 import {
   initializeDatabase,
@@ -67,7 +68,12 @@ type Store = {
   flights: LocalFlight[];
   completed: LocalFlight[];
   saved: string[];
-  prefs: (key: "locale" | "theme", value: string) => Promise<void>;
+  activeFlight: string;
+  integrationError: string;
+  prefs: (
+    key: "locale" | "theme" | "activeFlight",
+    value: string,
+  ) => Promise<void>;
   save: (f: LocalFlight) => Promise<void>;
   remove: (id: string) => Promise<void>;
   toggleSaved: (id: string) => Promise<void>;
@@ -91,6 +97,7 @@ function LocalStore({ children }: { children: React.ReactNode }) {
     saved: string[];
   } | null>(null);
   const [error, setError] = useState("");
+  const [integrationError, setIntegrationError] = useState("");
   const [filters, updateFilters] = useState<Record<Mode, Filters>>({
     aircraft: { ...initialFilters },
     airlines: { ...initialFilters },
@@ -128,6 +135,23 @@ function LocalStore({ children }: { children: React.ReactNode }) {
   const theme = data?.preferences.theme || "dark";
   const isDark = theme === "system" ? scheme !== "light" : theme === "dark";
   const colors = isDark ? dark : light;
+  useEffect(() => {
+    if (!data) return;
+    let current = true;
+    void Promise.all([
+      syncReminders(data.flights, locale),
+      syncFlightWidgets(data.flights, locale, data.preferences.activeFlight),
+    ])
+      .then(() => {
+        if (current) setIntegrationError("");
+      })
+      .catch((e) => {
+        if (current) setIntegrationError(String(e));
+      });
+    return () => {
+      current = false;
+    };
+  }, [data, locale]);
   if (!data || error)
     return (
       <View
@@ -170,6 +194,8 @@ function LocalStore({ children }: { children: React.ReactNode }) {
         isDark,
         locale,
         theme,
+        activeFlight: data.preferences.activeFlight || "",
+        integrationError,
         t: (key, values = []) => translate(locale, key, values),
         words: (en, zh) => (locale === "zh" ? zh : en),
         flights: data.flights,

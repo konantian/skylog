@@ -1,5 +1,6 @@
 import { useMemo, useDeferredValue } from "react";
-import { View, FlatList, TextInput, Pressable } from "react-native";
+import { View, FlatList, TextInput, Pressable, Keyboard } from "react-native";
+import { KeyboardControls } from "../components/keyboard-controls";
 import { router, useLocalSearchParams } from "expo-router";
 import { useApp } from "../lib/store";
 import {
@@ -169,6 +170,8 @@ export function FlightsScreen() {
             placeholderTextColor={colors.muted}
             style={{ fontSize: 16, color: colors.text, flex: 1, minHeight: 50 }}
             autoCorrect={false}
+            returnKeyType="search"
+            onSubmitEditing={Keyboard.dismiss}
           />
           <IconButton
             name="options-outline"
@@ -212,6 +215,7 @@ export function FlightsScreen() {
           paddingBottom: 32,
         }}
         keyboardDismissMode="on-drag"
+        keyboardShouldPersistTaps="handled"
         renderItem={({ item }) => <FlightCard flight={item} />}
         ListEmptyComponent={
           <Empty
@@ -226,6 +230,7 @@ export function FlightsScreen() {
           />
         }
       />
+      <KeyboardControls />
     </View>
   );
 }

@@ -1,15 +1,49 @@
-import { Stack } from "expo-router";
+import { useEffect } from "react";
+import * as Notifications from "expo-notifications";
+import {
+  Stack,
+  router,
+  ThemeProvider,
+  DarkTheme,
+  DefaultTheme,
+} from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { AppProvider, useApp } from "../lib/store";
 import { useFonts } from "expo-font";
 import Ionicons from "@expo/vector-icons/Ionicons";
+import { KeyboardProvider } from "react-native-keyboard-controller";
 export { ErrorBoundary } from "expo-router";
 export const unstable_settings = { initialRouteName: "(tabs)" };
 function Navigation() {
-  const { colors, isDark, words } = useApp();
+  const { colors, isDark, words, flights } = useApp();
+  useEffect(() => {
+    const open = (response: Notifications.NotificationResponse) => {
+      const id = response.notification.request.content.data?.flightId;
+      if (typeof id === "string" && flights.some((f) => f.id === id)) {
+        router.push({ pathname: "/flight/[id]", params: { id } });
+        void Notifications.clearLastNotificationResponseAsync();
+      }
+    };
+    const last = Notifications.getLastNotificationResponse();
+    if (last) open(last);
+    const sub = Notifications.addNotificationResponseReceivedListener(open);
+    return () => sub.remove();
+  }, [flights]);
   return (
-    <>
+    <ThemeProvider
+      value={{
+        ...(isDark ? DarkTheme : DefaultTheme),
+        colors: {
+          ...(isDark ? DarkTheme : DefaultTheme).colors,
+          primary: colors.accent,
+          background: colors.bg,
+          card: colors.bg,
+          text: colors.text,
+          border: colors.line,
+        },
+      }}
+    >
       <StatusBar style={isDark ? "light" : "dark"} />
       <Stack
         screenOptions={{
@@ -56,13 +90,24 @@ function Navigation() {
             presentation: "modal",
           }}
         />
+        <Stack.Screen
+          name="flight/calendar"
+          options={{ title: words("Calendar import", "日历导入") }}
+        />
+        <Stack.Screen
+          name="services"
+          options={{
+            title: words("Flight data", "航班数据"),
+            presentation: "modal",
+          }}
+        />
         <Stack.Screen name="passport" options={{ title: "Passport" }} />
         <Stack.Screen
           name="saved"
           options={{ title: words("Saved photographs", "收藏的照片") }}
         />
       </Stack>
-    </>
+    </ThemeProvider>
   );
 }
 export default function Layout() {
@@ -70,9 +115,11 @@ export default function Layout() {
   if (!loaded && !error) return null;
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <AppProvider>
-        <Navigation />
-      </AppProvider>
+      <KeyboardProvider preload={false}>
+        <AppProvider>
+          <Navigation />
+        </AppProvider>
+      </KeyboardProvider>
     </GestureHandlerRootView>
   );
 }
