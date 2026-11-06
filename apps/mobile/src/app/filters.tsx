@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { View, TextInput, FlatList, Pressable, Keyboard } from "react-native";
-import { KeyboardControls } from "../components/keyboard-controls";
+import { View, TextInput, FlatList, Pressable, Keyboard, Platform } from "react-native";
 import { router, Stack, useLocalSearchParams } from "expo-router";
 import { useApp } from "../lib/store";
 import {
@@ -141,7 +140,8 @@ export default function FiltersScreen() {
             )}
             keyExtractor={(v) => v}
             keyboardShouldPersistTaps="handled"
-            keyboardDismissMode="on-drag"
+            automaticallyAdjustKeyboardInsets
+            keyboardDismissMode={Platform.OS === "ios" ? "interactive" : "on-drag"}
             renderItem={({ item }) => (
               <Pressable
                 accessibilityRole="button"
@@ -167,7 +167,6 @@ export default function FiltersScreen() {
               </Pressable>
             )}
           />
-          <KeyboardControls />
         </View>
       ) : (
         <Page>

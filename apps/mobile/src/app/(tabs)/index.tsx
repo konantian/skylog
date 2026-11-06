@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import { View, FlatList, Pressable, useWindowDimensions } from "react-native";
 import { router } from "expo-router";
+import { openPhoto, usePhotoReturn } from "../../lib/photo-navigation";
 import { FlightCard } from "../../screens/flights";
 import { compareFlightDates } from "../../lib/flight-time.mjs";
 import { airlineName, aircraftName } from "../../lib/flight-labels";
@@ -38,6 +39,10 @@ export default function Home() {
     setIndex(i);
     list.current?.scrollToIndex({ index: i, animated: true });
   };
+  const origin = usePhotoReturn((id) => {
+    const i = heroes.findIndex((p) => p.id === id);
+    if (i >= 0) select(i);
+  });
   return (
     <Page>
       <View style={{ gap: 8 }}>
@@ -75,10 +80,11 @@ export default function Home() {
               accessibilityRole="button"
               accessibilityLabel={`${item.airlines.map((name) => airlineName(name, locale)).join(", ")} ${item.models.map((name) => aircraftName(name, locale)).join(", ")}`}
               onPress={() =>
-                router.push({
-                  pathname: "/photo/[id]",
-                  params: { id: item.id },
-                })
+                openPhoto(
+                  item.id,
+                  heroes.map((p) => p.id),
+                  origin,
+                )
               }
               style={{ width: cardWidth }}
             >

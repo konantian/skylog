@@ -46,7 +46,7 @@ function ToolbarButton({
   );
 }
 
-export function KeyboardControls({ form = false }: { form?: boolean }) {
+export function KeyboardControls() {
   const focused = useIsFocused();
   const { colors, words } = useApp();
   const insets = useSafeAreaInsets();
@@ -59,8 +59,8 @@ export function KeyboardControls({ form = false }: { form?: boolean }) {
   };
   return (
     <KeyboardToolbar theme={{ light: theme, dark: theme }} insets={insets}>
-      {form && <KeyboardToolbar.Prev button={ToolbarButton} />}
-      {form && <KeyboardToolbar.Next button={ToolbarButton} />}
+      <KeyboardToolbar.Prev button={ToolbarButton} />
+      <KeyboardToolbar.Next button={ToolbarButton} />
       <KeyboardToolbar.Done
         text={words("Done", "完成")}
         button={ToolbarButton}

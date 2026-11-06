@@ -71,6 +71,14 @@ function Navigation() {
           options={{ title: words("Airline", "航司档案") }}
         />
         <Stack.Screen
+          name="shoots/index"
+          options={{ title: words("Shooting days", "拍摄日") }}
+        />
+        <Stack.Screen
+          name="shoots/[day]"
+          options={{ title: words("Shooting day", "拍摄日") }}
+        />
+        <Stack.Screen
           name="photo/[id]"
           options={{
             title: words("Photograph", "摄影作品"),

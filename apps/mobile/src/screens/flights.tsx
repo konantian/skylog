@@ -1,3 +1,5 @@
+import { flightAirlineLogo } from "../../../../lib/flight-airline-logo";
+import { Image } from "expo-image";
 import { useMemo, useDeferredValue } from "react";
 import {
   View,
@@ -7,7 +9,6 @@ import {
   Keyboard,
   Platform,
 } from "react-native";
-import { KeyboardControls } from "../components/keyboard-controls";
 import { router } from "expo-router";
 import { useApp } from "../lib/store";
 import { compareFlightDates } from "../lib/flight-time.mjs";
@@ -34,55 +35,89 @@ import {
   Empty,
   styles,
 } from "../components/ui";
-export function FlightCard({ flight: f }: { flight: LocalFlight }) {
-  const { locale, words } = useApp();
+export function FlightCard({
+  flight: f,
+  showAircraft = false,
+}: {
+  flight: LocalFlight;
+  showAircraft?: boolean;
+}) {
+  const { locale, words, isDark } = useApp();
+  const logo = flightAirlineLogo(f.airline);
   const city = (code: string) => airportName(code, locale);
+  const card = (
+    <Card>
+      <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
+        {logo && (
+          <Image
+            source={logo.image}
+            tintColor={isDark && logo.reverseOnDark ? "#f2f7fa" : undefined}
+            contentFit="contain"
+            accessible={false}
+            style={{
+              width: 28,
+              height: 28,
+            }}
+          />
+        )}
+        <Txt numberOfLines={1} style={{ flexShrink: 1, fontWeight: "600" }}>
+          {airlineName(f.airline, locale)}
+        </Txt>
+        <Txt
+          accent
+          numberOfLines={1}
+          style={[styles.eyebrow, { flexShrink: 0 }]}
+        >
+          {f.flight}
+        </Txt>
+        <Txt
+          muted
+          numberOfLines={1}
+          style={{
+            marginLeft: "auto",
+            flexShrink: 0,
+            fontSize: 12,
+            fontVariant: ["tabular-nums"],
+          }}
+        >
+          {f.date}
+        </Txt>
+      </View>
+      <View style={{ flexDirection: "row", alignItems: "center", gap: 16 }}>
+        <View style={{ flex: 1 }}>
+          <Txt style={styles.title}>{f.origin}</Txt>
+          <Txt muted style={{ fontSize: 12 }}>
+            {city(f.origin)}
+            {f.departureTime ? ` · ${f.departureTime}` : ""}
+          </Txt>
+        </View>
+        <Icon name="airplane-outline" />
+        <View style={{ flex: 1, alignItems: "flex-end" }}>
+          <Txt style={styles.title}>{f.destination}</Txt>
+          <Txt muted style={{ fontSize: 12, textAlign: "right" }}>
+            {city(f.destination)}
+          </Txt>
+        </View>
+      </View>
+      {showAircraft && (
+        <Txt muted style={{ fontSize: 12 }}>
+          {aircraftName(f.model || f.modelLabel, locale)}{" "}
+          {f.registration ? `· ${f.registration}` : ""}
+        </Txt>
+      )}
+    </Card>
+  );
+  if (showAircraft) return card;
   return (
     <Pressable
       accessibilityRole="button"
-      accessibilityLabel={`${f.date} ${f.flight} ${city(f.origin)} ${words("to", "至")} ${city(f.destination)}`}
+      accessibilityLabel={`${airlineName(f.airline, locale)} ${f.flight} ${f.date} ${city(f.origin)} ${words("to", "至")} ${city(f.destination)}`}
       onPress={() =>
         router.push({ pathname: "/flight/[id]", params: { id: f.id } })
       }
       style={({ pressed }) => ({ opacity: pressed ? 0.7 : 1 })}
     >
-      <Card>
-        <View
-          style={{
-            flexDirection: "row",
-            justifyContent: "space-between",
-            gap: 16,
-          }}
-        >
-          <Txt accent style={styles.eyebrow}>
-            {f.flight}
-          </Txt>
-          <Txt muted style={{ fontSize: 12 }}>
-            {f.date}
-            {f.departureTime ? ` · ${f.departureTime}` : ""}
-          </Txt>
-        </View>
-        <View style={{ flexDirection: "row", alignItems: "center", gap: 16 }}>
-          <View style={{ flex: 1 }}>
-            <Txt style={styles.title}>{f.origin}</Txt>
-            <Txt muted style={{ fontSize: 12 }}>
-              {city(f.origin)}
-            </Txt>
-          </View>
-          <Icon name="airplane-outline" />
-          <View style={{ flex: 1, alignItems: "flex-end" }}>
-            <Txt style={styles.title}>{f.destination}</Txt>
-            <Txt muted style={{ fontSize: 12, textAlign: "right" }}>
-              {city(f.destination)}
-            </Txt>
-          </View>
-        </View>
-        <Txt>{airlineName(f.airline, locale)}</Txt>
-        <Txt muted style={{ fontSize: 12 }}>
-          {aircraftName(f.model || f.modelLabel, locale)}{" "}
-          {f.registration ? `· ${f.registration}` : ""}
-        </Txt>
-      </Card>
+      {card}
     </Pressable>
   );
 }
@@ -241,7 +276,6 @@ export function FlightsScreen() {
           />
         }
       />
-      <KeyboardControls />
     </View>
   );
 }

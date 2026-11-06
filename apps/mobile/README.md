@@ -25,6 +25,8 @@ For a connected iPhone use `npx expo run:ios --device`; a valid development cert
 
 `eas.json` provides development, simulator/APK preview, `iphone` ad hoc device distribution and production profiles. The `iphone` profile uses the same preview environment and a standalone release build; it does not require a Metro server. Register the intended device with `npx eas-cli@latest device:create`, then run `npx eas-cli@latest build --platform ios --profile iphone`. The first device build requires Apple authentication and separate provisioning profiles for the main app and widget extension. Cloud builds, paid plans and store submission are not automatically triggered. A simulator build cannot be installed on a physical iPhone.
 
+Starting with 1.1.0, iPhone builds receive compatible updates on the `iphone` channel. From `apps/mobile`, run `npx eas-cli@latest update --channel iphone --platform ios --environment preview --message "<release note>"` with the installed app's version. Native changes require a new version and build.
+
 ## Implemented offline
 
 - Flight records with automatic past/upcoming classification from departure date/time; add/edit/delete; calendar date, airline, flight number, airports, aircraft/registration, private notes and trip name.

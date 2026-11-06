@@ -1,4 +1,4 @@
-import { View, Linking } from "react-native";
+import { View } from "react-native";
 import { Stack, useLocalSearchParams, router } from "expo-router";
 import { useApp } from "../../lib/store";
 import {
@@ -19,6 +19,7 @@ import {
   Button,
   styles,
 } from "../../components/ui";
+import { openPhoto } from "../../lib/photo-navigation";
 import { PhotoCard } from "../../screens/collection";
 import { CountryFlags } from "../../components/country-flags";
 import { airlineName, aircraftName } from "../../lib/flight-labels";
@@ -38,7 +39,6 @@ export default function AirlineDetail() {
       {
         alliance: string;
         designators: { icao: string; callsign: string }[];
-        sources: string[];
         note?: string;
       }
     >
@@ -112,12 +112,7 @@ export default function AirlineDetail() {
               secondary
               title={match.registration}
               icon="camera-outline"
-              onPress={() =>
-                router.push({
-                  pathname: "/photo/[id]",
-                  params: { id: match.photoIds[0], airline: entry.name },
-                })
-              }
+              onPress={() => openPhoto(match.photoIds[0], match.photoIds)}
             />
           ))}
         </Card>
@@ -128,7 +123,10 @@ export default function AirlineDetail() {
           <Txt style={{ fontWeight: "600" }}>
             {aircraftName(group.model, locale)} · {t(group.livery)}
           </Txt>
-          <PhotoCard photo={group.cover} />
+          <PhotoCard
+            photo={group.cover}
+            onOpen={() => openPhoto(group.cover.id, group.photoIds)}
+          />
           <Button
             secondary
             title={t("查看 {0} · {1}，{2} 张照片", [
@@ -136,40 +134,10 @@ export default function AirlineDetail() {
               t(group.livery),
               group.photoIds.length,
             ])}
-            onPress={() =>
-              router.push({
-                pathname: "/photo/[id]",
-                params: {
-                  id: group.cover.id,
-                  airline: entry.name,
-                  model: group.model,
-                  livery: group.livery,
-                },
-              })
-            }
+            onPress={() => openPhoto(group.cover.id, group.photoIds)}
           />
         </View>
       ))}
-      <Txt muted>
-        {t("资料来源")} · {airlineProfiles.checkedAt}
-      </Txt>
-      {facts.sources.map((key) => {
-        const source = (
-          airlineProfiles.sources as Record<
-            string,
-            { url: string; title: string }
-          >
-        )[key];
-        return (
-          <Button
-            key={key}
-            secondary
-            title={source.title}
-            icon="open-outline"
-            onPress={() => void Linking.openURL(source.url)}
-          />
-        );
-      })}
     </Page>
   );
 }

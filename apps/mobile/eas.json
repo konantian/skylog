@@ -9,6 +9,7 @@
     "iphone": {
       "extends": "preview",
       "environment": "preview",
+      "channel": "iphone",
       "ios": { "simulator": false }
     },
     "production": { "autoIncrement": true }

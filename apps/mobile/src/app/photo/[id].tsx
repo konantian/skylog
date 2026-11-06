@@ -1,8 +1,15 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { View, Alert, useWindowDimensions, Linking } from "react-native";
 import { Stack, router, useLocalSearchParams } from "expo-router";
 import { File, Paths } from "expo-file-system";
 import * as Sharing from "expo-sharing";
+import {
+  openPhoto,
+  readSequence,
+  rememberPhoto,
+  usePhotoReturn,
+  type PhotoParams,
+} from "../../lib/photo-navigation";
 import { useApp } from "../../lib/store";
 import { airlineName, aircraftName } from "../../lib/flight-labels";
 import {
@@ -27,37 +34,48 @@ import {
   styles,
 } from "../../components/ui";
 export default function PhotoDetail() {
-  const params = useLocalSearchParams<{
-    id: string;
-    model?: string;
-    airline?: string;
-    livery?: string;
-  }>();
+  const params = useLocalSearchParams<PhotoParams>();
+  return <PhotoDetailContent key={params.id} params={params} />;
+}
+function PhotoDetailContent({ params }: { params: PhotoParams }) {
   const { words, t, locale, saved, toggleSaved } = useApp();
   const [sharing, setSharing] = useState(false);
   const { width } = useWindowDimensions();
-  const photo = photoById.get(params.id);
+  const [currentId, setCurrentId] = useState(params.id);
+  const { id, sequence, model, airline, livery } = params;
+  const gallery = useMemo(
+    () =>
+      readSequence({ id, sequence }, () =>
+        filterPhotos(
+          photos,
+          {
+            ...initialFilters,
+            model: model || "all",
+            airline: airline || "all",
+            livery: livery || "all",
+          },
+          aircraft,
+          airlines,
+        ).map((p: Photo) => p.id),
+      ),
+    [id, sequence, model, airline, livery],
+  );
+  const select = (next: string) => {
+    setCurrentId(next);
+    rememberPhoto(params.origin, next);
+  };
+  const origin = usePhotoReturn(select);
+  const photo = photoById.get(currentId);
   if (!photo)
     return (
       <Page>
         <Txt>{words("Photograph not found", "未找到照片")}</Txt>
       </Page>
     );
-  const gallery = filterPhotos(
-    photos,
-    {
-      ...initialFilters,
-      model: params.model || "all",
-      airline: params.airline || "all",
-      livery: params.livery || "all",
-    },
-    aircraft,
-    airlines,
-  );
-  const index = gallery.findIndex((p: Photo) => p.id === photo.id);
+  const index = gallery.indexOf(photo.id);
   const navigate = (direction: number) => {
     const next = gallery[(index + direction + gallery.length) % gallery.length];
-    router.setParams({ id: next.id });
+    select(next);
   };
   const exif = (
     photoSettings as Record<
@@ -117,29 +135,28 @@ export default function PhotoDetail() {
           alignItems: "center",
         }}
       >
-        <IconButton
-          name="chevron-back"
-          label={t("上一张照片")}
-          onPress={() => navigate(-1)}
-        />
+        {gallery.length > 1 && (
+          <IconButton
+            name="chevron-back"
+            label={t("上一张照片")}
+            onPress={() => navigate(-1)}
+          />
+        )}
         <Txt muted>
           {index + 1} / {gallery.length}
         </Txt>
         <IconButton
           name="expand-outline"
           label={words("Zoom photo", "放大照片")}
-          onPress={() =>
-            router.push({
-              pathname: "/photo/fullscreen",
-              params: { id: photo.id },
-            })
-          }
+          onPress={() => openPhoto(photo.id, gallery, origin, true)}
         />
-        <IconButton
-          name="chevron-forward"
-          label={t("下一张照片")}
-          onPress={() => navigate(1)}
-        />
+        {gallery.length > 1 && (
+          <IconButton
+            name="chevron-forward"
+            label={t("下一张照片")}
+            onPress={() => navigate(1)}
+          />
+        )}
       </View>
       <Txt style={{ fontSize: 25, lineHeight: 32, fontWeight: "700" }}>
         {photo.airlines.map((name) => airlineName(name, locale)).join(" / ")}

@@ -665,7 +665,7 @@ export default function EditFlight() {
             onPress={() => void submit()}
           />
         </KeyboardAwareScrollView>
-        <KeyboardControls form />
+        <KeyboardControls />
       </View>
     </>
   );

@@ -254,7 +254,7 @@ export function FlightLiveData({ flight: f }: { flight: LocalFlight }) {
               ? words("On ground", "地面")
               : `${position.altitude ?? "—"} ft · ${position.speed ?? "—"} kt`}
           </Txt>
-          <RouteMap flights={[f]} position={position} />
+          <RouteMap flight={f} position={position} />
         </>
       )}
       {weather.map((w) => (

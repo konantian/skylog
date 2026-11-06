@@ -1,13 +1,15 @@
+import { photoHighlights } from "../../../../lib/photo-highlights.mjs";
 import { useMemo, useDeferredValue } from "react";
 import {
   View,
   TextInput,
   Keyboard,
+  Platform,
   FlatList,
   Pressable,
   useWindowDimensions,
 } from "react-native";
-import { KeyboardControls } from "../components/keyboard-controls";
+import { openPhoto, usePhotoListReturn } from "../lib/photo-navigation";
 import { CountryFlags } from "../components/country-flags";
 import {
   airlineName,
@@ -31,6 +33,7 @@ import {
 } from "../lib/catalog";
 import {
   Txt,
+  Button,
   Icon,
   IconButton,
   Card,
@@ -52,15 +55,7 @@ export function EntryCard({ entry }: { entry: Entry }) {
       accessibilityLabel={`${name}, ${entry.unlocked ? t("已解锁") : t("待解锁")}`}
       onPress={() =>
         entry.kind === "variant"
-          ? router.push({
-              pathname: "/photo/[id]",
-              params: {
-                id: entry.cover!,
-                model: entry.displayModel,
-                airline: entry.name,
-                livery: entry.livery,
-              },
-            })
+          ? openPhoto(entry.cover!, entry.photoIds)
           : router.push({
               pathname:
                 entry.kind === "airline" ? "/airline/[id]" : "/aircraft/[id]",
@@ -138,7 +133,15 @@ export function EntryCard({ entry }: { entry: Entry }) {
     </Pressable>
   );
 }
-export function PhotoCard({ photo }: { photo: Photo }) {
+export function PhotoCard({
+  photo,
+  onOpen,
+  time,
+}: {
+  photo: Photo;
+  onOpen: () => void;
+  time?: string;
+}) {
   const { saved, words, locale } = useApp();
   const names = photo.airlines.map((name) => airlineName(name, locale));
   const models = photo.models.map((name) => aircraftName(name, locale));
@@ -146,9 +149,7 @@ export function PhotoCard({ photo }: { photo: Photo }) {
     <Pressable
       accessibilityRole="button"
       accessibilityLabel={`${names.join(", ")} ${models.join(", ")} ${photo.id}`}
-      onPress={() =>
-        router.push({ pathname: "/photo/[id]", params: { id: photo.id } })
-      }
+      onPress={onOpen}
       style={({ pressed }) => ({ opacity: pressed ? 0.75 : 1 })}
     >
       <Card style={{ padding: 10 }}>
@@ -167,6 +168,7 @@ export function PhotoCard({ photo }: { photo: Photo }) {
           >
             <Txt muted style={{ fontSize: 12 }}>
               {photo.airport} · {photo.date}
+              {time ? ` · ${time}` : ""}
             </Txt>
             {saved.includes(photo.id) && <Icon name="bookmark" size={16} />}
           </View>
@@ -186,17 +188,21 @@ export function CollectionScreen({
   const { colors, t, words, filters, setFilters, saved } = app;
   const f = filters[mode];
   const query = useDeferredValue(f.query);
-  const { width } = useWindowDimensions();
-  const columns = width >= 700 ? 2 : 1;
+  const { width, height } = useWindowDimensions();
+  const columns = Math.min(width, height) >= 700 ? 2 : 1;
   const items = useMemo(() => {
     const next = { ...f, query: aircraftSearchQuery(query) };
-    if (mode === "photos")
-      return filterPhotos(
+    if (mode === "photos") {
+      const matched = filterPhotos(
         onlySaved ? photos.filter((p) => saved.includes(p.id)) : photos,
         next,
         aircraft,
         airlines,
       ) as Photo[];
+      return !onlySaved && !query.trim()
+        ? (photoHighlights(matched, f.sort) as Photo[])
+        : matched;
+    }
     const result = filterCatalog(
       mode === "aircraft" ? aircraft : airlines,
       photos,
@@ -216,6 +222,9 @@ export function CollectionScreen({
     }
     return result;
   }, [f, query, mode, onlySaved, saved]);
+  const { list, origin, onScrollToIndexFailed } = usePhotoListReturn<
+    Entry | Photo
+  >(items, columns);
   const active = Object.entries(f).filter(
     ([k, v]) =>
       k !== "query" &&
@@ -224,7 +233,9 @@ export function CollectionScreen({
   ).length;
   return (
     <View style={{ flex: 1, backgroundColor: colors.bg }}>
-      <FlatList
+      <FlatList<Entry | Photo>
+        ref={list}
+        onScrollToIndexFailed={onScrollToIndexFailed}
         style={{ flex: 1 }}
         ListHeaderComponent={
           <View style={{ paddingTop: 20, gap: 14 }}>
@@ -276,6 +287,14 @@ export function CollectionScreen({
                 }
               />
             </View>
+            {mode === "photos" && !onlySaved && (
+              <Button
+                secondary
+                icon="calendar-outline"
+                title={words("Browse by shooting day", "按拍摄日回看")}
+                onPress={() => router.push("/shoots")}
+              />
+            )}
             {mode !== "photos" && (
               <View style={styles.row}>
                 {[
@@ -314,10 +333,11 @@ export function CollectionScreen({
             >
               <Txt muted style={{ fontSize: 12 }}>
                 {items.length}{" "}
-                {words(
-                  mode === "photos" ? "photographs" : "entries",
-                  mode === "photos" ? "张照片" : "个条目",
-                )}
+                {mode === "photos" && !onlySaved && !query.trim()
+                  ? words("highlights", "张精选照片")
+                  : mode === "photos"
+                    ? words("photographs", "张照片")
+                    : words("entries", "个条目")}
                 {active > 0 ? ` · ${active} ${words("filters", "项筛选")}` : ""}
               </Txt>
               {(active > 0 || f.query || f.status !== "all") && (
@@ -338,7 +358,8 @@ export function CollectionScreen({
         keyExtractor={(item) => item.id}
         initialNumToRender={6}
         windowSize={7}
-        keyboardDismissMode="on-drag"
+        automaticallyAdjustKeyboardInsets
+        keyboardDismissMode={Platform.OS === "ios" ? "interactive" : "on-drag"}
         keyboardShouldPersistTaps="handled"
         contentContainerStyle={{
           paddingHorizontal: 20,
@@ -349,7 +370,16 @@ export function CollectionScreen({
         renderItem={({ item }) => (
           <View style={{ flex: 1, maxWidth: columns > 1 ? "50%" : undefined }}>
             {mode === "photos" ? (
-              <PhotoCard photo={item as Photo} />
+              <PhotoCard
+                photo={item as Photo}
+                onOpen={() =>
+                  openPhoto(
+                    item.id,
+                    items.map((p) => p.id),
+                    origin,
+                  )
+                }
+              />
             ) : (
               <EntryCard entry={item as Entry} />
             )}
@@ -365,7 +395,6 @@ export function CollectionScreen({
           />
         }
       />
-      <KeyboardControls />
     </View>
   );
 }

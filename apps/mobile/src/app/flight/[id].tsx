@@ -7,6 +7,7 @@ import { FlightLiveData } from "../../components/flight-live-data";
 import { FlightTools } from "../../components/flight-tools";
 import { RouteMap } from "../../components/route-map";
 import { FlightCard } from "../../screens/flights";
+import { openPhoto } from "../../lib/photo-navigation";
 import { PhotoCard } from "../../screens/collection";
 export default function FlightDetail() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -27,56 +28,50 @@ export default function FlightDetail() {
             p.airlines.includes(flight.airline),
         )
       : [];
+  const details = [
+    [words("Trip", "旅程"), flight.trip],
+    [words("Booking reference", "预订编号"), flight.bookingReference],
+    [
+      words("Seat", "座位"),
+      [flight.seat, flight.seatPosition, flight.cabin]
+        .filter(Boolean)
+        .join(" · "),
+    ],
+    [words("Departure · local", "出发 · 当地时间"), flight.departureTime],
+    [
+      words("Arrival · local", "到达 · 当地时间"),
+      [flight.arrivalDate, flight.arrivalTime].filter(Boolean).join(" "),
+    ],
+    [
+      words("Actual duration", "实际时长"),
+      flight.durationMinutes != null ? `${flight.durationMinutes} min` : null,
+    ],
+    [
+      words("Arrival delay", "到达延误"),
+      flight.delayMinutes != null ? `${flight.delayMinutes} min` : null,
+    ],
+    [
+      words("Departure terminal / gate", "出发航站楼／登机口"),
+      [flight.departureTerminal, flight.departureGate]
+        .filter(Boolean)
+        .join(" / "),
+    ],
+    [
+      words("Arrival terminal / gate", "到达航站楼／登机口"),
+      [flight.arrivalTerminal, flight.arrivalGate].filter(Boolean).join(" / "),
+    ],
+    [words("Baggage belt", "行李转盘"), flight.baggage],
+    [words("Aircraft built", "飞机制造年份"), flight.aircraftYear],
+  ].filter(([, value]) => value != null && value !== "");
   return (
     <Page>
       <Stack.Screen options={{ title: flight.flight }} />
-      <View pointerEvents="none">
-        <FlightCard flight={flight} />
-      </View>
-      <RouteMap flights={[flight]} />
-      <Card>
-        <Section title={words("Travel details", "旅途详情")} />
-        {[
-          [words("Trip", "旅程"), flight.trip],
-          [words("Booking reference", "预订编号"), flight.bookingReference],
-          [
-            words("Seat", "座位"),
-            [flight.seat, flight.seatPosition, flight.cabin]
-              .filter(Boolean)
-              .join(" · "),
-          ],
-          [words("Departure · local", "出发 · 当地时间"), flight.departureTime],
-          [
-            words("Arrival · local", "到达 · 当地时间"),
-            [flight.arrivalDate, flight.arrivalTime].filter(Boolean).join(" "),
-          ],
-          [
-            words("Actual duration", "实际时长"),
-            flight.durationMinutes != null
-              ? `${flight.durationMinutes} min`
-              : null,
-          ],
-          [
-            words("Arrival delay", "到达延误"),
-            flight.delayMinutes != null ? `${flight.delayMinutes} min` : null,
-          ],
-          [
-            words("Departure terminal / gate", "出发航站楼／登机口"),
-            [flight.departureTerminal, flight.departureGate]
-              .filter(Boolean)
-              .join(" / "),
-          ],
-          [
-            words("Arrival terminal / gate", "到达航站楼／登机口"),
-            [flight.arrivalTerminal, flight.arrivalGate]
-              .filter(Boolean)
-              .join(" / "),
-          ],
-          [words("Baggage belt", "行李转盘"), flight.baggage],
-          [words("Aircraft built", "飞机制造年份"), flight.aircraftYear],
-        ]
-          .filter(([, value]) => value != null && value !== "")
-          .map(([label, value]) => (
+      <FlightCard flight={flight} showAircraft />
+      <RouteMap flight={flight} />
+      {details.length > 0 && (
+        <Card>
+          <Section title={words("Travel details", "旅途详情")} />
+          {details.map(([label, value]) => (
             <View key={String(label)} style={{ gap: 4 }}>
               <Txt muted style={{ fontSize: 12 }}>
                 {label}
@@ -84,13 +79,8 @@ export default function FlightDetail() {
               <Txt>{value}</Txt>
             </View>
           ))}
-        <Txt muted style={{ fontSize: 12 }}>
-          {words(
-            "Saved or imported details. Check dated provider observations separately.",
-            "已保存或导入的旅途信息，数据源观测及其更新时间单独显示。",
-          )}
-        </Txt>
-      </Card>
+        </Card>
+      )}
       {flight.notes && (
         <Card>
           <Txt muted>{words("Private notes", "私人备注")}</Txt>
@@ -113,7 +103,16 @@ export default function FlightDetail() {
         <>
           <Section title={words("Flown & photographed", "坐过，也拍过")} />
           {matches.map((p) => (
-            <PhotoCard key={p.id} photo={p} />
+            <PhotoCard
+              key={p.id}
+              photo={p}
+              onOpen={() =>
+                openPhoto(
+                  p.id,
+                  matches.map((photo) => photo.id),
+                )
+              }
+            />
           ))}
         </>
       )}
