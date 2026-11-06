@@ -366,6 +366,9 @@ html:has(.comparison-tray){scroll-padding-bottom:200px}
 @media(max-width:560px){
   .flight-row{grid-template-columns:minmax(0,1fr);gap:16px;padding:18px;border-radius:16px}
   .flight-route{grid-column:1}.flight-route>div{display:grid;grid-template-columns:minmax(0,1fr) 28px minmax(0,1fr);max-width:none;width:100%;gap:12px}
+  .flight-route .route-line{display:grid;place-items:center;gap:0}
+  .flight-route .route-line::before,.flight-route .route-line::after{content:none}
+  .flight-route .flight-endpoint:last-child{align-items:flex-end;text-align:right}
   .flight-route strong{font-size:32px}.flight-endpoint small{font-size:12px;overflow-wrap:normal;word-break:normal}
   .flight-route>span{font-size:12px;margin-top:12px}
   .flight-aircraft,.flight-photo-link{grid-column:1}.flight-aircraft strong{font-size:13px}.flight-aircraft>span{font-size:12px}
