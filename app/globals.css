@@ -512,9 +512,35 @@ html:has(.comparison-tray){scroll-padding-bottom:200px}
 }
 .flight-carrier b { flex: none; white-space: nowrap; color: var(--accent); }
 
-.photo-dialog.travel-detail { width: min(440px, calc(100% - 32px)); height: auto; }
+.travel-detail {
+  --detail-gutter-x: max(16px, env(safe-area-inset-left), env(safe-area-inset-right));
+  --detail-gutter-y: max(16px, env(safe-area-inset-top), env(safe-area-inset-bottom));
+  width: min(32rem, calc(100% - 2 * var(--detail-gutter-x)));
+  height: fit-content;
+  max-height: calc(100dvh - 2 * var(--detail-gutter-y));
+  margin: auto;
+  padding: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface);
+  color: var(--text);
+}
+.travel-detail::backdrop { background: #02070ecc; backdrop-filter: blur(6px); }
 .travel-detail .dialog-heading { align-items: flex-start; }
 .travel-detail time, .travel-detail-facts dt { color: var(--muted); font-size: 12px; }
-.travel-detail-facts { display: grid; gap: 14px; padding: 0 24px 20px; }
+.travel-detail-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr));
+  gap: 12px 20px;
+  margin: 0;
+  padding: 16px 24px 20px;
+  border-top: 1px solid var(--line);
+  overflow-wrap: anywhere;
+}
 .travel-detail-facts dt, .travel-detail-facts dd { margin: 0; }
 .travel-detail-facts dd { margin-top: 4px; }
+@media (max-width: 760px), (max-height: 500px) and (pointer: coarse) {
+  .travel-detail-facts { padding-inline: 16px; }
+}

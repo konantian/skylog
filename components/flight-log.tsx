@@ -18,7 +18,7 @@ function FlightDetails({flight:f,onClose}:{flight:Flight;onClose:()=>void}) {
     node.showModal();
     return ()=>{node.close();if(trigger?.isConnected)trigger.focus({preventScroll:true});};
   },[]);
-  return <dialog ref={dialog} className="photo-dialog travel-detail" aria-labelledby="travel-detail-title" onCancel={onClose} onClick={e=>{if(e.target===e.currentTarget)onClose();}}>
+  return <dialog ref={dialog} className="travel-detail" aria-labelledby="travel-detail-title" onCancel={onClose} onClick={e=>{if(e.target===e.currentTarget)onClose();}}>
     <div className="dialog-heading"><div><span className="flight-carrier"><FlightAirlineMark airline={f.airline}/>{t(f.airline)} · {f.flight}</span><h2 id="travel-detail-title">{f.origin} → {f.destination}</h2><time dateTime={f.date}>{f.date}</time></div><button autoFocus className="icon-button" onClick={onClose} aria-label={t("关闭航班详情")}><Icon name="close" size={22}/></button></div>
     <dl className="travel-detail-facts"><div><dt>{t("机型")}</dt><dd>{t(f.modelLabel)}{!f.model&&f.modelLabel!=='机型待确认'?t(" · 子型号未记录"):''}</dd></div><div><dt>{t("注册号")}</dt><dd>{f.registration || '—'}</dd></div></dl>
   </dialog>;
