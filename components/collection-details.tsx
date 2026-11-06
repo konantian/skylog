@@ -1,3 +1,4 @@
+import { FlightAirlineMark } from "./flight-airline-mark";
 import {useLocale} from './locale-provider';
 import profiles from '@/data/aircraft-profiles.json';
 import liveries from '@/data/liveries.json';
@@ -50,6 +51,6 @@ export function FlownDetails({flights,exact,onExplore}:{flights:Flight[];exact?:
   if(!flights.length) return null;
   return <section className="flown-details"><div className="flown-heading"><span><Icon name="plane" size={16}/>{exact?t("这架飞机，我也坐过"):t("我的乘机记录")}</span><button onClick={onExplore}>{t("查看记录")}<Icon name="arrow" size={14}/></button></div>
     <p>{exact?t("同一注册号，连接旅途与拍摄。照片展示拍摄时的涂装。"):t("已记录 {0} 段旅程；乘坐经历与拍摄解锁分开统计。",[flights.length])}</p>
-    {flights.slice(0,3).map(f=><div className="flown-detail-row" key={f.id}><time>{f.date}</time><strong>{f.origin} → {f.destination}</strong><span>{f.flight} · {f.registration || '—'}</span></div>)}
+    {flights.slice(0,3).map(f=><div className="flown-detail-row" key={f.id}><time>{f.date}</time><strong>{f.origin} → {f.destination}</strong><span className="flight-carrier"><FlightAirlineMark airline={f.airline}/>{f.flight} · {f.registration || '—'}</span></div>)}
   </section>;
 }

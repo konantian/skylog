@@ -1,6 +1,7 @@
 'use client';
 import {LanguageSwitch,useLocale} from './locale-provider';
 import {useMobileLayer} from './use-mobile-layer';
+import {photoHighlights} from '@/lib/photo-highlights.mjs';
 import {photoSwipe} from '@/lib/photo-swipe.mjs';
 
 
@@ -114,7 +115,7 @@ export default function Atlas() {
     for(const key of ['view','layout',...Object.keys(initialFilters)])params.delete(key);
     const onPhone=window.matchMedia(phoneQuery).matches;
     if(onPhone&&!mobileHome||!onPhone&&mode!=='aircraft') params.set('view',mode);
-    if(mode==='photos'&&photoLayout==='timeline'&&!(onPhone&&mobileHome))params.set('layout','timeline');
+    if(mode==='photos'&&photoLayout!=='grid'&&!(onPhone&&mobileHome))params.set('layout',photoLayout);
     for (const key of Object.keys(filters) as (keyof Filters)[]) if (!(onPhone&&mobileHome)&&filters[key] !== initialFilters[key]) params.set(key,filters[key]);
     window.history.replaceState(history.state,'',`${window.location.pathname}${params.size ? `?${params}` : ''}${onPhone?mobileHome?'':'#collection':window.location.hash}`);
   },[filters,mode,ready,photoLayout,mobileHome,historyRevision]);
@@ -166,6 +167,8 @@ export default function Atlas() {
   };
 
   const matchedPhotos = useMemo(() => filterPhotos(featured,filters,aircraft,airlines) as Photo[],[filters]);
+  const displayPhotos = useMemo(() => mode==='photos' && photoLayout==='grid' && !filters.query.trim()
+    ? photoHighlights(matchedPhotos,filters.sort) as Photo[] : matchedPhotos,[mode,photoLayout,filters.query,filters.sort,matchedPhotos]);
   const entries = useMemo(() => {
     if (mode === 'photos' || mode === 'flights') return [];
     const base = filterCatalog(mode === 'aircraft' ? aircraft : airlines,photos,filters,mode,aircraft,airlines) as Entry[];
@@ -180,7 +183,7 @@ export default function Atlas() {
   },[mode,filters,matchedPhotos]);
   const matchedFlights = useMemo(()=>filterFlights(flights,filters,aircraft,airlines) as Flight[],[filters]);
   const mapFlights = useMemo(()=>filterFlights(flights,{...filters,route:'all',flightAirport:'all'},aircraft,airlines) as Flight[],[filters]);
-  const count = mode === 'flights' ? matchedFlights.length : mode === 'photos' ? matchedPhotos.length : entries.length;
+  const count = mode === 'flights' ? matchedFlights.length : mode === 'photos' ? displayPhotos.length : entries.length;
   const activeCount = Object.entries(filters).filter(([k,v]) => k !== 'sort' && v !== initialFilters[k as keyof Filters]).length;
   const detailFilters = {...initialFilters,...variant,...(detail?.entry?.kind==='aircraft'?{model:detail.entry.name}:detail?.entry?.kind==='airline'?{airline:detail.entry.name}:detail?.entry?.kind==='variant'?{model:detail.entry.displayModel,airline:detail.entry.name}:{})};
   const galleryIds = detail?.ids.filter(id => {
@@ -288,9 +291,12 @@ export default function Atlas() {
           {renderFilters(filters,update)}
         </div>
         {activeCount>0&&<div className="active-filter-summary"><span>{t("已应用")}{activeCount} {t("项筛选")}</span><button onClick={reset}>{t("重置筛选")}<Icon name="close" size={13}/></button></div>}
-        {mode==='photos'&&<div className="photo-layout-tabs" aria-label={t("摄影集展示方式")}><button aria-pressed={photoLayout==='grid'} onClick={()=>setPhotoLayout('grid')}><Icon name="grid" size={15}/>{t("照片网格")}</button><button aria-pressed={photoLayout==='timeline'} onClick={()=>setPhotoLayout('timeline')}><Icon name="calendar" size={15}/>{t("收藏时间线")}</button></div>}
+        {mode==='photos'&&<div className="photo-layout-tabs" aria-label={t("摄影集展示方式")}>
+          <button aria-pressed={photoLayout==='grid'} onClick={()=>{setPhotoLayout('grid');setLimit(24);}}><Icon name="camera" size={15}/>{filters.query.trim()?t("搜索结果"):t("精选照片")}</button>
+          <button aria-pressed={photoLayout==='timeline'} onClick={()=>setPhotoLayout('timeline')}><Icon name="calendar" size={15}/>{t("按拍摄日回看")}</button>
+        </div>}
         {count===0 ? <div className="empty-state"><Icon name="search" size={40}/><h3>{t("这片天空还没有记录")}</h3><p>{t("换一个筛选条件，继续探索已收藏的相遇。")}</p><button className="explore-button" onClick={reset}>{t("查看全部收藏")}<Icon name="arrow"/></button></div> : mode==='flights' ? <FlightLog flights={matchedFlights} mapFlights={mapFlights} allFlights={flights} filters={filters} onFilter={update} limit={limit} photos={photos} total={flights.length} onPhoto={p=>openDetail({ids:[p.id],index:0})} onShare={flight=>setShareCard({kind:'flight',flight})}/> : mode==='photos'&&photoLayout==='timeline' ? <CollectionTimeline photos={matchedPhotos} aircraft={aircraft} airlines={airlines} onPhoto={(ids,index)=>openDetail({ids,index})}/> : <div className="card-grid">
-          {mode==='photos' ? matchedPhotos.slice(0,limit).map((photo,index)=><button className="catalog-card photo-card" key={photo.id} onClick={()=>openDetail({ids:matchedPhotos.map(p=>p.id),index})}><div className="card-image"><img src={asset(photo.thumbnail)} alt={`${photo.airlines.map(name=>t(name)).join(' / ')} ${photo.models.map(name=>t(name)).join(' / ')} · ${photo.id}`} loading="lazy"/><span className="airport-badge">{photo.airport}</span><span className="image-open"><Icon name="diagonal"/></span></div><div className="card-content"><span className="card-overline">{photo.airlines.map(name=>t(name)).join(' / ')||'PRIVATE / BUSINESS'}</span><h3>{photo.models.map(name=>t(name)).join(' / ')||t("机型待确认")}</h3><span className="photo-livery">{t(photo.livery)}</span>{flightsForPhoto(photo,flights).length>0&&<span className="flown-badge">{t("坐过这架")}</span>}<div className="card-meta"><span>{photo.id}</span><span>{photo.date.replaceAll('-','.')}</span></div></div></button>) : entries.slice(0,limit).map(entry=>{
+          {mode==='photos' ? displayPhotos.slice(0,limit).map((photo,index)=><button className="catalog-card photo-card" key={photo.id} onClick={()=>openDetail({ids:displayPhotos.map(p=>p.id),index})}><div className="card-image"><img src={asset(photo.thumbnail)} alt={`${photo.airlines.map(name=>t(name)).join(' / ')} ${photo.models.map(name=>t(name)).join(' / ')} · ${photo.id}`} loading="lazy"/><span className="airport-badge">{photo.airport}</span><span className="image-open"><Icon name="diagonal"/></span></div><div className="card-content"><span className="card-overline">{photo.airlines.map(name=>t(name)).join(' / ')||'PRIVATE / BUSINESS'}</span><h3>{photo.models.map(name=>t(name)).join(' / ')||t("机型待确认")}</h3><span className="photo-livery">{t(photo.livery)}</span>{flightsForPhoto(photo,flights).length>0&&<span className="flown-badge">{t("坐过这架")}</span>}<div className="card-meta"><span>{photo.id}</span><span>{photo.date.replaceAll('-','.')}</span></div></div></button>) : entries.slice(0,limit).map(entry=>{
             const matchingIds = entry.photoIds.filter(id=>photoMatches(byId.get(id)!,filters,aircraft,airlines));
             const flown = flightsForEntry(entry,flights).length;
             const cover = byId.get(entry.cover&&matchingIds.includes(entry.cover)?entry.cover:matchingIds[0]||entry.cover||'');

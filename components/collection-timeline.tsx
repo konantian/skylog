@@ -1,5 +1,5 @@
 import {useLocale} from './locale-provider';
-import {collectionTimeline} from '@/lib/insights.mjs';
+import {shootingDays} from '@/lib/insights.mjs';
 import type {Entry,Photo} from '@/lib/types';
 import {Icon} from './icons';
 
@@ -8,7 +8,7 @@ const asset=(path:string)=>`${process.env.NEXT_PUBLIC_BASE_PATH||''}${path}`;
 
 export function CollectionTimeline({photos,aircraft,airlines,onPhoto}:{photos:Photo[];aircraft:Entry[];airlines:Entry[];onPhoto:(ids:string[],index:number)=>void}) {
   const {t}=useLocale();
-  const moments=collectionTimeline(photos,aircraft,airlines) as Moment[];
+  const moments=shootingDays(photos,aircraft,airlines,[]) as Moment[];
   return <div className="collection-timeline"><div className="timeline-intro"><div className="eyebrow">ONE ENCOUNTER AT A TIME</div><h3>{t("我的天空，慢慢变得丰富。")}</h3><p>{t("按当前图鉴的拍摄日期记录首次相遇。尚未收录的旧照片不计入首次记录；累计数量以整个图鉴为准。")}</p></div>
     {moments.map(moment=><article className="timeline-moment" key={moment.date}>
       <div className="moment-date"><time dateTime={moment.date}><span>{moment.date.slice(0,4)}</span><strong>{moment.date.slice(5).replace('-',' / ')}</strong></time><span><Icon name="pin" size={12}/>{moment.airports.join(' · ')}</span></div>

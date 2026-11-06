@@ -6,7 +6,7 @@ import log from '../data/flights.json' with {type:'json'};
 import airports from '../data/airports.json' with {type:'json'};
 import settings from '../data/photo-settings.json' with {type:'json'};
 import heroes from '../data/hero-selections.json' with {type:'json'};
-import {routeKey,collectRoutes,flightStats,routePath,projectAirport,collectionTimeline} from '../lib/insights.mjs';
+import {routeKey,collectRoutes,flightStats,routePath,projectAirport,collectionTimeline,shootingDays} from '../lib/insights.mjs';
 import {initialFilters,filterFlights} from '../lib/filter.mjs';
 
 const {photos,aircraft,airlines}=catalog;
@@ -94,4 +94,16 @@ test('flight breakdown retains unknown coverage, calendar buckets and connection
  assert.deepEqual(stats.airframes,[{name:'C-FABC',count:2}]);
  assert.equal(stats.airlineDistance.length,1);assert(stats.airlineDistance[0].count>10000);
  assert.equal(stats.longDistance,1);assert.equal(flightBreakdown([],airports).averageKm,null);
+});
+
+test('shooting days respect the filtered set, global first sightings and local capture order',()=>{
+  const date='2026-11-05';
+  const photo=(id,capturedAt)=>({id,date,capturedAt,airport:'YYZ',models:['A'],airlines:['B']});
+  const visible=[photo('missing'),photo('late',date+'T09:10:00-08:00'),photo('early',date+'T11:15:00-05:00')];
+  const [day]=shootingDays(visible,[{name:'A',firstSeen:'2026-10-25'}],[{name:'B',firstSeen:date}],['filtered-out','late']);
+  assert.deepEqual(day.photos.map(p=>p.id),['early','late','missing']);
+  assert.equal(day.cover.id,'late');
+  assert.deepEqual(day.newModels,[]);assert.deepEqual(day.newAirlines,['B']);
+  assert.equal(shootingDays(visible,[],[],[])[0].cover.id,'early');
+  assert.deepEqual(shootingDays([],[],[],[]),[]);
 });

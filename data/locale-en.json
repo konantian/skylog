@@ -715,7 +715,6 @@
   "代码与呼号对应航司运营实体，区域合作航班的实际承运人可能不同。": "Codes and callsigns identify airline operators; regional partner flights may use a different operator.",
   "尚未核实": "Not verified",
   "尚未核实 ICAO 代码与无线电呼号。": "ICAO code and radio callsign have not been verified.",
-  "资料来源": "References",
   "相遇记录": "Encounters",
   "第一次拍到": "First spotted",
   "最近一次拍到": "Last spotted",
@@ -749,5 +748,11 @@
   "沙特航空 HZ-ARE 的纪念涂装，机身带有金色“75 YEARS”字样，尾翼绘有金色人物肖像。": "The commemorative livery on Saudia HZ-ARE features gold “75 YEARS” lettering on the fuselage and gold portraits on the tail.",
   "阿特拉斯航空": "Atlas Air",
   "Flexport 货运涂装": "Flexport cargo livery",
-  "白色前机身搭配深蓝色后机身及尾翼，带有 Flexport 标记；由 Atlas Air 运营。": "White forward fuselage with a dark blue rear fuselage and tail, carrying Flexport branding; operated by Atlas Air."
+  "白色前机身搭配深蓝色后机身及尾翼，带有 Flexport 标记；由 Atlas Air 运营。": "White forward fuselage with a dark blue rear fuselage and tail, carrying Flexport branding; operated by Atlas Air.",
+  "精选照片": "Highlights",
+  "按拍摄日回看": "Shooting days",
+  "搜索结果": "Search results",
+  "航班详情": "Flight details",
+  "关闭航班详情": "Close flight details",
+  "查看 {0} 的航班详情": "View flight details for {0}"
 }

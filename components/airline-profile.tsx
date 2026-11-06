@@ -9,13 +9,12 @@ import {Icon} from './icons';
 import {CountryFlags} from './country-flags';
 
 export type AirlineGallery = {model?:string;livery?:string;photoId?:string};
-type AirlineFacts = {designators:{icao:string;callsign:string;operator:string}[];alliance:string;sources:string[];note?:string};
+type AirlineFacts = {designators:{icao:string;callsign:string;operator:string}[];alliance:string;note?:string};
 
 export function AirlineProfile({entry,photos,flights,onGallery,onFlights}:{entry:Entry;photos:Photo[];flights:Flight[];onGallery:(selection:AirlineGallery)=>void;onFlights:()=>void}) {
   const {t,locale}=useLocale();
   const collection=useMemo(()=>airlineCollection(entry,photos,flights,selections.preferredPhotos),[entry,photos,flights]);
   const facts=(profiles.airlines as Record<string,AirlineFacts>)[entry.name];
-  const sources=profiles.sources as Record<string,{title:string;url:string}>;
   const cover=collection.cover as Photo|null;
   const missing='—';
   return <div className="airline-profile">
@@ -39,7 +38,6 @@ export function AirlineProfile({entry,photos,flights,onGallery,onFlights}:{entry
       </dl>
       <p className="airline-note">{t('代码与呼号对应航司运营实体，区域合作航班的实际承运人可能不同。')}</p>
       {facts?.note&&<p className="airline-note">{t(facts.note)}</p>}
-      <details className="airline-sources"><summary>{t('资料来源')} · {profiles.checkedAt}</summary>{facts?.sources.map(key=><a key={key} href={sources[key].url} target="_blank" rel="noreferrer">{sources[key].title}<Icon name="diagonal" size={13}/></a>)}</details>
     </section>
 
     {collection.firstSeen&&<section className="airline-encounters" aria-label={t('相遇记录')}>

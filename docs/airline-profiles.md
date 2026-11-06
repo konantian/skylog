@@ -1,6 +1,6 @@
 # Airline collection profiles
 
-`data/airline-profiles.json` contains the public airline facts used by the airline detail view. The `checkedAt` date and source links are shown in the interface. This is a manually verified snapshot, not a live fleet or route database.
+`data/airline-profiles.json` contains the public airline facts used by the airline detail view. The dataset keeps the verification date and source links for maintainers.
 
 - ICAO designators and radio callsigns were checked against the FAA company-designator table. Operating entities can differ from the commercial brand (Porter includes POE and PTR); regional partner flights can use another entity's callsign.
 - Alliance membership was checked against the linked official alliance or member-airline pages. Juneyao is a Star Alliance Connecting Partner, not a full member. Philippine Airlines is listed as a future oneworld member. ITA is a Star Alliance member as of April 2026.
