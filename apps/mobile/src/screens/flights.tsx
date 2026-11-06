@@ -83,18 +83,18 @@ export function FlightCard({
           {f.date}
         </Txt>
       </View>
-      <View style={{ flexDirection: "row", alignItems: "center", gap: 16 }}>
-        <View style={{ flex: 1 }}>
-          <Txt style={styles.title}>{f.origin}</Txt>
-          <Txt muted style={{ fontSize: 12 }}>
+      <View>
+        <View style={{ flexDirection: "row", alignItems: "center", gap: 16 }}>
+          <Txt style={[styles.title, { flex: 1 }]}>{f.origin}</Txt>
+          <Icon name="airplane-outline" />
+          <Txt style={[styles.title, { flex: 1, textAlign: "right" }]}>{f.destination}</Txt>
+        </View>
+        <View style={{ flexDirection: "row", alignItems: "flex-start", gap: 16 }}>
+          <Txt muted style={{ flex: 1, fontSize: 12 }}>
             {city(f.origin)}
             {f.departureTime ? ` · ${f.departureTime}` : ""}
           </Txt>
-        </View>
-        <Icon name="airplane-outline" />
-        <View style={{ flex: 1, alignItems: "flex-end" }}>
-          <Txt style={styles.title}>{f.destination}</Txt>
-          <Txt muted style={{ fontSize: 12, textAlign: "right" }}>
+          <Txt muted style={{ flex: 1, fontSize: 12, textAlign: "right" }}>
             {city(f.destination)}
           </Txt>
         </View>
