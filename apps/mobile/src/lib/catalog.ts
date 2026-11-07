@@ -38,8 +38,11 @@ export const website = "https://konantian.github.io/skylog";
 export const imageUrl = (
   photo: Photo,
   size: "thumb" | "medium" | "full" = "medium",
-) =>
-  `${website}${size === "thumb" ? photo.thumbnail : size === "full" ? photo.image : `/photos/medium/${photo.id}.jpg`}`;
+) => {
+  const path = size === "thumb" ? photo.thumbnail : size === "full" ? photo.image : `/photos/medium/${photo.id}.jpg`;
+  const revision = fileById.get(photo.id)?.revision;
+  return `${website}${path}${revision ? `?v=${revision}` : ""}`;
+};
 export type LocalFlight = Flight & {
   status: "planned" | "completed" | "cancelled";
   notes: string;

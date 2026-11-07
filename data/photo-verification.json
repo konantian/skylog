@@ -6915,19 +6915,20 @@
     },
     {
       "photo": "DSC01139",
-      "imageBytes": 760329,
+      "imageBytes": 624934,
       "width": 3200,
       "height": 1805,
-      "mediumBytes": 85912,
+      "mediumBytes": 84183,
       "mediumWidth": 1600,
-      "thumbnailBytes": 20935,
+      "thumbnailBytes": 20907,
       "thumbnailWidth": 800,
       "original": {
-        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-04-hq/DSC01139.jpg",
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-07-denoise-hq/DSC01139.jpg",
         "width": 5851,
         "height": 3300,
-        "bytes": 3395514
-      }
+        "bytes": 2631972
+      },
+      "revision": "ea32581ac3d4"
     },
     {
       "photo": "DSC01141",
@@ -7011,19 +7012,20 @@
     },
     {
       "photo": "DSC01158",
-      "imageBytes": 986326,
+      "imageBytes": 790952,
       "width": 3200,
       "height": 1914,
-      "mediumBytes": 102475,
+      "mediumBytes": 98869,
       "mediumWidth": 1600,
-      "thumbnailBytes": 21893,
+      "thumbnailBytes": 22839,
       "thumbnailWidth": 800,
       "original": {
-        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-04-hq/DSC01158.jpg",
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-07-denoise-hq/DSC01158.jpg",
         "width": 5755,
         "height": 3443,
-        "bytes": 4065328
-      }
+        "bytes": 3631774
+      },
+      "revision": "bf4a4c5ad1d1"
     },
     {
       "photo": "DSC01160",
@@ -7475,19 +7477,20 @@
     },
     {
       "photo": "DSC01309",
-      "imageBytes": 830027,
+      "imageBytes": 579259,
       "width": 3200,
       "height": 1800,
-      "mediumBytes": 91774,
+      "mediumBytes": 85919,
       "mediumWidth": 1600,
-      "thumbnailBytes": 21050,
+      "thumbnailBytes": 21285,
       "thumbnailWidth": 800,
       "original": {
-        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-05-hq/DSC01309.jpg",
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-07-denoise-hq/DSC01309.jpg",
         "width": 6000,
         "height": 3375,
-        "bytes": 3873035
-      }
+        "bytes": 3141977
+      },
+      "revision": "7ea5062254b5"
     },
     {
       "photo": "DSC01310",
