@@ -1,4 +1,6 @@
-import { useMemo, useState } from "react";
+import { coverByAlternate } from "../../../../../lib/photo-highlights.mjs";
+import { photoSwipe } from "../../../../../lib/photo-swipe.mjs";
+import { useMemo, useRef, useState } from "react";
 import { View, Alert, useWindowDimensions, Linking } from "react-native";
 import { Stack, router, useLocalSearchParams } from "expo-router";
 import { File, Paths } from "expo-file-system";
@@ -40,6 +42,7 @@ export default function PhotoDetail() {
 function PhotoDetailContent({ params }: { params: PhotoParams }) {
   const { words, t, locale, saved, toggleSaved } = useApp();
   const [sharing, setSharing] = useState(false);
+  const touch = useRef<{ x: number; y: number; multiTouch: boolean } | null>(null);
   const { width } = useWindowDimensions();
   const [currentId, setCurrentId] = useState(params.id);
   const { id, sequence, model, airline, livery } = params;
@@ -123,11 +126,24 @@ function PhotoDetailContent({ params }: { params: PhotoParams }) {
           ),
         }}
       />
-      <PhotoImage
-        key={photo.id}
-        photo={photo}
-        height={Math.min(width * 0.7, 400)}
-      />
+      <View
+        onTouchStart={({ nativeEvent: e }) => {
+          touch.current = { x: e.pageX, y: e.pageY, multiTouch: e.touches.length > 1 };
+        }}
+        onTouchMove={({ nativeEvent: e }) => {
+          if (touch.current && e.touches.length > 1) touch.current.multiTouch = true;
+        }}
+        onTouchCancel={() => { touch.current = null; }}
+        onTouchEnd={({ nativeEvent: e }) => {
+          const start = touch.current;
+          touch.current = null;
+          if (!start || gallery.length < 2) return;
+          const step = photoSwipe({ ...start, endX: e.pageX, endY: e.pageY });
+          if (step) navigate(step);
+        }}
+      >
+        <PhotoImage key={photo.id} photo={photo} height={Math.min(width * 0.7, 400)} />
+      </View>
       <View
         style={{
           flexDirection: "row",
@@ -143,7 +159,7 @@ function PhotoDetailContent({ params }: { params: PhotoParams }) {
           />
         )}
         <Txt muted>
-          {index + 1} / {gallery.length}
+          {coverByAlternate.has(photo.id) && t("补充角度") + " · "}{index + 1} / {gallery.length}
         </Txt>
         <IconButton
           name="expand-outline"

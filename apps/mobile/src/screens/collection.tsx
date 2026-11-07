@@ -1,5 +1,5 @@
-import { photoHighlights } from "../../../../lib/photo-highlights.mjs";
-import { useMemo, useDeferredValue } from "react";
+import { photoBrowseMode, photoGalleryIds, photoGridCards } from "../../../../lib/photo-highlights.mjs";
+import { useMemo, useDeferredValue, useState } from "react";
 import {
   View,
   TextInput,
@@ -142,7 +142,7 @@ export function PhotoCard({
   onOpen: () => void;
   time?: string;
 }) {
-  const { saved, words, locale } = useApp();
+  const { saved, words, locale, t } = useApp();
   const names = photo.airlines.map((name) => airlineName(name, locale));
   const models = photo.models.map((name) => aircraftName(name, locale));
   return (
@@ -158,7 +158,7 @@ export function PhotoCard({
           <Txt style={{ fontSize: 18, fontWeight: "600" }}>
             {names.join(" / ") || words("Private aircraft", "公务机")}
           </Txt>
-          <Txt muted>{models.join(" / ")}</Txt>
+          <Txt muted>{[models.join(" / "), t(photo.livery)].filter(Boolean).join(" · ")}</Txt>
           <View
             style={{
               flexDirection: "row",
@@ -190,18 +190,16 @@ export function CollectionScreen({
   const query = useDeferredValue(f.query);
   const { width, height } = useWindowDimensions();
   const columns = Math.min(width, height) >= 700 ? 2 : 1;
+  const [photoScope, setPhotoScope] = useState("portfolio");
+  const browseMode = photoBrowseMode({ ...f, query }, photoScope);
+  const matchedPhotos = useMemo(() => mode === "photos" ? filterPhotos(
+    onlySaved ? photos.filter((p) => saved.includes(p.id)) : photos,
+    { ...f, query: aircraftSearchQuery(query) }, aircraft, airlines,
+  ) as Photo[] : [], [f, query, mode, onlySaved, saved]);
   const items = useMemo(() => {
     const next = { ...f, query: aircraftSearchQuery(query) };
     if (mode === "photos") {
-      const matched = filterPhotos(
-        onlySaved ? photos.filter((p) => saved.includes(p.id)) : photos,
-        next,
-        aircraft,
-        airlines,
-      ) as Photo[];
-      return !onlySaved && !query.trim()
-        ? (photoHighlights(matched, f.sort) as Photo[])
-        : matched;
+      return onlySaved ? matchedPhotos : photoGridCards(matchedPhotos, browseMode, f.sort) as Photo[];
     }
     const result = filterCatalog(
       mode === "aircraft" ? aircraft : airlines,
@@ -221,7 +219,11 @@ export function CollectionScreen({
         ) as Entry[];
     }
     return result;
-  }, [f, query, mode, onlySaved, saved]);
+  }, [f, query, mode, onlySaved, matchedPhotos, browseMode]);
+  const galleryIds = useMemo(() => {
+    if (mode !== "photos") return [];
+    return onlySaved ? items.map(p => p.id) : photoGalleryIds(items, matchedPhotos) as string[];
+  }, [mode, onlySaved, items, matchedPhotos]);
   const { list, origin, onScrollToIndexFailed } = usePhotoListReturn<
     Entry | Photo
   >(items, columns);
@@ -287,6 +289,28 @@ export function CollectionScreen({
                 }
               />
             </View>
+            {mode === "photos" && !onlySaved && !["filtered", "lookup"].includes(browseMode) && (
+              <View style={styles.wrap}>
+                {[
+                  ["portfolio", t("作品精选")],
+                  ["representatives", t("全部代表照")],
+                ].map(([scope, label]) => (
+                  <Pressable
+                    key={scope}
+                    accessibilityRole="button"
+                    accessibilityState={{ selected: photoScope === scope }}
+                    onPress={() => setPhotoScope(scope)}
+                    style={({ pressed }) => ({
+                      minHeight: 44, justifyContent: "center", paddingHorizontal: 16,
+                      borderRadius: 24, backgroundColor: photoScope === scope ? colors.raised : "transparent",
+                      opacity: pressed ? 0.65 : 1,
+                    })}
+                  >
+                    <Txt accent={photoScope === scope} muted={photoScope !== scope}>{label}</Txt>
+                  </Pressable>
+                ))}
+              </View>
+            )}
             {mode === "photos" && !onlySaved && (
               <Button
                 secondary
@@ -333,11 +357,7 @@ export function CollectionScreen({
             >
               <Txt muted style={{ fontSize: 12 }}>
                 {items.length}{" "}
-                {mode === "photos" && !onlySaved && !query.trim()
-                  ? words("highlights", "张精选照片")
-                  : mode === "photos"
-                    ? words("photographs", "张照片")
-                    : words("entries", "个条目")}
+                {mode === "photos" ? words("photographs", "张照片") : words("entries", "个条目")}
                 {active > 0 ? ` · ${active} ${words("filters", "项筛选")}` : ""}
               </Txt>
               {(active > 0 || f.query || f.status !== "all") && (
@@ -375,7 +395,7 @@ export function CollectionScreen({
                 onOpen={() =>
                   openPhoto(
                     item.id,
-                    items.map((p) => p.id),
+                    galleryIds,
                     origin,
                   )
                 }

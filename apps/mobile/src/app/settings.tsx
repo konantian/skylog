@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { version } from "../../package.json";
 import { Alert, View, Linking } from "react-native";
 import { Stack, router } from "expo-router";
 import { useSQLiteContext } from "expo-sqlite";
@@ -202,7 +203,7 @@ export default function Settings() {
         onPress={() => void Linking.openURL(website)}
       />
       <Txt muted>
-        SKYLOG 1.0 · {words("Photography © Yuan Wang", "摄影 © 王源")}
+        SKYLOG {version} · {words("Photography © Yuan Wang", "摄影 © 王源")}
       </Txt>
     </Page>
   );

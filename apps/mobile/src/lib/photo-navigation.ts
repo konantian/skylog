@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useId, useLayoutEffect, useRef } from "react";
 import { router, useFocusEffect } from "expo-router";
 import { FlatList } from "react-native";
+import { coverByAlternate } from "../../../../lib/photo-highlights.mjs";
 import { photoById } from "./catalog";
 
 export type PhotoParams = {
@@ -71,7 +72,10 @@ export function usePhotoListReturn<T extends { id: string }>(
   const attempts = useRef(0);
   useEffect(() => () => clearTimeout(retry.current), []);
   const origin = usePhotoReturn((id) => {
-    const index = items.findIndex((item) => item.id === id);
+    let index = items.findIndex((item) => item.id === id);
+    if (index < 0 && coverByAlternate.has(id)) {
+      index = items.findIndex((item) => item.id === coverByAlternate.get(id));
+    }
     if (index >= 0) {
       attempts.current = 0;
       list.current?.scrollToIndex({
