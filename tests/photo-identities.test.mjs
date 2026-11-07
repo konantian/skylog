@@ -152,3 +152,30 @@ test('November 5 imports use observed airframes and actual callsigns, including 
   assert.equal(byId.get('DSC01217').livery,'Flexport 货运涂装');
   assert.equal(catalog.aircraft.find(a=>a.name==='Boeing 747-400F').cover,'DSC01217');
 });
+
+test('November 7 publishes the edited YYZ frames and links each arrival to its airframe', () => {
+  const day = catalog.photos.filter(p => p.date === '2026-11-07');
+  assert.equal(day.length, 39);
+  assert.ok(day.every(p => p.airport === 'YYZ' && p.capturedAt.endsWith('-05:00')));
+  assert.ok(!byId.has('DSC01616'));
+  for (const p of day) {
+    if (p.id === 'DSC01614') {
+      assert.equal(p.flightIdentification.status, 'not-applicable');
+      continue;
+    }
+    const [track] = identities[p.id].evidence.track;
+    assert.equal(track.registration, p.registration.value);
+    assert.equal(track.operating_callsign, p.flightIdentification.callsign);
+    assert.ok(Math.abs(Date.parse(track.timestamp_utc) - Date.parse(p.capturedAt)) <= 10000);
+  }
+  for (const [id, registration, flight] of [
+    ['DSC01523', 'A6-APE', 'EY21'],
+    ['DSC01551', 'N776YX', 'UA3553'],
+    ['DSC01626', 'C-GJYC', 'AC445'],
+    ['DSC01638', 'C-FRQN', 'AC8256'],
+    ['DSC01675', 'TC-LJY', 'TK6019'],
+  ]) {
+    assert.equal(byId.get(id).registration.value, registration);
+    assert.deepEqual(byId.get(id).flights, [flight]);
+  }
+});

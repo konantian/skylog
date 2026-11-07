@@ -11,7 +11,7 @@ const f = extra => ({...initialFilters,...extra});
 
 test('all entries and photos have consistent links and unlock states',()=>{
   const ids=new Set(data.photos.map(p=>p.id));
-  assert.equal(ids.size,469);
+  assert.equal(ids.size,508);
   assert.ok(!ids.has('DSC06736'));
   assert.equal(new Set(data.aircraft.map(a=>a.id)).size,data.aircraft.length);
   for(const e of [...data.aircraft,...data.airlines]){
@@ -21,7 +21,7 @@ test('all entries and photos have consistent links and unlock states',()=>{
     for(const id of e.photoIds){const p=data.photos.find(p=>p.id===id);assert.ok((e.kind==='aircraft'?p.models:p.airlines).includes(e.name));}
   }
   assert.equal(data.aircraft.filter(e=>e.unlocked).length,54);
-  assert.equal(data.airlines.filter(e=>e.unlocked).length,49);
+  assert.equal(data.airlines.filter(e=>e.unlocked).length,50);
 });
 test('manufacturer, airline and model combine on actual photographs',()=>{
   const filters=f({manufacturer:'Airbus',airline:'Air Canada',model:'Airbus A330-300'});
@@ -123,7 +123,7 @@ test('model selection lists each airline and livery as parallel cards',async()=>
   const groups=groupModelVariants(a380,ps,data.airlines);
   assert.deepEqual(new Set(groups.map(g=>g.name)),new Set(['Emirates','Etihad Airways']));
   assert.equal(groups.length,2);
-  assert.equal(groups.flatMap(g=>g.photoIds).length,9);
+  assert.deepEqual(groups.flatMap(g=>g.photoIds).sort(), ps.map(p=>p.id).sort());
   const a330=data.aircraft.find(a=>a.name==='Airbus A330-300');
   const ac=groupModelVariants(a330,filterPhotos(data.photos,f({model:a330.name,airline:'Air Canada'}),data.aircraft),data.airlines).filter(g=>g.name==='Air Canada');
   assert.ok(ac.length>=4);

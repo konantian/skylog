@@ -13072,5 +13072,1551 @@
         "https://www.flightradar24.com/data/aircraft/b-20em"
       ]
     }
+  },
+  "DSC01314": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T07:30:28-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "C-FCQX",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fcqx"
+    },
+    "flights": [
+      "AC441"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fcqx",
+      "callsign": "ACA441"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T07:30:28-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA441",
+          "registration": "C-FCQX",
+          "timestamp_utc": "2026-11-07T12:30:25.894Z",
+          "lat": 43.692535,
+          "lon": -79.572122,
+          "altitude_ft": 1100.0,
+          "ground_track_true_deg": 226.83,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-fcqx"
+      ]
+    }
+  },
+  "DSC01322": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T07:30:34-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "C-FCQX",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fcqx"
+    },
+    "flights": [
+      "AC441"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fcqx",
+      "callsign": "ACA441"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T07:30:34-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA441",
+          "registration": "C-FCQX",
+          "timestamp_utc": "2026-11-07T12:30:25.894Z",
+          "lat": 43.692535,
+          "lon": -79.572122,
+          "altitude_ft": 1100.0,
+          "ground_track_true_deg": 226.83,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-fcqx"
+      ]
+    }
+  },
+  "DSC01325": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T07:30:35-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "C-FCQX",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fcqx"
+    },
+    "flights": [
+      "AC441"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fcqx",
+      "callsign": "ACA441"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T07:30:35-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA441",
+          "registration": "C-FCQX",
+          "timestamp_utc": "2026-11-07T12:30:43.946Z",
+          "lat": 43.684937,
+          "lon": -79.583172,
+          "altitude_ft": 875.0,
+          "ground_track_true_deg": 226.22,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-fcqx"
+      ]
+    }
+  },
+  "DSC01336": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T07:32:40-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "C-GOIK",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-goik"
+    },
+    "flights": [
+      "TS165"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-goik",
+      "callsign": "TSC165"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T07:32:40-05:00",
+      "track": [
+        {
+          "operating_callsign": "TSC165",
+          "registration": "C-GOIK",
+          "timestamp_utc": "2026-11-07T12:32:39.535Z",
+          "lat": 43.69002,
+          "lon": -79.575806,
+          "altitude_ft": 1050.0,
+          "ground_track_true_deg": 226.93,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-goik"
+      ]
+    }
+  },
+  "DSC01341": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T07:32:44-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "C-GOIK",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-goik"
+    },
+    "flights": [
+      "TS165"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-goik",
+      "callsign": "TSC165"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T07:32:44-05:00",
+      "track": [
+        {
+          "operating_callsign": "TSC165",
+          "registration": "C-GOIK",
+          "timestamp_utc": "2026-11-07T12:32:39.535Z",
+          "lat": 43.69002,
+          "lon": -79.575806,
+          "altitude_ft": 1050.0,
+          "ground_track_true_deg": 226.93,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-goik"
+      ]
+    }
+  },
+  "DSC01350": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T07:34:00-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "C-GKQN",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gkqn"
+    },
+    "flights": [
+      "PD200"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gkqn",
+      "callsign": "POE200"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T07:34:00-05:00",
+      "track": [
+        {
+          "operating_callsign": "POE200",
+          "registration": "C-GKQN",
+          "timestamp_utc": "2026-11-07T12:34:03.828Z",
+          "lat": 43.689102,
+          "lon": -79.577104,
+          "altitude_ft": 1000.0,
+          "ground_track_true_deg": 226.96,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-gkqn"
+      ]
+    }
+  },
+  "DSC01359": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T07:35:47-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "C-GHPJ",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-ghpj"
+    },
+    "flights": [
+      "AC2053"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-ghpj",
+      "callsign": "ROU2053"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T07:35:47-05:00",
+      "track": [
+        {
+          "operating_callsign": "ROU2053",
+          "registration": "C-GHPJ",
+          "timestamp_utc": "2026-11-07T12:35:43.925Z",
+          "lat": 43.693176,
+          "lon": -79.571228,
+          "altitude_ft": 1100.0,
+          "ground_track_true_deg": 226.92,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-ghpj"
+      ]
+    }
+  },
+  "DSC01367": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T07:35:52-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "C-GHPJ",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-ghpj"
+    },
+    "flights": [
+      "AC2053"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-ghpj",
+      "callsign": "ROU2053"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T07:35:52-05:00",
+      "track": [
+        {
+          "operating_callsign": "ROU2053",
+          "registration": "C-GHPJ",
+          "timestamp_utc": "2026-11-07T12:35:43.925Z",
+          "lat": 43.693176,
+          "lon": -79.571228,
+          "altitude_ft": 1100.0,
+          "ground_track_true_deg": 226.92,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-ghpj"
+      ]
+    }
+  },
+  "DSC01377": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T07:39:32-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "C-FHEI",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fhei"
+    },
+    "flights": [
+      "AC701"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fhei",
+      "callsign": "ACA701"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T07:39:32-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA701",
+          "registration": "C-FHEI",
+          "timestamp_utc": "2026-11-07T12:39:37.606Z",
+          "lat": 43.686722,
+          "lon": -79.580554,
+          "altitude_ft": 950.0,
+          "ground_track_true_deg": 226.74,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-fhei"
+      ]
+    }
+  },
+  "DSC01387": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T07:48:04-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "C-GKYW",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gkyw"
+    },
+    "flights": [
+      "PD222"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gkyw",
+      "callsign": "POE222"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T07:48:04-05:00",
+      "track": [
+        {
+          "operating_callsign": "POE222",
+          "registration": "C-GKYW",
+          "timestamp_utc": "2026-11-07T12:47:59.921Z",
+          "lat": 43.69162,
+          "lon": -79.573464,
+          "altitude_ft": 1075.0,
+          "ground_track_true_deg": 226.37,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-gkyw"
+      ]
+    }
+  },
+  "DSC01392": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T07:49:34-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "C-FLBV",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-flbv"
+    },
+    "flights": [
+      "WS859"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-flbv",
+      "callsign": "WJA859"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T07:49:34-05:00",
+      "track": [
+        {
+          "operating_callsign": "WJA859",
+          "registration": "C-FLBV",
+          "timestamp_utc": "2026-11-07T12:49:39.492Z",
+          "lat": 43.687972,
+          "lon": -79.578748,
+          "altitude_ft": 950.0,
+          "ground_track_true_deg": 226.97,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-flbv"
+      ]
+    }
+  },
+  "DSC01397": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T07:49:37-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "C-FLBV",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-flbv"
+    },
+    "flights": [
+      "WS859"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-flbv",
+      "callsign": "WJA859"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T07:49:37-05:00",
+      "track": [
+        {
+          "operating_callsign": "WJA859",
+          "registration": "C-FLBV",
+          "timestamp_utc": "2026-11-07T12:49:39.492Z",
+          "lat": 43.687972,
+          "lon": -79.578748,
+          "altitude_ft": 950.0,
+          "ground_track_true_deg": 226.97,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-flbv"
+      ]
+    }
+  },
+  "DSC01410": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T07:51:13-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "ET-AXS",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/et-axs"
+    },
+    "flights": [
+      "ET552"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/et-axs",
+      "callsign": "ETH552"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T07:51:13-05:00",
+      "track": [
+        {
+          "operating_callsign": "ETH552",
+          "registration": "ET-AXS",
+          "timestamp_utc": "2026-11-07T12:51:21.924Z",
+          "lat": 43.687683,
+          "lon": -79.579212,
+          "altitude_ft": 950.0,
+          "ground_track_true_deg": 226.55,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/et-axs"
+      ]
+    }
+  },
+  "DSC01418": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T07:51:17-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "ET-AXS",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/et-axs"
+    },
+    "flights": [
+      "ET552"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/et-axs",
+      "callsign": "ETH552"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T07:51:17-05:00",
+      "track": [
+        {
+          "operating_callsign": "ETH552",
+          "registration": "ET-AXS",
+          "timestamp_utc": "2026-11-07T12:51:21.924Z",
+          "lat": 43.687683,
+          "lon": -79.579212,
+          "altitude_ft": 950.0,
+          "ground_track_true_deg": 226.55,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/et-axs"
+      ]
+    }
+  },
+  "DSC01432": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T07:59:47-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "C-FLDX",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fldx"
+    },
+    "flights": [
+      "F8612"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fldx",
+      "callsign": "FLE612"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T07:59:47-05:00",
+      "track": [
+        {
+          "operating_callsign": "FLE612",
+          "registration": "C-FLDX",
+          "timestamp_utc": "2026-11-07T12:59:43.993Z",
+          "lat": 43.69137,
+          "lon": -79.573778,
+          "altitude_ft": 1050.0,
+          "ground_track_true_deg": 226.07,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-fldx"
+      ]
+    }
+  },
+  "DSC01441": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T08:08:35-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "C-GMLS",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gmls"
+    },
+    "flights": [
+      "AC2061"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gmls",
+      "callsign": "ROU2061"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T08:08:35-05:00",
+      "track": [
+        {
+          "operating_callsign": "ROU2061",
+          "registration": "C-GMLS",
+          "timestamp_utc": "2026-11-07T13:08:39.590Z",
+          "lat": 43.689194,
+          "lon": -79.576977,
+          "altitude_ft": 1000.0,
+          "ground_track_true_deg": 226.8,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-gmls"
+      ]
+    }
+  },
+  "DSC01445": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T08:08:37-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "C-GMLS",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gmls"
+    },
+    "flights": [
+      "AC2061"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gmls",
+      "callsign": "ROU2061"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T08:08:37-05:00",
+      "track": [
+        {
+          "operating_callsign": "ROU2061",
+          "registration": "C-GMLS",
+          "timestamp_utc": "2026-11-07T13:08:39.590Z",
+          "lat": 43.689194,
+          "lon": -79.576977,
+          "altitude_ft": 1000.0,
+          "ground_track_true_deg": 226.8,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-gmls"
+      ]
+    }
+  },
+  "DSC01460": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T08:18:32-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "A6-EEK",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/a6-eek"
+    },
+    "flights": [
+      "EK241"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/a6-eek",
+      "callsign": "UAE30Y"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T08:18:32-05:00",
+      "track": [
+        {
+          "operating_callsign": "UAE30Y",
+          "registration": "A6-EEK",
+          "timestamp_utc": "2026-11-07T13:18:25.841Z",
+          "lat": 43.666046,
+          "lon": -79.59634,
+          "altitude_ft": 1175.0,
+          "ground_track_true_deg": 226.44,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/a6-eek"
+      ]
+    }
+  },
+  "DSC01466": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T08:18:34-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "A6-EEK",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/a6-eek"
+    },
+    "flights": [
+      "EK241"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/a6-eek",
+      "callsign": "UAE30Y"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T08:18:34-05:00",
+      "track": [
+        {
+          "operating_callsign": "UAE30Y",
+          "registration": "A6-EEK",
+          "timestamp_utc": "2026-11-07T13:18:25.841Z",
+          "lat": 43.666046,
+          "lon": -79.59634,
+          "altitude_ft": 1175.0,
+          "ground_track_true_deg": 226.44,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/a6-eek"
+      ]
+    }
+  },
+  "DSC01493": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T08:18:41-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "A6-EEK",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/a6-eek"
+    },
+    "flights": [
+      "EK241"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/a6-eek",
+      "callsign": "UAE30Y"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T08:18:41-05:00",
+      "track": [
+        {
+          "operating_callsign": "UAE30Y",
+          "registration": "A6-EEK",
+          "timestamp_utc": "2026-11-07T13:18:43.982Z",
+          "lat": 43.657974,
+          "lon": -79.608147,
+          "altitude_ft": 925.0,
+          "ground_track_true_deg": 226.75,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/a6-eek"
+      ]
+    }
+  },
+  "DSC01500": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T08:18:42-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "A6-EEK",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/a6-eek"
+    },
+    "flights": [
+      "EK241"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/a6-eek",
+      "callsign": "UAE30Y"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T08:18:42-05:00",
+      "track": [
+        {
+          "operating_callsign": "UAE30Y",
+          "registration": "A6-EEK",
+          "timestamp_utc": "2026-11-07T13:18:43.982Z",
+          "lat": 43.657974,
+          "lon": -79.608147,
+          "altitude_ft": 925.0,
+          "ground_track_true_deg": 226.75,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/a6-eek"
+      ]
+    }
+  },
+  "DSC01510": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T08:21:43-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "A6-APE",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/a6-ape"
+    },
+    "flights": [
+      "EY21"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/a6-ape",
+      "callsign": "ETD7MF"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T08:21:43-05:00",
+      "track": [
+        {
+          "operating_callsign": "ETD7MF",
+          "registration": "A6-APE",
+          "timestamp_utc": "2026-11-07T13:21:47.704Z",
+          "lat": 43.690206,
+          "lon": -79.575544,
+          "altitude_ft": 1025.0,
+          "ground_track_true_deg": 226.74,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/a6-ape"
+      ]
+    }
+  },
+  "DSC01523": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T08:21:50-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "A6-APE",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/a6-ape"
+    },
+    "flights": [
+      "EY21"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/a6-ape",
+      "callsign": "ETD7MF"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T08:21:50-05:00",
+      "track": [
+        {
+          "operating_callsign": "ETD7MF",
+          "registration": "A6-APE",
+          "timestamp_utc": "2026-11-07T13:21:47.704Z",
+          "lat": 43.690206,
+          "lon": -79.575544,
+          "altitude_ft": 1025.0,
+          "ground_track_true_deg": 226.74,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/a6-ape"
+      ]
+    }
+  },
+  "DSC01539": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T08:33:02-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "C-GUUL",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-guul"
+    },
+    "flights": [
+      "WS382"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-guul",
+      "callsign": "WJA382"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T08:33:02-05:00",
+      "track": [
+        {
+          "operating_callsign": "WJA382",
+          "registration": "C-GUUL",
+          "timestamp_utc": "2026-11-07T13:33:01.958Z",
+          "lat": 43.689972,
+          "lon": -79.575763,
+          "altitude_ft": 1025.0,
+          "ground_track_true_deg": 226.06,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-guul"
+      ]
+    }
+  },
+  "DSC01551": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T08:34:43-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "N776YX",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n776yx"
+    },
+    "flights": [
+      "UA3553"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n776yx",
+      "callsign": "RPA3553"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T08:34:43-05:00",
+      "track": [
+        {
+          "operating_callsign": "RPA3553",
+          "registration": "N776YX",
+          "timestamp_utc": "2026-11-07T13:34:41.955Z",
+          "lat": 43.689789,
+          "lon": -79.576082,
+          "altitude_ft": 1025.0,
+          "ground_track_true_deg": 226.64,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/n776yx"
+      ]
+    }
+  },
+  "DSC01568": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T08:38:54-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "C-GUPK",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gupk"
+    },
+    "flights": [
+      "AC1112"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gupk",
+      "callsign": "ACA1112"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T08:38:54-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA1112",
+          "registration": "C-GUPK",
+          "timestamp_utc": "2026-11-07T13:38:53.904Z",
+          "lat": 43.68924,
+          "lon": -79.576913,
+          "altitude_ft": 1000.0,
+          "ground_track_true_deg": 226.4,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-gupk"
+      ]
+    }
+  },
+  "DSC01579": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T08:52:06-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "HL8746",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/hl8746"
+    },
+    "flights": [
+      "KE77"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/hl8746",
+      "callsign": "KAL077"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T08:52:06-05:00",
+      "track": [
+        {
+          "operating_callsign": "KAL077",
+          "registration": "HL8746",
+          "timestamp_utc": "2026-11-07T13:51:57.517Z",
+          "lat": 43.69487,
+          "lon": -79.568801,
+          "altitude_ft": 1175.0,
+          "ground_track_true_deg": 226.77,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/hl8746"
+      ]
+    }
+  },
+  "DSC01589": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T08:52:12-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "HL8746",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/hl8746"
+    },
+    "flights": [
+      "KE77"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/hl8746",
+      "callsign": "KAL077"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T08:52:12-05:00",
+      "track": [
+        {
+          "operating_callsign": "KAL077",
+          "registration": "HL8746",
+          "timestamp_utc": "2026-11-07T13:52:15.640Z",
+          "lat": 43.686951,
+          "lon": -79.580298,
+          "altitude_ft": 950.0,
+          "ground_track_true_deg": 226.48,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/hl8746"
+      ]
+    }
+  },
+  "DSC01597": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T09:01:41-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "C-GEHQ",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gehq"
+    },
+    "flights": [
+      "AC1930"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gehq",
+      "callsign": "ROU1930"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T09:01:41-05:00",
+      "track": [
+        {
+          "operating_callsign": "ROU1930",
+          "registration": "C-GEHQ",
+          "timestamp_utc": "2026-11-07T14:01:37.983Z",
+          "lat": 43.691574,
+          "lon": -79.573527,
+          "altitude_ft": 1050.0,
+          "ground_track_true_deg": 226.8,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-gehq"
+      ]
+    }
+  },
+  "DSC01614": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T09:39:37-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "RA-82078",
+      "status": "confirmed",
+      "basis": "长期停场记录及照片外观",
+      "sourceUrl": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2025-29/section-1.html"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "not-applicable",
+      "basis": "停场照片，不对应拍摄当天航班",
+      "sourceUrl": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2025-29/section-1.html"
+    },
+    "evidence": {
+      "archive": "Photograph of the stored Toronto An-124",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T09:39:37-05:00",
+      "track": [],
+      "sources": [
+        "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2025-29/section-1.html"
+      ]
+    }
+  },
+  "DSC01620": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T09:45:02-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "C-FFFX",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fffx"
+    },
+    "flights": [
+      "F89949"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fffx",
+      "callsign": "FLE9949"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T09:45:02-05:00",
+      "track": [
+        {
+          "operating_callsign": "FLE9949",
+          "registration": "C-FFFX",
+          "timestamp_utc": "2026-11-07T14:45:03.627Z",
+          "lat": 43.686218,
+          "lon": -79.58132,
+          "altitude_ft": 900.0,
+          "ground_track_true_deg": 226.87,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-fffx"
+      ]
+    }
+  },
+  "DSC01622": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T09:45:10-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "C-FFFX",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fffx"
+    },
+    "flights": [
+      "F89949"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fffx",
+      "callsign": "FLE9949"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T09:45:10-05:00",
+      "track": [
+        {
+          "operating_callsign": "FLE9949",
+          "registration": "C-FFFX",
+          "timestamp_utc": "2026-11-07T14:45:03.627Z",
+          "lat": 43.686218,
+          "lon": -79.58132,
+          "altitude_ft": 900.0,
+          "ground_track_true_deg": 226.87,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-fffx"
+      ]
+    }
+  },
+  "DSC01626": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T09:50:15-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "C-GJYC",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gjyc"
+    },
+    "flights": [
+      "AC445"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gjyc",
+      "callsign": "ACA445"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T09:50:15-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA445",
+          "registration": "C-GJYC",
+          "timestamp_utc": "2026-11-07T14:50:13.396Z",
+          "lat": 43.688049,
+          "lon": -79.578701,
+          "altitude_ft": 975.0,
+          "ground_track_true_deg": 226.48,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-gjyc"
+      ]
+    }
+  },
+  "DSC01633": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T09:52:31-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "N541EA",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n541ea"
+    },
+    "flights": [
+      "AA5522"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n541ea",
+      "callsign": "JIA5522"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T09:52:31-05:00",
+      "track": [
+        {
+          "operating_callsign": "JIA5522",
+          "registration": "N541EA",
+          "timestamp_utc": "2026-11-07T14:52:37.677Z",
+          "lat": 43.685179,
+          "lon": -79.582803,
+          "altitude_ft": 1300.0,
+          "ground_track_true_deg": 226.19,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/n541ea"
+      ]
+    }
+  },
+  "DSC01654": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T10:02:26-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "N541EA",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n541ea"
+    },
+    "flights": [
+      "AA5522"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n541ea",
+      "callsign": "JIA5522"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T10:02:26-05:00",
+      "track": [
+        {
+          "operating_callsign": "JIA5522",
+          "registration": "N541EA",
+          "timestamp_utc": "2026-11-07T15:02:29.451Z",
+          "lat": 43.68718,
+          "lon": -79.579926,
+          "altitude_ft": 950.0,
+          "ground_track_true_deg": 225.91,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/n541ea"
+      ]
+    }
+  },
+  "DSC01638": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T09:54:27-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "C-FRQN",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-frqn"
+    },
+    "flights": [
+      "AC8256"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-frqn",
+      "callsign": "JZA256"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T09:54:27-05:00",
+      "track": [
+        {
+          "operating_callsign": "JZA256",
+          "registration": "C-FRQN",
+          "timestamp_utc": "2026-11-07T14:54:23.792Z",
+          "lat": 43.68988,
+          "lon": -79.575955,
+          "altitude_ft": 1000.0,
+          "ground_track_true_deg": 226.53,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-frqn"
+      ]
+    }
+  },
+  "DSC01646": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T09:58:43-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "N833DN",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n833dn"
+    },
+    "flights": [
+      "DL2957"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n833dn",
+      "callsign": "DAL2957"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T09:58:43-05:00",
+      "track": [
+        {
+          "operating_callsign": "DAL2957",
+          "registration": "N833DN",
+          "timestamp_utc": "2026-11-07T14:58:41.534Z",
+          "lat": 43.689926,
+          "lon": -79.575827,
+          "altitude_ft": 1000.0,
+          "ground_track_true_deg": 226.68,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/n833dn"
+      ]
+    }
+  },
+  "DSC01667": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T10:13:36-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "TC-LJY",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/tc-ljy"
+    },
+    "flights": [
+      "TK6019"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/tc-ljy",
+      "callsign": "THY6019"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T10:13:36-05:00",
+      "track": [
+        {
+          "operating_callsign": "THY6019",
+          "registration": "TC-LJY",
+          "timestamp_utc": "2026-11-07T15:13:31.776Z",
+          "lat": 43.69272,
+          "lon": -79.571882,
+          "altitude_ft": 1100.0,
+          "ground_track_true_deg": 227.22,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/tc-ljy"
+      ]
+    }
+  },
+  "DSC01675": {
+    "date": "2026-11-07",
+    "capturedAt": "2026-11-07T10:13:39-05:00",
+    "reviewedAt": "2026-11-07",
+    "registration": {
+      "value": "TC-LJY",
+      "status": "confirmed",
+      "basis": "YYZ arrival position and registration matched to the photographed aircraft at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/tc-ljy"
+    },
+    "flights": [
+      "TK6019"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and registration from the capture-time ADS-B track, matched to the Toronto arrival.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/tc-ljy",
+      "callsign": "THY6019"
+    },
+    "evidence": {
+      "archive": "YYZ November 7 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-07T10:13:39-05:00",
+      "track": [
+        {
+          "operating_callsign": "THY6019",
+          "registration": "TC-LJY",
+          "timestamp_utc": "2026-11-07T15:13:31.776Z",
+          "lat": 43.69272,
+          "lon": -79.571882,
+          "altitude_ft": 1100.0,
+          "ground_track_true_deg": 227.22,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/tc-ljy"
+      ]
+    }
   }
 }

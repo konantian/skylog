@@ -62,5 +62,17 @@
   "Flexport 货运涂装": {
     "name": "Flexport 货运涂装",
     "description": "白色前机身搭配深蓝色后机身及尾翼，带有 Flexport 标记；由 Atlas Air 运营。"
+  },
+  "80 周年纪念标志": {
+    "name": "80 周年纪念标志",
+    "description": "埃塞俄比亚航空在后机身加上了 80 周年纪念标志。"
+  },
+  "KOREAN 浅蓝新涂装": {
+    "name": "KOREAN 浅蓝新涂装",
+    "description": "浅蓝机身配深蓝 KOREAN 字标，尾翼采用单色太极标志。"
+  },
+  "Turkish Cargo 货运涂装": {
+    "name": "Turkish Cargo 货运涂装",
+    "description": "白色货机机身配 Turkish Cargo 字标及红色尾翼。"
   }
 }

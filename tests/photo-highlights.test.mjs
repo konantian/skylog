@@ -18,7 +18,7 @@ function grid(filters = {}, preferred = 'portfolio') {
 
 test('home, portfolio and representative sets nest without duplicate cards or missing combinations', () => {
   const {cards} = grid();
-  assert.equal(cards.length, 35);
+  assert.equal(cards.length, 37);
   assert.deepEqual(ids(cards), review.portfolio);
   assert.equal(new Set(review.portfolio).size, review.portfolio.length);
   assert.ok(heroes.every(id => review.portfolio.includes(id)));
@@ -39,14 +39,14 @@ test('filtering widens either tab to matching representatives and respects sorti
     }
   }
   assert.deepEqual(new Set(grid({airline:'Air North'}).cards.flatMap(p=>p.models)),new Set(['Boeing 737-500','Boeing 737-800']));
-  assert.equal(grid({sort:'latest'}).cards.length,35);
+  assert.equal(grid({sort:'latest'}).cards.length,37);
   assert.deepEqual(grid({query:'DSC06147'}).cards.map(p=>p.id),['DSC06147']);
 });
 
 test('all supplementary views follow their cover in the viewer only, within the active filters', () => {
   const {gallery} = grid({}, 'representatives');
   assert.equal(new Set(gallery).size, gallery.length);
-  assert.equal(coverByAlternate.size,14);
+  assert.equal(coverByAlternate.size,17);
   for (const [alternate,cover] of coverByAlternate) {
     assert.deepEqual(photoGroups(byId.get(cover)),photoGroups(byId.get(alternate)));
     assert.ok(gallery.includes(cover));
