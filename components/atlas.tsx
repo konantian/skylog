@@ -1,8 +1,8 @@
 'use client';
 import {LanguageSwitch,useLocale} from './locale-provider';
 import {useMobileLayer} from './use-mobile-layer';
-import {photoHighlights} from '@/lib/photo-highlights.mjs';
-import {photoSwipe} from '@/lib/photo-swipe.mjs';
+import {coverByAlternate, photoBrowseMode, photoGalleryIds, photoGridCards} from '@/lib/photo-highlights.mjs';
+import {usePhotoSwipe} from './use-photo-swipe';
 
 
 import { useEffect, useMemo, useRef, useState } from 'react';
@@ -61,7 +61,9 @@ export default function Atlas() {
   const [ready,setReady] = useState(false);
   const [historyRevision,setHistoryRevision]=useState(0);
   useEffect(()=>{const sync=()=>setHistoryRevision(n=>n+1);window.addEventListener('popstate',sync);return()=>window.removeEventListener('popstate',sync);},[]);
-  const [photoLayout,setPhotoLayout]=useState('grid');
+  const [photoGrid,setPhotoGrid]=useState<'grid'|'representatives'>('grid');
+  const [timeline,setTimeline]=useState(false);
+  const photoLayout=timeline?'timeline':photoGrid;
   const [expanded,setExpanded] = useState(false);
   const [mobileHome,setMobileHome]=useState(true);
   const [filterSheet,setFilterSheet]=useState(false);
@@ -71,7 +73,6 @@ export default function Atlas() {
   const sheetDrag=useRef<{y:number;distance:number}|null>(null);
   const tabMemory=useRef(new Map<string,{filters:Filters;limit:number;y:number}>());
   const tabRestore=useRef<number|null>(null);
-  const swipe=useRef<{x:number;y:number;multiTouch:boolean}|null>(null);
   useMobileLayer(filterSheet,()=>setFilterSheet(false));
   const [limit,setLimit] = useState(24);
   const [flight,setFlight] = useState(0);
@@ -100,7 +101,9 @@ export default function Atlas() {
     const params = new URLSearchParams(window.location.search);
     const view = params.get('view');
     setMobileHome(!view&&!Object.keys(initialFilters).some(key=>params.has(key))&&window.location.hash!=='#collection');
-    if(params.get('layout')==='timeline')setPhotoLayout('timeline');
+    const layout = params.get('layout');
+    if(layout==='timeline') setTimeline(true);
+    if(layout==='representatives') setPhotoGrid(layout);
     if (modes.some(m => m.id === view)) setMode(view as Mode);
     const next = {...initialFilters};
     for (const key of Object.keys(next) as (keyof Filters)[]) {
@@ -167,8 +170,14 @@ export default function Atlas() {
   };
 
   const matchedPhotos = useMemo(() => filterPhotos(featured,filters,aircraft,airlines) as Photo[],[filters]);
-  const displayPhotos = useMemo(() => mode==='photos' && photoLayout==='grid' && !filters.query.trim()
-    ? photoHighlights(matchedPhotos,filters.sort) as Photo[] : matchedPhotos,[mode,photoLayout,filters.query,filters.sort,matchedPhotos]);
+  const browseMode = photoBrowseMode(filters, photoGrid==='representatives' ? 'representatives' : 'portfolio');
+  const searchingPhotos = browseMode==='lookup' || browseMode==='filtered';
+  const displayPhotos = useMemo(() => mode==='photos' && photoLayout!=='timeline'
+    ? photoGridCards(matchedPhotos,browseMode,filters.sort) as Photo[] : matchedPhotos,[mode,photoLayout,browseMode,filters.sort,matchedPhotos]);
+  const openGridPhoto = (photo:Photo) => {
+    const ids = photoGalleryIds(displayPhotos,matchedPhotos) as string[];
+    openDetail({ids,index:ids.indexOf(photo.id)});
+  };
   const entries = useMemo(() => {
     if (mode === 'photos' || mode === 'flights') return [];
     const base = filterCatalog(mode === 'aircraft' ? aircraft : airlines,photos,filters,mode,aircraft,airlines) as Entry[];
@@ -245,6 +254,7 @@ export default function Atlas() {
     setFilters({...initialFilters,sort:'latest',...(exactFlights.length?{query:activePhoto!.registration!.value}:detail?.entry?.kind==='airline'?{airline:detail.entry.name}:detail?.entry?{model:detail.entry.displayModel||detail.entry.name,...(detail.entry.kind==='variant'?{airline:detail.entry.name}:{})}:{})});
   };
   const nextPhoto = (step:number) => setDetail(d => d && ({...d,index:(d.index+step+galleryIds.length)%galleryIds.length}));
+  const stageSwipe = usePhotoSwipe(step=>{if(galleryIds.length>1)nextPhoto(step);});
   const unlockedAircraft = aircraft.filter(a => a.unlocked).length;
   const unlockedAirlines = airlines.filter(a => a.unlocked).length;
   const renderFilters=(values:Filters,onUpdate:(key:keyof Filters,value:string)=>void)=>{
@@ -292,11 +302,14 @@ export default function Atlas() {
         </div>
         {activeCount>0&&<div className="active-filter-summary"><span>{t("已应用")}{activeCount} {t("项筛选")}</span><button onClick={reset}>{t("重置筛选")}<Icon name="close" size={13}/></button></div>}
         {mode==='photos'&&<div className="photo-layout-tabs" aria-label={t("摄影集展示方式")}>
-          <button aria-pressed={photoLayout==='grid'} onClick={()=>{setPhotoLayout('grid');setLimit(24);}}><Icon name="camera" size={15}/>{filters.query.trim()?t("搜索结果"):t("精选照片")}</button>
-          <button aria-pressed={photoLayout==='timeline'} onClick={()=>setPhotoLayout('timeline')}><Icon name="calendar" size={15}/>{t("按拍摄日回看")}</button>
+          {searchingPhotos
+            ? <button aria-pressed={photoLayout!=='timeline'} onClick={()=>{setTimeline(false);setLimit(24);}}>{filters.query.trim()?t("搜索结果"):t("筛选结果")}</button>
+            : <><button aria-pressed={photoLayout==='grid'} onClick={()=>{setPhotoGrid('grid');setTimeline(false);setLimit(24);}}><Icon name="camera" size={15}/>{t("作品精选")}</button>
+              <button aria-pressed={photoLayout==='representatives'} onClick={()=>{setPhotoGrid('representatives');setTimeline(false);setLimit(24);}}>{t("全部代表照")}</button></>}
+          <button aria-pressed={photoLayout==='timeline'} onClick={()=>setTimeline(true)}><Icon name="calendar" size={15}/>{t("按拍摄日回看")}</button>
         </div>}
         {count===0 ? <div className="empty-state"><Icon name="search" size={40}/><h3>{t("这片天空还没有记录")}</h3><p>{t("换一个筛选条件，继续探索已收藏的相遇。")}</p><button className="explore-button" onClick={reset}>{t("查看全部收藏")}<Icon name="arrow"/></button></div> : mode==='flights' ? <FlightLog flights={matchedFlights} mapFlights={mapFlights} allFlights={flights} filters={filters} onFilter={update} limit={limit} photos={photos} total={flights.length} onPhoto={p=>openDetail({ids:[p.id],index:0})} onShare={flight=>setShareCard({kind:'flight',flight})}/> : mode==='photos'&&photoLayout==='timeline' ? <CollectionTimeline photos={matchedPhotos} aircraft={aircraft} airlines={airlines} onPhoto={(ids,index)=>openDetail({ids,index})}/> : <div className="card-grid">
-          {mode==='photos' ? displayPhotos.slice(0,limit).map((photo,index)=><button className="catalog-card photo-card" key={photo.id} onClick={()=>openDetail({ids:displayPhotos.map(p=>p.id),index})}><div className="card-image"><img src={asset(photo.thumbnail)} alt={`${photo.airlines.map(name=>t(name)).join(' / ')} ${photo.models.map(name=>t(name)).join(' / ')} · ${photo.id}`} loading="lazy"/><span className="airport-badge">{photo.airport}</span><span className="image-open"><Icon name="diagonal"/></span></div><div className="card-content"><span className="card-overline">{photo.airlines.map(name=>t(name)).join(' / ')||'PRIVATE / BUSINESS'}</span><h3>{photo.models.map(name=>t(name)).join(' / ')||t("机型待确认")}</h3><span className="photo-livery">{t(photo.livery)}</span>{flightsForPhoto(photo,flights).length>0&&<span className="flown-badge">{t("坐过这架")}</span>}<div className="card-meta"><span>{photo.id}</span><span>{photo.date.replaceAll('-','.')}</span></div></div></button>) : entries.slice(0,limit).map(entry=>{
+          {mode==='photos' ? displayPhotos.slice(0,limit).map(photo=><button className="catalog-card photo-card" key={photo.id} onClick={()=>openGridPhoto(photo)}><div className="card-image"><img src={asset(photo.thumbnail)} alt={`${photo.airlines.map(name=>t(name)).join(' / ')} ${photo.models.map(name=>t(name)).join(' / ')} · ${photo.id}`} loading="lazy"/><span className="airport-badge">{photo.airport}</span><span className="image-open"><Icon name="diagonal"/></span></div><div className="card-content"><span className="card-overline">{photo.airlines.map(name=>t(name)).join(' / ')||'PRIVATE / BUSINESS'}</span><h3>{photo.models.map(name=>t(name)).join(' / ')||t("机型待确认")}</h3><span className="photo-livery">{t(photo.livery)}</span>{flightsForPhoto(photo,flights).length>0&&<span className="flown-badge">{t("坐过这架")}</span>}<div className="card-meta"><span>{photo.id}</span><span>{photo.date.replaceAll('-','.')}</span></div></div></button>) : entries.slice(0,limit).map(entry=>{
             const matchingIds = entry.photoIds.filter(id=>photoMatches(byId.get(id)!,filters,aircraft,airlines));
             const flown = flightsForEntry(entry,flights).length;
             const cover = byId.get(entry.cover&&matchingIds.includes(entry.cover)?entry.cover:matchingIds[0]||entry.cover||'');
@@ -316,7 +329,7 @@ export default function Atlas() {
         <label className="select-field"><span>{detail.entry.kind==='aircraft'?t("查看这款机型的不同航司"):t("查看这家航司的不同机型")}</span><select aria-label={t("详情航司或机型")} value={detail.entry.kind==='aircraft'?variant.airline:variant.model} onChange={e=>{setVariantFilter(detail.entry!.kind==='aircraft'?'airline':'model',e.target.value);e.currentTarget.blur();}}><option value="all">{detail.entry.kind==='aircraft'?t("全部航司"):t("全部机型")}</option>{unique(variantPhotos.flatMap(p=>detail.entry!.kind==='aircraft'?airlinesForModel(p,detail.entry!.name):modelsForAirline(p,detail.entry!.name))).map(s=><option key={s} value={s}>{t(s)}</option>)}</select></label>
         <label className="select-field"><span>{t("查看不同涂装 ·")}{galleryIds.length} {t("张")}</span><select aria-label={t("详情涂装")} value={variant.livery} onChange={e=>{setVariantFilter('livery',e.target.value);e.currentTarget.blur();}}><option value="all">{t("全部涂装")}</option>{variantLiveries.map(s=><option key={s} value={s}>{t(s)}</option>)}</select></label>
       </div>}
-      {activePhoto?<><div className="photo-stage" onTouchStart={e=>{const p=e.touches[0];swipe.current={x:p.clientX,y:p.clientY,multiTouch:e.touches.length>1};}} onTouchMove={e=>{if(swipe.current&&e.touches.length>1)swipe.current.multiTouch=true;}} onTouchCancel={()=>{swipe.current=null;}} onTouchEnd={e=>{const start=swipe.current;swipe.current=null;if(!start||galleryIds.length<2)return;const p=e.changedTouches[0];const direction=photoSwipe({...start,endX:p.clientX,endY:p.clientY,scale:window.visualViewport?.scale??1});if(direction)nextPhoto(direction);}}><img key={activePhoto.id} {...photoImageSources(activePhoto,process.env.NEXT_PUBLIC_BASE_PATH)} sizes={photoSizes} alt={`${activePhoto.airlines.map(name=>t(name)).join(' / ')} ${activePhoto.models.map(name=>t(name)).join(' / ')} · ${activePhoto.id}`}/>{galleryIds.length>1&&<><button className="gallery-arrow previous" onClick={()=>nextPhoto(-1)} aria-label={t("上一张照片")}><Icon name="chevron"/></button><button className="gallery-arrow next" onClick={()=>nextPhoto(1)} aria-label={t("下一张照片")}><Icon name="chevron"/></button></>}<span className="mobile-swipe-hint">{galleryIds.length>1?t("左右滑动切换照片"):t("摄影 © Yuan Wang")}</span><button className="photo-fullscreen-toggle" onClick={()=>setFullscreen(true)} aria-label={t("全屏查看照片")}><Icon name="diagonal" size={22}/></button><span className="photo-counter">{String(detail.index+1).padStart(2,'0')} / {String(galleryIds.length).padStart(2,'0')}</span></div><div className="photo-info"><div><span className="livery-chip">{t(activePhoto.livery)}</span><br/><span className="photo-airline">{activePhoto.airlines.map(name=>t(name)).join(' / ')||'Private / Business'}</span><p>{activePhoto.models.map(name=>t(name)).join(' / ')||t("机型待确认")}</p><div className="info-tags"><span><Icon name="pin" size={13}/>{activePhoto.airport}</span><span><Icon name="calendar" size={13}/>{activePhoto.date}</span><span>{activePhoto.id}</span></div><PhotoIdentity photo={activePhoto}/>{activePhoto.note&&<p className="photo-note">{t(activePhoto.note)}</p>}</div><div className="photo-actions"><button className="play-secondary" onClick={()=>setShareCard({kind:'photo',photo:activePhoto})}><Icon name="share" size={15}/>{t("生成摄影卡片")}</button><a href={asset(activePhoto.image)} target="_blank" rel="noreferrer" className="open-jpg">{t("打开高清 JPG")}<Icon name="diagonal" size={15}/></a>{original&&<div className="original-download"><a href={original.url} download={`${activePhoto.id}.jpg`} className="open-jpg"><Icon name="download" size={15}/>{t("下载原尺寸 JPG")}</a><span>{original.width} × {original.height} · {(original.bytes/1_000_000).toFixed(1)} MB</span></div>}</div></div>{galleryIds.length>1&&<div className="thumbnail-strip" aria-label={t("选择照片")}>{galleryIds.map((id,index)=><button key={id} aria-label={t("查看 {0}",[id])} aria-pressed={index===detail.index} onClick={()=>setDetail(d=>d&&({...d,index}))}><img src={asset(byId.get(id)!.thumbnail)} alt="" loading="lazy"/></button>)}</div>}</>:<div className="locked-detail"><PlaneSilhouette model={detail.entry?.kind==='aircraft'?detail.entry.name:detail.entry?.displayModel} category={detail.entry?.category} family={detail.entry?.family}/><span className="state-badge"><Icon name="lock" size={13}/>{t("待解锁")}</span><h3>{t("把下一次相遇，留给它。")}</h3><p>{t(detail.entry?.chineseName||detail.entry?.category)} {t("· 尚无拍摄记录")}</p><p className="muted">{t("轮廓仅作示意。收藏目标不代表当前有定期航班。")}</p></div>}
+      {activePhoto?<><div className="photo-stage" {...stageSwipe}><img key={activePhoto.id} {...photoImageSources(activePhoto,process.env.NEXT_PUBLIC_BASE_PATH)} sizes={photoSizes} alt={`${activePhoto.airlines.map(name=>t(name)).join(' / ')} ${activePhoto.models.map(name=>t(name)).join(' / ')} · ${activePhoto.id}`}/>{galleryIds.length>1&&<><button className="gallery-arrow previous" onClick={()=>nextPhoto(-1)} aria-label={t("上一张照片")}><Icon name="chevron"/></button><button className="gallery-arrow next" onClick={()=>nextPhoto(1)} aria-label={t("下一张照片")}><Icon name="chevron"/></button></>}<span className="mobile-swipe-hint">{galleryIds.length>1?t("左右滑动切换照片"):t("摄影 © Yuan Wang")}</span><button className="photo-fullscreen-toggle" onClick={()=>setFullscreen(true)} aria-label={t("全屏查看照片")}><Icon name="diagonal" size={22}/></button><span className="photo-counter">{coverByAlternate.has(activePhoto.id)&&t("补充角度")+" · "}{String(detail.index+1).padStart(2,'0')} / {String(galleryIds.length).padStart(2,'0')}</span></div><div className="photo-info"><div><span className="livery-chip">{t(activePhoto.livery)}</span><br/><span className="photo-airline">{activePhoto.airlines.map(name=>t(name)).join(' / ')||'Private / Business'}</span><p>{activePhoto.models.map(name=>t(name)).join(' / ')||t("机型待确认")}</p><div className="info-tags"><span><Icon name="pin" size={13}/>{activePhoto.airport}</span><span><Icon name="calendar" size={13}/>{activePhoto.date}</span><span>{activePhoto.id}</span></div><PhotoIdentity photo={activePhoto}/>{activePhoto.note&&<p className="photo-note">{t(activePhoto.note)}</p>}</div><div className="photo-actions"><button className="play-secondary" onClick={()=>setShareCard({kind:'photo',photo:activePhoto})}><Icon name="share" size={15}/>{t("生成摄影卡片")}</button><a href={asset(activePhoto.image)} target="_blank" rel="noreferrer" className="open-jpg">{t("打开高清 JPG")}<Icon name="diagonal" size={15}/></a>{original&&<div className="original-download"><a href={original.url} download={`${activePhoto.id}.jpg`} className="open-jpg"><Icon name="download" size={15}/>{t("下载原尺寸 JPG")}</a><span>{original.width} × {original.height} · {(original.bytes/1_000_000).toFixed(1)} MB</span></div>}</div></div>{galleryIds.length>1&&<div className="thumbnail-strip" aria-label={t("选择照片")}>{galleryIds.map((id,index)=><button key={id} aria-label={t("查看 {0}",[id])} aria-pressed={index===detail.index} onClick={()=>setDetail(d=>d&&({...d,index}))}><img src={asset(byId.get(id)!.thumbnail)} alt="" loading="lazy"/></button>)}</div>}</>:<div className="locked-detail"><PlaneSilhouette model={detail.entry?.kind==='aircraft'?detail.entry.name:detail.entry?.displayModel} category={detail.entry?.category} family={detail.entry?.family}/><span className="state-badge"><Icon name="lock" size={13}/>{t("待解锁")}</span><h3>{t("把下一次相遇，留给它。")}</h3><p>{t(detail.entry?.chineseName||detail.entry?.category)} {t("· 尚无拍摄记录")}</p><p className="muted">{t("轮廓仅作示意。收藏目标不代表当前有定期航班。")}</p></div>}
       {activePhoto&&<PhotoSettings photo={activePhoto}/>}
       <FlownDetails flights={exactFlights.length?exactFlights:entryFlights} exact={exactFlights.length>0} onExplore={exploreFlights}/>{profileEntries.map(entry=>{const model=entry.displayModel||entry.name;return <div key={entry.id}><div className="detail-compare"><CompareButton model={model} selected={compared.includes(model)} full={compared.length>=3} onClick={()=>toggleCompare(model)}/><button onClick={()=>setComparing(true)}>{t('查看对比')}<Icon name="arrow" size={16}/></button></div><AircraftProfile entry={entry}/></div>;})}
       </>}

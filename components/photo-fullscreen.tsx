@@ -3,6 +3,7 @@
 import {useEffect,useRef,useState} from 'react';
 import type {Photo} from '@/lib/types';
 import {originalPhoto,photoImageSources} from '@/lib/photo-images.mjs';
+import {usePhotoSwipe} from './use-photo-swipe';
 import {useMobileLayer} from './use-mobile-layer';
 import {useLocale} from './locale-provider';
 import {Icon} from './icons';
@@ -12,6 +13,7 @@ export function PhotoFullscreen({photo,onClose,onPrevious,onNext}:{photo:Photo;o
   const dialog=useRef<HTMLDialogElement>(null);
   const [loaded,setLoaded]=useState('');
   const [failed,setFailed]=useState('');
+  const swipe = usePhotoSwipe(direction=>{if(direction>0)onNext?.();else onPrevious?.();});
   useMobileLayer(true,onClose);
   useEffect(()=>{
     const el=dialog.current!;
@@ -26,7 +28,7 @@ export function PhotoFullscreen({photo,onClose,onPrevious,onNext}:{photo:Photo;o
     if(e.key==='ArrowRight'&&onNext){e.preventDefault();onNext();}
     e.stopPropagation();
   }}>
-    <img key={photo.id} {...(original?{src:original.url}:fallback)} sizes="100vw" onLoad={()=>{setLoaded(photo.id);setFailed('');}} onError={e=>{
+    <img {...swipe} key={photo.id} {...(original?{src:original.url}:fallback)} sizes="100vw" onLoad={()=>{setLoaded(photo.id);setFailed('');}} onError={e=>{
       const image=e.currentTarget;
       if(original&&!image.dataset.fallback){image.dataset.fallback='true';image.srcset=fallback.srcSet;image.src=fallback.src;}
       else setFailed(photo.id);
