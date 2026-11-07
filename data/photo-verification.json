@@ -1,5 +1,5 @@
 {
-  "count": 470,
+  "count": 469,
   "files": [
     {
       "photo": "DSC06137",
@@ -687,22 +687,6 @@
         "width": 5124,
         "height": 2213,
         "bytes": 2896360
-      }
-    },
-    {
-      "photo": "DSC06736",
-      "imageBytes": 819184,
-      "width": 3200,
-      "height": 955,
-      "mediumBytes": 145848,
-      "mediumWidth": 1600,
-      "thumbnailBytes": 30789,
-      "thumbnailWidth": 800,
-      "original": {
-        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-03-hq/DSC06736.jpg",
-        "width": 4254,
-        "height": 1270,
-        "bytes": 1519758
       }
     },
     {

@@ -1,4 +1,5 @@
 import {test} from 'node:test';
+import ramp from './fixtures/ramp-photo.json' with {type:'json'};
 import assert from 'node:assert/strict';
 import {execFileSync} from 'node:child_process';
 import catalog from '../data/catalog.json' with {type:'json'};
@@ -14,11 +15,11 @@ test('country filters scope airline and aircraft to the same photographed subjec
   assert.equal(filterPhotos(photos,filters({country:'日本',airline:'Air Canada'}),aircraft,airlines).length,0);
   const locked=filterCatalog(airlines,photos,filters({country:'日本',status:'locked'}),'airlines',aircraft,airlines);
   assert.deepEqual(locked.map(a=>a.name),['ZIPAIR']);
-  const ramp=photos.find(p=>p.id==='DSC06736');
   assert.equal(photoMatches(ramp,filters({country:'加拿大',model:'Airbus A330-300'}),aircraft,airlines),true);
   assert.equal(photoMatches(ramp,filters({country:'阿联酋',model:'Airbus A330-300'}),aircraft,airlines),false);
   assert.equal(photoMatches(ramp,filters({country:'瑞士',model:'Airbus A330-300'}),aircraft,airlines),true);
-  const models=filterCatalog(aircraft,[ramp],filters({country:'瑞士'}),'aircraft',aircraft,airlines);
+  const rampModels=aircraft.filter(m=>ramp.models.includes(m.name)).map(m=>({...m,photoIds:[ramp.id]}));
+  const models=filterCatalog(rampModels,[ramp],filters({country:'瑞士'}),'aircraft',aircraft,airlines);
   assert.deepEqual(models.map(a=>a.name),['Airbus A330-300']);
 });
 

@@ -7,7 +7,7 @@ import log from '../data/flights.json' with {type:'json'};
 const byId=new Map(catalog.photos.map(p=>[p.id,p]));
 
 test('every photograph uses date-matched identity evidence and explicit flight confidence',()=>{
-  assert.equal(Object.keys(identities).length,470);
+  assert.equal(Object.keys(identities).length,catalog.photos.length);
   for(const p of catalog.photos){
     const e=identities[p.id];
     assert.equal(e.date,p.date,p.id);
@@ -97,17 +97,10 @@ test('callsigns stay distinct from commercial flight numbers and remain searchab
   assert.deepEqual(byId.get('DSC00780').flights,['JB392']);
 });
 
-test('stored and multi-aircraft photographs do not inherit active flight numbers',()=>{
+test('stored aircraft do not inherit active flight numbers',()=>{
   for(const id of ['DSC06734','DSC09786']){
     const p=byId.get(id);assert.equal(p.registration.value,'RA-82078');assert.equal(p.flightIdentification.status,'not-applicable');assert.deepEqual(p.flights,[]);
   }
-  const ramp=byId.get('DSC06736');assert.equal(ramp.registration,undefined);assert.deepEqual(ramp.flights,[]);
-  assert.deepEqual(ramp.subjects.map(s=>[s.airline,s.model,s.registration?.value]),[
-    ['Air Canada','Boeing 777-300ER','C-FIUW'],
-    ['SWISS','Airbus A330-300','HB-JHJ'],
-    ['Air Canada','Airbus A330-300',undefined],
-  ]);
-  assert.ok(filterPhotos(catalog.photos,{...initialFilters,query:'C-FIUW'},catalog.aircraft,catalog.airlines).some(p=>p.id===ramp.id));
   for(const id of ['DSC06296','DSC07884','DSC07935'])assert.equal(byId.get(id).flightIdentification.status,'unknown');
 });
 

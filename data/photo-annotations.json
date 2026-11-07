@@ -132,23 +132,6 @@
     "DSC06734": {
       "livery": "标准涂装"
     },
-    "DSC06736": {
-      "livery": "多机同框 · 多种涂装",
-      "subjects": [
-        {
-          "airline": "Air Canada",
-          "model": "Boeing 777-300ER"
-        },
-        {
-          "airline": "SWISS",
-          "model": "Airbus A330-300"
-        },
-        {
-          "airline": "Air Canada",
-          "model": "Airbus A330-300"
-        }
-      ]
-    },
     "DSC06740": {
       "livery": "标准涂装"
     },

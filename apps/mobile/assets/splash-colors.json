@@ -1,0 +1,16 @@
+{
+  "light": {
+    "bg": "#f3f7fa",
+    "line": "#8daabd",
+    "accent": "#12618d",
+    "text": "#153f63",
+    "muted": "#526b7d"
+  },
+  "dark": {
+    "bg": "#0b151e",
+    "line": "#294b63",
+    "accent": "#9cd9ff",
+    "text": "#edf5fb",
+    "muted": "#a0b6c6"
+  }
+}

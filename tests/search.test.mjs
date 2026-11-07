@@ -1,4 +1,5 @@
 import {test} from 'node:test';
+import ramp from './fixtures/ramp-photo.json' with {type:'json'};
 import assert from 'node:assert/strict';
 import data from '../data/catalog.json' with {type:'json'};
 import flightData from '../data/flights.json' with {type:'json'};
@@ -20,9 +21,11 @@ test('photo model searches respect the same-aircraft model and airline filters',
   assert.ok(results.every(p=>p.models.some(m=>m.startsWith('Boeing 787'))));
   assert.ok(!results.some(p=>p.id==='DSC07874'));
   assert.deepEqual(filterPhotos(photos,search('A330',{model:'Boeing 777-300ER'}),aircraft,airlines),[]);
-  const ramp=photos.find(p=>p.id==='DSC06736');
   assert.deepEqual(filterPhotos([ramp],search('777',{airline:'SWISS'}),aircraft,airlines),[]);
-  const carriers=filterCatalog(airlines,[ramp],search('A330'),'airlines',aircraft,airlines);
+  const rampAirlines=airlines.filter(a=>ramp.airlines.includes(a.name)).map(a=>({...a,photoIds:[ramp.id]}));
+  const carriers=filterCatalog(rampAirlines,[ramp],search('A330'),'airlines',aircraft,airlines);
+  assert.deepEqual(filterPhotos([ramp],search('C-FIUW'),aircraft,airlines),[ramp]);
+  assert.ok(carriers.length>0);
   assert.ok(carriers.every(a=>ramp.models.some(m=>m.includes('A330')&&airlinesForModel(ramp,m).includes(a.name))));
 });
 test('explicit identifiers, translated categories and flight search remain available',()=>{

@@ -1309,57 +1309,6 @@
       "capturedAt": "2026-10-11T13:22:53-04:00"
     },
     {
-      "id": "DSC06736",
-      "filename": "DSC06736.ARW",
-      "date": "2026-10-11",
-      "airport": "YYZ",
-      "models": [
-        "Airbus A330-300",
-        "Boeing 777-300ER"
-      ],
-      "airlines": [
-        "Air Canada",
-        "Etihad Airways",
-        "SWISS",
-        "WestJet"
-      ],
-      "flights": [],
-      "image": "/photos/DSC06736.jpg",
-      "thumbnail": "/photos/thumbs/DSC06736.jpg",
-      "note": "",
-      "livery": "多机同框 · 多种涂装",
-      "subjects": [
-        {
-          "airline": "Air Canada",
-          "model": "Boeing 777-300ER",
-          "registration": {
-            "value": "C-FIUW",
-            "status": "confirmed",
-            "basis": "照片机身标识",
-            "sourceUrl": "https://rzjets.net/aircraft/?typ=64145"
-          }
-        },
-        {
-          "airline": "SWISS",
-          "model": "Airbus A330-300",
-          "registration": {
-            "value": "HB-JHJ",
-            "status": "confirmed",
-            "basis": "照片机身标识"
-          }
-        },
-        {
-          "airline": "Air Canada",
-          "model": "Airbus A330-300"
-        }
-      ],
-      "flightIdentification": {
-        "status": "not-applicable",
-        "basis": "多架飞机同框，不强配单一航班"
-      },
-      "capturedAt": "2026-10-11T13:24:15-04:00"
-    },
-    {
       "id": "DSC06740",
       "filename": "DSC06740.ARW",
       "date": "2026-10-11",
@@ -14632,7 +14581,6 @@
         "DSC00980",
         "DSC01034",
         "DSC01039",
-        "DSC06736",
         "DSC07125",
         "DSC07130",
         "DSC07757",
@@ -14656,7 +14604,7 @@
         "YVR",
         "YYZ"
       ],
-      "firstSeen": "2026-10-11",
+      "firstSeen": "2026-10-18",
       "lastSeen": "2026-11-04"
     },
     {
@@ -14680,7 +14628,6 @@
         "DSC00720",
         "DSC01072",
         "DSC01074",
-        "DSC06736",
         "DSC06816",
         "DSC07613",
         "DSC07714",
@@ -14707,7 +14654,7 @@
         "YVR",
         "YYZ"
       ],
-      "firstSeen": "2026-10-11",
+      "firstSeen": "2026-10-18",
       "lastSeen": "2026-11-05"
     },
     {
@@ -16382,7 +16329,6 @@
         "DSC06678",
         "DSC06706",
         "DSC06712",
-        "DSC06736",
         "DSC06885",
         "DSC07052",
         "DSC07125",
@@ -16537,7 +16483,6 @@
       "kind": "airline",
       "photoIds": [
         "DSC08110",
-        "DSC06736",
         "DSC06816",
         "DSC08113",
         "DSC08120"
@@ -16547,7 +16492,7 @@
       "airports": [
         "YYZ"
       ],
-      "firstSeen": "2026-10-11",
+      "firstSeen": "2026-10-18",
       "lastSeen": "2026-10-24"
     },
     {
@@ -17095,7 +17040,6 @@
       "kind": "airline",
       "photoIds": [
         "DSC09980",
-        "DSC06736",
         "DSC09976",
         "DSC09982",
         "DSC09989"
@@ -17105,7 +17049,7 @@
       "airports": [
         "YYZ"
       ],
-      "firstSeen": "2026-10-11",
+      "firstSeen": "2026-10-25",
       "lastSeen": "2026-10-25"
     },
     {
@@ -17559,7 +17503,6 @@
         "DSC06137",
         "DSC06370",
         "DSC06466",
-        "DSC06736",
         "DSC06836",
         "DSC07243",
         "DSC07574",

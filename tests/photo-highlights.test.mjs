@@ -18,7 +18,7 @@ function grid(filters = {}, preferred = 'portfolio') {
 
 test('home, portfolio and representative sets nest without duplicate cards or missing combinations', () => {
   const {cards} = grid();
-  assert.equal(cards.length, 36);
+  assert.equal(cards.length, 35);
   assert.deepEqual(ids(cards), review.portfolio);
   assert.equal(new Set(review.portfolio).size, review.portfolio.length);
   assert.ok(heroes.every(id => review.portfolio.includes(id)));
@@ -39,7 +39,7 @@ test('filtering widens either tab to matching representatives and respects sorti
     }
   }
   assert.deepEqual(new Set(grid({airline:'Air North'}).cards.flatMap(p=>p.models)),new Set(['Boeing 737-500','Boeing 737-800']));
-  assert.equal(grid({sort:'latest'}).cards.length,36);
+  assert.equal(grid({sort:'latest'}).cards.length,35);
   assert.deepEqual(grid({query:'DSC06147'}).cards.map(p=>p.id),['DSC06147']);
 });
 

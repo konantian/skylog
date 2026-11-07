@@ -3064,50 +3064,6 @@
       "sourceUrl": "https://www.lois.justice.gc.ca/eng/regulations/SOR-2025-29/FullText.html"
     }
   },
-  "DSC06736": {
-    "date": "2026-10-11",
-    "capturedAt": "2026-10-11T13:24:15-04:00",
-    "reviewedAt": "2026-11-04",
-    "flights": [],
-    "flightIdentification": {
-      "status": "not-applicable",
-      "basis": "多架飞机同框，不强配单一航班"
-    },
-    "evidence": {
-      "archive": "YYZ 2026-10-11 / 18 neighboring-frame review",
-      "registrationNote": "HB-JHJ readable on SWISS A330. Air Canada aft fuselage and fin 737 match C-FIUW; obscured Etihad / WestJet airframes not assigned registrations.",
-      "flightNote": "停机坪多机同框；非明确起降航段，不用时间强配。",
-      "modelNote": "The right-hand Air Canada Fly the Flag aircraft is also an A330-300. Its registration is obscured, so only the airline/model relationship is added; the visible commemorative livery matches Air Canada’s published A330 livery.",
-      "modelSources": [
-        "https://www.aircanada.com/media/fly-the-flag-air-canada-unveils-celebratory-canadian-olympic-and-paralympic-team-livery-featuring-canadian-athletes-headed-to-the-milano-cortina-2026-winter-games/"
-      ]
-    },
-    "subjects": [
-      {
-        "airline": "Air Canada",
-        "model": "Boeing 777-300ER",
-        "registration": {
-          "value": "C-FIUW",
-          "status": "confirmed",
-          "basis": "照片机身标识",
-          "sourceUrl": "https://rzjets.net/aircraft/?typ=64145"
-        }
-      },
-      {
-        "airline": "SWISS",
-        "model": "Airbus A330-300",
-        "registration": {
-          "value": "HB-JHJ",
-          "status": "confirmed",
-          "basis": "照片机身标识"
-        }
-      },
-      {
-        "airline": "Air Canada",
-        "model": "Airbus A330-300"
-      }
-    ]
-  },
   "DSC06740": {
     "date": "2026-10-11",
     "capturedAt": "2026-10-11T13:25:09-04:00",

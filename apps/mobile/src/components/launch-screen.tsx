@@ -8,19 +8,14 @@ import {
   Text,
   View,
   useAnimatedValue,
+  useColorScheme,
   useWindowDimensions,
 } from "react-native";
 import Svg, { Circle, G, Path, Rect } from "react-native-svg";
 import * as SplashScreen from "expo-splash-screen";
 import { StatusBar } from "expo-status-bar";
+import palettes from "../../assets/splash-colors.json";
 
-const sky = {
-  bg: "#0b151e",
-  line: "#294b63",
-  accent: "#9cd9ff",
-  text: "#edf5fb",
-  muted: "#a0b6c6",
-};
 const stops = Array.from({ length: 17 }, (_, i) => i / 16);
 
 export function LaunchScreen({
@@ -32,6 +27,8 @@ export function LaunchScreen({
   locale: string;
   onFinish: () => void;
 }) {
+  const isDark = useColorScheme() === "dark";
+  const sky = isDark ? palettes.dark : palettes.light;
   const { width, height } = useWindowDimensions();
   const scale = Math.min(320, width - 48, height * 0.4) / 320;
   const progress = useAnimatedValue(0);
@@ -99,7 +96,7 @@ export function LaunchScreen({
   });
   return (
     <Animated.View
-      style={[styles.screen, { opacity }]}
+      style={[styles.screen, { opacity, backgroundColor: sky.bg }]}
       accessibilityViewIsModal
       onLayout={() => {
         if (!painted)
@@ -108,7 +105,7 @@ export function LaunchScreen({
             .catch(() => {});
       }}
     >
-      <StatusBar style="light" />
+      <StatusBar style={isDark ? "light" : "dark"} />
       <View style={styles.brand}>
         <View
           style={{ width: 320 * scale, height: 260 * scale }}
@@ -226,10 +223,10 @@ export function LaunchScreen({
             ],
           }}
         >
-          <Text style={styles.name} allowFontScaling={false}>
+          <Text style={[styles.name, { color: sky.text }]} allowFontScaling={false}>
             SKYLOG
           </Text>
-          <Text style={styles.tagline} maxFontSizeMultiplier={1.4}>
+          <Text style={[styles.tagline, { color: sky.muted }]} maxFontSizeMultiplier={1.4}>
             {chinese ? "每一次抬头，都是新的发现。" : "KEEP LOOKING UP."}
           </Text>
         </Animated.View>
@@ -245,12 +242,12 @@ export function LaunchScreen({
           }}
           style={({ pressed }) => [styles.skip, { opacity: pressed ? 0.5 : 1 }]}
         >
-          <Text style={styles.skipText}>
+          <Text style={[styles.skipText, { color: sky.muted }]}>
             {chinese ? "进入 SKYLOG" : "Enter SKYLOG"}
           </Text>
         </Pressable>
       ) : (
-        <Text style={[styles.skip, styles.skipText]}>
+        <Text style={[styles.skip, styles.skipText, { color: sky.muted }]}>
           {chinese ? "正在打开你的天空…" : "Opening your sky…"}
         </Text>
       )}
@@ -265,21 +262,18 @@ const styles = StyleSheet.create({
     right: 0,
     bottom: 0,
     left: 0,
-    backgroundColor: sky.bg,
     alignItems: "center",
     justifyContent: "center",
     zIndex: 10,
   },
   brand: { alignItems: "center", paddingBottom: 32 },
   name: {
-    color: sky.text,
     fontSize: 36,
     lineHeight: 48,
     fontWeight: "700",
     letterSpacing: 8,
   },
   tagline: {
-    color: sky.muted,
     fontSize: 13,
     lineHeight: 22,
     letterSpacing: 2,
@@ -295,5 +289,5 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     padding: 12,
   },
-  skipText: { color: sky.muted, fontSize: 13, textAlign: "center" },
+  skipText: { fontSize: 13, textAlign: "center" },
 });

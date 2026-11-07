@@ -108,7 +108,9 @@ def model_meta(name):
     return maker, family, category
 
 photos=[]
-for row in source['photo_audit']:
+# The October 11 ramp panorama stays in Photos, outside the public atlas.
+public_rows = [row for row in source['photo_audit'] if Path(row['filename']).stem != 'DSC06736']
+for row in public_rows:
     name=Path(row['filename']).stem
     models=[aliases.get(k,k) for k in row['keywords'] if any(k.startswith(x) for x in ['Airbus','Boeing','Embraer','Bombardier','De Havilland','Cessna','Gulfstream','Saab','Antonov','Beechcraft'])]
     # Existing audit flags this photo's Dash 8 keyword as conflicting with Cargojet.
@@ -174,7 +176,7 @@ airlines.sort(key=lambda a:(airline_priority.index(a['name']) if a['name'] in ai
 data={'updatedAt':max([source['audit_date']]+[i['reviewedAt'] for i in identities.values() if 'reviewedAt' in i]),'scope':'YYZ / YVR 已整理收藏','photos':photos,'aircraft':models,'airlines':airlines,
     'heroPhoto':'DSC07776','featuredPhotos':featured,'scopeNote':'机型涵盖已确认拍摄型号及常见民航补拍目标；航司以 YYZ / YVR 收藏及补拍清单为主，并非全球完整名录。未解锁不代表当前有定期航班。'}
 (ROOT/'data/catalog.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
-assert len(photos)==len(source['photo_audit'])==len({p['id'] for p in photos})
+assert len(photos)==len(public_rows)==len({p['id'] for p in photos})
 assert len({m['id'] for m in models})==len(models)
 assert all(a in airline_info for p in photos for a in p['airlines'])
 print(json.dumps({'photos':len(photos),'aircraft':len(models),'aircraftUnlocked':sum(m['unlocked'] for m in models),'airlines':len(airlines),'airlinesUnlocked':sum(a['unlocked'] for a in airlines)}))

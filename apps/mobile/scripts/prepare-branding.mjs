@@ -1,5 +1,6 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import sharp from 'sharp';
+import splashColors from '../assets/splash-colors.json' with {type: 'json'};
 
 const assets = new URL('../assets/', import.meta.url);
 await mkdir(assets, {recursive: true});
@@ -40,19 +41,24 @@ await sharp(Buffer.from(icon(dark, true, true))).resize(1024,1024).png().toFile(
 await sharp(Buffer.from(icon({...tinted, line:'#ffffff', trail:'#ffffff', airframe:['#ffffff','#ffffff'], cockpit:'#ffffff'}, true, true)))
   .resize(1024,1024).png().toFile(new URL('adaptive-monochrome.png',assets).pathname);
 // Match the intro's first frame, including its reserved text/bottom spacing.
-const splash = `<svg xmlns="http://www.w3.org/2000/svg" width="320" height="374" viewBox="0 0 320 374">
-  <g stroke="#294b63" fill="none">
+function splashImage({line, text}) {
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="320" height="374" viewBox="0 0 320 374">
+  <g stroke="${line}" fill="none">
     <circle cx="160" cy="135" r="104"/>
     <circle cx="160" cy="135" r="80" stroke-dasharray="2 9"/>
     <path d="M160 23v14m0 196v14M48 135h14m196 0h14" stroke-width="2"/>
     <path d="M50 195Q152 200 260 45" stroke-width="1.5" stroke-dasharray="4 6"/>
   </g>
-  <g transform="translate(50 195) rotate(${Math.atan2(10,204)*180/Math.PI+90}) scale(${60/52})" fill="#edf5fb">
+  <g transform="translate(50 195) rotate(${Math.atan2(10,204)*180/Math.PI+90}) scale(${60/52})" fill="${text}">
     <rect x="-12" y="-2" width="3.5" height="11" rx="1.5"/>
     <rect x="8.5" y="-2" width="3.5" height="11" rx="1.5"/>
     <path d="M0-23c2 0 3 4 3 7v9L20 6v4L3 3v12l6 5v2l-9-3-9 3v-2l6-5V3L-20 10V6L-3-7v-9c0-3 1-7 3-7Z"/>
   </g>
 </svg>`;
-await writeFile(new URL('splash-flight.svg', assets), splash);
-await sharp(Buffer.from(splash)).resize(1280,1496).png().toFile(new URL('splash-flight.png',assets).pathname);
+}
+for (const [file, colors] of [['splash-flight', splashColors.dark], ['splash-flight-light', splashColors.light]]) {
+  const svg = splashImage(colors);
+  await writeFile(new URL(`${file}.svg`, assets), svg);
+  await sharp(Buffer.from(svg)).resize(1280,1496).png().toFile(new URL(`${file}.png`,assets).pathname);
+}
 console.log('Generated SKYLOG icon variants and the matching flight-path splash.');

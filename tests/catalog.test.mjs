@@ -1,4 +1,5 @@
 import { test } from 'node:test';
+import ramp from './fixtures/ramp-photo.json' with {type:'json'};
 import assert from 'node:assert/strict';
 import { readFile, stat } from 'node:fs/promises';
 import sharp from 'sharp';
@@ -10,7 +11,8 @@ const f = extra => ({...initialFilters,...extra});
 
 test('all entries and photos have consistent links and unlock states',()=>{
   const ids=new Set(data.photos.map(p=>p.id));
-  assert.equal(ids.size,470);
+  assert.equal(ids.size,469);
+  assert.ok(!ids.has('DSC06736'));
   assert.equal(new Set(data.aircraft.map(a=>a.id)).size,data.aircraft.length);
   for(const e of [...data.aircraft,...data.airlines]){
     assert.equal(e.unlocked,e.photoIds.length>0);
@@ -129,7 +131,7 @@ test('model selection lists each airline and livery as parallel cards',async()=>
   assert.equal(ac.length,new Set(ac.map(g=>g.livery)).size);
 });
 test('multi-aircraft ramp images retain each visible airline/model pair without inventing others',()=>{
-  const p=data.photos.find(p=>p.id==='DSC06736');
+  const p=ramp;
   assert.equal(photoMatches(p,f({airline:'SWISS',model:'Boeing 777-300ER'}),data.aircraft),false);
   assert.equal(photoMatches(p,f({airline:'SWISS',model:'Airbus A330-300'}),data.aircraft),true);
   assert.equal(photoMatches(p,f({airline:'Air Canada',model:'Airbus A330-300'}),data.aircraft),true);

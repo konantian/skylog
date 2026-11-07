@@ -1,0 +1,42 @@
+{
+  "id": "DSC06736",
+  "date": "2026-10-11",
+  "airport": "YYZ",
+  "airlines": [
+    "Air Canada",
+    "Etihad Airways",
+    "SWISS",
+    "WestJet"
+  ],
+  "models": [
+    "Airbus A330-300",
+    "Boeing 777-300ER"
+  ],
+  "flights": [],
+  "livery": "多机同框 · 多种涂装",
+  "subjects": [
+    {
+      "airline": "Air Canada",
+      "model": "Boeing 777-300ER",
+      "registration": {
+        "value": "C-FIUW",
+        "status": "confirmed",
+        "basis": "照片机身标识",
+        "sourceUrl": "https://rzjets.net/aircraft/?typ=64145"
+      }
+    },
+    {
+      "airline": "SWISS",
+      "model": "Airbus A330-300",
+      "registration": {
+        "value": "HB-JHJ",
+        "status": "confirmed",
+        "basis": "照片机身标识"
+      }
+    },
+    {
+      "airline": "Air Canada",
+      "model": "Airbus A330-300"
+    }
+  ]
+}
