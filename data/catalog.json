@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07",
+  "updatedAt": "2026-11-08",
   "scope": "YYZ / YVR 已整理收藏",
   "photos": [
     {
@@ -15644,6 +15644,1350 @@
         "callsign": "THY6019"
       },
       "capturedAt": "2026-11-07T10:13:39-05:00"
+    },
+    {
+      "id": "DSC01685",
+      "filename": "DSC01685.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Boeing 767-300BDSF"
+      ],
+      "airlines": [
+        "Air Canada"
+      ],
+      "flights": [
+        "AC7327"
+      ],
+      "image": "/photos/DSC01685.jpg",
+      "thumbnail": "/photos/thumbs/DSC01685.jpg",
+      "note": "",
+      "livery": "现代黑白涂装",
+      "registration": {
+        "value": "C-FTCA",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-ftca"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-ftca",
+        "callsign": "ACA7327"
+      },
+      "capturedAt": "2026-11-08T11:52:58-05:00"
+    },
+    {
+      "id": "DSC01694",
+      "filename": "DSC01694.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Boeing 767-300BDSF"
+      ],
+      "airlines": [
+        "Air Canada"
+      ],
+      "flights": [
+        "AC7327"
+      ],
+      "image": "/photos/DSC01694.jpg",
+      "thumbnail": "/photos/thumbs/DSC01694.jpg",
+      "note": "",
+      "livery": "现代黑白涂装",
+      "registration": {
+        "value": "C-FTCA",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-ftca"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-ftca",
+        "callsign": "ACA7327"
+      },
+      "capturedAt": "2026-11-08T11:53:03-05:00"
+    },
+    {
+      "id": "DSC01704",
+      "filename": "DSC01704.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Boeing 777F"
+      ],
+      "airlines": [
+        "China Airlines"
+      ],
+      "flights": [
+        "CI5301"
+      ],
+      "image": "/photos/DSC01704.jpg",
+      "thumbnail": "/photos/thumbs/DSC01704.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "B-18778",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-18778"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-18778",
+        "callsign": "CAL5301"
+      },
+      "capturedAt": "2026-11-08T12:10:25-05:00"
+    },
+    {
+      "id": "DSC01712",
+      "filename": "DSC01712.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Boeing 777F"
+      ],
+      "airlines": [
+        "China Airlines"
+      ],
+      "flights": [
+        "CI5301"
+      ],
+      "image": "/photos/DSC01712.jpg",
+      "thumbnail": "/photos/thumbs/DSC01712.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "B-18778",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-18778"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-18778",
+        "callsign": "CAL5301"
+      },
+      "capturedAt": "2026-11-08T12:10:30-05:00"
+    },
+    {
+      "id": "DSC01720",
+      "filename": "DSC01720.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Boeing 737 MAX 8"
+      ],
+      "airlines": [
+        "Caribbean Airlines"
+      ],
+      "flights": [
+        "BW79"
+      ],
+      "image": "/photos/DSC01720.jpg",
+      "thumbnail": "/photos/thumbs/DSC01720.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "9Y-SUR",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/9y-sur"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/9y-sur",
+        "callsign": "BWA079"
+      },
+      "capturedAt": "2026-11-08T12:16:13-05:00"
+    },
+    {
+      "id": "DSC01726",
+      "filename": "DSC01726.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Boeing 737 MAX 8"
+      ],
+      "airlines": [
+        "Caribbean Airlines"
+      ],
+      "flights": [
+        "BW79"
+      ],
+      "image": "/photos/DSC01726.jpg",
+      "thumbnail": "/photos/thumbs/DSC01726.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "9Y-SUR",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/9y-sur"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/9y-sur",
+        "callsign": "BWA079"
+      },
+      "capturedAt": "2026-11-08T12:16:17-05:00"
+    },
+    {
+      "id": "DSC01734",
+      "filename": "DSC01734.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Airbus A350-1000"
+      ],
+      "airlines": [
+        "Cathay Pacific"
+      ],
+      "flights": [
+        "CX828"
+      ],
+      "image": "/photos/DSC01734.jpg",
+      "thumbnail": "/photos/thumbs/DSC01734.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "B-LXF",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-lxf"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-lxf",
+        "callsign": "CPA828"
+      },
+      "capturedAt": "2026-11-08T12:39:01-05:00"
+    },
+    {
+      "id": "DSC01741",
+      "filename": "DSC01741.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Airbus A350-1000"
+      ],
+      "airlines": [
+        "Cathay Pacific"
+      ],
+      "flights": [
+        "CX828"
+      ],
+      "image": "/photos/DSC01741.jpg",
+      "thumbnail": "/photos/thumbs/DSC01741.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "B-LXF",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-lxf"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-lxf",
+        "callsign": "CPA828"
+      },
+      "capturedAt": "2026-11-08T12:39:07-05:00"
+    },
+    {
+      "id": "DSC01755",
+      "filename": "DSC01755.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Airbus A330-900"
+      ],
+      "airlines": [
+        "Condor"
+      ],
+      "flights": [
+        "DE402"
+      ],
+      "image": "/photos/DSC01755.jpg",
+      "thumbnail": "/photos/thumbs/DSC01755.jpg",
+      "note": "",
+      "livery": "绿白条纹涂装",
+      "registration": {
+        "value": "D-ANRM",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-anrm"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-anrm",
+        "callsign": "CFG402"
+      },
+      "capturedAt": "2026-11-08T13:21:10-05:00"
+    },
+    {
+      "id": "DSC01762",
+      "filename": "DSC01762.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Airbus A330-900"
+      ],
+      "airlines": [
+        "Condor"
+      ],
+      "flights": [
+        "DE402"
+      ],
+      "image": "/photos/DSC01762.jpg",
+      "thumbnail": "/photos/thumbs/DSC01762.jpg",
+      "note": "",
+      "livery": "绿白条纹涂装",
+      "registration": {
+        "value": "D-ANRM",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-anrm"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-anrm",
+        "callsign": "CFG402"
+      },
+      "capturedAt": "2026-11-08T13:21:14-05:00"
+    },
+    {
+      "id": "DSC01776",
+      "filename": "DSC01776.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Boeing 787-9"
+      ],
+      "airlines": [
+        "Hainan Airlines"
+      ],
+      "flights": [
+        "HU7975"
+      ],
+      "image": "/photos/DSC01776.jpg",
+      "thumbnail": "/photos/thumbs/DSC01776.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "B-1341",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-1341"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-1341",
+        "callsign": "CHH7975"
+      },
+      "capturedAt": "2026-11-08T13:50:58-05:00"
+    },
+    {
+      "id": "DSC01782",
+      "filename": "DSC01782.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Boeing 787-9"
+      ],
+      "airlines": [
+        "Hainan Airlines"
+      ],
+      "flights": [
+        "HU7975"
+      ],
+      "image": "/photos/DSC01782.jpg",
+      "thumbnail": "/photos/thumbs/DSC01782.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "B-1341",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-1341"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-1341",
+        "callsign": "CHH7975"
+      },
+      "capturedAt": "2026-11-08T13:51:03-05:00"
+    },
+    {
+      "id": "DSC01786",
+      "filename": "DSC01786.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Boeing 787-9"
+      ],
+      "airlines": [
+        "Hainan Airlines"
+      ],
+      "flights": [
+        "HU7975"
+      ],
+      "image": "/photos/DSC01786.jpg",
+      "thumbnail": "/photos/thumbs/DSC01786.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "B-1341",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-1341"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-1341",
+        "callsign": "CHH7975"
+      },
+      "capturedAt": "2026-11-08T13:51:04-05:00"
+    },
+    {
+      "id": "DSC01790",
+      "filename": "DSC01790.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Embraer E175"
+      ],
+      "airlines": [
+        "United Airlines"
+      ],
+      "flights": [
+        "UA3490"
+      ],
+      "image": "/photos/DSC01790.jpg",
+      "thumbnail": "/photos/thumbs/DSC01790.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "N773YX",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/n773yx"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/n773yx",
+        "callsign": "RPA3490"
+      },
+      "capturedAt": "2026-11-08T13:56:19-05:00"
+    },
+    {
+      "id": "DSC01793",
+      "filename": "DSC01793.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Airbus A330-300"
+      ],
+      "airlines": [
+        "Air Canada"
+      ],
+      "flights": [
+        "AC855"
+      ],
+      "image": "/photos/DSC01793.jpg",
+      "thumbnail": "/photos/thumbs/DSC01793.jpg",
+      "note": "",
+      "livery": "经典冰蓝涂装",
+      "registration": {
+        "value": "C-GFAJ",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gfaj"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gfaj",
+        "callsign": "ACA855"
+      },
+      "capturedAt": "2026-11-08T14:05:47-05:00"
+    },
+    {
+      "id": "DSC01802",
+      "filename": "DSC01802.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Airbus A330-300"
+      ],
+      "airlines": [
+        "Air Canada"
+      ],
+      "flights": [
+        "AC855"
+      ],
+      "image": "/photos/DSC01802.jpg",
+      "thumbnail": "/photos/thumbs/DSC01802.jpg",
+      "note": "",
+      "livery": "经典冰蓝涂装",
+      "registration": {
+        "value": "C-GFAJ",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gfaj"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gfaj",
+        "callsign": "ACA855"
+      },
+      "capturedAt": "2026-11-08T14:05:52-05:00"
+    },
+    {
+      "id": "DSC01805",
+      "filename": "DSC01805.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Boeing 767-300BDSF"
+      ],
+      "airlines": [
+        "Air Canada"
+      ],
+      "flights": [
+        "AC7253"
+      ],
+      "image": "/photos/DSC01805.jpg",
+      "thumbnail": "/photos/thumbs/DSC01805.jpg",
+      "note": "",
+      "livery": "现代黑白涂装",
+      "registration": {
+        "value": "C-GDUZ",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gduz"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gduz",
+        "callsign": "ACA7253"
+      },
+      "capturedAt": "2026-11-08T14:09:40-05:00"
+    },
+    {
+      "id": "DSC01812",
+      "filename": "DSC01812.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Boeing 767-300BDSF"
+      ],
+      "airlines": [
+        "Air Canada"
+      ],
+      "flights": [
+        "AC7253"
+      ],
+      "image": "/photos/DSC01812.jpg",
+      "thumbnail": "/photos/thumbs/DSC01812.jpg",
+      "note": "",
+      "livery": "现代黑白涂装",
+      "registration": {
+        "value": "C-GDUZ",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gduz"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gduz",
+        "callsign": "ACA7253"
+      },
+      "capturedAt": "2026-11-08T14:09:46-05:00"
+    },
+    {
+      "id": "DSC01816",
+      "filename": "DSC01816.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Boeing 787-9"
+      ],
+      "airlines": [
+        "Saudia"
+      ],
+      "flights": [
+        "SV61"
+      ],
+      "image": "/photos/DSC01816.jpg",
+      "thumbnail": "/photos/thumbs/DSC01816.jpg",
+      "note": "",
+      "livery": "Saudi, Welcome to Arabia 旅游彩绘",
+      "registration": {
+        "value": "HZ-ARF",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/hz-arf"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/hz-arf",
+        "callsign": "SVA061"
+      },
+      "capturedAt": "2026-11-08T14:28:14-05:00"
+    },
+    {
+      "id": "DSC01825",
+      "filename": "DSC01825.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Boeing 787-9"
+      ],
+      "airlines": [
+        "Saudia"
+      ],
+      "flights": [
+        "SV61"
+      ],
+      "image": "/photos/DSC01825.jpg",
+      "thumbnail": "/photos/thumbs/DSC01825.jpg",
+      "note": "",
+      "livery": "Saudi, Welcome to Arabia 旅游彩绘",
+      "registration": {
+        "value": "HZ-ARF",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/hz-arf"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/hz-arf",
+        "callsign": "SVA061"
+      },
+      "capturedAt": "2026-11-08T14:28:20-05:00"
+    },
+    {
+      "id": "DSC01832",
+      "filename": "DSC01832.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Boeing 777-300ER"
+      ],
+      "airlines": [
+        "Air Canada"
+      ],
+      "flights": [
+        "AC873"
+      ],
+      "image": "/photos/DSC01832.jpg",
+      "thumbnail": "/photos/thumbs/DSC01832.jpg",
+      "note": "",
+      "livery": "经典冰蓝涂装",
+      "registration": {
+        "value": "C-FIVQ",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fivq"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fivq",
+        "callsign": "ACA873"
+      },
+      "capturedAt": "2026-11-08T14:31:57-05:00"
+    },
+    {
+      "id": "DSC01839",
+      "filename": "DSC01839.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Boeing 777-300ER"
+      ],
+      "airlines": [
+        "Air Canada"
+      ],
+      "flights": [
+        "AC873"
+      ],
+      "image": "/photos/DSC01839.jpg",
+      "thumbnail": "/photos/thumbs/DSC01839.jpg",
+      "note": "",
+      "livery": "经典冰蓝涂装",
+      "registration": {
+        "value": "C-FIVQ",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fivq"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fivq",
+        "callsign": "ACA873"
+      },
+      "capturedAt": "2026-11-08T14:32:02-05:00"
+    },
+    {
+      "id": "DSC01844",
+      "filename": "DSC01844.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Airbus A350-1000"
+      ],
+      "airlines": [
+        "Qatar Airways"
+      ],
+      "flights": [
+        "QR767"
+      ],
+      "image": "/photos/DSC01844.jpg",
+      "thumbnail": "/photos/thumbs/DSC01844.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "A7-AOA",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/a7-aoa"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/a7-aoa",
+        "callsign": "QTR65U"
+      },
+      "capturedAt": "2026-11-08T14:39:19-05:00"
+    },
+    {
+      "id": "DSC01848",
+      "filename": "DSC01848.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Airbus A350-1000"
+      ],
+      "airlines": [
+        "Qatar Airways"
+      ],
+      "flights": [
+        "QR767"
+      ],
+      "image": "/photos/DSC01848.jpg",
+      "thumbnail": "/photos/thumbs/DSC01848.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "A7-AOA",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/a7-aoa"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/a7-aoa",
+        "callsign": "QTR65U"
+      },
+      "capturedAt": "2026-11-08T14:39:23-05:00"
+    },
+    {
+      "id": "DSC01855",
+      "filename": "DSC01855.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Boeing 737 MAX 8"
+      ],
+      "airlines": [
+        "Caribbean Airlines"
+      ],
+      "flights": [
+        "BW614"
+      ],
+      "image": "/photos/DSC01855.jpg",
+      "thumbnail": "/photos/thumbs/DSC01855.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "9Y-CAL",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/9y-cal"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/9y-cal",
+        "callsign": "BWA614"
+      },
+      "capturedAt": "2026-11-08T15:00:21-05:00"
+    },
+    {
+      "id": "DSC01862",
+      "filename": "DSC01862.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Airbus A321neo LR"
+      ],
+      "airlines": [
+        "SAS"
+      ],
+      "flights": [
+        "SK949"
+      ],
+      "image": "/photos/DSC01862.jpg",
+      "thumbnail": "/photos/thumbs/DSC01862.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "SE-DMS",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/se-dms"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/se-dms",
+        "callsign": "SAS949"
+      },
+      "capturedAt": "2026-11-08T15:15:44-05:00"
+    },
+    {
+      "id": "DSC01867",
+      "filename": "DSC01867.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Airbus A321neo LR"
+      ],
+      "airlines": [
+        "SAS"
+      ],
+      "flights": [
+        "SK949"
+      ],
+      "image": "/photos/DSC01867.jpg",
+      "thumbnail": "/photos/thumbs/DSC01867.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "SE-DMS",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/se-dms"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/se-dms",
+        "callsign": "SAS949"
+      },
+      "capturedAt": "2026-11-08T15:15:47-05:00"
+    },
+    {
+      "id": "DSC01869",
+      "filename": "DSC01869.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Airbus A321neo LR"
+      ],
+      "airlines": [
+        "SAS"
+      ],
+      "flights": [
+        "SK949"
+      ],
+      "image": "/photos/DSC01869.jpg",
+      "thumbnail": "/photos/thumbs/DSC01869.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "SE-DMS",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/se-dms"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/se-dms",
+        "callsign": "SAS949"
+      },
+      "capturedAt": "2026-11-08T15:15:49-05:00"
+    },
+    {
+      "id": "DSC01878",
+      "filename": "DSC01878.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Boeing 787-10"
+      ],
+      "airlines": [
+        "British Airways"
+      ],
+      "flights": [
+        "BA93"
+      ],
+      "image": "/photos/DSC01878.jpg",
+      "thumbnail": "/photos/thumbs/DSC01878.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "G-ZBLG",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/g-zblg"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/g-zblg",
+        "callsign": "BAW9ZY"
+      },
+      "capturedAt": "2026-11-08T15:24:07-05:00"
+    },
+    {
+      "id": "DSC01884",
+      "filename": "DSC01884.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Boeing 787-10"
+      ],
+      "airlines": [
+        "British Airways"
+      ],
+      "flights": [
+        "BA93"
+      ],
+      "image": "/photos/DSC01884.jpg",
+      "thumbnail": "/photos/thumbs/DSC01884.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "G-ZBLG",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/g-zblg"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/g-zblg",
+        "callsign": "BAW9ZY"
+      },
+      "capturedAt": "2026-11-08T15:24:11-05:00"
+    },
+    {
+      "id": "DSC01891",
+      "filename": "DSC01891.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Airbus A321XLR"
+      ],
+      "airlines": [
+        "Aer Lingus"
+      ],
+      "flights": [
+        "EI127"
+      ],
+      "image": "/photos/DSC01891.jpg",
+      "thumbnail": "/photos/thumbs/DSC01891.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "EI-XLX",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/ei-xlx"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/ei-xlx",
+        "callsign": "EIN1EN"
+      },
+      "capturedAt": "2026-11-08T15:41:06-05:00"
+    },
+    {
+      "id": "DSC01898",
+      "filename": "DSC01898.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Airbus A321XLR"
+      ],
+      "airlines": [
+        "Aer Lingus"
+      ],
+      "flights": [
+        "EI127"
+      ],
+      "image": "/photos/DSC01898.jpg",
+      "thumbnail": "/photos/thumbs/DSC01898.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "EI-XLX",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/ei-xlx"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/ei-xlx",
+        "callsign": "EIN1EN"
+      },
+      "capturedAt": "2026-11-08T15:41:10-05:00"
+    },
+    {
+      "id": "DSC01906",
+      "filename": "DSC01906.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Airbus A330-300"
+      ],
+      "airlines": [
+        "Air Canada"
+      ],
+      "flights": [
+        "AC1023"
+      ],
+      "image": "/photos/DSC01906.jpg",
+      "thumbnail": "/photos/thumbs/DSC01906.jpg",
+      "note": "",
+      "livery": "Star Alliance 星空联盟涂装",
+      "registration": {
+        "value": "C-GEGP",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gegp"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gegp",
+        "callsign": "ACA1023"
+      },
+      "capturedAt": "2026-11-08T15:42:26-05:00"
+    },
+    {
+      "id": "DSC01912",
+      "filename": "DSC01912.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Airbus A330-300"
+      ],
+      "airlines": [
+        "Air Canada"
+      ],
+      "flights": [
+        "AC1023"
+      ],
+      "image": "/photos/DSC01912.jpg",
+      "thumbnail": "/photos/thumbs/DSC01912.jpg",
+      "note": "",
+      "livery": "Star Alliance 星空联盟涂装",
+      "registration": {
+        "value": "C-GEGP",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gegp"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gegp",
+        "callsign": "ACA1023"
+      },
+      "capturedAt": "2026-11-08T15:42:31-05:00"
+    },
+    {
+      "id": "DSC01923",
+      "filename": "DSC01923.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Airbus A340-300"
+      ],
+      "airlines": [
+        "Lufthansa"
+      ],
+      "flights": [
+        "LH470"
+      ],
+      "image": "/photos/DSC01923.jpg",
+      "thumbnail": "/photos/thumbs/DSC01923.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "D-AIGO",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-aigo"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-aigo",
+        "callsign": "DLH470"
+      },
+      "capturedAt": "2026-11-08T16:01:54-05:00"
+    },
+    {
+      "id": "DSC01927",
+      "filename": "DSC01927.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Airbus A340-300"
+      ],
+      "airlines": [
+        "Lufthansa"
+      ],
+      "flights": [
+        "LH470"
+      ],
+      "image": "/photos/DSC01927.jpg",
+      "thumbnail": "/photos/thumbs/DSC01927.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "D-AIGO",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-aigo"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-aigo",
+        "callsign": "DLH470"
+      },
+      "capturedAt": "2026-11-08T16:01:56-05:00"
+    },
+    {
+      "id": "DSC01930",
+      "filename": "DSC01930.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Airbus A340-300"
+      ],
+      "airlines": [
+        "Lufthansa"
+      ],
+      "flights": [
+        "LH470"
+      ],
+      "image": "/photos/DSC01930.jpg",
+      "thumbnail": "/photos/thumbs/DSC01930.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "D-AIGO",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-aigo"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-aigo",
+        "callsign": "DLH470"
+      },
+      "capturedAt": "2026-11-08T16:01:58-05:00"
+    },
+    {
+      "id": "DSC01935",
+      "filename": "DSC01935.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Airbus A330-900"
+      ],
+      "airlines": [
+        "Condor"
+      ],
+      "flights": [
+        "DE403"
+      ],
+      "image": "/photos/DSC01935.jpg",
+      "thumbnail": "/photos/thumbs/DSC01935.jpg",
+      "note": "",
+      "livery": "绿白条纹涂装",
+      "registration": {
+        "value": "D-ANRM",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-anrm"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ ground track and outbound callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-anrm",
+        "callsign": "CFG403"
+      },
+      "capturedAt": "2026-11-08T16:11:59-05:00"
+    },
+    {
+      "id": "DSC01941",
+      "filename": "DSC01941.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Airbus A320neo"
+      ],
+      "airlines": [
+        "Avianca"
+      ],
+      "flights": [
+        "AV325"
+      ],
+      "image": "/photos/DSC01941.jpg",
+      "thumbnail": "/photos/thumbs/DSC01941.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "N788AV",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/n788av"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ ground track and outbound callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/n788av",
+        "callsign": "TAI325"
+      },
+      "capturedAt": "2026-11-08T16:13:45-05:00"
+    },
+    {
+      "id": "DSC01946",
+      "filename": "DSC01946.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Boeing 777-300ER"
+      ],
+      "airlines": [
+        "Air Canada"
+      ],
+      "flights": [
+        "AC2"
+      ],
+      "image": "/photos/DSC01946.jpg",
+      "thumbnail": "/photos/thumbs/DSC01946.jpg",
+      "note": "",
+      "livery": "现代黑白涂装",
+      "registration": {
+        "value": "C-FITW",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fitw"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ arrival track and operating callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fitw",
+        "callsign": "ACA2"
+      },
+      "capturedAt": "2026-11-08T16:15:38-05:00"
+    },
+    {
+      "id": "DSC01962",
+      "filename": "DSC01962.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Boeing 787-9"
+      ],
+      "airlines": [
+        "Hainan Airlines"
+      ],
+      "flights": [
+        "HU7976"
+      ],
+      "image": "/photos/DSC01962.jpg",
+      "thumbnail": "/photos/thumbs/DSC01962.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "B-1341",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-1341"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ ground track and outbound callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-1341",
+        "callsign": "CHH7976"
+      },
+      "capturedAt": "2026-11-08T16:20:51-05:00"
+    },
+    {
+      "id": "DSC01970",
+      "filename": "DSC01970.JPG",
+      "date": "2026-11-08",
+      "airport": "YYZ",
+      "models": [
+        "Boeing 787-9"
+      ],
+      "airlines": [
+        "Hainan Airlines"
+      ],
+      "flights": [
+        "HU7976"
+      ],
+      "image": "/photos/DSC01970.jpg",
+      "thumbnail": "/photos/thumbs/DSC01970.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "B-1341",
+        "status": "confirmed",
+        "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-1341"
+      },
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "YYZ ground track and outbound callsign at capture time.",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-1341",
+        "callsign": "CHH7976"
+      },
+      "capturedAt": "2026-11-08T16:21:28-05:00"
     }
   ],
   "aircraft": [
@@ -15781,7 +17125,14 @@
         "DSC08816",
         "DSC08825",
         "DSC01410",
-        "DSC01418"
+        "DSC01418",
+        "DSC01776",
+        "DSC01782",
+        "DSC01786",
+        "DSC01816",
+        "DSC01825",
+        "DSC01962",
+        "DSC01970"
       ],
       "cover": "DSC00597",
       "unlocked": true,
@@ -15790,7 +17141,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-07"
+      "lastSeen": "2026-11-08"
     },
     {
       "id": "airbus-a340-300",
@@ -15801,16 +17152,19 @@
       "shortName": "A340-300",
       "kind": "aircraft",
       "photoIds": [
+        "DSC01930",
         "DSC01120",
-        "DSC01117"
+        "DSC01117",
+        "DSC01923",
+        "DSC01927"
       ],
-      "cover": "DSC01120",
+      "cover": "DSC01930",
       "unlocked": true,
       "airports": [
         "YYZ"
       ],
       "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-04"
+      "lastSeen": "2026-11-08"
     },
     {
       "id": "boeing-777-300er",
@@ -15851,7 +17205,10 @@
         "DSC09800",
         "DSC09831",
         "DSC09838",
-        "DSC09842"
+        "DSC09842",
+        "DSC01832",
+        "DSC01839",
+        "DSC01946"
       ],
       "cover": "DSC00234",
       "unlocked": true,
@@ -15860,7 +17217,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-11-04"
+      "lastSeen": "2026-11-08"
     },
     {
       "id": "airbus-a330-300",
@@ -15901,7 +17258,11 @@
         "DSC01172",
         "DSC01175",
         "DSC01182",
-        "DSC01185"
+        "DSC01185",
+        "DSC01793",
+        "DSC01802",
+        "DSC01906",
+        "DSC01912"
       ],
       "cover": "DSC08110",
       "unlocked": true,
@@ -15910,7 +17271,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-11-05"
+      "lastSeen": "2026-11-08"
     },
     {
       "id": "boeing-777-200lr",
@@ -15956,7 +17317,11 @@
         "DSC09237",
         "DSC01198",
         "DSC01202",
-        "DSC01205"
+        "DSC01205",
+        "DSC01734",
+        "DSC01741",
+        "DSC01844",
+        "DSC01848"
       ],
       "cover": "DSC07322",
       "unlocked": true,
@@ -15964,7 +17329,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-11-05"
+      "lastSeen": "2026-11-08"
     },
     {
       "id": "atr-72-600",
@@ -16170,7 +17535,8 @@
         "DSC07432",
         "DSC07434",
         "DSC07437",
-        "DSC08937"
+        "DSC08937",
+        "DSC01941"
       ],
       "cover": "DSC07432",
       "unlocked": true,
@@ -16178,7 +17544,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-24"
+      "lastSeen": "2026-11-08"
     },
     {
       "id": "airbus-a321-200",
@@ -16235,7 +17601,9 @@
         "DSC01230",
         "DSC01234",
         "DSC01237",
-        "DSC01239"
+        "DSC01239",
+        "DSC01891",
+        "DSC01898"
       ],
       "cover": "DSC07272",
       "unlocked": true,
@@ -16243,7 +17611,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-11-05"
+      "lastSeen": "2026-11-08"
     },
     {
       "id": "airbus-a321neo",
@@ -16282,7 +17650,10 @@
         "DSC09827",
         "DSC09828",
         "DSC01336",
-        "DSC01341"
+        "DSC01341",
+        "DSC01862",
+        "DSC01867",
+        "DSC01869"
       ],
       "cover": "DSC08194",
       "unlocked": true,
@@ -16290,7 +17661,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-07"
+      "lastSeen": "2026-11-08"
     },
     {
       "id": "airbus-a330-200",
@@ -16383,7 +17754,10 @@
         "DSC08703",
         "DSC09553",
         "DSC09555",
-        "DSC09568"
+        "DSC09568",
+        "DSC01755",
+        "DSC01762",
+        "DSC01935"
       ],
       "cover": "DSC08695",
       "unlocked": true,
@@ -16391,7 +17765,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-10-24"
+      "lastSeen": "2026-11-08"
     },
     {
       "id": "airbus-a340-500",
@@ -16518,7 +17892,10 @@
         "DSC01539",
         "DSC01597",
         "DSC01620",
-        "DSC01622"
+        "DSC01622",
+        "DSC01720",
+        "DSC01726",
+        "DSC01855"
       ],
       "cover": "DSC07393",
       "unlocked": true,
@@ -16527,7 +17904,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-07"
+      "lastSeen": "2026-11-08"
     },
     {
       "id": "boeing-737-max-9",
@@ -16778,7 +18155,11 @@
       "photoIds": [
         "DSC09752",
         "DSC09745",
-        "DSC09750"
+        "DSC09750",
+        "DSC01685",
+        "DSC01694",
+        "DSC01805",
+        "DSC01812"
       ],
       "cover": "DSC09752",
       "unlocked": true,
@@ -16786,7 +18167,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-25",
-      "lastSeen": "2026-10-25"
+      "lastSeen": "2026-11-08"
     },
     {
       "id": "boeing-767-300er",
@@ -16855,7 +18236,9 @@
         "DSC01309",
         "DSC01310",
         "DSC01667",
-        "DSC01675"
+        "DSC01675",
+        "DSC01704",
+        "DSC01712"
       ],
       "cover": "DSC00487",
       "unlocked": true,
@@ -16864,7 +18247,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-07"
+      "lastSeen": "2026-11-08"
     },
     {
       "id": "boeing-787-10",
@@ -16875,7 +18258,9 @@
       "shortName": "787-10",
       "kind": "aircraft",
       "photoIds": [
-        "DSC06977"
+        "DSC06977",
+        "DSC01878",
+        "DSC01884"
       ],
       "cover": "DSC06977",
       "unlocked": true,
@@ -16883,7 +18268,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-18"
+      "lastSeen": "2026-11-08"
     },
     {
       "id": "boeing-787-8",
@@ -17278,7 +18663,8 @@
         "DSC09919",
         "DSC09946",
         "DSC01551",
-        "DSC01638"
+        "DSC01638",
+        "DSC01790"
       ],
       "cover": "DSC00641",
       "unlocked": true,
@@ -17287,7 +18673,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-07"
+      "lastSeen": "2026-11-08"
     },
     {
       "id": "embraer-e190",
@@ -17703,7 +19089,18 @@
         "DSC01568",
         "DSC01597",
         "DSC01626",
-        "DSC01638"
+        "DSC01638",
+        "DSC01685",
+        "DSC01694",
+        "DSC01793",
+        "DSC01802",
+        "DSC01805",
+        "DSC01812",
+        "DSC01832",
+        "DSC01839",
+        "DSC01906",
+        "DSC01912",
+        "DSC01946"
       ],
       "cover": "DSC07776",
       "unlocked": true,
@@ -17712,7 +19109,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-07"
+      "lastSeen": "2026-11-08"
     },
     {
       "id": "lufthansa",
@@ -17735,7 +19132,10 @@
         "DSC07984",
         "DSC09268",
         "DSC09279",
-        "DSC09288"
+        "DSC09288",
+        "DSC01923",
+        "DSC01927",
+        "DSC01930"
       ],
       "cover": "DSC09272",
       "unlocked": true,
@@ -17744,7 +19144,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-11-04"
+      "lastSeen": "2026-11-08"
     },
     {
       "id": "emirates",
@@ -17848,7 +19248,9 @@
         "DSC07805",
         "DSC08504",
         "DSC08522",
-        "DSC09237"
+        "DSC09237",
+        "DSC01734",
+        "DSC01741"
       ],
       "cover": "DSC00234",
       "unlocked": true,
@@ -17857,7 +19259,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-31"
+      "lastSeen": "2026-11-08"
     },
     {
       "id": "ana",
@@ -17916,7 +19318,9 @@
         "DSC01230",
         "DSC01234",
         "DSC01237",
-        "DSC01239"
+        "DSC01239",
+        "DSC01891",
+        "DSC01898"
       ],
       "cover": "DSC09076",
       "unlocked": true,
@@ -17924,7 +19328,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-11-05"
+      "lastSeen": "2026-11-08"
     },
     {
       "id": "aeromexico",
@@ -18127,6 +19531,28 @@
       "lastSeen": "2026-11-07"
     },
     {
+      "id": "atlas-air",
+      "name": "Atlas Air",
+      "chineseName": "阿特拉斯航空",
+      "code": "5Y",
+      "country": "美国",
+      "region": "美洲",
+      "kind": "airline",
+      "photoIds": [
+        "DSC01217",
+        "DSC01210",
+        "DSC01215",
+        "DSC01220"
+      ],
+      "cover": "DSC01217",
+      "unlocked": true,
+      "airports": [
+        "YYZ"
+      ],
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05"
+    },
+    {
       "id": "avianca",
       "name": "Avianca",
       "chineseName": "哥伦比亚航空",
@@ -18138,7 +19564,8 @@
         "DSC07432",
         "DSC07434",
         "DSC07437",
-        "DSC08937"
+        "DSC08937",
+        "DSC01941"
       ],
       "cover": "DSC07432",
       "unlocked": true,
@@ -18146,7 +19573,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-24"
+      "lastSeen": "2026-11-08"
     },
     {
       "id": "biman-bangladesh-airlines",
@@ -18169,6 +19596,29 @@
       "lastSeen": "2026-10-24"
     },
     {
+      "id": "british-airways",
+      "name": "British Airways",
+      "chineseName": "英国航空",
+      "code": "BA",
+      "country": "英国",
+      "region": "欧洲",
+      "kind": "airline",
+      "photoIds": [
+        "DSC01106",
+        "DSC01101",
+        "DSC01109",
+        "DSC01878",
+        "DSC01884"
+      ],
+      "cover": "DSC01106",
+      "unlocked": true,
+      "airports": [
+        "YYZ"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-08"
+    },
+    {
       "id": "caribbean-airlines",
       "name": "Caribbean Airlines",
       "chineseName": "加勒比航空",
@@ -18180,7 +19630,10 @@
         "DSC08542",
         "DSC01082",
         "DSC01085",
-        "DSC07019"
+        "DSC07019",
+        "DSC01720",
+        "DSC01726",
+        "DSC01855"
       ],
       "cover": "DSC08542",
       "unlocked": true,
@@ -18188,7 +19641,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-11-04"
+      "lastSeen": "2026-11-08"
     },
     {
       "id": "china-airlines",
@@ -18203,7 +19656,9 @@
         "DSC06549",
         "DSC01244",
         "DSC01246",
-        "DSC01248"
+        "DSC01248",
+        "DSC01704",
+        "DSC01712"
       ],
       "cover": "DSC06544",
       "unlocked": true,
@@ -18211,7 +19666,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-05"
+      "lastSeen": "2026-11-08"
     },
     {
       "id": "china-eastern-airlines",
@@ -18238,6 +19693,28 @@
       "lastSeen": "2026-11-04"
     },
     {
+      "id": "china-southern",
+      "name": "China Southern",
+      "chineseName": "中国南方航空",
+      "code": "CZ",
+      "country": "中国",
+      "region": "亚洲",
+      "kind": "airline",
+      "photoIds": [
+        "DSC01309",
+        "DSC01297",
+        "DSC01305",
+        "DSC01310"
+      ],
+      "cover": "DSC01309",
+      "unlocked": true,
+      "airports": [
+        "YYZ"
+      ],
+      "firstSeen": "2026-11-05",
+      "lastSeen": "2026-11-05"
+    },
+    {
       "id": "condor",
       "name": "Condor",
       "chineseName": "神鹰航空",
@@ -18249,7 +19726,10 @@
         "DSC09561",
         "DSC09553",
         "DSC09555",
-        "DSC09568"
+        "DSC09568",
+        "DSC01755",
+        "DSC01762",
+        "DSC01935"
       ],
       "cover": "DSC09561",
       "unlocked": true,
@@ -18257,7 +19737,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-10-24"
+      "lastSeen": "2026-11-08"
     },
     {
       "id": "delta-air-lines",
@@ -18398,6 +19878,29 @@
       ],
       "firstSeen": "2026-10-11",
       "lastSeen": "2026-11-07"
+    },
+    {
+      "id": "hainan-airlines",
+      "name": "Hainan Airlines",
+      "chineseName": "海南航空",
+      "code": "HU",
+      "country": "中国",
+      "region": "亚洲",
+      "kind": "airline",
+      "photoIds": [
+        "DSC01782",
+        "DSC01776",
+        "DSC01786",
+        "DSC01962",
+        "DSC01970"
+      ],
+      "cover": "DSC01782",
+      "unlocked": true,
+      "airports": [
+        "YYZ"
+      ],
+      "firstSeen": "2026-11-08",
+      "lastSeen": "2026-11-08"
     },
     {
       "id": "helijet-international",
@@ -18639,7 +20142,9 @@
         "DSC08753",
         "DSC01198",
         "DSC01202",
-        "DSC01205"
+        "DSC01205",
+        "DSC01844",
+        "DSC01848"
       ],
       "cover": "DSC07322",
       "unlocked": true,
@@ -18647,7 +20152,28 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-11-05"
+      "lastSeen": "2026-11-08"
+    },
+    {
+      "id": "royal-jordanian",
+      "name": "Royal Jordanian",
+      "chineseName": "皇家约旦航空",
+      "code": "RJ",
+      "country": "约旦",
+      "region": "亚洲",
+      "kind": "airline",
+      "photoIds": [
+        "DSC01158",
+        "DSC01155",
+        "DSC01160"
+      ],
+      "cover": "DSC01158",
+      "unlocked": true,
+      "airports": [
+        "YYZ"
+      ],
+      "firstSeen": "2026-11-04",
+      "lastSeen": "2026-11-04"
     },
     {
       "id": "sas",
@@ -18661,7 +20187,10 @@
         "DSC08894",
         "DSC01095",
         "DSC01094",
-        "DSC07636"
+        "DSC07636",
+        "DSC01862",
+        "DSC01867",
+        "DSC01869"
       ],
       "cover": "DSC08894",
       "unlocked": true,
@@ -18669,7 +20198,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-11-04"
+      "lastSeen": "2026-11-08"
     },
     {
       "id": "saudia",
@@ -18680,17 +20209,19 @@
       "region": "亚洲",
       "kind": "airline",
       "photoIds": [
+        "DSC01825",
         "DSC08819",
         "DSC08816",
-        "DSC08825"
+        "DSC08825",
+        "DSC01816"
       ],
-      "cover": "DSC08819",
+      "cover": "DSC01825",
       "unlocked": true,
       "airports": [
         "YYZ"
       ],
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-10-24"
+      "lastSeen": "2026-11-08"
     },
     {
       "id": "t-way-air-trinity-airways",
@@ -18734,6 +20265,26 @@
       "lastSeen": "2026-10-18"
     },
     {
+      "id": "turkish-airlines",
+      "name": "Turkish Airlines",
+      "chineseName": "土耳其航空",
+      "code": "TK",
+      "country": "土耳其",
+      "region": "亚洲",
+      "kind": "airline",
+      "photoIds": [
+        "DSC01675",
+        "DSC01667"
+      ],
+      "cover": "DSC01675",
+      "unlocked": true,
+      "airports": [
+        "YYZ"
+      ],
+      "firstSeen": "2026-11-07",
+      "lastSeen": "2026-11-07"
+    },
+    {
       "id": "united-airlines",
       "name": "United Airlines",
       "chineseName": "美国联合航空",
@@ -18763,7 +20314,8 @@
         "DSC08841",
         "DSC09919",
         "DSC09946",
-        "DSC01551"
+        "DSC01551",
+        "DSC01790"
       ],
       "cover": "DSC00535",
       "unlocked": true,
@@ -18772,7 +20324,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-07"
+      "lastSeen": "2026-11-08"
     },
     {
       "id": "volga-dnepr-airlines",
@@ -18947,27 +20499,6 @@
       "lastSeen": null
     },
     {
-      "id": "british-airways",
-      "name": "British Airways",
-      "chineseName": "英国航空",
-      "code": "BA",
-      "country": "英国",
-      "region": "欧洲",
-      "kind": "airline",
-      "photoIds": [
-        "DSC01106",
-        "DSC01101",
-        "DSC01109"
-      ],
-      "cover": "DSC01106",
-      "unlocked": true,
-      "airports": [
-        "YYZ"
-      ],
-      "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-04"
-    },
-    {
       "id": "cargojet",
       "name": "Cargojet",
       "chineseName": "加拿大货运航空",
@@ -18996,28 +20527,6 @@
       "airports": [],
       "firstSeen": null,
       "lastSeen": null
-    },
-    {
-      "id": "china-southern",
-      "name": "China Southern",
-      "chineseName": "中国南方航空",
-      "code": "CZ",
-      "country": "中国",
-      "region": "亚洲",
-      "kind": "airline",
-      "photoIds": [
-        "DSC01309",
-        "DSC01297",
-        "DSC01305",
-        "DSC01310"
-      ],
-      "cover": "DSC01309",
-      "unlocked": true,
-      "airports": [
-        "YYZ"
-      ],
-      "firstSeen": "2026-11-05",
-      "lastSeen": "2026-11-05"
     },
     {
       "id": "copa-airlines",
@@ -19086,21 +20595,6 @@
       "code": "AY",
       "country": "芬兰",
       "region": "欧洲",
-      "kind": "airline",
-      "photoIds": [],
-      "cover": null,
-      "unlocked": false,
-      "airports": [],
-      "firstSeen": null,
-      "lastSeen": null
-    },
-    {
-      "id": "hainan-airlines",
-      "name": "Hainan Airlines",
-      "chineseName": "海南航空",
-      "code": "HU",
-      "country": "中国",
-      "region": "亚洲",
       "kind": "airline",
       "photoIds": [],
       "cover": null,
@@ -19260,27 +20754,6 @@
       "lastSeen": null
     },
     {
-      "id": "royal-jordanian",
-      "name": "Royal Jordanian",
-      "chineseName": "皇家约旦航空",
-      "code": "RJ",
-      "country": "约旦",
-      "region": "亚洲",
-      "kind": "airline",
-      "photoIds": [
-        "DSC01158",
-        "DSC01155",
-        "DSC01160"
-      ],
-      "cover": "DSC01158",
-      "unlocked": true,
-      "airports": [
-        "YYZ"
-      ],
-      "firstSeen": "2026-11-04",
-      "lastSeen": "2026-11-04"
-    },
-    {
       "id": "sichuan-airlines",
       "name": "Sichuan Airlines",
       "chineseName": "四川航空",
@@ -19294,26 +20767,6 @@
       "airports": [],
       "firstSeen": null,
       "lastSeen": null
-    },
-    {
-      "id": "turkish-airlines",
-      "name": "Turkish Airlines",
-      "chineseName": "土耳其航空",
-      "code": "TK",
-      "country": "土耳其",
-      "region": "亚洲",
-      "kind": "airline",
-      "photoIds": [
-        "DSC01675",
-        "DSC01667"
-      ],
-      "cover": "DSC01675",
-      "unlocked": true,
-      "airports": [
-        "YYZ"
-      ],
-      "firstSeen": "2026-11-07",
-      "lastSeen": "2026-11-07"
     },
     {
       "id": "ups-airlines",
@@ -19374,28 +20827,6 @@
       "airports": [],
       "firstSeen": null,
       "lastSeen": null
-    },
-    {
-      "id": "atlas-air",
-      "name": "Atlas Air",
-      "chineseName": "阿特拉斯航空",
-      "code": "5Y",
-      "country": "美国",
-      "region": "美洲",
-      "kind": "airline",
-      "photoIds": [
-        "DSC01217",
-        "DSC01210",
-        "DSC01215",
-        "DSC01220"
-      ],
-      "cover": "DSC01217",
-      "unlocked": true,
-      "airports": [
-        "YYZ"
-      ],
-      "firstSeen": "2026-11-05",
-      "lastSeen": "2026-11-05"
     }
   ],
   "heroPhoto": "DSC07776",
@@ -19520,7 +20951,13 @@
     "DSC01589",
     "DSC01493",
     "DSC01551",
-    "DSC01626"
+    "DSC01626",
+    "DSC01762",
+    "DSC01825",
+    "DSC01782",
+    "DSC01884",
+    "DSC01930",
+    "DSC01694"
   ],
   "scopeNote": "机型涵盖已确认拍摄型号及常见民航补拍目标；航司以 YYZ / YVR 收藏及补拍清单为主，并非全球完整名录。未解锁不代表当前有定期航班。"
 }

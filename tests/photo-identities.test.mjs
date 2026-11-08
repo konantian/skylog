@@ -179,3 +179,26 @@ test('November 7 publishes the edited YYZ frames and links each arrival to its a
     assert.deepEqual(byId.get(id).flights, [flight]);
   }
 });
+
+test('November 8 keeps each edited camera JPEG tied to its own flight, including return departures', () => {
+  const day = catalog.photos.filter(p => p.date === '2026-11-08');
+  assert.equal(day.length, 42);
+  for (const photo of day) {
+    assert.equal(photo.filename, photo.id + '.JPG');
+    assert.equal(photo.airport, 'YYZ');
+    const [point] = identities[photo.id].evidence.track;
+    assert.equal(point.registration, photo.registration.value);
+    assert.equal(point.operating_callsign, photo.flightIdentification.callsign);
+    assert.ok(Math.abs(Date.parse(point.timestamp_utc) - Date.parse(photo.capturedAt)) <= 11000);
+  }
+  for (const [arrival, departure, first, second] of [
+    ['DSC01782', 'DSC01970', 'HU7975', 'HU7976'],
+    ['DSC01762', 'DSC01935', 'DE402', 'DE403'],
+  ]) {
+    assert.equal(byId.get(arrival).registration.value, byId.get(departure).registration.value);
+    assert.deepEqual(byId.get(arrival).flights, [first]);
+    assert.deepEqual(byId.get(departure).flights, [second]);
+    assert.equal(identities[arrival].evidence.track[0].on_ground, 0);
+    assert.equal(identities[departure].evidence.track[0].on_ground, 1);
+  }
+});

@@ -14618,5 +14618,1685 @@
         "https://www.flightradar24.com/data/aircraft/tc-ljy"
       ]
     }
+  },
+  "DSC01685": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T11:52:58-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "C-FTCA",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-ftca"
+    },
+    "flights": [
+      "AC7327"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-ftca",
+      "callsign": "ACA7327"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T11:52:58-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA7327",
+          "registration": "C-FTCA",
+          "timestamp_utc": "2026-11-08T16:52:51.922Z",
+          "lat": 43.688717,
+          "lon": -79.577702,
+          "altitude_ft": 1125.0,
+          "ground_track_true_deg": 225.93,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-ftca"
+      ]
+    }
+  },
+  "DSC01694": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T11:53:03-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "C-FTCA",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-ftca"
+    },
+    "flights": [
+      "AC7327"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-ftca",
+      "callsign": "ACA7327"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T11:53:03-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA7327",
+          "registration": "C-FTCA",
+          "timestamp_utc": "2026-11-08T16:53:07.741Z",
+          "lat": 43.68219,
+          "lon": -79.587069,
+          "altitude_ft": 950.0,
+          "ground_track_true_deg": 226.89,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-ftca"
+      ]
+    }
+  },
+  "DSC01704": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T12:10:25-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "B-18778",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-18778"
+    },
+    "flights": [
+      "CI5301"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-18778",
+      "callsign": "CAL5301"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T12:10:25-05:00",
+      "track": [
+        {
+          "operating_callsign": "CAL5301",
+          "registration": "B-18778",
+          "timestamp_utc": "2026-11-08T17:10:19.913Z",
+          "lat": 43.689331,
+          "lon": -79.576785,
+          "altitude_ft": 1150.0,
+          "ground_track_true_deg": 226.45,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/b-18778"
+      ]
+    }
+  },
+  "DSC01712": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T12:10:30-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "B-18778",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-18778"
+    },
+    "flights": [
+      "CI5301"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-18778",
+      "callsign": "CAL5301"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T12:10:30-05:00",
+      "track": [
+        {
+          "operating_callsign": "CAL5301",
+          "registration": "B-18778",
+          "timestamp_utc": "2026-11-08T17:10:36.001Z",
+          "lat": 43.682199,
+          "lon": -79.587184,
+          "altitude_ft": 950.0,
+          "ground_track_true_deg": 226.47,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/b-18778"
+      ]
+    }
+  },
+  "DSC01720": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T12:16:13-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "9Y-SUR",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/9y-sur"
+    },
+    "flights": [
+      "BW79"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/9y-sur",
+      "callsign": "BWA079"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T12:16:13-05:00",
+      "track": [
+        {
+          "operating_callsign": "BWA079",
+          "registration": "9Y-SUR",
+          "timestamp_utc": "2026-11-08T17:16:05.691Z",
+          "lat": 43.689555,
+          "lon": -79.576329,
+          "altitude_ft": 1125.0,
+          "ground_track_true_deg": 226.47,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/9y-sur"
+      ]
+    }
+  },
+  "DSC01726": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T12:16:17-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "9Y-SUR",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/9y-sur"
+    },
+    "flights": [
+      "BW79"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/9y-sur",
+      "callsign": "BWA079"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T12:16:17-05:00",
+      "track": [
+        {
+          "operating_callsign": "BWA079",
+          "registration": "9Y-SUR",
+          "timestamp_utc": "2026-11-08T17:16:27.981Z",
+          "lat": 43.679993,
+          "lon": -79.590454,
+          "altitude_ft": 875.0,
+          "ground_track_true_deg": 226.81,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/9y-sur"
+      ]
+    }
+  },
+  "DSC01734": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T12:39:01-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "B-LXF",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-lxf"
+    },
+    "flights": [
+      "CX828"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-lxf",
+      "callsign": "CPA828"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T12:39:01-05:00",
+      "track": [
+        {
+          "operating_callsign": "CPA828",
+          "registration": "B-LXF",
+          "timestamp_utc": "2026-11-08T17:38:55.642Z",
+          "lat": 43.689555,
+          "lon": -79.576525,
+          "altitude_ft": 1175.0,
+          "ground_track_true_deg": 226.3,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/b-lxf"
+      ]
+    }
+  },
+  "DSC01741": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T12:39:07-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "B-LXF",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-lxf"
+    },
+    "flights": [
+      "CX828"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-lxf",
+      "callsign": "CPA828"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T12:39:07-05:00",
+      "track": [
+        {
+          "operating_callsign": "CPA828",
+          "registration": "B-LXF",
+          "timestamp_utc": "2026-11-08T17:39:13.940Z",
+          "lat": 43.682292,
+          "lon": -79.587119,
+          "altitude_ft": 975.0,
+          "ground_track_true_deg": 226.62,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/b-lxf"
+      ]
+    }
+  },
+  "DSC01755": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T13:21:10-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "D-ANRM",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-anrm"
+    },
+    "flights": [
+      "DE402"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-anrm",
+      "callsign": "CFG402"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T13:21:10-05:00",
+      "track": [
+        {
+          "operating_callsign": "CFG402",
+          "registration": "D-ANRM",
+          "timestamp_utc": "2026-11-08T18:21:11.589Z",
+          "lat": 43.686063,
+          "lon": -79.581364,
+          "altitude_ft": 1075.0,
+          "ground_track_true_deg": 226.79,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/d-anrm"
+      ]
+    }
+  },
+  "DSC01762": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T13:21:14-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "D-ANRM",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-anrm"
+    },
+    "flights": [
+      "DE402"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-anrm",
+      "callsign": "CFG402"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T13:21:14-05:00",
+      "track": [
+        {
+          "operating_callsign": "CFG402",
+          "registration": "D-ANRM",
+          "timestamp_utc": "2026-11-08T18:21:11.589Z",
+          "lat": 43.686063,
+          "lon": -79.581364,
+          "altitude_ft": 1075.0,
+          "ground_track_true_deg": 226.79,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/d-anrm"
+      ]
+    }
+  },
+  "DSC01776": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T13:50:58-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "B-1341",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-1341"
+    },
+    "flights": [
+      "HU7975"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-1341",
+      "callsign": "CHH7975"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T13:50:58-05:00",
+      "track": [
+        {
+          "operating_callsign": "CHH7975",
+          "registration": "B-1341",
+          "timestamp_utc": "2026-11-08T18:50:55.729Z",
+          "lat": 43.689042,
+          "lon": -79.577179,
+          "altitude_ft": 1175.0,
+          "ground_track_true_deg": 226.44,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/b-1341"
+      ]
+    }
+  },
+  "DSC01782": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T13:51:03-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "B-1341",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-1341"
+    },
+    "flights": [
+      "HU7975"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-1341",
+      "callsign": "CHH7975"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T13:51:03-05:00",
+      "track": [
+        {
+          "operating_callsign": "CHH7975",
+          "registration": "B-1341",
+          "timestamp_utc": "2026-11-08T18:50:55.729Z",
+          "lat": 43.689042,
+          "lon": -79.577179,
+          "altitude_ft": 1175.0,
+          "ground_track_true_deg": 226.44,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/b-1341"
+      ]
+    }
+  },
+  "DSC01786": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T13:51:04-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "B-1341",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-1341"
+    },
+    "flights": [
+      "HU7975"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-1341",
+      "callsign": "CHH7975"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T13:51:04-05:00",
+      "track": [
+        {
+          "operating_callsign": "CHH7975",
+          "registration": "B-1341",
+          "timestamp_utc": "2026-11-08T18:50:55.729Z",
+          "lat": 43.689042,
+          "lon": -79.577179,
+          "altitude_ft": 1175.0,
+          "ground_track_true_deg": 226.44,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/b-1341"
+      ]
+    }
+  },
+  "DSC01790": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T13:56:19-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "N773YX",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n773yx"
+    },
+    "flights": [
+      "UA3490"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n773yx",
+      "callsign": "RPA3490"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T13:56:19-05:00",
+      "track": [
+        {
+          "operating_callsign": "RPA3490",
+          "registration": "N773YX",
+          "timestamp_utc": "2026-11-08T18:56:19.618Z",
+          "lat": 43.684662,
+          "lon": -79.583556,
+          "altitude_ft": 1075.0,
+          "ground_track_true_deg": 226.74,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/n773yx"
+      ]
+    }
+  },
+  "DSC01793": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T14:05:47-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "C-GFAJ",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gfaj"
+    },
+    "flights": [
+      "AC855"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gfaj",
+      "callsign": "ACA855"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T14:05:47-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA855",
+          "registration": "C-GFAJ",
+          "timestamp_utc": "2026-11-08T19:05:39.949Z",
+          "lat": 43.689601,
+          "lon": -79.576329,
+          "altitude_ft": 1175.0,
+          "ground_track_true_deg": 226.93,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-gfaj"
+      ]
+    }
+  },
+  "DSC01802": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T14:05:52-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "C-GFAJ",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gfaj"
+    },
+    "flights": [
+      "AC855"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gfaj",
+      "callsign": "ACA855"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T14:05:52-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA855",
+          "registration": "C-GFAJ",
+          "timestamp_utc": "2026-11-08T19:05:57.398Z",
+          "lat": 43.682479,
+          "lon": -79.586857,
+          "altitude_ft": 1000.0,
+          "ground_track_true_deg": 227.19,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-gfaj"
+      ]
+    }
+  },
+  "DSC01805": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T14:09:40-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "C-GDUZ",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gduz"
+    },
+    "flights": [
+      "AC7253"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gduz",
+      "callsign": "ACA7253"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T14:09:40-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA7253",
+          "registration": "C-GDUZ",
+          "timestamp_utc": "2026-11-08T19:09:45.984Z",
+          "lat": 43.684992,
+          "lon": -79.583195,
+          "altitude_ft": 1050.0,
+          "ground_track_true_deg": 225.6,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-gduz"
+      ]
+    }
+  },
+  "DSC01812": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T14:09:46-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "C-GDUZ",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gduz"
+    },
+    "flights": [
+      "AC7253"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gduz",
+      "callsign": "ACA7253"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T14:09:46-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA7253",
+          "registration": "C-GDUZ",
+          "timestamp_utc": "2026-11-08T19:09:45.984Z",
+          "lat": 43.684992,
+          "lon": -79.583195,
+          "altitude_ft": 1050.0,
+          "ground_track_true_deg": 225.6,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-gduz"
+      ]
+    }
+  },
+  "DSC01816": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T14:28:14-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "HZ-ARF",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/hz-arf"
+    },
+    "flights": [
+      "SV61"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/hz-arf",
+      "callsign": "SVA061"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T14:28:14-05:00",
+      "track": [
+        {
+          "operating_callsign": "SVA061",
+          "registration": "HZ-ARF",
+          "timestamp_utc": "2026-11-08T19:28:21.898Z",
+          "lat": 43.684667,
+          "lon": -79.583588,
+          "altitude_ft": 1025.0,
+          "ground_track_true_deg": 226.44,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/hz-arf"
+      ]
+    }
+  },
+  "DSC01825": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T14:28:20-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "HZ-ARF",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/hz-arf"
+    },
+    "flights": [
+      "SV61"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/hz-arf",
+      "callsign": "SVA061"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T14:28:20-05:00",
+      "track": [
+        {
+          "operating_callsign": "SVA061",
+          "registration": "HZ-ARF",
+          "timestamp_utc": "2026-11-08T19:28:21.898Z",
+          "lat": 43.684667,
+          "lon": -79.583588,
+          "altitude_ft": 1025.0,
+          "ground_track_true_deg": 226.44,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/hz-arf"
+      ]
+    }
+  },
+  "DSC01832": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T14:31:57-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "C-FIVQ",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fivq"
+    },
+    "flights": [
+      "AC873"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fivq",
+      "callsign": "ACA873"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T14:31:57-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA873",
+          "registration": "C-FIVQ",
+          "timestamp_utc": "2026-11-08T19:31:53.144Z",
+          "lat": 43.688996,
+          "lon": -79.57731,
+          "altitude_ft": 1175.0,
+          "ground_track_true_deg": 226.4,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-fivq"
+      ]
+    }
+  },
+  "DSC01839": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T14:32:02-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "C-FIVQ",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fivq"
+    },
+    "flights": [
+      "AC873"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fivq",
+      "callsign": "ACA873"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T14:32:02-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA873",
+          "registration": "C-FIVQ",
+          "timestamp_utc": "2026-11-08T19:31:53.144Z",
+          "lat": 43.688996,
+          "lon": -79.57731,
+          "altitude_ft": 1175.0,
+          "ground_track_true_deg": 226.4,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-fivq"
+      ]
+    }
+  },
+  "DSC01844": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T14:39:19-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "A7-AOA",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/a7-aoa"
+    },
+    "flights": [
+      "QR767"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/a7-aoa",
+      "callsign": "QTR65U"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T14:39:19-05:00",
+      "track": [
+        {
+          "operating_callsign": "QTR65U",
+          "registration": "A7-AOA",
+          "timestamp_utc": "2026-11-08T19:39:15.918Z",
+          "lat": 43.687739,
+          "lon": -79.579075,
+          "altitude_ft": 1150.0,
+          "ground_track_true_deg": 226.57,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/a7-aoa"
+      ]
+    }
+  },
+  "DSC01848": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T14:39:23-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "A7-AOA",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/a7-aoa"
+    },
+    "flights": [
+      "QR767"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/a7-aoa",
+      "callsign": "QTR65U"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T14:39:23-05:00",
+      "track": [
+        {
+          "operating_callsign": "QTR65U",
+          "registration": "A7-AOA",
+          "timestamp_utc": "2026-11-08T19:39:15.918Z",
+          "lat": 43.687739,
+          "lon": -79.579075,
+          "altitude_ft": 1150.0,
+          "ground_track_true_deg": 226.57,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/a7-aoa"
+      ]
+    }
+  },
+  "DSC01855": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T15:00:21-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "9Y-CAL",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/9y-cal"
+    },
+    "flights": [
+      "BW614"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/9y-cal",
+      "callsign": "BWA614"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T15:00:21-05:00",
+      "track": [
+        {
+          "operating_callsign": "BWA614",
+          "registration": "9Y-CAL",
+          "timestamp_utc": "2026-11-08T20:00:17.873Z",
+          "lat": 43.686156,
+          "lon": -79.581495,
+          "altitude_ft": 1075.0,
+          "ground_track_true_deg": 226.52,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/9y-cal"
+      ]
+    }
+  },
+  "DSC01862": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T15:15:44-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "SE-DMS",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/se-dms"
+    },
+    "flights": [
+      "SK949"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/se-dms",
+      "callsign": "SAS949"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T15:15:44-05:00",
+      "track": [
+        {
+          "operating_callsign": "SAS949",
+          "registration": "SE-DMS",
+          "timestamp_utc": "2026-11-08T20:15:37.539Z",
+          "lat": 43.689377,
+          "lon": -79.576721,
+          "altitude_ft": 1200.0,
+          "ground_track_true_deg": 227.0,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/se-dms"
+      ]
+    }
+  },
+  "DSC01867": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T15:15:47-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "SE-DMS",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/se-dms"
+    },
+    "flights": [
+      "SK949"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/se-dms",
+      "callsign": "SAS949"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T15:15:47-05:00",
+      "track": [
+        {
+          "operating_callsign": "SAS949",
+          "registration": "SE-DMS",
+          "timestamp_utc": "2026-11-08T20:15:37.539Z",
+          "lat": 43.689377,
+          "lon": -79.576721,
+          "altitude_ft": 1200.0,
+          "ground_track_true_deg": 227.0,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/se-dms"
+      ]
+    }
+  },
+  "DSC01869": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T15:15:49-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "SE-DMS",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/se-dms"
+    },
+    "flights": [
+      "SK949"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/se-dms",
+      "callsign": "SAS949"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T15:15:49-05:00",
+      "track": [
+        {
+          "operating_callsign": "SAS949",
+          "registration": "SE-DMS",
+          "timestamp_utc": "2026-11-08T20:15:57.634Z",
+          "lat": 43.681549,
+          "lon": -79.588155,
+          "altitude_ft": 975.0,
+          "ground_track_true_deg": 226.33,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/se-dms"
+      ]
+    }
+  },
+  "DSC01878": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T15:24:07-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "G-ZBLG",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/g-zblg"
+    },
+    "flights": [
+      "BA93"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/g-zblg",
+      "callsign": "BAW9ZY"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T15:24:07-05:00",
+      "track": [
+        {
+          "operating_callsign": "BAW9ZY",
+          "registration": "G-ZBLG",
+          "timestamp_utc": "2026-11-08T20:24:07.858Z",
+          "lat": 43.68631,
+          "lon": -79.581192,
+          "altitude_ft": 1100.0,
+          "ground_track_true_deg": 226.77,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/g-zblg"
+      ]
+    }
+  },
+  "DSC01884": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T15:24:11-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "G-ZBLG",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/g-zblg"
+    },
+    "flights": [
+      "BA93"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/g-zblg",
+      "callsign": "BAW9ZY"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T15:24:11-05:00",
+      "track": [
+        {
+          "operating_callsign": "BAW9ZY",
+          "registration": "G-ZBLG",
+          "timestamp_utc": "2026-11-08T20:24:07.858Z",
+          "lat": 43.68631,
+          "lon": -79.581192,
+          "altitude_ft": 1100.0,
+          "ground_track_true_deg": 226.77,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/g-zblg"
+      ]
+    }
+  },
+  "DSC01891": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T15:41:06-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "EI-XLX",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/ei-xlx"
+    },
+    "flights": [
+      "EI127"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/ei-xlx",
+      "callsign": "EIN1EN"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T15:41:06-05:00",
+      "track": [
+        {
+          "operating_callsign": "EIN1EN",
+          "registration": "EI-XLX",
+          "timestamp_utc": "2026-11-08T20:41:11.956Z",
+          "lat": 43.684296,
+          "lon": -79.584003,
+          "altitude_ft": 1050.0,
+          "ground_track_true_deg": 225.95,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/ei-xlx"
+      ]
+    }
+  },
+  "DSC01898": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T15:41:10-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "EI-XLX",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/ei-xlx"
+    },
+    "flights": [
+      "EI127"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/ei-xlx",
+      "callsign": "EIN1EN"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T15:41:10-05:00",
+      "track": [
+        {
+          "operating_callsign": "EIN1EN",
+          "registration": "EI-XLX",
+          "timestamp_utc": "2026-11-08T20:41:11.956Z",
+          "lat": 43.684296,
+          "lon": -79.584003,
+          "altitude_ft": 1050.0,
+          "ground_track_true_deg": 225.95,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/ei-xlx"
+      ]
+    }
+  },
+  "DSC01906": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T15:42:26-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "C-GEGP",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gegp"
+    },
+    "flights": [
+      "AC1023"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gegp",
+      "callsign": "ACA1023"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T15:42:26-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA1023",
+          "registration": "C-GEGP",
+          "timestamp_utc": "2026-11-08T20:42:29.751Z",
+          "lat": 43.684937,
+          "lon": -79.583172,
+          "altitude_ft": 1075.0,
+          "ground_track_true_deg": 226.58,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-gegp"
+      ]
+    }
+  },
+  "DSC01912": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T15:42:31-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "C-GEGP",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gegp"
+    },
+    "flights": [
+      "AC1023"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gegp",
+      "callsign": "ACA1023"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T15:42:31-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA1023",
+          "registration": "C-GEGP",
+          "timestamp_utc": "2026-11-08T20:42:29.751Z",
+          "lat": 43.684937,
+          "lon": -79.583172,
+          "altitude_ft": 1075.0,
+          "ground_track_true_deg": 226.58,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-gegp"
+      ]
+    }
+  },
+  "DSC01923": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T16:01:54-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "D-AIGO",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-aigo"
+    },
+    "flights": [
+      "LH470"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-aigo",
+      "callsign": "DLH470"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T16:01:54-05:00",
+      "track": [
+        {
+          "operating_callsign": "DLH470",
+          "registration": "D-AIGO",
+          "timestamp_utc": "2026-11-08T21:01:55.913Z",
+          "lat": 43.685225,
+          "lon": -79.582803,
+          "altitude_ft": 1075.0,
+          "ground_track_true_deg": 226.19,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/d-aigo"
+      ]
+    }
+  },
+  "DSC01927": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T16:01:56-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "D-AIGO",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-aigo"
+    },
+    "flights": [
+      "LH470"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-aigo",
+      "callsign": "DLH470"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T16:01:56-05:00",
+      "track": [
+        {
+          "operating_callsign": "DLH470",
+          "registration": "D-AIGO",
+          "timestamp_utc": "2026-11-08T21:01:55.913Z",
+          "lat": 43.685225,
+          "lon": -79.582803,
+          "altitude_ft": 1075.0,
+          "ground_track_true_deg": 226.19,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/d-aigo"
+      ]
+    }
+  },
+  "DSC01930": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T16:01:58-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "D-AIGO",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-aigo"
+    },
+    "flights": [
+      "LH470"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-aigo",
+      "callsign": "DLH470"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T16:01:58-05:00",
+      "track": [
+        {
+          "operating_callsign": "DLH470",
+          "registration": "D-AIGO",
+          "timestamp_utc": "2026-11-08T21:01:55.913Z",
+          "lat": 43.685225,
+          "lon": -79.582803,
+          "altitude_ft": 1075.0,
+          "ground_track_true_deg": 226.19,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/d-aigo"
+      ]
+    }
+  },
+  "DSC01935": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T16:11:59-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "D-ANRM",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-anrm"
+    },
+    "flights": [
+      "DE403"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ ground track and outbound callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-anrm",
+      "callsign": "CFG403"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T16:11:59-05:00",
+      "track": [
+        {
+          "operating_callsign": "CFG403",
+          "registration": "D-ANRM",
+          "timestamp_utc": "2026-11-08T21:11:49.412Z",
+          "lat": 43.693442,
+          "lon": -79.634236,
+          "altitude_ft": null,
+          "ground_track_true_deg": null,
+          "on_ground": 1
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/d-anrm"
+      ]
+    }
+  },
+  "DSC01941": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T16:13:45-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "N788AV",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n788av"
+    },
+    "flights": [
+      "AV325"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ ground track and outbound callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n788av",
+      "callsign": "TAI325"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T16:13:45-05:00",
+      "track": [
+        {
+          "operating_callsign": "TAI325",
+          "registration": "N788AV",
+          "timestamp_utc": "2026-11-08T21:13:51.048Z",
+          "lat": 43.693611,
+          "lon": -79.634367,
+          "altitude_ft": null,
+          "ground_track_true_deg": null,
+          "on_ground": 1
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/n788av"
+      ]
+    }
+  },
+  "DSC01946": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T16:15:38-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "C-FITW",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fitw"
+    },
+    "flights": [
+      "AC2"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ arrival track and operating callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fitw",
+      "callsign": "ACA2"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T16:15:38-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA2",
+          "registration": "C-FITW",
+          "timestamp_utc": "2026-11-08T21:15:40.000Z",
+          "lat": 43.703522,
+          "lon": -79.621433,
+          "altitude_ft": 1100.0,
+          "ground_track_true_deg": 227.27,
+          "on_ground": 0
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-fitw"
+      ]
+    }
+  },
+  "DSC01962": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T16:20:51-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "B-1341",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-1341"
+    },
+    "flights": [
+      "HU7976"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ ground track and outbound callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-1341",
+      "callsign": "CHH7976"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T16:20:51-05:00",
+      "track": [
+        {
+          "operating_callsign": "CHH7976",
+          "registration": "B-1341",
+          "timestamp_utc": "2026-11-08T21:20:46.375Z",
+          "lat": 43.693325,
+          "lon": -79.634203,
+          "altitude_ft": null,
+          "ground_track_true_deg": null,
+          "on_ground": 1
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/b-1341"
+      ]
+    }
+  },
+  "DSC01970": {
+    "date": "2026-11-08",
+    "capturedAt": "2026-11-08T16:21:28-05:00",
+    "reviewedAt": "2026-11-08",
+    "registration": {
+      "value": "B-1341",
+      "status": "confirmed",
+      "basis": "Photographed airline and aircraft matched to its registration on the YYZ track at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-1341"
+    },
+    "flights": [
+      "HU7976"
+    ],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "YYZ ground track and outbound callsign at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-1341",
+      "callsign": "CHH7976"
+    },
+    "evidence": {
+      "archive": "YYZ November 8 capture-time ADS-B and photographic review",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-08T16:21:28-05:00",
+      "track": [
+        {
+          "operating_callsign": "CHH7976",
+          "registration": "B-1341",
+          "timestamp_utc": "2026-11-08T21:21:29.183Z",
+          "lat": 43.693954,
+          "lon": -79.635397,
+          "altitude_ft": null,
+          "ground_track_true_deg": null,
+          "on_ground": 1
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/b-1341"
+      ]
+    }
   }
 }

@@ -74,5 +74,14 @@
   "Turkish Cargo 货运涂装": {
     "name": "Turkish Cargo 货运涂装",
     "description": "白色货机机身配 Turkish Cargo 字标及红色尾翼。"
+  },
+  "绿白条纹涂装": {
+    "name": "绿白条纹涂装",
+    "description": "神鹰航空的 Island 配色，绿色与白色条纹环绕机身。"
+  },
+  "Saudi, Welcome to Arabia 旅游彩绘": {
+    "name": "Saudi, Welcome to Arabia 旅游彩绘",
+    "description": "紫色尾翼和发动机搭配彩色人物图案，机身带有沙特旅游宣传字样。",
+    "source": "https://www.spa.gov.sa/N2493253"
   }
 }
