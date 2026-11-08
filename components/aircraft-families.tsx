@@ -1,3 +1,4 @@
+import {photoUrl} from '@/lib/photo-images.mjs';
 import {useLocale} from './locale-provider';
 import {useEffect,useMemo,useRef,useState} from 'react';
 import {aircraftFamilies} from '@/lib/insights.mjs';
@@ -5,7 +6,6 @@ import type {Entry,Photo} from '@/lib/types';
 import {Icon,PlaneSilhouette} from './icons';
 
 type Family={key:string;name:string;manufacturer:string;family:string;entries:Entry[];unlocked:number};
-const asset=(path:string)=>`${process.env.NEXT_PUBLIC_BASE_PATH||''}${path}`;
 
 export function AircraftFamilies({aircraft,photos,model,onEntry}:{aircraft:Entry[];photos:Photo[];model:string;onEntry:(entry:Entry)=>void}) {
   const {t}=useLocale();
@@ -29,7 +29,7 @@ export function AircraftFamilies({aircraft,photos,model,onEntry}:{aircraft:Entry
       <div className="family-model-grid">{group.entries.map(entry=>{
         const cover=entry.unlocked&&entry.cover?byId.get(entry.cover):undefined;
         return <button className={`family-model ${entry.unlocked?'is-unlocked':'is-locked'}`} key={entry.id} onClick={()=>onEntry(entry)} aria-label={`${t(entry.name)}，${entry.unlocked?t("查看已拍照片"):t("待解锁，查看机型档案")}`}>
-          <span className="family-model-image">{cover?<img src={asset(cover.thumbnail)} alt={`${t(entry.name)} · ${cover.airlines.map(name=>t(name)).join(' / ')}`} loading="lazy"/>:<PlaneSilhouette model={entry.name} category={entry.category} family={entry.family}/>}<span className="family-model-state"><Icon name={entry.unlocked?'check':'lock'} size={12}/>{entry.unlocked?t("已拍到"):t("待解锁")}</span></span>
+          <span className="family-model-image">{cover?<img src={photoUrl(cover.thumbnail)} alt={`${t(entry.name)} · ${cover.airlines.map(name=>t(name)).join(' / ')}`} loading="lazy"/>:<PlaneSilhouette model={entry.name} category={entry.category} family={entry.family}/>}<span className="family-model-state"><Icon name={entry.unlocked?'check':'lock'} size={12}/>{entry.unlocked?t("已拍到"):t("待解锁")}</span></span>
           <span className="family-model-info"><strong>{entry.shortName||t(entry.name)}</strong><span>{entry.unlocked?t("{0} 张照片",[entry.photoIds.length]):t("等待下一次相遇")}<Icon name="diagonal" size={13}/></span></span>
         </button>;
       })}</div>

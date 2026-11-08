@@ -5,7 +5,7 @@ import { readFile, stat } from 'node:fs/promises';
 import sharp from 'sharp';
 import data from '../data/catalog.json' with {type:'json'};
 import verification from '../data/photo-verification.json' with {type:'json'};
-import {photoImageSources,originalPhoto} from '../lib/photo-images.mjs';
+import {photoImageSources,originalPhoto,photoUrl} from '../lib/photo-images.mjs';
 import { initialFilters, filterCatalog, filterPhotos, photoMatches, airlinesForModel, modelsForAirline } from '../lib/filter.mjs';
 const f = extra => ({...initialFilters,...extra});
 
@@ -102,11 +102,15 @@ test('every responsive JPG has its advertised dimensions, preserves the crop and
 test('responsive images honor the base path and keep full-size downloads out of the display sources',()=>{
   for(const photo of data.photos){
     const sources=photoImageSources(photo,'/skylog');
-    assert.equal(sources.src,`/skylog${photo.image}`);
+    const revision=verification.files.find(f=>f.photo===photo.id).revision;
+    const suffix=revision ? `?v=${revision}` : '';
+    assert.equal(sources.src,`/skylog${photo.image}${suffix}`);
+    assert.equal(photoUrl(photo.thumbnail,'/skylog'),`/skylog${photo.thumbnail}${suffix}`);
     const candidates=sources.srcSet.split(', ').map(s=>s.split(' '));
     const widths=candidates.map(([,w])=>parseInt(w));
     assert.deepEqual(widths,[...new Set(widths)].sort((a,b)=>a-b));
-    assert.ok(candidates.every(([url])=>url.startsWith('/skylog/photos/')));
+    assert.ok(candidates.every(([url])=>url.startsWith('/skylog/photos/') && url.endsWith('.jpg'+suffix)));
+    if (revision) assert.equal(photoUrl(photo.image+'?retry=1','/skylog'),`/skylog${photo.image}?retry=1&v=${revision}`);
     assert.equal(sources.srcSet.includes('releases/download'),false);
     assert.ok(sources.width>0&&sources.height>0);
   }

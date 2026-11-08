@@ -1,3 +1,4 @@
+import {photoUrl} from '@/lib/photo-images.mjs';
 import {useMobileLayer} from './use-mobile-layer';
 import {LanguageSwitch,useLocale} from './locale-provider';
 import {useEffect,useMemo,useRef,useState,type ReactNode} from 'react';
@@ -10,7 +11,6 @@ type Activity='quiz'|'discovery'|'achievements';
 type Question={photo:Photo;model:string;answer:string;options:string[];profile:{description:string;source:string}};
 type Award={key:string;title:string;description:string;current:number;target:number;missing:string[];photoIds:string[];unlocked:boolean};
 type OpenPhotos=(ids:string[],index:number,onNavigate?:()=>void)=>void;
-const asset=(path:string)=>`${process.env.NEXT_PUBLIC_BASE_PATH||''}${path}`;
 
 function PlayDialog({title,eyebrow,children,onClose}:{title:string;eyebrow:string;children:ReactNode;onClose:()=>void}) {
   useMobileLayer(true,onClose);
@@ -31,7 +31,7 @@ function GamePhoto({photo,alt,scan=false,onReady}:{photo:Photo;alt:string;scan?:
   const {t}=useLocale();
   const [status,setStatus]=useState('loading'),[attempt,setAttempt]=useState(0);
   return <div className={`game-photo ${scan?'with-radar':''}`} data-ready={status==='ready'}>
-    <img key={attempt} src={`${asset(photo.image)}${attempt?`?retry=${attempt}`:''}`} alt={alt} onLoad={()=>{setStatus('ready');onReady?.(true);}} onError={()=>{setStatus('error');onReady?.(false);}}/>
+    <img key={attempt} src={photoUrl(photo.image + (attempt ? `?retry=${attempt}` : ''))} alt={alt} onLoad={()=>{setStatus('ready');onReady?.(true);}} onError={()=>{setStatus('error');onReady?.(false);}}/>
     {status==='loading'&&<div className="game-photo-status" role="status"><Icon name="camera" size={25}/><span>{t("正在加载照片…")}</span></div>}
     {status==='error'&&<div className="game-photo-status" role="alert"><span>{t("照片暂时没能加载")}</span><button onClick={()=>{setStatus('loading');setAttempt(n=>n+1);onReady?.(false);}}>{t("重新加载图片")}</button></div>}
     {status==='ready'&&scan&&<div className="radar-reveal" aria-hidden="true"><div className="radar-disc"><i/><b/><span><Icon name="aircraft" size={28}/></span></div></div>}
@@ -57,7 +57,7 @@ function Quiz({aircraft,photos,onPhotos}:{aircraft:Entry[];photos:Photo[];onPhot
   const question=questions[index],score=quizScore(questions,answers);
   if(finished)return <div className="quiz-results">
     <div className="quiz-score"><span className="eyebrow">ROUND COMPLETE</span><strong>{score}<small> / {questions.length}</small></strong><h3 ref={questionHeading} tabIndex={-1}>{score===questions.length?t("识机达人，全对！"):t("又多认识了几位天空朋友。")}</h3><p>{t("点击照片，可以继续查看具体型号与拍摄细节。")}</p></div>
-    <div className="quiz-review">{questions.map((q,i)=><button key={q.photo.id} onClick={()=>onPhotos(questions.map(item=>item.photo.id),i)}><img src={asset(q.photo.thumbnail)} alt=""/><span><strong><Icon name={answers[i]===q.answer?'check':'close'} size={15}/>{t(q.answer)}</strong><small>{q.model} · {answers[i]===q.answer?t("答对了"):t("你选了 {0}",[t(answers[i])])}</small></span><Icon name="diagonal" size={16}/></button>)}</div>
+    <div className="quiz-review">{questions.map((q,i)=><button key={q.photo.id} onClick={()=>onPhotos(questions.map(item=>item.photo.id),i)}><img src={photoUrl(q.photo.thumbnail)} alt=""/><span><strong><Icon name={answers[i]===q.answer?'check':'close'} size={15}/>{t(q.answer)}</strong><small>{q.model} · {answers[i]===q.answer?t("答对了"):t("你选了 {0}",[t(answers[i])])}</small></span><Icon name="diagonal" size={16}/></button>)}</div>
     <button className="play-primary" onClick={restart}><Icon name="play" size={16}/>{t("再玩一轮")}</button>
   </div>;
   return <div className="quiz-body">
@@ -100,7 +100,7 @@ function Achievements({awards,photos,onPhotos}:{awards:Award[];photos:Photo[];on
     <div className="award-filters status-tabs" role="group" aria-label={t("成就状态筛选")}>{[['all',t("全部")],['unlocked',t("已解锁")],['locked',t("待解锁")]].map(([value,label])=><button key={value} aria-pressed={status===value} onClick={()=>setStatus(value)}>{label}<span>{awards.filter(a=>value==='all'||a.unlocked===(value==='unlocked')).length}</span></button>)}</div>
     <div className="award-grid" aria-label={t("航空收藏成就")}>{visible.map(a=><button key={a.key} className={`award-card ${a.unlocked?'is-unlocked':''}`} aria-pressed={award?.key===a.key} aria-controls="achievement-detail" onClick={()=>{setSelected(a.key);detail.current?.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});}}><span className="award-symbol"><Icon name={a.unlocked?'award':'lock'} size={25}/></span><strong>{t(a.title)}</strong><span>{a.unlocked?t("已解锁"):t("{0} / {1} · 进行中",[a.current,a.target])}</span><progress value={Math.min(a.current,a.target)} max={a.target} aria-label={`${t(a.title)} ${Math.min(a.current,a.target)} / ${a.target}`}/></button>)}</div>
     {award?<section ref={detail} id="achievement-detail" className="award-detail" aria-live="polite"><div className="award-detail-heading"><div><span className="eyebrow">{award.unlocked?'COLLECTED':'NEXT ON YOUR RADAR'}</span><h3>{t(award.title)}</h3></div><span>{Math.min(award.current,award.target)} / {award.target}</span></div><p>{t(award.description)}</p>{award.missing.length>0&&<p className="award-missing">{t("还差：")}{award.missing.map(s=>t(s)).join(locale==='en'?', ':'、')}</p>}
-      {award.photoIds.length>0?<><div className="award-photos">{award.photoIds.slice(0,4).map((id,i)=>{const p=byId.get(id)!;return <button key={id} onClick={()=>onPhotos(award.photoIds,i)} aria-label={t("查看成就照片 {0}，{1}",[p.id,p.models.join(' / ')])}><img src={asset(p.thumbnail)} alt={p.models.join(' / ')} loading="lazy"/></button>;})}</div><button className="play-secondary" onClick={()=>onPhotos(award.photoIds,0)}>{t("查看关联照片 ·")}{award.photoIds.length} {t("张")}<Icon name="arrow" size={15}/></button></>:<p className="play-note">{t("还没有符合条件的照片，留给下一次相遇。")}</p>}
+      {award.photoIds.length>0?<><div className="award-photos">{award.photoIds.slice(0,4).map((id,i)=>{const p=byId.get(id)!;return <button key={id} onClick={()=>onPhotos(award.photoIds,i)} aria-label={t("查看成就照片 {0}，{1}",[p.id,p.models.join(' / ')])}><img src={photoUrl(p.thumbnail)} alt={p.models.join(' / ')} loading="lazy"/></button>;})}</div><button className="play-secondary" onClick={()=>onPhotos(award.photoIds,0)}>{t("查看关联照片 ·")}{award.photoIds.length} {t("张")}<Icon name="arrow" size={15}/></button></>:<p className="play-note">{t("还没有符合条件的照片，留给下一次相遇。")}</p>}
     </section>:<p className="play-empty" role="status">{status==='locked'?t("全部成就都已解锁，收藏继续。"):t("还没有已解锁成就，下一次相遇就是开始。")}</p>}<p className="play-note">{t("成就根据当前图鉴自动计算；涉及同一架飞机的成就只采用已确认注册号。补拍目标不代表当前 YYZ／YVR 有定期航班。")}</p>
   </div>;
 }
