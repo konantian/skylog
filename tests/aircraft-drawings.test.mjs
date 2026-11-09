@@ -58,6 +58,19 @@ test('reference SVGs render visible geometry and contain no embedded external co
   }
 });
 
+test('every reference drawing resolves to a bundled high-density preview offline', async () => {
+  const registry = fs.readFileSync('apps/mobile/src/generated/drawings.ts', 'utf8');
+  for (const [model, spec] of Object.entries(drawings)) {
+    if (!spec.asset) continue;
+    const filename = path.basename(spec.asset, '.svg') + '.png';
+    assert(registry.includes(`${JSON.stringify(model)}: require("../../assets/drawings/${filename}")`), model);
+    const image = await sharp(path.join('apps/mobile/assets/drawings', filename)).metadata();
+    assert.equal(image.format, 'png', model);
+    assert.equal(image.width, 1800, model);
+    assert(image.hasAlpha, model);
+  }
+});
+
 test('card silhouettes do not load technical drawings',()=>{
   const preview=fs.readFileSync('components/plane-silhouette.tsx','utf8');
   assert.doesNotMatch(preview,/aircraftDrawing|\/aircraft\/|<image/);

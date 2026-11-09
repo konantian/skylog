@@ -10,6 +10,8 @@ import {
   type StyleProp,
   type ColorValue,
   ScrollView,
+  FlatList,
+  type FlatListProps,
 } from "react-native";
 import { Image } from "expo-image";
 import Ionicons from "@expo/vector-icons/Ionicons";
@@ -177,25 +179,43 @@ export function Card({
     </View>
   );
 }
-export function Page({ children }: { children: React.ReactNode }) {
+function usePageLayout() {
   const { colors } = useApp();
   const insets = useSafeAreaInsets();
+  return {
+    style: { flex: 1, backgroundColor: colors.bg },
+    contentContainerStyle: {
+      padding: 20,
+      paddingBottom: Math.max(32, insets.bottom + 20),
+      gap: 20,
+      maxWidth: 900,
+      width: "100%" as const,
+      alignSelf: "center" as const,
+    },
+    keyboardShouldPersistTaps: "handled" as const,
+    keyboardDismissMode: "on-drag" as const,
+  };
+}
+
+export function Page({ children }: { children: React.ReactNode }) {
+  return <ScrollView {...usePageLayout()}>{children}</ScrollView>;
+}
+
+export function DetailList<Item>({
+  children,
+  ...props
+}: Pick<FlatListProps<Item>, "data" | "renderItem" | "keyExtractor" | "ListEmptyComponent" | "ListFooterComponent"> & {
+  children: React.ReactNode;
+}) {
   return (
-    <ScrollView
-      style={{ flex: 1, backgroundColor: colors.bg }}
-      contentContainerStyle={{
-        padding: 20,
-        paddingBottom: Math.max(32, insets.bottom + 20),
-        gap: 20,
-        maxWidth: 900,
-        width: "100%",
-        alignSelf: "center",
-      }}
-      keyboardShouldPersistTaps="handled"
-      keyboardDismissMode="on-drag"
-    >
-      {children}
-    </ScrollView>
+    <FlatList<Item>
+      {...usePageLayout()}
+      {...props}
+      initialNumToRender={2}
+      maxToRenderPerBatch={2}
+      windowSize={5}
+      ListHeaderComponent={<View style={{ gap: 20 }}>{children}</View>}
+    />
   );
 }
 export function Section({
@@ -253,7 +273,7 @@ export function PhotoImage({
           onLoad={() => setLoaded(true)}
           onError={() => setFailed(true)}
         />
-      )}{" "}
+      )}
       {!loaded && !failed && (
         <View
           pointerEvents="none"

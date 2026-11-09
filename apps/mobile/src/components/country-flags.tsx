@@ -1,7 +1,7 @@
 import { View } from "react-native";
-import { SvgXml } from "react-native-svg";
+import { Image } from "expo-image";
 import countries from "../../../../data/country-flags.json";
-import flags from "../generated/flags.json";
+import flags from "../generated/flags";
 
 export function CountryFlags({
   country,
@@ -28,21 +28,12 @@ export function CountryFlags({
       }}
     >
       {codes.map((code) => (
-        <View
+        <Image
           key={code}
-          style={{
-            width: size,
-            height: size * 0.75,
-            borderRadius: 2,
-            overflow: "hidden",
-          }}
-        >
-          <SvgXml
-            xml={(flags as Record<string, string>)[code]}
-            width={size}
-            height={size * 0.75}
-          />
-        </View>
+          source={flags[code]}
+          style={{ width: size, height: size * 0.75, borderRadius: 2 }}
+          contentFit="contain"
+        />
       ))}
     </View>
   );

@@ -11,6 +11,7 @@ import {
 } from "../../lib/catalog";
 import {
   Page,
+  DetailList,
   Txt,
   Card,
   Section,
@@ -50,7 +51,30 @@ export default function AirlineDetail() {
     covers.preferredPhotos,
   );
   return (
-    <Page>
+    <DetailList
+      data={collection.groups}
+      keyExtractor={(group) => JSON.stringify([group.model, group.livery])}
+      renderItem={({ item: group }) => (
+        <View style={{ gap: 8 }}>
+          <Txt style={{ fontWeight: "600" }}>
+            {aircraftName(group.model, locale)} · {t(group.livery)}
+          </Txt>
+          <PhotoCard
+            photo={group.cover}
+            onOpen={() => openPhoto(group.cover.id, group.photoIds)}
+          />
+          <Button
+            secondary
+            title={t("查看 {0} · {1}，{2} 张照片", [
+              aircraftName(group.model, locale),
+              t(group.livery),
+              group.photoIds.length,
+            ])}
+            onPress={() => openPhoto(group.cover.id, group.photoIds)}
+          />
+        </View>
+      )}
+    >
       <Stack.Screen options={{ title: airlineName(entry.name, locale) }} />
       {collection.cover && <PhotoImage photo={collection.cover} height={230} />}
       <Section
@@ -118,26 +142,6 @@ export default function AirlineDetail() {
         </Card>
       )}
       <Section title={t("我的机型与涂装收藏")} />
-      {collection.groups.map((group) => (
-        <View key={`${group.model}:${group.livery}`} style={{ gap: 8 }}>
-          <Txt style={{ fontWeight: "600" }}>
-            {aircraftName(group.model, locale)} · {t(group.livery)}
-          </Txt>
-          <PhotoCard
-            photo={group.cover}
-            onOpen={() => openPhoto(group.cover.id, group.photoIds)}
-          />
-          <Button
-            secondary
-            title={t("查看 {0} · {1}，{2} 张照片", [
-              aircraftName(group.model, locale),
-              t(group.livery),
-              group.photoIds.length,
-            ])}
-            onPress={() => openPhoto(group.cover.id, group.photoIds)}
-          />
-        </View>
-      ))}
-    </Page>
+    </DetailList>
   );
 }

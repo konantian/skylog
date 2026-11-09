@@ -1,8 +1,8 @@
 import { View } from "react-native";
 import { Stack, useLocalSearchParams, router } from "expo-router";
-import { SvgXml } from "react-native-svg";
+import { Image } from "expo-image";
 import { aircraftDrawing } from "../../../../../lib/aircraft-drawings.mjs";
-import drawings from "../../generated/drawings.json";
+import drawings from "../../generated/drawings";
 import { useApp } from "../../lib/store";
 import { aircraftName } from "../../lib/flight-labels";
 import {
@@ -15,6 +15,7 @@ import {
 } from "../../lib/catalog";
 import {
   Page,
+  DetailList,
   Txt,
   Card,
   Section,
@@ -37,7 +38,7 @@ export default function AircraftDetail() {
   const modelPhotos = photos.filter((p) => entry.photoIds.includes(p.id));
   const groups = groupModelVariants(entry, modelPhotos, airlines);
   const drawing = aircraftDrawing(entry.name);
-  const xml = (drawings as Record<string, string>)[entry.name];
+  const diagram = drawings[entry.name];
   const family = (
     aircraftProfiles.families as Record<
       string,
@@ -45,7 +46,24 @@ export default function AircraftDetail() {
     >
   )[entry.family || ""];
   return (
-    <Page>
+    <DetailList
+      data={groups}
+      keyExtractor={(group) => group.id}
+      renderItem={({ item }) => <EntryCard entry={item} />}
+      ListEmptyComponent={
+        <Txt muted>{words("A future encounter belongs here.", "下一次相遇，留给它。")}</Txt>
+      }
+      ListFooterComponent={
+        <Button
+          secondary
+          title={words("Browse all photographs", "查看全部照片")}
+          onPress={() => {
+            setFilters("photos", { ...initialFilters, model: entry.name });
+            router.push("/(tabs)/photos");
+          }}
+        />
+      }
+    >
       <Stack.Screen
         options={{ title: entry.shortName || aircraftName(entry.name, locale) }}
       />
@@ -54,9 +72,15 @@ export default function AircraftDetail() {
         caption={`${aircraftName(entry.manufacturer || "", locale)} · ${entry.family}`}
       />
       <Txt muted>{t(entry.category)}</Txt>
-      {xml && drawing?.status === "reference" ? (
+      {diagram && drawing?.status === "reference" ? (
         <Card>
-          <SvgXml xml={xml} width="100%" height={190} />
+          <Image
+            source={diagram}
+            contentFit="contain"
+            style={{ width: "100%", height: 190 }}
+            accessible
+            accessibilityLabel={aircraftName(entry.name, locale)}
+          />
           <View style={styles.wrap}>
             <Stat value={`${drawing.length} m`} label={t("机长")} />
             <Stat value={`${drawing.span} m`} label={t("翼展")} />
@@ -87,21 +111,6 @@ export default function AircraftDetail() {
         </Txt>
       </Card>
       <Section title={words("Airlines & liveries", "航司与涂装")} />
-      {groups.length ? (
-        groups.map((group) => <EntryCard key={group.id} entry={group} />)
-      ) : (
-        <Txt muted>
-          {words("A future encounter belongs here.", "下一次相遇，留给它。")}
-        </Txt>
-      )}
-      <Button
-        secondary
-        title={words("Browse all photographs", "查看全部照片")}
-        onPress={() => {
-          setFilters("photos", { ...initialFilters, model: entry.name });
-          router.push("/(tabs)/photos");
-        }}
-      />
-    </Page>
+    </DetailList>
   );
 }

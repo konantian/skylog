@@ -69,7 +69,7 @@ Airport IANA time zones and ICAO codes are matched by IATA and coordinates from 
 
 ## Data and checks
 
-`src/generated/drawings.json` comes from the repository's technical drawings. Regenerate via `npm run assets:prepare` after editing those drawings (also runs before start/export).
+Run `npm run assets:prepare` after changing a technical drawing or country flag. It renders offline PNGs from the web SVG sources and generates their Metro asset maps. Commit the assets and maps together.
 
 Regenerate app icon and launch-screen SVG/PNG assets with `node scripts/prepare-branding.mjs` from this directory (uses the root workspace's Sharp dependency). Icon/splash config changes need a native prebuild/rebuild; they cannot be delivered with a JavaScript-only update.
 
