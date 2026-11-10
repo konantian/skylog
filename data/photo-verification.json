@@ -8406,20 +8406,20 @@
     },
     {
       "photo": "DSC01782",
-      "imageBytes": 445161,
+      "imageBytes": 458506,
       "width": 3200,
       "height": 1860,
-      "mediumBytes": 100269,
+      "mediumBytes": 104450,
       "mediumWidth": 1600,
-      "thumbnailBytes": 26767,
+      "thumbnailBytes": 27952,
       "thumbnailWidth": 800,
       "original": {
-        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-08-side-light-hq/DSC01782.jpg",
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-09-hainan-01782-hq/DSC01782.jpg",
         "width": 4520,
         "height": 2627,
-        "bytes": 884758
+        "bytes": 898251
       },
-      "revision": "87c65e5fb206"
+      "revision": "d6ce9d815ff9"
     },
     {
       "photo": "DSC01786",
