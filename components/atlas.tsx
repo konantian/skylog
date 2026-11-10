@@ -9,6 +9,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import data from '@/data/catalog.json';
 import flightData from '@/data/flights.json';
 import heroIds from '@/data/hero-selections.json';
+import {shuffle} from '@/lib/play.mjs';
 import { HeroGallery } from './hero-gallery';
 import { VisitCounter } from './visit-counter';
 import { AircraftProfile, PhotoIdentity, FlownDetails } from './collection-details';
@@ -90,9 +91,11 @@ export default function Atlas() {
   const dialog = useRef<HTMLDialogElement>(null);
   const collection = useRef<HTMLElement>(null);
   const detailReturnY = useRef<number|null>(null);
-  const heroPhotos = heroIds.map(id=>byId.get(id)!);
+  const [heroOrder,setHeroOrder] = useState(heroIds);
+  const heroPhotos = heroOrder.map(id=>byId.get(id)!);
 
   useEffect(() => {
+    setHeroOrder(shuffle(heroIds));
     try {
       const saved = localStorage.getItem('skylog-theme');
       if(saved==='light') {setTheme('light');document.documentElement.dataset.theme='light';}
@@ -285,7 +288,7 @@ export default function Atlas() {
     <main>
       <section className="hero wrap" aria-labelledby="hero-title">
         <div className="hero-copy"><div className="eyebrow"><span className="dash"/> THE SKY IS THE COLLECTION</div><h1 id="hero-title">{t("每一次抬头，")}<br/>{t("都是")}<span>{t("新的发现。")}</span></h1><p>{t("追逐天空，收藏相遇。")}<br/>{t("一个飞友的机型、摄影与乘机记录。")}</p><button className="explore-button" onClick={() => switchMode(mode,true)}>{t("探索我的图鉴")}<Icon name="arrow" size={19}/></button><div className="hero-location"><Icon name="pin" size={14}/><span>YYZ · TORONTO</span><span className="route-dots">········</span><span>YVR · VANCOUVER</span></div></div>
-        <HeroGallery photos={heroPhotos} onPhoto={index=>openDetail({ids:heroIds,index})}/>
+        <HeroGallery key={heroOrder.join(',')} photos={heroPhotos} onPhoto={index=>openDetail({ids:heroOrder,index})}/>
         <div className="flyby" key={flight} aria-hidden="true"><div className="flying-plane"><FlyPlane/></div></div>
       </section>
       <div className="stats wrap">

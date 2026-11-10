@@ -26,7 +26,7 @@ A personal aircraft, airline, and photography collection built with Next.js. All
 - An optional journey replay by year, with chronological great-circle routes, an animated aircraft, pause/resume, flight skipping, scrubbing, and 1×/2×/4× cruise speed. Departure and arrival transitions retain their timing at higher speeds. Desktop uses gentle camera following; mobile holds the camera steady within each leg. Background tabs pause playback and reduced-motion users get a static, navigable preview. Paths and durations are illustrative, not recorded tracks or real flight times.
 - Ice-blue accents on deep navy, with a darker accessible blue in the light theme.
 - A photography timeline of first collected models and airlines, plus date-matched camera settings in all 441 photo details.
-- Ten selected photographs in the homepage carousel, with automatic rotation, pause/previous/next controls, and native horizontal swipe. Rotation pauses offscreen, in background tabs, while hovered, and after manual navigation; reduced-motion preference disables automatic rotation.
+- Ten selected photographs in the homepage carousel, shuffled on each page load while retaining that order in the photo viewer, with automatic rotation, pause/previous/next controls, and native horizontal swipe. Rotation pauses offscreen, in background tabs, while hovered, and after manual navigation; reduced-motion preference disables automatic rotation.
 - Scroll-triggered card entrances, route drawing, timeline accents, and a small aircraft showing page progress. Native scrolling is preserved, visited items stay readable, and reduced-motion users receive the static content.
 
 ## Run locally

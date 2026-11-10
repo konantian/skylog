@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import { shuffle } from "../../../../../lib/play.mjs";
 import { View, FlatList, Pressable, useWindowDimensions } from "react-native";
 import { router } from "expo-router";
 import { openPhoto, usePhotoReturn } from "../../lib/photo-navigation";
@@ -30,6 +31,7 @@ export default function Home() {
   const { width } = useWindowDimensions();
   const cardWidth = Math.min(width - 40, 860);
   const [index, setIndex] = useState(0);
+  const [heroPhotos] = useState<Photo[]>(() => shuffle(heroes));
   const list = useRef<FlatList<Photo>>(null);
   const upcoming = [...flights]
     .filter((f) => f.status === "planned")
@@ -40,7 +42,7 @@ export default function Home() {
     list.current?.scrollToIndex({ index: i, animated: true });
   };
   const origin = usePhotoReturn((id) => {
-    const i = heroes.findIndex((p) => p.id === id);
+    const i = heroPhotos.findIndex((p) => p.id === id);
     if (i >= 0) select(i);
   });
   return (
@@ -62,7 +64,7 @@ export default function Home() {
       <View>
         <FlatList
           ref={list}
-          data={heroes}
+          data={heroPhotos}
           horizontal
           pagingEnabled
           showsHorizontalScrollIndicator={false}
@@ -82,7 +84,7 @@ export default function Home() {
               onPress={() =>
                 openPhoto(
                   item.id,
-                  heroes.map((p) => p.id),
+                  heroPhotos.map((p) => p.id),
                   origin,
                 )
               }
