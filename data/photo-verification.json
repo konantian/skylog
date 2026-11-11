@@ -9088,19 +9088,19 @@
     {
       "photo": "DSC02000",
       "width": 3200,
-      "height": 1199,
-      "imageBytes": 255941,
-      "mediumBytes": 53535,
+      "height": 1800,
+      "imageBytes": 670326,
+      "mediumBytes": 151702,
       "mediumWidth": 1600,
-      "thumbnailBytes": 15180,
+      "thumbnailBytes": 35505,
       "thumbnailWidth": 800,
       "original": {
-        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-10-sky-blue-hq/DSC02000.jpg",
-        "width": 5903,
-        "height": 2212,
-        "bytes": 1119678
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-10-recrop-hq/DSC02000.jpg",
+        "width": 6000,
+        "height": 3375,
+        "bytes": 2483382
       },
-      "revision": "8a1b56d5d7e6"
+      "revision": "fea295839fdd"
     },
     {
       "photo": "DSC02010",
@@ -9292,19 +9292,19 @@
     {
       "photo": "DSC02134",
       "width": 3200,
-      "height": 1806,
-      "imageBytes": 403340,
-      "mediumBytes": 71352,
+      "height": 1655,
+      "imageBytes": 345916,
+      "mediumBytes": 62822,
       "mediumWidth": 1600,
-      "thumbnailBytes": 19931,
+      "thumbnailBytes": 17527,
       "thumbnailWidth": 800,
       "original": {
-        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-10-sky-blue-hq/DSC02134.jpg",
-        "width": 5124,
-        "height": 2892,
-        "bytes": 1310241
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-10-recrop-hq/DSC02134.jpg",
+        "width": 5750,
+        "height": 2973,
+        "bytes": 1527636
       },
-      "revision": "7b3d4b001098"
+      "revision": "8fb93c309697"
     },
     {
       "photo": "DSC02138",
@@ -9513,19 +9513,19 @@
     {
       "photo": "DSC02256",
       "width": 3200,
-      "height": 1808,
-      "imageBytes": 319874,
-      "mediumBytes": 64259,
+      "height": 1800,
+      "imageBytes": 297877,
+      "mediumBytes": 62470,
       "mediumWidth": 1600,
-      "thumbnailBytes": 18015,
+      "thumbnailBytes": 17642,
       "thumbnailWidth": 800,
       "original": {
-        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-10-sky-blue-hq/DSC02256.jpg",
-        "width": 5064,
-        "height": 2861,
-        "bytes": 973261
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-10-recrop-hq/DSC02256.jpg",
+        "width": 5299,
+        "height": 2981,
+        "bytes": 1012708
       },
-      "revision": "6cc359c695f2"
+      "revision": "cc9889df1510"
     },
     {
       "photo": "DSC02267",
