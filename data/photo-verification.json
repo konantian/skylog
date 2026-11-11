@@ -8134,19 +8134,20 @@
     },
     {
       "photo": "DSC01523",
-      "imageBytes": 542511,
+      "imageBytes": 551527,
       "width": 3200,
       "height": 1800,
-      "mediumBytes": 100342,
+      "mediumBytes": 100261,
       "mediumWidth": 1600,
-      "thumbnailBytes": 26951,
+      "thumbnailBytes": 26876,
       "thumbnailWidth": 800,
       "original": {
-        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-07-hq/DSC01523.jpg",
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-11-dsc01523-bright-hq/DSC01523.jpg",
         "width": 6000,
         "height": 3375,
-        "bytes": 2280021
-      }
+        "bytes": 2298459
+      },
+      "revision": "e1c010f9d534"
     },
     {
       "photo": "DSC01539",

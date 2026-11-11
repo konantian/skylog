@@ -1,6 +1,6 @@
 {
   "name": "skylog-mobile",
-  "version": "1.1.19",
+  "version": "1.1.20",
   "main": "expo-router/entry",
   "dependencies": {
     "@expo/ui": "~57.0.26",
