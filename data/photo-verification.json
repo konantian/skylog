@@ -9633,18 +9633,18 @@
       "photo": "DSC02353",
       "width": 3200,
       "height": 1756,
-      "imageBytes": 397076,
-      "mediumBytes": 62614,
+      "imageBytes": 396788,
+      "mediumBytes": 62379,
       "mediumWidth": 1600,
-      "thumbnailBytes": 17012,
+      "thumbnailBytes": 16947,
       "thumbnailWidth": 800,
       "original": {
-        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-10-hq/DSC02353.jpg",
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-10-sky-fix-hq/DSC02353.jpg",
         "width": 5183,
         "height": 2844,
-        "bytes": 1440455
+        "bytes": 1441396
       },
-      "revision": "291b97635d97"
+      "revision": "8114237e44ed"
     },
     {
       "photo": "DSC02377",
