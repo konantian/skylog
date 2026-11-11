@@ -170,6 +170,10 @@ for name,(zh,code,country,region) in airline_info.items():
     # Prefer a photo with only this airline over a multi-aircraft ramp scene.
     common=entry_common(ids)
     cover=next((i for i in common['photoIds'] if len(next(p for p in photos if p['id']==i)['airlines'])==1), common['cover'])
+    if ids:
+        cover=cover_selections.get('airlines',{}).get(name,cover)
+        assert cover in ids, f'Invalid airline cover: {name} / {cover}'
+        common['photoIds']=[cover]+[i for i in common['photoIds'] if i!=cover]
     airlines.append({'id':slug(name),'name':name,'chineseName':zh,'code':code,'country':country,'region':region,'kind':'airline',**common,'cover':cover})
 airline_priority=['Air Canada','Lufthansa','Emirates','SWISS','Qantas','Japan Airlines','Cathay Pacific','ANA','Fiji Airways']
 airlines.sort(key=lambda a:(airline_priority.index(a['name']) if a['name'] in airline_priority else 99,not a['unlocked'],a['name']))

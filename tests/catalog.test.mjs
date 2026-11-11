@@ -152,11 +152,13 @@ test('multi-aircraft ramp images retain each visible airline/model pair without 
   assert.deepEqual(modelsForAirline(single,'Air Canada'),[]);
 });
 
-test('every unlocked aircraft uses its visually selected cover',async()=>{
+test('every unlocked aircraft and airline uses its visually selected cover',async()=>{
   const covers=JSON.parse(await readFile('data/cover-selections.json','utf8'));
-  for(const entry of data.aircraft.filter(e=>e.unlocked)){
-    assert.equal(entry.cover,covers.aircraft[entry.name]);
-    assert.equal(entry.photoIds[0],entry.cover);
+  for(const kind of ['aircraft','airlines']){
+    for(const entry of data[kind].filter(e=>e.unlocked)){
+      assert.equal(entry.cover,covers[kind][entry.name]);
+      assert.equal(entry.photoIds[0],entry.cover);
+    }
   }
 });
 
