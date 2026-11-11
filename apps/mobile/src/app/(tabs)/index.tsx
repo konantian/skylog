@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { shuffle } from "../../../../../lib/play.mjs";
+import { collectionAchievements, shuffle } from "../../../../../lib/play.mjs";
 import { View, FlatList, Pressable, useWindowDimensions } from "react-native";
 import { router } from "expo-router";
 import { openPhoto, usePhotoReturn } from "../../lib/photo-navigation";
@@ -28,6 +28,7 @@ import {
 } from "../../components/ui";
 export default function Home() {
   const { words, t, locale, completed, saved, flights } = useApp();
+  const awards = collectionAchievements(aircraft, airlines, photos, completed, locale);
   const { width } = useWindowDimensions();
   const cardWidth = Math.min(width - 40, 860);
   const [index, setIndex] = useState(0);
@@ -148,6 +149,12 @@ export default function Home() {
           <Stat value={completed.length} label={t("乘坐航段")} />
         </View>
       </Card>
+      <Button
+        secondary
+        title={`${t("航空收藏成就")} · ${awards.filter(a => a.unlocked).length} / ${awards.length}`}
+        icon="ribbon-outline"
+        onPress={() => router.push("/achievements")}
+      />
       <Button
         secondary
         title={words("My flight passport", "我的飞行护照")}

@@ -100,8 +100,14 @@ test('English livery and category searches use the same photographs and source f
 test('achievement language never changes progress, photo associations or unlock decisions',()=>{
   const zh=collectionAchievements(catalog.aircraft,catalog.airlines,catalog.photos,flightData.flights);
   const en=collectionAchievements(catalog.aircraft,catalog.airlines,catalog.photos,flightData.flights,'en');
-  assert.deepEqual(en.map(({description,...a})=>a),zh.map(({description,...a})=>a));
-  for(const award of en){assert.equal(han(translate('en',award.title)),false);assert.equal(han(translate('en',award.description)),false);}
+  const facts=({description,currentLabel,nextLabel,stages,...a})=>({...a,stages:stages.map(({label,...stage})=>stage)});
+  assert.deepEqual(en.map(facts),zh.map(facts));
+  for(const award of en){
+    assert.equal(han(translate('en',award.title)),false);assert.equal(han(translate('en',award.description)),false);
+    assert.equal(han(award.currentLabel),false);assert.equal(han(award.nextLabel||''),false);
+    assert.ok(award.stages.every(s=>!han(s.label)));
+  }
+  assert.equal(en.find(a=>a.key==='a380').currentLabel,'1 aircraft type');
 });
 
 test('English share cards translate liveries and display labels in both orientations',async()=>{

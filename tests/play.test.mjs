@@ -41,7 +41,7 @@ test('discovery has no repeats within a deck or at the boundary between decks',(
 });
 test('achievements use photographic unlocks and confirmed exact-airframe matches',()=>{
   const awards=collectionAchievements(aircraft,airlines,photos,log.flights);
-  assert.equal(awards.length,15);
+  assert.equal(awards.length,18);
   assert.equal(awards.find(a=>a.key==='787').current,3);
   assert.deepEqual(awards.find(a=>a.key==='777').missing,['Boeing 777-200ER']);
   assert.equal(awards.find(a=>a.key==='fifty-airlines').current,52);
@@ -51,6 +51,39 @@ test('achievements use photographic unlocks and confirmed exact-airframe matches
   sample[0].registration.status='confirmed';
   assert.equal(collectionAchievements([],[],sample,[{registration:'TEST'}]).find(a=>a.key==='same-airframe').unlocked,true);
   assert.ok(collectionAchievements([],[],[],[]).every(a=>!a.unlocked&&a.current===0));
+});
+
+test('milestones retain earned achievements, show real totals and advance only at each threshold',()=>{
+  const photo=i=>({id:String(i),models:[],airlines:[],airport:'YYZ'});
+  for(const [count,unlocked,next,progress] of [[99,false,100,100],[100,true,500,500],[499,true,500,500],[500,true,1000,1000],[999,true,1000,1000],[1000,true,null,1000],[1001,true,null,1000]]){
+    const a=collectionAchievements([],[],Array.from({length:count},(_,i)=>photo(i)),[]).find(a=>a.key==='century');
+    assert.equal(a.current,count);assert.equal(a.target,100);assert.equal(a.unlocked,unlocked);
+    assert.equal(a.nextTarget,next);assert.equal(a.progressTarget,progress);
+    assert.equal(a.currentLabel,`${count} 张照片`);
+    assert.deepEqual(a.stages.map(s=>s.unlocked),[100,500,1000].map(target=>count>=target));
+  }
+  const current=collectionAchievements(aircraft,airlines,photos,log.flights);
+  const expected={'century':[586,1000],'fifty-airlines':[52,75],'same-airframe':[13,20],'two-airport-reunion':[4,5],'model-collector':[56,75],'airframe-collector':[322,500],'three-encounters':[4,5]};
+  for(const [key,[count,next]] of Object.entries(expected)){
+    const a=current.find(a=>a.key===key);assert.equal(a.current,count,key);assert.equal(a.nextTarget,next,key);
+  }
+  assert.equal(current.filter(a=>a.unlocked).length,12);
+});
+
+test('airframe collectors and three encounters require confirmed registrations and distinct valid shooting dates',()=>{
+  const p=(id,reg,date,status='confirmed')=>({id,airport:'YYZ',models:[],airlines:[],date,registration:{value:reg,status}});
+  const rows=[p('A','C-ONE','2026-11-01'),p('B',' c-one ','2026-11-01'),p('C','C-ONE','2026-11-02'),p('D','C-ONE','2026-11-03','inferred'),p('E','C-TWO','2026-11-03'),p('F','','2026-11-03'),p('G','   ','2026-11-03'),p('H','C-ONE','2026-11-31'),p('I','C-ONE','')];
+  const awards=ps=>collectionAchievements([],[],ps,[]);
+  const find=(ps,key)=>awards(ps).find(a=>a.key===key);
+  assert.equal(find(rows,'airframe-collector').current,2);
+  assert.equal(find(rows,'three-encounters').current,0);
+  rows.push(p('J','C-ONE','2026-11-03'));
+  const three=find(rows,'three-encounters');assert.equal(three.current,1);assert.equal(three.unlocked,true);
+  assert.ok(three.photoIds.includes('J'));assert.ok(!three.photoIds.some(id=>['D','E','F','G'].includes(id)));
+  const known=[{name:'One',unlocked:true,cover:'A'},{name:'One',unlocked:true,cover:'B'},{name:'Two',unlocked:false}];
+  assert.equal(collectionAchievements(known,[],rows,[]).find(a=>a.key==='model-collector').current,1);
+  assert.equal(collectionAchievements([],[],rows,[{registration:'c-one',status:'planned'},{registration:'C-TWO',status:'cancelled'}]).find(a=>a.key==='same-airframe').current,0);
+  assert.equal(collectionAchievements([],[],rows,[{registration:'c-one',status:'completed'}]).find(a=>a.key==='same-airframe').current,1);
 });
 test('new family goals count distinct families and keep passenger and cargo aircraft separate',()=>{
   const awards=collectionAchievements(aircraft,airlines,photos,log.flights);

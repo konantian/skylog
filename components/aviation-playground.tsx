@@ -9,7 +9,7 @@ import {Icon} from './icons';
 
 type Activity='quiz'|'discovery'|'achievements';
 type Question={photo:Photo;model:string;answer:string;options:string[];profile:{description:string;source:string}};
-type Award={key:string;title:string;description:string;current:number;target:number;missing:string[];photoIds:string[];unlocked:boolean};
+type Award=ReturnType<typeof collectionAchievements>[number];
 type OpenPhotos=(ids:string[],index:number,onNavigate?:()=>void)=>void;
 
 function PlayDialog({title,eyebrow,children,onClose}:{title:string;eyebrow:string;children:ReactNode;onClose:()=>void}) {
@@ -93,15 +93,31 @@ function Achievements({awards,photos,onPhotos}:{awards:Award[];photos:Photo[];on
   const [selected,setSelected]=useState(awards[0].key);
   const [status,setStatus]=useState('all');
   const detail=useRef<HTMLElement>(null);
-  const visible=awards.filter(a=>status==='all'||a.unlocked===(status==='unlocked'));
+  const matches=(a:Award,value:string)=>value==='all'||(value==='progress'?a.unlocked&&a.nextTarget!==null:a.unlocked===(value==='unlocked'));
+  const visible=awards.filter(a=>matches(a,status));
   const award=visible.find(a=>a.key===selected)||visible[0];
   const byId=new Map(photos.map(p=>[p.id,p]));
-  return <div className="awards-body"><div className="awards-intro"><Icon name="award" size={34}/><div><strong>{awards.filter(a=>a.unlocked).length} / {awards.length} {t("枚成就已解锁")}</strong><p>{t("每一枚，都有你自己的照片作证。")}</p></div></div>
-    <div className="award-filters status-tabs" role="group" aria-label={t("成就状态筛选")}>{[['all',t("全部")],['unlocked',t("已解锁")],['locked',t("待解锁")]].map(([value,label])=><button key={value} aria-pressed={status===value} onClick={()=>setStatus(value)}>{label}<span>{awards.filter(a=>value==='all'||a.unlocked===(value==='unlocked')).length}</span></button>)}</div>
-    <div className="award-grid" aria-label={t("航空收藏成就")}>{visible.map(a=><button key={a.key} className={`award-card ${a.unlocked?'is-unlocked':''}`} aria-pressed={award?.key===a.key} aria-controls="achievement-detail" onClick={()=>{setSelected(a.key);detail.current?.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});}}><span className="award-symbol"><Icon name={a.unlocked?'award':'lock'} size={25}/></span><strong>{t(a.title)}</strong><span>{a.unlocked?t("已解锁"):t("{0} / {1} · 进行中",[a.current,a.target])}</span><progress value={Math.min(a.current,a.target)} max={a.target} aria-label={`${t(a.title)} ${Math.min(a.current,a.target)} / ${a.target}`}/></button>)}</div>
-    {award?<section ref={detail} id="achievement-detail" className="award-detail" aria-live="polite"><div className="award-detail-heading"><div><span className="eyebrow">{award.unlocked?'COLLECTED':'NEXT ON YOUR RADAR'}</span><h3>{t(award.title)}</h3></div><span>{Math.min(award.current,award.target)} / {award.target}</span></div><p>{t(award.description)}</p>{award.missing.length>0&&<p className="award-missing">{t("还差：")}{award.missing.map(s=>t(s)).join(locale==='en'?', ':'、')}</p>}
-      {award.photoIds.length>0?<><div className="award-photos">{award.photoIds.slice(0,4).map((id,i)=>{const p=byId.get(id)!;return <button key={id} onClick={()=>onPhotos(award.photoIds,i)} aria-label={t("查看成就照片 {0}，{1}",[p.id,p.models.join(' / ')])}><img src={photoUrl(p.thumbnail)} alt={p.models.join(' / ')} loading="lazy"/></button>;})}</div><button className="play-secondary" onClick={()=>onPhotos(award.photoIds,0)}>{t("查看关联照片 ·")}{award.photoIds.length} {t("张")}<Icon name="arrow" size={15}/></button></>:<p className="play-note">{t("还没有符合条件的照片，留给下一次相遇。")}</p>}
-    </section>:<p className="play-empty" role="status">{status==='locked'?t("全部成就都已解锁，收藏继续。"):t("还没有已解锁成就，下一次相遇就是开始。")}</p>}<p className="play-note">{t("成就根据当前图鉴自动计算；涉及同一架飞机的成就只采用已确认注册号。补拍目标不代表当前 YYZ／YVR 有定期航班。")}</p>
+  return <div className="awards-body">
+    <div className="awards-intro"><Icon name="award" size={34}/><div><strong>{t("{0} / {1} 枚成就已解锁",[awards.filter(a=>a.unlocked).length,awards.length])}</strong><p>{t("每一枚，都有你自己的照片作证。")}</p><p>{t("已解锁成就会保留，继续积累可达成进阶目标。")}</p></div></div>
+    <div className="award-filters status-tabs" role="group" aria-label={t("成就状态筛选")}>
+      {[["all",t("全部")],["unlocked",t("已解锁")],["progress",t("可进阶")],["locked",t("待解锁")]].map(([value,label])=><button key={value} aria-pressed={status===value} onClick={()=>setStatus(value)}>{label}<span>{awards.filter(a=>matches(a,value)).length}</span></button>)}
+    </div>
+    <div className="award-grid" aria-label={t("航空收藏成就")}>{visible.map(a=><button key={a.key} className={`award-card ${a.unlocked?'is-unlocked':''}`} aria-pressed={award?.key===a.key} aria-controls="achievement-detail" onClick={()=>{setSelected(a.key);detail.current?.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});}}>
+      <span className="award-symbol"><Icon name={a.unlocked?'award':'lock'} size={25}/></span>
+      <strong>{t(a.title)}</strong><span>{a.unlocked?t("已解锁"):t("待解锁")}</span>
+      <span className="award-count">{t("累计：{0}",[a.currentLabel])}</span>
+      <progress value={Math.min(a.current,a.progressTarget)} max={a.progressTarget} aria-label={t(a.title)} aria-valuetext={`${a.currentLabel} · ${a.nextLabel?t("下一目标：{0}",[a.nextLabel]):t("全部阶段已达成")}`}/>
+      <span className="award-next">{a.nextLabel?t("下一目标：{0}",[a.nextLabel]):t("全部阶段已达成")}</span>
+    </button>)}</div>
+    {award?<section ref={detail} id="achievement-detail" className="award-detail" aria-live="polite">
+      <div className="award-detail-heading"><div><span className="eyebrow">{award.unlocked?'COLLECTED':'NEXT ON YOUR RADAR'}</span><h3>{t(award.title)}</h3></div><span>{award.currentLabel}</span></div>
+      <p>{t(award.description)}</p>
+      <ul className="award-stages" aria-label={t("成就阶段")}>{award.stages.map((stage:{target:number;label:string;unlocked:boolean})=><li key={stage.target} className={stage.unlocked?'is-complete':''}><Icon name={stage.unlocked?'check':'lock'} size={15}/><span>{stage.label}<small>{stage.unlocked?t("已达成"):t("待达成")}</small></span></li>)}</ul>
+      <p className="award-next-goal">{award.nextLabel?t("下一目标：{0}",[award.nextLabel]):t("全部阶段已达成")}</p>
+      {award.missing.length>0&&<p className="award-missing">{t("还差：")}{award.missing.map((s:string)=>t(s)).join(locale==='en'?', ':'、')}</p>}
+      {award.photoIds.length>0?<><div className="award-photos">{award.photoIds.slice(0,4).map((id:string,i:number)=>{const p=byId.get(id)!;return <button key={id} onClick={()=>onPhotos(award.photoIds,i)} aria-label={t("查看成就照片 {0}，{1}",[p.id,p.models.join(' / ')])}><img src={photoUrl(p.thumbnail)} alt={p.models.join(' / ')} loading="lazy"/></button>;})}</div><button className="play-secondary" onClick={()=>onPhotos(award.photoIds,0)}>{t("查看关联照片 ·")}{award.photoIds.length} {t("张")}<Icon name="arrow" size={15}/></button></>:<p className="play-note">{t("还没有符合条件的照片，留给下一次相遇。")}</p>}
+    </section>:<p className="play-empty" role="status">{t("当前筛选下没有成就。")}</p>}
+    <p className="play-note">{t("成就根据当前图鉴自动计算；涉及同一架飞机的成就只采用已确认注册号。补拍目标不代表当前 YYZ／YVR 有定期航班。")}</p>
   </div>;
 }
 
