@@ -39,9 +39,9 @@ test('all actual routes project finite endpoints and break at the map seam',()=>
 test('timeline first sightings remain global when photography is filtered',()=>{
   const moments=collectionTimeline(photos,aircraft,airlines);
   assert.equal(moments.reduce((s,m)=>s+m.photos.length,0),photos.length);
-  assert.equal(moments.reduce((s,m)=>s+m.newModels.length,0),54);
-  assert.equal(moments.reduce((s,m)=>s+m.newAirlines.length,0),51);
-  assert.equal(moments[0].cumulativeModels,54);assert.equal(moments[0].cumulativeAirlines,51);
+  assert.equal(moments.reduce((s,m)=>s+m.newModels.length,0),56);
+  assert.equal(moments.reduce((s,m)=>s+m.newAirlines.length,0),52);
+  assert.equal(moments[0].cumulativeModels,56);assert.equal(moments[0].cumulativeAirlines,52);
   const filtered=collectionTimeline(photos.filter(p=>p.date==='2026-11-01'),aircraft,airlines);
   assert.deepEqual(filtered[0].newModels,moments.find(m=>m.date===filtered[0].date).newModels);
   assert.equal(filtered[0].cumulativeAirlines,45);

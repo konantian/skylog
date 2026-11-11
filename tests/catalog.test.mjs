@@ -11,7 +11,7 @@ const f = extra => ({...initialFilters,...extra});
 
 test('all entries and photos have consistent links and unlock states',()=>{
   const ids=new Set(data.photos.map(p=>p.id));
-  assert.equal(ids.size,550);
+  assert.equal(ids.size,586);
   assert.ok(!ids.has('DSC06736'));
   assert.equal(new Set(data.aircraft.map(a=>a.id)).size,data.aircraft.length);
   for(const e of [...data.aircraft,...data.airlines]){
@@ -20,8 +20,8 @@ test('all entries and photos have consistent links and unlock states',()=>{
     assert.ok(e.cover===null||e.photoIds.includes(e.cover));
     for(const id of e.photoIds){const p=data.photos.find(p=>p.id===id);assert.ok((e.kind==='aircraft'?p.models:p.airlines).includes(e.name));}
   }
-  assert.equal(data.aircraft.filter(e=>e.unlocked).length,54);
-  assert.equal(data.airlines.filter(e=>e.unlocked).length,51);
+  assert.equal(data.aircraft.filter(e=>e.unlocked).length,56);
+  assert.equal(data.airlines.filter(e=>e.unlocked).length,52);
 });
 test('manufacturer, airline and model combine on actual photographs',()=>{
   const filters=f({manufacturer:'Airbus',airline:'Air Canada',model:'Airbus A330-300'});

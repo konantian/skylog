@@ -16298,5 +16298,1419 @@
         "https://www.flightradar24.com/data/aircraft/b-1341"
       ]
     }
+  },
+  "DSC01999": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T11:59:43-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "B-LXJ",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-lxj"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "CPA828"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T11:59:43-05:00",
+      "track": [
+        {
+          "operating_callsign": "CPA828",
+          "registration": "B-LXJ",
+          "timestamp_utc": "2026-11-10T16:59:41.617Z",
+          "lat": 43.687363,
+          "lon": -79.58528,
+          "altitude_ft": 925.0,
+          "ground_track_true_deg": 226.48,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/b-lxj"
+      ]
+    }
+  },
+  "DSC02000": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T11:59:44-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "B-LXJ",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-lxj"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "CPA828"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T11:59:44-05:00",
+      "track": [
+        {
+          "operating_callsign": "CPA828",
+          "registration": "B-LXJ",
+          "timestamp_utc": "2026-11-10T16:59:41.617Z",
+          "lat": 43.687363,
+          "lon": -79.58528,
+          "altitude_ft": 925.0,
+          "ground_track_true_deg": 226.48,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/b-lxj"
+      ]
+    }
+  },
+  "DSC02010": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T12:01:40-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "C-FCYX",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fcyx"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "ACA409"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T12:01:40-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA409",
+          "registration": "C-FCYX",
+          "timestamp_utc": "2026-11-10T17:01:37.887Z",
+          "lat": 43.686948,
+          "lon": -79.585876,
+          "altitude_ft": 900.0,
+          "ground_track_true_deg": 226.97,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-fcyx"
+      ]
+    }
+  },
+  "DSC02021": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T12:03:36-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "N272NN",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n272nn"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "ENY3606"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T12:03:36-05:00",
+      "track": [
+        {
+          "operating_callsign": "ENY3606",
+          "registration": "N272NN",
+          "timestamp_utc": "2026-11-10T17:03:37.785Z",
+          "lat": 43.686575,
+          "lon": -79.586334,
+          "altitude_ft": 925.0,
+          "ground_track_true_deg": 225.98,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/n272nn"
+      ]
+    }
+  },
+  "DSC02037": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T12:16:30-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "C-FLUJ",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fluj"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "FLE651"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T12:16:30-05:00",
+      "track": [
+        {
+          "operating_callsign": "FLE651",
+          "registration": "C-FLUJ",
+          "timestamp_utc": "2026-11-10T17:16:33.596Z",
+          "lat": 43.686356,
+          "lon": -79.586558,
+          "altitude_ft": 900.0,
+          "ground_track_true_deg": 225.28,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-fluj"
+      ]
+    }
+  },
+  "DSC02048": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T12:21:45-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "C-GYFM",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gyfm"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "ACA100"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T12:21:45-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA100",
+          "registration": "C-GYFM",
+          "timestamp_utc": "2026-11-10T17:21:39.568Z",
+          "lat": 43.690206,
+          "lon": -79.581103,
+          "altitude_ft": 975.0,
+          "ground_track_true_deg": 225.57,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-gyfm"
+      ]
+    }
+  },
+  "DSC02054": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T12:25:27-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "C-GKQL",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gkql"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "POE402"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T12:25:27-05:00",
+      "track": [
+        {
+          "operating_callsign": "POE402",
+          "registration": "C-GKQL",
+          "timestamp_utc": "2026-11-10T17:25:19.777Z",
+          "lat": 43.691345,
+          "lon": -79.579404,
+          "altitude_ft": 1050.0,
+          "ground_track_true_deg": 225.58,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-gkql"
+      ]
+    }
+  },
+  "DSC02077": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T12:38:56-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "C-GFJQ",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gfjq"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "WJA636"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T12:38:56-05:00",
+      "track": [
+        {
+          "operating_callsign": "WJA636",
+          "registration": "C-GFJQ",
+          "timestamp_utc": "2026-11-10T17:38:55.716Z",
+          "lat": 43.689042,
+          "lon": -79.582738,
+          "altitude_ft": 975.0,
+          "ground_track_true_deg": 226.65,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-gfjq"
+      ]
+    }
+  },
+  "DSC02087": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T12:43:03-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "S2-AJX",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/s2-ajx"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "BBC305"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T12:43:03-05:00",
+      "track": [
+        {
+          "operating_callsign": "BBC305",
+          "registration": "S2-AJX",
+          "timestamp_utc": "2026-11-10T17:43:07.770Z",
+          "lat": 43.686584,
+          "lon": -79.586302,
+          "altitude_ft": 875.0,
+          "ground_track_true_deg": 226.44,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/s2-ajx"
+      ]
+    }
+  },
+  "DSC02090": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T12:43:04-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "S2-AJX",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/s2-ajx"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "BBC305"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T12:43:04-05:00",
+      "track": [
+        {
+          "operating_callsign": "BBC305",
+          "registration": "S2-AJX",
+          "timestamp_utc": "2026-11-10T17:43:07.770Z",
+          "lat": 43.686584,
+          "lon": -79.586302,
+          "altitude_ft": 875.0,
+          "ground_track_true_deg": 226.44,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/s2-ajx"
+      ]
+    }
+  },
+  "DSC02104": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T12:48:14-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "C-GLRN",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-glrn"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "WJA384"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T12:48:14-05:00",
+      "track": [
+        {
+          "operating_callsign": "WJA384",
+          "registration": "C-GLRN",
+          "timestamp_utc": "2026-11-10T17:48:11.831Z",
+          "lat": 43.689972,
+          "lon": -79.58132,
+          "altitude_ft": 1000.0,
+          "ground_track_true_deg": 226.08,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-glrn"
+      ]
+    }
+  },
+  "DSC02111": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T12:58:05-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "C-GHPJ",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-ghpj"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "ROU1673"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T12:58:05-05:00",
+      "track": [
+        {
+          "operating_callsign": "ROU1673",
+          "registration": "C-GHPJ",
+          "timestamp_utc": "2026-11-10T17:58:05.970Z",
+          "lat": 43.686951,
+          "lon": -79.585855,
+          "altitude_ft": 875.0,
+          "ground_track_true_deg": 226.53,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-ghpj"
+      ]
+    }
+  },
+  "DSC02117": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T13:00:27-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "C-GTZU",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gtzu"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "ACA451"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T13:00:27-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA451",
+          "registration": "C-GTZU",
+          "timestamp_utc": "2026-11-10T18:00:21.929Z",
+          "lat": 43.689601,
+          "lon": -79.581953,
+          "altitude_ft": 1000.0,
+          "ground_track_true_deg": 226.48,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-gtzu"
+      ]
+    }
+  },
+  "DSC02134": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T13:03:34-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "B-2036",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-2036"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "CCA993"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T13:03:34-05:00",
+      "track": [
+        {
+          "operating_callsign": "CCA993",
+          "registration": "B-2036",
+          "timestamp_utc": "2026-11-10T18:03:27.750Z",
+          "lat": 43.691574,
+          "lon": -79.579148,
+          "altitude_ft": 1025.0,
+          "ground_track_true_deg": 226.11,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/b-2036"
+      ]
+    }
+  },
+  "DSC02138": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T13:03:36-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "B-2036",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-2036"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "CCA993"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T13:03:36-05:00",
+      "track": [
+        {
+          "operating_callsign": "CCA993",
+          "registration": "B-2036",
+          "timestamp_utc": "2026-11-10T18:03:27.750Z",
+          "lat": 43.691574,
+          "lon": -79.579148,
+          "altitude_ft": 1025.0,
+          "ground_track_true_deg": 226.11,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/b-2036"
+      ]
+    }
+  },
+  "DSC02151": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T13:50:11-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "N904AV",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n904av"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "TAI324"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T13:50:11-05:00",
+      "track": [
+        {
+          "operating_callsign": "TAI324",
+          "registration": "N904AV",
+          "timestamp_utc": "2026-11-10T18:50:13.931Z",
+          "lat": 43.685737,
+          "lon": -79.587577,
+          "altitude_ft": 875.0,
+          "ground_track_true_deg": 226.55,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/n904av"
+      ]
+    }
+  },
+  "DSC02161": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T13:53:46-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "N544FX",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n544fx"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "LXJ544"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T13:53:46-05:00",
+      "track": [
+        {
+          "operating_callsign": "LXJ544",
+          "registration": "N544FX",
+          "timestamp_utc": "2026-11-10T18:53:50.000Z",
+          "lat": 43.685257,
+          "lon": -79.588091,
+          "altitude_ft": 850.0,
+          "ground_track_true_deg": 227.57,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/n544fx"
+      ]
+    }
+  },
+  "DSC02170": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T13:55:24-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "C-GUSM",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gusm"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "CGUSM"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T13:55:24-05:00",
+      "track": [
+        {
+          "operating_callsign": "CGUSM",
+          "registration": "C-GUSM",
+          "timestamp_utc": "2026-11-10T18:55:31.939Z",
+          "lat": 43.683105,
+          "lon": -79.591412,
+          "altitude_ft": 800.0,
+          "ground_track_true_deg": 227.46,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-gusm"
+      ]
+    }
+  },
+  "DSC02180": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T13:57:21-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "N762DT",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n762dt"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "ENY3608"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T13:57:21-05:00",
+      "track": [
+        {
+          "operating_callsign": "ENY3608",
+          "registration": "N762DT",
+          "timestamp_utc": "2026-11-10T18:57:13.599Z",
+          "lat": 43.689787,
+          "lon": -79.581691,
+          "altitude_ft": 975.0,
+          "ground_track_true_deg": 225.0,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/n762dt"
+      ]
+    }
+  },
+  "DSC02190": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T13:58:40-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "C-FLQO",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-flqo"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "FLE640"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T13:58:40-05:00",
+      "track": [
+        {
+          "operating_callsign": "FLE640",
+          "registration": "C-FLQO",
+          "timestamp_utc": "2026-11-10T18:58:39.749Z",
+          "lat": 43.687646,
+          "lon": -79.584765,
+          "altitude_ft": 900.0,
+          "ground_track_true_deg": 226.13,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-flqo"
+      ]
+    }
+  },
+  "DSC02198": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T13:59:59-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "C-FITL",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fitl"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "ACA873"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T13:59:59-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA873",
+          "registration": "C-FITL",
+          "timestamp_utc": "2026-11-10T19:00:05.664Z",
+          "lat": 43.684899,
+          "lon": -79.588819,
+          "altitude_ft": 850.0,
+          "ground_track_true_deg": 227.36,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-fitl"
+      ]
+    }
+  },
+  "DSC02212": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T14:03:28-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "N730YX",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n730yx"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "RPA3490"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T14:03:28-05:00",
+      "track": [
+        {
+          "operating_callsign": "RPA3490",
+          "registration": "N730YX",
+          "timestamp_utc": "2026-11-10T19:03:23.275Z",
+          "lat": 43.688736,
+          "lon": -79.5833,
+          "altitude_ft": 950.0,
+          "ground_track_true_deg": 225.63,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/n730yx"
+      ]
+    }
+  },
+  "DSC02218": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T14:06:17-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "N542QS",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n542qs"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "EJA542"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T14:06:17-05:00",
+      "track": [
+        {
+          "operating_callsign": "EJA542",
+          "registration": "N542QS",
+          "timestamp_utc": "2026-11-10T19:06:17.616Z",
+          "lat": 43.685644,
+          "lon": -79.587511,
+          "altitude_ft": 900.0,
+          "ground_track_true_deg": 224.57,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/n542qs"
+      ]
+    }
+  },
+  "DSC02226": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T14:12:57-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "D-ANRD",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-anrd"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "CFG402"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T14:12:57-05:00",
+      "track": [
+        {
+          "operating_callsign": "CFG402",
+          "registration": "D-ANRD",
+          "timestamp_utc": "2026-11-10T19:12:57.732Z",
+          "lat": 43.687317,
+          "lon": -79.585344,
+          "altitude_ft": 900.0,
+          "ground_track_true_deg": 226.53,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/d-anrd"
+      ]
+    }
+  },
+  "DSC02237": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T14:14:21-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "C-FRAM",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fram"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "ACA891"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T14:14:21-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA891",
+          "registration": "C-FRAM",
+          "timestamp_utc": "2026-11-10T19:14:21.410Z",
+          "lat": 43.687866,
+          "lon": -79.584386,
+          "altitude_ft": 925.0,
+          "ground_track_true_deg": 226.16,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-fram"
+      ]
+    }
+  },
+  "DSC02249": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T15:05:55-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "C-FRSO",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-frso"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "ACA881"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T15:05:55-05:00",
+      "track": [
+        {
+          "operating_callsign": "ACA881",
+          "registration": "C-FRSO",
+          "timestamp_utc": "2026-11-10T20:05:45.885Z",
+          "lat": 43.691277,
+          "lon": -79.579468,
+          "altitude_ft": 1000.0,
+          "ground_track_true_deg": 226.15,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-frso"
+      ]
+    }
+  },
+  "DSC02256": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T15:07:36-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "C-GMXB",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gmxb"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "WJA2773"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T15:07:36-05:00",
+      "track": [
+        {
+          "operating_callsign": "WJA2773",
+          "registration": "C-GMXB",
+          "timestamp_utc": "2026-11-10T20:07:29.623Z",
+          "lat": 43.690887,
+          "lon": -79.579979,
+          "altitude_ft": 1000.0,
+          "ground_track_true_deg": 226.97,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/c-gmxb"
+      ]
+    }
+  },
+  "DSC02267": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T15:09:01-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "EI-XLX",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/ei-xlx"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "EIN1EN"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T15:09:01-05:00",
+      "track": [
+        {
+          "operating_callsign": "EIN1EN",
+          "registration": "EI-XLX",
+          "timestamp_utc": "2026-11-10T20:08:57.716Z",
+          "lat": 43.688204,
+          "lon": -79.58398,
+          "altitude_ft": 925.0,
+          "ground_track_true_deg": 227.12,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/ei-xlx"
+      ]
+    }
+  },
+  "DSC02280": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T15:14:14-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "G-ZBLD",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/g-zbld"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "BAW9ZY"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T15:14:14-05:00",
+      "track": [
+        {
+          "operating_callsign": "BAW9ZY",
+          "registration": "G-ZBLD",
+          "timestamp_utc": "2026-11-10T20:14:19.717Z",
+          "lat": 43.685318,
+          "lon": -79.588165,
+          "altitude_ft": 825.0,
+          "ground_track_true_deg": 226.4,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/g-zbld"
+      ]
+    }
+  },
+  "DSC02295": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T15:18:16-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "N540PJ",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n540pj"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "PJC54"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T15:18:16-05:00",
+      "track": [
+        {
+          "operating_callsign": "PJC54",
+          "registration": "N540PJ",
+          "timestamp_utc": "2026-11-10T20:18:17.586Z",
+          "lat": 43.68544,
+          "lon": -79.588091,
+          "altitude_ft": 850.0,
+          "ground_track_true_deg": 225.69,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/n540pj",
+        "https://www.jetaviva.com/wp-content/uploads/2025/11/560-6378-eBrochure-1.pdf"
+      ]
+    }
+  },
+  "DSC02305": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T15:19:42-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "PH-ZNA",
+      "status": "confirmed",
+      "basis": "Registration read from adjacent RAW frame DSC02311; the same uninterrupted burst matches the KLM147 approach at capture time.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/ph-zna"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "KLM147"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T15:19:42-05:00",
+      "track": [
+        {
+          "operating_callsign": "KLM147",
+          "registration": null,
+          "timestamp_utc": "2026-11-10T20:19:41.825Z",
+          "lat": 43.687599,
+          "lon": -79.584765,
+          "altitude_ft": 925.0,
+          "ground_track_true_deg": 226.23,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/ph-zna"
+      ],
+      "rawReview": {
+        "frames": [
+          {
+            "filename": "DSC02311.ARW",
+            "capturedAt": "2026-11-10T15:19:45-05:00",
+            "reading": "PH-ZNA; Airbus A350-900"
+          }
+        ]
+      }
+    }
+  },
+  "DSC02319": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T15:22:46-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "SE-DMS",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/se-dms"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "SAS949"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T15:22:46-05:00",
+      "track": [
+        {
+          "operating_callsign": "SAS949",
+          "registration": "SE-DMS",
+          "timestamp_utc": "2026-11-10T20:22:39.709Z",
+          "lat": 43.689741,
+          "lon": -79.581822,
+          "altitude_ft": 1000.0,
+          "ground_track_true_deg": 226.25,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/se-dms"
+      ]
+    }
+  },
+  "DSC02333": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T15:43:32-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "CS-TXG",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/cs-txg"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "TAP257N"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T15:43:32-05:00",
+      "track": [
+        {
+          "operating_callsign": "TAP257N",
+          "registration": "CS-TXG",
+          "timestamp_utc": "2026-11-10T20:43:25.849Z",
+          "lat": 43.690625,
+          "lon": -79.580514,
+          "altitude_ft": 975.0,
+          "ground_track_true_deg": 226.74,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/cs-txg"
+      ]
+    }
+  },
+  "DSC02353": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T15:52:28-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "HL8075",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/hl8075"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "KAL8284"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T15:52:28-05:00",
+      "track": [
+        {
+          "operating_callsign": "KAL8284",
+          "registration": "HL8075",
+          "timestamp_utc": "2026-11-10T20:52:30.000Z",
+          "lat": 43.686948,
+          "lon": -79.585746,
+          "altitude_ft": 850.0,
+          "ground_track_true_deg": 226.86,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/hl8075"
+      ]
+    }
+  },
+  "DSC02377": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T16:06:06-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "D-AIGS",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-aigs"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "DLH470"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T16:06:06-05:00",
+      "track": [
+        {
+          "operating_callsign": "DLH470",
+          "registration": "D-AIGS",
+          "timestamp_utc": "2026-11-10T21:06:05.802Z",
+          "lat": 43.68718,
+          "lon": -79.585549,
+          "altitude_ft": 900.0,
+          "ground_track_true_deg": 227.1,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/d-aigs"
+      ]
+    }
+  },
+  "DSC02382": {
+    "date": "2026-11-10",
+    "capturedAt": "2026-11-10T16:06:08-05:00",
+    "reviewedAt": "2026-11-10",
+    "registration": {
+      "value": "D-AIGS",
+      "status": "confirmed",
+      "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-aigs"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
+      "sourceUrl": "https://globe.adsb.fi/",
+      "callsign": "DLH470"
+    },
+    "evidence": {
+      "archive": "YYZ 2026-11-10 photographs and local ADS-B archive",
+      "cameraClockCorrectionSeconds": 0,
+      "lookupTime": "2026-11-10T16:06:08-05:00",
+      "track": [
+        {
+          "operating_callsign": "DLH470",
+          "registration": "D-AIGS",
+          "timestamp_utc": "2026-11-10T21:06:05.802Z",
+          "lat": 43.68718,
+          "lon": -79.585549,
+          "altitude_ft": 900.0,
+          "ground_track_true_deg": 227.1,
+          "on_ground": 0,
+          "source": "adsb.fi"
+        }
+      ],
+      "sources": [
+        "https://www.flightradar24.com/data/aircraft/d-aigs"
+      ]
+    }
   }
 }

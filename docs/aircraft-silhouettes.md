@@ -139,3 +139,5 @@ The November 4 additions use illustrative proportions only: Learjet 45 length
 Citation CJ3 length 15.59 m follows the [Cessna brochure](https://www.midcont.net/pdf/citationcj3.pdf).
 Challenger 3500 retains the 20.9 m Challenger 350-family silhouette length
 ([Bombardier](https://bombardier.com/en/aircraft/challenger-3500)).
+
+The November 10 additions use the existing Citation illustration family: Latitude has a rounded 19 m length from [Textron specifications](https://cessna.txtav.com/citation/latitude), and XLS Gen2 retains the 16 m 560XL-family exterior scale. The [Textron XLS Gen2 brochure](https://africair.com/wp-content/uploads/2023/04/XLSGen2_Brochure.pdf) documents the cabin update. Both detail-only technical elevations remain pending.

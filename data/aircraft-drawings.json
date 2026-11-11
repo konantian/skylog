@@ -1234,5 +1234,15 @@
       "url": "https://www.boeing.com/content/dam/boeing/v2/airports/acaps/747-400_Rev_F.pdf",
       "page": 32
     }
+  },
+  "Cessna Citation Latitude": {
+    "status": "pending",
+    "group": "Citation",
+    "reason": "该型号的官方侧视图尚未核验。"
+  },
+  "Cessna Citation XLS Gen2": {
+    "status": "pending",
+    "group": "Citation",
+    "reason": "该型号的官方侧视图尚未核验。"
   }
 }

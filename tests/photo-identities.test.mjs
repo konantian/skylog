@@ -6,6 +6,25 @@ import {filterPhotos,initialFilters,flightsForPhoto} from '../lib/filter.mjs';
 import log from '../data/flights.json' with {type:'json'};
 const byId=new Map(catalog.photos.map(p=>[p.id,p]));
 
+test('November 10 includes all 36 final RAW selections with matched approach evidence',()=>{
+  const expected='01999 02000 02010 02021 02037 02048 02054 02077 02087 02090 02104 02111 02117 02134 02138 02151 02161 02170 02180 02190 02198 02212 02218 02226 02237 02249 02256 02267 02280 02295 02305 02319 02333 02353 02377 02382'.split(' ').map(n=>'DSC'+n);
+  const batch=catalog.photos.filter(p=>p.date==='2026-11-10');
+  assert.deepEqual(batch.map(p=>p.id),expected);
+  for(const p of batch){
+    assert.equal(p.filename,p.id+'.ARW');
+    assert.equal(p.registration.status,'confirmed');
+    assert.deepEqual(p.flights,[],'Do not derive commercial flight numbers from callsigns');
+    const [point]=identities[p.id].evidence.track;
+    assert.equal(point.operating_callsign,p.flightIdentification.callsign);
+    assert.ok(Math.abs(Date.parse(point.timestamp_utc)-Date.parse(p.capturedAt))<12000,p.id);
+    if(p.id==='DSC02305'){
+      assert.equal(point.registration,null);
+      assert.equal(identities[p.id].evidence.rawReview.frames[0].reading,'PH-ZNA; Airbus A350-900');
+    }else assert.equal(point.registration,p.registration.value);
+  }
+  for(const [id,model] of [['DSC02198','Boeing 777-300ER'],['DSC02305','Airbus A350-900'],['DSC02218','Cessna Citation Latitude'],['DSC02295','Cessna Citation XLS Gen2']])assert.deepEqual(byId.get(id).models,[model]);
+});
+
 test('every photograph uses date-matched identity evidence and explicit flight confidence',()=>{
   assert.equal(Object.keys(identities).length,catalog.photos.length);
   for(const p of catalog.photos){
