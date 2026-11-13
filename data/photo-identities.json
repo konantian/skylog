@@ -17712,5 +17712,221 @@
         "https://www.flightradar24.com/data/aircraft/d-aigs"
       ]
     }
+  },
+  "DSC02454": {
+    "date": "2026-11-13",
+    "capturedAt": "2026-11-13T13:38:23-05:00",
+    "reviewedAt": "2026-11-13",
+    "registration": {
+      "value": "HZ-ARB",
+      "status": "confirmed",
+      "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/hz-arb"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+      "callsign": "SVA061",
+      "sourceUrl": "https://globe.adsb.fi/"
+    }
+  },
+  "DSC02422": {
+    "date": "2026-11-13",
+    "capturedAt": "2026-11-13T13:03:34-05:00",
+    "reviewedAt": "2026-11-13",
+    "registration": {
+      "value": "B-7349",
+      "status": "confirmed",
+      "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-7349"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+      "callsign": "CES207",
+      "sourceUrl": "https://globe.adsb.fi/"
+    }
+  },
+  "DSC02432": {
+    "date": "2026-11-13",
+    "capturedAt": "2026-11-13T13:11:11-05:00",
+    "reviewedAt": "2026-11-13",
+    "registration": {
+      "value": "C-GKXO",
+      "status": "confirmed",
+      "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gkxo"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+      "callsign": "POE402",
+      "sourceUrl": "https://globe.adsb.fi/"
+    }
+  },
+  "DSC02438": {
+    "date": "2026-11-13",
+    "capturedAt": "2026-11-13T13:36:02-05:00",
+    "reviewedAt": "2026-11-13",
+    "registration": {
+      "value": "N756YX",
+      "status": "confirmed",
+      "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n756yx"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+      "callsign": "RPA3674",
+      "sourceUrl": "https://globe.adsb.fi/"
+    }
+  },
+  "DSC02389": {
+    "date": "2026-11-13",
+    "capturedAt": "2026-11-13T12:48:04-05:00",
+    "reviewedAt": "2026-11-13",
+    "registration": {
+      "value": "C-FEJY",
+      "status": "confirmed",
+      "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fejy"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+      "callsign": "JZA504",
+      "sourceUrl": "https://globe.adsb.fi/"
+    }
+  },
+  "DSC02413": {
+    "date": "2026-11-13",
+    "capturedAt": "2026-11-13T13:01:48-05:00",
+    "reviewedAt": "2026-11-13",
+    "registration": {
+      "value": "C-GJTH",
+      "status": "confirmed",
+      "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gjth"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+      "callsign": "ROU1673",
+      "sourceUrl": "https://globe.adsb.fi/"
+    }
+  },
+  "DSC02397": {
+    "date": "2026-11-13",
+    "capturedAt": "2026-11-13T12:51:28-05:00",
+    "reviewedAt": "2026-11-13",
+    "registration": {
+      "value": "N330PQ",
+      "status": "confirmed",
+      "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n330pq"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+      "callsign": "EDV5094",
+      "sourceUrl": "https://globe.adsb.fi/"
+    }
+  },
+  "DSC02405": {
+    "date": "2026-11-13",
+    "capturedAt": "2026-11-13T12:53:53-05:00",
+    "reviewedAt": "2026-11-13",
+    "registration": {
+      "value": "N790QS",
+      "status": "confirmed",
+      "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/n790qs"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+      "callsign": "EJA790",
+      "sourceUrl": "https://globe.adsb.fi/"
+    }
+  },
+  "DSC02450": {
+    "date": "2026-11-13",
+    "capturedAt": "2026-11-13T13:38:21-05:00",
+    "reviewedAt": "2026-11-13",
+    "registration": {
+      "value": "HZ-ARB",
+      "status": "confirmed",
+      "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/hz-arb"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+      "callsign": "SVA061",
+      "sourceUrl": "https://globe.adsb.fi/"
+    }
+  },
+  "DSC02421": {
+    "date": "2026-11-13",
+    "capturedAt": "2026-11-13T13:03:33-05:00",
+    "reviewedAt": "2026-11-13",
+    "registration": {
+      "value": "B-7349",
+      "status": "confirmed",
+      "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-7349"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+      "callsign": "CES207",
+      "sourceUrl": "https://globe.adsb.fi/"
+    }
+  },
+  "DSC02412": {
+    "date": "2026-11-13",
+    "capturedAt": "2026-11-13T13:01:47-05:00",
+    "reviewedAt": "2026-11-13",
+    "registration": {
+      "value": "C-GJTH",
+      "status": "confirmed",
+      "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gjth"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+      "callsign": "ROU1673",
+      "sourceUrl": "https://globe.adsb.fi/"
+    }
+  },
+  "DSC02391": {
+    "date": "2026-11-13",
+    "capturedAt": "2026-11-13T12:48:05-05:00",
+    "reviewedAt": "2026-11-13",
+    "registration": {
+      "value": "C-FEJY",
+      "status": "confirmed",
+      "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
+      "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fejy"
+    },
+    "flights": [],
+    "flightIdentification": {
+      "status": "confirmed",
+      "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+      "callsign": "JZA504",
+      "sourceUrl": "https://globe.adsb.fi/"
+    }
   }
 }

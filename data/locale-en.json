@@ -795,5 +795,13 @@
   "待达成": "Not yet reached",
   "当前筛选下没有成就。": "No achievements match this filter.",
   "查看关联照片（{0} 张）": "View related photos ({0})",
-  "拍过，也坐过：按本机已完成的乘机记录计算。": "Spotted and flown uses completed flight records on this device."
+  "拍过，也坐过：按本机已完成的乘机记录计算。": "Spotted and flown uses completed flight records on this device.",
+  "沙特第 94 届国庆主题涂装": "94th Saudi National Day livery",
+  "Saudia · 第 94 届国庆主题": "94th Saudi National Day livery",
+  "绿色与蓝色几何图案配合沙特棕榈树与双剑元素；照片中的 HZ-ARB 为国庆主题彩绘。": "Green and blue geometric patterns with Saudi palm-tree and crossed-swords motifs; HZ-ARB wears the National Day special livery.",
+  "上海博物馆主题涂装": "Shanghai Museum livery",
+  "上海博物馆 · 上博号": "Shanghai Museum livery",
+  "机身以江南春绿为主色，呈现上海博物馆名称及中国古代青铜器纹饰。": "A green Shanghai Museum theme with the museum name and decorative patterns inspired by ancient Chinese bronzes.",
+  "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。": "Photograph capture time and visible aircraft details cross-checked against the local ADS-B approach archive.",
+  "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。": "Capture time and approach trajectory matched to the operating callsign; the commercial flight number has not been independently verified."
 }

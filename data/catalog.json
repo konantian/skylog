@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10",
+  "updatedAt": "2026-11-13",
   "scope": "YYZ / YVR 已整理收藏",
   "photos": [
     {
@@ -18060,6 +18060,364 @@
         "callsign": "DLH470"
       },
       "capturedAt": "2026-11-10T16:06:08-05:00"
+    },
+    {
+      "id": "DSC02454",
+      "filename": "DSC02454.ARW",
+      "date": "2026-11-13",
+      "airport": "YYZ",
+      "models": [
+        "Boeing 787-9"
+      ],
+      "airlines": [
+        "Saudia"
+      ],
+      "flights": [],
+      "image": "/photos/DSC02454.jpg",
+      "thumbnail": "/photos/thumbs/DSC02454.jpg",
+      "note": "",
+      "livery": "沙特第 94 届国庆主题涂装",
+      "registration": {
+        "value": "HZ-ARB",
+        "status": "confirmed",
+        "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/hz-arb"
+      },
+      "capturedAt": "2026-11-13T13:38:23-05:00",
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+        "callsign": "SVA061",
+        "sourceUrl": "https://globe.adsb.fi/"
+      }
+    },
+    {
+      "id": "DSC02422",
+      "filename": "DSC02422.ARW",
+      "date": "2026-11-13",
+      "airport": "YYZ",
+      "models": [
+        "Boeing 777-300ER"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ],
+      "flights": [],
+      "image": "/photos/DSC02422.jpg",
+      "thumbnail": "/photos/thumbs/DSC02422.jpg",
+      "note": "",
+      "livery": "上海博物馆主题涂装",
+      "registration": {
+        "value": "B-7349",
+        "status": "confirmed",
+        "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-7349"
+      },
+      "capturedAt": "2026-11-13T13:03:34-05:00",
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+        "callsign": "CES207",
+        "sourceUrl": "https://globe.adsb.fi/"
+      }
+    },
+    {
+      "id": "DSC02432",
+      "filename": "DSC02432.ARW",
+      "date": "2026-11-13",
+      "airport": "YYZ",
+      "models": [
+        "Embraer E195-E2"
+      ],
+      "airlines": [
+        "Porter Airlines"
+      ],
+      "flights": [],
+      "image": "/photos/DSC02432.jpg",
+      "thumbnail": "/photos/thumbs/DSC02432.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "C-GKXO",
+        "status": "confirmed",
+        "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gkxo"
+      },
+      "capturedAt": "2026-11-13T13:11:11-05:00",
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+        "callsign": "POE402",
+        "sourceUrl": "https://globe.adsb.fi/"
+      }
+    },
+    {
+      "id": "DSC02438",
+      "filename": "DSC02438.ARW",
+      "date": "2026-11-13",
+      "airport": "YYZ",
+      "models": [
+        "Embraer E175"
+      ],
+      "airlines": [
+        "United Airlines"
+      ],
+      "flights": [],
+      "image": "/photos/DSC02438.jpg",
+      "thumbnail": "/photos/thumbs/DSC02438.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "N756YX",
+        "status": "confirmed",
+        "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/n756yx"
+      },
+      "capturedAt": "2026-11-13T13:36:02-05:00",
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+        "callsign": "RPA3674",
+        "sourceUrl": "https://globe.adsb.fi/"
+      }
+    },
+    {
+      "id": "DSC02389",
+      "filename": "DSC02389.ARW",
+      "date": "2026-11-13",
+      "airport": "YYZ",
+      "models": [
+        "Embraer E175"
+      ],
+      "airlines": [
+        "Air Canada"
+      ],
+      "flights": [],
+      "image": "/photos/DSC02389.jpg",
+      "thumbnail": "/photos/thumbs/DSC02389.jpg",
+      "note": "",
+      "livery": "现代黑白涂装",
+      "registration": {
+        "value": "C-FEJY",
+        "status": "confirmed",
+        "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fejy"
+      },
+      "capturedAt": "2026-11-13T12:48:04-05:00",
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+        "callsign": "JZA504",
+        "sourceUrl": "https://globe.adsb.fi/"
+      }
+    },
+    {
+      "id": "DSC02413",
+      "filename": "DSC02413.ARW",
+      "date": "2026-11-13",
+      "airport": "YYZ",
+      "models": [
+        "Airbus A321-200"
+      ],
+      "airlines": [
+        "Air Canada"
+      ],
+      "flights": [],
+      "image": "/photos/DSC02413.jpg",
+      "thumbnail": "/photos/thumbs/DSC02413.jpg",
+      "note": "",
+      "livery": "现代黑白涂装",
+      "registration": {
+        "value": "C-GJTH",
+        "status": "confirmed",
+        "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gjth"
+      },
+      "capturedAt": "2026-11-13T13:01:48-05:00",
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+        "callsign": "ROU1673",
+        "sourceUrl": "https://globe.adsb.fi/"
+      }
+    },
+    {
+      "id": "DSC02397",
+      "filename": "DSC02397.ARW",
+      "date": "2026-11-13",
+      "airport": "YYZ",
+      "models": [
+        "Bombardier CRJ-900"
+      ],
+      "airlines": [
+        "Delta Air Lines"
+      ],
+      "flights": [],
+      "image": "/photos/DSC02397.jpg",
+      "thumbnail": "/photos/thumbs/DSC02397.jpg",
+      "note": "",
+      "livery": "标准涂装",
+      "registration": {
+        "value": "N330PQ",
+        "status": "confirmed",
+        "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/n330pq"
+      },
+      "capturedAt": "2026-11-13T12:51:28-05:00",
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+        "callsign": "EDV5094",
+        "sourceUrl": "https://globe.adsb.fi/"
+      }
+    },
+    {
+      "id": "DSC02405",
+      "filename": "DSC02405.ARW",
+      "date": "2026-11-13",
+      "airport": "YYZ",
+      "models": [
+        "Bombardier Challenger 350"
+      ],
+      "airlines": [],
+      "flights": [],
+      "image": "/photos/DSC02405.jpg",
+      "thumbnail": "/photos/thumbs/DSC02405.jpg",
+      "note": "",
+      "livery": "白底条纹公务机涂装",
+      "registration": {
+        "value": "N790QS",
+        "status": "confirmed",
+        "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/n790qs"
+      },
+      "capturedAt": "2026-11-13T12:53:53-05:00",
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+        "callsign": "EJA790",
+        "sourceUrl": "https://globe.adsb.fi/"
+      }
+    },
+    {
+      "id": "DSC02450",
+      "filename": "DSC02450.ARW",
+      "date": "2026-11-13",
+      "airport": "YYZ",
+      "models": [
+        "Boeing 787-9"
+      ],
+      "airlines": [
+        "Saudia"
+      ],
+      "flights": [],
+      "image": "/photos/DSC02450.jpg",
+      "thumbnail": "/photos/thumbs/DSC02450.jpg",
+      "note": "",
+      "livery": "沙特第 94 届国庆主题涂装",
+      "registration": {
+        "value": "HZ-ARB",
+        "status": "confirmed",
+        "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/hz-arb"
+      },
+      "capturedAt": "2026-11-13T13:38:21-05:00",
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+        "callsign": "SVA061",
+        "sourceUrl": "https://globe.adsb.fi/"
+      }
+    },
+    {
+      "id": "DSC02421",
+      "filename": "DSC02421.ARW",
+      "date": "2026-11-13",
+      "airport": "YYZ",
+      "models": [
+        "Boeing 777-300ER"
+      ],
+      "airlines": [
+        "China Eastern Airlines"
+      ],
+      "flights": [],
+      "image": "/photos/DSC02421.jpg",
+      "thumbnail": "/photos/thumbs/DSC02421.jpg",
+      "note": "",
+      "livery": "上海博物馆主题涂装",
+      "registration": {
+        "value": "B-7349",
+        "status": "confirmed",
+        "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-7349"
+      },
+      "capturedAt": "2026-11-13T13:03:33-05:00",
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+        "callsign": "CES207",
+        "sourceUrl": "https://globe.adsb.fi/"
+      }
+    },
+    {
+      "id": "DSC02412",
+      "filename": "DSC02412.ARW",
+      "date": "2026-11-13",
+      "airport": "YYZ",
+      "models": [
+        "Airbus A321-200"
+      ],
+      "airlines": [
+        "Air Canada"
+      ],
+      "flights": [],
+      "image": "/photos/DSC02412.jpg",
+      "thumbnail": "/photos/thumbs/DSC02412.jpg",
+      "note": "",
+      "livery": "现代黑白涂装",
+      "registration": {
+        "value": "C-GJTH",
+        "status": "confirmed",
+        "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gjth"
+      },
+      "capturedAt": "2026-11-13T13:01:47-05:00",
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+        "callsign": "ROU1673",
+        "sourceUrl": "https://globe.adsb.fi/"
+      }
+    },
+    {
+      "id": "DSC02391",
+      "filename": "DSC02391.ARW",
+      "date": "2026-11-13",
+      "airport": "YYZ",
+      "models": [
+        "Embraer E175"
+      ],
+      "airlines": [
+        "Air Canada"
+      ],
+      "flights": [],
+      "image": "/photos/DSC02391.jpg",
+      "thumbnail": "/photos/thumbs/DSC02391.jpg",
+      "note": "",
+      "livery": "现代黑白涂装",
+      "registration": {
+        "value": "C-FEJY",
+        "status": "confirmed",
+        "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
+        "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fejy"
+      },
+      "capturedAt": "2026-11-13T12:48:05-05:00",
+      "flightIdentification": {
+        "status": "confirmed",
+        "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+        "callsign": "JZA504",
+        "sourceUrl": "https://globe.adsb.fi/"
+      }
     }
   ],
   "aircraft": [
@@ -18208,7 +18566,9 @@
         "DSC01970",
         "DSC02087",
         "DSC02090",
-        "DSC02249"
+        "DSC02249",
+        "DSC02454",
+        "DSC02450"
       ],
       "cover": "DSC00597",
       "unlocked": true,
@@ -18217,7 +18577,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-10"
+      "lastSeen": "2026-11-13"
     },
     {
       "id": "airbus-a340-300",
@@ -18290,7 +18650,9 @@
         "DSC02134",
         "DSC02138",
         "DSC02198",
-        "DSC02237"
+        "DSC02237",
+        "DSC02422",
+        "DSC02421"
       ],
       "cover": "DSC00234",
       "unlocked": true,
@@ -18299,7 +18661,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-11-10"
+      "lastSeen": "2026-11-13"
     },
     {
       "id": "airbus-a330-300",
@@ -18661,7 +19023,9 @@
         "DSC09877",
         "DSC01359",
         "DSC01367",
-        "DSC02111"
+        "DSC02111",
+        "DSC02413",
+        "DSC02412"
       ],
       "cover": "DSC02048",
       "unlocked": true,
@@ -18670,7 +19034,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-10"
+      "lastSeen": "2026-11-13"
     },
     {
       "id": "airbus-a321xlr",
@@ -19473,7 +19837,8 @@
         "DSC09722",
         "DSC09789",
         "DSC09870",
-        "DSC09892"
+        "DSC09892",
+        "DSC02397"
       ],
       "cover": "DSC09709",
       "unlocked": true,
@@ -19482,7 +19847,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-04"
+      "lastSeen": "2026-11-13"
     },
     {
       "id": "bombardier-challenger-350",
@@ -19493,7 +19858,8 @@
       "shortName": "Challenger 350",
       "kind": "aircraft",
       "photoIds": [
-        "DSC07884"
+        "DSC07884",
+        "DSC02405"
       ],
       "cover": "DSC07884",
       "unlocked": true,
@@ -19501,7 +19867,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-18",
-      "lastSeen": "2026-10-18"
+      "lastSeen": "2026-11-13"
     },
     {
       "id": "bombardier-challenger-604",
@@ -19767,7 +20133,10 @@
         "DSC01638",
         "DSC01790",
         "DSC02021",
-        "DSC02212"
+        "DSC02212",
+        "DSC02438",
+        "DSC02389",
+        "DSC02391"
       ],
       "cover": "DSC00641",
       "unlocked": true,
@@ -19776,7 +20145,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-10"
+      "lastSeen": "2026-11-13"
     },
     {
       "id": "embraer-e190",
@@ -19838,7 +20207,8 @@
         "DSC09614",
         "DSC09812",
         "DSC01350",
-        "DSC01387"
+        "DSC01387",
+        "DSC02432"
       ],
       "cover": "DSC02054",
       "unlocked": true,
@@ -19846,7 +20216,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-10"
+      "lastSeen": "2026-11-13"
     },
     {
       "id": "embraer-erj-145lr",
@@ -20251,7 +20621,11 @@
         "DSC02117",
         "DSC02198",
         "DSC02237",
-        "DSC02249"
+        "DSC02249",
+        "DSC02389",
+        "DSC02413",
+        "DSC02412",
+        "DSC02391"
       ],
       "cover": "DSC07776",
       "unlocked": true,
@@ -20260,7 +20634,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-10"
+      "lastSeen": "2026-11-13"
     },
     {
       "id": "lufthansa",
@@ -20844,7 +21218,9 @@
         "DSC00977",
         "DSC00980",
         "DSC08383",
-        "DSC08394"
+        "DSC08394",
+        "DSC02422",
+        "DSC02421"
       ],
       "cover": "DSC08388",
       "unlocked": true,
@@ -20852,7 +21228,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-11-04"
+      "lastSeen": "2026-11-13"
     },
     {
       "id": "china-southern",
@@ -20925,7 +21301,8 @@
         "DSC09722",
         "DSC09789",
         "DSC09892",
-        "DSC01646"
+        "DSC01646",
+        "DSC02397"
       ],
       "cover": "DSC00658",
       "unlocked": true,
@@ -20934,7 +21311,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-07"
+      "lastSeen": "2026-11-13"
     },
     {
       "id": "egyptair",
@@ -21283,7 +21660,8 @@
         "DSC09909",
         "DSC09911",
         "DSC01350",
-        "DSC01387"
+        "DSC01387",
+        "DSC02432"
       ],
       "cover": "DSC02054",
       "unlocked": true,
@@ -21291,7 +21669,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-10"
+      "lastSeen": "2026-11-13"
     },
     {
       "id": "qatar-airways",
@@ -21382,7 +21760,9 @@
         "DSC01825",
         "DSC08816",
         "DSC08825",
-        "DSC01816"
+        "DSC01816",
+        "DSC02454",
+        "DSC02450"
       ],
       "cover": "DSC08819",
       "unlocked": true,
@@ -21390,7 +21770,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-24",
-      "lastSeen": "2026-11-08"
+      "lastSeen": "2026-11-13"
     },
     {
       "id": "t-way-air-trinity-airways",
@@ -21486,7 +21866,8 @@
         "DSC09946",
         "DSC01551",
         "DSC01790",
-        "DSC02212"
+        "DSC02212",
+        "DSC02438"
       ],
       "cover": "DSC00535",
       "unlocked": true,
@@ -21495,7 +21876,7 @@
         "YYZ"
       ],
       "firstSeen": "2026-10-11",
-      "lastSeen": "2026-11-10"
+      "lastSeen": "2026-11-13"
     },
     {
       "id": "volga-dnepr-airlines",
@@ -22155,6 +22536,14 @@
     "DSC01017",
     "DSC01070",
     "DSC01152",
+    "DSC01182",
+    "DSC01202",
+    "DSC01217",
+    "DSC01239",
+    "DSC01244",
+    "DSC01279",
+    "DSC01292",
+    "DSC01309",
     "DSC01523",
     "DSC01418",
     "DSC01322",
@@ -22168,7 +22557,15 @@
     "DSC01782",
     "DSC01884",
     "DSC01930",
-    "DSC01694"
+    "DSC01694",
+    "DSC02454",
+    "DSC02422",
+    "DSC02432",
+    "DSC02438",
+    "DSC02389",
+    "DSC02413",
+    "DSC02397",
+    "DSC02405"
   ],
   "scopeNote": "机型涵盖已确认拍摄型号及常见民航补拍目标；航司以 YYZ / YVR 收藏及补拍清单为主，并非全球完整名录。未解锁不代表当前有定期航班。"
 }

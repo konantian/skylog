@@ -1,5 +1,5 @@
 {
-  "reviewedAt": "2026-11-10",
+  "reviewedAt": "2026-11-13",
   "method": "Visual review of edited photographs, with same-airframe adjacent captures cross-checked. Business-aircraft labels describe visible colours/patterns, not official named liveries. Unobservable livery details remain unconfirmed.",
   "photos": {
     "DSC06137": {
@@ -1840,6 +1840,42 @@
     "DSC02382": {
       "livery": "经典黄尾标涂装",
       "note": ""
+    },
+    "DSC02454": {
+      "livery": "沙特第 94 届国庆主题涂装"
+    },
+    "DSC02422": {
+      "livery": "上海博物馆主题涂装"
+    },
+    "DSC02432": {
+      "livery": "标准涂装"
+    },
+    "DSC02438": {
+      "livery": "标准涂装"
+    },
+    "DSC02389": {
+      "livery": "现代黑白涂装"
+    },
+    "DSC02413": {
+      "livery": "现代黑白涂装"
+    },
+    "DSC02397": {
+      "livery": "标准涂装"
+    },
+    "DSC02405": {
+      "livery": "白底条纹公务机涂装"
+    },
+    "DSC02450": {
+      "livery": "沙特第 94 届国庆主题涂装"
+    },
+    "DSC02421": {
+      "livery": "上海博物馆主题涂装"
+    },
+    "DSC02412": {
+      "livery": "现代黑白涂装"
+    },
+    "DSC02391": {
+      "livery": "现代黑白涂装"
     }
   }
 }

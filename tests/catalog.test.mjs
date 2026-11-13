@@ -11,7 +11,7 @@ const f = extra => ({...initialFilters,...extra});
 
 test('all entries and photos have consistent links and unlock states',()=>{
   const ids=new Set(data.photos.map(p=>p.id));
-  assert.equal(ids.size,586);
+  assert.equal(ids.size,598);
   assert.ok(!ids.has('DSC06736'));
   assert.equal(new Set(data.aircraft.map(a=>a.id)).size,data.aircraft.length);
   for(const e of [...data.aircraft,...data.airlines]){

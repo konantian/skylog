@@ -87,5 +87,15 @@
   "国泰 80 周年纪念标志": {
     "name": "国泰 80 周年纪念标志",
     "description": "国泰航空在后机身加上了 80 Years Together 纪念标志；按照片中可见文字记录。"
+  },
+  "沙特第 94 届国庆主题涂装": {
+    "name": "Saudia · 第 94 届国庆主题",
+    "description": "绿色与蓝色几何图案配合沙特棕榈树与双剑元素；照片中的 HZ-ARB 为国庆主题彩绘。",
+    "source": "https://www.flightradar24.com/data/aircraft/hz-arb/"
+  },
+  "上海博物馆主题涂装": {
+    "name": "上海博物馆 · 上博号",
+    "description": "机身以江南春绿为主色，呈现上海博物馆名称及中国古代青铜器纹饰。",
+    "source": "https://www.ceair.com/global/static/AboutChinaEasternAirlines/intoEasternAirlines/InvestorRelations/socialResponsibility/202604/P020260415479480485432.pdf"
   }
 }

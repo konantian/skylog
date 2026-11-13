@@ -63,7 +63,7 @@ test('milestones retain earned achievements, show real totals and advance only a
     assert.deepEqual(a.stages.map(s=>s.unlocked),[100,500,1000].map(target=>count>=target));
   }
   const current=collectionAchievements(aircraft,airlines,photos,log.flights);
-  const expected={'century':[586,1000],'fifty-airlines':[52,75],'same-airframe':[13,20],'two-airport-reunion':[4,5],'model-collector':[56,75],'airframe-collector':[322,500],'three-encounters':[4,5]};
+  const expected={'century':[598,1000],'fifty-airlines':[52,75],'same-airframe':[13,20],'two-airport-reunion':[4,5],'model-collector':[56,75],'airframe-collector':[328,500],'three-encounters':[4,5]};
   for(const [key,[count,next]] of Object.entries(expected)){
     const a=current.find(a=>a.key===key);assert.equal(a.current,count,key);assert.equal(a.nextTarget,next,key);
   }
