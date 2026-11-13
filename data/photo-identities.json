@@ -16302,18 +16302,20 @@
   "DSC01999": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T11:59:43-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "B-LXJ",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-lxj"
     },
-    "flights": [],
+    "flights": [
+      "CX828"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://www.airnavradar.com/data/flights/CX828/3014227902",
       "callsign": "CPA828"
     },
     "evidence": {
@@ -16335,24 +16337,35 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/b-lxj"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "CX828",
+        "date": "2026-11-10",
+        "registration": "B-LXJ",
+        "callsign": "CPA828",
+        "route": "HKG–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/CX828/3014227902"
+      }
     }
   },
   "DSC02000": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T11:59:44-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "B-LXJ",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-lxj"
     },
-    "flights": [],
+    "flights": [
+      "CX828"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://www.airnavradar.com/data/flights/CX828/3014227902",
       "callsign": "CPA828"
     },
     "evidence": {
@@ -16374,24 +16387,35 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/b-lxj"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "CX828",
+        "date": "2026-11-10",
+        "registration": "B-LXJ",
+        "callsign": "CPA828",
+        "route": "HKG–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/CX828/3014227902"
+      }
     }
   },
   "DSC02010": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T12:01:40-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "C-FCYX",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fcyx"
     },
-    "flights": [],
+    "flights": [
+      "AC409"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://www.airnavradar.com/data/flights/ACA409/3013780458",
       "callsign": "ACA409"
     },
     "evidence": {
@@ -16413,24 +16437,35 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/c-fcyx"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "AC409",
+        "date": "2026-11-10",
+        "registration": "C-FCYX",
+        "callsign": "ACA409",
+        "route": "YUL–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/ACA409/3013780458"
+      }
     }
   },
   "DSC02021": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T12:03:36-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "N272NN",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/n272nn"
     },
-    "flights": [],
+    "flights": [
+      "AA3606"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://www.airnavradar.com/data/registration/N272NN",
       "callsign": "ENY3606"
     },
     "evidence": {
@@ -16452,24 +16487,35 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/n272nn"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "AA3606",
+        "date": "2026-11-10",
+        "registration": "N272NN",
+        "callsign": "ENY3606",
+        "route": "ORD–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/registration/N272NN"
+      }
     }
   },
   "DSC02037": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T12:16:30-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "C-FLUJ",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fluj"
     },
-    "flights": [],
+    "flights": [
+      "F8651"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://id.airnavradar.com/data/flights/F8651/3013753462",
       "callsign": "FLE651"
     },
     "evidence": {
@@ -16491,24 +16537,35 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/c-fluj"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "F8651",
+        "date": "2026-11-10",
+        "registration": "C-FLUJ",
+        "callsign": "FLE651",
+        "route": "YHZ–YYZ",
+        "sourceUrl": "https://id.airnavradar.com/data/flights/F8651/3013753462"
+      }
     }
   },
   "DSC02048": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T12:21:45-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "C-GYFM",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gyfm"
     },
-    "flights": [],
+    "flights": [
+      "AC100"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://www.airnavradar.com/data/flights/ACA100/2958349924",
       "callsign": "ACA100"
     },
     "evidence": {
@@ -16530,24 +16587,35 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/c-gyfm"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "AC100",
+        "date": "2026-11-10",
+        "registration": "C-GYFM",
+        "callsign": "ACA100",
+        "route": "YVR–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/ACA100/2958349924"
+      }
     }
   },
   "DSC02054": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T12:25:27-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "C-GKQL",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gkql"
     },
-    "flights": [],
+    "flights": [
+      "PD402"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://www.airnavradar.com/data/registration/C-GKQL/3004642992",
       "callsign": "POE402"
     },
     "evidence": {
@@ -16569,24 +16637,36 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/c-gkql"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "PD402",
+        "date": "2026-11-10",
+        "registration": "C-GKQL",
+        "callsign": "POE402",
+        "route": "YEG–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/registration/C-GKQL/3004642992",
+        "note": "Commercial listing uses PTR402; retain the independently observed POE402 callsign."
+      }
     }
   },
   "DSC02077": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T12:38:56-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "C-GFJQ",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gfjq"
     },
-    "flights": [],
+    "flights": [
+      "WS636"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://www.airnavradar.com/data/flights/WS636/3011493998",
       "callsign": "WJA636"
     },
     "evidence": {
@@ -16608,24 +16688,35 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/c-gfjq"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "WS636",
+        "date": "2026-11-10",
+        "registration": "C-GFJQ",
+        "callsign": "WJA636",
+        "route": "YYC–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/WS636/3011493998"
+      }
     }
   },
   "DSC02087": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T12:43:03-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "S2-AJX",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/s2-ajx"
     },
-    "flights": [],
+    "flights": [
+      "BG305"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://www.airnavradar.com/data/flights/BG305/2973488504",
       "callsign": "BBC305"
     },
     "evidence": {
@@ -16647,24 +16738,35 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/s2-ajx"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "BG305",
+        "date": "2026-11-10",
+        "registration": "S2-AJX",
+        "callsign": "BBC305",
+        "route": "FCO–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/BG305/2973488504"
+      }
     }
   },
   "DSC02090": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T12:43:04-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "S2-AJX",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/s2-ajx"
     },
-    "flights": [],
+    "flights": [
+      "BG305"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://www.airnavradar.com/data/flights/BG305/2973488504",
       "callsign": "BBC305"
     },
     "evidence": {
@@ -16686,24 +16788,35 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/s2-ajx"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "BG305",
+        "date": "2026-11-10",
+        "registration": "S2-AJX",
+        "callsign": "BBC305",
+        "route": "FCO–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/BG305/2973488504"
+      }
     }
   },
   "DSC02104": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T12:48:14-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "C-GLRN",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-glrn"
     },
-    "flights": [],
+    "flights": [
+      "WS384"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://www.airnavradar.com/data/registration/C-GLRN/3011499868",
       "callsign": "WJA384"
     },
     "evidence": {
@@ -16725,24 +16838,35 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/c-glrn"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "WS384",
+        "date": "2026-11-10",
+        "registration": "C-GLRN",
+        "callsign": "WJA384",
+        "route": "YWG–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/registration/C-GLRN/3011499868"
+      }
     }
   },
   "DSC02111": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T12:58:05-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "C-GHPJ",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-ghpj"
     },
-    "flights": [],
+    "flights": [
+      "AC1673"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://www.airnavradar.com/data/registration/C-GHPJ/2864246392",
       "callsign": "ROU1673"
     },
     "evidence": {
@@ -16764,24 +16888,35 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/c-ghpj"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "AC1673",
+        "date": "2026-11-10",
+        "registration": "C-GHPJ",
+        "callsign": "ROU1673",
+        "route": "MCO–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/registration/C-GHPJ/2864246392"
+      }
     }
   },
   "DSC02117": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T13:00:27-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "C-GTZU",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gtzu"
     },
-    "flights": [],
+    "flights": [
+      "AC451"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://pt.airnavradar.com/data/registration/C-GTZU/3015870546",
       "callsign": "ACA451"
     },
     "evidence": {
@@ -16803,24 +16938,35 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/c-gtzu"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "AC451",
+        "date": "2026-11-10",
+        "registration": "C-GTZU",
+        "callsign": "ACA451",
+        "route": "YOW–YYZ",
+        "sourceUrl": "https://pt.airnavradar.com/data/registration/C-GTZU/3015870546"
+      }
     }
   },
   "DSC02134": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T13:03:34-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "B-2036",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-2036"
     },
-    "flights": [],
+    "flights": [
+      "CA993"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://www.airnavradar.com/data/flights/CA993/2872997866",
       "callsign": "CCA993"
     },
     "evidence": {
@@ -16842,24 +16988,35 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/b-2036"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "CA993",
+        "date": "2026-11-10",
+        "registration": "B-2036",
+        "callsign": "CCA993",
+        "route": "PEK–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/CA993/2872997866"
+      }
     }
   },
   "DSC02138": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T13:03:36-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "B-2036",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-2036"
     },
-    "flights": [],
+    "flights": [
+      "CA993"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://www.airnavradar.com/data/flights/CA993/2872997866",
       "callsign": "CCA993"
     },
     "evidence": {
@@ -16881,24 +17038,35 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/b-2036"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "CA993",
+        "date": "2026-11-10",
+        "registration": "B-2036",
+        "callsign": "CCA993",
+        "route": "PEK–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/CA993/2872997866"
+      }
     }
   },
   "DSC02151": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T13:50:11-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "N904AV",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/n904av"
     },
-    "flights": [],
+    "flights": [
+      "AV324"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://www.airnavradar.com/data/registration/N904AV",
       "callsign": "TAI324"
     },
     "evidence": {
@@ -16920,7 +17088,16 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/n904av"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "AV324",
+        "date": "2026-11-10",
+        "registration": "N904AV",
+        "callsign": "TAI324",
+        "route": "SAL–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/registration/N904AV"
+      }
     }
   },
   "DSC02161": {
@@ -17004,18 +17181,20 @@
   "DSC02180": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T13:57:21-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "N762DT",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/n762dt"
     },
-    "flights": [],
+    "flights": [
+      "AA3608"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://www.airnavradar.com/data/flights/AA3608/3014292736",
       "callsign": "ENY3608"
     },
     "evidence": {
@@ -17037,24 +17216,35 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/n762dt"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "AA3608",
+        "date": "2026-11-10",
+        "registration": "N762DT",
+        "callsign": "ENY3608",
+        "route": "ORD–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/AA3608/3014292736"
+      }
     }
   },
   "DSC02190": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T13:58:40-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "C-FLQO",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-flqo"
     },
-    "flights": [],
+    "flights": [
+      "F8640"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://id.airnavradar.com/data/flights/F8640/3014412178",
       "callsign": "FLE640"
     },
     "evidence": {
@@ -17076,24 +17266,35 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/c-flqo"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "F8640",
+        "date": "2026-11-10",
+        "registration": "C-FLQO",
+        "callsign": "FLE640",
+        "route": "YWG–YYZ",
+        "sourceUrl": "https://id.airnavradar.com/data/flights/F8640/3014412178"
+      }
     }
   },
   "DSC02198": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T13:59:59-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "C-FITL",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fitl"
     },
-    "flights": [],
+    "flights": [
+      "AC873"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://www.airnavradar.com/data/registration/C-FITL/3013608202",
       "callsign": "ACA873"
     },
     "evidence": {
@@ -17115,24 +17316,35 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/c-fitl"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "AC873",
+        "date": "2026-11-10",
+        "registration": "C-FITL",
+        "callsign": "ACA873",
+        "route": "CDG–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/registration/C-FITL/3013608202"
+      }
     }
   },
   "DSC02212": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T14:03:28-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "N730YX",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/n730yx"
     },
-    "flights": [],
+    "flights": [
+      "UA3490"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://www.airnavradar.com/data/flights/UA3490/3013403450",
       "callsign": "RPA3490"
     },
     "evidence": {
@@ -17154,7 +17366,16 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/n730yx"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "UA3490",
+        "date": "2026-11-10",
+        "registration": "N730YX",
+        "callsign": "RPA3490",
+        "route": "IAD–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/UA3490/3013403450"
+      }
     }
   },
   "DSC02218": {
@@ -17199,18 +17420,20 @@
   "DSC02226": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T14:12:57-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "D-ANRD",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-anrd"
     },
-    "flights": [],
+    "flights": [
+      "DE2402"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://de.airnavradar.com/data/flights/DE2402/3013597902",
       "callsign": "CFG402"
     },
     "evidence": {
@@ -17232,24 +17455,35 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/d-anrd"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "DE2402",
+        "date": "2026-11-10",
+        "registration": "D-ANRD",
+        "callsign": "CFG402",
+        "route": "FRA–YYZ",
+        "sourceUrl": "https://de.airnavradar.com/data/flights/DE2402/3013597902"
+      }
     }
   },
   "DSC02237": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T14:14:21-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "C-FRAM",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fram"
     },
-    "flights": [],
+    "flights": [
+      "AC891"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://www.airnavradar.com/data/flights/AC891/2874951114",
       "callsign": "ACA891"
     },
     "evidence": {
@@ -17271,24 +17505,35 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/c-fram"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "AC891",
+        "date": "2026-11-10",
+        "registration": "C-FRAM",
+        "callsign": "ACA891",
+        "route": "FCO–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/AC891/2874951114"
+      }
     }
   },
   "DSC02249": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T15:05:55-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "C-FRSO",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-frso"
     },
-    "flights": [],
+    "flights": [
+      "AC881"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://www.airnavradar.com/data/flights/AC881/3014799806",
       "callsign": "ACA881"
     },
     "evidence": {
@@ -17310,24 +17555,35 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/c-frso"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "AC881",
+        "date": "2026-11-10",
+        "registration": "C-FRSO",
+        "callsign": "ACA881",
+        "route": "ZRH–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/AC881/3014799806"
+      }
     }
   },
   "DSC02256": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T15:07:36-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "C-GMXB",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gmxb"
     },
-    "flights": [],
+    "flights": [
+      "WS2773"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://wwnbg.flightera.net/en/flight_details/WestJet-Cancun-Toronto/WS2773/MMUN/2026-11-10",
       "callsign": "WJA2773"
     },
     "evidence": {
@@ -17349,24 +17605,35 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/c-gmxb"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "WS2773",
+        "date": "2026-11-10",
+        "registration": "C-GMXB",
+        "callsign": "WJA2773",
+        "route": "CUN–YYZ",
+        "sourceUrl": "https://wwnbg.flightera.net/en/flight_details/WestJet-Cancun-Toronto/WS2773/MMUN/2026-11-10"
+      }
     }
   },
   "DSC02267": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T15:09:01-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "EI-XLX",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/ei-xlx"
     },
-    "flights": [],
+    "flights": [
+      "EI127"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://www.airnavradar.com/data/flights/EIN127",
       "callsign": "EIN1EN"
     },
     "evidence": {
@@ -17388,24 +17655,35 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/ei-xlx"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "EI127",
+        "date": "2026-11-10",
+        "registration": "EI-XLX",
+        "callsign": "EIN1EN",
+        "route": "DUB–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/EIN127"
+      }
     }
   },
   "DSC02280": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T15:14:14-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "G-ZBLD",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/g-zbld"
     },
-    "flights": [],
+    "flights": [
+      "BA93"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://www.airnavradar.com/data/flights/BA93/3014816962",
       "callsign": "BAW9ZY"
     },
     "evidence": {
@@ -17427,7 +17705,16 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/g-zbld"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "BA93",
+        "date": "2026-11-10",
+        "registration": "G-ZBLD",
+        "callsign": "BAW9ZY",
+        "route": "LHR–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/BA93/3014816962"
+      }
     }
   },
   "DSC02295": {
@@ -17473,18 +17760,20 @@
   "DSC02305": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T15:19:42-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "PH-ZNA",
       "status": "confirmed",
       "basis": "Registration read from adjacent RAW frame DSC02311; the same uninterrupted burst matches the KLM147 approach at capture time.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/ph-zna"
     },
-    "flights": [],
+    "flights": [
+      "KL691"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://de.airnavradar.com/data/flights/KL691/3010429146",
       "callsign": "KLM147"
     },
     "evidence": {
@@ -17515,24 +17804,35 @@
             "reading": "PH-ZNA; Airbus A350-900"
           }
         ]
+      },
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "KL691",
+        "date": "2026-11-10",
+        "registration": "PH-ZNA",
+        "callsign": "KLM147",
+        "route": "AMS–YYZ",
+        "sourceUrl": "https://de.airnavradar.com/data/flights/KL691/3010429146"
       }
     }
   },
   "DSC02319": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T15:22:46-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "SE-DMS",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/se-dms"
     },
-    "flights": [],
+    "flights": [
+      "SK949"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://www.airnavradar.com/data/flights/SK949",
       "callsign": "SAS949"
     },
     "evidence": {
@@ -17554,24 +17854,35 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/se-dms"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "SK949",
+        "date": "2026-11-10",
+        "registration": "SE-DMS",
+        "callsign": "SAS949",
+        "route": "CPH–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/SK949"
+      }
     }
   },
   "DSC02333": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T15:43:32-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "CS-TXG",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/cs-txg"
     },
-    "flights": [],
+    "flights": [
+      "TP257"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://www.airnavradar.com/data/flights/TP257",
       "callsign": "TAP257N"
     },
     "evidence": {
@@ -17593,24 +17904,35 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/cs-txg"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "TP257",
+        "date": "2026-11-10",
+        "registration": "CS-TXG",
+        "callsign": "TAP257N",
+        "route": "LIS–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/TP257"
+      }
     }
   },
   "DSC02353": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T15:52:28-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "HL8075",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/hl8075"
     },
-    "flights": [],
+    "flights": [
+      "KE8284"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://es.airnavradar.com/data/registration/HL8075/3013598702",
       "callsign": "KAL8284"
     },
     "evidence": {
@@ -17632,24 +17954,35 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/hl8075"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "KE8284",
+        "date": "2026-11-10",
+        "registration": "HL8075",
+        "callsign": "KAL8284",
+        "route": "ORD–YYZ",
+        "sourceUrl": "https://es.airnavradar.com/data/registration/HL8075/3013598702"
+      }
     }
   },
   "DSC02377": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T16:06:06-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "D-AIGS",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-aigs"
     },
-    "flights": [],
+    "flights": [
+      "LH470"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://www.airnavradar.com/data/flights/LH470",
       "callsign": "DLH470"
     },
     "evidence": {
@@ -17671,24 +18004,35 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/d-aigs"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "LH470",
+        "date": "2026-11-10",
+        "registration": "D-AIGS",
+        "callsign": "DLH470",
+        "route": "FRA–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/LH470"
+      }
     }
   },
   "DSC02382": {
     "date": "2026-11-10",
     "capturedAt": "2026-11-10T16:06:08-05:00",
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-13",
     "registration": {
       "value": "D-AIGS",
       "status": "confirmed",
       "basis": "Photographed aircraft matched by capture time, visible livery and low-altitude approach position in the local ADS-B archive.",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/d-aigs"
     },
-    "flights": [],
+    "flights": [
+      "LH470"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-      "sourceUrl": "https://globe.adsb.fi/",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+      "sourceUrl": "https://www.airnavradar.com/data/flights/LH470",
       "callsign": "DLH470"
     },
     "evidence": {
@@ -17710,7 +18054,16 @@
       ],
       "sources": [
         "https://www.flightradar24.com/data/aircraft/d-aigs"
-      ]
+      ],
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "LH470",
+        "date": "2026-11-10",
+        "registration": "D-AIGS",
+        "callsign": "DLH470",
+        "route": "FRA–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/LH470"
+      }
     }
   },
   "DSC02454": {
@@ -17723,12 +18076,26 @@
       "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/hz-arb"
     },
-    "flights": [],
+    "flights": [
+      "SV61"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
       "callsign": "SVA061",
-      "sourceUrl": "https://globe.adsb.fi/"
+      "sourceUrl": "https://www.airnavradar.com/data/registration/HZ-ARB/3014890376"
+    },
+    "evidence": {
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "SV61",
+        "date": "2026-11-13",
+        "registration": "HZ-ARB",
+        "callsign": "SVA061",
+        "route": "JED–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/registration/HZ-ARB/3014890376",
+        "note": "Dated aircraft assignment corroborated by the observed SVA061 approach; tracker labels it SVA61."
+      }
     }
   },
   "DSC02422": {
@@ -17741,12 +18108,25 @@
       "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-7349"
     },
-    "flights": [],
+    "flights": [
+      "MU207"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
       "callsign": "CES207",
-      "sourceUrl": "https://globe.adsb.fi/"
+      "sourceUrl": "https://planefinder.net/data/flight/MU207"
+    },
+    "evidence": {
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "MU207",
+        "date": "2026-11-13",
+        "registration": "B-7349",
+        "callsign": "CES207",
+        "route": "PVG–YYZ",
+        "sourceUrl": "https://planefinder.net/data/flight/MU207"
+      }
     }
   },
   "DSC02432": {
@@ -17759,12 +18139,28 @@
       "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gkxo"
     },
-    "flights": [],
+    "flights": [
+      "PD402"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
       "callsign": "POE402",
-      "sourceUrl": "https://globe.adsb.fi/"
+      "sourceUrl": "https://aviationstack.com/"
+    },
+    "evidence": {
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "PD402",
+        "date": "2026-11-13",
+        "registration": "C-GKXO",
+        "callsign": "POE402",
+        "route": "YEG–YYZ",
+        "sourceUrl": "https://aviationstack.com/",
+        "provider": "Aviationstack",
+        "fetchedAt": "2026-11-13T23:02:27.448Z",
+        "providerStatus": "landed"
+      }
     }
   },
   "DSC02438": {
@@ -17777,12 +18173,29 @@
       "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/n756yx"
     },
-    "flights": [],
+    "flights": [
+      "UA3674"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
       "callsign": "RPA3674",
-      "sourceUrl": "https://globe.adsb.fi/"
+      "sourceUrl": "https://data.flightradar24.com/data/flights/ua3674"
+    },
+    "evidence": {
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "UA3674",
+        "date": "2026-11-13",
+        "registration": "N756YX",
+        "callsign": "RPA3674",
+        "route": "ORD–YYZ",
+        "sourceUrl": "https://data.flightradar24.com/data/flights/ua3674",
+        "provider": "Aviationstack",
+        "fetchedAt": "2026-11-13T23:01:37.506Z",
+        "providerStatus": "landed",
+        "note": "Aviationstack also matched service date, commercial flight and registration; its ICAO metadata is UAL3674, so retain observed RPA3674."
+      }
     }
   },
   "DSC02389": {
@@ -17795,12 +18208,27 @@
       "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fejy"
     },
-    "flights": [],
+    "flights": [
+      "AC8504"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
       "callsign": "JZA504",
-      "sourceUrl": "https://globe.adsb.fi/"
+      "sourceUrl": "https://data-live.flightradar24.com/data/flights/ac8504"
+    },
+    "evidence": {
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "AC8504",
+        "date": "2026-11-13",
+        "registration": "C-FEJY",
+        "callsign": "JZA504",
+        "route": "ATL–YYZ",
+        "sourceUrl": "https://data-live.flightradar24.com/data/flights/ac8504",
+        "note": "Dated aircraft assignment corroborated by the observed approach; independent JZA504/AC8504 mapping in AirNav Radar.",
+        "additionalSourceUrl": "https://www.airnavradar.com/data/registration/C-FEJB/3010380312"
+      }
     }
   },
   "DSC02413": {
@@ -17813,12 +18241,26 @@
       "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gjth"
     },
-    "flights": [],
+    "flights": [
+      "AC1673"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
       "callsign": "ROU1673",
-      "sourceUrl": "https://globe.adsb.fi/"
+      "sourceUrl": "https://www.airnavradar.com/data/flights/AC1673"
+    },
+    "evidence": {
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "AC1673",
+        "date": "2026-11-13",
+        "registration": "C-GJTH",
+        "callsign": "ROU1673",
+        "route": "MCO–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/AC1673",
+        "note": "Dated aircraft assignment corroborated by the observed approach."
+      }
     }
   },
   "DSC02397": {
@@ -17831,12 +18273,25 @@
       "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/n330pq"
     },
-    "flights": [],
+    "flights": [
+      "DL5094"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
       "callsign": "EDV5094",
-      "sourceUrl": "https://globe.adsb.fi/"
+      "sourceUrl": "https://planefinder.net/data/flight/DL5094/page/17"
+    },
+    "evidence": {
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "DL5094",
+        "date": "2026-11-13",
+        "registration": "N330PQ",
+        "callsign": "EDV5094",
+        "route": "LGA–YYZ",
+        "sourceUrl": "https://planefinder.net/data/flight/DL5094/page/17"
+      }
     }
   },
   "DSC02405": {
@@ -17867,12 +18322,26 @@
       "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/hz-arb"
     },
-    "flights": [],
+    "flights": [
+      "SV61"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
       "callsign": "SVA061",
-      "sourceUrl": "https://globe.adsb.fi/"
+      "sourceUrl": "https://www.airnavradar.com/data/registration/HZ-ARB/3014890376"
+    },
+    "evidence": {
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "SV61",
+        "date": "2026-11-13",
+        "registration": "HZ-ARB",
+        "callsign": "SVA061",
+        "route": "JED–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/registration/HZ-ARB/3014890376",
+        "note": "Dated aircraft assignment corroborated by the observed SVA061 approach; tracker labels it SVA61."
+      }
     }
   },
   "DSC02421": {
@@ -17885,12 +18354,25 @@
       "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/b-7349"
     },
-    "flights": [],
+    "flights": [
+      "MU207"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
       "callsign": "CES207",
-      "sourceUrl": "https://globe.adsb.fi/"
+      "sourceUrl": "https://planefinder.net/data/flight/MU207"
+    },
+    "evidence": {
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "MU207",
+        "date": "2026-11-13",
+        "registration": "B-7349",
+        "callsign": "CES207",
+        "route": "PVG–YYZ",
+        "sourceUrl": "https://planefinder.net/data/flight/MU207"
+      }
     }
   },
   "DSC02412": {
@@ -17903,12 +18385,26 @@
       "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-gjth"
     },
-    "flights": [],
+    "flights": [
+      "AC1673"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
       "callsign": "ROU1673",
-      "sourceUrl": "https://globe.adsb.fi/"
+      "sourceUrl": "https://www.airnavradar.com/data/flights/AC1673"
+    },
+    "evidence": {
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "AC1673",
+        "date": "2026-11-13",
+        "registration": "C-GJTH",
+        "callsign": "ROU1673",
+        "route": "MCO–YYZ",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/AC1673",
+        "note": "Dated aircraft assignment corroborated by the observed approach."
+      }
     }
   },
   "DSC02391": {
@@ -17921,12 +18417,27 @@
       "basis": "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。",
       "sourceUrl": "https://www.flightradar24.com/data/aircraft/c-fejy"
     },
-    "flights": [],
+    "flights": [
+      "AC8504"
+    ],
     "flightIdentification": {
       "status": "confirmed",
-      "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+      "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
       "callsign": "JZA504",
-      "sourceUrl": "https://globe.adsb.fi/"
+      "sourceUrl": "https://data-live.flightradar24.com/data/flights/ac8504"
+    },
+    "evidence": {
+      "commercialFlight": {
+        "reviewedAt": "2026-11-13",
+        "flight": "AC8504",
+        "date": "2026-11-13",
+        "registration": "C-FEJY",
+        "callsign": "JZA504",
+        "route": "ATL–YYZ",
+        "sourceUrl": "https://data-live.flightradar24.com/data/flights/ac8504",
+        "note": "Dated aircraft assignment corroborated by the observed approach; independent JZA504/AC8504 mapping in AirNav Radar.",
+        "additionalSourceUrl": "https://www.airnavradar.com/data/registration/C-FEJB/3010380312"
+      }
     }
   }
 }

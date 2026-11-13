@@ -803,5 +803,6 @@
   "上海博物馆 · 上博号": "Shanghai Museum livery",
   "机身以江南春绿为主色，呈现上海博物馆名称及中国古代青铜器纹饰。": "A green Shanghai Museum theme with the museum name and decorative patterns inspired by ancient Chinese bronzes.",
   "原片拍摄时间、可见机身外观与本机 ADS-B 进近轨迹交叉核对。": "Photograph capture time and visible aircraft details cross-checked against the local ADS-B approach archive.",
-  "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。": "Capture time and approach trajectory matched to the operating callsign; the commercial flight number has not been independently verified."
+  "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。": "Capture time and approach trajectory matched to the operating callsign; the commercial flight number has not been independently verified.",
+  "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。": "Capture time and approach trajectory confirm the operating callsign; same-day registration and flight records independently verify the commercial flight number."
 }

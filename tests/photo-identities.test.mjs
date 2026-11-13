@@ -13,7 +13,7 @@ test('November 10 includes all 36 final RAW selections with matched approach evi
   for(const p of batch){
     assert.equal(p.filename,p.id+'.ARW');
     assert.equal(p.registration.status,'confirmed');
-    assert.deepEqual(p.flights,[],'Do not derive commercial flight numbers from callsigns');
+    if(p.flights.length)assert.ok(identities[p.id].evidence.commercialFlight.sourceUrl,'Commercial numbers require independent evidence');
     const [point]=identities[p.id].evidence.track;
     assert.equal(point.operating_callsign,p.flightIdentification.callsign);
     assert.ok(Math.abs(Date.parse(point.timestamp_utc)-Date.parse(p.capturedAt))<12000,p.id);
@@ -23,6 +23,29 @@ test('November 10 includes all 36 final RAW selections with matched approach evi
     }else assert.equal(point.registration,p.registration.value);
   }
   for(const [id,model] of [['DSC02198','Boeing 777-300ER'],['DSC02305','Airbus A350-900'],['DSC02218','Cessna Citation Latitude'],['DSC02295','Cessna Citation XLS Gen2']])assert.deepEqual(byId.get(id).models,[model]);
+});
+
+test('recent commercial flight numbers have date and registration matched sources',()=>{
+  const batches=[['2026-11-10',32,4],['2026-11-13',11,1]];
+  for(const [date,commercial,privateFlights] of batches){
+    const batch=catalog.photos.filter(p=>p.date===date);
+    assert.equal(batch.filter(p=>p.flights.length).length,commercial);
+    assert.equal(batch.filter(p=>!p.flights.length).length,privateFlights);
+    for(const p of batch.filter(p=>p.flights.length)){
+      const e=identities[p.id].evidence.commercialFlight;
+      assert.equal(e.date,p.date,p.id);
+      assert.equal(e.registration,p.registration.value,p.id);
+      assert.equal(e.callsign,p.flightIdentification.callsign,p.id);
+      assert.deepEqual(p.flights,[e.flight],p.id);
+      assert.match(e.sourceUrl,/^https:\/\//);
+      assert.equal(p.flightIdentification.sourceUrl,e.sourceUrl);
+    }
+  }
+  for(const [id,flight,call] of [['DSC02305','KL691','KLM147'],['DSC02280','BA93','BAW9ZY'],['DSC02226','DE2402','CFG402'],['DSC02389','AC8504','JZA504'],['DSC02438','UA3674','RPA3674']]){
+    assert.deepEqual(byId.get(id).flights,[flight]);
+    assert.equal(byId.get(id).flightIdentification.callsign,call);
+    for(const query of [flight,call])assert.ok(filterPhotos(catalog.photos,{...initialFilters,query},catalog.aircraft,catalog.airlines).some(p=>p.id===id));
+  }
 });
 
 test('every photograph uses date-matched identity evidence and explicit flight confidence',()=>{

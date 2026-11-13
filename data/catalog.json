@@ -17000,7 +17000,9 @@
       "airlines": [
         "Cathay Pacific"
       ],
-      "flights": [],
+      "flights": [
+        "CX828"
+      ],
       "image": "/photos/DSC01999.jpg",
       "thumbnail": "/photos/thumbs/DSC01999.jpg",
       "note": "",
@@ -17013,8 +17015,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/CX828/3014227902",
         "callsign": "CPA828"
       },
       "capturedAt": "2026-11-10T11:59:43-05:00"
@@ -17030,7 +17032,9 @@
       "airlines": [
         "Cathay Pacific"
       ],
-      "flights": [],
+      "flights": [
+        "CX828"
+      ],
       "image": "/photos/DSC02000.jpg",
       "thumbnail": "/photos/thumbs/DSC02000.jpg",
       "note": "",
@@ -17043,8 +17047,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/CX828/3014227902",
         "callsign": "CPA828"
       },
       "capturedAt": "2026-11-10T11:59:44-05:00"
@@ -17060,7 +17064,9 @@
       "airlines": [
         "Air Canada"
       ],
-      "flights": [],
+      "flights": [
+        "AC409"
+      ],
       "image": "/photos/DSC02010.jpg",
       "thumbnail": "/photos/thumbs/DSC02010.jpg",
       "note": "",
@@ -17073,8 +17079,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/ACA409/3013780458",
         "callsign": "ACA409"
       },
       "capturedAt": "2026-11-10T12:01:40-05:00"
@@ -17090,7 +17096,9 @@
       "airlines": [
         "American Airlines"
       ],
-      "flights": [],
+      "flights": [
+        "AA3606"
+      ],
       "image": "/photos/DSC02021.jpg",
       "thumbnail": "/photos/thumbs/DSC02021.jpg",
       "note": "",
@@ -17103,8 +17111,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://www.airnavradar.com/data/registration/N272NN",
         "callsign": "ENY3606"
       },
       "capturedAt": "2026-11-10T12:03:36-05:00"
@@ -17120,7 +17128,9 @@
       "airlines": [
         "Flair Airlines"
       ],
-      "flights": [],
+      "flights": [
+        "F8651"
+      ],
       "image": "/photos/DSC02037.jpg",
       "thumbnail": "/photos/thumbs/DSC02037.jpg",
       "note": "",
@@ -17133,8 +17143,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://id.airnavradar.com/data/flights/F8651/3013753462",
         "callsign": "FLE651"
       },
       "capturedAt": "2026-11-10T12:16:30-05:00"
@@ -17150,7 +17160,9 @@
       "airlines": [
         "Air Canada"
       ],
-      "flights": [],
+      "flights": [
+        "AC100"
+      ],
       "image": "/photos/DSC02048.jpg",
       "thumbnail": "/photos/thumbs/DSC02048.jpg",
       "note": "",
@@ -17163,8 +17175,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/ACA100/2958349924",
         "callsign": "ACA100"
       },
       "capturedAt": "2026-11-10T12:21:45-05:00"
@@ -17180,7 +17192,9 @@
       "airlines": [
         "Porter Airlines"
       ],
-      "flights": [],
+      "flights": [
+        "PD402"
+      ],
       "image": "/photos/DSC02054.jpg",
       "thumbnail": "/photos/thumbs/DSC02054.jpg",
       "note": "",
@@ -17193,8 +17207,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://www.airnavradar.com/data/registration/C-GKQL/3004642992",
         "callsign": "POE402"
       },
       "capturedAt": "2026-11-10T12:25:27-05:00"
@@ -17210,7 +17224,9 @@
       "airlines": [
         "WestJet"
       ],
-      "flights": [],
+      "flights": [
+        "WS636"
+      ],
       "image": "/photos/DSC02077.jpg",
       "thumbnail": "/photos/thumbs/DSC02077.jpg",
       "note": "",
@@ -17223,8 +17239,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/WS636/3011493998",
         "callsign": "WJA636"
       },
       "capturedAt": "2026-11-10T12:38:56-05:00"
@@ -17240,7 +17256,9 @@
       "airlines": [
         "Biman Bangladesh Airlines"
       ],
-      "flights": [],
+      "flights": [
+        "BG305"
+      ],
       "image": "/photos/DSC02087.jpg",
       "thumbnail": "/photos/thumbs/DSC02087.jpg",
       "note": "",
@@ -17253,8 +17271,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/BG305/2973488504",
         "callsign": "BBC305"
       },
       "capturedAt": "2026-11-10T12:43:03-05:00"
@@ -17270,7 +17288,9 @@
       "airlines": [
         "Biman Bangladesh Airlines"
       ],
-      "flights": [],
+      "flights": [
+        "BG305"
+      ],
       "image": "/photos/DSC02090.jpg",
       "thumbnail": "/photos/thumbs/DSC02090.jpg",
       "note": "",
@@ -17283,8 +17303,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/BG305/2973488504",
         "callsign": "BBC305"
       },
       "capturedAt": "2026-11-10T12:43:04-05:00"
@@ -17300,7 +17320,9 @@
       "airlines": [
         "WestJet"
       ],
-      "flights": [],
+      "flights": [
+        "WS384"
+      ],
       "image": "/photos/DSC02104.jpg",
       "thumbnail": "/photos/thumbs/DSC02104.jpg",
       "note": "",
@@ -17313,8 +17335,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://www.airnavradar.com/data/registration/C-GLRN/3011499868",
         "callsign": "WJA384"
       },
       "capturedAt": "2026-11-10T12:48:14-05:00"
@@ -17330,7 +17352,9 @@
       "airlines": [
         "Air Canada"
       ],
-      "flights": [],
+      "flights": [
+        "AC1673"
+      ],
       "image": "/photos/DSC02111.jpg",
       "thumbnail": "/photos/thumbs/DSC02111.jpg",
       "note": "",
@@ -17343,8 +17367,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://www.airnavradar.com/data/registration/C-GHPJ/2864246392",
         "callsign": "ROU1673"
       },
       "capturedAt": "2026-11-10T12:58:05-05:00"
@@ -17360,7 +17384,9 @@
       "airlines": [
         "Air Canada"
       ],
-      "flights": [],
+      "flights": [
+        "AC451"
+      ],
       "image": "/photos/DSC02117.jpg",
       "thumbnail": "/photos/thumbs/DSC02117.jpg",
       "note": "",
@@ -17373,8 +17399,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://pt.airnavradar.com/data/registration/C-GTZU/3015870546",
         "callsign": "ACA451"
       },
       "capturedAt": "2026-11-10T13:00:27-05:00"
@@ -17390,7 +17416,9 @@
       "airlines": [
         "Air China"
       ],
-      "flights": [],
+      "flights": [
+        "CA993"
+      ],
       "image": "/photos/DSC02134.jpg",
       "thumbnail": "/photos/thumbs/DSC02134.jpg",
       "note": "",
@@ -17403,8 +17431,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/CA993/2872997866",
         "callsign": "CCA993"
       },
       "capturedAt": "2026-11-10T13:03:34-05:00"
@@ -17420,7 +17448,9 @@
       "airlines": [
         "Air China"
       ],
-      "flights": [],
+      "flights": [
+        "CA993"
+      ],
       "image": "/photos/DSC02138.jpg",
       "thumbnail": "/photos/thumbs/DSC02138.jpg",
       "note": "",
@@ -17433,8 +17463,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/CA993/2872997866",
         "callsign": "CCA993"
       },
       "capturedAt": "2026-11-10T13:03:36-05:00"
@@ -17450,7 +17480,9 @@
       "airlines": [
         "Avianca"
       ],
-      "flights": [],
+      "flights": [
+        "AV324"
+      ],
       "image": "/photos/DSC02151.jpg",
       "thumbnail": "/photos/thumbs/DSC02151.jpg",
       "note": "",
@@ -17463,8 +17495,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://www.airnavradar.com/data/registration/N904AV",
         "callsign": "TAI324"
       },
       "capturedAt": "2026-11-10T13:50:11-05:00"
@@ -17536,7 +17568,9 @@
       "airlines": [
         "American Airlines"
       ],
-      "flights": [],
+      "flights": [
+        "AA3608"
+      ],
       "image": "/photos/DSC02180.jpg",
       "thumbnail": "/photos/thumbs/DSC02180.jpg",
       "note": "",
@@ -17549,8 +17583,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/AA3608/3014292736",
         "callsign": "ENY3608"
       },
       "capturedAt": "2026-11-10T13:57:21-05:00"
@@ -17566,7 +17600,9 @@
       "airlines": [
         "Flair Airlines"
       ],
-      "flights": [],
+      "flights": [
+        "F8640"
+      ],
       "image": "/photos/DSC02190.jpg",
       "thumbnail": "/photos/thumbs/DSC02190.jpg",
       "note": "",
@@ -17579,8 +17615,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://id.airnavradar.com/data/flights/F8640/3014412178",
         "callsign": "FLE640"
       },
       "capturedAt": "2026-11-10T13:58:40-05:00"
@@ -17596,7 +17632,9 @@
       "airlines": [
         "Air Canada"
       ],
-      "flights": [],
+      "flights": [
+        "AC873"
+      ],
       "image": "/photos/DSC02198.jpg",
       "thumbnail": "/photos/thumbs/DSC02198.jpg",
       "note": "",
@@ -17609,8 +17647,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://www.airnavradar.com/data/registration/C-FITL/3013608202",
         "callsign": "ACA873"
       },
       "capturedAt": "2026-11-10T13:59:59-05:00"
@@ -17626,7 +17664,9 @@
       "airlines": [
         "United Airlines"
       ],
-      "flights": [],
+      "flights": [
+        "UA3490"
+      ],
       "image": "/photos/DSC02212.jpg",
       "thumbnail": "/photos/thumbs/DSC02212.jpg",
       "note": "",
@@ -17639,8 +17679,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/UA3490/3013403450",
         "callsign": "RPA3490"
       },
       "capturedAt": "2026-11-10T14:03:28-05:00"
@@ -17684,7 +17724,9 @@
       "airlines": [
         "Condor"
       ],
-      "flights": [],
+      "flights": [
+        "DE2402"
+      ],
       "image": "/photos/DSC02226.jpg",
       "thumbnail": "/photos/thumbs/DSC02226.jpg",
       "note": "",
@@ -17697,8 +17739,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://de.airnavradar.com/data/flights/DE2402/3013597902",
         "callsign": "CFG402"
       },
       "capturedAt": "2026-11-10T14:12:57-05:00"
@@ -17714,7 +17756,9 @@
       "airlines": [
         "Air Canada"
       ],
-      "flights": [],
+      "flights": [
+        "AC891"
+      ],
       "image": "/photos/DSC02237.jpg",
       "thumbnail": "/photos/thumbs/DSC02237.jpg",
       "note": "",
@@ -17727,8 +17771,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/AC891/2874951114",
         "callsign": "ACA891"
       },
       "capturedAt": "2026-11-10T14:14:21-05:00"
@@ -17744,7 +17788,9 @@
       "airlines": [
         "Air Canada"
       ],
-      "flights": [],
+      "flights": [
+        "AC881"
+      ],
       "image": "/photos/DSC02249.jpg",
       "thumbnail": "/photos/thumbs/DSC02249.jpg",
       "note": "",
@@ -17757,8 +17803,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/AC881/3014799806",
         "callsign": "ACA881"
       },
       "capturedAt": "2026-11-10T15:05:55-05:00"
@@ -17774,7 +17820,9 @@
       "airlines": [
         "WestJet"
       ],
-      "flights": [],
+      "flights": [
+        "WS2773"
+      ],
       "image": "/photos/DSC02256.jpg",
       "thumbnail": "/photos/thumbs/DSC02256.jpg",
       "note": "",
@@ -17787,8 +17835,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://wwnbg.flightera.net/en/flight_details/WestJet-Cancun-Toronto/WS2773/MMUN/2026-11-10",
         "callsign": "WJA2773"
       },
       "capturedAt": "2026-11-10T15:07:36-05:00"
@@ -17804,7 +17852,9 @@
       "airlines": [
         "Aer Lingus"
       ],
-      "flights": [],
+      "flights": [
+        "EI127"
+      ],
       "image": "/photos/DSC02267.jpg",
       "thumbnail": "/photos/thumbs/DSC02267.jpg",
       "note": "",
@@ -17817,8 +17867,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/EIN127",
         "callsign": "EIN1EN"
       },
       "capturedAt": "2026-11-10T15:09:01-05:00"
@@ -17834,7 +17884,9 @@
       "airlines": [
         "British Airways"
       ],
-      "flights": [],
+      "flights": [
+        "BA93"
+      ],
       "image": "/photos/DSC02280.jpg",
       "thumbnail": "/photos/thumbs/DSC02280.jpg",
       "note": "",
@@ -17847,8 +17899,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/BA93/3014816962",
         "callsign": "BAW9ZY"
       },
       "capturedAt": "2026-11-10T15:14:14-05:00"
@@ -17892,7 +17944,9 @@
       "airlines": [
         "KLM"
       ],
-      "flights": [],
+      "flights": [
+        "KL691"
+      ],
       "image": "/photos/DSC02305.jpg",
       "thumbnail": "/photos/thumbs/DSC02305.jpg",
       "note": "",
@@ -17905,8 +17959,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://de.airnavradar.com/data/flights/KL691/3010429146",
         "callsign": "KLM147"
       },
       "capturedAt": "2026-11-10T15:19:42-05:00"
@@ -17922,7 +17976,9 @@
       "airlines": [
         "SAS"
       ],
-      "flights": [],
+      "flights": [
+        "SK949"
+      ],
       "image": "/photos/DSC02319.jpg",
       "thumbnail": "/photos/thumbs/DSC02319.jpg",
       "note": "",
@@ -17935,8 +17991,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/SK949",
         "callsign": "SAS949"
       },
       "capturedAt": "2026-11-10T15:22:46-05:00"
@@ -17952,7 +18008,9 @@
       "airlines": [
         "TAP Air Portugal"
       ],
-      "flights": [],
+      "flights": [
+        "TP257"
+      ],
       "image": "/photos/DSC02333.jpg",
       "thumbnail": "/photos/thumbs/DSC02333.jpg",
       "note": "",
@@ -17965,8 +18023,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/TP257",
         "callsign": "TAP257N"
       },
       "capturedAt": "2026-11-10T15:43:32-05:00"
@@ -17982,7 +18040,9 @@
       "airlines": [
         "Korean Air"
       ],
-      "flights": [],
+      "flights": [
+        "KE8284"
+      ],
       "image": "/photos/DSC02353.jpg",
       "thumbnail": "/photos/thumbs/DSC02353.jpg",
       "note": "",
@@ -17995,8 +18055,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://es.airnavradar.com/data/registration/HL8075/3013598702",
         "callsign": "KAL8284"
       },
       "capturedAt": "2026-11-10T15:52:28-05:00"
@@ -18012,7 +18072,9 @@
       "airlines": [
         "Lufthansa"
       ],
-      "flights": [],
+      "flights": [
+        "LH470"
+      ],
       "image": "/photos/DSC02377.jpg",
       "thumbnail": "/photos/thumbs/DSC02377.jpg",
       "note": "",
@@ -18025,8 +18087,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/LH470",
         "callsign": "DLH470"
       },
       "capturedAt": "2026-11-10T16:06:06-05:00"
@@ -18042,7 +18104,9 @@
       "airlines": [
         "Lufthansa"
       ],
-      "flights": [],
+      "flights": [
+        "LH470"
+      ],
       "image": "/photos/DSC02382.jpg",
       "thumbnail": "/photos/thumbs/DSC02382.jpg",
       "note": "",
@@ -18055,8 +18119,8 @@
       },
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "Operating callsign and approach position matched to capture time; commercial flight number has not been independently verified.",
-        "sourceUrl": "https://globe.adsb.fi/",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
+        "sourceUrl": "https://www.airnavradar.com/data/flights/LH470",
         "callsign": "DLH470"
       },
       "capturedAt": "2026-11-10T16:06:08-05:00"
@@ -18072,7 +18136,9 @@
       "airlines": [
         "Saudia"
       ],
-      "flights": [],
+      "flights": [
+        "SV61"
+      ],
       "image": "/photos/DSC02454.jpg",
       "thumbnail": "/photos/thumbs/DSC02454.jpg",
       "note": "",
@@ -18086,9 +18152,9 @@
       "capturedAt": "2026-11-13T13:38:23-05:00",
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
         "callsign": "SVA061",
-        "sourceUrl": "https://globe.adsb.fi/"
+        "sourceUrl": "https://www.airnavradar.com/data/registration/HZ-ARB/3014890376"
       }
     },
     {
@@ -18102,7 +18168,9 @@
       "airlines": [
         "China Eastern Airlines"
       ],
-      "flights": [],
+      "flights": [
+        "MU207"
+      ],
       "image": "/photos/DSC02422.jpg",
       "thumbnail": "/photos/thumbs/DSC02422.jpg",
       "note": "",
@@ -18116,9 +18184,9 @@
       "capturedAt": "2026-11-13T13:03:34-05:00",
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
         "callsign": "CES207",
-        "sourceUrl": "https://globe.adsb.fi/"
+        "sourceUrl": "https://planefinder.net/data/flight/MU207"
       }
     },
     {
@@ -18132,7 +18200,9 @@
       "airlines": [
         "Porter Airlines"
       ],
-      "flights": [],
+      "flights": [
+        "PD402"
+      ],
       "image": "/photos/DSC02432.jpg",
       "thumbnail": "/photos/thumbs/DSC02432.jpg",
       "note": "",
@@ -18146,9 +18216,9 @@
       "capturedAt": "2026-11-13T13:11:11-05:00",
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
         "callsign": "POE402",
-        "sourceUrl": "https://globe.adsb.fi/"
+        "sourceUrl": "https://aviationstack.com/"
       }
     },
     {
@@ -18162,7 +18232,9 @@
       "airlines": [
         "United Airlines"
       ],
-      "flights": [],
+      "flights": [
+        "UA3674"
+      ],
       "image": "/photos/DSC02438.jpg",
       "thumbnail": "/photos/thumbs/DSC02438.jpg",
       "note": "",
@@ -18176,9 +18248,9 @@
       "capturedAt": "2026-11-13T13:36:02-05:00",
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
         "callsign": "RPA3674",
-        "sourceUrl": "https://globe.adsb.fi/"
+        "sourceUrl": "https://data.flightradar24.com/data/flights/ua3674"
       }
     },
     {
@@ -18192,7 +18264,9 @@
       "airlines": [
         "Air Canada"
       ],
-      "flights": [],
+      "flights": [
+        "AC8504"
+      ],
       "image": "/photos/DSC02389.jpg",
       "thumbnail": "/photos/thumbs/DSC02389.jpg",
       "note": "",
@@ -18206,9 +18280,9 @@
       "capturedAt": "2026-11-13T12:48:04-05:00",
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
         "callsign": "JZA504",
-        "sourceUrl": "https://globe.adsb.fi/"
+        "sourceUrl": "https://data-live.flightradar24.com/data/flights/ac8504"
       }
     },
     {
@@ -18222,7 +18296,9 @@
       "airlines": [
         "Air Canada"
       ],
-      "flights": [],
+      "flights": [
+        "AC1673"
+      ],
       "image": "/photos/DSC02413.jpg",
       "thumbnail": "/photos/thumbs/DSC02413.jpg",
       "note": "",
@@ -18236,9 +18312,9 @@
       "capturedAt": "2026-11-13T13:01:48-05:00",
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
         "callsign": "ROU1673",
-        "sourceUrl": "https://globe.adsb.fi/"
+        "sourceUrl": "https://www.airnavradar.com/data/flights/AC1673"
       }
     },
     {
@@ -18252,7 +18328,9 @@
       "airlines": [
         "Delta Air Lines"
       ],
-      "flights": [],
+      "flights": [
+        "DL5094"
+      ],
       "image": "/photos/DSC02397.jpg",
       "thumbnail": "/photos/thumbs/DSC02397.jpg",
       "note": "",
@@ -18266,9 +18344,9 @@
       "capturedAt": "2026-11-13T12:51:28-05:00",
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
         "callsign": "EDV5094",
-        "sourceUrl": "https://globe.adsb.fi/"
+        "sourceUrl": "https://planefinder.net/data/flight/DL5094/page/17"
       }
     },
     {
@@ -18310,7 +18388,9 @@
       "airlines": [
         "Saudia"
       ],
-      "flights": [],
+      "flights": [
+        "SV61"
+      ],
       "image": "/photos/DSC02450.jpg",
       "thumbnail": "/photos/thumbs/DSC02450.jpg",
       "note": "",
@@ -18324,9 +18404,9 @@
       "capturedAt": "2026-11-13T13:38:21-05:00",
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
         "callsign": "SVA061",
-        "sourceUrl": "https://globe.adsb.fi/"
+        "sourceUrl": "https://www.airnavradar.com/data/registration/HZ-ARB/3014890376"
       }
     },
     {
@@ -18340,7 +18420,9 @@
       "airlines": [
         "China Eastern Airlines"
       ],
-      "flights": [],
+      "flights": [
+        "MU207"
+      ],
       "image": "/photos/DSC02421.jpg",
       "thumbnail": "/photos/thumbs/DSC02421.jpg",
       "note": "",
@@ -18354,9 +18436,9 @@
       "capturedAt": "2026-11-13T13:03:33-05:00",
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
         "callsign": "CES207",
-        "sourceUrl": "https://globe.adsb.fi/"
+        "sourceUrl": "https://planefinder.net/data/flight/MU207"
       }
     },
     {
@@ -18370,7 +18452,9 @@
       "airlines": [
         "Air Canada"
       ],
-      "flights": [],
+      "flights": [
+        "AC1673"
+      ],
       "image": "/photos/DSC02412.jpg",
       "thumbnail": "/photos/thumbs/DSC02412.jpg",
       "note": "",
@@ -18384,9 +18468,9 @@
       "capturedAt": "2026-11-13T13:01:47-05:00",
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
         "callsign": "ROU1673",
-        "sourceUrl": "https://globe.adsb.fi/"
+        "sourceUrl": "https://www.airnavradar.com/data/flights/AC1673"
       }
     },
     {
@@ -18400,7 +18484,9 @@
       "airlines": [
         "Air Canada"
       ],
-      "flights": [],
+      "flights": [
+        "AC8504"
+      ],
       "image": "/photos/DSC02391.jpg",
       "thumbnail": "/photos/thumbs/DSC02391.jpg",
       "note": "",
@@ -18414,9 +18500,9 @@
       "capturedAt": "2026-11-13T12:48:05-05:00",
       "flightIdentification": {
         "status": "confirmed",
-        "basis": "拍摄时间与进近轨迹匹配运行呼号；未单独核实商业航班号。",
+        "basis": "拍摄时间与进近轨迹确认运行呼号，并以同日注册号和航班记录核实商业航班号。",
         "callsign": "JZA504",
-        "sourceUrl": "https://globe.adsb.fi/"
+        "sourceUrl": "https://data-live.flightradar24.com/data/flights/ac8504"
       }
     }
   ],

@@ -2,7 +2,7 @@
   "expo": {
     "name": "SKYLOG",
     "slug": "skylog",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "runtimeVersion": { "policy": "appVersion" },
     "updates": {
       "url": "https://u.expo.dev/8309a845-efea-4e8c-b893-fd8aa030b6a6"
@@ -24,7 +24,7 @@
         "NSCalendarsWriteOnlyAccessUsageDescription": "Add the selected flight to your calendar."
       },
       "appleTeamId": "9YYDX5K5KX",
-      "buildNumber": "27"
+      "buildNumber": "28"
     },
     "android": {
       "package": "com.konantian.skylog",
