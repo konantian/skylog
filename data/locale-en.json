@@ -808,5 +808,6 @@
   "新涂装": "new liveries",
   "累计 {0} 机型 · {1} 航司 · {2} 涂装": "Total: {0} models · {1} airlines · {2} liveries",
   "查看这一天解锁的机型、航司与涂装": "See the day’s new aircraft, airlines and liveries",
-  "首次拍到的涂装": "First livery sightings"
+  "首次拍到的涂装": "First livery sightings",
+  "新涂装仅统计特殊彩绘、纪念涂装及明确的新旧或配色版本；普通标准与常规品牌涂装不计入，同款跨机型只计一次。": "New liveries count special and commemorative schemes, plus distinct historical, updated or colour variants. Standard liveries and routine branding are excluded; each scheme counts once per airline across aircraft models."
 }

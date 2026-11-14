@@ -50,23 +50,24 @@ test('timeline first sightings remain global when photography is filtered',()=>{
   assert.equal(moments.reduce((s,m)=>s+m.newLiveries.length,0),moments[0].cumulativeLiveries);
 });
 
-test('new liveries count first airline paint schemes, not bursts, aircraft models or filtered repeats',()=>{
+test('new liveries deduplicate eligible schemes across bursts, models and filtered repeats',()=>{
   const photo=(id,date,airline,livery,model='A')=>({id,date,airport:'YYZ',models:[model],airlines:airline?[airline]:[],livery});
+  const alliance='Star Alliance 星空联盟涂装',anniversary='80 周年纪念标志';
   const all=[
-    photo('later','2026-11-13','A','Standard','B'),
-    photo('special','2026-11-10','A','Anniversary'),
-    photo('burst','2026-11-10','A','Anniversary'),
-    photo('first','2026-11-04','A','Standard'),
-    photo('other-airline','2026-11-10','B','Standard'),
+    photo('later','2026-11-13','A',alliance,'B'),
+    photo('special','2026-11-10','A',anniversary),
+    photo('burst','2026-11-10','A',anniversary),
+    photo('first','2026-11-04','A',alliance),
+    photo('other-airline','2026-11-10','B',alliance),
     photo('missing','2026-11-10','A',''),
-    photo('unidentified','2026-11-10',null,'Standard'),
+    photo('unidentified','2026-11-10',null,alliance),
   ];
   const days=collectionTimeline(all,[],[],all);
   assert.deepEqual(days[0].newLiveries,[]);
   assert.equal(days[0].cumulativeLiveries,3);
   assert.deepEqual(days[1].newLiveries,[
-    {airline:'A',livery:'Anniversary',firstSeen:'2026-11-10'},
-    {airline:'B',livery:'Standard',firstSeen:'2026-11-10'},
+    {airline:'A',livery:anniversary,firstSeen:'2026-11-10'},
+    {airline:'B',livery:alliance,firstSeen:'2026-11-10'},
   ]);
   assert.equal(days[2].cumulativeLiveries,1);
   const [repeat]=shootingDays([all[0]],[],[],[],all);
@@ -77,6 +78,28 @@ test('new liveries count first airline paint schemes, not bursts, aircraft model
   assert.equal(filtered.cumulativeLiveries,3);
   assert.deepEqual(filtered.newModels,[]);
   assert.deepEqual(filtered.newAirlines,[]);
+});
+
+test('standard, routine brand and unclassified liveries never create timeline unlocks',()=>{
+  const date='2026-11-10';
+  const ordinary=['标准涂装','American Eagle 标准涂装','现代黑白涂装','Rouge 红白涂装','Flexport 货运涂装','Turkish Cargo 货运涂装','待确认','Unreviewed special name'];
+  const all=ordinary.map((livery,i)=>({id:String(i),date,airport:'YYZ',models:['A'],airlines:['New airline'],livery}));
+  const [day]=collectionTimeline(all,[],[{name:'New airline',firstSeen:date,unlocked:true}],all);
+  assert.deepEqual(day.newAirlines,['New airline']);
+  assert.deepEqual(day.newLiveries,[]);
+  assert.equal(day.cumulativeLiveries,0);
+});
+
+test('published timeline retains specials and versions while removing ordinary airline branding',()=>{
+  const moments=collectionTimeline(photos,aircraft,airlines,photos);
+  const day=date=>moments.find(m=>m.date===date);
+  assert.equal(moments[0].cumulativeLiveries,21);
+  assert.equal(day('2026-11-13').newLiveries.length,2);
+  assert.deepEqual(day('2026-11-10').newLiveries.map(l=>l.livery).sort(),['国泰 80 周年纪念标志','白底黑字绿尾涂装'].sort());
+  assert.deepEqual(day('2026-11-05').newLiveries,[]);
+  assert.deepEqual(day('2026-11-05').newAirlines.sort(),['Atlas Air','China Southern']);
+  const unlocked=moments.flatMap(m=>m.newLiveries).map(l=>l.livery);
+  for(const version of ['经典冰蓝涂装','旧版绿白涂装','KOREAN 浅蓝新涂装','蓝白条纹涂装','绿白条纹涂装'])assert.ok(unlocked.includes(version),version);
 });
 
 test('Europe view joins Greenwich while keeping Pacific routes off the continent',()=>{

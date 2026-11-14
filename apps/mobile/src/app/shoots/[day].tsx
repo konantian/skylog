@@ -76,6 +76,7 @@ export default function ShootingDay() {
                 />
                 {expanded && (
                   <View style={{ gap: 8 }}>
+                    <Txt muted>{t("新涂装仅统计特殊彩绘、纪念涂装及明确的新旧或配色版本；普通标准与常规品牌涂装不计入，同款跨机型只计一次。")}</Txt>
                     {day.newAirlines.length > 0 && (
                       <Txt>
                         {words("Airlines", "航司")} ·{" "}
