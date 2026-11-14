@@ -8416,20 +8416,20 @@
     },
     {
       "photo": "DSC01685",
-      "imageBytes": 373355,
+      "imageBytes": 346388,
       "width": 3200,
       "height": 1859,
-      "mediumBytes": 58529,
+      "mediumBytes": 54574,
       "mediumWidth": 1600,
-      "thumbnailBytes": 14419,
+      "thumbnailBytes": 13706,
       "thumbnailWidth": 800,
       "original": {
-        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-09-nov08-overcast-hq/DSC01685.jpg",
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-13-overcast-refinement-hq/DSC01685.jpg",
         "width": 3867,
         "height": 2247,
-        "bytes": 594649
+        "bytes": 548804
       },
-      "revision": "423e22049ad1"
+      "revision": "39392f49bd0f"
     },
     {
       "photo": "DSC01694",
@@ -8450,20 +8450,20 @@
     },
     {
       "photo": "DSC01704",
-      "imageBytes": 291819,
+      "imageBytes": 267099,
       "width": 3200,
       "height": 1863,
-      "mediumBytes": 51524,
+      "mediumBytes": 47938,
       "mediumWidth": 1600,
-      "thumbnailBytes": 13359,
+      "thumbnailBytes": 12504,
       "thumbnailWidth": 800,
       "original": {
-        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-09-nov08-overcast-hq/DSC01704.jpg",
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-13-overcast-refinement-hq/DSC01704.jpg",
         "width": 4100,
         "height": 2387,
-        "bytes": 530242
+        "bytes": 486656
       },
-      "revision": "712616cd351e"
+      "revision": "dd40a457bc64"
     },
     {
       "photo": "DSC01712",
@@ -8518,20 +8518,20 @@
     },
     {
       "photo": "DSC01734",
-      "imageBytes": 284283,
+      "imageBytes": 263430,
       "width": 3200,
       "height": 1864,
-      "mediumBytes": 45553,
+      "mediumBytes": 41778,
       "mediumWidth": 1600,
-      "thumbnailBytes": 11684,
+      "thumbnailBytes": 10817,
       "thumbnailWidth": 800,
       "original": {
-        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-09-nov08-overcast-hq/DSC01734.jpg",
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-13-overcast-refinement-hq/DSC01734.jpg",
         "width": 3927,
         "height": 2287,
-        "bytes": 478589
+        "bytes": 444317
       },
-      "revision": "fd3ba197f855"
+      "revision": "84515084a967"
     },
     {
       "photo": "DSC01741",
@@ -8840,54 +8840,54 @@
     },
     {
       "photo": "DSC01862",
-      "imageBytes": 355489,
+      "imageBytes": 319952,
       "width": 3200,
       "height": 1866,
-      "mediumBytes": 64570,
+      "mediumBytes": 58648,
       "mediumWidth": 1600,
-      "thumbnailBytes": 16837,
+      "thumbnailBytes": 15546,
       "thumbnailWidth": 800,
       "original": {
-        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-09-nov08-overcast-hq/DSC01862.jpg",
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-13-overcast-refinement-hq/DSC01862.jpg",
         "width": 3933,
         "height": 2293,
-        "bytes": 573839
+        "bytes": 520825
       },
-      "revision": "31a1e36d8f3c"
+      "revision": "e167bfbb6704"
     },
     {
       "photo": "DSC01867",
-      "imageBytes": 341151,
+      "imageBytes": 316441,
       "width": 3200,
       "height": 1857,
-      "mediumBytes": 68361,
+      "mediumBytes": 64439,
       "mediumWidth": 1600,
-      "thumbnailBytes": 17799,
+      "thumbnailBytes": 16810,
       "thumbnailWidth": 800,
       "original": {
-        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-09-nov08-overcast-hq/DSC01867.jpg",
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-13-overcast-refinement-hq/DSC01867.jpg",
         "width": 5927,
         "height": 3440,
-        "bytes": 1284957
+        "bytes": 1195001
       },
-      "revision": "ca2bf5cc9368"
+      "revision": "4c2fcacb96a5"
     },
     {
       "photo": "DSC01869",
-      "imageBytes": 325787,
+      "imageBytes": 308709,
       "width": 3200,
       "height": 1860,
-      "mediumBytes": 64786,
+      "mediumBytes": 61525,
       "mediumWidth": 1600,
-      "thumbnailBytes": 17136,
+      "thumbnailBytes": 16192,
       "thumbnailWidth": 800,
       "original": {
-        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-09-nov08-overcast-hq/DSC01869.jpg",
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-13-overcast-refinement-hq/DSC01869.jpg",
         "width": 6000,
         "height": 3487,
-        "bytes": 1301581
+        "bytes": 1216458
       },
-      "revision": "b6b2f9e29c99"
+      "revision": "875ac534c3be"
     },
     {
       "photo": "DSC01878",
@@ -8908,20 +8908,20 @@
     },
     {
       "photo": "DSC01884",
-      "imageBytes": 342913,
+      "imageBytes": 309973,
       "width": 3200,
       "height": 1860,
-      "mediumBytes": 67445,
+      "mediumBytes": 62874,
       "mediumWidth": 1600,
-      "thumbnailBytes": 18108,
+      "thumbnailBytes": 17055,
       "thumbnailWidth": 800,
       "original": {
-        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-09-nov08-overcast-hq/DSC01884.jpg",
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-13-overcast-refinement-hq/DSC01884.jpg",
         "width": 6000,
         "height": 3487,
-        "bytes": 1454714
+        "bytes": 1338052
       },
-      "revision": "a15ce03782dc"
+      "revision": "a03b2942dd00"
     },
     {
       "photo": "DSC01891",
@@ -8993,54 +8993,54 @@
     },
     {
       "photo": "DSC01923",
-      "imageBytes": 347406,
+      "imageBytes": 326528,
       "width": 3200,
       "height": 1861,
-      "mediumBytes": 59670,
+      "mediumBytes": 55875,
       "mediumWidth": 1600,
-      "thumbnailBytes": 14700,
+      "thumbnailBytes": 13837,
       "thumbnailWidth": 800,
       "original": {
-        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-09-nov08-overcast-hq/DSC01923.jpg",
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-13-overcast-refinement-hq/DSC01923.jpg",
         "width": 5227,
         "height": 3040,
-        "bytes": 1042567
+        "bytes": 984596
       },
-      "revision": "bd5e0e0608d7"
+      "revision": "c6e016811185"
     },
     {
       "photo": "DSC01927",
-      "imageBytes": 377072,
+      "imageBytes": 356788,
       "width": 3200,
       "height": 1858,
-      "mediumBytes": 67689,
+      "mediumBytes": 64045,
       "mediumWidth": 1600,
-      "thumbnailBytes": 16105,
+      "thumbnailBytes": 15441,
       "thumbnailWidth": 800,
       "original": {
-        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-09-nov08-overcast-hq/DSC01927.jpg",
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-13-overcast-refinement-hq/DSC01927.jpg",
         "width": 5993,
         "height": 3480,
-        "bytes": 1456566
+        "bytes": 1397730
       },
-      "revision": "22b3e903db5d"
+      "revision": "573927cb325f"
     },
     {
       "photo": "DSC01930",
-      "imageBytes": 384458,
+      "imageBytes": 368674,
       "width": 3200,
       "height": 1860,
-      "mediumBytes": 68279,
+      "mediumBytes": 64862,
       "mediumWidth": 1600,
-      "thumbnailBytes": 16404,
+      "thumbnailBytes": 15603,
       "thumbnailWidth": 800,
       "original": {
-        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-09-nov08-overcast-hq/DSC01930.jpg",
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-13-overcast-refinement-hq/DSC01930.jpg",
         "width": 6000,
         "height": 3487,
-        "bytes": 1582512
+        "bytes": 1534461
       },
-      "revision": "eefa50a1c16d"
+      "revision": "054a8f26ded0"
     },
     {
       "photo": "DSC01935",
@@ -9775,37 +9775,37 @@
     },
     {
       "photo": "DSC02397",
-      "imageBytes": 443787,
+      "imageBytes": 444035,
       "width": 3200,
       "height": 1800,
-      "mediumBytes": 52926,
+      "mediumBytes": 52948,
       "mediumWidth": 1600,
-      "thumbnailBytes": 14084,
+      "thumbnailBytes": 14092,
       "thumbnailWidth": 800,
       "original": {
-        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-13-overcast-hq/DSC02397.jpg",
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-13-overcast-refinement-hq/DSC02397.jpg",
         "width": 5034,
         "height": 2832,
-        "bytes": 1522997
+        "bytes": 1523493
       },
-      "revision": "c678eb7ca9b3"
+      "revision": "240b4a034242"
     },
     {
       "photo": "DSC02405",
-      "imageBytes": 450319,
+      "imageBytes": 450641,
       "width": 3200,
       "height": 1800,
-      "mediumBytes": 53907,
+      "mediumBytes": 53960,
       "mediumWidth": 1600,
-      "thumbnailBytes": 14123,
+      "thumbnailBytes": 14136,
       "thumbnailWidth": 800,
       "original": {
-        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-13-overcast-hq/DSC02405.jpg",
+        "url": "https://github.com/konantian/skylog/releases/download/photos-2026-11-13-overcast-refinement-hq/DSC02405.jpg",
         "width": 5213,
         "height": 2932,
-        "bytes": 1702428
+        "bytes": 1702168
       },
-      "revision": "87b195ac5b36"
+      "revision": "25bf02cdd7e6"
     },
     {
       "photo": "DSC02412",
