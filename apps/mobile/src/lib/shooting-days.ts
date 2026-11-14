@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import { shootingDays } from "../../../../lib/insights.mjs";
+import type { LiverySighting } from "../../../../lib/types";
 import {
   aircraft,
   airlines,
@@ -19,6 +20,7 @@ type ShootingDay = {
   cover: Photo;
   newModels: string[];
   newAirlines: string[];
+  newLiveries: LiverySighting[];
 };
 
 export function useShootingDays(): ShootingDay[] {
@@ -31,6 +33,7 @@ export function useShootingDays(): ShootingDay[] {
         aircraft,
         airlines,
         coverOrder,
+        photos,
       ) as ShootingDay[],
     [filter],
   );

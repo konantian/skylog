@@ -10,7 +10,7 @@ import { useApp } from "../../lib/store";
 
 export default function ShootingDay() {
   const { day: date } = useLocalSearchParams<{ day: string }>();
-  const { colors, locale, words } = useApp();
+  const { colors, locale, words, t } = useApp();
   const day = useShootingDays().find((d) => d.date === date);
   const [expanded, setExpanded] = useState(false);
   const { list, origin, onScrollToIndexFailed } = usePhotoListReturn(
@@ -61,15 +61,17 @@ export default function ShootingDay() {
             >
               <PhotoImage key={day.cover.id} photo={day.cover} height={210} />
             </Pressable>
-            {(day.newAirlines.length > 0 || day.newModels.length > 0) && (
+            {(day.newAirlines.length > 0 || day.newModels.length > 0 || day.newLiveries.length > 0) && (
               <>
+                <View style={{ flexDirection: "row", flexWrap: "wrap", columnGap: 12, rowGap: 4 }}>
+                  <Txt muted>+{day.newModels.length} {words("new models", "新机型")}</Txt>
+                  <Txt muted>+{day.newAirlines.length} {words("new airlines", "新航司")}</Txt>
+                  <Txt muted>+{day.newLiveries.length} {words("new liveries", "新涂装")}</Txt>
+                </View>
                 <Button
                   secondary
                   icon={expanded ? "chevron-up" : "chevron-down"}
-                  title={words(
-                    `First sightings · ${day.newAirlines.length} airlines · ${day.newModels.length} models`,
-                    `首次拍到 · ${day.newAirlines.length} 家航司 · ${day.newModels.length} 款机型`,
-                  )}
+                  title={expanded ? words("Hide first sightings", "收起首次拍到的收藏") : words("Show first sightings", "查看首次拍到的收藏")}
                   onPress={() => setExpanded((value) => !value)}
                 />
                 {expanded && (
@@ -89,6 +91,16 @@ export default function ShootingDay() {
                           .map((n) => aircraftName(n, locale))
                           .join(locale === "zh" ? "、" : ", ")}
                       </Txt>
+                    )}
+                    {day.newLiveries.length > 0 && (
+                      <View style={{ gap: 4 }}>
+                        <Txt>{words("First livery sightings", "首次拍到的涂装")}</Txt>
+                        {day.newLiveries.map((livery) => (
+                          <Txt key={JSON.stringify([livery.airline, livery.livery])} muted>
+                            {airlineName(livery.airline, locale)} · {t(livery.livery)}
+                          </Txt>
+                        ))}
+                      </View>
                     )}
                   </View>
                 )}

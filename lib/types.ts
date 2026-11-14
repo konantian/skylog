@@ -8,6 +8,7 @@ export type Photo = {
   flightIdentification?: {status:string;basis:string;sourceUrl?:string;callsign?:string};
 };
 export type Registration = {value:string;status:string;basis:string;sourceUrl?:string};
+export type LiverySighting = {airline:string;livery:string;firstSeen:string};
 export type Entry = {
   id: string; name: string; kind: string; photoIds: string[]; cover: string | null;
   unlocked: boolean; airports: string[]; firstSeen: string | null; lastSeen: string | null;

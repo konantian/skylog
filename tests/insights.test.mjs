@@ -37,14 +37,46 @@ test('all actual routes project finite endpoints and break at the map seam',()=>
   assert.equal(routePath(airports.YVR,airports.YVR),'');
 });
 test('timeline first sightings remain global when photography is filtered',()=>{
-  const moments=collectionTimeline(photos,aircraft,airlines);
+  const moments=collectionTimeline(photos,aircraft,airlines,photos);
   assert.equal(moments.reduce((s,m)=>s+m.photos.length,0),photos.length);
   assert.equal(moments.reduce((s,m)=>s+m.newModels.length,0),56);
   assert.equal(moments.reduce((s,m)=>s+m.newAirlines.length,0),52);
   assert.equal(moments[0].cumulativeModels,56);assert.equal(moments[0].cumulativeAirlines,52);
-  const filtered=collectionTimeline(photos.filter(p=>p.date==='2026-11-01'),aircraft,airlines);
+  const filtered=collectionTimeline(photos.filter(p=>p.date==='2026-11-01'),aircraft,airlines,photos);
   assert.deepEqual(filtered[0].newModels,moments.find(m=>m.date===filtered[0].date).newModels);
   assert.equal(filtered[0].cumulativeAirlines,45);
+  assert.deepEqual(filtered[0].newLiveries,moments.find(m=>m.date===filtered[0].date).newLiveries);
+  assert.equal(filtered[0].cumulativeLiveries,moments.find(m=>m.date===filtered[0].date).cumulativeLiveries);
+  assert.equal(moments.reduce((s,m)=>s+m.newLiveries.length,0),moments[0].cumulativeLiveries);
+});
+
+test('new liveries count first airline paint schemes, not bursts, aircraft models or filtered repeats',()=>{
+  const photo=(id,date,airline,livery,model='A')=>({id,date,airport:'YYZ',models:[model],airlines:airline?[airline]:[],livery});
+  const all=[
+    photo('later','2026-11-13','A','Standard','B'),
+    photo('special','2026-11-10','A','Anniversary'),
+    photo('burst','2026-11-10','A','Anniversary'),
+    photo('first','2026-11-04','A','Standard'),
+    photo('other-airline','2026-11-10','B','Standard'),
+    photo('missing','2026-11-10','A',''),
+    photo('unidentified','2026-11-10',null,'Standard'),
+  ];
+  const days=collectionTimeline(all,[],[],all);
+  assert.deepEqual(days[0].newLiveries,[]);
+  assert.equal(days[0].cumulativeLiveries,3);
+  assert.deepEqual(days[1].newLiveries,[
+    {airline:'A',livery:'Anniversary',firstSeen:'2026-11-10'},
+    {airline:'B',livery:'Standard',firstSeen:'2026-11-10'},
+  ]);
+  assert.equal(days[2].cumulativeLiveries,1);
+  const [repeat]=shootingDays([all[0]],[],[],[],all);
+  assert.deepEqual(repeat.newLiveries,[]);
+  assert.equal(repeat.cumulativeLiveries,3);
+  const [filtered]=collectionTimeline([all[1]],[],[],all);
+  assert.deepEqual(filtered.newLiveries,[days[1].newLiveries[0]]);
+  assert.equal(filtered.cumulativeLiveries,3);
+  assert.deepEqual(filtered.newModels,[]);
+  assert.deepEqual(filtered.newAirlines,[]);
 });
 
 test('Europe view joins Greenwich while keeping Pacific routes off the continent',()=>{
@@ -100,10 +132,10 @@ test('shooting days respect the filtered set, global first sightings and local c
   const date='2026-11-05';
   const photo=(id,capturedAt)=>({id,date,capturedAt,airport:'YYZ',models:['A'],airlines:['B']});
   const visible=[photo('missing'),photo('late',date+'T09:10:00-08:00'),photo('early',date+'T11:15:00-05:00')];
-  const [day]=shootingDays(visible,[{name:'A',firstSeen:'2026-10-25'}],[{name:'B',firstSeen:date}],['filtered-out','late']);
+  const [day]=shootingDays(visible,[{name:'A',firstSeen:'2026-10-25'}],[{name:'B',firstSeen:date}],['filtered-out','late'],visible);
   assert.deepEqual(day.photos.map(p=>p.id),['early','late','missing']);
   assert.equal(day.cover.id,'late');
   assert.deepEqual(day.newModels,[]);assert.deepEqual(day.newAirlines,['B']);
-  assert.equal(shootingDays(visible,[],[],[])[0].cover.id,'early');
-  assert.deepEqual(shootingDays([],[],[],[]),[]);
+  assert.equal(shootingDays(visible,[],[],[],visible)[0].cover.id,'early');
+  assert.deepEqual(shootingDays([],[],[],[],[]),[]);
 });
